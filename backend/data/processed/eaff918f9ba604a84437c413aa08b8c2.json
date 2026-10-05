@@ -1,0 +1,1512 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 11.01,
+      "center_longitude": 76.97,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T04:37:25.488442+00:00",
+    "query_hash": "eaff918f9ba604a84437c413aa08b8c2",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 125
+  },
+  "population_metrics": {
+    "population": 5975,
+    "population_density": 5975.0,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "good",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/321420801",
+      "name": "Punjab National Bank",
+      "category": "bank",
+      "latitude": 11.0113022,
+      "longitude": 76.9667545,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "brand:wikipedia": "en:Punjab National Bank",
+        "name": "Punjab National Bank",
+        "name:en": "Punjab National Bank",
+        "short_name": "PNB",
+        "website": "https://www.pnbindia.in"
+      }
+    },
+    {
+      "id": "node/321420807",
+      "name": "Punjab National Bank",
+      "category": "bank",
+      "latitude": 11.0112887,
+      "longitude": 76.9672054,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Punjab National Bank",
+        "brand:wikidata": "Q2743499",
+        "brand:wikipedia": "en:Punjab National Bank",
+        "name": "Punjab National Bank",
+        "name:en": "Punjab National Bank",
+        "operator": "t",
+        "short_name": "PNB",
+        "website": "https://www.pnbindia.in"
+      }
+    },
+    {
+      "id": "node/321420833",
+      "name": "Arunn Surgery",
+      "category": "healthcare",
+      "latitude": 11.0110912,
+      "longitude": 76.9671438,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "Dr.Nanjappa Road",
+        "addr:postcode": "641018",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Coimbatore South",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Arunn Surgery",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/330070079",
+      "name": "Sunday Market",
+      "category": "grocery_store",
+      "latitude": 11.0087589,
+      "longitude": 76.9667366,
+      "tags": {
+        "name": "Sunday Market",
+        "name:ta": "\u0b9a\u0ba3\u0bcd\u0b9f\u0bc7 \u0bae\u0bbe\u0bb0\u0bcd\u0b95\u0bcd\u0b95\u0bc6\u0b9f\u0bcd",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "id": "node/337578514",
+      "name": "Stanes Higher Secondary School",
+      "category": "education",
+      "latitude": 11.0063593,
+      "longitude": 76.9724885,
+      "tags": {
+        "amenity": "school",
+        "name": "Stanes Higher Secondary School",
+        "name:ta": "\u0bb8\u0bcd\u0b9f\u0bc7\u0ba9\u0bcd\u0bb8\u0bcd \u0baa\u0bb3\u0bcd\u0bb3\u0bbf"
+      }
+    },
+    {
+      "id": "node/1314013924",
+      "name": "Boomerang Ice Creams",
+      "category": "restaurant",
+      "latitude": 11.0057376,
+      "longitude": 76.9692491,
+      "tags": {
+        "addr:housename": "Nehru Stadium",
+        "addr:housenumber": "62",
+        "addr:postcode": "641018",
+        "addr:street": "Grey Town",
+        "amenity": "restaurant",
+        "cuisine": "ice_cream",
+        "name": "Boomerang Ice Creams"
+      }
+    },
+    {
+      "id": "node/1473814193",
+      "name": "Unnamed Feature",
+      "category": "bus_stop",
+      "latitude": 11.0089396,
+      "longitude": 76.9671695,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/1473814211",
+      "name": "Unnamed Feature",
+      "category": "bus_stop",
+      "latitude": 11.010206,
+      "longitude": 76.9670675,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/1482717579",
+      "name": "Unnamed Feature",
+      "category": "shop_clothes",
+      "latitude": 11.0061218,
+      "longitude": 76.9701007,
+      "tags": {
+        "name:en": "Co-Optex",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/4432729289",
+      "name": "Unnamed Feature",
+      "category": "shop_toys",
+      "latitude": 11.0063314,
+      "longitude": 76.9700185,
+      "tags": {
+        "addr:street": "Nehru Stadium",
+        "name:en": "Toys Kemp",
+        "shop": "toys"
+      }
+    },
+    {
+      "id": "node/4456100789",
+      "name": "Unnamed Feature",
+      "category": "shop_car_parts",
+      "latitude": 11.0062423,
+      "longitude": 76.9700236,
+      "tags": {
+        "addr:street": "Nehru Stadium",
+        "name:en": "Auto Care",
+        "shop": "car_parts"
+      }
+    },
+    {
+      "id": "node/4456100889",
+      "name": "Unnamed Feature",
+      "category": "shop_car_parts",
+      "latitude": 11.0061773,
+      "longitude": 76.9700235,
+      "tags": {
+        "name:en": "Classic Raja",
+        "shop": "car_parts"
+      }
+    },
+    {
+      "id": "node/5420294421",
+      "name": "Unnamed Feature",
+      "category": "shop_travel_agency",
+      "latitude": 11.0101816,
+      "longitude": 76.9663798,
+      "tags": {
+        "addr:housenumber": "214A",
+        "addr:street": "Shivswamy Road",
+        "name:en": "SPS Travels India",
+        "phone": "+914222235127",
+        "shop": "travel_agency",
+        "website": "http://spstravels.in"
+      }
+    },
+    {
+      "id": "way/22933593",
+      "name": "Park Road",
+      "category": "road",
+      "latitude": 11.006071,
+      "longitude": 76.9703223,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "name": "Park Road",
+        "name:ta": "\u0baa\u0bc2\u0b99\u0bcd\u0b95\u0bbe \u0b9a\u0bbe\u0bb2\u0bc8"
+      }
+    },
+    {
+      "id": "way/26764258",
+      "name": "Ketrala Club Road",
+      "category": "road",
+      "latitude": 11.0078837,
+      "longitude": 76.974147,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Ketrala Club Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/29982695",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0120672,
+      "longitude": 76.9647047,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/29982699",
+      "name": "Ansari Street",
+      "category": "road",
+      "latitude": 11.0097396,
+      "longitude": 76.9637284,
+      "tags": {
+        "highway": "residential",
+        "name": "Ansari Street"
+      }
+    },
+    {
+      "id": "way/29982713",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0071488,
+      "longitude": 76.9656495,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/66102306",
+      "name": "Nehru Stadium Road",
+      "category": "road",
+      "latitude": 11.0069017,
+      "longitude": 76.9694071,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Nehru Stadium Road",
+        "oneway": "no"
+      }
+    },
+    {
+      "id": "way/66102339",
+      "name": "Nehru Stadium Road",
+      "category": "road",
+      "latitude": 11.0077957,
+      "longitude": 76.9689106,
+      "tags": {
+        "highway": "residential",
+        "name": "Nehru Stadium Road"
+      }
+    },
+    {
+      "id": "way/66292218",
+      "name": "Dr Nanjappa Road",
+      "category": "road",
+      "latitude": 11.0060613,
+      "longitude": 76.966623,
+      "tags": {
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Dr Nanjappa Road",
+        "name:kn": "\u0ca1\u0cbe \u0ca8\u0c82\u0c9c\u0caa\u0ccd\u0caa \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "name:ta": "\u0b9f\u0bbe\u0b95\u0bcd\u0b9f\u0bb0\u0bcd \u0ba8\u0b9e\u0bcd\u0b9a\u0baa\u0bcd\u0baa\u0bbe \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "NH948",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/66293772",
+      "name": "Unnamed Feature",
+      "category": "education",
+      "latitude": 11.0059604,
+      "longitude": 76.9734367,
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "id": "way/116587831",
+      "name": "VOC Park Road",
+      "category": "road",
+      "latitude": 11.0059686,
+      "longitude": 76.9711344,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "VOC Park Road",
+        "oneway": "no"
+      }
+    },
+    {
+      "id": "way/116588886",
+      "name": "Grey Town",
+      "category": "road",
+      "latitude": 11.0062596,
+      "longitude": 76.9676434,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Grey Town",
+        "oneway": "no"
+      }
+    },
+    {
+      "id": "way/116588912",
+      "name": "Grey Town Road",
+      "category": "road",
+      "latitude": 11.0044648,
+      "longitude": 76.968319,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Grey Town Road",
+        "oneway": "no"
+      }
+    },
+    {
+      "id": "way/134764500",
+      "name": "Kalinganagar Street",
+      "category": "road",
+      "latitude": 11.0127904,
+      "longitude": 76.9659998,
+      "tags": {
+        "highway": "residential",
+        "name": "Kalinganagar Street"
+      }
+    },
+    {
+      "id": "way/156225363",
+      "name": "Senguptha Street",
+      "category": "road",
+      "latitude": 11.0104858,
+      "longitude": 76.9646384,
+      "tags": {
+        "highway": "residential",
+        "name": "Senguptha Street"
+      }
+    },
+    {
+      "id": "way/156335518",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0099933,
+      "longitude": 76.9671339,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/172098485",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0136476,
+      "longitude": 76.9672236,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/206609431",
+      "name": "ranga konar st",
+      "category": "road",
+      "latitude": 11.0058201,
+      "longitude": 76.9678215,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "ranga konar st"
+      }
+    },
+    {
+      "id": "way/206609433",
+      "name": "ranga konar st",
+      "category": "road",
+      "latitude": 11.0084812,
+      "longitude": 76.9652764,
+      "tags": {
+        "highway": "residential",
+        "name": "ranga konar st"
+      }
+    },
+    {
+      "id": "way/206775516",
+      "name": "VOC Park Road",
+      "category": "road",
+      "latitude": 11.0044371,
+      "longitude": 76.9701879,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "VOC Park Road"
+      }
+    },
+    {
+      "id": "way/232505840",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0083039,
+      "longitude": 76.9717653,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/329852895",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0080991,
+      "longitude": 76.9741489,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/377995936",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0085946,
+      "longitude": 76.9692455,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/581494293",
+      "name": "Dr Nanjappa Road",
+      "category": "road",
+      "latitude": 11.012496,
+      "longitude": 76.9674955,
+      "tags": {
+        "frontage_road": "yes",
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Dr Nanjappa Road",
+        "name:kn": "\u0ca1\u0cbe \u0ca8\u0c82\u0c9c\u0caa\u0ccd\u0caa \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "name:ta": "\u0b9f\u0bbe\u0b95\u0bcd\u0b9f\u0bb0\u0bcd \u0ba8\u0b9e\u0bcd\u0b9a\u0baa\u0bcd\u0baa\u0bbe \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref:old": "NH209"
+      }
+    },
+    {
+      "id": "way/581494297",
+      "name": "Sarojini Naidu Road",
+      "category": "road",
+      "latitude": 11.0102244,
+      "longitude": 76.966523,
+      "tags": {
+        "highway": "residential",
+        "name": "Sarojini Naidu Road",
+        "name:etymology:wikidata": "Q250165",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/581494298",
+      "name": "Sastri Road",
+      "category": "road",
+      "latitude": 11.0112778,
+      "longitude": 76.963723,
+      "tags": {
+        "highway": "residential",
+        "name": "Sastri Road"
+      }
+    },
+    {
+      "id": "way/581494303",
+      "name": "Gandhipuram Flyover",
+      "category": "road",
+      "latitude": 11.0171592,
+      "longitude": 76.9699795,
+      "tags": {
+        "bridge": "yes",
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "lit": "yes",
+        "name": "Gandhipuram Flyover",
+        "name:etymology:wikidata": "Q3626380",
+        "oneway": "yes",
+        "ref": "NH948",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/581494313",
+      "name": "Dr Nanjappa Road",
+      "category": "road",
+      "latitude": 11.0115212,
+      "longitude": 76.9675381,
+      "tags": {
+        "frontage_road": "yes",
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Dr Nanjappa Road",
+        "name:kn": "\u0ca1\u0cbe \u0ca8\u0c82\u0c9c\u0caa\u0ccd\u0caa \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "name:ta": "\u0b9f\u0bbe\u0b95\u0bcd\u0b9f\u0bb0\u0bcd \u0ba8\u0b9e\u0bcd\u0b9a\u0baa\u0bcd\u0baa\u0bbe \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/588403098",
+      "name": "Pathway",
+      "category": "road",
+      "latitude": 11.0067497,
+      "longitude": 76.970814,
+      "tags": {
+        "highway": "footway",
+        "name": "Pathway"
+      }
+    },
+    {
+      "id": "way/588403099",
+      "name": "Pathway",
+      "category": "road",
+      "latitude": 11.0065471,
+      "longitude": 76.9708857,
+      "tags": {
+        "highway": "footway",
+        "name": "Pathway"
+      }
+    },
+    {
+      "id": "way/588403100",
+      "name": "Pathway",
+      "category": "road",
+      "latitude": 11.0067734,
+      "longitude": 76.9705682,
+      "tags": {
+        "highway": "footway",
+        "name": "Pathway"
+      }
+    },
+    {
+      "id": "way/588403101",
+      "name": "Pathway",
+      "category": "road",
+      "latitude": 11.0067469,
+      "longitude": 76.9707926,
+      "tags": {
+        "highway": "footway",
+        "name": "Pathway"
+      }
+    },
+    {
+      "id": "way/588403102",
+      "name": "Pathway ",
+      "category": "road",
+      "latitude": 11.0067556,
+      "longitude": 76.9711127,
+      "tags": {
+        "highway": "footway",
+        "name": "Pathway "
+      }
+    },
+    {
+      "id": "way/588403103",
+      "name": "Pathway",
+      "category": "road",
+      "latitude": 11.0068306,
+      "longitude": 76.9708744,
+      "tags": {
+        "highway": "footway",
+        "name": "Pathway"
+      }
+    },
+    {
+      "id": "way/592906256",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0059683,
+      "longitude": 76.9702473,
+      "tags": {
+        "highway": "residential",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/598051490",
+      "name": "Park Road",
+      "category": "road",
+      "latitude": 11.0046642,
+      "longitude": 76.9710155,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Park Road",
+        "oneway": "no"
+      }
+    },
+    {
+      "id": "way/633920869",
+      "name": "Gandhipuram Flyover",
+      "category": "road",
+      "latitude": 11.017143,
+      "longitude": 76.9700811,
+      "tags": {
+        "bridge": "yes",
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "lit": "yes",
+        "name": "Gandhipuram Flyover",
+        "name:etymology:wikidata": "Q3626380",
+        "oneway": "yes",
+        "ref": "NH948",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/651641257",
+      "name": "Global Ortho & Trauma Hospital",
+      "category": "healthcare",
+      "latitude": 11.0108233,
+      "longitude": 76.9661375,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Global Ortho & Trauma Hospital"
+      }
+    },
+    {
+      "id": "way/651641873",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0113781,
+      "longitude": 76.9685365,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/651641874",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0113543,
+      "longitude": 76.9679811,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/651641875",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0117915,
+      "longitude": 76.9694163,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/651641876",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0098864,
+      "longitude": 76.9711736,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/651641877",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0104159,
+      "longitude": 76.9720268,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/651641878",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0121508,
+      "longitude": 76.9697341,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/651641879",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0127636,
+      "longitude": 76.9703643,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/651641880",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0126201,
+      "longitude": 76.9700764,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/651641881",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0110709,
+      "longitude": 76.9705286,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/651641882",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0108141,
+      "longitude": 76.9715184,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/651641883",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0116886,
+      "longitude": 76.9711138,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/651641884",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0137032,
+      "longitude": 76.9694407,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/651641885",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0153014,
+      "longitude": 76.9715419,
+      "tags": {
+        "highway": "unclassified",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "id": "way/740883509",
+      "name": "Dr N S Palaniappan Nursing Home",
+      "category": "healthcare",
+      "latitude": 11.0078696,
+      "longitude": 76.9662789,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Dr N S Palaniappan Nursing Home"
+      }
+    },
+    {
+      "id": "way/742398428",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0144903,
+      "longitude": 76.9688839,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/761438347",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0088733,
+      "longitude": 76.9741928,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/777638193",
+      "name": "Coimbatore Corporation Maternity Centre",
+      "category": "healthcare",
+      "latitude": 11.0068131,
+      "longitude": 76.9669045,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Coimbatore Corporation Maternity Centre"
+      }
+    },
+    {
+      "id": "way/780268231",
+      "name": "Park Road",
+      "category": "road",
+      "latitude": 11.0080891,
+      "longitude": 76.9677025,
+      "tags": {
+        "highway": "secondary",
+        "name": "Park Road",
+        "name:ta": "\u0baa\u0bc2\u0b99\u0bcd\u0b95\u0bbe \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/780268232",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0080076,
+      "longitude": 76.967697,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/842246921",
+      "name": "Dr Nanjappa Road",
+      "category": "road",
+      "latitude": 11.0051396,
+      "longitude": 76.9667602,
+      "tags": {
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Dr Nanjappa Road",
+        "name:kn": "\u0ca1\u0cbe \u0ca8\u0c82\u0c9c\u0caa\u0ccd\u0caa \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "name:ta": "\u0b9f\u0bbe\u0b95\u0bcd\u0b9f\u0bb0\u0bcd \u0ba8\u0b9e\u0bcd\u0b9a\u0baa\u0bcd\u0baa\u0bbe \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "NH948",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/842246922",
+      "name": "Dr Nanjappa Road",
+      "category": "road",
+      "latitude": 11.009914,
+      "longitude": 76.9671738,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Dr Nanjappa Road",
+        "name:kn": "\u0ca1\u0cbe \u0ca8\u0c82\u0c9c\u0caa\u0ccd\u0caa \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "name:ta": "\u0b9f\u0bbe\u0b95\u0bcd\u0b9f\u0bb0\u0bcd \u0ba8\u0b9e\u0bcd\u0b9a\u0baa\u0bcd\u0baa\u0bbe \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/854415006",
+      "name": "Shri chaithanya Techno School",
+      "category": "education",
+      "latitude": 11.0066005,
+      "longitude": 76.9672178,
+      "tags": {
+        "amenity": "school",
+        "building": "yes",
+        "education": "school",
+        "height": "6",
+        "name": "Shri chaithanya Techno School"
+      }
+    },
+    {
+      "id": "way/854440593",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0066629,
+      "longitude": 76.9677891,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2"
+      }
+    },
+    {
+      "id": "way/854440594",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0066638,
+      "longitude": 76.9683628,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/910682533",
+      "name": "ranga konar st",
+      "category": "road",
+      "latitude": 11.0086943,
+      "longitude": 76.9657716,
+      "tags": {
+        "highway": "residential",
+        "name": "ranga konar st"
+      }
+    },
+    {
+      "id": "way/910682534",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0084529,
+      "longitude": 76.965931,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/960623378",
+      "name": "Nehru Stadium Road",
+      "category": "road",
+      "latitude": 11.0061446,
+      "longitude": 76.9694027,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Nehru Stadium Road",
+        "oneway": "no"
+      }
+    },
+    {
+      "id": "way/960623379",
+      "name": "Nehru Stadium",
+      "category": "road",
+      "latitude": 11.0059904,
+      "longitude": 76.9701606,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Nehru Stadium",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/960623380",
+      "name": "Park Road",
+      "category": "road",
+      "latitude": 11.0060717,
+      "longitude": 76.970252,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Park Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/960623381",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0070924,
+      "longitude": 76.968495,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/960623382",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0070891,
+      "longitude": 76.9680842,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/960623383",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0071015,
+      "longitude": 76.9673289,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/993568924",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0076354,
+      "longitude": 76.9743596,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/993568925",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0121383,
+      "longitude": 76.9668225,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1002513564",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0124528,
+      "longitude": 76.9743276,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1002513565",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.013574,
+      "longitude": 76.9722694,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1002513566",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0134213,
+      "longitude": 76.971395,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1002513567",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0126982,
+      "longitude": 76.9713822,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1013107778",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0136259,
+      "longitude": 76.9677062,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1082630677",
+      "name": "Dr Nanjappa Road",
+      "category": "road",
+      "latitude": 11.0151053,
+      "longitude": 76.9681707,
+      "tags": {
+        "frontage_road": "yes",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lit": "yes",
+        "name": "Dr Nanjappa Road",
+        "name:kn": "\u0ca1\u0cbe \u0ca8\u0c82\u0c9c\u0caa\u0ccd\u0caa \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "name:ta": "\u0b9f\u0bbe\u0b95\u0bcd\u0b9f\u0bb0\u0bcd \u0ba8\u0b9e\u0bcd\u0b9a\u0baa\u0bcd\u0baa\u0bbe \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1092803707",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0069346,
+      "longitude": 76.9666757,
+      "tags": {
+        "highway": "trunk_link"
+      }
+    },
+    {
+      "id": "way/1104623839",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0092537,
+      "longitude": 76.9727826,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1104623840",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0098009,
+      "longitude": 76.9736055,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1192840406",
+      "name": "Ketrala Club Road",
+      "category": "road",
+      "latitude": 11.007496,
+      "longitude": 76.9722962,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Ketrala Club Road"
+      }
+    },
+    {
+      "id": "way/1208983187",
+      "name": "Kalinganagar Street",
+      "category": "road",
+      "latitude": 11.0096573,
+      "longitude": 76.9653361,
+      "tags": {
+        "highway": "residential",
+        "name": "Kalinganagar Street"
+      }
+    },
+    {
+      "id": "way/1208983188",
+      "name": "Kalinganagar Street",
+      "category": "road",
+      "latitude": 11.0107803,
+      "longitude": 76.9658876,
+      "tags": {
+        "highway": "residential",
+        "name": "Kalinganagar Street"
+      }
+    },
+    {
+      "id": "way/1208983189",
+      "name": "Sastri Road",
+      "category": "road",
+      "latitude": 11.0111884,
+      "longitude": 76.966625,
+      "tags": {
+        "highway": "residential",
+        "name": "Sastri Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1225579078",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0090768,
+      "longitude": 76.9744827,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1225579079",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.00938,
+      "longitude": 76.9744877,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1230291768",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0130787,
+      "longitude": 76.9671594,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1230291769",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0131794,
+      "longitude": 76.9669889,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1230296769",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0122975,
+      "longitude": 76.9663676,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1230297718",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0119361,
+      "longitude": 76.9660976,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1230297719",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0119256,
+      "longitude": 76.9663082,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1290162184",
+      "name": "Dr Nanjappa Road",
+      "category": "road",
+      "latitude": 11.0088056,
+      "longitude": 76.9672017,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Dr Nanjappa Road",
+        "name:kn": "\u0ca1\u0cbe \u0ca8\u0c82\u0c9c\u0caa\u0ccd\u0caa \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "name:ta": "\u0b9f\u0bbe\u0b95\u0bcd\u0b9f\u0bb0\u0bcd \u0ba8\u0b9e\u0bcd\u0b9a\u0baa\u0bcd\u0baa\u0bbe \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "NH948",
+        "ref:old": "NH209"
+      }
+    },
+    {
+      "id": "way/1290162185",
+      "name": "Dr Nanjappa Road",
+      "category": "road",
+      "latitude": 11.0088798,
+      "longitude": 76.9670353,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Dr Nanjappa Road",
+        "name:kn": "\u0ca1\u0cbe \u0ca8\u0c82\u0c9c\u0caa\u0ccd\u0caa \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "name:ta": "\u0b9f\u0bbe\u0b95\u0bcd\u0b9f\u0bb0\u0bcd \u0ba8\u0b9e\u0bcd\u0b9a\u0baa\u0bcd\u0baa\u0bbe \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "NH948",
+        "ref:old": "NH209"
+      }
+    },
+    {
+      "id": "way/1290162186",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0080741,
+      "longitude": 76.9670267,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "oneway": "yes",
+        "ref": "NH948",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1317841913",
+      "name": "Gandhipuram Flyover",
+      "category": "road",
+      "latitude": 11.0095973,
+      "longitude": 76.9672857,
+      "tags": {
+        "highway": "trunk",
+        "name": "Gandhipuram Flyover",
+        "name:etymology:wikidata": "Q3626380",
+        "oneway": "yes",
+        "ref": "NH948"
+      }
+    },
+    {
+      "id": "way/1317841914",
+      "name": "Gandhipuram Flyover",
+      "category": "road",
+      "latitude": 11.0096753,
+      "longitude": 76.9671938,
+      "tags": {
+        "highway": "trunk",
+        "name": "Gandhipuram Flyover",
+        "name:etymology:wikidata": "Q3626380",
+        "oneway": "yes",
+        "ref": "NH948"
+      }
+    },
+    {
+      "id": "way/1337852636",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0113878,
+      "longitude": 76.9667115,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852637",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0115781,
+      "longitude": 76.9661012,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852640",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0127648,
+      "longitude": 76.9663256,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852641",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0136522,
+      "longitude": 76.9680644,
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1337852642",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0132384,
+      "longitude": 76.968057,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852643",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.013711,
+      "longitude": 76.9691943,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852644",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0138258,
+      "longitude": 76.969746,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852646",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0148428,
+      "longitude": 76.9704916,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144762",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0093787,
+      "longitude": 76.9720004,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144763",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0088789,
+      "longitude": 76.9713159,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144768",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0079051,
+      "longitude": 76.9664123,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144769",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0093919,
+      "longitude": 76.9659056,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144770",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0089253,
+      "longitude": 76.9659008,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144771",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0104721,
+      "longitude": 76.9666431,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1343856651",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0098675,
+      "longitude": 76.9667846,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1343856652",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0101174,
+      "longitude": 76.9668744,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    }
+  ]
+}

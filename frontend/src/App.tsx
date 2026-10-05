@@ -1,0 +1,497 @@
+import { useEffect, useState } from 'react'
+import type { FormEvent } from 'react'
+import { CircleMarker, GeoJSON, MapContainer, Popup, Rectangle, TileLayer, useMap } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css'
+import L from 'leaflet'
+import { 
+  LayoutDashboard, 
+  PlusCircle, 
+  MapPin,
+  Settings,
+  LogOut,
+  Sun,
+  Map as MapIcon,
+  Calendar,
+  ArrowRight,
+  Search,
+  Building2,
+  Navigation,
+  Sparkles,
+  Users,
+  Activity,
+  TrendingUp,
+  ChevronRight
+} from 'lucide-react'
+import './App.css'
+
+const API = 'http://127.0.0.1:8000/api'
+const CELL = 0.005
+
+type Mode = 'land' | 'business'
+type Page = 'dashboard' | 'analysis' | 'locations' | 'settings'
+
+type Factors = { positive_factors: string[]; negative_factors: string[] }
+type Candidate = { 
+  lat: number
+  lon: number
+  model_score: number
+  details: { 
+    population: number
+    competitors: number
+    schools: number
+    colleges: number
+    hospitals: number
+    bus_stops: number
+    road_density: number
+    distance_to_major_road: number 
+  }
+  explanation: Factors 
+}
+type Recommendation = Factors & { business: string; score_percent: number }
+
+function Viewport({ center }: { center: [number, number] }) { 
+  const map = useMap()
+  useEffect(() => { map.flyTo(center, 13, { animate: true, duration: 1.5 }) }, [center, map])
+  return null 
+}
+
+function heat(score: number, min: number, max: number) { 
+  const r = max === min ? 1 : (score - min) / (max - min)
+  return r > .75 ? '#10b981' : r > .5 ? '#f59e0b' : r > .25 ? '#f97316' : '#ef4444' 
+}
+
+const formatNum = (n: number | null | undefined, suffix = '') => 
+  n === null || n === undefined ? 'N/A' : `${n}${suffix}`
+
+const getCategoryColor = (props: any) => {
+  if (!props) return '#94a3b8';
+  const cat = props.category || props.amenity || props.shop || props.healthcare || props.office || props.leisure || '';
+  if (!cat) return '#8b5cf6';
+  
+  const colors: Record<string, string> = {
+    'pharmacy': '#10b981', // green
+    'restaurant': '#3b82f6', // blue
+    'fast_food': '#3b82f6',
+    'cafe': '#f59e0b',
+    'bank': '#f97316',
+    'hospital': '#ec4899',
+    'clinic': '#ec4899',
+    'school': '#eab308',
+    'college': '#eab308',
+    'supermarket': '#14b8a6',
+    'convenience': '#14b8a6',
+    'grocery': '#14b8a6',
+  };
+  return colors[cat.toLowerCase()] || '#8b5cf6';
+}
+
+// --- Dashboard View Component ---
+const DashboardView = ({ center, onNavigate }: { center: [number, number], onNavigate: (p: Page) => void }) => (
+  <div className="page-content">
+    <div className="page-header">
+      <div>
+        <h1>Dashboard</h1>
+        <p>Overview of your business intelligence.</p>
+      </div>
+      <div className="header-actions">
+        <button className="btn btn-outline"><MapPin size={16}/> Manage Locations</button>
+        <button className="btn btn-primary" onClick={() => onNavigate('analysis')}><PlusCircle size={16}/> New Analysis</button>
+      </div>
+    </div>
+    
+    <div className="embedded-map-container">
+      <MapContainer center={center} zoom={13} className="dashboard-map">
+        {/* Light Mode OSM Map exactly like the screenshot */}
+        <TileLayer 
+          attribution="&copy; OpenStreetMap contributors" 
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
+        />
+        <CircleMarker center={center} radius={6} pathOptions={{ color: '#ef4444', fillColor: '#ef4444', fillOpacity: 1 }} />
+      </MapContainer>
+    </div>
+
+    <div className="recent-section">
+      <div className="section-header">
+        <h3>Recent Analyses</h3>
+        <span className="total-count">1 total reports</span>
+      </div>
+      
+      <div className="recent-grid">
+        <div className="report-card">
+          <div className="report-card-header">
+            <span className="badge">Retail</span>
+            <span className="date"><Calendar size={12}/> Oct 5, 2026</span>
+          </div>
+          <h4>Analysis #192</h4>
+          <div className="location-info">
+            <MapPin size={14} className="text-primary"/> 11.0168, 76.9558
+          </div>
+          <div className="target-info">Targeting: general public</div>
+          
+          <button className="view-report-btn">
+            View Report <ArrowRight size={14}/>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+)
+
+export default function App() {
+  const [activePage, setActivePage] = useState<Page>('dashboard')
+  
+  const [mode, setMode] = useState<Mode>('land')
+  const [query, setQuery] = useState('')
+  const [business, setBusiness] = useState('pharmacy')
+  const [types, setTypes] = useState<string[]>([])
+  const [center, setCenter] = useState<[number, number]>([11.0168, 76.9558])
+  const [candidates, setCandidates] = useState<Candidate[]>([])
+  const [selected, setSelected] = useState<number | null>(null)
+  const [recommendations, setRecommendations] = useState<Recommendation[]>([])
+  const [geoJson, setGeoJson] = useState<any>(null)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+
+  useEffect(() => { 
+    fetch(`${API}/business-types`)
+      .then(r => r.json())
+      .then(d => setTypes(d.business_types || []))
+      .catch(() => setError('Could not load business categories. Is the API running?')) 
+  }, [])
+
+  const search = async (event: FormEvent) => {
+    event.preventDefault()
+    if (!query.trim()) return
+    setLoading(true)
+    setError('')
+    setCandidates([])
+    setSelected(null)
+    setRecommendations([])
+    setGeoJson(null)
+
+    try {
+      const geoResponse = await fetch(`${API}/geocode`, { 
+        method: 'POST', 
+        headers: { 'Content-Type': 'application/json' }, 
+        body: JSON.stringify({ query }) 
+      })
+      if (!geoResponse.ok) throw new Error('The requested location could not be found.')
+      const location = await geoResponse.json()
+      const position: [number, number] = [location.latitude, location.longitude]
+      setCenter(position)
+      
+      if (mode === 'land') {
+        const [analysisResponse, mapResponse] = await Promise.all([
+          fetch(`${API}/analyze-location`, { 
+            method: 'POST', 
+            headers: { 'Content-Type': 'application/json' }, 
+            body: JSON.stringify({ lat: position[0], lon: position[1], radius: 500 }) 
+          }),
+          fetch(`${API}/map-data?lat=${position[0]}&lon=${position[1]}&radius=500`)
+        ])
+        const analysis = await analysisResponse.json()
+        if (!analysisResponse.ok) throw new Error(analysis.detail || 'Model 1 could not analyse this location.')
+        setRecommendations(analysis.recommendations || [])
+        if (mapResponse.ok) setGeoJson(await mapResponse.json())
+      } else {
+        const response = await fetch(`${API}/find-best-locations`, { 
+          method: 'POST', 
+          headers: { 'Content-Type': 'application/json' }, 
+          body: JSON.stringify({ business_type: business, start_lat: position[0], start_lon: position[1], steps: 4, step_size: CELL }) 
+        })
+        const data = await response.json()
+        if (!response.ok) throw new Error(data.detail || 'Model 2 could not evaluate this area.')
+        setCandidates(data.candidates || [])
+      }
+    } catch (err) { 
+      setError(err instanceof Error ? err.message : 'Unable to complete the analysis.') 
+    } finally { 
+      setLoading(false) 
+    }
+  }
+
+  const scores = candidates.map(c => c.model_score)
+  const min = scores.length ? Math.min(...scores) : 0
+  const max = scores.length ? Math.max(...scores) : 1
+  const chosen = selected === null ? null : candidates[selected]
+
+  return (
+    <div className="app-container">
+      {/* Sidebar - Designed exactly like BusinessRadius */}
+      <aside className="sidebar">
+        <div className="brand">
+          <div className="brand-icon">
+            <MapPin size={18} color="#ffffff" />
+          </div>
+          <div className="brand-text">
+            <h2>GeoBusiness</h2>
+            <span>Decision Platform</span>
+          </div>
+        </div>
+
+        <nav className="nav-menu">
+          <button 
+            type="button" 
+            className={`nav-item ${activePage === 'dashboard' ? 'active' : ''}`}
+            onClick={() => setActivePage('dashboard')}
+          >
+            <LayoutDashboard size={18} />
+            <span>Dashboard</span>
+          </button>
+          <button 
+            type="button" 
+            className={`nav-item ${activePage === 'analysis' ? 'active' : ''}`}
+            onClick={() => setActivePage('analysis')}
+          >
+            <PlusCircle size={18} />
+            <span>New Analysis</span>
+          </button>
+          <button 
+            type="button" 
+            className={`nav-item ${activePage === 'locations' ? 'active' : ''}`}
+            onClick={() => setActivePage('locations')}
+          >
+            <MapIcon size={18} />
+            <span>Saved Locations</span>
+          </button>
+          <button 
+            type="button" 
+            className={`nav-item ${activePage === 'settings' ? 'active' : ''}`}
+            onClick={() => setActivePage('settings')}
+          >
+            <Settings size={18} />
+            <span>Settings</span>
+          </button>
+        </nav>
+
+        <div className="sidebar-bottom">
+          <div className="user-profile">
+            <div className="avatar">R</div>
+            <div className="user-info">
+              <h4>Rohit</h4>
+              <p>rohitc295@gmail.com</p>
+            </div>
+          </div>
+          <button className="bottom-link"><Sun size={16}/> Light Mode</button>
+          <button className="bottom-link"><LogOut size={16}/> Sign Out</button>
+        </div>
+      </aside>
+
+      {/* Main Content Area */}
+      <main className="main-area">
+        {activePage === 'dashboard' && <DashboardView center={center} onNavigate={setActivePage} />}
+        
+        {/* Full Analysis Tool Page */}
+        <div className={`analysis-view ${activePage === 'analysis' ? 'visible' : 'hidden'}`}>
+          <div className="analysis-sidebar">
+            <div className="analysis-header">
+              <h2>New Analysis</h2>
+              <p>Run geospatial models</p>
+            </div>
+
+            <div className="mode-toggle">
+              <button 
+                type="button"
+                className={`mode-btn ${mode === 'land' ? 'active' : ''}`}
+                onClick={() => setMode('land')}
+              >
+                Evaluate Land
+              </button>
+              <button 
+                type="button"
+                className={`mode-btn ${mode === 'business' ? 'active' : ''}`}
+                onClick={() => setMode('business')}
+              >
+                Place Business
+              </button>
+            </div>
+
+            <form onSubmit={search} className="search-form">
+              {mode === 'business' && (
+                <div className="input-group">
+                  <Building2 className="input-icon" size={16} />
+                  <select 
+                    id="business-type"
+                    value={business} 
+                    onChange={e => setBusiness(e.target.value)}
+                  >
+                    {types.length ? types.map(t => <option key={t} value={t}>{t}</option>) : <option>Loading...</option>}
+                  </select>
+                </div>
+              )}
+              
+              <div className="input-group">
+                <Search className="input-icon" size={16} />
+                <input
+                  id="location-search"
+                  value={query}
+                  onChange={e => setQuery(e.target.value)}
+                  placeholder={mode === 'land' ? 'Enter location to evaluate...' : 'Enter target city/area...'}
+                />
+              </div>
+
+              <button 
+                type="submit" 
+                disabled={loading} 
+                className="btn btn-primary w-full mt-2"
+              >
+                {loading ? (
+                  <span><Sparkles size={16} className="spin-icon" /> Analyzing...</span>
+                ) : (
+                  <span><Navigation size={16} /> Run Analysis</span>
+                )}
+              </button>
+            </form>
+
+            {error && <div className="error-box"><Activity size={16}/> {error}</div>}
+
+            <div className="results-container scrollable">
+              {/* Recommendations */}
+              {mode === 'land' && recommendations.length > 0 && (
+                <div className="results-wrapper">
+                  <h3 className="section-title">AI Recommendations</h3>
+                  {recommendations.map((r, i) => (
+                    <div key={r.business + i} className="data-card">
+                      <div className="card-header">
+                        <div className="biz-title">
+                          <h4>{r.business}</h4>
+                        </div>
+                        <span className="score-badge">{r.score_percent}%</span>
+                      </div>
+                      <div className="factors">
+                        {r.positive_factors.slice(0, 2).map((x, i) => (
+                          <div key={i} className="factor pos"><ChevronRight size={14} /> {x}</div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Candidates */}
+              {mode === 'business' && candidates.length > 0 && (
+                <div className="results-wrapper">
+                  <h3 className="section-title">Top Hotspots</h3>
+                  {candidates.map((c, i) => (
+                    <button 
+                      type="button"
+                      key={`${c.lat}-${c.lon}`}
+                      onClick={() => setSelected(i)} 
+                      className={`data-card candidate-btn ${selected === i ? 'selected' : ''}`}
+                    >
+                      <div className="candidate-info">
+                        <strong>Rank #{i + 1}</strong>
+                        <span className="score">Score: {c.model_score.toFixed(2)}</span>
+                      </div>
+                      <div className="candidate-coords"><MapPin size={12}/> {c.lat.toFixed(4)}, {c.lon.toFixed(4)}</div>
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* Candidate Details */}
+              {(mode === 'business' && chosen) && (
+                <div className="details-panel mt-4">
+                  <h4>Selected Hotspot</h4>
+                  <div className="metrics-grid">
+                    <div className="metric-box">
+                      <label>Population</label>
+                      <strong>{formatNum(chosen.details.population)}</strong>
+                    </div>
+                    <div className="metric-box">
+                      <label>Competition</label>
+                      <strong>{formatNum(chosen.details.competitors)}</strong>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+          
+          <div className="analysis-map-area">
+            <MapContainer center={center} zoom={13} className="full-map">
+              <TileLayer 
+                attribution="&copy; OpenStreetMap contributors" 
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
+              />
+              <Viewport center={center} />
+              
+              {mode === 'land' && (
+                <CircleMarker center={center} radius={8} pathOptions={{ color: '#ef4444', fillColor: '#ef4444', fillOpacity: 0.8, weight: 2 }}>
+                  <Popup>Target Location</Popup>
+                </CircleMarker>
+              )}
+              
+              {mode === 'land' && geoJson && (
+                <GeoJSON 
+                  key={JSON.stringify(geoJson)}
+                  data={geoJson} 
+                  pointToLayer={(feature, latlng) => {
+                    const color = getCategoryColor(feature.properties);
+                    return L.circleMarker(latlng, { 
+                      radius: 5, 
+                      color: '#ffffff', 
+                      weight: 1.5, 
+                      fillColor: color, 
+                      fillOpacity: 0.9 
+                    });
+                  }} 
+                  onEachFeature={(feature, layer) => {
+                    if (feature.properties) {
+                      const name = feature.properties.name || 'Unknown Location';
+                      const cat = feature.properties.category || feature.properties.amenity || feature.properties.shop || 'Amenity';
+                      layer.bindPopup(`<strong>${name}</strong><br/><span style="text-transform:capitalize;color:#666;font-size:0.8rem">${cat}</span>`);
+                    }
+                  }}
+                />
+              )}
+              
+              {mode === 'business' && candidates.map((c, i) => (
+                <Rectangle 
+                  key={`${c.lat}-${c.lon}`} 
+                  bounds={[[c.lat - CELL / 2, c.lon - CELL / 2], [c.lat + CELL / 2, c.lon + CELL / 2]]} 
+                  pathOptions={{ 
+                    color: selected === i ? '#2563eb' : 'transparent', 
+                    weight: selected === i ? 2 : 0, 
+                    fillColor: heat(c.model_score, min, max), 
+                    fillOpacity: selected === i ? 0.7 : 0.4 
+                  }} 
+                  eventHandlers={{ click: () => setSelected(i) }}
+                >
+                  <Popup>
+                    <strong>Rank #{i + 1}</strong><br/>
+                    Score: {c.model_score.toFixed(2)}
+                  </Popup>
+                </Rectangle>
+              ))}
+            </MapContainer>
+          </div>
+        </div>
+        
+        {activePage === 'locations' && (
+          <div className="page-content">
+            <div className="page-header">
+              <div>
+                <h1>Saved Locations</h1>
+                <p>Manage your saved business locations.</p>
+              </div>
+            </div>
+            <p className="text-muted">No locations saved yet.</p>
+          </div>
+        )}
+
+        {activePage === 'settings' && (
+          <div className="page-content">
+            <div className="page-header">
+              <div>
+                <h1>Settings</h1>
+                <p>Manage your account preferences.</p>
+              </div>
+            </div>
+            <p className="text-muted">Settings panel goes here.</p>
+          </div>
+        )}
+      </main>
+    </div>
+  )
+}

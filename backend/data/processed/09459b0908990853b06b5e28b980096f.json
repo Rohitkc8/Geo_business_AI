@@ -1,0 +1,330 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 11.3992039,
+      "center_longitude": 78.160763,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T08:42:02.171953+00:00",
+    "query_hash": "09459b0908990853b06b5e28b980096f",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 23
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/4984239822",
+      "name": "Paavai Engineering College",
+      "category": "office",
+      "latitude": 11.3989494,
+      "longitude": 78.1606289,
+      "tags": {
+        "addr:city": "NAMAKKAL",
+        "addr:housenumber": "NH 7 PAACHAL",
+        "addr:postcode": "637018",
+        "addr:street": "Kanyakumari Varanasi",
+        "check_date:opening_hours": "2023-10-24",
+        "email": "pecprincipal@paavai.edu.in",
+        "name": "Paavai Engineering College",
+        "office": "educational_institution",
+        "opening_hours": "Mo-Sa 08:00-18:00",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "id": "node/7160380583",
+      "name": "Paavai Group of schools",
+      "category": "education",
+      "latitude": 11.3994676,
+      "longitude": 78.1594685,
+      "tags": {
+        "amenity": "school",
+        "name": "Paavai Group of schools"
+      }
+    },
+    {
+      "id": "node/9126161307",
+      "name": "Paavai School",
+      "category": "bus_stop",
+      "latitude": 11.3992458,
+      "longitude": 78.1599341,
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Paavai School",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "id": "node/9126172848",
+      "name": "Paavai College",
+      "category": "bus_stop",
+      "latitude": 11.4005834,
+      "longitude": 78.1601894,
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Paavai College",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "id": "way/22837388",
+      "name": "Kanyakumari Varanasi",
+      "category": "road",
+      "latitude": 11.3742696,
+      "longitude": 78.1641383,
+      "tags": {
+        "expressway": "yes",
+        "highway": "trunk",
+        "int_ref": "AH43",
+        "lanes": "2",
+        "lit": "no",
+        "maxspeed:type": "IN:trunk",
+        "name": "Kanyakumari Varanasi",
+        "oneway": "yes",
+        "ref": "NH44",
+        "ref:old": "NH7",
+        "shoulder": "both",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/197120579",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3990084,
+      "longitude": 78.160006,
+      "tags": {
+        "highway": "trunk_link",
+        "lanes": "2",
+        "lit": "no",
+        "maxspeed": "40",
+        "maxspeed:type": "sign",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/197120580",
+      "name": "\u0baa\u0bbe\u0bb5\u0bc8 \u0b95\u0bb2\u0bcd\u0bb2\u0bc2\u0bb0\u0bbf \u0b9a\u0bbe\u0bb2\u0bc8",
+      "category": "road",
+      "latitude": 11.3947788,
+      "longitude": 78.1606799,
+      "tags": {
+        "highway": "unclassified",
+        "lane_markings": "no",
+        "name": "\u0baa\u0bbe\u0bb5\u0bc8 \u0b95\u0bb2\u0bcd\u0bb2\u0bc2\u0bb0\u0bbf \u0b9a\u0bbe\u0bb2\u0bc8",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/345749245",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3997674,
+      "longitude": 78.1235219,
+      "tags": {
+        "highway": "secondary",
+        "lane_markings": "no",
+        "noname": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/367631248",
+      "name": "Kanyakumari Varanasi",
+      "category": "road",
+      "latitude": 11.3742787,
+      "longitude": 78.1642461,
+      "tags": {
+        "expressway": "yes",
+        "highway": "trunk",
+        "int_ref": "AH43",
+        "lanes": "2",
+        "lit": "no",
+        "maxspeed:type": "IN:trunk",
+        "name": "Kanyakumari Varanasi",
+        "oneway": "yes",
+        "ref": "NH44",
+        "ref:old": "NH7",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1185661638",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3995539,
+      "longitude": 78.1583459,
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1185661639",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3996578,
+      "longitude": 78.1591964,
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1185661640",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.398806,
+      "longitude": 78.1593058,
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1185661641",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3997174,
+      "longitude": 78.1594487,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1185661642",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3996788,
+      "longitude": 78.1594558,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1185661643",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4009438,
+      "longitude": 78.1588076,
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1185661644",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4009587,
+      "longitude": 78.1581197,
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1336418928",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.397596,
+      "longitude": 78.1660775,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/1338533155",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3944211,
+      "longitude": 78.1546719,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/1347260991",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4000477,
+      "longitude": 78.1606441,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1347260992",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4000188,
+      "longitude": 78.1606443,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1347260993",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4000604,
+      "longitude": 78.1610232,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1347260994",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4000062,
+      "longitude": 78.1602305,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1347260995",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3997245,
+      "longitude": 78.1597364,
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      }
+    }
+  ]
+}

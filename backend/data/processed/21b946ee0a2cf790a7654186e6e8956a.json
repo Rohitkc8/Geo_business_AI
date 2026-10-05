@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 11.4042039,
+      "center_longitude": 78.17576299999999,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T08:44:42.003616+00:00",
+    "query_hash": "21b946ee0a2cf790a7654186e6e8956a",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 4
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "way/197120808",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4018604,
+      "longitude": 78.177328,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/345710128",
+      "name": "Pachal Road",
+      "category": "road",
+      "latitude": 11.4182521,
+      "longitude": 78.1839828,
+      "tags": {
+        "access": "yes",
+        "highway": "tertiary",
+        "name": "Pachal Road"
+      }
+    },
+    {
+      "id": "way/1336418918",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4011085,
+      "longitude": 78.1834314,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/1336418919",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4003716,
+      "longitude": 78.1728203,
+      "tags": {
+        "highway": "unclassified"
+      }
+    }
+  ]
+}

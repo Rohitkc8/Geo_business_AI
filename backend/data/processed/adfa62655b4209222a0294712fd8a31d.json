@@ -1,0 +1,2221 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 10.999311500000001,
+      "center_longitude": 76.96534249999999,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T05:20:08.591874+00:00",
+    "query_hash": "adfa62655b4209222a0294712fd8a31d",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 182
+  },
+  "population_metrics": {
+    "population": 10283,
+    "population_density": 10283.0,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "good",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/337516320",
+      "name": "Sri Angannan Briyani Hotel",
+      "category": "restaurant",
+      "latitude": 10.9977025,
+      "longitude": 76.9615688,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Sri Angannan Briyani Hotel"
+      }
+    },
+    {
+      "id": "node/803271929",
+      "name": "Coimbatore Railway Station",
+      "category": "bus_stop",
+      "latitude": 10.9962311,
+      "longitude": 76.9681435,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Coimbatore Railway Station",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/803271951",
+      "name": "State Bank of India",
+      "category": "bank",
+      "latitude": 10.9978634,
+      "longitude": 76.9675763,
+      "tags": {
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "id": "node/803272045",
+      "name": "Coimbatore Railway Station",
+      "category": "bus_stop",
+      "latitude": 10.9962357,
+      "longitude": 76.9679417,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Coimbatore Railway Station",
+        "public_transport": "platform",
+        "wheelchair": "yes",
+        "wikidata": "Q3532594",
+        "wikipedia": "en:Coimbatore Junction railway station"
+      }
+    },
+    {
+      "id": "node/1474451334",
+      "name": "RHR restaurant",
+      "category": "restaurant",
+      "latitude": 10.9975037,
+      "longitude": 76.9680636,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "only",
+        "name": "RHR restaurant"
+      }
+    },
+    {
+      "id": "node/1474451347",
+      "name": "Collectorate office",
+      "category": "bus_stop",
+      "latitude": 11.0004858,
+      "longitude": 76.9674362,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Collectorate office",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/1474451352",
+      "name": "C S Meals",
+      "category": "restaurant",
+      "latitude": 10.9996522,
+      "longitude": 76.9681095,
+      "tags": {
+        "amenity": "fast_food",
+        "diet:vegetarian": "only",
+        "name": "C S Meals"
+      }
+    },
+    {
+      "id": "node/1474451365",
+      "name": "Bon bon ice creams",
+      "category": "restaurant",
+      "latitude": 10.9988726,
+      "longitude": 76.968206,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "ice_cream",
+        "name": "Bon bon ice creams"
+      }
+    },
+    {
+      "id": "node/1474491015",
+      "name": "DSP",
+      "category": "bus_stop",
+      "latitude": 11.0018007,
+      "longitude": 76.9686832,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "DSP",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/1474491018",
+      "name": "CLS Book shop",
+      "category": "shop_books",
+      "latitude": 11.0003341,
+      "longitude": 76.9679644,
+      "tags": {
+        "name": "CLS Book shop",
+        "shop": "books"
+      }
+    },
+    {
+      "id": "node/3964515538",
+      "name": "Elite Furniture Mart",
+      "category": "shop_furniture",
+      "latitude": 10.9977678,
+      "longitude": 76.962161,
+      "tags": {
+        "addr:city": "coimbatore",
+        "addr:housenumber": "39",
+        "addr:postcode": "641001",
+        "addr:street": "Variety Hall Road",
+        "name": "Elite Furniture Mart",
+        "shop": "furniture"
+      }
+    },
+    {
+      "id": "node/5874714141",
+      "name": "Geetha Cafe",
+      "category": "restaurant",
+      "latitude": 10.9982256,
+      "longitude": 76.9691084,
+      "tags": {
+        "alt_name": "Geeta Cafe",
+        "amenity": "restaurant",
+        "cuisine": "regional",
+        "delivery": "no",
+        "name": "Geetha Cafe",
+        "operator": "Geetha Hotels",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "id": "node/7257183926",
+      "name": "I.C.C Hospital For Women & Children, Coimbatore",
+      "category": "healthcare",
+      "latitude": 10.9958251,
+      "longitude": 76.9634777,
+      "tags": {
+        "addr:block": "Coimbatore Corpn",
+        "addr:district": "Coimbatore",
+        "addr:full": "Town Hall, Coimbatore, Ismail Street",
+        "addr:postcode": "641001",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Coimbatore South",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "I.C.C Hospital For Women & Children, Coimbatore",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "way/22964201",
+      "name": "Goods Shed Road Flyover",
+      "category": "road",
+      "latitude": 11.0008265,
+      "longitude": 76.9631902,
+      "tags": {
+        "alt_name": "Goods Shed Road",
+        "bridge": "yes",
+        "highway": "secondary",
+        "layer": "1",
+        "name": "Goods Shed Road Flyover",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/25842789",
+      "name": "Station Flyover",
+      "category": "road",
+      "latitude": 11.0014605,
+      "longitude": 76.9627241,
+      "tags": {
+        "bridge": "yes",
+        "highway": "trunk",
+        "junction": "roundabout",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Station Flyover",
+        "oneway": "yes",
+        "ref": "NH948",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/25967625",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0016871,
+      "longitude": 76.9686439,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/29982718",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0024603,
+      "longitude": 76.9644704,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/66058391",
+      "name": "Station Flyover",
+      "category": "road",
+      "latitude": 11.0014055,
+      "longitude": 76.9623923,
+      "tags": {
+        "alt_name": "Sukrawarpettai Mill Road",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Station Flyover",
+        "oneway": "yes",
+        "ref": "NH948",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/66058394",
+      "name": "Station Flyover",
+      "category": "road",
+      "latitude": 11.0013491,
+      "longitude": 76.9624121,
+      "tags": {
+        "alt_name": "Sukrawarpettai Mill Road",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Station Flyover",
+        "oneway": "yes",
+        "ref": "NH948",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/66239967",
+      "name": "Somasundar Mill Road",
+      "category": "road",
+      "latitude": 11.0032526,
+      "longitude": 76.9653857,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Somasundar Mill Road"
+      }
+    },
+    {
+      "id": "way/66239973",
+      "name": "Avinashi Road Railway Flyover",
+      "category": "road",
+      "latitude": 11.0017518,
+      "longitude": 76.9636,
+      "tags": {
+        "bridge": "yes",
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Avinashi Road Railway Flyover",
+        "name:kn": "\u0c85\u0cb5\u0cbf\u0ca8\u0cbe\u0cb6\u0cbf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6 \u0cb0\u0cc8\u0cb2\u0ccd\u0cb5\u0cc6 \u0cae\u0cc7\u0cb2\u0ccd\u0cb8\u0cc7\u0ca4\u0cc1\u0cb5\u0cc6",
+        "name:ta": "\u0b85\u0bb5\u0bbf\u0ba8\u0bbe\u0b9a\u0bbf \u0bb0\u0bcb\u0b9f\u0bc1 \u0bb0\u0baf\u0bbf\u0bb2\u0bcd\u0bb5\u0bc7 \u0bae\u0bc7\u0bae\u0bcd\u0baa\u0bbe\u0bb2\u0bae\u0bcd",
+        "oneway": "yes",
+        "ref": "NH948",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/66252738",
+      "name": "Goods Shed Road",
+      "category": "road",
+      "latitude": 10.9973265,
+      "longitude": 76.9653737,
+      "tags": {
+        "highway": "secondary",
+        "name": "Goods Shed Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/66297869",
+      "name": "Avinashi Road Railway Flyover",
+      "category": "road",
+      "latitude": 11.0021516,
+      "longitude": 76.965435,
+      "tags": {
+        "bridge": "yes",
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Avinashi Road Railway Flyover",
+        "name:kn": "\u0c85\u0cb5\u0cbf\u0ca8\u0cbe\u0cb6\u0cbf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6 \u0cb0\u0cc8\u0cb2\u0ccd\u0cb5\u0cc6 \u0cae\u0cc7\u0cb2\u0ccd\u0cb8\u0cc7\u0ca4\u0cc1\u0cb5\u0cc6",
+        "name:ta": "\u0b85\u0bb5\u0bbf\u0ba8\u0bbe\u0b9a\u0bbf \u0bb0\u0bcb\u0b9f\u0bc1 \u0bb0\u0baf\u0bbf\u0bb2\u0bcd\u0bb5\u0bc7 \u0bae\u0bc7\u0bae\u0bcd\u0baa\u0bbe\u0bb2\u0bae\u0bcd",
+        "oneway": "yes",
+        "ref": "NH948",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/66297870",
+      "name": "Station Flyover",
+      "category": "road",
+      "latitude": 11.00134,
+      "longitude": 76.9621965,
+      "tags": {
+        "alt_name": "Sukrawarpettai Mill Road",
+        "bridge": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Station Flyover",
+        "ref": "NH948",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/116588912",
+      "name": "Grey Town Road",
+      "category": "road",
+      "latitude": 11.0044648,
+      "longitude": 76.968319,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Grey Town Road",
+        "oneway": "no"
+      }
+    },
+    {
+      "id": "way/133585584",
+      "name": "G. D. Matriculation Higher Secondary School",
+      "category": "education",
+      "latitude": 11.0000305,
+      "longitude": 76.9655278,
+      "tags": {
+        "amenity": "school",
+        "email": "admin@gdschoolcbe.com",
+        "name": "G. D. Matriculation Higher Secondary School",
+        "name:etymology:wikidata": "Q3526620",
+        "name:ta": "\u0b9c\u0bbf \u0b9f\u0bbf \u0bae\u0bc6\u0b9f\u0bcd\u0bb0\u0bbf\u0b95\u0bcd\u0b95\u0bc1\u0bb2\u0bc7\u0b9a\u0ba9\u0bcd \u0bae\u0bc7\u0ba9\u0bbf\u0bb2\u0bc8\u0baa\u0bcd\u0baa\u0bb3\u0bcd\u0bb3\u0bbf",
+        "phone": "+91 422 230 0170",
+        "start_date": "1983",
+        "website": "https://www.gdschoolcbe.com/",
+        "wikidata": "Q5513103",
+        "wikipedia": "en:GD Matriculation Higher Secondary School"
+      }
+    },
+    {
+      "id": "way/134097190",
+      "name": "Ismail Rovuthar Street",
+      "category": "road",
+      "latitude": 10.9967449,
+      "longitude": 76.9621595,
+      "tags": {
+        "highway": "residential",
+        "name": "Ismail Rovuthar Street"
+      }
+    },
+    {
+      "id": "way/134137177",
+      "name": "Variety Hall Road",
+      "category": "road",
+      "latitude": 10.9978846,
+      "longitude": 76.9625151,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Variety Hall Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/155817946",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0021861,
+      "longitude": 76.9654029,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/172099892",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9971939,
+      "longitude": 76.9696838,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/241418557",
+      "name": "Sukrawarpettai Mill Road",
+      "category": "road",
+      "latitude": 11.0008884,
+      "longitude": 76.9605899,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Sukrawarpettai Mill Road",
+        "ref": "NH948",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/293066642",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0024229,
+      "longitude": 76.9634161,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/293066646",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0008439,
+      "longitude": 76.9631771,
+      "tags": {
+        "highway": "secondary_link",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/293066647",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0014769,
+      "longitude": 76.9627283,
+      "tags": {
+        "highway": "secondary_link",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/293066649",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0013119,
+      "longitude": 76.9620317,
+      "tags": {
+        "highway": "secondary_link",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/293066650",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0008666,
+      "longitude": 76.9632081,
+      "tags": {
+        "highway": "secondary_link",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/293066651",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0012707,
+      "longitude": 76.9620389,
+      "tags": {
+        "highway": "secondary_link",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/293066652",
+      "name": "Krishnasamy Road",
+      "category": "road",
+      "latitude": 11.001698,
+      "longitude": 76.9633227,
+      "tags": {
+        "highway": "secondary",
+        "name": "Krishnasamy Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/373410449",
+      "name": "CSI(Church of South India) Boys Higher Secondary School",
+      "category": "education",
+      "latitude": 10.9968977,
+      "longitude": 76.9648158,
+      "tags": {
+        "addr:city": "coimbatore",
+        "addr:postcode": "641001",
+        "addr:street": "Ismail Street, town hall",
+        "amenity": "school",
+        "name": "CSI(Church of South India) Boys Higher Secondary School"
+      }
+    },
+    {
+      "id": "way/374742895",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9970681,
+      "longitude": 76.9617405,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/374742896",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9966542,
+      "longitude": 76.962744,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/374742900",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9974949,
+      "longitude": 76.9614002,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/374742901",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.997139,
+      "longitude": 76.9610467,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/374742904",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.996604,
+      "longitude": 76.9617225,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/374742906",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9988939,
+      "longitude": 76.9638656,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/374784185",
+      "name": "Unnamed Feature",
+      "category": "education",
+      "latitude": 10.996211,
+      "longitude": 76.9626716,
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "id": "way/374785143",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9996121,
+      "longitude": 76.9610809,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/374788801",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0011676,
+      "longitude": 76.9660294,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/374788802",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0012481,
+      "longitude": 76.9651711,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/374788803",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0033262,
+      "longitude": 76.9659633,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/377992176",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9985859,
+      "longitude": 76.9619777,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/377993519",
+      "name": "Coimbatore Medical College Hospital",
+      "category": "healthcare",
+      "latitude": 10.9964129,
+      "longitude": 76.9702365,
+      "tags": {
+        "addr:block": "Coimbatore Corpn",
+        "addr:district": "Coimbatore",
+        "addr:full": "D.No.173, Krishnasamy Road, Near Brookfield Mall, R.S Puram, Brook Band Road",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Coimbatore South",
+        "alt_name": "CMC Coimbatore",
+        "amenity": "hospital",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Coimbatore Medical College Hospital",
+        "name:ta": "\u0b95\u0bcb\u0bb5\u0bc8 \u0bae\u0bb0\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0bb5 \u0b95\u0bb2\u0bcd\u0bb2\u0bc2\u0bb0\u0bbf \u0bae\u0bb0\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0bb5\u0bae\u0ba9\u0bc8",
+        "source": "OpenGovernmentData",
+        "website": "https://www.cmccbe.ac.in/cmccbe/",
+        "wikidata": "Q5141507",
+        "wikipedia": "en:Coimbatore Medical College"
+      }
+    },
+    {
+      "id": "way/377995938",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.003178,
+      "longitude": 76.9678215,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/405604616",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9986495,
+      "longitude": 76.9647867,
+      "tags": {
+        "highway": "steps"
+      }
+    },
+    {
+      "id": "way/405604618",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9989598,
+      "longitude": 76.9651602,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1"
+      }
+    },
+    {
+      "id": "way/405604619",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9961224,
+      "longitude": 76.9678249,
+      "tags": {
+        "covered": "yes",
+        "highway": "footway",
+        "layer": "-1"
+      }
+    },
+    {
+      "id": "way/405629516",
+      "name": "Huzur Road",
+      "category": "road",
+      "latitude": 11.0016621,
+      "longitude": 76.9706907,
+      "tags": {
+        "highway": "secondary",
+        "name": "Huzur Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/405629519",
+      "name": "Huzur Road",
+      "category": "road",
+      "latitude": 11.000356,
+      "longitude": 76.96851,
+      "tags": {
+        "highway": "secondary",
+        "name": "Huzur Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/405629529",
+      "name": "Krishnasamy Road",
+      "category": "road",
+      "latitude": 11.0018221,
+      "longitude": 76.9632204,
+      "tags": {
+        "highway": "secondary",
+        "name": "Krishnasamy Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/405629530",
+      "name": "Old Post Office Road",
+      "category": "road",
+      "latitude": 11.0000992,
+      "longitude": 76.9677195,
+      "tags": {
+        "highway": "secondary",
+        "name": "Old Post Office Road",
+        "official_name": "Imperial Bank Road",
+        "oneway": "yes",
+        "ref": "MDR125"
+      }
+    },
+    {
+      "id": "way/405629532",
+      "name": "State Bank Road",
+      "category": "road",
+      "latitude": 10.9973983,
+      "longitude": 76.9685523,
+      "tags": {
+        "highway": "secondary",
+        "name": "State Bank Road",
+        "official_name": "Imperial Bank Road",
+        "oneway": "yes",
+        "ref": "MDR125"
+      }
+    },
+    {
+      "id": "way/405629534",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0011588,
+      "longitude": 76.9691973,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/405629538",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.002331,
+      "longitude": 76.9683155,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/405629540",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0016806,
+      "longitude": 76.9687057,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/405629544",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0009504,
+      "longitude": 76.9693319,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/405629545",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0008433,
+      "longitude": 76.9694854,
+      "tags": {
+        "highway": "secondary_link",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/415419918",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9953163,
+      "longitude": 76.9665626,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/415421216",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0024741,
+      "longitude": 76.9619211,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/415421217",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9963622,
+      "longitude": 76.9653679,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/598058530",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0016872,
+      "longitude": 76.9658535,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/598058531",
+      "name": "State Bank Road",
+      "category": "road",
+      "latitude": 10.9973608,
+      "longitude": 76.968102,
+      "tags": {
+        "highway": "secondary",
+        "name": "State Bank Road",
+        "official_name": "Imperial Bank Road",
+        "oneway": "yes",
+        "ref": "MDR125"
+      }
+    },
+    {
+      "id": "way/598058533",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9986975,
+      "longitude": 76.9673677,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/598058534",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0001219,
+      "longitude": 76.9679122,
+      "tags": {
+        "highway": "secondary",
+        "official_name": "Imperial Bank Road",
+        "oneway": "yes",
+        "ref": "MDR125"
+      }
+    },
+    {
+      "id": "way/598058535",
+      "name": "Old Post Office Road",
+      "category": "road",
+      "latitude": 11.0001575,
+      "longitude": 76.9677199,
+      "tags": {
+        "highway": "secondary",
+        "name": "Old Post Office Road",
+        "official_name": "Imperial Bank Road",
+        "oneway": "yes",
+        "ref": "MDR125"
+      }
+    },
+    {
+      "id": "way/598058536",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0001922,
+      "longitude": 76.9681261,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/598058537",
+      "name": "Old Post Office Road",
+      "category": "road",
+      "latitude": 11.0012446,
+      "longitude": 76.9672065,
+      "tags": {
+        "highway": "secondary",
+        "name": "Old Post Office Road",
+        "official_name": "Imperial Bank Road",
+        "oneway": "yes",
+        "ref": "MDR125"
+      }
+    },
+    {
+      "id": "way/598058538",
+      "name": "Huzur Road",
+      "category": "road",
+      "latitude": 11.0003538,
+      "longitude": 76.9683414,
+      "tags": {
+        "highway": "secondary",
+        "name": "Huzur Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/621874764",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9980149,
+      "longitude": 76.9691644,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/671975741",
+      "name": "Avinashi Road Railway Flyover",
+      "category": "road",
+      "latitude": 11.0018902,
+      "longitude": 76.9647811,
+      "tags": {
+        "alt_name": "Avinashi Road",
+        "bridge": "yes",
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "name": "Avinashi Road Railway Flyover",
+        "name:kn": "\u0c85\u0cb5\u0cbf\u0ca8\u0cbe\u0cb6\u0cbf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6 \u0cb0\u0cc8\u0cb2\u0ccd\u0cb5\u0cc6 \u0cae\u0cc7\u0cb2\u0ccd\u0cb8\u0cc7\u0ca4\u0cc1\u0cb5\u0cc6",
+        "name:ta": "\u0b85\u0bb5\u0bbf\u0ba8\u0bbe\u0b9a\u0bbf \u0bb0\u0bcb\u0b9f\u0bc1 \u0bb0\u0baf\u0bbf\u0bb2\u0bcd\u0bb5\u0bc7 \u0bae\u0bc7\u0bae\u0bcd\u0baa\u0bbe\u0bb2\u0bae\u0bcd",
+        "oneway": "yes",
+        "ref": "NH948",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/744210349",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9963954,
+      "longitude": 76.967787,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/744210350",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9957968,
+      "longitude": 76.9681046,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/744210351",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9957681,
+      "longitude": 76.968104,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/744222715",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9980894,
+      "longitude": 76.9676748,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/744229307",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9990009,
+      "longitude": 76.9688343,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/744229308",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9997573,
+      "longitude": 76.968755,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/744229820",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9996237,
+      "longitude": 76.9674091,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/744229821",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9994383,
+      "longitude": 76.9673547,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/842246921",
+      "name": "Dr Nanjappa Road",
+      "category": "road",
+      "latitude": 11.0051396,
+      "longitude": 76.9667602,
+      "tags": {
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Dr Nanjappa Road",
+        "name:kn": "\u0ca1\u0cbe \u0ca8\u0c82\u0c9c\u0caa\u0ccd\u0caa \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "name:ta": "\u0b9f\u0bbe\u0b95\u0bcd\u0b9f\u0bb0\u0bcd \u0ba8\u0b9e\u0bcd\u0b9a\u0baa\u0bcd\u0baa\u0bbe \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "NH948",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/909509974",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9992879,
+      "longitude": 76.9695148,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/910687521",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0015966,
+      "longitude": 76.9680359,
+      "tags": {
+        "highway": "residential",
+        "layer": "-1"
+      }
+    },
+    {
+      "id": "way/910687522",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0016916,
+      "longitude": 76.9674137,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/910687523",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0014076,
+      "longitude": 76.9677602,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/910687524",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0017843,
+      "longitude": 76.9676225,
+      "tags": {
+        "highway": "residential",
+        "layer": "-1"
+      }
+    },
+    {
+      "id": "way/910687525",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0018765,
+      "longitude": 76.9671528,
+      "tags": {
+        "highway": "residential",
+        "layer": "-1"
+      }
+    },
+    {
+      "id": "way/910711556",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0002609,
+      "longitude": 76.960392,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/910711557",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9999908,
+      "longitude": 76.9604047,
+      "tags": {
+        "highway": "living_street"
+      }
+    },
+    {
+      "id": "way/914542950",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0019932,
+      "longitude": 76.9614239,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/993568893",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9952102,
+      "longitude": 76.965188,
+      "tags": {
+        "highway": "service",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/993568922",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0022797,
+      "longitude": 76.9677526,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/993571710",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0004823,
+      "longitude": 76.9679656,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/993571711",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0006112,
+      "longitude": 76.9685145,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/993577213",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9974273,
+      "longitude": 76.964036,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/993577214",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9976292,
+      "longitude": 76.9620591,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1046572038",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0021461,
+      "longitude": 76.9654785,
+      "tags": {
+        "highway": "unclassified",
+        "oneway": "no"
+      }
+    },
+    {
+      "id": "way/1054205836",
+      "name": "Krishnasamy Road",
+      "category": "road",
+      "latitude": 11.0039934,
+      "longitude": 76.9624094,
+      "tags": {
+        "highway": "secondary",
+        "name": "Krishnasamy Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1069477306",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0000543,
+      "longitude": 76.9699475,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1089379753",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9983257,
+      "longitude": 76.9641511,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1089379754",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9985165,
+      "longitude": 76.964468,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1095596361",
+      "name": "Avinashi Road Railway Flyover",
+      "category": "road",
+      "latitude": 11.0023383,
+      "longitude": 76.9667083,
+      "tags": {
+        "alt_name": "Salem - Cochin - Kanniyakumari Road (Old NH47)",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Avinashi Road Railway Flyover",
+        "name:kn": "\u0c85\u0cb5\u0cbf\u0ca8\u0cbe\u0cb6\u0cbf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6 \u0cb0\u0cc8\u0cb2\u0ccd\u0cb5\u0cc6 \u0cae\u0cc7\u0cb2\u0ccd\u0cb8\u0cc7\u0ca4\u0cc1\u0cb5\u0cc6",
+        "name:ta": "\u0b85\u0bb5\u0bbf\u0ba8\u0bbe\u0b9a\u0bbf \u0bb0\u0bcb\u0b9f\u0bc1 \u0bb0\u0baf\u0bbf\u0bb2\u0bcd\u0bb5\u0bc7 \u0bae\u0bc7\u0bae\u0bcd\u0baa\u0bbe\u0bb2\u0bae\u0bcd",
+        "oneway": "yes",
+        "ref": "SHU52",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1102562550",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0002314,
+      "longitude": 76.9620714,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1112179727",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0019505,
+      "longitude": 76.9687795,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1124976978",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9954631,
+      "longitude": 76.9667542,
+      "tags": {
+        "covered": "yes",
+        "highway": "footway",
+        "layer": "-1"
+      }
+    },
+    {
+      "id": "way/1124976979",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9957567,
+      "longitude": 76.9672607,
+      "tags": {
+        "covered": "yes",
+        "highway": "footway",
+        "layer": "-1",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "id": "way/1175899039",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9953828,
+      "longitude": 76.9666165,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1177922973",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9959051,
+      "longitude": 76.9675278,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1177922974",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.995779,
+      "longitude": 76.9673109,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1208983190",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0008584,
+      "longitude": 76.967591,
+      "tags": {
+        "highway": "residential",
+        "layer": "-1"
+      }
+    },
+    {
+      "id": "way/1213001530",
+      "name": "Huzur Road",
+      "category": "road",
+      "latitude": 11.0006545,
+      "longitude": 76.9691129,
+      "tags": {
+        "highway": "secondary",
+        "name": "Huzur Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1213001531",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0007555,
+      "longitude": 76.9695465,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1213001532",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0009197,
+      "longitude": 76.969561,
+      "tags": {
+        "highway": "secondary_link",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1213001533",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0008281,
+      "longitude": 76.9696302,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1213001534",
+      "name": "Huzur Road",
+      "category": "road",
+      "latitude": 11.0005905,
+      "longitude": 76.9691488,
+      "tags": {
+        "highway": "secondary",
+        "name": "Huzur Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1227932033",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9985604,
+      "longitude": 76.9641513,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1230303883",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.001119,
+      "longitude": 76.9683804,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1230303884",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0008496,
+      "longitude": 76.968772,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1230306121",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9999506,
+      "longitude": 76.967254,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1231051214",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0027303,
+      "longitude": 76.9676773,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1231051215",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0033954,
+      "longitude": 76.9675234,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1231052264",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0030892,
+      "longitude": 76.9676543,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1237978354",
+      "name": "Avinashi Road",
+      "category": "road",
+      "latitude": 11.0025426,
+      "longitude": 76.967498,
+      "tags": {
+        "alt_name": "Salem - Cochin - Kanniyakumari Road (Old NH47)",
+        "highway": "primary",
+        "lanes": "2",
+        "name": "Avinashi Road",
+        "name:ta": "\u0b85\u0bb5\u0bbf\u0ba8\u0bbe\u0b9a\u0bbf \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "SHU52",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1239432248",
+      "name": "Huzur Road",
+      "category": "road",
+      "latitude": 11.0007988,
+      "longitude": 76.9698585,
+      "tags": {
+        "highway": "secondary",
+        "name": "Huzur Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1239432402",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0026098,
+      "longitude": 76.9657235,
+      "tags": {
+        "highway": "unclassified",
+        "motor_vehicle": "no"
+      }
+    },
+    {
+      "id": "way/1271461292",
+      "name": "Dr Nanjappa Road",
+      "category": "road",
+      "latitude": 11.0032389,
+      "longitude": 76.9665548,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Dr Nanjappa Road",
+        "name:kn": "\u0ca1\u0cbe \u0ca8\u0c82\u0c9c\u0caa\u0ccd\u0caa \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "name:ta": "\u0b9f\u0bbe\u0b95\u0bcd\u0b9f\u0bb0\u0bcd \u0ba8\u0b9e\u0bcd\u0b9a\u0baa\u0bcd\u0baa\u0bbe \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "NH948",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1296930925",
+      "name": "Avinashi Road",
+      "category": "road",
+      "latitude": 11.002398,
+      "longitude": 76.9667659,
+      "tags": {
+        "alt_name": "Salem - Cochin - Kanniyakumari Road (Old NH47)",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Avinashi Road",
+        "name:ta": "\u0b85\u0bb5\u0bbf\u0ba8\u0bbe\u0b9a\u0bbf \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "SHU52",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1306059255",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.996005,
+      "longitude": 76.9679925,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1306059256",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9957207,
+      "longitude": 76.9671234,
+      "tags": {
+        "highway": "steps",
+        "incline": "up",
+        "layer": "-1",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "id": "way/1306059257",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9958121,
+      "longitude": 76.9672906,
+      "tags": {
+        "highway": "steps",
+        "incline": "up",
+        "layer": "-1",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "id": "way/1306059258",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9959471,
+      "longitude": 76.9675005,
+      "tags": {
+        "highway": "steps",
+        "incline": "up",
+        "layer": "-1",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "id": "way/1306972974",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9953104,
+      "longitude": 76.9676116,
+      "tags": {
+        "access": "no",
+        "golf_cart": "private",
+        "hand_cart": "private",
+        "highway": "path",
+        "note": "Used for cargo loading and for transporting passengers with difficulty walking(Senior citizens,People with disabilities,etc) using battery vehicles to the entrances. Public access is strictly prohibited."
+      }
+    },
+    {
+      "id": "way/1306972975",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9952938,
+      "longitude": 76.9675383,
+      "tags": {
+        "access": "no",
+        "golf_cart": "private",
+        "hand_cart": "private",
+        "highway": "path",
+        "note": "Used for cargo loading and for transporting passengers with difficulty walking(Senior citizens,People with disabilities,etc) using battery vehicles to the entrances. Public access is strictly prohibited."
+      }
+    },
+    {
+      "id": "way/1306972976",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9952687,
+      "longitude": 76.9672269,
+      "tags": {
+        "access": "no",
+        "golf_cart": "private",
+        "hand_cart": "private",
+        "highway": "path",
+        "note": "Used for cargo loading and for transporting passengers with difficulty walking(Senior citizens,People with disabilities,etc) using battery vehicles to the entrances. Public access is strictly prohibited."
+      }
+    },
+    {
+      "id": "way/1306972977",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9954158,
+      "longitude": 76.9673758,
+      "tags": {
+        "access": "no",
+        "golf_cart": "private",
+        "hand_cart": "private",
+        "highway": "path",
+        "note": "Used for cargo loading and for transporting passengers with difficulty walking(Senior citizens,People with disabilities,etc) using battery vehicles to the entrances. Public access is strictly prohibited."
+      }
+    },
+    {
+      "id": "way/1306973176",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.99635,
+      "longitude": 76.9676057,
+      "tags": {
+        "conveying": "yes",
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "id": "way/1308557062",
+      "name": "Underpass",
+      "category": "road",
+      "latitude": 11.0018313,
+      "longitude": 76.9641503,
+      "tags": {
+        "highway": "secondary_link",
+        "layer": "-1",
+        "name": "Underpass",
+        "oneway": "no",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "id": "way/1316883070",
+      "name": "Avinashi Road Railway Flyover",
+      "category": "road",
+      "latitude": 11.0023855,
+      "longitude": 76.9666615,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "4",
+        "name": "Avinashi Road Railway Flyover",
+        "name:kn": "\u0c85\u0cb5\u0cbf\u0ca8\u0cbe\u0cb6\u0cbf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6 \u0cb0\u0cc8\u0cb2\u0ccd\u0cb5\u0cc6 \u0cae\u0cc7\u0cb2\u0ccd\u0cb8\u0cc7\u0ca4\u0cc1\u0cb5\u0cc6",
+        "name:ta": "\u0b85\u0bb5\u0bbf\u0ba8\u0bbe\u0b9a\u0bbf \u0bb0\u0bcb\u0b9f\u0bc1 \u0bb0\u0baf\u0bbf\u0bb2\u0bcd\u0bb5\u0bc7 \u0bae\u0bc7\u0bae\u0bcd\u0baa\u0bbe\u0bb2\u0bae\u0bcd",
+        "oneway": "yes",
+        "ref": "NH948",
+        "ref:old": "NH209"
+      }
+    },
+    {
+      "id": "way/1316883071",
+      "name": "Station Flyover",
+      "category": "road",
+      "latitude": 11.0012189,
+      "longitude": 76.9617547,
+      "tags": {
+        "alt_name": "Sukrawarpettai Mill Road",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Station Flyover",
+        "ref": "NH948",
+        "ref:old": "NH209",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1316883072",
+      "name": "Goods Shed Road Flyover",
+      "category": "road",
+      "latitude": 11.0003383,
+      "longitude": 76.963577,
+      "tags": {
+        "alt_name": "Goods Shed Road",
+        "highway": "secondary",
+        "name": "Goods Shed Road Flyover",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1327811949",
+      "name": "Underpass",
+      "category": "road",
+      "latitude": 11.0021421,
+      "longitude": 76.9654254,
+      "tags": {
+        "highway": "secondary_link",
+        "name": "Underpass",
+        "oneway": "no"
+      }
+    },
+    {
+      "id": "way/1327811950",
+      "name": "Underpass",
+      "category": "road",
+      "latitude": 11.0015121,
+      "longitude": 76.9628661,
+      "tags": {
+        "highway": "secondary_link",
+        "name": "Underpass",
+        "oneway": "no"
+      }
+    },
+    {
+      "id": "way/1328108719",
+      "name": "Avinashi Road",
+      "category": "road",
+      "latitude": 11.0026924,
+      "longitude": 76.9682457,
+      "tags": {
+        "alt_name": "Salem - Cochin - Kanniyakumari Road (Old NH47)",
+        "highway": "primary",
+        "lanes": "2",
+        "name": "Avinashi Road",
+        "name:ta": "\u0b85\u0bb5\u0bbf\u0ba8\u0bbe\u0b9a\u0bbf \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "opening_date": "2024-03-20",
+        "ref": "SHU52",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1338514040",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9950484,
+      "longitude": 76.9650987,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514044",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9959922,
+      "longitude": 76.9646774,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514045",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9962551,
+      "longitude": 76.9653034,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514046",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9962983,
+      "longitude": 76.965651,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514047",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9964961,
+      "longitude": 76.9647958,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514048",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9979308,
+      "longitude": 76.9639686,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514049",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9977307,
+      "longitude": 76.9649362,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514050",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9979694,
+      "longitude": 76.9647644,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514051",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9994094,
+      "longitude": 76.9632175,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514052",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9997654,
+      "longitude": 76.9633142,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514053",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9987461,
+      "longitude": 76.9621279,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514054",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9993414,
+      "longitude": 76.9608936,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514055",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9988424,
+      "longitude": 76.9617925,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514056",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9986455,
+      "longitude": 76.9618045,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514057",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9984251,
+      "longitude": 76.9621738,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514058",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9984213,
+      "longitude": 76.9617159,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514059",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9987491,
+      "longitude": 76.9615212,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514060",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9989864,
+      "longitude": 76.9617562,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338534552",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0010431,
+      "longitude": 76.9626701,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338534553",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0008923,
+      "longitude": 76.9627665,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338534554",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0008092,
+      "longitude": 76.9630148,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338534555",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0004592,
+      "longitude": 76.9631588,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338534556",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0002521,
+      "longitude": 76.965906,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338534557",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0009298,
+      "longitude": 76.9659601,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338534558",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0008366,
+      "longitude": 76.9650482,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338534559",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.997039,
+      "longitude": 76.9682806,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1340278107",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0038591,
+      "longitude": 76.9625322,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1341531136",
+      "name": "Avinashi Road",
+      "category": "road",
+      "latitude": 11.0026586,
+      "longitude": 76.9684749,
+      "tags": {
+        "alt_name": "Salem - Cochin - Kanniyakumari Road (Old NH47)",
+        "highway": "primary",
+        "lanes": "2",
+        "name": "Avinashi Road",
+        "name:ta": "\u0b85\u0bb5\u0bbf\u0ba8\u0bbe\u0b9a\u0bbf \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "SHU52",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1350085630",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0020592,
+      "longitude": 76.9654438,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1350085631",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0018379,
+      "longitude": 76.9640475,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1469170048",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9968044,
+      "longitude": 76.96896,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1536797488",
+      "name": "Avinashi Road",
+      "category": "road",
+      "latitude": 11.0028779,
+      "longitude": 76.9692093,
+      "tags": {
+        "alt_name": "Salem - Cochin - Kanniyakumari Road (Old NH47)",
+        "highway": "primary",
+        "lanes": "2",
+        "name": "Avinashi Road",
+        "name:ta": "\u0b85\u0bb5\u0bbf\u0ba8\u0bbe\u0b9a\u0bbf \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "opening_date": "2025-01-15",
+        "ref": "SHU52",
+        "surface": "asphalt"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2847 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-05T04:56:18Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 330070075,
+      "lat": 11.0089752,
+      "lon": 76.9578034,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Senthil Hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 330070077,
+      "lat": 11.0095256,
+      "lon": 76.9619316,
+      "tags": {
+        "addr:block": "Coimbatore Corpn",
+        "addr:district": "Coimbatore",
+        "addr:full": "Vivekananda Road, Ram Nagar, Coimbatore - 641009",
+        "addr:postcode": "641009",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Coimbatore South",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Dr. S. G. Rajarathinam Hospital",
+        "phone": "+914222236730",
+        "source": "OpenGovernmentData",
+        "website": "https://dr-sg-rajarathnam-hospital.business.site/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 343436818,
+      "lat": 11.0115779,
+      "lon": 76.9579425,
+      "tags": {
+        "amenity": "school",
+        "check_date": "2026-04-27",
+        "name": "Kikani Higher Secondary School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 343438055,
+      "lat": 11.0136837,
+      "lon": 76.9616315,
+      "tags": {
+        "amenity": "school",
+        "name": "Corporation Elementary School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 802528003,
+      "lat": 11.0121503,
+      "lon": 76.962482,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "north indian",
+        "name": "Delhi Sweet"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472205012,
+      "lat": 11.0129282,
+      "lon": 76.9609421,
+      "tags": {
+        "amenity": "school",
+        "name": "Suburban Higher Secondary School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3964515539,
+      "lat": 11.0098975,
+      "lon": 76.9635551,
+      "tags": {
+        "addr:city": "Coimbatore",
+        "addr:housenumber": "77",
+        "addr:postcode": "641009",
+        "addr:street": "Ansari Street",
+        "name": "Elite Furniture Mart",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4273581391,
+      "lat": 11.0064076,
+      "lon": 76.9606716,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Avin Store"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4470920289,
+      "lat": 11.008577,
+      "lon": 76.9563626,
+      "tags": {
+        "addr:block": "Coimbatore Corpn",
+        "addr:district": "Coimbatore",
+        "addr:full": "43, Sanmugam Road, Poo Market Bus Stop, Puthiyavan Nagar, Sukrawar Pettai, R.S. Puram, Rr Layout",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "addr:street": "Shanmugam Road",
+        "addr:street:ta": "\u0b9a\u0ba3\u0bcd\u0bae\u0bc1\u0b95\u0bae\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "addr:subdistrict": "Coimbatore South",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name:en": "Rex Ortho Hospital",
+        "name:ta": "\u0bb0\u0bc6\u0b95\u0bcd\u0bb8\u0bcd \u0b8e\u0bb2\u0bc1\u0bae\u0bcd\u0baa\u0bbf\u0baf\u0bb2\u0bcd \u0bae\u0bb0\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0bb5\u0bae\u0ba9\u0bc8",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4522573189,
+      "lat": 11.0129255,
+      "lon": 76.9613941,
+      "tags": {
+        "name:en": "Coimbatore sp office",
+        "office": "government"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4522573489,
+      "lat": 11.0129251,
+      "lon": 76.9614554,
+      "tags": {
+        "name:en": "Sp office",
+        "office": "government"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5274739821,
+      "lat": 11.00933,
+      "lon": 76.9576465,
+      "tags": {
+        "addr:housenumber": "1",
+        "addr:postcode": "641002",
+        "addr:street": "vcv road",
+        "name:en": "Krishna Bakery opp kovai briyani",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5274739921,
+      "lat": 11.0095508,
+      "lon": 76.9579603,
+      "tags": {
+        "addr:housenumber": "179B,",
+        "addr:postcode": "641002",
+        "addr:street": "vcv layout",
+        "name:en": "Safik Petti Shop",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5724054575,
+      "lat": 11.0088739,
+      "lon": 76.9593964,
+      "tags": {
+        "addr:housenumber": "67 - 71",
+        "addr:postcode": "641001",
+        "addr:street": "Dr Krishnasamy Mudaliyar Road, Puthiyavan Nagar, Sukrawar Pettai, Ram Nagar, Coimbatore, Tamil Nadu",
+        "air_conditioning": "yes",
+        "changing_table": "yes",
+        "check_date": "2026-05-28",
+        "contact:facebook": "BrookefieldsCBE",
+        "contact:instagram": "brookefieldscoimbatore",
+        "contact:twitter": "BrookefieldsCBE",
+        "currency:INR": "yes",
+        "description": "one of the shopping malls in Coimbatore.",
+        "level": "0",
+        "name": "Brookefields Mall",
+        "name:en": "Brookefields Mall",
+        "opening_hours": "10:30-22:30",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:upi": "yes",
+        "phone": "+91 928 1000 550",
+        "shop": "mall",
+        "toilets": "yes",
+        "toilets:wheelchair": "yes",
+        "website": "https://brookefields.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273268,
+      "lat": 11.00821,
+      "lon": 76.95994,
+      "tags": {
+        "brand": "Lifestyle",
+        "brand:wikidata": "Q6545496",
+        "level": "1",
+        "name": "Lifestyle",
+        "shop": "clothes",
+        "website": "https://lifestylestores.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273269,
+      "lat": 11.0078526,
+      "lon": 76.9604445,
+      "tags": {
+        "name": "Roasted Sand",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273270,
+      "lat": 11.0084502,
+      "lon": 76.9599287,
+      "tags": {
+        "name": "Tomy Hilfiger Store",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273271,
+      "lat": 11.0085823,
+      "lon": 76.9598585,
+      "tags": {
+        "brand": "Puma",
+        "brand:wikidata": "Q157064",
+        "name": "Puma",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273272,
+      "lat": 11.0085228,
+      "lon": 76.9596081,
+      "tags": {
+        "brand": "The Body Shop",
+        "brand:wikidata": "Q837851",
+        "brand:wikipedia": "en:The Body Shop",
+        "name": "The Body Shop",
+        "shop": "cosmetics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273273,
+      "lat": 11.0086829,
+      "lon": 76.9594792,
+      "tags": {
+        "name": "Zimson Watches",
+        "shop": "watches"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273274,
+      "lat": 11.0092991,
+      "lon": 76.9590316,
+      "tags": {
+        "name": "Sheriff Motors-Royal Enfield",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273275,
+      "lat": 11.0091483,
+      "lon": 76.9591776,
+      "tags": {
+        "name": "RMKV Silks",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273276,
+      "lat": 11.0090087,
+      "lon": 76.95928,
+      "tags": {
+        "brand": "Nike",
+        "brand:wikidata": "Q483915",
+        "brand:wikipedia": "en:Nike, Inc.",
+        "name": "Nike",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273277,
+      "lat": 11.009085,
+      "lon": 76.9594223,
+      "tags": {
+        "branch": "India",
+        "brand": "Vision Express",
+        "brand:wikidata": "Q7936150",
+        "brand:wikipedia": "en:Vision Express",
+        "name": "Vision Express",
+        "shop": "optician"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273278,
+      "lat": 11.0090496,
+      "lon": 76.9596878,
+      "tags": {
+        "brand": "Calvin Klein",
+        "brand:wikidata": "Q1068628",
+        "brand:wikipedia": "en:Calvin Klein (fashion house)",
+        "name": "Calvin Klein",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273279,
+      "lat": 11.0091669,
+      "lon": 76.9596404,
+      "tags": {
+        "name": "Tarangarts Golu Dolls",
+        "shop": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273280,
+      "lat": 11.0092284,
+      "lon": 76.9594886,
+      "tags": {
+        "name": "Reliance Trends",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273281,
+      "lat": 11.0095895,
+      "lon": 76.9588552,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "McDonald's",
+        "brand:pa": "\u0a2e\u0a48\u0a15\u0a21\u0a4b\u0a28\u0a32\u0a21\u2019\u0a1c\u0a3c",
+        "brand:ur": "\u0645\u06a9\u0688\u0648\u0646\u0644\u0688\u0632",
+        "brand:wikidata": "Q38076",
+        "brand:wikipedia": "en:McDonald's",
+        "brand:wikipedia:pa": "\u0a2e\u0a48\u0a15\u0a21\u0a4b\u0a28\u0a32\u0a21\u2019\u0a1c\u0a3c",
+        "brand:wikipedia:ur": "\u0645\u06a9\u0688\u0648\u0646\u0644\u0688\u0632",
+        "cuisine": "burger",
+        "indoor_seating": "yes",
+        "name": "McDonald's",
+        "name:pa": "\u0a2e\u0a48\u0a15\u0a21\u0a4b\u0a28\u0a32\u0a21\u2019\u0a1c\u0a3c",
+        "name:ur": "\u0645\u06a9\u0688\u0648\u0646\u0644\u0688\u0632",
+        "outdoor_seating": "no",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273282,
+      "lat": 11.0095504,
+      "lon": 76.9592042,
+      "tags": {
+        "branch": "Exclusive Store",
+        "brand": "Levi's",
+        "brand:wikidata": "Q127962",
+        "brand:wikipedia": "en:Levi Strauss & Co.",
+        "clothes": "denim;men;women",
+        "name": "Levi's",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6110273283,
+      "lat": 11.0099526,
+      "lon": 76.9591093,
+      "tags": {
+        "brand": "Allen Solly",
+        "brand:wikidata": "Q110036995",
+        "name": "Allen Solly",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6403573764,
+      "lat": 11.0088313,
+      "lon": 76.9594985,
+      "tags": {
+        "level": "3",
+        "name": "grasp",
+        "shop": "clothes",
+        "toilets": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6403575020,
+      "lat": 11.0089484,
+      "lon": 76.9596114,
+      "tags": {
+        "level": "3",
+        "name": "Classic Polo",
+        "second_hand": "no",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6403590387,
+      "lat": 11.0086869,
+      "lon": 76.9597238,
+      "tags": {
+        "brand": "Xiaomi",
+        "brand:wikidata": "Q1636958",
+        "brand:wikipedia": "en:Xiaomi",
+        "level": "0",
+        "name": "Xiaomi",
+        "operator": "xiaomi",
+        "shop": "mobile_phone",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6403593226,
+      "lat": 11.008764,
+      "lon": 76.9596835,
+      "tags": {
+        "brand": "Apple Store",
+        "brand:wikidata": "Q421253",
+        "brand:wikipedia": "en:Apple Store",
+        "level": "0",
+        "name": "Apple Store",
+        "operator": "iplanet",
+        "shop": "electronics",
+        "short_name": "Apple"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6886497234,
+      "lat": 11.0061691,
+      "lon": 76.9605938,
+      "tags": {
+        "addr:city": "Coimbatore",
+        "addr:district": "COIMBATORE",
+        "addr:full": "92, Syrian Church Road, RS Puram, Coimbatore",
+        "addr:postcode": "641001",
+        "addr:state": "Tamil Nadu",
+        "amenity": "blood_bank",
+        "contact:mobile": "097879 69099",
+        "contact:phone": "04226513322; 04226563322; 04222471824",
+        "email": "imabloodbankcbe@gmail.com",
+        "name": "IMA Rotary Midtown Mahaveer Blood Bank",
+        "opening_hours": "24/7",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "website": "https://www.ima-india.org/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6915000695,
+      "lat": 11.0116059,
+      "lon": 76.9606769,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "123, Sashtri Road, Ram Nagar",
+        "addr:postcode": "641009",
+        "addr:state": "Tamil Nadu",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Sri Meru Nursing Home, Coimbatore",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6935186143,
+      "lat": 11.010795,
+      "lon": 76.961735,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "90,Vivekananda Road,Senguptha Steet Junction,Ram Nagar",
+        "addr:postcode": "641007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Ponnammal Duraisamy Eye Clinic",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6936695107,
+      "lat": 11.0081878,
+      "lon": 76.9578948,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "5/25, Mattupalyam Road, Kavundampalyam",
+        "addr:postcode": "641030",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Dr K Padmavathy Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7831383485,
+      "lat": 11.0110299,
+      "lon": 76.9581433,
+      "tags": {
+        "name:en": "Mani Automobiles",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7844131964,
+      "lat": 11.0076298,
+      "lon": 76.9576345,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "Sukrawar Pettai, R S Puram",
+        "addr:postcode": "641011",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Vishnu Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7844131968,
+      "lat": 11.008405,
+      "lon": 76.956396,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "R S Puram, Coimbatore",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Rex Ortho Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7844131977,
+      "lat": 11.0081541,
+      "lon": 76.9578763,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "R S Puram, Coimbatore",
+        "addr:postcode": "641001",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Srigiri Ayurvedic Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7844131987,
+      "lat": 11.0065379,
+      "lon": 76.9600631,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "Sukrawar Pettai, R S Puram, Coimbatore",
+        "addr:postcode": "641001",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Seethalakshmi Maternity Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7844132016,
+      "lat": 11.008435,
+      "lon": 76.9580134,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "Hosimin Nagar",
+        "addr:postcode": "641043",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Mak Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27041519,
+      "center": {
+        "lat": 11.0081685,
+        "lon": 76.963302
+      },
+      "nodes": [
+        330059896,
+        330060129,
+        330059985,
+        330059894,
+        296413448
+      ],
+      "tags": {
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "unclassified",
+        "horse": "yes",
+        "name": "Chellappa Gounder Street, Katoor",
+        "oneway": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27041526,
+      "center": {
+        "lat": 11.0130744,
+        "lon": 76.9617194
+      },
+      "nodes": [
+        296412999,
+        296413084,
+        296413512,
+        330060315,
+        296412931
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Kalidas Road",
+        "name:etymology:wikidata": "Q7011",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27041528,
+      "center": {
+        "lat": 11.0140409,
+        "lon": 76.9615863
+      },
+      "nodes": [
+        296413155,
+        296413186,
+        330060287,
+        802057900,
+        9179378750,
+        9179378751,
+        296413416,
+        296413360
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Sathyamurthi Road"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27041529,
+      "center": {
+        "lat": 11.0138356,
+        "lon": 76.9633537
+      },
+      "nodes": [
+        296413372,
+        296413410,
+        330699431,
+        296413416,
+        296413084,
+        296413040,
+        330059858,
+        296413559,
+        296413562
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Balaji Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 27041532,
+      "center": {
+        "lat": 11.0099791,
+        "lon": 76.9616569
+      },
+      "nodes": [
+        296413448,
+        2166371149,
+        330059924,
+        9179430101,
+        330059879,
+        12377519466,
+        330059909,
+        330059664,
+        6801451634
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lit": "yes",
+        "name": "Vivekanada Road",
+        "name:etymology:wikidata": "Q47478",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980760,
+      "center": {
+        "lat": 11.0100209,
+        "lon": 76.9564977
+      },
+      "nodes": [
+        247680114,
+        330041148,
+        330041157,
+        1482456191,
+        11465245436,
+        330041185,
+        5660759951
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980761,
+      "center": {
+        "lat": 11.0093177,
+        "lon": 76.9568668
+      },
+      "nodes": [
+        330041198,
+        330041710,
+        5660759953
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980762,
+      "center": {
+        "lat": 11.0113769,
+        "lon": 76.9555528
+      },
+      "nodes": [
+        330041230,
+        6944547812,
+        6944547811,
+        330041054,
+        330041185
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980763,
+      "center": {
+        "lat": 11.011097,
+        "lon": 76.9560953
+      },
+      "nodes": [
+        330041260,
+        802037911,
+        330041157
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980764,
+      "center": {
+        "lat": 11.0057772,
+        "lon": 76.9596274
+      },
+      "nodes": [
+        247680125,
+        330041306,
+        330041596,
+        330041362
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980765,
+      "center": {
+        "lat": 11.005306,
+        "lon": 76.9584938
+      },
+      "nodes": [
+        330041306,
+        330041460,
+        330041468,
+        330041475,
+        330041612,
+        1482488709,
+        1482488708,
+        330041516,
+        1482488706,
+        3781597069,
+        1482488705,
+        9364877832
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980767,
+      "center": {
+        "lat": 11.007198,
+        "lon": 76.9578123
+      },
+      "nodes": [
+        330041516,
+        5564770371,
+        330041620,
+        330041362,
+        5564770370,
+        330041385,
+        330041744,
+        330044683,
+        330044642,
+        330041710
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980769,
+      "center": {
+        "lat": 11.0068167,
+        "lon": 76.9580276
+      },
+      "nodes": [
+        5660759964,
+        2966170558,
+        9179378728,
+        330041744,
+        2966170559,
+        2966170562,
+        2966170563,
+        247680142
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980822,
+      "center": {
+        "lat": 11.0079433,
+        "lon": 76.9570524
+      },
+      "nodes": [
+        330044626,
+        330044719
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29982695,
+      "center": {
+        "lat": 11.0120672,
+        "lon": 76.9647047
+      },
+      "nodes": [
+        330059842,
+        330059852,
+        330059858
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29982697,
+      "center": {
+        "lat": 11.0129516,
+        "lon": 76.9631543
+      },
+      "nodes": [
+        296413360,
+        330059876,
+        11629952798,
+        330059673,
+        296412999,
+        296413025,
+        296413029,
+        296413034,
+        296413037,
+        296413040,
+        296413041,
+        6801451635
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lit": "yes",
+        "name": "Sastri Road",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29982699,
+      "center": {
+        "lat": 11.0097396,
+        "lon": 76.9637284
+      },
+      "nodes": [
+        330059879,
+        802057878,
+        12375018419,
+        3964515540,
+        330059914,
+        293920874
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Ansari Street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29982705,
+      "center": {
+        "lat": 11.009321,
+        "lon": 76.9624078
+      },
+      "nodes": [
+        330059924,
+        330059932
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Ansari Street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29982709,
+      "center": {
+        "lat": 11.0105861,
+        "lon": 76.9630202
+      },
+      "nodes": [
+        330059960,
+        6801453077
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Ragan Street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29982715,
+      "center": {
+        "lat": 11.0061876,
+        "lon": 76.9640624
+      },
+      "nodes": [
+        330060129,
+        802528041,
+        2166371130,
+        330060146,
+        2166371127,
+        12377519445,
+        1482488711,
+        330060156,
+        330060161
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Mariappa Konnar Street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29982720,
+      "center": {
+        "lat": 11.0117675,
+        "lon": 76.9628978
+      },
+      "nodes": [
+        296413041,
+        330059628
+      ],
+      "tags": {
+        "highway": "unclassified",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29982721,
+      "center": {
+        "lat": 11.0145973,
+        "lon": 76.9599357
+      },
+      "nodes": [
+        296413424,
+        330060307,
+        2166371160,
+        330060279,
+        1481569587,
+        330060287
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29982724,
+      "center": {
+        "lat": 11.0122371,
+        "lon": 76.9602999
+      },
+      "nodes": [
+        330060315,
+        12375018402,
+        330060342
+      ],
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29982725,
+      "center": {
+        "lat": 11.0088323,
+        "lon": 76.9639676
+      },
+      "nodes": [
+        330060352,
+        330060400
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 62288294,
+      "center": {
+        "lat": 11.0059021,
+        "lon": 76.9568755
+      },
+      "nodes": [
+        330041385,
+        9179378727,
+        5660759967
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 62289816,
+      "center": {
+        "lat": 11.0059614,
+        "lon": 76.9586916
+      },
+      "nodes": [
+        330041385,
+        330041582,
+        330041596
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 66058397,
+      "center": {
+        "lat": 11.0092387,
+        "lon": 76.9639719
+      },
+      "nodes": [
+        330059971,
+        2166371151,
+        330059942
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Kalapan Street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 66117847,
+      "center": {
+        "lat": 11.0111289,
+        "lon": 76.9580937
+      },
+      "nodes": [
+        11998263627,
+        2966170594,
+        12377519472,
+        330041040,
+        2966170601,
+        330089040
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Sastri Road",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 66239975,
+      "center": {
+        "lat": 11.0078793,
+        "lon": 76.962953
+      },
+      "nodes": [
+        330060085,
+        802528041,
+        330060478,
+        1482488717,
+        2166371135,
+        1482488715,
+        1482488714,
+        2166371136,
+        2166371137,
+        2166371140,
+        330059891
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133368414,
+      "center": {
+        "lat": 11.0120123,
+        "lon": 76.9578529
+      },
+      "nodes": [
+        1468093959,
+        1468093957,
+        1468093981,
+        1468093960,
+        1468093976,
+        1468093959
+      ],
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 156225363,
+      "center": {
+        "lat": 11.0104858,
+        "lon": 76.9646384
+      },
+      "nodes": [
+        1444969366,
+        330059901,
+        12375018417,
+        12375018415,
+        6801458631
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Senguptha Street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206609405,
+      "center": {
+        "lat": 11.0067384,
+        "lon": 76.9628325
+      },
+      "nodes": [
+        2166371129,
+        2166371124,
+        12377519443,
+        12377519444
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "ESIC Staff Quarters",
+        "oneway": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206609406,
+      "center": {
+        "lat": 11.0069439,
+        "lon": 76.9625165
+      },
+      "nodes": [
+        2166371128,
+        2166371129
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "ESIC Staff Quarters",
+        "oneway": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206609407,
+      "center": {
+        "lat": 11.0069138,
+        "lon": 76.9620741
+      },
+      "nodes": [
+        1482488715,
+        2166371128,
+        2166371123
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "ESIC Staff Quarters",
+        "oneway": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206609413,
+      "center": {
+        "lat": 11.0086649,
+        "lon": 76.9624697
+      },
+      "nodes": [
+        2166371147,
+        2166371149
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206609416,
+      "center": {
+        "lat": 11.0072051,
+        "lon": 76.9629656
+      },
+      "nodes": [
+        2166371135,
+        2166371129
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206609417,
+      "center": {
+        "lat": 11.0069977,
+        "lon": 76.963453
+      },
+      "nodes": [
+        2166371129,
+        3781626105,
+        2166371130
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206609419,
+      "center": {
+        "lat": 11.0084601,
+        "lon": 76.9609112
+      },
+      "nodes": [
+        2166371150,
+        2166371148,
+        2166371146,
+        10031025827,
+        10031025828
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206609424,
+      "center": {
+        "lat": 11.0135978,
+        "lon": 76.9595784
+      },
+      "nodes": [
+        330060289,
+        2166371152,
+        296412935
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206609425,
+      "center": {
+        "lat": 11.0084863,
+        "lon": 76.9639579
+      },
+      "nodes": [
+        2166371141,
+        2166371142,
+        2166371145,
+        2166371147
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 255924992,
+      "center": {
+        "lat": 11.0125106,
+        "lon": 76.9593727
+      },
+      "nodes": [
+        296413448,
+        330059891,
+        330059889,
+        2166371150,
+        12377519460,
+        9179430104,
+        12377519464,
+        12377519462,
+        9929068469,
+        296412913,
+        296413047,
+        12375018403,
+        12375018401,
+        12375018397,
+        296412931,
+        12651678119,
+        296412935,
+        296413155,
+        12375018395,
+        7385861437,
+        330060309,
+        12375018393,
+        12375018390,
+        296412976,
+        296412987
+      ],
+      "tags": {
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "unclassified",
+        "horse": "yes",
+        "name": "Patel Road",
+        "oneway": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 293066627,
+      "center": {
+        "lat": 11.0080335,
+        "lon": 76.9590833
+      },
+      "nodes": [
+        2966170560,
+        2966170561,
+        2966170564,
+        2966170566,
+        2966170572,
+        2966170571,
+        2966170570,
+        2966170568,
+        3781597070,
+        2966170565,
+        2966170560
+      ],
+      "tags": {
+        "amenity": "school",
+        "name": "Devanga High School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 293066628,
+      "center": {
+        "lat": 11.0065012,
+        "lon": 76.9608422
+      },
+      "nodes": [
+        247680125,
+        9687959209,
+        13545992207
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Krishnasamy Road",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 293066631,
+      "center": {
+        "lat": 11.0110999,
+        "lon": 76.9582205
+      },
+      "nodes": [
+        12241608872,
+        12241608870,
+        2966170595,
+        2966170598,
+        9179430100,
+        2966170597,
+        2966170584
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Sastri Road",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 293066632,
+      "center": {
+        "lat": 11.0109303,
+        "lon": 76.9557135
+      },
+      "nodes": [
+        2966170585,
+        802037911,
+        11465245434,
+        330041054,
+        5660759948,
+        330041139
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Sastri Road"
+      }
+    },
+    {
+      "type": "way",
+      "id": 293066633,
+      "center": {
+        "lat": 11.0110143,
+        "lon": 76.9575916
+      },
+      "nodes": [
+        2966170584,
+        11998263643,
+        2966170576
+      ],
+      "tags": {
+        "highway": "secondary_link",
+        "name": "Sastri Road",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 393237822,
+      "center": {
+        "lat": 11.0101053,
+        "lon": 76.9645872
+      },
+      "nodes": [
+        330059901,
+        3964515540
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Ramar Koil Street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 478201314,
+      "center": {
+        "lat": 11.0138407,
+        "lon": 76.9605452
+      },
+      "nodes": [
+        330060287,
+        330060289
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 501930653,
+      "center": {
+        "lat": 11.0130129,
+        "lon": 76.9564796
+      },
+      "nodes": [
+        330041230,
+        4925734328
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 502561584,
+      "center": {
+        "lat": 11.0123159,
+        "lon": 76.9565189
+      },
+      "nodes": [
+        4929990953,
+        4929990954,
+        4929990955
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 581494298,
+      "center": {
+        "lat": 11.0112778,
+        "lon": 76.963723
+      },
+      "nodes": [
+        330059791,
+        12375018431,
+        293920905,
+        12375018425,
+        12375018423,
+        12375018421,
+        296413559,
+        330059628,
+        330059664
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Sastri Road"
+      }
+    },
+    {
+      "type": "way",
+      "id": 593359224,
+      "center": {
+        "lat": 11.007423,
+        "lon": 76.9570677
+      },
+      "nodes": [
+        5660759960,
+        330044719,
+        330044683,
+        3781597070
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Shanmuga Theatre Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 593359229,
+      "center": {
+        "lat": 11.0084198,
+        "lon": 76.9569785
+      },
+      "nodes": [
+        5660759956,
+        330044626,
+        330044642,
+        1436626240
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 651640776,
+      "center": {
+        "lat": 11.0078041,
+        "lon": 76.9617807
+      },
+      "nodes": [
+        6110273262,
+        6110273263,
+        6110273264,
+        6110273265,
+        6110273266,
+        6110273267,
+        6110273262
+      ],
+      "tags": {
+        "amenity": "school",
+        "name": "Seventh Day Adventist Matriculation School"
+      }
+    },
+    {
+      "type": "way",
+      "id": 725275277,
+      "center": {
+        "lat": 11.0153482,
+        "lon": 76.9612268
+      },
+      "nodes": [
+        6801442623,
+        802057900,
+        330059989,
+        2166371171,
+        2166371189,
+        1481154742
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "name": "Vivekanada Road",
+        "name:etymology:wikidata": "Q47478"
+      }
+    },
+    {
+      "type": "way",
+      "id": 725275278,
+      "center": {
+        "lat": 11.0134846,
+        "lon": 76.9613165
+      },
+      "nodes": [
+        6801442622,
+        6801442623
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "name": "Vivekanada Road",
+        "name:etymology:wikidata": "Q47478"
+      }
+    },
+    {
+      "type": "way",
+      "id": 725275641,
+      "center": {
+        "lat": 11.0125637,
+        "lon": 76.9613863
+      },
+      "nodes": [
+        6801464163,
+        9179378753,
+        296413512,
+        6801442622
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lit": "yes",
+        "name": "Vivekanada Road",
+        "name:etymology:wikidata": "Q47478",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 725276155,
+      "center": {
+        "lat": 11.0115048,
+        "lon": 76.960376
+      },
+      "nodes": [
+        6801451636,
+        12375018406,
+        1482488732,
+        330060342,
+        296413047,
+        1482488730
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lane_markings": "no",
+        "lit": "yes",
+        "name": "Sastri Road",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 725276156,
+      "center": {
+        "lat": 11.0117491,
+        "lon": 76.9614651
+      },
+      "nodes": [
+        6801451635,
+        296413534,
+        6801451636
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lit": "yes",
+        "name": "Sastri Road",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 725276157,
+      "center": {
+        "lat": 11.0117582,
+        "lon": 76.9614513
+      },
+      "nodes": [
+        6801451634,
+        296413534,
+        6801464163
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lit": "yes",
+        "name": "Vivekanada Road",
+        "name:etymology:wikidata": "Q47478",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 725276973,
+      "center": {
+        "lat": 11.0093437,
+        "lon": 76.9630972
+      },
+      "nodes": [
+        6801453077,
+        802057878,
+        330059932,
+        330059971,
+        330060400,
+        2166371147,
+        330059985
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Ragan Street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 725277463,
+      "center": {
+        "lat": 11.0106652,
+        "lon": 76.9617473
+      },
+      "nodes": [
+        6801458630,
+        12375018414,
+        330059960,
+        12375018411,
+        12375018409,
+        330059909,
+        12375018407,
+        296412913
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Senguptha Street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 725277464,
+      "center": {
+        "lat": 11.0105861,
+        "lon": 76.9633555
+      },
+      "nodes": [
+        6801458631,
+        296413562,
+        6801458630
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Senguptha Street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 740646248,
+      "center": {
+        "lat": 11.0128979,
+        "lon": 76.962954
+      },
+      "nodes": [
+        6934271105,
+        6934271104,
+        6934271103,
+        6934271102,
+        6934271105
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "M. V. Eye Care Centre"
+      }
+    },
+    {
+      "type": "way",
+      "id": 742068531,
+      "center": {
+        "lat": 11.0089559,
+        "lon": 76.9594277
+      },
+      "nodes": [
+        9687959210,
+        6947179771,
+        6947179770,
+        6947179769,
+        6947179768,
+        6947179767,
+        6947179766,
+        6947179765,
+        6947179771
+      ],
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 789985242,
+      "center": {
+        "lat": 11.0142582,
+        "lon": 76.9593786
+      },
+      "nodes": [
+        296413426,
+        296413186
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 993568918,
+      "center": {
+        "lat": 11.0062955,
+        "lon": 76.9569809
+      },
+      "nodes": [
+        9179378727,
+        9179378728
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 993568928,
+      "center": {
+        "lat": 11.0124546,
+        "lon": 76.9617111
+      },
+      "nodes": [
+        9179378753,
+        9179378754
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 993577215,
+      "center": {
+        "lat": 11.0107106,
+        "lon": 76.9585745
+      },
+      "nodes": [
+        9179430098,
+        9179430099,
+        9179430100
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 993577216,
+      "center": {
+        "lat": 11.0093404,
+        "lon": 76.9613593
+      },
+      "nodes": [
+        9179430101,
+        9179430102,
+        9179430103,
+        9179430104
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1054205836,
+      "center": {
+        "lat": 11.0039934,
+        "lon": 76.9624094
+      },
+      "nodes": [
+        247680125,
+        247680131,
+        12397777504,
+        12397777517,
+        12397777518,
+        12397777516,
+        2966170552,
+        2966170549,
+        330060271,
+        2966170544
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Krishnasamy Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1054205837,
+      "center": {
+        "lat": 11.0121759,
+        "lon": 76.9560981
+      },
+      "nodes": [
+        6944547815,
+        330041230,
+        330041260,
+        4929990953,
+        12377519468,
+        11998263645
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Krishnasamy Road",
+        "oneway": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1054205838,
+      "center": {
+        "lat": 11.0110014,
+        "lon": 76.9567829
+      },
+      "nodes": [
+        2966170589,
+        2966170588,
+        2966170583,
+        2966170585
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Sastri Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1054205839,
+      "center": {
+        "lat": 11.0090452,
+        "lon": 76.9588854
+      },
+      "nodes": [
+        11998263628,
+        9687959210,
+        9687959213,
+        9698193192,
+        11365695779,
+        11365695786
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lit": "yes",
+        "oneway": "yes",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1054205840,
+      "center": {
+        "lat": 11.0071439,
+        "lon": 76.9603843
+      },
+      "nodes": [
+        247680142,
+        9687959216
+      ],
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1055460321,
+      "center": {
+        "lat": 11.0077369,
+        "lon": 76.9600362
+      },
+      "nodes": [
+        6947179769,
+        9698193192
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1083459818,
+      "center": {
+        "lat": 11.0105168,
+        "lon": 76.9598983
+      },
+      "nodes": [
+        9929068469,
+        9929068470
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1190165372,
+      "center": {
+        "lat": 11.0055065,
+        "lon": 76.9594485
+      },
+      "nodes": [
+        330041612,
+        11050945478,
+        330041596
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1225590818,
+      "center": {
+        "lat": 11.0074666,
+        "lon": 76.9603674
+      },
+      "nodes": [
+        11365695779,
+        11365695787,
+        11365695780,
+        11365695781,
+        11365695782
+      ],
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1225590819,
+      "center": {
+        "lat": 11.0073946,
+        "lon": 76.9604606
+      },
+      "nodes": [
+        11365695782,
+        11365695783,
+        11365695784,
+        11365695785,
+        11365695788,
+        11365695786
+      ],
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1235146655,
+      "center": {
+        "lat": 11.0104176,
+        "lon": 76.9558909
+      },
+      "nodes": [
+        11465245434,
+        11465245435,
+        11465245436
+      ],
+      "tags": {
+        "highway": "living_street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1251096265,
+      "center": {
+        "lat": 11.0136909,
+        "lon": 76.9610313
+      },
+      "nodes": [
+        11629954001,
+        11629937765,
+        11629925945,
+        11629953712,
+        11629954328,
+        11629953394,
+        11629954043,
+        11629954001
+      ],
+      "tags": {
+        "amenity": "school",
+        "building": "yes",
+        "education": "school",
+        "name": "Coporation Girls Higher Secondary School",
+        "source": "microsoft/BuildingFootprints"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1294647153,
+      "center": {
+        "lat": 11.0110362,
+        "lon": 76.9568058
+      },
+      "nodes": [
+        2966170585,
+        2966170590,
+        2966170591,
+        11998263647
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Sastri Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1294647154,
+      "center": {
+        "lat": 11.0109639,
+        "lon": 76.9573692
+      },
+      "nodes": [
+        11998263627,
+        11998263640,
+        11998263639,
+        2966170576,
+        11998263638,
+        11998263637,
+        11998263636,
+        11998263628,
+        11998263635,
+        11998263634,
+        11998263648,
+        11998263633,
+        11998263632,
+        802102034,
+        11998263649,
+        11998263631,
+        11998263630,
+        11998263629,
+        11998263642,
+        11998263641,
+        11998263627
+      ],
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1294647155,
+      "center": {
+        "lat": 11.0112011,
+        "lon": 76.9570217
+      },
+      "nodes": [
+        11998263645,
+        11998263646,
+        11998263647,
+        11998263631
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Krishnasamy Road",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1294647156,
+      "center": {
+        "lat": 11.0111561,
+        "lon": 76.9570143
+      },
+      "nodes": [
+        802102034,
+        2966170589,
+        2966170591,
+        11998263644,
+        11998263645
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Krishnasamy Road",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1322929094,
+      "center": {
+        "lat": 11.0112283,
+        "lon": 76.959129
+      },
+      "nodes": [
+        2966170602,
+        12241608871,
+        12241608873,
+        330089329,
+        12241608875,
+        1482488730
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Sastri Road",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1322929095,
+      "center": {
+        "lat": 11.0111586,
+        "lon": 76.9588127
+      },
+      "nodes": [
+        330089040,
+        2966170600,
+        2966170602
+      ],
+      "tags": {
+        "highway": "secondary",
+        "layer": "-1",
+        "name": "Sastri Road Underpass",
+        "oneway": "yes",
+        "surface": "asphalt",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1322929096,
+      "center": {
+        "lat": 11.0112143,
+        "lon": 76.9591413
+      },
+      "nodes": [
+        1482488730,
+        12241608874,
+        2966170604,
+        2966170599
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Sastri Road",
+        "oneway": "yes",
+        "sidewalk": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1322929097,
+      "center": {
+        "lat": 11.011127,
+        "lon": 76.9588428
+      },
+      "nodes": [
+        2966170599,
+        2966170596,
+        12241608872
+      ],
+      "tags": {
+        "highway": "secondary",
+        "layer": "-1",
+        "name": "Sastri Road Underpass",
+        "oneway": "yes",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852621,
+      "center": {
+        "lat": 11.0139419,
+        "lon": 76.9581608
+      },
+      "nodes": [
+        12375018395,
+        12375018396
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852622,
+      "center": {
+        "lat": 11.0127697,
+        "lon": 76.9589261
+      },
+      "nodes": [
+        12375018397,
+        12375018398,
+        12375018399,
+        12375018400
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852623,
+      "center": {
+        "lat": 11.0122568,
+        "lon": 76.9598354
+      },
+      "nodes": [
+        12375018401,
+        12375018402
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852624,
+      "center": {
+        "lat": 11.0118253,
+        "lon": 76.9592283
+      },
+      "nodes": [
+        12375018403,
+        12375018404
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852625,
+      "center": {
+        "lat": 11.0118437,
+        "lon": 76.9610438
+      },
+      "nodes": [
+        12375018405,
+        12375018406
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852626,
+      "center": {
+        "lat": 11.0108895,
+        "lon": 76.9611824
+      },
+      "nodes": [
+        12375018407,
+        12375018408
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852627,
+      "center": {
+        "lat": 11.0107701,
+        "lon": 76.9620494
+      },
+      "nodes": [
+        12375018409,
+        12375018410
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852628,
+      "center": {
+        "lat": 11.0108054,
+        "lon": 76.9627269
+      },
+      "nodes": [
+        12375018411,
+        12375018412
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852629,
+      "center": {
+        "lat": 11.0107853,
+        "lon": 76.9631218
+      },
+      "nodes": [
+        12375018413,
+        12375018414
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852630,
+      "center": {
+        "lat": 11.010729,
+        "lon": 76.9638831
+      },
+      "nodes": [
+        12375018415,
+        12375018416
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852631,
+      "center": {
+        "lat": 11.010376,
+        "lon": 76.9641386
+      },
+      "nodes": [
+        12375018417,
+        12375018418
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852632,
+      "center": {
+        "lat": 11.0099065,
+        "lon": 76.9638748
+      },
+      "nodes": [
+        12375018419,
+        12375018420
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852633,
+      "center": {
+        "lat": 11.0116484,
+        "lon": 76.9637298
+      },
+      "nodes": [
+        12375018421,
+        12375018422
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852634,
+      "center": {
+        "lat": 11.0115515,
+        "lon": 76.9639497
+      },
+      "nodes": [
+        12375018423,
+        12375018424
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1337852635,
+      "center": {
+        "lat": 11.011188,
+        "lon": 76.9641348
+      },
+      "nodes": [
+        12375018425,
+        12375018426
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338144772,
+      "center": {
+        "lat": 11.0089041,
+        "lon": 76.9607837
+      },
+      "nodes": [
+        12377519460,
+        12377519461
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338144773,
+      "center": {
+        "lat": 11.0100738,
+        "lon": 76.9601756
+      },
+      "nodes": [
+        12377519462,
+        12377519463
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338144774,
+      "center": {
+        "lat": 11.0097961,
+        "lon": 76.9605595
+      },
+      "nodes": [
+        12377519464,
+        12377519465
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338144775,
+      "center": {
+        "lat": 11.0098723,
+        "lon": 76.9614596
+      },
+      "nodes": [
+        12377519466,
+        12377519467
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338144776,
+      "center": {
+        "lat": 11.011555,
+        "lon": 76.9570494
+      },
+      "nodes": [
+        12377519468,
+        12377519469
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338144777,
+      "center": {
+        "lat": 11.0117723,
+        "lon": 76.9576452
+      },
+      "nodes": [
+        12377519470,
+        12377519471,
+        12377519472
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1366153914,
+      "center": {
+        "lat": 11.0132169,
+        "lon": 76.95841
+      },
+      "nodes": [
+        12651678113,
+        12651678114,
+        12651678115,
+        12651678116,
+        12651678117,
+        12651678118,
+        12651678119
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393551484,
+      "center": {
+        "lat": 11.0065236,
+        "lon": 76.9608875
+      },
+      "nodes": [
+        13545992208,
+        9687959214,
+        9687959215,
+        247680125
+      ],
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393551485,
+      "center": {
+        "lat": 11.0090278,
+        "lon": 76.9587813
+      },
+      "nodes": [
+        12901983359,
+        802102193,
+        330041198,
+        247680114,
+        11998263648
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lit": "yes",
+        "name": "Krishnasamy Road",
+        "oneway": "yes",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393551486,
+      "center": {
+        "lat": 11.0072158,
+        "lon": 76.9603883
+      },
+      "nodes": [
+        11365695786,
+        9687959216
+      ],
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1393838219,
+      "center": {
+        "lat": 11.0071711,
+        "lon": 76.9603014
+      },
+      "nodes": [
+        247680142,
+        12901983359
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Krishnasamy Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1476844017,
+      "center": {
+        "lat": 11.0070703,
+        "lon": 76.9603804
+      },
+      "nodes": [
+        13545992207,
+        247680142
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Krishnasamy Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1476844018,
+      "center": {
+        "lat": 11.0071169,
+        "lon": 76.9604682
+      },
+      "nodes": [
+        9687959216,
+        13545992208
+      ],
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes"
+      }
+    }
+  ]
+}

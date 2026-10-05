@@ -1,0 +1,5 @@
+lat,lon,population,population_density,residential_density,road_density,distance_to_major_road,total_businesses,has_restaurant,has_pharmacy,has_bank,has_grocery,has_clinic
+10.99,76.94,8685,8685.0,2171.25,145.0,248.81,19,1,0,1,1,0
+10.99,76.95,14088,14088.0,3522.0,121.0,250.27,5,0,0,0,0,1
+11.0,76.94,3186,3186.0,796.5,80.0,-1.0,1,0,0,0,0,0
+11.0,76.95,7479,7479.0,1869.75,88.0,10.99,23,1,1,1,0,1

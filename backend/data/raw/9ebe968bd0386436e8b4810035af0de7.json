@@ -1,0 +1,1478 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-05T06:05:16Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 370875072,
+      "lat": 11.4615786,
+      "lon": 78.1852495,
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Rasipuram",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3126649704,
+      "lat": 11.4619556,
+      "lon": 78.1854858,
+      "tags": {
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Rasipuram",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6886284730,
+      "lat": 11.4612082,
+      "lon": 78.1849249,
+      "tags": {
+        "addr:city": "Rasipuram",
+        "addr:district": "NAMAKKAL",
+        "addr:full": "Government Hospital, Rasipuram",
+        "addr:postcode": "637408",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "contact:mobile": "094435 03984",
+        "contact:phone": "4287222878",
+        "email": "cmorasipuram@gmail.com",
+        "healthcare": "hospital",
+        "name": "Government Hospital Blood Bank, Rasipuram",
+        "opening_hours": "24/7",
+        "operator:type": "government",
+        "source": "OpenGovernmentData",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7161554513,
+      "lat": 11.4615486,
+      "lon": 78.1851219,
+      "tags": {
+        "check_date:opening_hours": "2022-11-16",
+        "name": "krishna sweets&bakery",
+        "opening_hours": "Mo-Su 06:00-22:00",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "shop": "bakery",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7161554514,
+      "lat": 11.4619955,
+      "lon": 78.1849181,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "dr.thangavel dch hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7161554517,
+      "lat": 11.4622163,
+      "lon": 78.1840544,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "surya hospital"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7161554518,
+      "lat": 11.4624476,
+      "lon": 78.1831908,
+      "tags": {
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "check_date:opening_hours": "2023-06-10",
+        "name": "State Bank of India",
+        "opening_hours": "Mo-Sa 10:00-16:00",
+        "short_name": "SBI",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7262800435,
+      "lat": 11.4612987,
+      "lon": 78.1851369,
+      "tags": {
+        "addr:block": "Rasipuram Mpty",
+        "addr:district": "Namakkal",
+        "addr:full": "Rasipuram, Near Old Bus Stand",
+        "addr:postcode": "637408",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Rasipuram",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Government Hospital, Rasipuram",
+        "source": "OpenGovernmentData",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10244006726,
+      "lat": 11.4614488,
+      "lon": 78.1854848,
+      "tags": {
+        "bench": "no",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "name": "Rasipuram",
+        "public_transport": "platform",
+        "shelter": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 965361088,
+      "center": {
+        "lat": 11.4624391,
+        "lon": 78.1835093
+      },
+      "nodes": [
+        370875003,
+        11335110575,
+        370875010,
+        983581744,
+        11335059727,
+        370875017,
+        370875024,
+        983581806
+      ],
+      "tags": {
+        "highway": "primary",
+        "lane_markings": "no",
+        "lit": "no",
+        "maxspeed": "40",
+        "maxspeed:type": "sign",
+        "name": "Salem Main Rd",
+        "ref": "MDR402",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 965361089,
+      "center": {
+        "lat": 11.4657983,
+        "lon": 78.1785056
+      },
+      "nodes": [
+        370874958,
+        983581779,
+        370874967,
+        370874974,
+        8930544276,
+        370874978,
+        12336774236,
+        370874984,
+        11328713191,
+        8930544278,
+        8930544277,
+        370874988,
+        8930544279,
+        8930544275,
+        983581751
+      ],
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "maxspeed:type": "IN:rural",
+        "name": "Rasipuram - Attur Road",
+        "ref": "MDR402"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1013260866,
+      "center": {
+        "lat": 11.462938,
+        "lon": 78.1768606
+      },
+      "nodes": [
+        9348165332,
+        9348165371,
+        9348165372,
+        9348165373,
+        9348165374,
+        9348165375,
+        9348165376,
+        9348165377,
+        9348165378,
+        9348165379,
+        9348165380,
+        9348165381,
+        9348165382,
+        9348165383,
+        9348165384,
+        9348165385
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1120037756,
+      "center": {
+        "lat": 11.4615094,
+        "lon": 78.1854283
+      },
+      "nodes": [
+        10244006727,
+        10244006728,
+        10244006729,
+        10244006730,
+        10244006731,
+        10244006714,
+        10244006715,
+        10244006716,
+        10244006717,
+        10244006718,
+        10244006723,
+        10244006724,
+        10244006725,
+        10244006726,
+        10244006719,
+        10244006720,
+        10244006721,
+        370875080,
+        10244006722,
+        10244006727
+      ],
+      "tags": {
+        "highway": "primary",
+        "maxspeed": "30",
+        "name": "Rasipuram Roundabout",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1120037757,
+      "center": {
+        "lat": 11.4608943,
+        "lon": 78.1853639
+      },
+      "nodes": [
+        8828828451,
+        983581768,
+        370875080
+      ],
+      "tags": {
+        "highway": "primary",
+        "lane_markings": "no",
+        "name": "Salem Rd",
+        "oneway": "yes",
+        "ref": "MDR402",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1120037758,
+      "center": {
+        "lat": 11.4617184,
+        "lon": 78.1851283
+      },
+      "nodes": [
+        983581806,
+        10244006735,
+        10244006732,
+        10244006714
+      ],
+      "tags": {
+        "highway": "primary",
+        "lane_markings": "no",
+        "name": "Salem Main Road",
+        "oneway": "yes",
+        "ref": "MDR402",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1120037759,
+      "center": {
+        "lat": 11.4616779,
+        "lon": 78.1851013
+      },
+      "nodes": [
+        10244006728,
+        370875072,
+        10244006734,
+        10244006733,
+        983581806
+      ],
+      "tags": {
+        "highway": "primary",
+        "lane_markings": "no",
+        "name": "Salem Main Rd",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1120037760,
+      "center": {
+        "lat": 11.4601961,
+        "lon": 78.1850325
+      },
+      "nodes": [
+        10244006742,
+        10244006741,
+        10244006736
+      ],
+      "tags": {
+        "highway": "primary",
+        "lane_markings": "no",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1120037761,
+      "center": {
+        "lat": 11.4580913,
+        "lon": 78.1827177
+      },
+      "nodes": [
+        10244006736,
+        370877933,
+        11335110481,
+        370877937,
+        11335110484,
+        11335110488,
+        11335133685,
+        11335110494,
+        11335110497,
+        370877942,
+        11335110492,
+        11335084340,
+        370877950,
+        9608113163,
+        11335118223,
+        11335084325,
+        370877959,
+        10169179284,
+        370877984
+      ],
+      "tags": {
+        "highway": "primary",
+        "lit": "no",
+        "maxspeed": "40",
+        "maxspeed:type": "sign",
+        "name": "Mallikkarai - Rasipuram - Thiruchengode - Erode Road",
+        "ref": "SH79",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1120037762,
+      "center": {
+        "lat": 11.4602712,
+        "lon": 78.1850347
+      },
+      "nodes": [
+        10244006736,
+        10244006740,
+        8828828451
+      ],
+      "tags": {
+        "highway": "primary",
+        "lane_markings": "no",
+        "lit": "no",
+        "maxspeed": "20",
+        "maxspeed:type": "sign",
+        "name": "Mallikkarai - Rasipuram - Thiruchengode - Erode Road",
+        "oneway": "yes",
+        "ref": "SH79",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1120037763,
+      "center": {
+        "lat": 11.4608912,
+        "lon": 78.1854074
+      },
+      "nodes": [
+        10244006719,
+        10244006743,
+        10244006744,
+        10248214626,
+        10244006745,
+        8828828451
+      ],
+      "tags": {
+        "highway": "primary",
+        "lane_markings": "no",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1120495836,
+      "center": {
+        "lat": 11.4614778,
+        "lon": 78.1863178
+      },
+      "nodes": [
+        1858666586,
+        11335128886,
+        10244006723
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lane_markings": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1221475888,
+      "center": {
+        "lat": 11.4660303,
+        "lon": 78.1779493
+      },
+      "nodes": [
+        983581794,
+        11328713182,
+        11328713183,
+        11328713181,
+        11328713184,
+        11328713185,
+        11328713186,
+        11328713187,
+        11328713188,
+        11328713189,
+        11328713190,
+        11328713191
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1221972654,
+      "center": {
+        "lat": 11.4636141,
+        "lon": 78.1771119
+      },
+      "nodes": [
+        11332843299,
+        11332843298,
+        11332843297,
+        11332843296,
+        11332843295,
+        11332843294,
+        11332843290,
+        11332843291,
+        11332843292,
+        11332843293,
+        9348165374
+      ],
+      "tags": {
+        "highway": "service",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222149772,
+      "center": {
+        "lat": 11.4618828,
+        "lon": 78.1818699
+      },
+      "nodes": [
+        11335078427,
+        11335078428,
+        11335078429,
+        11335110577,
+        11335078430,
+        11335110576,
+        11335110572,
+        11335110573,
+        11335110574,
+        11335110575
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222149773,
+      "center": {
+        "lat": 11.4638309,
+        "lon": 78.1818966
+      },
+      "nodes": [
+        983581751,
+        370874991,
+        370874997,
+        370875003
+      ],
+      "tags": {
+        "highway": "primary",
+        "lane_markings": "no",
+        "lit": "no",
+        "maxspeed": "40",
+        "maxspeed:type": "sign",
+        "name": "Salem Main Rd",
+        "ref": "MDR402",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222149774,
+      "center": {
+        "lat": 11.4629004,
+        "lon": 78.181527
+      },
+      "nodes": [
+        370875003,
+        11335078431,
+        11335110571
+      ],
+      "tags": {
+        "highway": "service",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222149775,
+      "center": {
+        "lat": 11.4634328,
+        "lon": 78.1807344
+      },
+      "nodes": [
+        11335078436,
+        11335078435,
+        11335078437,
+        11335078433,
+        11335078434
+      ],
+      "tags": {
+        "highway": "service",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222149776,
+      "center": {
+        "lat": 11.4637421,
+        "lon": 78.1806431
+      },
+      "nodes": [
+        11335078437,
+        11335078438
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222149777,
+      "center": {
+        "lat": 11.4623002,
+        "lon": 78.1805093
+      },
+      "nodes": [
+        11335078467,
+        11335078432,
+        11335078439,
+        11335078440,
+        11335078451,
+        11335078441
+      ],
+      "tags": {
+        "highway": "service",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222149778,
+      "center": {
+        "lat": 11.4617031,
+        "lon": 78.1798093
+      },
+      "nodes": [
+        11335078440,
+        11335078442,
+        11335078443,
+        11335078444,
+        11335078445,
+        11335078446,
+        11335078447,
+        11335078448,
+        11335078449,
+        11335078450,
+        11335078451
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222149779,
+      "center": {
+        "lat": 11.4627727,
+        "lon": 78.1808377
+      },
+      "nodes": [
+        11335078463,
+        11335078464,
+        11335078465,
+        11335078466,
+        11335078467,
+        11335078468,
+        11335110569,
+        11335078452,
+        11335078453,
+        11335078456,
+        11335078457,
+        11335110570,
+        11335078458,
+        11335078459,
+        11335078460,
+        11335078461,
+        11335078462,
+        11335110571,
+        11335078454,
+        11335078455,
+        11335078463
+      ],
+      "tags": {
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222149780,
+      "center": {
+        "lat": 11.4628512,
+        "lon": 78.1808289
+      },
+      "nodes": [
+        11335078434,
+        11335110570
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222150465,
+      "center": {
+        "lat": 11.4606718,
+        "lon": 78.1828139
+      },
+      "nodes": [
+        11335078429,
+        11335059711,
+        11335059712,
+        11335059713,
+        11335059714,
+        11335059722,
+        11335059715,
+        11335059716,
+        11335110480,
+        11335059723,
+        11335059724,
+        370877933
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222150466,
+      "center": {
+        "lat": 11.4608637,
+        "lon": 78.181154
+      },
+      "nodes": [
+        11335059711,
+        11335059717
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222150467,
+      "center": {
+        "lat": 11.4605088,
+        "lon": 78.1810708
+      },
+      "nodes": [
+        11335059713,
+        11335059718
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222150469,
+      "center": {
+        "lat": 11.4604055,
+        "lon": 78.1818434
+      },
+      "nodes": [
+        11335059712,
+        11335059721,
+        11335059720,
+        11335059719,
+        11335059716
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222150470,
+      "center": {
+        "lat": 11.4609717,
+        "lon": 78.1830565
+      },
+      "nodes": [
+        11335059725,
+        11335059726,
+        11335059723
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222150471,
+      "center": {
+        "lat": 11.4622302,
+        "lon": 78.1832281
+      },
+      "nodes": [
+        11335059725,
+        11335059727
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222150472,
+      "center": {
+        "lat": 11.4616966,
+        "lon": 78.184152
+      },
+      "nodes": [
+        11335059725,
+        11335059728,
+        11335059731,
+        11335059730,
+        10244006734
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222150473,
+      "center": {
+        "lat": 11.460713,
+        "lon": 78.1827291
+      },
+      "nodes": [
+        11335078427,
+        11335059734,
+        11335059735,
+        11335059726
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151062,
+      "center": {
+        "lat": 11.4599797,
+        "lon": 78.1815327
+      },
+      "nodes": [
+        11335110476,
+        11335059715
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151063,
+      "center": {
+        "lat": 11.4594438,
+        "lon": 78.1814854
+      },
+      "nodes": [
+        11335110476,
+        11335110477
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151064,
+      "center": {
+        "lat": 11.459544,
+        "lon": 78.1825934
+      },
+      "nodes": [
+        11335110476,
+        11335110478,
+        370877937
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151065,
+      "center": {
+        "lat": 11.4598071,
+        "lon": 78.1825277
+      },
+      "nodes": [
+        11335110479,
+        11335110478,
+        11335110482,
+        11335110480
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151066,
+      "center": {
+        "lat": 11.4597572,
+        "lon": 78.1832238
+      },
+      "nodes": [
+        11335110481,
+        11335110483,
+        11335110482
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151067,
+      "center": {
+        "lat": 11.4592867,
+        "lon": 78.1829764
+      },
+      "nodes": [
+        11335110479,
+        11335110484
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151068,
+      "center": {
+        "lat": 11.459452,
+        "lon": 78.1821073
+      },
+      "nodes": [
+        11335110479,
+        11335110485,
+        11335110486
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151069,
+      "center": {
+        "lat": 11.4591671,
+        "lon": 78.1827563
+      },
+      "nodes": [
+        11335110485,
+        11335110487,
+        11335110488
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151070,
+      "center": {
+        "lat": 11.4583844,
+        "lon": 78.1816342
+      },
+      "nodes": [
+        11335110493,
+        11335110489,
+        11335110490,
+        11335110491,
+        11335110492
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151071,
+      "center": {
+        "lat": 11.4588637,
+        "lon": 78.1826221
+      },
+      "nodes": [
+        11335110494,
+        11335110495
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151072,
+      "center": {
+        "lat": 11.4585946,
+        "lon": 78.1825073
+      },
+      "nodes": [
+        11335110496,
+        11335110497
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151143,
+      "center": {
+        "lat": 11.4577224,
+        "lon": 78.180221
+      },
+      "nodes": [
+        11335118215,
+        11335118216,
+        11335118217,
+        11335118218,
+        11335118219,
+        11335118220,
+        11335118221,
+        11335118222,
+        11335118223
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151144,
+      "center": {
+        "lat": 11.459127,
+        "lon": 78.1793164
+      },
+      "nodes": [
+        11335118213,
+        11335118224,
+        11335118226,
+        11335118228,
+        11335118214,
+        11335118215
+      ],
+      "tags": {
+        "highway": "service",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151145,
+      "center": {
+        "lat": 11.4596225,
+        "lon": 78.1794991
+      },
+      "nodes": [
+        11335118224,
+        11335118225
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151146,
+      "center": {
+        "lat": 11.4592996,
+        "lon": 78.1794579
+      },
+      "nodes": [
+        11335118226,
+        11335118227
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151147,
+      "center": {
+        "lat": 11.4589393,
+        "lon": 78.1794318
+      },
+      "nodes": [
+        11335118228,
+        11335118229
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151521,
+      "center": {
+        "lat": 11.4632297,
+        "lon": 78.1840359
+      },
+      "nodes": [
+        11335120997,
+        11335120998,
+        11335120999,
+        11335121000,
+        11335121001,
+        11335121002,
+        370875017
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151522,
+      "center": {
+        "lat": 11.463381,
+        "lon": 78.1838376
+      },
+      "nodes": [
+        11335121001,
+        11335121003,
+        11335121004
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151523,
+      "center": {
+        "lat": 11.4642624,
+        "lon": 78.1845078
+      },
+      "nodes": [
+        11335120997,
+        11335121005,
+        11335121006
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151524,
+      "center": {
+        "lat": 11.4640719,
+        "lon": 78.1843324
+      },
+      "nodes": [
+        11335120997,
+        11335121007,
+        11335121008,
+        11335121005,
+        11335121009
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151525,
+      "center": {
+        "lat": 11.4630017,
+        "lon": 78.1850588
+      },
+      "nodes": [
+        11335121009,
+        11335121010,
+        11335121011,
+        11335121012,
+        10244006735
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222151527,
+      "center": {
+        "lat": 11.4629799,
+        "lon": 78.1854711
+      },
+      "nodes": [
+        11335121010,
+        11335121015,
+        11335121016
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222152174,
+      "center": {
+        "lat": 11.4602354,
+        "lon": 78.1855827
+      },
+      "nodes": [
+        11335128885,
+        11335128887
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222153433,
+      "center": {
+        "lat": 11.4565891,
+        "lon": 78.1803992
+      },
+      "nodes": [
+        11335084329,
+        11335084319,
+        11335084320,
+        11335084321,
+        11335084322,
+        11335084323,
+        11335084324,
+        11335084325,
+        11335084326,
+        11335084327,
+        11335084328
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222153434,
+      "center": {
+        "lat": 11.4566505,
+        "lon": 78.179863
+      },
+      "nodes": [
+        11335084322,
+        11335084330
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222153435,
+      "center": {
+        "lat": 11.4574342,
+        "lon": 78.1807577
+      },
+      "nodes": [
+        11335084323,
+        11335084331,
+        11335084332,
+        11335084333,
+        11335084334,
+        11335084335,
+        11335084336,
+        11335118220,
+        11335084337,
+        11335084338,
+        11335084339,
+        11335084340
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222155290,
+      "center": {
+        "lat": 11.4573458,
+        "lon": 78.1858098
+      },
+      "nodes": [
+        11335133718,
+        11335120605,
+        11335133697,
+        3523623342,
+        11335133682,
+        11335133683,
+        11335133684,
+        11335133685
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1230263656,
+      "center": {
+        "lat": 11.4637395,
+        "lon": 78.1871778
+      },
+      "nodes": [
+        10244006715,
+        3126649704,
+        3126649712,
+        1858666605,
+        11335121018,
+        1858666639,
+        3126649725,
+        3126649728,
+        1858666641,
+        3126649732,
+        3126649739,
+        3126649738,
+        11335098231,
+        1858666647,
+        11335098237,
+        3126649746,
+        3126649753,
+        11335098247,
+        3126649757,
+        2408421632,
+        1858666906,
+        11335204515,
+        1858666926
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "R. Puduppalayam Rd"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1230263657,
+      "center": {
+        "lat": 11.4588451,
+        "lon": 78.1888532
+      },
+      "nodes": [
+        1858666497,
+        370875220,
+        11335014460,
+        370875213,
+        10244006748,
+        10244006746,
+        370875206,
+        370875200,
+        11335120620,
+        1858666516,
+        370875193,
+        11335120614,
+        9822294909,
+        9822294910,
+        370875186,
+        9822294911,
+        1858666517,
+        370875166,
+        11335128884,
+        9822294912,
+        370875160,
+        370875155,
+        370875097,
+        10244006742,
+        11335128887,
+        8828828451
+      ],
+      "tags": {
+        "highway": "primary",
+        "name": "Mallikkarai - Rasipuram - Thiruchengode - Erode Road",
+        "ref": "SH79"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1333438603,
+      "center": {
+        "lat": 11.4686064,
+        "lon": 78.1796254
+      },
+      "nodes": [
+        12336774201,
+        12336774222,
+        12336774223,
+        12336774224,
+        12336774225,
+        12336774226,
+        12336774227,
+        12336774228,
+        12336774229,
+        12336774230,
+        12336774231,
+        12336774232,
+        12336774233,
+        12336774234,
+        12336774235,
+        12336774236
+      ],
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1333438604,
+      "center": {
+        "lat": 11.465279,
+        "lon": 78.1824453
+      },
+      "nodes": [
+        12336774235,
+        12336774237,
+        12336774238,
+        12336774239,
+        12336774240,
+        12336774241,
+        12336774242,
+        12336774243,
+        12336774244,
+        12336774245,
+        12336774246,
+        12336774247,
+        12336774248
+      ],
+      "tags": {
+        "highway": "unclassified"
+      }
+    }
+  ]
+}

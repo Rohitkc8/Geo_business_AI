@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 11.4142039,
+      "center_longitude": 78.17576299999999,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T09:00:31.791519+00:00",
+    "query_hash": "bc836385ee6be452c36a7e00a6532086",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 2
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "way/1333674558",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4172872,
+      "longitude": 78.1776182,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/1333674559",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4146455,
+      "longitude": 78.182768,
+      "tags": {
+        "highway": "unclassified"
+      }
+    }
+  ]
+}

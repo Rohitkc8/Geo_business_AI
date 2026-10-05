@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 11.4142039,
+      "center_longitude": 78.160763,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T08:46:34.985749+00:00",
+    "query_hash": "d2730c15baebb1129643c9b49e3ba7fb",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 6
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/9546540528",
+      "name": "Dailee Juice Company",
+      "category": "office",
+      "latitude": 11.4135191,
+      "longitude": 78.1608614,
+      "tags": {
+        "check_date": "2024-03-10",
+        "name": "Dailee Juice Company",
+        "office": "company"
+      }
+    },
+    {
+      "id": "way/22837388",
+      "name": "Kanyakumari Varanasi",
+      "category": "road",
+      "latitude": 11.3742696,
+      "longitude": 78.1641383,
+      "tags": {
+        "expressway": "yes",
+        "highway": "trunk",
+        "int_ref": "AH43",
+        "lanes": "2",
+        "lit": "no",
+        "maxspeed:type": "IN:trunk",
+        "name": "Kanyakumari Varanasi",
+        "oneway": "yes",
+        "ref": "NH44",
+        "ref:old": "NH7",
+        "shoulder": "both",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/232496609",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4127443,
+      "longitude": 78.1599486,
+      "tags": {
+        "highway": "residential",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed:type": "IN:urban",
+        "noname": "yes",
+        "sidewalk": "separate",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/232496611",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4227261,
+      "longitude": 78.1450689,
+      "tags": {
+        "highway": "tertiary",
+        "lane_markings": "no",
+        "maxspeed:type": "IN:rural",
+        "noname": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/367631248",
+      "name": "Kanyakumari Varanasi",
+      "category": "road",
+      "latitude": 11.3742787,
+      "longitude": 78.1642461,
+      "tags": {
+        "expressway": "yes",
+        "highway": "trunk",
+        "int_ref": "AH43",
+        "lanes": "2",
+        "lit": "no",
+        "maxspeed:type": "IN:trunk",
+        "name": "Kanyakumari Varanasi",
+        "oneway": "yes",
+        "ref": "NH44",
+        "ref:old": "NH7",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1298521991",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4158171,
+      "longitude": 78.1568866,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "noname": "yes",
+        "surface": "asphalt"
+      }
+    }
+  ]
+}

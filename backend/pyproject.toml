@@ -1,0 +1,38 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Deepak-vikin", email = "deepak5519u@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.142.2",
+    "geoalchemy2>=0.14.0",
+    "joblib>=1.6.0",
+    "numpy>=1.26.0",
+    "pandas>=2.1.0",
+    "psycopg2-binary>=2.9.0",
+    "python-dotenv>=1.0.0",
+    "scikit-learn>=1.9.1",
+    "shap>=0.52.0",
+    "sqlalchemy>=2.0.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "httpx>=0.27.0",
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+backend = "backend:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

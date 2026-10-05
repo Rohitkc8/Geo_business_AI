@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 11.4042039,
+      "center_longitude": 78.160763,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T08:52:10.258851+00:00",
+    "query_hash": "892e1a0201f8cdb71e683a276e734030",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 16
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/9126172848",
+      "name": "Paavai College",
+      "category": "bus_stop",
+      "latitude": 11.4005834,
+      "longitude": 78.1601894,
+      "tags": {
+        "bench": "yes",
+        "bin": "no",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "no",
+        "name": "Paavai College",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "id": "node/9546515147",
+      "name": "Bakery",
+      "category": "shop_bakery",
+      "latitude": 11.4058705,
+      "longitude": 78.1598005,
+      "tags": {
+        "check_date:opening_hours": "2024-07-28",
+        "name": "Bakery",
+        "opening_hours": "Mo-Su 06:00-22:00",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "shop": "bakery",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "id": "node/10201132840",
+      "name": "Nanban bakery",
+      "category": "shop_bakery",
+      "latitude": 11.4051532,
+      "longitude": 78.1597893,
+      "tags": {
+        "check_date:opening_hours": "2024-07-28",
+        "name": "Nanban bakery",
+        "opening_hours": "Mo-Su 06:00-22:00",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "shop": "bakery",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "id": "node/11281615091",
+      "name": "Nainamalai Departmental store",
+      "category": "shop_department_store",
+      "latitude": 11.4057084,
+      "longitude": 78.159803,
+      "tags": {
+        "check_date:opening_hours": "2023-10-22",
+        "name": "Nainamalai Departmental store",
+        "opening_hours:signed": "no",
+        "shop": "department_store",
+        "toilets": "no"
+      }
+    },
+    {
+      "id": "way/22837388",
+      "name": "Kanyakumari Varanasi",
+      "category": "road",
+      "latitude": 11.3742696,
+      "longitude": 78.1641383,
+      "tags": {
+        "expressway": "yes",
+        "highway": "trunk",
+        "int_ref": "AH43",
+        "lanes": "2",
+        "lit": "no",
+        "maxspeed:type": "IN:trunk",
+        "name": "Kanyakumari Varanasi",
+        "oneway": "yes",
+        "ref": "NH44",
+        "ref:old": "NH7",
+        "shoulder": "both",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/197120579",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3990084,
+      "longitude": 78.160006,
+      "tags": {
+        "highway": "trunk_link",
+        "lanes": "2",
+        "lit": "no",
+        "maxspeed": "40",
+        "maxspeed:type": "sign",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/197120580",
+      "name": "\u0baa\u0bbe\u0bb5\u0bc8 \u0b95\u0bb2\u0bcd\u0bb2\u0bc2\u0bb0\u0bbf \u0b9a\u0bbe\u0bb2\u0bc8",
+      "category": "road",
+      "latitude": 11.3947788,
+      "longitude": 78.1606799,
+      "tags": {
+        "highway": "unclassified",
+        "lane_markings": "no",
+        "name": "\u0baa\u0bbe\u0bb5\u0bc8 \u0b95\u0bb2\u0bcd\u0bb2\u0bc2\u0bb0\u0bbf \u0b9a\u0bbe\u0bb2\u0bc8",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/197120807",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4055891,
+      "longitude": 78.1593993,
+      "tags": {
+        "highway": "tertiary_link",
+        "lanes": "2",
+        "oneway": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/345710128",
+      "name": "Pachal Road",
+      "category": "road",
+      "latitude": 11.4182521,
+      "longitude": 78.1839828,
+      "tags": {
+        "access": "yes",
+        "highway": "tertiary",
+        "name": "Pachal Road"
+      }
+    },
+    {
+      "id": "way/367631248",
+      "name": "Kanyakumari Varanasi",
+      "category": "road",
+      "latitude": 11.3742787,
+      "longitude": 78.1642461,
+      "tags": {
+        "expressway": "yes",
+        "highway": "trunk",
+        "int_ref": "AH43",
+        "lanes": "2",
+        "lit": "no",
+        "maxspeed:type": "IN:trunk",
+        "name": "Kanyakumari Varanasi",
+        "oneway": "yes",
+        "ref": "NH44",
+        "ref:old": "NH7",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1185661643",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4009438,
+      "longitude": 78.1588076,
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1185661644",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4009587,
+      "longitude": 78.1581197,
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1347260991",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4000477,
+      "longitude": 78.1606441,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1347260992",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4000188,
+      "longitude": 78.1606443,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1347260993",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4000604,
+      "longitude": 78.1610232,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1347260994",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4000062,
+      "longitude": 78.1602305,
+      "tags": {
+        "highway": "service"
+      }
+    }
+  ]
+}

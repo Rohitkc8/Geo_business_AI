@@ -1,0 +1,2525 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 11.0168,
+      "center_longitude": 76.9558,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T04:48:27.288175+00:00",
+    "query_hash": "cda258f060a84feaa4530f35f85b76d6",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 204
+  },
+  "population_metrics": {
+    "population": 7333,
+    "population_density": 7333.0,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "good",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/343436821",
+      "name": "Sengaliappan Nursing Home",
+      "category": "healthcare",
+      "latitude": 11.0165542,
+      "longitude": 76.955239,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sengaliappan Nursing Home"
+      }
+    },
+    {
+      "id": "node/832763979",
+      "name": "Coffe Day",
+      "category": "restaurant",
+      "latitude": 11.01713,
+      "longitude": 76.9580749,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Coffe Day"
+      }
+    },
+    {
+      "id": "node/832770142",
+      "name": "Power House",
+      "category": "bus_stop",
+      "latitude": 11.0169309,
+      "longitude": 76.9591371,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Power House",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/832773963",
+      "name": "Spencers",
+      "category": "grocery_store",
+      "latitude": 11.0170651,
+      "longitude": 76.9579314,
+      "tags": {
+        "addr:postcode": "641110",
+        "addr:street": "Patel Road",
+        "name": "Spencers",
+        "organic": "yes",
+        "shop": "supermarket",
+        "website": "http://www.spencersretail.com/"
+      }
+    },
+    {
+      "id": "node/1464278695",
+      "name": "Annapoorna",
+      "category": "restaurant",
+      "latitude": 11.0192445,
+      "longitude": 76.9534223,
+      "tags": {
+        "addr:street": "Mettupalayam Road",
+        "amenity": "restaurant",
+        "diet:vegetarian": "only",
+        "indoor_seating": "yes",
+        "name": "Annapoorna",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "id": "node/1464278789",
+      "name": "Coimbatore Bone and Joint Foundation (P) Ltd.",
+      "category": "healthcare",
+      "latitude": 11.0149404,
+      "longitude": 76.9543844,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "#1091, Mettupalayam Road ,North Coimbatore Bus Stop",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Coimbatore Bone and Joint Foundation (P) Ltd.",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/1464278818",
+      "name": "Achi mess",
+      "category": "restaurant",
+      "latitude": 11.0189624,
+      "longitude": 76.9569345,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Achi mess"
+      }
+    },
+    {
+      "id": "node/1466790634",
+      "name": "Giriyaas",
+      "category": "grocery_store",
+      "latitude": 11.0168427,
+      "longitude": 76.960139,
+      "tags": {
+        "name": "Giriyaas",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "id": "node/1466793475",
+      "name": "Karpagam Jewellery",
+      "category": "shop_jewelry",
+      "latitude": 11.0167953,
+      "longitude": 76.9593879,
+      "tags": {
+        "name": "Karpagam Jewellery",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "id": "node/1468093966",
+      "name": "Vadakovai",
+      "category": "bus_stop",
+      "latitude": 11.0155077,
+      "longitude": 76.9546075,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "Vadakovai",
+        "name": "Vadakovai",
+        "name:ta": "\u0bb5\u0b9f\u0b95\u0bcb\u0bb5\u0bc8",
+        "public_transport": "stop_position"
+      }
+    },
+    {
+      "id": "node/1472205751",
+      "name": "North Coimbatore Corporation Higher Secondary School",
+      "category": "education",
+      "latitude": 11.0154056,
+      "longitude": 76.958268,
+      "tags": {
+        "amenity": "school",
+        "name": "North Coimbatore Corporation Higher Secondary School"
+      }
+    },
+    {
+      "id": "node/1472215560",
+      "name": "Kumaran Clinic",
+      "category": "healthcare",
+      "latitude": 11.0152582,
+      "longitude": 76.9519379,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Kumaran Clinic"
+      }
+    },
+    {
+      "id": "node/4315800697",
+      "name": "Aravind Eye Hospital (City Centre)",
+      "category": "healthcare",
+      "latitude": 11.0153158,
+      "longitude": 76.9539881,
+      "tags": {
+        "addr:block": "Coimbatore Corpn",
+        "addr:district": "Coimbatore",
+        "addr:full": "Cowley Brown Road, R S Puram West",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "addr:street": "Cowley Brown Rd",
+        "addr:subdistrict": "Coimbatore South",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Aravind Eye Hospital (City Centre)",
+        "phone": "91-422-2540400",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/4379089190",
+      "name": "Bosch",
+      "category": "shop_electronics",
+      "latitude": 11.0139732,
+      "longitude": 76.954633,
+      "tags": {
+        "addr:street": "Venkitasamy Road",
+        "brand": "Bosch",
+        "brand:wikidata": "Q234021",
+        "name": "Bosch",
+        "name:en": "Bosch",
+        "shop": "electronics"
+      }
+    },
+    {
+      "id": "node/4379089793",
+      "name": "Lotus Eye Care Hospital, Coimbatore",
+      "category": "healthcare",
+      "latitude": 11.0140006,
+      "longitude": 76.9543624,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "No.5(2) Gajalakshmi Theatre Road Near Valarmathi Bus Stop",
+        "addr:postcode": "641601",
+        "addr:state": "Tamil Nadu",
+        "addr:street": "Venkitasamy Road",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Lotus Eye Care Hospital, Coimbatore",
+        "name:en": "Lotus Eye Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/4379170290",
+      "name": "Unnamed Feature",
+      "category": "shop_books",
+      "latitude": 11.0136634,
+      "longitude": 76.9545117,
+      "tags": {
+        "addr:street": "Venkitasamy Road",
+        "name:en": "Sapna",
+        "shop": "books"
+      }
+    },
+    {
+      "id": "node/4379179689",
+      "name": "Unnamed Feature",
+      "category": "shop_furniture",
+      "latitude": 11.0139535,
+      "longitude": 76.9543058,
+      "tags": {
+        "addr:street": "Venkitasamy Road",
+        "name:en": "Woodpecker",
+        "shop": "furniture"
+      }
+    },
+    {
+      "id": "node/4575378692",
+      "name": "Unnamed Feature",
+      "category": "shop_confectionery",
+      "latitude": 11.0138739,
+      "longitude": 76.9536,
+      "tags": {
+        "name:en": "Ayyappa",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "id": "node/4575507891",
+      "name": "Unnamed Feature",
+      "category": "restaurant",
+      "latitude": 11.0138863,
+      "longitude": 76.9537158,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Jalpajan"
+      }
+    },
+    {
+      "id": "node/4575565289",
+      "name": "IndusInd Bank",
+      "category": "bank",
+      "latitude": 11.0138556,
+      "longitude": 76.9534236,
+      "tags": {
+        "amenity": "bank",
+        "brand": "IndusInd Bank",
+        "brand:wikidata": "Q2040323",
+        "name": "IndusInd Bank"
+      }
+    },
+    {
+      "id": "node/4815778337",
+      "name": "Unnamed Feature",
+      "category": "healthcare",
+      "latitude": 11.0151259,
+      "longitude": 76.9516784,
+      "tags": {
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name:en": "Apollo Clinic"
+      }
+    },
+    {
+      "id": "node/4878934411",
+      "name": "Unnamed Feature",
+      "category": "bank",
+      "latitude": 11.0139032,
+      "longitude": 76.9550029,
+      "tags": {
+        "amenity": "bank",
+        "brand": "CDCC bank"
+      }
+    },
+    {
+      "id": "node/5300436333",
+      "name": "North Coimbatore Bus Stop",
+      "category": "bus_stop",
+      "latitude": 11.0160188,
+      "longitude": 76.954308,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "highway:ta": "\u0baa\u0bc7\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1_\u0ba8\u0bbf\u0bb1\u0bc1\u0ba4\u0bcd\u0ba4\u0bae\u0bcd",
+        "name": "North Coimbatore Bus Stop",
+        "name:ta": "\u0bb5\u0b9f\u0b95\u0bcb\u0bb5\u0bc8 \u0baa\u0bc7\u0bb0\u0bc1\u0ba8\u0bcd\u0ba4\u0bc1 \u0ba8\u0bbf\u0bb1\u0bc1\u0ba4\u0bcd\u0ba4\u0bae\u0bcd",
+        "public_transport": "stop_position"
+      }
+    },
+    {
+      "id": "node/5325645821",
+      "name": "vadakovai",
+      "category": "bus_stop",
+      "latitude": 11.0155588,
+      "longitude": 76.9536315,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "vadakovai",
+        "name:ta": "\u0bb5\u0b9f\u0b95\u0bcb\u0bb5\u0bc8",
+        "public_transport": "stop_position"
+      }
+    },
+    {
+      "id": "node/6153156194",
+      "name": "North coimbatore",
+      "category": "bus_stop",
+      "latitude": 11.0145077,
+      "longitude": 76.9549702,
+      "tags": {
+        "alt_name": "central theater",
+        "alt_name:ta": "\u0b9a\u0bc6\u0ba9\u0bcd\u0b9f\u0bcd\u0bb0\u0bb2\u0bcd \u0ba4\u0bbf\u0baf\u0bc7\u0b9f\u0bcd\u0b9f\u0bb0\u0bcd",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "North coimbatore",
+        "name:ta": "\u0bb5\u0b9f \u0b95\u0bcb\u0bb5\u0bc8",
+        "public_transport": "stop_position"
+      }
+    },
+    {
+      "id": "node/6886497224",
+      "name": "The Coimbatore Bio Medical Services Blood Bank",
+      "category": "other",
+      "latitude": 11.0148584,
+      "longitude": 76.9532673,
+      "tags": {
+        "addr:district": "COIMBATORE",
+        "addr:full": "No.190A, Bashyakarlu Road East, R.S. Puram",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "amenity": "blood_bank",
+        "contact:mobile": "097913 60516",
+        "contact:phone": "4222552297",
+        "email": "poornashloka@yahoo.com",
+        "name": "The Coimbatore Bio Medical Services Blood Bank",
+        "opening_hours": "24/7",
+        "operator:type": "ngo",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/6915464620",
+      "name": "Veeku Hospital",
+      "category": "healthcare",
+      "latitude": 11.0150799,
+      "longitude": 76.9517022,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "19,Cowley Brown Road, R.S Puram,Cbe-02",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Veeku Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/6936443894",
+      "name": "Sankara Eye Hospital, Coimbatore",
+      "category": "healthcare",
+      "latitude": 11.0133673,
+      "longitude": 76.9553728,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "Srivari Kikani Centre,R.S.Puram",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sankara Eye Hospital, Coimbatore",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/7844131975",
+      "name": "Parvathy Hospitals",
+      "category": "healthcare",
+      "latitude": 11.01472,
+      "longitude": 76.952299,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "R S Puram",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Parvathy Hospitals",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "id": "node/7844132010",
+      "name": "PGS Hospital",
+      "category": "healthcare",
+      "latitude": 11.0153485,
+      "longitude": 76.9524368,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "R S Puram",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "PGS Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "id": "node/9921938862",
+      "name": "Power House Bus Stop",
+      "category": "bus_stop",
+      "latitude": 11.0196386,
+      "longitude": 76.9593056,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Power House Bus Stop",
+        "public_transport": "stop_position"
+      }
+    },
+    {
+      "id": "node/13638915821",
+      "name": "Power House Bus stop",
+      "category": "bus_stop",
+      "latitude": 11.017291,
+      "longitude": 76.9581509,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Power House Bus stop",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/13638917285",
+      "name": "Sivanandha Colony",
+      "category": "bus_stop",
+      "latitude": 11.0167128,
+      "longitude": 76.9572417,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Sivanandha Colony",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/13651447245",
+      "name": "Sivanandha Colony",
+      "category": "bus_stop",
+      "latitude": 11.0167176,
+      "longitude": 76.9564775,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Sivanandha Colony",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/13651466030",
+      "name": "District Forest Office - Coimbatore",
+      "category": "office",
+      "latitude": 11.0179584,
+      "longitude": 76.952677,
+      "tags": {
+        "addr:city": "Coimbatore",
+        "addr:district": "Coimbatore",
+        "addr:postcode": "641043",
+        "addr:street": "Saibaba Colony",
+        "government": "yes",
+        "name": "District Forest Office - Coimbatore",
+        "office": "government"
+      }
+    },
+    {
+      "id": "node/13651509842",
+      "name": "Coimbatore Forest Range Office",
+      "category": "office",
+      "latitude": 11.0183041,
+      "longitude": 76.9532984,
+      "tags": {
+        "name": "Coimbatore Forest Range Office",
+        "office": "government"
+      }
+    },
+    {
+      "id": "node/13985392201",
+      "name": "Skyy and Skyy Agencies",
+      "category": "shop_wholesale",
+      "latitude": 11.0173707,
+      "longitude": 76.9574356,
+      "tags": {
+        "addr:postcode": "641012",
+        "addr:street": "SND Layout No 2",
+        "name": "Skyy and Skyy Agencies",
+        "opening_hours": "Sa 09:00-18:00; Mo-Fr 09:30-19:00",
+        "shop": "wholesale"
+      }
+    },
+    {
+      "id": "node/14072235024",
+      "name": "P.Govindaraj vascular surgeon",
+      "category": "healthcare",
+      "latitude": 11.0154735,
+      "longitude": 76.9543264,
+      "tags": {
+        "addr:district": "coimbatore",
+        "addr:place": "Vadakovai",
+        "addr:state": "TN",
+        "addr:street": "Cowley Brown Road",
+        "alt_name": "Vascular care centre",
+        "amenity": "doctors",
+        "healthcare": "doctor",
+        "healthcare:speciality": "vascular_surgery",
+        "name": "P.Govindaraj vascular surgeon",
+        "opening_hours": "Tu,Th,Sa 12:00-17:00; Mo,We,Fr \"appointment only\""
+      }
+    },
+    {
+      "id": "way/22917340",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.01738,
+      "longitude": 76.9582081,
+      "tags": {
+        "highway": "primary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/25951184",
+      "name": "North Coimbatore Flyover",
+      "category": "road",
+      "latitude": 11.0168089,
+      "longitude": 76.957807,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "North Coimbatore Flyover"
+      }
+    },
+    {
+      "id": "way/27041528",
+      "name": "Sathyamurthi Road",
+      "category": "road",
+      "latitude": 11.0140409,
+      "longitude": 76.9615863,
+      "tags": {
+        "highway": "residential",
+        "name": "Sathyamurthi Road"
+      }
+    },
+    {
+      "id": "way/27041530",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.015675,
+      "longitude": 76.959294,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/27041813",
+      "name": "Cross Cut Road",
+      "category": "road",
+      "latitude": 11.0177657,
+      "longitude": 76.9592758,
+      "tags": {
+        "highway": "primary",
+        "name": "Cross Cut Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/29980762",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0113769,
+      "longitude": 76.9555528,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/29980773",
+      "name": "Venkitasamy Road",
+      "category": "road",
+      "latitude": 11.0136765,
+      "longitude": 76.9535603,
+      "tags": {
+        "highway": "residential",
+        "name": "Venkitasamy Road",
+        "name:ta": "\u0bb5\u0bc6\u0b99\u0bcd\u0b95\u0b9f\u0b9a\u0bbe\u0bae\u0bbf \u0b9a\u0bbe\u0bb2\u0bc8",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/29980774",
+      "name": "Bashyakarlu Road",
+      "category": "road",
+      "latitude": 11.0139933,
+      "longitude": 76.9493977,
+      "tags": {
+        "highway": "residential",
+        "name": "Bashyakarlu Road",
+        "name:ta": "\u0baa\u0bbe\u0bb7\u0bcd\u0baf\u0b95\u0bb0\u0bcd\u0bb2\u0bc1 \u0b9a\u0bbe\u0bb2\u0bc8",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/29982721",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0145973,
+      "longitude": 76.9599357,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/29982722",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.016005,
+      "longitude": 76.959868,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/30919042",
+      "name": "Bharathi Park Road",
+      "category": "road",
+      "latitude": 11.0196835,
+      "longitude": 76.945938,
+      "tags": {
+        "highway": "secondary",
+        "lane_markings": "yes",
+        "lanes": "2",
+        "maxspeed": "30",
+        "name": "Bharathi Park Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/62288266",
+      "name": "North Coimbatore Flyover Ramp",
+      "category": "road",
+      "latitude": 11.017997,
+      "longitude": 76.953754,
+      "tags": {
+        "highway": "primary_link",
+        "name": "North Coimbatore Flyover Ramp",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/62288331",
+      "name": "Mettupalayam Road",
+      "category": "road",
+      "latitude": 11.0156675,
+      "longitude": 76.9542464,
+      "tags": {
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Mettupalayam Road",
+        "name:ta": "\u0bae\u0bc7\u0b9f\u0bcd\u0b9f\u0bc1\u0baa\u0bcd\u0baa\u0bbe\u0bb3\u0bc8\u0baf\u0bae\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "NH181",
+        "ref:old": "NH67",
+        "source:lanes": "Bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/62288346",
+      "name": "North Coimbatore Flyover Ramp",
+      "category": "road",
+      "latitude": 11.0173511,
+      "longitude": 76.9542036,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary_link",
+        "layer": "1",
+        "name": "North Coimbatore Flyover Ramp",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/62288367",
+      "name": "North Coimbatore Flyover Ramp",
+      "category": "road",
+      "latitude": 11.0163117,
+      "longitude": 76.9543331,
+      "tags": {
+        "embankment": "yes",
+        "highway": "primary_link",
+        "name": "North Coimbatore Flyover Ramp",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/62289757",
+      "name": "North Coimbatore Flyover",
+      "category": "road",
+      "latitude": 11.0176922,
+      "longitude": 76.9534061,
+      "tags": {
+        "highway": "primary",
+        "name": "North Coimbatore Flyover",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/62289808",
+      "name": "North Coimbatore Flyover Ramp",
+      "category": "road",
+      "latitude": 11.016637,
+      "longitude": 76.9550373,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary_link",
+        "lanes": "1",
+        "layer": "1",
+        "name": "North Coimbatore Flyover Ramp",
+        "oneway": "yes",
+        "source:lanes": "Bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/66102325",
+      "name": "Power House Road",
+      "category": "road",
+      "latitude": 11.0192636,
+      "longitude": 76.9597836,
+      "tags": {
+        "highway": "primary",
+        "name": "Power House Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/66102343",
+      "name": "Tamilnadu Forest Academy",
+      "category": "education",
+      "latitude": 11.0167662,
+      "longitude": 76.946606,
+      "tags": {
+        "amenity": "college",
+        "name": "Tamilnadu Forest Academy",
+        "name:ml": "\u0d24\u0d2e\u0d3f\u0d34\u0d4d\u0d28\u0d3e\u0d1f\u0d4d \u0d35\u0d28 \u0d05\u0d15\u0d4d\u0d15\u0d3e\u0d26\u0d2e\u0d3f",
+        "name:ta": "\u0ba4\u0bae\u0bbf\u0bb4\u0bcd\u0ba8\u0bbe\u0b9f\u0bc1 \u0bb5\u0ba9 \u0b85\u0b95\u0bbe\u0b9f\u0bae\u0bbf"
+      }
+    },
+    {
+      "id": "way/66102347",
+      "name": "Raju Naidu Road",
+      "category": "road",
+      "latitude": 11.0219481,
+      "longitude": 76.9591238,
+      "tags": {
+        "highway": "secondary",
+        "name": "Raju Naidu Road",
+        "name:ta": "\u0bb0\u0bbe\u0b9c\u0bc1 \u0ba8\u0bbe\u0baf\u0bc1\u0b9f\u0bc1 \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/66292228",
+      "name": "Power House Road",
+      "category": "road",
+      "latitude": 11.0191827,
+      "longitude": 76.9597615,
+      "tags": {
+        "highway": "primary",
+        "name": "Power House Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/66292236",
+      "name": "North Coimbatore Flyover",
+      "category": "road",
+      "latitude": 11.0169791,
+      "longitude": 76.9538344,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "lanes": "2",
+        "layer": "1",
+        "name": "North Coimbatore Flyover",
+        "source:lanes": "Bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/128978639",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0173981,
+      "longitude": 76.9573279,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/128978640",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0175081,
+      "longitude": 76.9562582,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/128978641",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0179203,
+      "longitude": 76.9556176,
+      "tags": {
+        "bridge": "yes",
+        "highway": "steps",
+        "layer": "1"
+      }
+    },
+    {
+      "id": "way/131294142",
+      "name": "4th street",
+      "category": "road",
+      "latitude": 11.0215005,
+      "longitude": 76.957366,
+      "tags": {
+        "highway": "residential",
+        "name": "4th street",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/133072622",
+      "name": "Avinasilingam Deemed University for Home Sciences",
+      "category": "education",
+      "latitude": 11.0191444,
+      "longitude": 76.9515442,
+      "tags": {
+        "amenity": "university",
+        "name": "Avinasilingam Deemed University for Home Sciences"
+      }
+    },
+    {
+      "id": "way/133072630",
+      "name": "Institute of Forest Genetics & Tree Breeding (IFGTB)",
+      "category": "education",
+      "latitude": 11.0176359,
+      "longitude": 76.9514724,
+      "tags": {
+        "addr:city": "Coimbatore",
+        "addr:housenumber": "P.B.No.1061",
+        "addr:postcode": "641002",
+        "addr:street": "Forest Campus, R.S.Puram, HPO",
+        "amenity": "college",
+        "name": "Institute of Forest Genetics & Tree Breeding (IFGTB)"
+      }
+    },
+    {
+      "id": "way/133368414",
+      "name": "Unnamed Feature",
+      "category": "education",
+      "latitude": 11.0120123,
+      "longitude": 76.9578529,
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "id": "way/134498429",
+      "name": "North Coimbatore Flyover",
+      "category": "road",
+      "latitude": 11.0174014,
+      "longitude": 76.9535149,
+      "tags": {
+        "highway": "primary",
+        "name": "North Coimbatore Flyover",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/134815520",
+      "name": "Power House Road",
+      "category": "road",
+      "latitude": 11.0192018,
+      "longitude": 76.9587044,
+      "tags": {
+        "highway": "primary",
+        "name": "Power House Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/134815535",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0173912,
+      "longitude": 76.9573243,
+      "tags": {
+        "highway": "residential",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/134815560",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0189422,
+      "longitude": 76.9571275,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/134815580",
+      "name": "Dr Subbarayan Street",
+      "category": "road",
+      "latitude": 11.020593,
+      "longitude": 76.9558836,
+      "tags": {
+        "highway": "residential",
+        "name": "Dr Subbarayan Street",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/206609424",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0135978,
+      "longitude": 76.9595784,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/206609429",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0159941,
+      "longitude": 76.9605356,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/255924992",
+      "name": "Patel Road",
+      "category": "road",
+      "latitude": 11.0125106,
+      "longitude": 76.9593727,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "unclassified",
+        "horse": "yes",
+        "name": "Patel Road",
+        "oneway": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/263298210",
+      "name": "Pykara Office Road",
+      "category": "road",
+      "latitude": 11.0200924,
+      "longitude": 76.9568297,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "residential",
+        "horse": "no",
+        "lanes": "1",
+        "name": "Pykara Office Road",
+        "oneway": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/293066629",
+      "name": "Mettupalayam Road",
+      "category": "road",
+      "latitude": 11.0157203,
+      "longitude": 76.9543504,
+      "tags": {
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Mettupalayam Road",
+        "name:ta": "\u0bae\u0bc7\u0b9f\u0bcd\u0b9f\u0bc1\u0baa\u0bcd\u0baa\u0bbe\u0bb3\u0bc8\u0baf\u0bae\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "NH181",
+        "ref:old": "NH67",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/293066630",
+      "name": "Mettupalayam Road",
+      "category": "road",
+      "latitude": 11.0189716,
+      "longitude": 76.9532821,
+      "tags": {
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Mettupalayam Road",
+        "name:ta": "\u0bae\u0bc7\u0b9f\u0bcd\u0b9f\u0bc1\u0baa\u0bcd\u0baa\u0bbe\u0bb3\u0bc8\u0baf\u0bae\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "NH181",
+        "ref:old": "NH67",
+        "source:lanes": "Bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/456019424",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0180919,
+      "longitude": 76.9559517,
+      "tags": {
+        "highway": "service",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/456019425",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0179003,
+      "longitude": 76.9555014,
+      "tags": {
+        "highway": "steps"
+      }
+    },
+    {
+      "id": "way/456019426",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0181132,
+      "longitude": 76.9557078,
+      "tags": {
+        "highway": "footway",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/456025481",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.023223,
+      "longitude": 76.9550273,
+      "tags": {
+        "highway": "service",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/456043919",
+      "name": "North Coimbatore Flyover",
+      "category": "road",
+      "latitude": 11.0167847,
+      "longitude": 76.9551861,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "North Coimbatore Flyover",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/456043921",
+      "name": "North Coimbatore Flyover",
+      "category": "road",
+      "latitude": 11.016812,
+      "longitude": 76.9566453,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "lanes": "2",
+        "layer": "1",
+        "name": "North Coimbatore Flyover",
+        "source:lanes": "Bing"
+      }
+    },
+    {
+      "id": "way/501930653",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0130129,
+      "longitude": 76.9564796,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/501930654",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0146835,
+      "longitude": 76.9557243,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/501941751",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0200635,
+      "longitude": 76.9536931,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/502561584",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0123159,
+      "longitude": 76.9565189,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/553623244",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0161725,
+      "longitude": 76.9511605,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/581641501",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.016287,
+      "longitude": 76.960083,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/581641502",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0165436,
+      "longitude": 76.9602592,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/581641503",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0152302,
+      "longitude": 76.9554845,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/581641504",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0149457,
+      "longitude": 76.955432,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/581641505",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0139365,
+      "longitude": 76.9559209,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/593053229",
+      "name": "Raju Naidu Road",
+      "category": "road",
+      "latitude": 11.0200346,
+      "longitude": 76.959299,
+      "tags": {
+        "highway": "secondary",
+        "name": "Raju Naidu Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/593286445",
+      "name": "Mettupalayam Road",
+      "category": "road",
+      "latitude": 11.0220183,
+      "longitude": 76.9523346,
+      "tags": {
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Mettupalayam Road",
+        "name:ta": "\u0bae\u0bc7\u0b9f\u0bcd\u0b9f\u0bc1\u0baa\u0bcd\u0baa\u0bbe\u0bb3\u0bc8\u0baf\u0bae\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "NH181",
+        "ref:old": "NH67",
+        "source:lanes": "Bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/593359206",
+      "name": "Mettupalayam Road",
+      "category": "road",
+      "latitude": 11.0208625,
+      "longitude": 76.9525144,
+      "tags": {
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Mettupalayam Road",
+        "name:ta": "\u0bae\u0bc7\u0b9f\u0bcd\u0b9f\u0bc1\u0baa\u0bcd\u0baa\u0bbe\u0bb3\u0bc8\u0baf\u0bae\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "NH181",
+        "ref:old": "NH67",
+        "source:lanes": "Bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/593359212",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0124869,
+      "longitude": 76.9549061,
+      "tags": {
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "oneway": "yes",
+        "ref": "NH181",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/594392953",
+      "name": "Cowley Brown Road",
+      "category": "road",
+      "latitude": 11.0146377,
+      "longitude": 76.9483723,
+      "tags": {
+        "alt_name": "North Coimbatore - Maruthamalai Road",
+        "highway": "primary",
+        "maxspeed": "40",
+        "name": "Cowley Brown Road",
+        "name:ta": "\u0b95\u0bcc\u0bb2\u0bbf \u0baa\u0bbf\u0bb0\u0bb5\u0bc1\u0ba9\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "ref": "SH167",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/594392955",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0182684,
+      "longitude": 76.9465126,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/740884933",
+      "name": "Seesha Karunya Community Hospital",
+      "category": "healthcare",
+      "latitude": 11.0160493,
+      "longitude": 76.9594132,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Seesha Karunya Community Hospital"
+      }
+    },
+    {
+      "id": "way/741020155",
+      "name": "Ganga Medical Centre and Hospitals Pvt. Ltd ,Ramnagar",
+      "category": "healthcare",
+      "latitude": 11.0158471,
+      "longitude": 76.9595292,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Ganga Medical Centre and Hospitals Pvt. Ltd ,Ramnagar"
+      }
+    },
+    {
+      "id": "way/741832184",
+      "name": "Krishnasamy Road",
+      "category": "road",
+      "latitude": 11.0131022,
+      "longitude": 76.9552911,
+      "tags": {
+        "highway": "secondary",
+        "name": "Krishnasamy Road",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/741832185",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0130463,
+      "longitude": 76.9552629,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/741850401",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.019995,
+      "longitude": 76.9581813,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/744228766",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0180135,
+      "longitude": 76.9545232,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/744228767",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0185376,
+      "longitude": 76.9542196,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/761625350",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0138147,
+      "longitude": 76.9548878,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/761625351",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0152652,
+      "longitude": 76.9550038,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/761658219",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0199566,
+      "longitude": 76.9529918,
+      "tags": {
+        "check_date": "2024-05-21",
+        "highway": "secondary"
+      }
+    },
+    {
+      "id": "way/761658220",
+      "name": "Mettupalayam Road",
+      "category": "road",
+      "latitude": 11.0190037,
+      "longitude": 76.9533781,
+      "tags": {
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Mettupalayam Road",
+        "name:ta": "\u0bae\u0bc7\u0b9f\u0bcd\u0b9f\u0bc1\u0baa\u0bcd\u0baa\u0bbe\u0bb3\u0bc8\u0baf\u0bae\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "NH181",
+        "ref:old": "NH67",
+        "source:lanes": "Bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/761671785",
+      "name": "Cross Cut Road",
+      "category": "road",
+      "latitude": 11.0170449,
+      "longitude": 76.9643429,
+      "tags": {
+        "alt_name": "North Coimbatore - Ramanathapuram - Chettipalayam Road",
+        "highway": "primary",
+        "name": "Cross Cut Road",
+        "oneway": "yes",
+        "ref": "SH162"
+      }
+    },
+    {
+      "id": "way/789985242",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0142582,
+      "longitude": 76.9593786,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/789985243",
+      "name": "Rajammal Layout( Patel Road)",
+      "category": "road",
+      "latitude": 11.0144126,
+      "longitude": 76.958556,
+      "tags": {
+        "access": "destination",
+        "description": "Dead End",
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Rajammal Layout( Patel Road)",
+        "oneway": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/789985244",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0144617,
+      "longitude": 76.9591546,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2"
+      }
+    },
+    {
+      "id": "way/913428462",
+      "name": "Easwaran Chettiyar Road",
+      "category": "road",
+      "latitude": 11.0159551,
+      "longitude": 76.9568344,
+      "tags": {
+        "highway": "residential",
+        "name": "Easwaran Chettiyar Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/923529431",
+      "name": "Unnamed Feature",
+      "category": "office",
+      "latitude": 11.0194836,
+      "longitude": 76.9574757,
+      "tags": {
+        "building": "yes",
+        "office": "government"
+      }
+    },
+    {
+      "id": "way/923529432",
+      "name": "Unnamed Feature",
+      "category": "office",
+      "latitude": 11.019571,
+      "longitude": 76.9573085,
+      "tags": {
+        "building": "yes",
+        "office": "government"
+      }
+    },
+    {
+      "id": "way/923529433",
+      "name": "Unnamed Feature",
+      "category": "office",
+      "latitude": 11.019568,
+      "longitude": 76.9576554,
+      "tags": {
+        "building": "yes",
+        "office": "government"
+      }
+    },
+    {
+      "id": "way/923529435",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.019626,
+      "longitude": 76.957565,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/923529438",
+      "name": "Unnamed Feature",
+      "category": "office",
+      "latitude": 11.01983,
+      "longitude": 76.958111,
+      "tags": {
+        "building": "yes",
+        "office": "government"
+      }
+    },
+    {
+      "id": "way/923529439",
+      "name": "Unnamed Feature",
+      "category": "office",
+      "latitude": 11.0193287,
+      "longitude": 76.9582049,
+      "tags": {
+        "building": "yes",
+        "office": "government"
+      }
+    },
+    {
+      "id": "way/923529440",
+      "name": "Unnamed Feature",
+      "category": "office",
+      "latitude": 11.0194914,
+      "longitude": 76.9582414,
+      "tags": {
+        "building": "yes",
+        "office": "government"
+      }
+    },
+    {
+      "id": "way/923529441",
+      "name": "Unnamed Feature",
+      "category": "office",
+      "latitude": 11.019593,
+      "longitude": 76.9583268,
+      "tags": {
+        "building": "yes",
+        "office": "government"
+      }
+    },
+    {
+      "id": "way/923529443",
+      "name": "Defence Motors",
+      "category": "shop_car_repair",
+      "latitude": 11.0207269,
+      "longitude": 76.956977,
+      "tags": {
+        "building": "yes",
+        "name": "Defence Motors",
+        "shop": "car_repair"
+      }
+    },
+    {
+      "id": "way/993559456",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0192415,
+      "longitude": 76.9516516,
+      "tags": {
+        "highway": "service",
+        "source": "maxar",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/993559457",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0169996,
+      "longitude": 76.9520189,
+      "tags": {
+        "highway": "service",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/993559458",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0172829,
+      "longitude": 76.9591885,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/993559459",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0161806,
+      "longitude": 76.9579922,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/993577217",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0150161,
+      "longitude": 76.9591462,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1054205837",
+      "name": "Krishnasamy Road",
+      "category": "road",
+      "latitude": 11.0121759,
+      "longitude": 76.9560981,
+      "tags": {
+        "highway": "secondary",
+        "name": "Krishnasamy Road",
+        "oneway": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1067499984",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0167816,
+      "longitude": 76.9573506,
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    {
+      "id": "way/1067499985",
+      "name": "Patel Road",
+      "category": "road",
+      "latitude": 11.01687,
+      "longitude": 76.9575704,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "tertiary",
+        "horse": "yes",
+        "name": "Patel Road",
+        "oneway": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1070634714",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0185874,
+      "longitude": 76.9557506,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1081324697",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0180638,
+      "longitude": 76.9520062,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1082630680",
+      "name": "Power House Road",
+      "category": "road",
+      "latitude": 11.0195459,
+      "longitude": 76.9592504,
+      "tags": {
+        "highway": "primary",
+        "name": "Power House Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1083692280",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0168007,
+      "longitude": 76.9565015,
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    {
+      "id": "way/1088426464",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0160395,
+      "longitude": 76.9530773,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1088426465",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0156114,
+      "longitude": 76.9531423,
+      "tags": {
+        "access": "no",
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1088426466",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0154591,
+      "longitude": 76.9507501,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1100816166",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0170181,
+      "longitude": 76.9535471,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1100816167",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0169395,
+      "longitude": 76.9536159,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1114889258",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0176445,
+      "longitude": 76.9548703,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1114889259",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0170282,
+      "longitude": 76.9552959,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1157491519",
+      "name": "East Venkataswamy Road",
+      "category": "road",
+      "latitude": 11.0128303,
+      "longitude": 76.953618,
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lane_markings": "no",
+        "lanes": "2",
+        "name": "East Venkataswamy Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1157491520",
+      "name": "Sir Shanmugam Road",
+      "category": "road",
+      "latitude": 11.0144743,
+      "longitude": 76.9521678,
+      "tags": {
+        "highway": "residential",
+        "name": "Sir Shanmugam Road",
+        "name:etymology:wikidata": "Q3532049",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1188791622",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0157949,
+      "longitude": 76.9548501,
+      "tags": {
+        "access": "private",
+        "foot": "private",
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1188791623",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.015766,
+      "longitude": 76.9555754,
+      "tags": {
+        "access": "private",
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1216211477",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0140636,
+      "longitude": 76.956998,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1225831038",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0204763,
+      "longitude": 76.9530839,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1225831039",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0206288,
+      "longitude": 76.9534218,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1225831040",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0200433,
+      "longitude": 76.9532708,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1225831041",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0202365,
+      "longitude": 76.9536931,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1225831042",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0197721,
+      "longitude": 76.9536274,
+      "tags": {
+        "highway": "living_street"
+      }
+    },
+    {
+      "id": "way/1225833785",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0187376,
+      "longitude": 76.9536245,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1225833786",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0187967,
+      "longitude": 76.9538699,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1225833787",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0186624,
+      "longitude": 76.9537116,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1225833788",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0187198,
+      "longitude": 76.9539609,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1240248192",
+      "name": "Krishna Nursing Home",
+      "category": "healthcare",
+      "latitude": 11.0153062,
+      "longitude": 76.9595053,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Krishna Nursing Home",
+        "source": "microsoft/BuildingFootprints"
+      }
+    },
+    {
+      "id": "way/1240248298",
+      "name": "White Data Systems Pvt Ltd",
+      "category": "office",
+      "latitude": 11.0164484,
+      "longitude": 76.9600073,
+      "tags": {
+        "addr:city": "\u0b95\u0bcb\u0baf\u0bae\u0bcd\u0baa\u0bc1\u0ba4\u0bcd\u0ba4\u0bc2\u0bb0\u0bcd",
+        "addr:housenumber": "E",
+        "addr:postcode": "641009",
+        "addr:street": "Cross Cut Road",
+        "building": "yes",
+        "name": "White Data Systems Pvt Ltd",
+        "name:en": "White Data Systems Pvt Ltd",
+        "office": "it",
+        "opening_hours": "Mo-Fr 09:30-18:00",
+        "source": "microsoft/BuildingFootprints",
+        "website": "http://www.iloads.in/"
+      }
+    },
+    {
+      "id": "way/1240249370",
+      "name": "Avinashilingam Elimentry School",
+      "category": "education",
+      "latitude": 11.0186311,
+      "longitude": 76.9527651,
+      "tags": {
+        "addr:city": "Coimbatore",
+        "addr:district": "Coimbatore",
+        "addr:postcode": "641043",
+        "addr:street": "Saibaba Colony",
+        "amenity": "school",
+        "building": "yes",
+        "education": "school",
+        "image": "https://share.google/cP0pDuzqKStFzwmfN",
+        "name": "Avinashilingam Elimentry School",
+        "source": "microsoft/BuildingFootprints"
+      }
+    },
+    {
+      "id": "way/1240372428",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0180895,
+      "longitude": 76.9586248,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1290149172",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0168537,
+      "longitude": 76.9567248,
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    {
+      "id": "way/1290149173",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0167459,
+      "longitude": 76.9563016,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1290149174",
+      "name": "North Coimbatore Flyover",
+      "category": "road",
+      "latitude": 11.0168143,
+      "longitude": 76.9581773,
+      "tags": {
+        "highway": "primary",
+        "name": "North Coimbatore Flyover"
+      }
+    },
+    {
+      "id": "way/1290154738",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0192627,
+      "longitude": 76.9586203,
+      "tags": {
+        "highway": "primary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1290154739",
+      "name": "Power House Road",
+      "category": "road",
+      "latitude": 11.0187652,
+      "longitude": 76.9580945,
+      "tags": {
+        "highway": "primary",
+        "name": "Power House Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1290154740",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0189392,
+      "longitude": 76.9580577,
+      "tags": {
+        "highway": "primary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1290154741",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0189094,
+      "longitude": 76.9571275,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/1290154742",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0189327,
+      "longitude": 76.9561276,
+      "tags": {
+        "highway": "service",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/1290154743",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0189061,
+      "longitude": 76.9568642,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1290154744",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0189284,
+      "longitude": 76.9576408,
+      "tags": {
+        "highway": "tertiary_link"
+      }
+    },
+    {
+      "id": "way/1290154745",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0182803,
+      "longitude": 76.9581135,
+      "tags": {
+        "highway": "primary"
+      }
+    },
+    {
+      "id": "way/1290154746",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0187649,
+      "longitude": 76.9580548,
+      "tags": {
+        "highway": "primary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1294650224",
+      "name": "Mettupalayam Road",
+      "category": "road",
+      "latitude": 11.013076,
+      "longitude": 76.9548636,
+      "tags": {
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Mettupalayam Road",
+        "name:ta": "\u0bae\u0bc7\u0b9f\u0bcd\u0b9f\u0bc1\u0baa\u0bcd\u0baa\u0bbe\u0bb3\u0bc8\u0baf\u0bae\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "NH181",
+        "ref:old": "NH67",
+        "source:lanes": "Bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1294650225",
+      "name": "Mettupalayam Road",
+      "category": "road",
+      "latitude": 11.0114319,
+      "longitude": 76.9550935,
+      "tags": {
+        "dual_carriageway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Mettupalayam Road",
+        "name:ta": "\u0bae\u0bc7\u0b9f\u0bcd\u0b9f\u0bc1\u0baa\u0bcd\u0baa\u0bbe\u0bb3\u0bc8\u0baf\u0bae\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "NH181",
+        "ref:old": "NH67",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1294650226",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0132389,
+      "longitude": 76.9550182,
+      "tags": {
+        "highway": "trunk",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1317835069",
+      "name": "North Coimbatore Flyover Ramp",
+      "category": "road",
+      "latitude": 11.0161195,
+      "longitude": 76.9543522,
+      "tags": {
+        "highway": "primary_link",
+        "name": "North Coimbatore Flyover Ramp",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1317835070",
+      "name": "North Coimbatore Flyover",
+      "category": "road",
+      "latitude": 11.0173528,
+      "longitude": 76.9531672,
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "name": "North Coimbatore Flyover",
+        "source:lanes": "Bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1337852599",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0190771,
+      "longitude": 76.9590644,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852600",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0186652,
+      "longitude": 76.9591775,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852601",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0188384,
+      "longitude": 76.9594316,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852602",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0174425,
+      "longitude": 76.9589931,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852603",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0173147,
+      "longitude": 76.9596076,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852604",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0174018,
+      "longitude": 76.9595637,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852617",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.016363,
+      "longitude": 76.9586471,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852618",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0164472,
+      "longitude": 76.9591237,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852619",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0150797,
+      "longitude": 76.957466,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852620",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0145602,
+      "longitude": 76.9577696,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1337852621",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0139419,
+      "longitude": 76.9581608,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144778",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0163837,
+      "longitude": 76.9550421,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144779",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0164994,
+      "longitude": 76.9555261,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144780",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0167608,
+      "longitude": 76.952852,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144781",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0181122,
+      "longitude": 76.9528495,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144782",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0180442,
+      "longitude": 76.9526665,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144784",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0195609,
+      "longitude": 76.9520309,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144786",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0188787,
+      "longitude": 76.9517252,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144787",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0188988,
+      "longitude": 76.9525072,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144805",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0164379,
+      "longitude": 76.9512242,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144806",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0165949,
+      "longitude": 76.9516314,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144807",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0167709,
+      "longitude": 76.9521487,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338144808",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0171069,
+      "longitude": 76.9514286,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1366153914",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0132169,
+      "longitude": 76.95841,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1489345090",
+      "name": "Dr Rajendra Prasad Road",
+      "category": "road",
+      "latitude": 11.0188477,
+      "longitude": 76.9568579,
+      "tags": {
+        "highway": "residential",
+        "name": "Dr Rajendra Prasad Road",
+        "surface": "asphalt"
+      }
+    }
+  ]
+}

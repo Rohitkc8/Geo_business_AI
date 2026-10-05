@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 11.4462338,
+      "center_longitude": 78.1859576,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T06:05:40.648669+00:00",
+    "query_hash": "b8ff0cd02352ea222399a463678257c7",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 6
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "way/345715126",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4470942,
+      "longitude": 78.1944276,
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    {
+      "id": "way/1333438620",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4438344,
+      "longitude": 78.1966727,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/1333438621",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4486337,
+      "longitude": 78.1880287,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/1333667786",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4423159,
+      "longitude": 78.1816883,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1333667787",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4425577,
+      "longitude": 78.186088,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1333667792",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.445274,
+      "longitude": 78.1860433,
+      "tags": {
+        "highway": "unclassified"
+      }
+    }
+  ]
+}

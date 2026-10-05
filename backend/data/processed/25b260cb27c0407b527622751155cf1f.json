@@ -1,0 +1,1676 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 10.805,
+      "center_longitude": 78.6856,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T04:31:43.981606+00:00",
+    "query_hash": "25b260cb27c0407b527622751155cf1f",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 144
+  },
+  "population_metrics": {
+    "population": 26120,
+    "population_density": 26120.0,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "good",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/1784405202",
+      "name": "American Hospital",
+      "category": "bus_stop",
+      "latitude": 10.8049536,
+      "longitude": 78.686074,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "American Hospital",
+        "name:ar": "\u0627\u0644\u0645\u0633\u062a\u0634\u0641\u0649 \u0627\u0644\u0627\u0645\u0631\u064a\u0643\u064a",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/4349265791",
+      "name": "Grill Chicken",
+      "category": "restaurant",
+      "latitude": 10.806285,
+      "longitude": 78.6842837,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Grill Chicken"
+      }
+    },
+    {
+      "id": "node/4349861866",
+      "name": "Marrybrown",
+      "category": "restaurant",
+      "latitude": 10.8024945,
+      "longitude": 78.6846151,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Marrybrown",
+        "brand:wikidata": "Q3380773",
+        "brand:wikipedia": "en:Marrybrown",
+        "cuisine": "malaysian;chicken;burger",
+        "diet:halal": "yes",
+        "name": "Marrybrown",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "id": "node/4349861867",
+      "name": "Friends Blood Bank",
+      "category": "other",
+      "latitude": 10.8015533,
+      "longitude": 78.6840697,
+      "tags": {
+        "addr:city": "Trichy",
+        "addr:district": "TIRUCHIRAPPALLI",
+        "addr:full": "No. 7C Williams Road, Contonment",
+        "addr:postcode": "620001",
+        "addr:state": "Tamil Nadu",
+        "amenity": "blood_bank",
+        "contact:phone": "4312460646",
+        "healthcare": "blood_bank",
+        "name": "Friends Blood Bank",
+        "operator:type": "private",
+        "phone": "04312460646",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/4543308056",
+      "name": "Fastrack",
+      "category": "shop_watches",
+      "latitude": 10.807259,
+      "longitude": 78.6834039,
+      "tags": {
+        "brand": "Titan",
+        "name": "Fastrack",
+        "shop": "watches"
+      }
+    },
+    {
+      "id": "node/4701650726",
+      "name": "Poorvika Mobile Store",
+      "category": "shop_mobile_phone",
+      "latitude": 10.8041177,
+      "longitude": 78.6870584,
+      "tags": {
+        "brand": "Poorvika",
+        "name": "Poorvika Mobile Store",
+        "name:ta": "\u0baa\u0bc2\u0bb0\u0bcd\u0bb5\u0bc0\u0b95\u0bbe \u0bae\u0bca\u0baa\u0bc8\u0bb2\u0bcd \u0bb8\u0bcd\u0b9f\u0bcb\u0bb0\u0bcd",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "id": "node/4701650727",
+      "name": "BSNL",
+      "category": "shop_mobile_phone",
+      "latitude": 10.8021056,
+      "longitude": 78.6885105,
+      "tags": {
+        "brand": "BSNL",
+        "name": "BSNL",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "id": "node/4832818692",
+      "name": "Kavi motors Yamaha",
+      "category": "shop_motorcycle",
+      "latitude": 10.8023,
+      "longitude": 78.684479,
+      "tags": {
+        "name": "Kavi motors Yamaha",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "id": "node/4832818693",
+      "name": "Indian Bank",
+      "category": "bank",
+      "latitude": 10.802468,
+      "longitude": 78.68475,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Indian Bank",
+        "brand:wikidata": "Q2003789",
+        "brand:wikipedia": "en:Indian Bank",
+        "name": "Indian Bank",
+        "name:en": "Indian Bank",
+        "website": "https://www.indianbank.in/"
+      }
+    },
+    {
+      "id": "node/4832818695",
+      "name": "Bread basket bakery",
+      "category": "shop_bakery",
+      "latitude": 10.8036559,
+      "longitude": 78.6857997,
+      "tags": {
+        "name": "Bread basket bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "id": "node/4832818696",
+      "name": "Indian Overseas Bank",
+      "category": "bank",
+      "latitude": 10.8052877,
+      "longitude": 78.685554,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Indian Overseas Bank",
+        "brand:wikidata": "Q2003611",
+        "brand:wikipedia": "en:Indian Overseas Bank",
+        "name": "Indian Overseas Bank",
+        "name:en": "Indian Overseas Bank",
+        "short_name": "IOB",
+        "website": "https://www.iob.in"
+      }
+    },
+    {
+      "id": "node/4832818698",
+      "name": "Mobile store",
+      "category": "shop_mobile_phone",
+      "latitude": 10.8067432,
+      "longitude": 78.6835251,
+      "tags": {
+        "name": "Mobile store",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "id": "node/6494325189",
+      "name": "Child Jesus Hospital",
+      "category": "healthcare",
+      "latitude": 10.8051465,
+      "longitude": 78.6865772,
+      "tags": {
+        "addr:district": "Tiruchirappalli",
+        "addr:full": "C.J. Hospital, P. Box. No. 17,Cantonment,Next To All India Radio",
+        "addr:postcode": "620001",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "childcare",
+        "name": "Child Jesus Hospital"
+      }
+    },
+    {
+      "id": "node/6884772539",
+      "name": "Child Jesus Hospital Blood Bank",
+      "category": "other",
+      "latitude": 10.8051863,
+      "longitude": 78.686661,
+      "tags": {
+        "addr:city": "Trichy",
+        "addr:district": "TIRUCHIRAPPALLI",
+        "addr:full": "Next to All India Radio, Promenade Road, Cantonment, Tiruchirappalli",
+        "addr:postcode": "620001",
+        "addr:state": "Tamil Nadu",
+        "amenity": "blood_bank",
+        "contact:mobile": "9488414084",
+        "contact:phone": "04312415816; 04312410816",
+        "email": "childjesuslab@gmail.com",
+        "fax": "0431 2411335",
+        "name": "Child Jesus Hospital Blood Bank",
+        "opening_hours": "24/7",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "website": "http://www.childjesushospital.org"
+      }
+    },
+    {
+      "id": "node/6927581292",
+      "name": "Al Ameen Nursing Home",
+      "category": "healthcare",
+      "latitude": 10.8074646,
+      "longitude": 78.6873496,
+      "tags": {
+        "addr:district": "Tiruchirappalli",
+        "addr:full": "16/31, Analkatti Maidan",
+        "addr:postcode": "620001",
+        "addr:state": "Tamil Nadu",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Al Ameen Nursing Home",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/6934162619",
+      "name": "Shyamala Nursing Home, Tiruchirappalli",
+      "category": "healthcare",
+      "latitude": 10.8028471,
+      "longitude": 78.6845919,
+      "tags": {
+        "addr:district": "Tiruchirappalli",
+        "addr:full": "15,Benwells Road",
+        "addr:postcode": "620001",
+        "addr:state": "Tamil Nadu",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Shyamala Nursing Home, Tiruchirappalli",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/9256594615",
+      "name": "Ammikkal",
+      "category": "restaurant",
+      "latitude": 10.8042966,
+      "longitude": 78.6864815,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Ammikkal"
+      }
+    },
+    {
+      "id": "node/11044550281",
+      "name": "SuXuS Mobile ServicsS",
+      "category": "shop_mobile_phone",
+      "latitude": 10.8033032,
+      "longitude": 78.6884492,
+      "tags": {
+        "addr:city": "Trichirapalli",
+        "addr:country": "IN",
+        "addr:district": "Tamilnadu",
+        "addr:housenumber": "41, Almas Plasa , Promenade Road,",
+        "addr:postcode": "620001",
+        "addr:street": "Bharathidasan Salai",
+        "description": "\"Computer based troubleshooting, Software upgrade, Unlock done by Skilled Service Engineer. Also available car chargers, multi chargers. One unit charger 6 usb ports, Quality charger for V8 Charging Port, Quality charger for Type-C Charging Port. Wired qu",
+        "name": "SuXuS Mobile ServicsS",
+        "phone": "04314050478",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "id": "node/12972950169",
+      "name": "Tanishq",
+      "category": "shop_jewelry",
+      "latitude": 10.8036956,
+      "longitude": 78.6879985,
+      "tags": {
+        "brand": "Tanishq",
+        "brand:en": "Tanishq",
+        "brand:wikidata": "Q13117711",
+        "name": "Tanishq",
+        "name:en": "Tanishq",
+        "name:ta": "\u0ba4\u0ba9\u0bbf\u0bb7\u0bcd\u0b95\u0bcd",
+        "shop": "jewelry",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "id": "node/12972962890",
+      "name": "Padmakshi hospital",
+      "category": "healthcare",
+      "latitude": 10.8032623,
+      "longitude": 78.6877965,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Padmakshi hospital",
+        "name:ta": "\u0baa\u0ba4\u0bcd\u0bae\u0bbe\u0b95\u0bcd\u0bb7\u0bbf \u0bae\u0bb0\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0bb5\u0bae\u0ba9\u0bc8"
+      }
+    },
+    {
+      "id": "node/12972985852",
+      "name": "Kay Jay Auto Unit",
+      "category": "shop_car_parts",
+      "latitude": 10.8035105,
+      "longitude": 78.6877587,
+      "tags": {
+        "name": "Kay Jay Auto Unit",
+        "name:ta": "\u0b95\u0bc7. \u0b9c\u0bc6. \u0b86\u0b9f\u0bcd\u0b9f\u0bcb \u0baf\u0bc2\u0ba9\u0bbf\u0b9f\u0bcd",
+        "shop": "car_parts"
+      }
+    },
+    {
+      "id": "node/13003760767",
+      "name": "BSNL customer service centre",
+      "category": "shop_telecommunication",
+      "latitude": 10.8026651,
+      "longitude": 78.6883463,
+      "tags": {
+        "name": "BSNL customer service centre",
+        "operator": "BSNL",
+        "operator:wikidata": "Q278834",
+        "shop": "telecommunication"
+      }
+    },
+    {
+      "id": "node/13031427844",
+      "name": "\u0ba4\u0bb2\u0bc8\u0bae\u0bc8 \u0baa\u0bca\u0bb1\u0bbf\u0baf\u0bbe\u0bb3\u0bb0\u0bcd \u0b85\u0bb2\u0bc1\u0bb5\u0bb2\u0b95\u0bae\u0bcd",
+      "category": "office",
+      "latitude": 10.8082395,
+      "longitude": 78.6845499,
+      "tags": {
+        "name": "\u0ba4\u0bb2\u0bc8\u0bae\u0bc8 \u0baa\u0bca\u0bb1\u0bbf\u0baf\u0bbe\u0bb3\u0bb0\u0bcd \u0b85\u0bb2\u0bc1\u0bb5\u0bb2\u0b95\u0bae\u0bcd",
+        "name:en": "Chief Engineer's Office",
+        "office": "government"
+      }
+    },
+    {
+      "id": "node/13757942101",
+      "name": "Cake house",
+      "category": "shop_bakery",
+      "latitude": 10.804008,
+      "longitude": 78.6826068,
+      "tags": {
+        "name": "Cake house",
+        "shop": "bakery"
+      }
+    },
+    {
+      "id": "node/13757942102",
+      "name": "Sri Velan Pharmacy",
+      "category": "pharmacy",
+      "latitude": 10.8041336,
+      "longitude": 78.6826127,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Sri Velan Pharmacy"
+      }
+    },
+    {
+      "id": "node/13757942201",
+      "name": "Dr. Akila Skin Hair Laser clinic",
+      "category": "healthcare",
+      "latitude": 10.8041021,
+      "longitude": 78.6826248,
+      "tags": {
+        "amenity": "clinic",
+        "name": "Dr. Akila Skin Hair Laser clinic"
+      }
+    },
+    {
+      "id": "node/13757967904",
+      "name": "Blue Dart DHL",
+      "category": "office",
+      "latitude": 10.8039792,
+      "longitude": 78.682613,
+      "tags": {
+        "brand": "Blue Dart Express",
+        "brand:short": "Blue Dart",
+        "name": "Blue Dart DHL",
+        "office": "courier",
+        "opening_hours": "Mo-Sa 10:00-18:30",
+        "operator": "Blue Dart Express",
+        "operator:short": "Blue Dart",
+        "operator:wikidata": "Q54621493"
+      }
+    },
+    {
+      "id": "node/13765768903",
+      "name": "N.R. Brothers",
+      "category": "shop_hardware",
+      "latitude": 10.8041568,
+      "longitude": 78.6870007,
+      "tags": {
+        "name": "N.R. Brothers",
+        "shop": "hardware"
+      }
+    },
+    {
+      "id": "node/13767480301",
+      "name": "New Lips",
+      "category": "shop_stationery",
+      "latitude": 10.8039958,
+      "longitude": 78.6877482,
+      "tags": {
+        "name": "New Lips",
+        "shop": "stationery"
+      }
+    },
+    {
+      "id": "node/14143817702",
+      "name": "Axis bank",
+      "category": "bank",
+      "latitude": 10.8072633,
+      "longitude": 78.6833148,
+      "tags": {
+        "amenity": "bank",
+        "name": "Axis bank"
+      }
+    },
+    {
+      "id": "node/14143820601",
+      "name": "City Union Bank",
+      "category": "bank",
+      "latitude": 10.807392,
+      "longitude": 78.6831537,
+      "tags": {
+        "amenity": "bank",
+        "name": "City Union Bank"
+      }
+    },
+    {
+      "id": "way/70370191",
+      "name": "Reynolds Road",
+      "category": "road",
+      "latitude": 10.8066299,
+      "longitude": 78.6810913,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Reynolds Road",
+        "source": "osm-gpx"
+      }
+    },
+    {
+      "id": "way/100787181",
+      "name": "Convent road",
+      "category": "road",
+      "latitude": 10.80419,
+      "longitude": 78.6885843,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Convent road"
+      }
+    },
+    {
+      "id": "way/198550473",
+      "name": "Birds Road",
+      "category": "road",
+      "latitude": 10.8012378,
+      "longitude": 78.6872956,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Birds Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/198550474",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8042869,
+      "longitude": 78.6867228,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/198550475",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8019915,
+      "longitude": 78.6863935,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/198550476",
+      "name": "Benwells Road",
+      "category": "road",
+      "latitude": 10.8047347,
+      "longitude": 78.6837365,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Benwells Road"
+      }
+    },
+    {
+      "id": "way/201744694",
+      "name": "Reliance Mart",
+      "category": "grocery_store",
+      "latitude": 10.8072546,
+      "longitude": 78.68137,
+      "tags": {
+        "name": "Reliance Mart",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "id": "way/204763534",
+      "name": "Campion Anglo-Indian Higher Secondary School",
+      "category": "education",
+      "latitude": 10.8050939,
+      "longitude": 78.6843134,
+      "tags": {
+        "addr:city": "Tiruchirapalli",
+        "addr:housenumber": "Post Box : 11",
+        "addr:postcode": "620001",
+        "addr:street": "Cantonment",
+        "amenity": "school",
+        "description": "Campion Anglo - Indian Higher Secondary School is named after its Patron Saint Edmund Campion, an Oxford Scholar and Jesuit Priest, who was martyred for the Catholic Faith in the reign of Queen Elizabeth I of England and canonized in 25th October, 1970.",
+        "email": "campionschool@yahoo.co.in",
+        "name": "Campion Anglo-Indian Higher Secondary School",
+        "phone": "+91 7305397514, +917305397515",
+        "website": "https://campionschool.net/",
+        "wikidata": "Q5028399",
+        "wikipedia": "en:Campion Anglo-Indian Higher Secondary School"
+      }
+    },
+    {
+      "id": "way/206049561",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8067601,
+      "longitude": 78.6830936,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/206210667",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8079971,
+      "longitude": 78.6822729,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/206238052",
+      "name": "Bharathidasan Salai",
+      "category": "road",
+      "latitude": 10.805662,
+      "longitude": 78.6850837,
+      "tags": {
+        "highway": "primary",
+        "name": "Bharathidasan Salai",
+        "name:etymology:wikidata": "Q3534483",
+        "name:ta": "\u0baa\u0bbe\u0bb0\u0ba4\u0bbf\u0ba4\u0bbe\u0b9a\u0ba9\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/206266162",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.80215,
+      "longitude": 78.6869053,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310298",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8076517,
+      "longitude": 78.687091,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310300",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8068354,
+      "longitude": 78.6890063,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310303",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.806282,
+      "longitude": 78.6882766,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310304",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8103632,
+      "longitude": 78.6860282,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310311",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8096022,
+      "longitude": 78.6837841,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/207310313",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8097974,
+      "longitude": 78.6878136,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310322",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8073341,
+      "longitude": 78.6894792,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310325",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.807034,
+      "longitude": 78.6890397,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310335",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8058696,
+      "longitude": 78.6891125,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310336",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8058629,
+      "longitude": 78.6888774,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310338",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8071134,
+      "longitude": 78.6887895,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310354",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8069598,
+      "longitude": 78.6893106,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310356",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8081831,
+      "longitude": 78.6869166,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310360",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8074038,
+      "longitude": 78.6892363,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310361",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8076903,
+      "longitude": 78.6879125,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310382",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8058407,
+      "longitude": 78.6898348,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310388",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8055447,
+      "longitude": 78.6891854,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310398",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.809571,
+      "longitude": 78.6873852,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310399",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8068237,
+      "longitude": 78.6899963,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310406",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8071785,
+      "longitude": 78.689676,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310418",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.806116,
+      "longitude": 78.6892648,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310424",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8092405,
+      "longitude": 78.6857964,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310427",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8093082,
+      "longitude": 78.6854528,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310431",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8075239,
+      "longitude": 78.6894908,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207310433",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8074016,
+      "longitude": 78.689233,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207328871",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8091735,
+      "longitude": 78.6869801,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449148",
+      "name": "Alexandria Road",
+      "category": "road",
+      "latitude": 10.8030569,
+      "longitude": 78.6819589,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Alexandria Road"
+      }
+    },
+    {
+      "id": "way/207449150",
+      "name": "Warners Rd",
+      "category": "road",
+      "latitude": 10.8021238,
+      "longitude": 78.6832219,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Warners Rd"
+      }
+    },
+    {
+      "id": "way/207449157",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8031923,
+      "longitude": 78.6869176,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449159",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.803402,
+      "longitude": 78.6870214,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449162",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8034729,
+      "longitude": 78.6873612,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449165",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8018393,
+      "longitude": 78.6844759,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449167",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8040148,
+      "longitude": 78.6855536,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449168",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.803799,
+      "longitude": 78.6853062,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449172",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8042637,
+      "longitude": 78.68978,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449174",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8019255,
+      "longitude": 78.6850271,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449178",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8006827,
+      "longitude": 78.6843256,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449180",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8045488,
+      "longitude": 78.686031,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449188",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8065932,
+      "longitude": 78.6898627,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449189",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8045596,
+      "longitude": 78.6822544,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449195",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8044969,
+      "longitude": 78.6888285,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449196",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.803753,
+      "longitude": 78.6829028,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449197",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8078314,
+      "longitude": 78.6873749,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449200",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8014335,
+      "longitude": 78.6809465,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449203",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8046336,
+      "longitude": 78.6821804,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449207",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8063691,
+      "longitude": 78.6877381,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/207449210",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8027943,
+      "longitude": 78.6872281,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/210756391",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8029019,
+      "longitude": 78.6848985,
+      "tags": {
+        "highway": "unclassified",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/210995429",
+      "name": "Warners road",
+      "category": "road",
+      "latitude": 10.8051465,
+      "longitude": 78.682548,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Warners road"
+      }
+    },
+    {
+      "id": "way/232595295",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8041271,
+      "longitude": 78.6893326,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/232595296",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8043915,
+      "longitude": 78.6897872,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/369881223",
+      "name": "Bharathidasan Salai",
+      "category": "road",
+      "latitude": 10.8055467,
+      "longitude": 78.6850435,
+      "tags": {
+        "highway": "primary",
+        "name": "Bharathidasan Salai",
+        "name:etymology:wikidata": "Q3534483",
+        "name:ta": "\u0baa\u0bbe\u0bb0\u0ba4\u0bbf\u0ba4\u0bbe\u0b9a\u0ba9\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/456124571",
+      "name": "Ministry Of Finance - Customs Central Excise & Service Tax",
+      "category": "office",
+      "latitude": 10.8029684,
+      "longitude": 78.6857739,
+      "tags": {
+        "building": "yes",
+        "name": "Ministry Of Finance - Customs Central Excise & Service Tax",
+        "office": "government"
+      }
+    },
+    {
+      "id": "way/456124855",
+      "name": "TABS Complex",
+      "category": "shop_mall",
+      "latitude": 10.8045348,
+      "longitude": 78.6863771,
+      "tags": {
+        "building": "yes",
+        "name": "TABS Complex",
+        "shop": "mall"
+      }
+    },
+    {
+      "id": "way/456125055",
+      "name": "Tiruchirappalli City Municipal Corporation",
+      "category": "office",
+      "latitude": 10.8064203,
+      "longitude": 78.685499,
+      "tags": {
+        "building": "yes",
+        "name": "Tiruchirappalli City Municipal Corporation",
+        "office": "government"
+      }
+    },
+    {
+      "id": "way/607655099",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8074936,
+      "longitude": 78.683397,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/607655101",
+      "name": "Promenade Road",
+      "category": "road",
+      "latitude": 10.8074034,
+      "longitude": 78.6840763,
+      "tags": {
+        "highway": "residential",
+        "name": "Promenade Road"
+      }
+    },
+    {
+      "id": "way/607655103",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8073737,
+      "longitude": 78.685288,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/607655105",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8064753,
+      "longitude": 78.6866369,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/607655647",
+      "name": "Williams Road",
+      "category": "road",
+      "latitude": 10.8043689,
+      "longitude": 78.6866328,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Williams Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/625610378",
+      "name": "Heber Street",
+      "category": "road",
+      "latitude": 10.8085366,
+      "longitude": 78.6873105,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Heber Street"
+      }
+    },
+    {
+      "id": "way/693800987",
+      "name": "Williams Road",
+      "category": "road",
+      "latitude": 10.8023549,
+      "longitude": 78.6846857,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Williams Road",
+        "oneway": "no"
+      }
+    },
+    {
+      "id": "way/730090730",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8082032,
+      "longitude": 78.683297,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/730092635",
+      "name": "Benwells Road",
+      "category": "road",
+      "latitude": 10.8028105,
+      "longitude": 78.6848068,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Benwells Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/731008020",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8013822,
+      "longitude": 78.6835466,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/731231342",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8087451,
+      "longitude": 78.6835276,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/731231343",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8085118,
+      "longitude": 78.6825457,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/731231345",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8093885,
+      "longitude": 78.6830918,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/731231347",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8088013,
+      "longitude": 78.6821813,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/731238115",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.805419,
+      "longitude": 78.6890796,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/731238116",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8054857,
+      "longitude": 78.6885309,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/732810729",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8056526,
+      "longitude": 78.6853127,
+      "tags": {
+        "highway": "primary_link"
+      }
+    },
+    {
+      "id": "way/816051076",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8012324,
+      "longitude": 78.6846504,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816051077",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8018427,
+      "longitude": 78.6878786,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816051078",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8046491,
+      "longitude": 78.6889707,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816066605",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.806205,
+      "longitude": 78.6816022,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816066606",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8061604,
+      "longitude": 78.6811603,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816066607",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8042928,
+      "longitude": 78.6847677,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816066608",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8044609,
+      "longitude": 78.6850488,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816066609",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8033431,
+      "longitude": 78.6838224,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816070240",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.809526,
+      "longitude": 78.6842137,
+      "tags": {
+        "highway": "service",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816070241",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8090469,
+      "longitude": 78.6849693,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816070242",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8087911,
+      "longitude": 78.6862593,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816070243",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8088444,
+      "longitude": 78.6876811,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816084694",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8013515,
+      "longitude": 78.6850332,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816084698",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8034792,
+      "longitude": 78.6850812,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816120247",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.80057,
+      "longitude": 78.684657,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/816446838",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8094148,
+      "longitude": 78.6860067,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/1059830965",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8060405,
+      "longitude": 78.6855979,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1096193589",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8080971,
+      "longitude": 78.6833818,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1130828954",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8009628,
+      "longitude": 78.6868084,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1229041039",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8024139,
+      "longitude": 78.6815156,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1229049908",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8048304,
+      "longitude": 78.6815652,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1229050649",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8033573,
+      "longitude": 78.6868945,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1231076810",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.804464,
+      "longitude": 78.6893587,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1231079139",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8063439,
+      "longitude": 78.6840617,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1231079320",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8013879,
+      "longitude": 78.68555,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1231079327",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8076893,
+      "longitude": 78.6852767,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1391379618",
+      "name": "Bharathidasan Salai",
+      "category": "road",
+      "latitude": 10.8017388,
+      "longitude": 78.6894853,
+      "tags": {
+        "highway": "primary",
+        "name": "Bharathidasan Salai",
+        "name:etymology:wikidata": "Q3534483",
+        "name:ta": "\u0baa\u0bbe\u0bb0\u0ba4\u0bbf\u0ba4\u0bbe\u0b9a\u0ba9\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1391379619",
+      "name": "Bharathidasan Salai",
+      "category": "road",
+      "latitude": 10.8018159,
+      "longitude": 78.6895093,
+      "tags": {
+        "highway": "primary",
+        "name": "Bharathidasan Salai",
+        "name:etymology:wikidata": "Q3534483",
+        "name:ta": "\u0baa\u0bbe\u0bb0\u0ba4\u0bbf\u0ba4\u0bbe\u0b9a\u0ba9\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1535736388",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.8026277,
+      "longitude": 78.6822145,
+      "tags": {
+        "highway": "service"
+      }
+    }
+  ]
+}

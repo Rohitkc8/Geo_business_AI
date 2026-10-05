@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 11.480836,
+      "center_longitude": 78.270055,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T09:11:35.738859+00:00",
+    "query_hash": "05d894158c8c542b5da9df67b6c2e78b",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 9
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "way/175237506",
+      "name": "Rasipuram - Pudupatti -Namagiripettai Road",
+      "category": "road",
+      "latitude": 11.47655,
+      "longitude": 78.2345347,
+      "tags": {
+        "highway": "secondary",
+        "name": "Rasipuram - Pudupatti -Namagiripettai Road",
+        "ref": "MDR856"
+      }
+    },
+    {
+      "id": "way/1333385330",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4779472,
+      "longitude": 78.2713557,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/1333385331",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4828863,
+      "longitude": 78.2693333,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/1333385332",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4793517,
+      "longitude": 78.2697539,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/1333385333",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4800391,
+      "longitude": 78.2762201,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/1333385337",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4860693,
+      "longitude": 78.2796498,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/1333391448",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4852656,
+      "longitude": 78.2681257,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/1333391451",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4833087,
+      "longitude": 78.2674574,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/1333391452",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4803779,
+      "longitude": 78.2665239,
+      "tags": {
+        "highway": "unclassified"
+      }
+    }
+  ]
+}

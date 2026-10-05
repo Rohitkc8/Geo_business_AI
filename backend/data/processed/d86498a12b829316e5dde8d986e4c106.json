@@ -1,0 +1,1493 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 11.0,
+      "center_longitude": 76.95,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T04:38:48.807449+00:00",
+    "query_hash": "d86498a12b829316e5dde8d986e4c106",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 120
+  },
+  "population_metrics": {
+    "population": 7479,
+    "population_density": 7479.0,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "good",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/330069980",
+      "name": "Saravana Dental Care Hospital",
+      "category": "healthcare",
+      "latitude": 11.0028292,
+      "longitude": 76.9513725,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Saravana Dental Care Hospital"
+      }
+    },
+    {
+      "id": "node/1468093950",
+      "name": "Unnamed Feature",
+      "category": "bus_stop",
+      "latitude": 11.0002287,
+      "longitude": 76.9493357,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "local_ref": "Gandhi park bus stop",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/1468093970",
+      "name": "TASMAC",
+      "category": "shop_alcohol",
+      "latitude": 11.0002656,
+      "longitude": 76.949156,
+      "tags": {
+        "name": "TASMAC",
+        "shop": "alcohol"
+      }
+    },
+    {
+      "id": "node/1472620619",
+      "name": "JACK & JILL",
+      "category": "shop_clothes",
+      "latitude": 11.0040638,
+      "longitude": 76.9515868,
+      "tags": {
+        "name": "JACK & JILL",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/1472620620",
+      "name": "Araya Vaidya Pharmacy",
+      "category": "pharmacy",
+      "latitude": 11.0038847,
+      "longitude": 76.951619,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "Araya Vaidya Pharmacy"
+      }
+    },
+    {
+      "id": "node/1472620621",
+      "name": "WEEKENDER",
+      "category": "shop_clothes",
+      "latitude": 11.0042112,
+      "longitude": 76.9516083,
+      "tags": {
+        "name": "WEEKENDER",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/1472703561",
+      "name": "Archies",
+      "category": "shop_gift",
+      "latitude": 11.0032844,
+      "longitude": 76.9511362,
+      "tags": {
+        "brand": "Archies",
+        "brand:wikidata": "Q4786843",
+        "name": "Archies",
+        "shop": "gift"
+      }
+    },
+    {
+      "id": "node/1472703562",
+      "name": "ING",
+      "category": "bank",
+      "latitude": 11.0038637,
+      "longitude": 76.9512328,
+      "tags": {
+        "amenity": "bank",
+        "branch": "VYSYA",
+        "brand": "ING",
+        "brand:wikidata": "Q645708",
+        "brand:wikipedia": "en:ING Group",
+        "name": "ING"
+      }
+    },
+    {
+      "id": "node/1472703564",
+      "name": "Pizza Hut",
+      "category": "restaurant",
+      "latitude": 11.0033266,
+      "longitude": 76.951383,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Pizza Hut",
+        "brand:wikidata": "Q191615",
+        "brand:wikipedia": "en:Pizza Hut",
+        "cuisine": "pizza",
+        "name": "Pizza Hut"
+      }
+    },
+    {
+      "id": "node/1472703565",
+      "name": "Karnataka Bank",
+      "category": "bank",
+      "latitude": 11.0025894,
+      "longitude": 76.9514152,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Karnataka Bank",
+        "brand:wikidata": "Q2042632",
+        "brand:wikipedia": "en:Karnataka Bank",
+        "name": "Karnataka Bank"
+      }
+    },
+    {
+      "id": "node/1472703568",
+      "name": "Allen Solly",
+      "category": "shop_clothes",
+      "latitude": 11.0042533,
+      "longitude": 76.9511684,
+      "tags": {
+        "brand": "Allen Solly",
+        "brand:wikidata": "Q110036995",
+        "name": "Allen Solly",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/1472703570",
+      "name": "State Bank of India",
+      "category": "bank",
+      "latitude": 11.0035688,
+      "longitude": 76.9519624,
+      "tags": {
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "short_name": "SBI",
+        "website": "https://www.sbi.co.in"
+      }
+    },
+    {
+      "id": "node/1472703571",
+      "name": "Peter England",
+      "category": "shop_clothes",
+      "latitude": 11.0040638,
+      "longitude": 76.9512006,
+      "tags": {
+        "brand": "Peter England",
+        "brand:wikidata": "Q19573665",
+        "clothes": "men",
+        "name": "Peter England",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/1472703572",
+      "name": "Bank of India",
+      "category": "bank",
+      "latitude": 11.0023261,
+      "longitude": 76.9514474,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Bank of India",
+        "brand:wikidata": "Q2004439",
+        "brand:wikipedia": "en:Bank of India",
+        "name": "Bank of India",
+        "name:en": "Bank of India",
+        "short_name": "BoI",
+        "website": "https://www.bankofindia.co.in/"
+      }
+    },
+    {
+      "id": "node/1472707364",
+      "name": "Axis Bank",
+      "category": "bank",
+      "latitude": 11.0020944,
+      "longitude": 76.9514903,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Axis Bank",
+        "brand:wikidata": "Q2003549",
+        "brand:wikipedia": "en:Axis Bank",
+        "name": "Axis Bank",
+        "name:en": "Axis Bank",
+        "website": "https://www.axisbank.com"
+      }
+    },
+    {
+      "id": "node/4479014898",
+      "name": "Unnamed Feature",
+      "category": "shop_confectionery",
+      "latitude": 11.0027425,
+      "longitude": 76.9483376,
+      "tags": {
+        "name:en": "Agarwals",
+        "shop": "confectionery"
+      }
+    },
+    {
+      "id": "node/6934424352",
+      "name": "Shree Saravana Nursing Home",
+      "category": "healthcare",
+      "latitude": 11.002695,
+      "longitude": 76.9513442,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "356, D.B.Road, R.S.Puram",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Shree Saravana Nursing Home",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/6936794080",
+      "name": "Maruthi Hospital, Coimbatore",
+      "category": "healthcare",
+      "latitude": 11.0031531,
+      "longitude": 76.9513019,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "361, D B Road R S Puram R S Puram",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Maruthi Hospital, Coimbatore",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/7187495085",
+      "name": "Tasmac",
+      "category": "shop_alcohol",
+      "latitude": 10.9996009,
+      "longitude": 76.9498519,
+      "tags": {
+        "name": "Tasmac",
+        "shop": "alcohol",
+        "survey:date": "2020-02-05"
+      }
+    },
+    {
+      "id": "node/7257183914",
+      "name": "Shanmuga Hospital Rs Puram",
+      "category": "healthcare",
+      "latitude": 11.0029,
+      "longitude": 76.948869,
+      "tags": {
+        "addr:block": "Coimbatore Corpn",
+        "addr:district": "Coimbatore",
+        "addr:full": "Rs Puram, Near Maruthi Lodge, Coimbatore, Venkatakrishna Road",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Coimbatore South",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Shanmuga Hospital Rs Puram",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/7257183944",
+      "name": "Rk Bai Corporation Health Centre",
+      "category": "healthcare",
+      "latitude": 10.9998322,
+      "longitude": 76.949604,
+      "tags": {
+        "addr:block": "Coimbatore Corpn",
+        "addr:district": "Coimbatore",
+        "addr:full": "D.No. 233, Sundaram Street-1, Near Park, Sukkarawarpet, Coimbatore, Gandhipark Bus Stop",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Coimbatore South",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Rk Bai Corporation Health Centre",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/7257183974",
+      "name": "Seetharam Hospital, Coimbatore",
+      "category": "healthcare",
+      "latitude": 10.99941,
+      "longitude": 76.948495,
+      "tags": {
+        "addr:block": "Coimbatore Corpn",
+        "addr:district": "Coimbatore",
+        "addr:full": "Near Gandhi Park, Coimbatore, Ponnaiyarajapuram",
+        "addr:postcode": "641007",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Coimbatore South",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Seetharam Hospital, Coimbatore",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/7257183995",
+      "name": "Rajalakshmi Hospital, Coimbatore",
+      "category": "healthcare",
+      "latitude": 11.0044176,
+      "longitude": 76.9503459,
+      "tags": {
+        "addr:block": "Coimbatore Corpn",
+        "addr:district": "Coimbatore",
+        "addr:full": "Rs Puram, Coimbatore, Sambandam Road",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Coimbatore South",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Rajalakshmi Hospital, Coimbatore",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/7257184001",
+      "name": "Guru Kirupa Hospital, Pn Palayam, Coimbatore",
+      "category": "healthcare",
+      "latitude": 10.9995252,
+      "longitude": 76.9511992,
+      "tags": {
+        "addr:block": "Periyanaickenpalayam",
+        "addr:district": "Coimbatore",
+        "addr:full": "Palayam, Coimbatore, Near Mask, Mettupalayam Road",
+        "addr:postcode": "641020",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Coimbatore North",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Guru Kirupa Hospital, Pn Palayam, Coimbatore",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/7844131965",
+      "name": "Alshifa Healing and Naturopathy Clinic",
+      "category": "healthcare",
+      "latitude": 10.998631,
+      "longitude": 76.9512758,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:postcode": "641001",
+        "addr:state": "Tamil Nadu",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Alshifa Healing and Naturopathy Clinic",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "id": "node/7844131976",
+      "name": "Dr. Sambadam",
+      "category": "healthcare",
+      "latitude": 11.0041271,
+      "longitude": 76.9512555,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "R S Puram, Coimbatore",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "amenity": "doctors",
+        "healthcare": "doctor",
+        "name": "Dr. Sambadam",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "id": "node/7844131988",
+      "name": "Sri Vishnu Priya Hospital",
+      "category": "healthcare",
+      "latitude": 10.998711,
+      "longitude": 76.951222,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "R.S. Puram, Coimbatore",
+        "addr:postcode": "641001",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sri Vishnu Priya Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "id": "node/7844132004",
+      "name": "Iswarya Hospital",
+      "category": "healthcare",
+      "latitude": 11.0002483,
+      "longitude": 76.9518169,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "R S Puram, Coimbatore",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "check_date": "2025-06-16",
+        "healthcare": "hospital",
+        "name": "Iswarya Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "id": "node/7844132014",
+      "name": "K Jagathnathan Hospital",
+      "category": "healthcare",
+      "latitude": 10.999154,
+      "longitude": 76.951549,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "Thudiyalur",
+        "addr:postcode": "641034",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "K Jagathnathan Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "id": "node/13001540233",
+      "name": "C-STERC",
+      "category": "office",
+      "latitude": 11.0039357,
+      "longitude": 76.9493476,
+      "tags": {
+        "addr:housenumber": "125",
+        "addr:street": "West Ramalingam road",
+        "level": "1",
+        "name": "C-STERC",
+        "office": "educational_institution",
+        "phone": "+918754778345",
+        "website": "https://csterc.com"
+      }
+    },
+    {
+      "id": "node/13001806544",
+      "name": "Cosmos co-op bank",
+      "category": "bank",
+      "latitude": 11.0043532,
+      "longitude": 76.950939,
+      "tags": {
+        "amenity": "bank",
+        "name": "Cosmos co-op bank"
+      }
+    },
+    {
+      "id": "node/13001835900",
+      "name": "Brave & care",
+      "category": "shop_beauty",
+      "latitude": 11.0040907,
+      "longitude": 76.9501285,
+      "tags": {
+        "addr:street": "west ramalingam",
+        "description": "men's salon",
+        "name": "Brave & care",
+        "shop": "beauty"
+      }
+    },
+    {
+      "id": "way/26901876",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9945759,
+      "longitude": 76.951053,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/29980783",
+      "name": "Thiagikumaran Street",
+      "category": "road",
+      "latitude": 11.002587,
+      "longitude": 76.9537734,
+      "tags": {
+        "highway": "residential",
+        "name": "Thiagikumaran Street",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/29980784",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0042476,
+      "longitude": 76.9516422,
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/29980785",
+      "name": "Arunachalam Street",
+      "category": "road",
+      "latitude": 11.0031319,
+      "longitude": 76.9521783,
+      "tags": {
+        "highway": "residential",
+        "name": "Arunachalam Street",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/29980786",
+      "name": "Venkatakrishna Street",
+      "category": "road",
+      "latitude": 11.0027738,
+      "longitude": 76.9545378,
+      "tags": {
+        "highway": "residential",
+        "name": "Venkatakrishna Street"
+      }
+    },
+    {
+      "id": "way/29980787",
+      "name": "Sundram Street",
+      "category": "road",
+      "latitude": 11.0012502,
+      "longitude": 76.9533401,
+      "tags": {
+        "highway": "residential",
+        "name": "Sundram Street",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/29980788",
+      "name": "Srinivasa Street",
+      "category": "road",
+      "latitude": 11.0018321,
+      "longitude": 76.9500076,
+      "tags": {
+        "highway": "residential",
+        "name": "Srinivasa Street",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/29980790",
+      "name": "Ramangam Road",
+      "category": "road",
+      "latitude": 11.0035114,
+      "longitude": 76.9504192,
+      "tags": {
+        "highway": "residential",
+        "name": "Ramangam Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/29980802",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0039486,
+      "longitude": 76.9502554,
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30919046",
+      "name": "Thadagam Road",
+      "category": "road",
+      "latitude": 11.0096176,
+      "longitude": 76.9443116,
+      "tags": {
+        "alt_name": "Coimbatore - Anaikatti Road",
+        "highway": "primary",
+        "maxspeed": "40",
+        "name": "Thadagam Road",
+        "name:ta": "\u0ba4\u0b9f\u0bbe\u0b95\u0bae\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "yes",
+        "ref": "SH164",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/62288325",
+      "name": "Sukrawarpettai Mill Road",
+      "category": "road",
+      "latitude": 10.9999405,
+      "longitude": 76.9544667,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Sukrawarpettai Mill Road"
+      }
+    },
+    {
+      "id": "way/66105411",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9967715,
+      "longitude": 76.9515617,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/66117845",
+      "name": "Unnamed Feature",
+      "category": "education",
+      "latitude": 11.0049509,
+      "longitude": 76.9480187,
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "id": "way/66292214",
+      "name": "Diwan Bhadur Road",
+      "category": "road",
+      "latitude": 11.0001911,
+      "longitude": 76.9519323,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Diwan Bhadur Road",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/66292225",
+      "name": "Sukrawarpettai Mill Road",
+      "category": "road",
+      "latitude": 10.999694,
+      "longitude": 76.9510249,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Sukrawarpettai Mill Road",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/131290307",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9982219,
+      "longitude": 76.9446419,
+      "tags": {
+        "highway": "tertiary",
+        "source": "bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/133360769",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0030089,
+      "longitude": 76.9391477,
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    {
+      "id": "way/133368413",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9984771,
+      "longitude": 76.9542448,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/134137175",
+      "name": "Edaiyar Street",
+      "category": "road",
+      "latitude": 10.9970832,
+      "longitude": 76.9553533,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Edaiyar Street"
+      }
+    },
+    {
+      "id": "way/134917672",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.998497,
+      "longitude": 76.9527214,
+      "tags": {
+        "highway": "residential",
+        "source": "bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/134917674",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.999365,
+      "longitude": 76.9470893,
+      "tags": {
+        "highway": "residential",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/134917684",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9986947,
+      "longitude": 76.947471,
+      "tags": {
+        "highway": "residential",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/134917685",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9998244,
+      "longitude": 76.9456297,
+      "tags": {
+        "highway": "residential",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/134917687",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9975766,
+      "longitude": 76.9486292,
+      "tags": {
+        "highway": "residential",
+        "source": "bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/134917692",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0003358,
+      "longitude": 76.9455041,
+      "tags": {
+        "highway": "residential",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/134917693",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0010971,
+      "longitude": 76.9474206,
+      "tags": {
+        "highway": "residential",
+        "source": "bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/134917698",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9981003,
+      "longitude": 76.9474379,
+      "tags": {
+        "highway": "residential",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/134917701",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9989064,
+      "longitude": 76.9482555,
+      "tags": {
+        "highway": "residential",
+        "source": "bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/134917704",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9988276,
+      "longitude": 76.9549525,
+      "tags": {
+        "highway": "residential",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/134917705",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9994051,
+      "longitude": 76.947745,
+      "tags": {
+        "highway": "residential",
+        "source": "bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/134917709",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0005826,
+      "longitude": 76.9478991,
+      "tags": {
+        "highway": "residential",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/134917715",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9983968,
+      "longitude": 76.9477873,
+      "tags": {
+        "highway": "residential",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/134917728",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9992506,
+      "longitude": 76.9450776,
+      "tags": {
+        "highway": "residential",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/134923595",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0011246,
+      "longitude": 76.9550513,
+      "tags": {
+        "highway": "residential",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/134938582",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9942498,
+      "longitude": 76.9497176,
+      "tags": {
+        "highway": "residential",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/134938586",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9961827,
+      "longitude": 76.9481052,
+      "tags": {
+        "highway": "residential",
+        "source": "bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/134938591",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9959877,
+      "longitude": 76.948431,
+      "tags": {
+        "highway": "residential",
+        "source": "bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/134938595",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9968171,
+      "longitude": 76.9493806,
+      "tags": {
+        "highway": "residential",
+        "source": "bing",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/206788461",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9975787,
+      "longitude": 76.948815,
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/206788464",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9974822,
+      "longitude": 76.948116,
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/293077290",
+      "name": "Diwan Bahadur Road",
+      "category": "road",
+      "latitude": 11.0054092,
+      "longitude": 76.9511732,
+      "tags": {
+        "highway": "secondary",
+        "lane_markings": "no",
+        "name": "Diwan Bahadur Road",
+        "name:etymology:wikidata": "Q3531066",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/501940841",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9999926,
+      "longitude": 76.9465687,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/501940842",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0004407,
+      "longitude": 76.9471673,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/501940843",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9998996,
+      "longitude": 76.947418,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/502561585",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9976417,
+      "longitude": 76.9464249,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/502561587",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9986935,
+      "longitude": 76.9456852,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/502561588",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9990681,
+      "longitude": 76.9455991,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/502561590",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9989942,
+      "longitude": 76.9461541,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/593055652",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9959062,
+      "longitude": 76.9481182,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/593055669",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9957434,
+      "longitude": 76.9487246,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/593055679",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.998365,
+      "longitude": 76.9460029,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/594392934",
+      "name": "Coimbatore - Anaikatti Road",
+      "category": "road",
+      "latitude": 10.9999246,
+      "longitude": 76.9500651,
+      "tags": {
+        "highway": "primary",
+        "name": "Coimbatore - Anaikatti Road",
+        "oneway": "yes",
+        "ref": "SH164"
+      }
+    },
+    {
+      "id": "way/594392935",
+      "name": "Thadagam Road",
+      "category": "road",
+      "latitude": 11.0261237,
+      "longitude": 76.9337936,
+      "tags": {
+        "alt_name": "Coimbatore - Anaikatti Road",
+        "highway": "primary",
+        "maxspeed": "40",
+        "name": "Thadagam Road",
+        "name:ta": "\u0ba4\u0b9f\u0bbe\u0b95\u0bae\u0bcd \u0b9a\u0bbe\u0bb2\u0bc8",
+        "oneway": "-1",
+        "ref": "SH164",
+        "sidewalk:left": "yes",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/594392936",
+      "name": "Sundram Street",
+      "category": "road",
+      "latitude": 11.0003667,
+      "longitude": 76.9509528,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Sundram Street",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/663085139",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9983126,
+      "longitude": 76.9524225,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/910713201",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9987342,
+      "longitude": 76.953948,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/913733941",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9966544,
+      "longitude": 76.9526885,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/913769410",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0023958,
+      "longitude": 76.9488928,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/914575725",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9991119,
+      "longitude": 76.9520091,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/914575726",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9987619,
+      "longitude": 76.9525756,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/992425918",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9954613,
+      "longitude": 76.9492374,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/992425919",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.99741,
+      "longitude": 76.9474567,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/992425920",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9984803,
+      "longitude": 76.9463469,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/993568908",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9979056,
+      "longitude": 76.9508479,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/993568909",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9960601,
+      "longitude": 76.9526047,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1004661390",
+      "name": "Sundram Street",
+      "category": "road",
+      "latitude": 11.0000471,
+      "longitude": 76.9502717,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Sundram Street",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1015026834",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9982593,
+      "longitude": 76.9502153,
+      "tags": {
+        "highway": "secondary",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1062095070",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0028012,
+      "longitude": 76.9482016,
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    {
+      "id": "way/1062095071",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0026544,
+      "longitude": 76.9482495,
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    {
+      "id": "way/1112211240",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9961463,
+      "longitude": 76.9521406,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1124952295",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9968281,
+      "longitude": 76.9468041,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1124952296",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9969144,
+      "longitude": 76.9471227,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1125566798",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0037878,
+      "longitude": 76.9484258,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1125566799",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.003998,
+      "longitude": 76.9500217,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1190160446",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.998704,
+      "longitude": 76.9535742,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1190160447",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.999976,
+      "longitude": 76.9480934,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1192798513",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9986033,
+      "longitude": 76.9532713,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1215972761",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9963046,
+      "longitude": 76.9474613,
+      "tags": {
+        "highway": "residential",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/1225593360",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9979517,
+      "longitude": 76.9500281,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1225593361",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.997557,
+      "longitude": 76.9496381,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1225593362",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9979009,
+      "longitude": 76.9494827,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1225593363",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 10.9978878,
+      "longitude": 76.949607,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1227934465",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0022888,
+      "longitude": 76.9518583,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1227934466",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0023338,
+      "longitude": 76.9522848,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1236528948",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0021956,
+      "longitude": 76.9529578,
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1236528949",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.003375,
+      "longitude": 76.952737,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514073",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0005008,
+      "longitude": 76.9546486,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1338514074",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.0006721,
+      "longitude": 76.9553622,
+      "tags": {
+        "highway": "residential"
+      }
+    }
+  ]
+}

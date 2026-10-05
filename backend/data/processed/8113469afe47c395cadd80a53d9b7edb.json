@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 11.3033889,
+      "center_longitude": 78.118604,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T08:55:08.600863+00:00",
+    "query_hash": "8113469afe47c395cadd80a53d9b7edb",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 11
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "way/345881911",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3095168,
+      "longitude": 78.1152656,
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    {
+      "id": "way/824141571",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.2989922,
+      "longitude": 78.1158454,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/824141572",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3011561,
+      "longitude": 78.1147601,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/824141575",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.30235,
+      "longitude": 78.1165864,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/824141576",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.300818,
+      "longitude": 78.1185192,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/824141577",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3001578,
+      "longitude": 78.1166817,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/824141580",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.2991263,
+      "longitude": 78.1171272,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/824141585",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3009955,
+      "longitude": 78.1225216,
+      "tags": {
+        "highway": "service",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/824141586",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3020192,
+      "longitude": 78.1211769,
+      "tags": {
+        "highway": "service",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/824178915",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3033331,
+      "longitude": 78.116607,
+      "tags": {
+        "highway": "service",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/1336419133",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.3031402,
+      "longitude": 78.1156041,
+      "tags": {
+        "highway": "residential"
+      }
+    }
+  ]
+}

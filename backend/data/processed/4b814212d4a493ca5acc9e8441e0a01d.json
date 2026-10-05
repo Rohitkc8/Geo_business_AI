@@ -1,0 +1,6668 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 12.9716,
+      "center_longitude": 77.5946,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T04:39:25.598266+00:00",
+    "query_hash": "4b814212d4a493ca5acc9e8441e0a01d",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 496
+  },
+  "population_metrics": {
+    "population": 37324,
+    "population_density": 37324.0,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "good",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/323638044",
+      "name": "TVS Sundaram Motors",
+      "category": "shop_car",
+      "latitude": 12.9737535,
+      "longitude": 77.5959935,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "107",
+        "addr:postcode": "560 001",
+        "addr:street": "Kasturba Road",
+        "brand": "General Motors",
+        "email": "salesgmblr@sundarammotors.com",
+        "name": "TVS Sundaram Motors",
+        "phone": "+91-80-22070713;+91-80-22070709",
+        "service": "dealer;repair;tyres;parts",
+        "shop": "car",
+        "website": "https://www.sundarammotors.com/"
+      }
+    },
+    {
+      "id": "node/597363559",
+      "name": "Mishra Pedha",
+      "category": "restaurant",
+      "latitude": 12.9678501,
+      "longitude": 77.5927753,
+      "tags": {
+        "addr:street": "Rajaram Mohan Roy Road",
+        "amenity": "fast_food",
+        "cuisine": "regional",
+        "diet:vegetarian": "only",
+        "name": "Mishra Pedha"
+      }
+    },
+    {
+      "id": "node/638168606",
+      "name": "Shiro",
+      "category": "restaurant",
+      "latitude": 12.971852,
+      "longitude": 77.5964092,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:country": "IN",
+        "addr:hamlet": "UB City",
+        "addr:housename": "Comet",
+        "addr:postcode": "560001",
+        "addr:street": "Vittal Mallaya Road",
+        "amenity": "restaurant",
+        "check_date": "2024-08-19",
+        "contact:instagram": "experienceshiro",
+        "cuisine": "asian",
+        "level": "3",
+        "name": "Shiro",
+        "name:kn": "\u0cb6\u0cbf\u0cb0\u0cca"
+      }
+    },
+    {
+      "id": "node/663568572",
+      "name": "Cafe Coffee Day",
+      "category": "restaurant",
+      "latitude": 12.9717817,
+      "longitude": 77.5942306,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:street": "Lavelle Road",
+        "amenity": "cafe",
+        "branch": "Square",
+        "brand": "Cafe Coffee Day",
+        "brand:wikidata": "Q5017235",
+        "check_date": "2024-08-19",
+        "cuisine": "coffee_shop",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "Cafe Coffee Day",
+        "name:kn": "\u0c95\u0cab\u0cc6 \u0c95\u0cbe\u0cab\u0cbf \u0ca1\u0cc7",
+        "outdoor_seating": "yes",
+        "takeaway": "yes",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "id": "node/663568614",
+      "name": "IELTS Test Center",
+      "category": "office",
+      "latitude": 12.9742008,
+      "longitude": 77.5970447,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "23, Prestige Takt",
+        "addr:postcode": "560001",
+        "addr:street": "Kasturba Cross Road",
+        "name": "IELTS Test Center",
+        "office": "educational_institution",
+        "opening_hours": "Tu-Su 10:30-18:30",
+        "operator": "IDP",
+        "phone": "+91-1-800-102-4353",
+        "source": "https://www.ieltsidpindia.com/information/about"
+      }
+    },
+    {
+      "id": "node/663573137",
+      "name": "Kasturba Road",
+      "category": "bus_stop",
+      "latitude": 12.9741152,
+      "longitude": 77.5960335,
+      "tags": {
+        "alt_name": "Museum",
+        "highway": "bus_stop",
+        "loc_name": "UB TOWER",
+        "name": "Kasturba Road",
+        "name:en": "Kasturba Road",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "network": "BMTC",
+        "operator": "BMTC",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/663941095",
+      "name": "Museum Canteen",
+      "category": "restaurant",
+      "latitude": 12.9748503,
+      "longitude": 77.5956392,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Museum Canteen"
+      }
+    },
+    {
+      "id": "node/677286831",
+      "name": "LimeLite Unisex Salon & Spa",
+      "category": "shop_hairdresser",
+      "latitude": 12.9711284,
+      "longitude": 77.5959911,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:street": "Lavelle Road",
+        "name": "LimeLite Unisex Salon & Spa",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "id": "node/677286837",
+      "name": "Levi's",
+      "category": "shop_clothes",
+      "latitude": 12.9710106,
+      "longitude": 77.598276,
+      "tags": {
+        "addr:street": "Lavelle Road",
+        "brand": "Levi's",
+        "brand:wikidata": "Q127962",
+        "clothes": "denim;men;women",
+        "name": "Levi's",
+        "name:kn": "\u0cb2\u0cc6\u0cb5\u0cbf\u0cb8\u0ccd",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/677286838",
+      "name": "Espirit",
+      "category": "shop_clothes",
+      "latitude": 12.9708747,
+      "longitude": 77.5990041,
+      "tags": {
+        "addr:street": "Lavelle Road",
+        "name": "Espirit",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/1851612837",
+      "name": "Toscano",
+      "category": "restaurant",
+      "latitude": 12.9717891,
+      "longitude": 77.5962374,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-08-19",
+        "cuisine": "italian",
+        "name": "Toscano",
+        "outdoor_seating": "yes"
+      }
+    },
+    {
+      "id": "node/1851613420",
+      "name": "Cafe Noir",
+      "category": "restaurant",
+      "latitude": 12.9719381,
+      "longitude": 77.5958753,
+      "tags": {
+        "amenity": "restaurant",
+        "brand": "Cafe Noir",
+        "brand:wikidata": "Q124374751",
+        "check_date": "2024-08-19",
+        "cuisine": "french",
+        "delivery": "yes",
+        "name": "Cafe Noir",
+        "name:kn": "\u0c95\u0cab\u0cc6 \u0ca8\u0cbe\u0cb0\u0ccd\u0caf\u0ccd",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "id": "node/2079415303",
+      "name": "St. Joseph's Indian Composite PU College",
+      "category": "education",
+      "latitude": 12.9689388,
+      "longitude": 77.5950441,
+      "tags": {
+        "amenity": "school",
+        "name": "St. Joseph's Indian Composite PU College"
+      }
+    },
+    {
+      "id": "node/2468903219",
+      "name": "Mallya Hospital",
+      "category": "bus_stop",
+      "latitude": 12.9703459,
+      "longitude": 77.5943823,
+      "tags": {
+        "alt_name": "St Joseph Boys High School",
+        "bench": "yes",
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "name": "Mallya Hospital",
+        "name:en": "Mallya Hospital",
+        "name:kn": "\u0cae\u0cb2\u0ccd\u0cb2\u0ccd\u0caf \u0c86\u0cb8\u0ccd\u0caa\u0ca4\u0ccd\u0cb0\u0cc6",
+        "network": "BMTC",
+        "network:wikidata": "Q3345039",
+        "operator": "BMTC",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "id": "node/2872069692",
+      "name": "Unnamed Feature",
+      "category": "restaurant",
+      "latitude": 12.9677684,
+      "longitude": 77.593373,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "regional"
+      }
+    },
+    {
+      "id": "node/3458333998",
+      "name": "Harley Davidson",
+      "category": "shop_motorcycle",
+      "latitude": 12.9704791,
+      "longitude": 77.5977284,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:street": "Lavelle Road",
+        "brand": "Harley-Davidson",
+        "brand:wikidata": "Q192814",
+        "name": "Harley Davidson",
+        "name:kn": "\u0cb9\u0cbe\u0cb0\u0ccd\u0cb2\u0cc6 \u0ca1\u0cc7\u0cb5\u0cbf\u0ca1\u0ccd\u200c\u0cb8\u0ca8\u0ccd",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "id": "node/3458333999",
+      "name": "Smoke House Deli",
+      "category": "restaurant",
+      "latitude": 12.9715104,
+      "longitude": 77.5983259,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:street": "Lavelle Road",
+        "amenity": "restaurant",
+        "check_date": "2025-01-31",
+        "cuisine": "italian;burger",
+        "name": "Smoke House Deli",
+        "name:kn": "\u0cb8\u0ccd\u0cae\u0ccb\u0c95\u0ccd \u0cb9\u0ccc\u0cb8\u0ccd \u0ca1\u0cc7\u0cb2\u0cbf",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "id": "node/3654118467",
+      "name": "Shiva Bakery and Juice",
+      "category": "restaurant",
+      "latitude": 12.9680068,
+      "longitude": 77.5918733,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Shiva Bakery and Juice"
+      }
+    },
+    {
+      "id": "node/3741208081",
+      "name": "Kasturba Road",
+      "category": "bus_stop",
+      "latitude": 12.9740494,
+      "longitude": 77.5956184,
+      "tags": {
+        "alt_name": "Museum",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "loc_name": "UB TOWER",
+        "name": "Kasturba Road",
+        "name:en": "Kasturba Road",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "network": "BMTC",
+        "operator": "BMTC",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "id": "node/4038158089",
+      "name": "SodaBottleOpenerWala",
+      "category": "restaurant",
+      "latitude": 12.9706578,
+      "longitude": 77.5975349,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:full": "Plot No.25/4, Lavelle Road, Bangalore - 560 001",
+        "addr:housenumber": "25/4",
+        "addr:postcode": "560001",
+        "addr:street": "Lavelle Road",
+        "amenity": "restaurant",
+        "check_date": "2024-08-19",
+        "contact:email": "info.lr@sodabottleopenerwala.com",
+        "contact:phone": "+91-070-22255-299",
+        "contact:website": "https://sodabottleopenerwala.com",
+        "cuisine": "indian",
+        "internet_access": "no",
+        "level": "0",
+        "microbrewery": "no",
+        "name": "SodaBottleOpenerWala",
+        "name:kn": "\u0cb8\u0ccb\u0ca1 \u0cac\u0cbe\u0c9f\u0cb2\u0ccd \u0c93\u0caa\u0ca8\u0cb0\u0ccd\u200c\u0cb5\u0cbe\u0cb2",
+        "operator": "Olive Bar and Kitchen Private Limited",
+        "smoking": "no"
+      }
+    },
+    {
+      "id": "node/4307677591",
+      "name": "Green Apple",
+      "category": "pharmacy",
+      "latitude": 12.9683737,
+      "longitude": 77.5948809,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "Green Apple"
+      }
+    },
+    {
+      "id": "node/4488002868",
+      "name": "Moti Sales Corporation",
+      "category": "office",
+      "latitude": 12.9718474,
+      "longitude": 77.5943937,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560053",
+        "addr:street": "2, 3 Road K V Lane, Akkipet Cross, Akkipet Cross,",
+        "name": "Moti Sales Corporation",
+        "office": "company",
+        "phone": "080 2225 2643"
+      }
+    },
+    {
+      "id": "node/4489812790",
+      "name": "O2 Spa",
+      "category": "shop_beauty",
+      "latitude": 12.9706238,
+      "longitude": 77.5990824,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "No.5",
+        "addr:postcode": "560001",
+        "addr:street": "Vittal Mallya Road",
+        "name": "O2 Spa",
+        "opening_hours": "10:00-20:00",
+        "phone": "099023 31966",
+        "shop": "beauty",
+        "website": "https://www.o2spa.org/"
+      }
+    },
+    {
+      "id": "node/4489832689",
+      "name": "United Minerals",
+      "category": "office",
+      "latitude": 12.971746,
+      "longitude": 77.5944262,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:full": "5th-x, Mahalaxmi Layout, Mahalaxmi, KG Halli, D' Souza Layout, Ashok Nagar, Bengaluru, Karnataka 560086",
+        "addr:postcode": "560053",
+        "name": "United Minerals",
+        "office": "company",
+        "phone": "080 2349 5910"
+      }
+    },
+    {
+      "id": "node/4490328354",
+      "name": "Sapthagiri Property Consultancy",
+      "category": "office",
+      "latitude": 12.9678995,
+      "longitude": 77.5925506,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "No.10/1",
+        "addr:postcode": "560020",
+        "addr:street": "5th Main,12th Block, Kumara Park West",
+        "name": "Sapthagiri Property Consultancy",
+        "office": "estate_agent",
+        "phone": "9448068073"
+      }
+    },
+    {
+      "id": "node/4605313729",
+      "name": "Cuepra Inc",
+      "category": "office",
+      "latitude": 12.9709513,
+      "longitude": 77.5973294,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "20",
+        "addr:postcode": "560001",
+        "addr:street": "Vittal Mallya Road",
+        "description": "102 , Golden Square ,",
+        "name": "Cuepra Inc",
+        "office": "company",
+        "opening_hours": "09:30-17:30",
+        "smoking": "outside"
+      }
+    },
+    {
+      "id": "node/5229454406",
+      "name": "Sri Nandi Silk House",
+      "category": "shop_clothes",
+      "latitude": 12.9679447,
+      "longitude": 77.5919636,
+      "tags": {
+        "name": "Sri Nandi Silk House",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/6882713302",
+      "name": "Mallya Hospital Blood Bank",
+      "category": "other",
+      "latitude": 12.9681502,
+      "longitude": 77.5950569,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "BENGALURU URBAN",
+        "addr:full": "No. 2, Vittal Mallya Road",
+        "addr:postcode": "560001",
+        "addr:state": "Karnataka",
+        "amenity": "blood_bank",
+        "contact:mobile": "9845043017",
+        "contact:phone": "08022277979",
+        "fax": "9180 22121282",
+        "name": "Mallya Hospital Blood Bank",
+        "opening_hours": "24/7",
+        "operator:type": "private",
+        "source": "OpenGovernmentData",
+        "website": "https://www.mallyahospital.net/"
+      }
+    },
+    {
+      "id": "node/6898530486",
+      "name": "Le Bistro",
+      "category": "restaurant",
+      "latitude": 12.9718776,
+      "longitude": 77.5962988,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:housenumber": "24, UB City",
+        "addr:postcode": "560001",
+        "addr:street": "Vittal Mallya Road",
+        "air_conditioning": "no",
+        "amenity": "restaurant",
+        "capacity": "15",
+        "check_date": "2024-08-19",
+        "cuisine": "pizza;pasta;burger",
+        "name": "Le Bistro",
+        "website": "https://www.oakwoodasia.com/"
+      }
+    },
+    {
+      "id": "node/7037768785",
+      "name": "Farzi Cafe",
+      "category": "restaurant",
+      "latitude": 12.9720385,
+      "longitude": 77.5956455,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "chinese;coffee_shop;curry;indian",
+        "name": "Farzi Cafe"
+      }
+    },
+    {
+      "id": "node/7243302577",
+      "name": "Subway",
+      "category": "restaurant",
+      "latitude": 12.9718291,
+      "longitude": 77.5961204,
+      "tags": {
+        "amenity": "fast_food",
+        "brand": "Subway",
+        "brand:pa": "\u0a38\u0a2c\u0a35\u0a47\u0a05",
+        "brand:ur": "\u0633\u0628 \u0648\u06d2",
+        "brand:wikidata": "Q244457",
+        "brand:wikipedia": "en:Subway (restaurant)",
+        "check_date": "2024-08-19",
+        "cuisine": "sandwich",
+        "name": "Subway",
+        "name:kn": "\u0cb8\u0cac\u0ccd\u200c\u0cb5\u0cc7",
+        "name:pa": "\u0a38\u0a2c\u0a35\u0a47\u0a05",
+        "name:ur": "\u0633\u0628 \u0648\u06d2",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "id": "node/7949885732",
+      "name": "Go Native",
+      "category": "restaurant",
+      "latitude": 12.9688442,
+      "longitude": 77.5970887,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:hamlet": "Shanthala Nagar",
+        "addr:housenumber": "25",
+        "addr:postcode": "560001",
+        "addr:street": "Lavelle Road",
+        "addr:suburb": "Ashok Nagar",
+        "amenity": "restaurant",
+        "check_date": "2024-08-19",
+        "email": "hello@gonative.in",
+        "name": "Go Native",
+        "organic": "yes",
+        "website": "https://gonative.in"
+      }
+    },
+    {
+      "id": "node/9161061917",
+      "name": "Hopcoms Juice Stand",
+      "category": "restaurant",
+      "latitude": 12.9748022,
+      "longitude": 77.5934368,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Hopcoms Juice Stand"
+      }
+    },
+    {
+      "id": "node/9162183601",
+      "name": "Go Green Organic's Nest",
+      "category": "shop_greengrocer",
+      "latitude": 12.9755262,
+      "longitude": 77.5953238,
+      "tags": {
+        "check_date": "2023-10-12",
+        "name": "Go Green Organic's Nest",
+        "organic": "yes",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "id": "node/9162183602",
+      "name": "Hopcoms Juice Stand",
+      "category": "restaurant",
+      "latitude": 12.9756556,
+      "longitude": 77.5951856,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2023-10-12",
+        "name": "Hopcoms Juice Stand"
+      }
+    },
+    {
+      "id": "node/9162183603",
+      "name": "Jaivik Mall",
+      "category": "shop_greengrocer",
+      "latitude": 12.975998,
+      "longitude": 77.5948369,
+      "tags": {
+        "check_date": "2023-10-12",
+        "name": "Jaivik Mall",
+        "organic": "yes",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "id": "node/9532858987",
+      "name": "Starbucks",
+      "category": "restaurant",
+      "latitude": 12.97119,
+      "longitude": 77.5982058,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:street": "Lavelle Road",
+        "amenity": "cafe",
+        "brand": "Starbucks",
+        "brand:wikidata": "Q37158",
+        "building": "yes",
+        "check_date": "2025-01-31",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name": "Starbucks",
+        "official_name": "Starbucks Coffee",
+        "smoking": "outside",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "id": "node/9532858988",
+      "name": "Theobroma",
+      "category": "restaurant",
+      "latitude": 12.9712972,
+      "longitude": 77.5975701,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Theobroma",
+        "brand:wikidata": "Q124374469",
+        "check_date": "2025-01-31",
+        "delivery": "yes",
+        "name": "Theobroma",
+        "shop": "pastry",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "id": "node/9532858989",
+      "name": "BMW",
+      "category": "shop_motorcycle",
+      "latitude": 12.9705444,
+      "longitude": 77.5977405,
+      "tags": {
+        "brand": "BMW",
+        "brand:wikidata": "Q249173",
+        "name": "BMW",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "id": "node/9540035597",
+      "name": "Forest Essentials",
+      "category": "shop_beauty",
+      "latitude": 12.9716893,
+      "longitude": 77.5980556,
+      "tags": {
+        "name": "Forest Essentials",
+        "shop": "beauty"
+      }
+    },
+    {
+      "id": "node/9540035598",
+      "name": "Canara Bank",
+      "category": "bank",
+      "latitude": 12.970798,
+      "longitude": 77.5973193,
+      "tags": {
+        "amenity": "bank",
+        "atm": "yes",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "brand:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "brand:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "brand:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:wikidata": "Q2003777",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "name:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "name:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "name:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "name:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "operator": "Canara Bank"
+      }
+    },
+    {
+      "id": "node/9892036257",
+      "name": "Bengaluru Baking Company",
+      "category": "shop_bakery",
+      "latitude": 12.9721872,
+      "longitude": 77.594908,
+      "tags": {
+        "name": "Bengaluru Baking Company",
+        "shop": "bakery"
+      }
+    },
+    {
+      "id": "node/10051816948",
+      "name": "The Merak Brewhouse",
+      "category": "restaurant",
+      "latitude": 12.9721424,
+      "longitude": 77.5951388,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "microbrewery": "yes",
+        "name": "The Merak Brewhouse"
+      }
+    },
+    {
+      "id": "node/10236025477",
+      "name": "Cantan",
+      "category": "restaurant",
+      "latitude": 12.9706006,
+      "longitude": 77.5975205,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-08-19",
+        "cuisine": "asian",
+        "name": "Cantan"
+      }
+    },
+    {
+      "id": "node/10236025479",
+      "name": "Ritu Kumar",
+      "category": "shop_boutique",
+      "latitude": 12.970151,
+      "longitude": 77.597715,
+      "tags": {
+        "check_date": "2024-08-19",
+        "name": "Ritu Kumar",
+        "shop": "boutique"
+      }
+    },
+    {
+      "id": "node/10236025482",
+      "name": "Glen's Bakehouse",
+      "category": "restaurant",
+      "latitude": 12.969789,
+      "longitude": 77.5974038,
+      "tags": {
+        "amenity": "cafe",
+        "brand": "Glen's Bakehouse",
+        "check_date": "2024-08-19",
+        "delivery": "yes",
+        "name": "Glen's Bakehouse",
+        "shop": "pastry",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "id": "node/10272932183",
+      "name": "Raymond",
+      "category": "shop_clothes",
+      "latitude": 12.9708619,
+      "longitude": 77.5983923,
+      "tags": {
+        "brand": "Raymond",
+        "brand:wikidata": "Q3537018",
+        "name": "Raymond",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/10272932184",
+      "name": "Bombay Shirt Company",
+      "category": "shop_clothes",
+      "latitude": 12.9719179,
+      "longitude": 77.5981991,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:country": "IN",
+        "addr:district": "Bangalore Urban",
+        "addr:hamlet": "Shanthala Nagar",
+        "addr:housename": "Maruthi Complex",
+        "addr:housenumber": "25/5",
+        "addr:postcode": "560001",
+        "addr:state": "Karnataka",
+        "addr:street": "Lavelle Road",
+        "addr:suburb": "Ashok Nagar",
+        "contact:facebook": "BombayShirts",
+        "contact:instagram": "bombayshirts",
+        "contact:whatsapp": "https://web.whatsapp.com/send?phone=+918879621003",
+        "contact:youtube": "https://www.youtube.com/channel/UCMd8a7hw8z9zDIplp4HKKzQ",
+        "email": "support@bombayshirts.com",
+        "name": "Bombay Shirt Company",
+        "opening_hours": "10:30-21:00",
+        "phone": "+91 080 43743309",
+        "shop": "clothes",
+        "website": "https://www.bombayshirts.com"
+      }
+    },
+    {
+      "id": "node/10272932185",
+      "name": "Nykaa Luxe",
+      "category": "shop_beauty",
+      "latitude": 12.971667,
+      "longitude": 77.5983627,
+      "tags": {
+        "name": "Nykaa Luxe",
+        "shop": "beauty"
+      }
+    },
+    {
+      "id": "node/10290842821",
+      "name": "One Night in Bangkok",
+      "category": "restaurant",
+      "latitude": 12.9722002,
+      "longitude": 77.5963457,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-08-19",
+        "cuisine": "thai",
+        "name": "One Night in Bangkok"
+      }
+    },
+    {
+      "id": "node/10291118242",
+      "name": "Apple",
+      "category": "office",
+      "latitude": 12.9718591,
+      "longitude": 77.5956698,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:country": "IN",
+        "addr:housename": "UB City",
+        "addr:housenumber": "24",
+        "addr:postcode": "560001",
+        "addr:street": "Vittal Mallaya Road",
+        "addr:suburb": "Shanthala Nagar",
+        "addr:unit": "Concorde Tower",
+        "level": "19",
+        "name": "Apple",
+        "name:kn": "\u0c86\u0caa\u0cc6\u0cb2\u0ccd",
+        "office": "company",
+        "operator": "Apple",
+        "short_name": "Apple",
+        "website": "https://www.apple.com/",
+        "wheelchair": "yes",
+        "wikidata": "Q312",
+        "wikipedia": "en:Apple Inc."
+      }
+    },
+    {
+      "id": "node/10291118243",
+      "name": "The Executive Centre",
+      "category": "office",
+      "latitude": 12.9718199,
+      "longitude": 77.5956872,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:housename": "UB City",
+        "addr:housenumber": "24",
+        "addr:postcode": "560001",
+        "addr:street": "Vittal Mallaya Road",
+        "addr:suburb": "Shanthala Nagar",
+        "addr:unit": "Concorde Tower",
+        "amenity": "coworking_space",
+        "brand": "The Executive Centre",
+        "email": "bangalore@executivecentre.com",
+        "fee": "yes",
+        "level": "14",
+        "name": "The Executive Centre",
+        "office": "coworking",
+        "operator": "The Executive Centre",
+        "phone": "+91 80 6720 5555",
+        "website": "https://www.executivecentre.com/en-in/office-space/bangalore-ub-city-concorde"
+      }
+    },
+    {
+      "id": "node/10728055708",
+      "name": "The Purple Turtles",
+      "category": "shop_lighting",
+      "latitude": 12.9688729,
+      "longitude": 77.5970417,
+      "tags": {
+        "contact:facebook": "ThePurpleTurtles",
+        "contact:instagram": "thepurpleturtles",
+        "contact:pinterest": "PurpleTurtles11",
+        "contact:twitter": "purpleturtlesin",
+        "name": "The Purple Turtles",
+        "shop": "lighting",
+        "website": "https://thepurpleturtles.com/"
+      }
+    },
+    {
+      "id": "node/10753340367",
+      "name": "MAP Cafe",
+      "category": "restaurant",
+      "latitude": 12.9746415,
+      "longitude": 77.5967427,
+      "tags": {
+        "amenity": "cafe",
+        "indoor_seating": "yes",
+        "name": "MAP Cafe",
+        "outdoor_seating": "no"
+      }
+    },
+    {
+      "id": "node/10855355393",
+      "name": "Isharya",
+      "category": "shop_jewelry",
+      "latitude": 12.9714647,
+      "longitude": 77.5975648,
+      "tags": {
+        "name": "Isharya",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "id": "node/10865280923",
+      "name": "\u00d6z by Kebap\u00e7i",
+      "category": "restaurant",
+      "latitude": 12.9716094,
+      "longitude": 77.5960305,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2024-08-19",
+        "cuisine": "turkish",
+        "name": "\u00d6z by Kebap\u00e7i"
+      }
+    },
+    {
+      "id": "node/10924790338",
+      "name": "Truefitt & Hill",
+      "category": "shop_hairdresser",
+      "latitude": 12.9716172,
+      "longitude": 77.5984155,
+      "tags": {
+        "name": "Truefitt & Hill",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "hairdresser",
+        "website": "https://www.truefittandhill.in/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "id": "node/11107546220",
+      "name": "Cumulus",
+      "category": "restaurant",
+      "latitude": 12.9744846,
+      "longitude": 77.5967949,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Cumulus",
+        "opening_hours": "Tu-Su 12:00-15:30;19:00-23:00",
+        "phone": "+91 96099 96687"
+      }
+    },
+    {
+      "id": "node/11146651148",
+      "name": "Heads Up For Tails",
+      "category": "shop_pet",
+      "latitude": 12.9709058,
+      "longitude": 77.5980275,
+      "tags": {
+        "name": "Heads Up For Tails",
+        "shop": "pet"
+      }
+    },
+    {
+      "id": "node/11297781803",
+      "name": "Unnamed Feature",
+      "category": "shop_motorcycle",
+      "latitude": 12.970949,
+      "longitude": 77.5978079,
+      "tags": {
+        "brand": "Hero Vida",
+        "shop": "motorcycle"
+      }
+    },
+    {
+      "id": "node/11342975208",
+      "name": "Kasturba Road",
+      "category": "bus_stop",
+      "latitude": 12.9738378,
+      "longitude": 77.5953901,
+      "tags": {
+        "alt_name": "Museum",
+        "bench": "yes",
+        "bin": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "loc_name": "UB TOWER",
+        "name": "Kasturba Road",
+        "name:en": "Kasturba Road",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "network": "BMTC",
+        "operator": "BMTC",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "id": "node/11342975209",
+      "name": "Kasturba Road",
+      "category": "bus_stop",
+      "latitude": 12.9740803,
+      "longitude": 77.5956811,
+      "tags": {
+        "alt_name": "Museum",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "loc_name": "UB TOWER",
+        "name": "Kasturba Road",
+        "name:en": "Kasturba Road",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "network": "BMTC",
+        "network:wikidata": "Q3345039",
+        "operator": "BMTC",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "id": "node/11819678538",
+      "name": "Kasturba Road",
+      "category": "bus_stop",
+      "latitude": 12.9741511,
+      "longitude": 77.5957681,
+      "tags": {
+        "alt_name": "Museum",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "lit": "yes",
+        "loc_name": "UB TOWER",
+        "name": "Kasturba Road",
+        "name:en": "Kasturba Road",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "network": "BMTC",
+        "network:wikidata": "Q3345039",
+        "operator": "BMTC",
+        "public_transport": "platform",
+        "shelter": "yes"
+      }
+    },
+    {
+      "id": "node/11921199878",
+      "name": "Sozo Skyline",
+      "category": "restaurant",
+      "latitude": 12.9746977,
+      "longitude": 77.5970538,
+      "tags": {
+        "addr:floor": "17",
+        "amenity": "restaurant",
+        "cuisine": "asian",
+        "delivery": "no",
+        "level": "17",
+        "name": "Sozo Skyline"
+      }
+    },
+    {
+      "id": "node/12118054087",
+      "name": "Longitude Constructions",
+      "category": "office",
+      "latitude": 12.972931,
+      "longitude": 77.5989418,
+      "tags": {
+        "check_date": "2024-08-18",
+        "name": "Longitude Constructions",
+        "office": "company"
+      }
+    },
+    {
+      "id": "node/12118200955",
+      "name": "Mad Fern",
+      "category": "shop_beauty",
+      "latitude": 12.9687789,
+      "longitude": 77.5975893,
+      "tags": {
+        "check_date": "2024-08-18",
+        "name": "Mad Fern",
+        "shop": "beauty"
+      }
+    },
+    {
+      "id": "node/12118752214",
+      "name": "Jeane Claude Biguine",
+      "category": "shop_beauty",
+      "latitude": 12.971867,
+      "longitude": 77.5981884,
+      "tags": {
+        "name": "Jeane Claude Biguine",
+        "shop": "beauty"
+      }
+    },
+    {
+      "id": "node/12118752215",
+      "name": "Good Earth",
+      "category": "shop_furniture",
+      "latitude": 12.9717389,
+      "longitude": 77.5979336,
+      "tags": {
+        "check_date": "2024-08-19",
+        "name": "Good Earth",
+        "shop": "furniture"
+      }
+    },
+    {
+      "id": "node/12118752216",
+      "name": "Nicobar",
+      "category": "shop_clothes",
+      "latitude": 12.971667,
+      "longitude": 77.5979269,
+      "tags": {
+        "check_date": "2024-08-19",
+        "name": "Nicobar",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/12118752217",
+      "name": "Bounce",
+      "category": "shop_hairdresser",
+      "latitude": 12.9713756,
+      "longitude": 77.5975648,
+      "tags": {
+        "name": "Bounce",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "id": "node/12118752218",
+      "name": "Raw Mango",
+      "category": "shop_clothes",
+      "latitude": 12.9715089,
+      "longitude": 77.5976023,
+      "tags": {
+        "check_date": "2024-08-19",
+        "name": "Raw Mango",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/12118752219",
+      "name": "Vaishnavi",
+      "category": "office",
+      "latitude": 12.9721734,
+      "longitude": 77.5979993,
+      "tags": {
+        "name": "Vaishnavi",
+        "office": "company"
+      }
+    },
+    {
+      "id": "node/12118752220",
+      "name": "IndiQube Grandeur",
+      "category": "office",
+      "latitude": 12.9725988,
+      "longitude": 77.5983681,
+      "tags": {
+        "brand": "IndiQube",
+        "fee": "yes",
+        "name": "IndiQube Grandeur",
+        "office": "coworking"
+      }
+    },
+    {
+      "id": "node/12118752231",
+      "name": "ALMT Legal",
+      "category": "office",
+      "latitude": 12.967881,
+      "longitude": 77.5962129,
+      "tags": {
+        "name": "ALMT Legal",
+        "office": "company"
+      }
+    },
+    {
+      "id": "node/12118752241",
+      "name": "MFAR Developers Private Limited",
+      "category": "office",
+      "latitude": 12.9679881,
+      "longitude": 77.5961781,
+      "tags": {
+        "check_date": "2024-08-19",
+        "name": "MFAR Developers Private Limited",
+        "office": "company"
+      }
+    },
+    {
+      "id": "node/12118791713",
+      "name": "Asha's Store",
+      "category": "grocery_store",
+      "latitude": 12.9725459,
+      "longitude": 77.5990192,
+      "tags": {
+        "check_date": "2024-08-19",
+        "name": "Asha's Store",
+        "shop": "convenience"
+      }
+    },
+    {
+      "id": "node/12118802546",
+      "name": "Savills",
+      "category": "office",
+      "latitude": 12.9746232,
+      "longitude": 77.5971061,
+      "tags": {
+        "name": "Savills",
+        "office": "company"
+      }
+    },
+    {
+      "id": "node/12118802550",
+      "name": "SKAV Developers Pvt. Ltd.",
+      "category": "office",
+      "latitude": 12.972985,
+      "longitude": 77.5989441,
+      "tags": {
+        "name": "SKAV Developers Pvt. Ltd.",
+        "office": "company"
+      }
+    },
+    {
+      "id": "node/12119590183",
+      "name": "Third Wave Coffee",
+      "category": "restaurant",
+      "latitude": 12.9717772,
+      "longitude": 77.5958246,
+      "tags": {
+        "amenity": "cafe",
+        "check_date": "2024-08-19",
+        "name": "Third Wave Coffee"
+      }
+    },
+    {
+      "id": "node/12119590715",
+      "name": "PMJ Jewels",
+      "category": "shop_jewelry",
+      "latitude": 12.9710829,
+      "longitude": 77.5960547,
+      "tags": {
+        "name": "PMJ Jewels",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "id": "node/12119599766",
+      "name": "Farah Builders Private Limited",
+      "category": "office",
+      "latitude": 12.9716298,
+      "longitude": 77.5971182,
+      "tags": {
+        "name": "Farah Builders Private Limited",
+        "office": "company"
+      }
+    },
+    {
+      "id": "node/12119599769",
+      "name": "TTS India",
+      "category": "office",
+      "latitude": 12.9713338,
+      "longitude": 77.5974253,
+      "tags": {
+        "name": "TTS India",
+        "office": "company"
+      }
+    },
+    {
+      "id": "node/12119599770",
+      "name": "Synergia Foundation",
+      "category": "office",
+      "latitude": 12.9714762,
+      "longitude": 77.5974347,
+      "tags": {
+        "name": "Synergia Foundation",
+        "office": "company"
+      }
+    },
+    {
+      "id": "node/12129019647",
+      "name": "Botany Brew and Kitchen",
+      "category": "restaurant",
+      "latitude": 12.9746519,
+      "longitude": 77.5970726,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:country": "IN",
+        "addr:floor": "18",
+        "addr:postcode": "560001",
+        "addr:street": "Kasturba Road",
+        "addr:suburb": "Shanthala Nagar",
+        "amenity": "restaurant",
+        "level": "18",
+        "name": "Botany Brew and Kitchen",
+        "toilets": "yes",
+        "toilets:access": "customers",
+        "website": "https://www.botanyblr.com"
+      }
+    },
+    {
+      "id": "node/12461000328",
+      "name": "Blue Tokai Coffee Roasters",
+      "category": "restaurant",
+      "latitude": 12.971744,
+      "longitude": 77.5943973,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:floor": "G",
+        "addr:street": "Vittal Mallya Road",
+        "addr:suburb": "Shanthala Nagar",
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "brand": "Blue Tokai Coffee Roasters",
+        "brand:wikidata": "Q137711807",
+        "check_date": "2025-01-23",
+        "contact:facebook": "bluetokaicoffee",
+        "contact:instagram": "bluetokaicoffee",
+        "contact:twitter": "bluetokaicoffee",
+        "cuisine": "coffee_shop",
+        "delivery": "yes",
+        "internet_access": "wlan",
+        "level": "0",
+        "name": "Blue Tokai Coffee Roasters",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "website": "https://bluetokaicoffee.com/"
+      }
+    },
+    {
+      "id": "node/12461052120",
+      "name": "Hamleys",
+      "category": "shop_toys",
+      "latitude": 12.9716847,
+      "longitude": 77.5962545,
+      "tags": {
+        "brand": "Hamleys",
+        "brand:wikidata": "Q60299",
+        "name": "Hamleys",
+        "shop": "toys"
+      }
+    },
+    {
+      "id": "node/12461052121",
+      "name": "Samsung",
+      "category": "shop_electronics",
+      "latitude": 12.9716723,
+      "longitude": 77.5962981,
+      "tags": {
+        "brand": "Samsung",
+        "brand:wikidata": "Q20718",
+        "name": "Samsung",
+        "shop": "electronics"
+      }
+    },
+    {
+      "id": "node/12461052122",
+      "name": "Imagine",
+      "category": "shop_electronics",
+      "latitude": 12.9716494,
+      "longitude": 77.5963658,
+      "tags": {
+        "name": "Imagine",
+        "shop": "electronics"
+      }
+    },
+    {
+      "id": "node/12461052123",
+      "name": "Swarovski",
+      "category": "shop_jewelry",
+      "latitude": 12.9716291,
+      "longitude": 77.5964208,
+      "tags": {
+        "brand": "Swarovski",
+        "brand:wikidata": "Q611115",
+        "name": "Swarovski",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "id": "node/12461052124",
+      "name": "L'Occitane",
+      "category": "shop_cosmetics",
+      "latitude": 12.9715984,
+      "longitude": 77.59652,
+      "tags": {
+        "brand": "L'Occitane",
+        "brand:wikidata": "Q1880676",
+        "name": "L'Occitane",
+        "shop": "cosmetics"
+      }
+    },
+    {
+      "id": "node/12461052125",
+      "name": "Tumi",
+      "category": "shop_bag",
+      "latitude": 12.9714331,
+      "longitude": 77.596461,
+      "tags": {
+        "brand": "Tumi",
+        "brand:wikidata": "Q4465402",
+        "name": "Tumi",
+        "shop": "bag"
+      }
+    },
+    {
+      "id": "node/12461052126",
+      "name": "Diesel",
+      "category": "shop_clothes",
+      "latitude": 12.9714677,
+      "longitude": 77.5963739,
+      "tags": {
+        "brand": "Diesel",
+        "brand:wikidata": "Q158285",
+        "name": "Diesel",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/12461052127",
+      "name": "Mango",
+      "category": "shop_clothes",
+      "latitude": 12.9714886,
+      "longitude": 77.5963162,
+      "tags": {
+        "brand": "Mango",
+        "brand:wikidata": "Q136503",
+        "name": "Mango",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/12461052128",
+      "name": "Versace",
+      "category": "shop_clothes",
+      "latitude": 12.9715076,
+      "longitude": 77.5962518,
+      "tags": {
+        "brand": "Versace",
+        "brand:wikidata": "Q696376",
+        "name": "Versace",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/12461052129",
+      "name": "Longines",
+      "category": "shop_watches",
+      "latitude": 12.9715226,
+      "longitude": 77.5962035,
+      "tags": {
+        "brand": "Longines",
+        "brand:wikidata": "Q603698",
+        "name": "Longines",
+        "shop": "watches"
+      }
+    },
+    {
+      "id": "node/12461052130",
+      "name": "Omega",
+      "category": "shop_watches",
+      "latitude": 12.9715416,
+      "longitude": 77.5961398,
+      "tags": {
+        "brand": "Omega",
+        "brand:wikidata": "Q659224",
+        "name": "Omega",
+        "shop": "watches"
+      }
+    },
+    {
+      "id": "node/12461052131",
+      "name": "Rolex",
+      "category": "shop_watches",
+      "latitude": 12.971637,
+      "longitude": 77.59629,
+      "tags": {
+        "brand": "Rolex",
+        "brand:wikidata": "Q62288",
+        "name": "Rolex",
+        "shop": "watches"
+      }
+    },
+    {
+      "id": "node/12461052132",
+      "name": "Burberry",
+      "category": "shop_clothes",
+      "latitude": 12.9716134,
+      "longitude": 77.5963504,
+      "tags": {
+        "brand": "Burberry",
+        "brand:wikidata": "Q390107",
+        "clothes": "men;women",
+        "name": "Burberry",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/12461052133",
+      "name": "Michael Kors",
+      "category": "shop_clothes",
+      "latitude": 12.9715867,
+      "longitude": 77.5964195,
+      "tags": {
+        "brand": "Michael Kors",
+        "brand:wikidata": "Q134612138",
+        "name": "Michael Kors",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/12461052134",
+      "name": "Canali",
+      "category": "shop_clothes",
+      "latitude": 12.9715612,
+      "longitude": 77.5965133,
+      "tags": {
+        "brand": "Canali",
+        "brand:wikidata": "Q5031079",
+        "clothes": "men",
+        "name": "Canali",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/12461052135",
+      "name": "Salvatore Ferragamo",
+      "category": "shop_shoes",
+      "latitude": 12.9715148,
+      "longitude": 77.5964959,
+      "tags": {
+        "brand": "Salvatore Ferragamo",
+        "brand:wikidata": "Q3946053",
+        "name": "Salvatore Ferragamo",
+        "shop": "shoes"
+      }
+    },
+    {
+      "id": "node/12461052136",
+      "name": "Hackett London",
+      "category": "shop_clothes",
+      "latitude": 12.9714717,
+      "longitude": 77.5964684,
+      "tags": {
+        "brand": "Hackett London",
+        "brand:wikidata": "Q1136426",
+        "clothes": "men",
+        "name": "Hackett London",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/12461052137",
+      "name": "Emporio Armani",
+      "category": "shop_clothes",
+      "latitude": 12.9714952,
+      "longitude": 77.5963859,
+      "tags": {
+        "brand": "Emporio Armani",
+        "brand:wikidata": "Q3497483",
+        "name": "Emporio Armani",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/12461052138",
+      "name": "Coach",
+      "category": "shop_bag",
+      "latitude": 12.9715167,
+      "longitude": 77.5963256,
+      "tags": {
+        "brand": "Coach",
+        "brand:wikidata": "Q727697",
+        "name": "Coach",
+        "shop": "bag"
+      }
+    },
+    {
+      "id": "node/12461052139",
+      "name": "Jimmy Choo",
+      "category": "shop_shoes",
+      "latitude": 12.9715357,
+      "longitude": 77.5962552,
+      "tags": {
+        "brand": "Jimmy Choo",
+        "brand:wikidata": "Q5213855",
+        "name": "Jimmy Choo",
+        "shop": "shoes"
+      }
+    },
+    {
+      "id": "node/12461052140",
+      "name": "Hugo Boss",
+      "category": "shop_clothes",
+      "latitude": 12.9715566,
+      "longitude": 77.5962102,
+      "tags": {
+        "brand": "Hugo Boss",
+        "brand:wikidata": "Q491627",
+        "name": "Hugo Boss",
+        "shop": "clothes",
+        "short_name": "Boss"
+      }
+    },
+    {
+      "id": "node/12461052141",
+      "name": "Louis Vuitton",
+      "category": "shop_clothes",
+      "latitude": 12.9715795,
+      "longitude": 77.5961485,
+      "tags": {
+        "brand": "Louis Vuitton",
+        "brand:wikidata": "Q191485",
+        "name": "Louis Vuitton",
+        "shop": "clothes"
+      }
+    },
+    {
+      "id": "node/12461052143",
+      "name": "Sanchez",
+      "category": "restaurant",
+      "latitude": 12.9717337,
+      "longitude": 77.5963457,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sanchez"
+      }
+    },
+    {
+      "id": "node/12461052144",
+      "name": "Badmaash",
+      "category": "restaurant",
+      "latitude": 12.9721153,
+      "longitude": 77.5963095,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Badmaash"
+      }
+    },
+    {
+      "id": "node/12461101421",
+      "name": "Roger Dubuis",
+      "category": "shop_watches",
+      "latitude": 12.9693297,
+      "longitude": 77.5970558,
+      "tags": {
+        "brand": "Roger Dubuis",
+        "brand:wikidata": "Q670160",
+        "name": "Roger Dubuis",
+        "shop": "watches"
+      }
+    },
+    {
+      "id": "node/12461101422",
+      "name": "Baume & Mercier",
+      "category": "shop_watches",
+      "latitude": 12.9693558,
+      "longitude": 77.5970618,
+      "tags": {
+        "brand": "Baume & Mercier",
+        "brand:wikidata": "Q138109",
+        "name": "Baume & Mercier",
+        "shop": "watches"
+      }
+    },
+    {
+      "id": "node/12461101423",
+      "name": "Jaeger-LeCoultre",
+      "category": "shop_watches",
+      "latitude": 12.9693832,
+      "longitude": 77.596976,
+      "tags": {
+        "brand": "Jaeger-LeCoultre",
+        "brand:wikidata": "Q378698",
+        "name": "Jaeger-LeCoultre",
+        "shop": "watches"
+      }
+    },
+    {
+      "id": "node/12461101424",
+      "name": "Bvlgari",
+      "category": "shop_fashion_accessories",
+      "latitude": 12.9693538,
+      "longitude": 77.5969693,
+      "tags": {
+        "brand": "Bulgari",
+        "brand:wikidata": "Q752515",
+        "name": "Bvlgari",
+        "shop": "fashion_accessories"
+      }
+    },
+    {
+      "id": "node/12545885467",
+      "name": "PartTwo",
+      "category": "restaurant",
+      "latitude": 12.970907,
+      "longitude": 77.5975481,
+      "tags": {
+        "addr:housenumber": "20/2",
+        "addr:street": "Vittal Mallaya Road",
+        "amenity": "restaurant",
+        "bar": "yes",
+        "check_date": "2025-01-31",
+        "contact:instagram": "https://www.instagram.com/parttwo.blr",
+        "delivery": "no",
+        "level": "2",
+        "mobile": "+91 9880011072",
+        "name": "PartTwo",
+        "opening_hours": "Tu-Su 12:00-16:00,18:30-00:00",
+        "reservation": "recommended",
+        "takeaway": "no",
+        "toilets": "yes"
+      }
+    },
+    {
+      "id": "node/12862846446",
+      "name": "Boss Burger",
+      "category": "restaurant",
+      "latitude": 12.971363,
+      "longitude": 77.5983477,
+      "tags": {
+        "amenity": "fast_food",
+        "cuisine": "burger",
+        "delivery": "yes",
+        "name": "Boss Burger",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "id": "node/12927909825",
+      "name": "Laduree",
+      "category": "shop_pastry",
+      "latitude": 12.9717073,
+      "longitude": 77.5961793,
+      "tags": {
+        "name": "Laduree",
+        "shop": "pastry"
+      }
+    },
+    {
+      "id": "node/13013588749",
+      "name": "Riko",
+      "category": "restaurant",
+      "latitude": 12.9716906,
+      "longitude": 77.5960708,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "peruvian",
+        "name": "Riko"
+      }
+    },
+    {
+      "id": "node/13013958065",
+      "name": "Isobel Coffee House",
+      "category": "restaurant",
+      "latitude": 12.9685475,
+      "longitude": 77.5964624,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Isobel Coffee House"
+      }
+    },
+    {
+      "id": "node/13098377619",
+      "name": "Siorai",
+      "category": "shop_boutique",
+      "latitude": 12.9725024,
+      "longitude": 77.5986612,
+      "tags": {
+        "contact:instagram": "sioraiofficial",
+        "name": "Siorai",
+        "shop": "boutique",
+        "website": "https://wearsiorai.com/"
+      }
+    },
+    {
+      "id": "node/13168786891",
+      "name": "Royal China",
+      "category": "restaurant",
+      "latitude": 12.9721676,
+      "longitude": 77.5964811,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "cantonese",
+        "name": "Royal China"
+      }
+    },
+    {
+      "id": "node/13288585567",
+      "name": "Madras Kitchen and The Bar",
+      "category": "restaurant",
+      "latitude": 12.9722581,
+      "longitude": 77.5951553,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Madras Kitchen and The Bar"
+      }
+    },
+    {
+      "id": "node/13824117220",
+      "name": "Dolci",
+      "category": "restaurant",
+      "latitude": 12.9705043,
+      "longitude": 77.5978029,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "coffee_shop",
+        "name": "Dolci"
+      }
+    },
+    {
+      "id": "node/13824117221",
+      "name": "Hatti Kappi Signature",
+      "category": "restaurant",
+      "latitude": 12.9706522,
+      "longitude": 77.5978108,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Hatti Kappi Signature"
+      }
+    },
+    {
+      "id": "way/23029710",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.9714887,
+      "longitude": 77.5962259,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "designated",
+        "highway": "tertiary",
+        "lanes": "2",
+        "lanes:backward": "1",
+        "lanes:forward": "1",
+        "name": "Vittal Mallya Road",
+        "name:etymology:wikidata": "Q7937268",
+        "name:kn": "\u0cb5\u0cbf\u0ca0\u0ccd\u0ca0\u0cb2 \u0cae\u0cb2\u0ccd\u0caf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Grant Road",
+        "oneway": "yes",
+        "smoothness": "excellent",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/26283603",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.9723595,
+      "longitude": 77.5941482,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxheight": "5.7",
+        "name": "Kasturba Road",
+        "name:etymology:wikidata": "Q264908",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Sidney Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/36851759",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.9695378,
+      "longitude": 77.5944741,
+      "tags": {
+        "hazard": "school_zone",
+        "highway": "primary",
+        "lanes": "2",
+        "maxspeed": "25",
+        "name": "Vittal Mallya Road",
+        "name:etymology:wikidata": "Q7937268",
+        "name:kn": "\u0cb5\u0cbf\u0ca0\u0ccd\u0ca0\u0cb2 \u0cae\u0cb2\u0ccd\u0caf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Grant Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "source:maxspeed": "sign",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/36882310",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9755446,
+      "longitude": 77.5920716,
+      "tags": {
+        "access": "permissive",
+        "bicycle": "no",
+        "bicycle:conditional": "yes @ (Mo-Su 08:00-21:00)",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "honking": "no",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "20",
+        "motor_vehicle:conditional": "yes @ (Mo-Sa 08:00-21:00)",
+        "note": "Vehicular Traffic Allowed only between - 8AM to 9PM from Monday to Saturday. Sunday Vehicles not permitted.",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/36882311",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9735638,
+      "longitude": 77.5922942,
+      "tags": {
+        "access": "permissive",
+        "bicycle": "no",
+        "bicycle:conditional": "yes @ (Mo-Su 08:00-21:00)",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "lanes": "2",
+        "maxspeed": "25",
+        "motor_vehicle:conditional": "yes @ (Mo-Sa 08:00-21:00)",
+        "note": "Vehicular Traffic Allowed only between - 8AM to 9PM from Monday to Saturday. Sunday Vehicles not permitted.",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/36882312",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9743838,
+      "longitude": 77.5909419,
+      "tags": {
+        "highway": "service",
+        "oneway": "no"
+      }
+    },
+    {
+      "id": "way/36882313",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.9718733,
+      "longitude": 77.5936313,
+      "tags": {
+        "highway": "secondary",
+        "name": "Kasturba Road",
+        "name:etymology:wikidata": "Q264908",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Sidney Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/36913434",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.974464,
+      "longitude": 77.5967397,
+      "tags": {
+        "check_date:lit": "2023-10-12",
+        "dual_carriageway": "yes",
+        "highway": "secondary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxheight": "5.7",
+        "maxspeed": "30",
+        "name": "Kasturba Road",
+        "name:etymology:wikidata": "Q264908",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Sidney Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/38318489",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9741698,
+      "longitude": 77.5905513,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/38750705",
+      "name": "Vydehi Superspeciality Hospital",
+      "category": "healthcare",
+      "latitude": 12.9681553,
+      "longitude": 77.5950421,
+      "tags": {
+        "addr:city": "Bengaluru",
+        "addr:district": "Bengaluru Urban",
+        "addr:full": "No.2 Vittal Mallya Road",
+        "addr:housenumber": "2",
+        "addr:postcode": "560001",
+        "addr:state": "Karnataka",
+        "addr:street": "Vittal Mallya Road",
+        "amenity": "hospital",
+        "check_date": "2024-08-18",
+        "email": "info@vsshospital.com",
+        "healthcare": "hospital",
+        "healthcare:speciality": "multi speciality",
+        "name": "Vydehi Superspeciality Hospital",
+        "name:kn": "\u0cb5\u0cc8\u0ca6\u0cc7\u0cb9\u0cbf \u0c86\u0cb8\u0ccd\u0caa\u0ca4\u0ccd\u0cb0\u0cc6",
+        "note": "Changed from Mallya Hospital to Vydehi Superspeciality Hospital in Q2 2022",
+        "old_name": "Mallya Hospital",
+        "operator:type": "private",
+        "phone": "+9180 2227 7979",
+        "source": "OpenGovernmentData",
+        "website": "http://www.vsshospital.com/"
+      }
+    },
+    {
+      "id": "way/38757908",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9671101,
+      "longitude": 77.5934137,
+      "tags": {
+        "highway": "residential",
+        "name:kn": "\u0ce9\u0ca8\u0cc7 \u0cae\u0cc1\u0c96\u0ccd\u0caf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6"
+      }
+    },
+    {
+      "id": "way/38757909",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9677832,
+      "longitude": 77.5915775,
+      "tags": {
+        "highway": "tertiary",
+        "name:kn": "\u0ce7\u0ca8\u0cc7 \u0c85\u0ca1\u0ccd\u0ca1 \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/38773283",
+      "name": "Bishop Cotton Boys School",
+      "category": "education",
+      "latitude": 12.9684197,
+      "longitude": 77.5992361,
+      "tags": {
+        "alt_name": "Bishop Cottons Boys",
+        "amenity": "school",
+        "email": "bcbhsblr@gmail.com",
+        "name": "Bishop Cotton Boys School",
+        "name:kn": "\u0cac\u0cbf\u0cb7\u0caa\u0ccd \u0c95\u0cbe\u0c9f\u0ca8\u0ccd \u0cac\u0cbe\u0cb2\u0c95\u0cb0 \u0caa\u0ccd\u0cb0\u0ccc\u0ca1 \u0cb6\u0cbe\u0cb2\u0cc6",
+        "phone": "+91 80 4052 7888",
+        "school:gender": "male",
+        "start_date": "1865",
+        "website": "https://bishopcottonboysschool.edu.in/",
+        "wikidata": "Q4917523",
+        "wikimedia_commons": "Category:Bishop Cotton Boys' School",
+        "wikipedia": "en:Bishop Cotton Boys' School"
+      }
+    },
+    {
+      "id": "way/38773284",
+      "name": "4th Cross Road",
+      "category": "road",
+      "latitude": 12.9691512,
+      "longitude": 77.5976742,
+      "tags": {
+        "highway": "residential",
+        "name": "4th Cross Road",
+        "name:kn": "\u0cea\u0ca8\u0cc7 \u0c85\u0ca1\u0ccd\u0ca1 \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/38773285",
+      "name": "2nd Cross Road",
+      "category": "road",
+      "latitude": 12.968698,
+      "longitude": 77.5973767,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "2nd Cross Road",
+        "name:kn": "\u0ce8\u0ca8\u0cc7 \u0c85\u0ca1\u0ccd\u0ca1 \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/38773287",
+      "name": "St. Joseph's Indian High School",
+      "category": "education",
+      "latitude": 12.9701532,
+      "longitude": 77.5951294,
+      "tags": {
+        "alt_name": "SJIHS",
+        "amenity": "school",
+        "check_date": "2024-08-18",
+        "name": "St. Joseph's Indian High School",
+        "start_date": "1904",
+        "wikidata": "Q7589194",
+        "wikipedia": "en:St. Joseph's Indian High School"
+      }
+    },
+    {
+      "id": "way/38773290",
+      "name": "UB City",
+      "category": "shop_mall",
+      "latitude": 12.9723089,
+      "longitude": 77.5959385,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "24",
+        "addr:postcode": "560001",
+        "addr:street": "Vittal Mallya Road",
+        "landuse": "commercial",
+        "name": "UB City",
+        "shop": "mall",
+        "wheelchair": "limited",
+        "wikidata": "Q3595524",
+        "wikimedia_commons": "Category:UB City",
+        "wikipedia": "en:UB City"
+      }
+    },
+    {
+      "id": "way/38773813",
+      "name": "Walton Road",
+      "category": "road",
+      "latitude": 12.9718479,
+      "longitude": 77.5982312,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Walton Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/45308260",
+      "name": "Lavelle Road",
+      "category": "road",
+      "latitude": 12.9723077,
+      "longitude": 77.5985473,
+      "tags": {
+        "abutters": "mixed",
+        "alt_name": "Subbaraju Road",
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Lavelle Road",
+        "name:kn": "\u0cb2\u0cbe\u0cb5\u0cc6\u0cb2\u0ccd \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "official_name": "Sri. M. L. Subbaraju Road",
+        "oneway": "no",
+        "sidewalk:both": "yes",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/51869443",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9753773,
+      "longitude": 77.5931485,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/51869445",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9763917,
+      "longitude": 77.5939187,
+      "tags": {
+        "highway": "footway",
+        "lit": "yes",
+        "smoothness": "good",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/51869446",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9758027,
+      "longitude": 77.5934649,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/52020423",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9749694,
+      "longitude": 77.5959821,
+      "tags": {
+        "access": "permissive",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/52032471",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9751217,
+      "longitude": 77.5932792,
+      "tags": {
+        "access": "permissive",
+        "bicycle": "yes",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "lanes": "2",
+        "maxspeed": "25",
+        "motor_vehicle:conditional": "yes @ (Mo-Sa 08:00-21:00)",
+        "note": "Vehicular Traffic Allowed only between - 8AM to 9PM from Monday to Saturday. Sunday Vehicles not permitted.",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/52032472",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9735075,
+      "longitude": 77.5905204,
+      "tags": {
+        "access": "yes",
+        "bicycle": "no",
+        "foot": "yes",
+        "highway": "pedestrian",
+        "lanes": "2",
+        "motor_vehicle": "no",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/52033924",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9750879,
+      "longitude": 77.5921146,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/52033925",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.97511,
+      "longitude": 77.5921133,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/52059210",
+      "name": "Viswesvariya Trade Promotion Center",
+      "category": "office",
+      "latitude": 12.975329,
+      "longitude": 77.5970728,
+      "tags": {
+        "building": "commercial",
+        "name": "Viswesvariya Trade Promotion Center",
+        "office": "government"
+      }
+    },
+    {
+      "id": "way/52060138",
+      "name": "Sundaram Motors",
+      "category": "shop_car",
+      "latitude": 12.973739,
+      "longitude": 77.596179,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "Sundaram Motors",
+        "addr:postcode": "560 001",
+        "addr:street": "Kasturba Road",
+        "brand": "Mercedes-Benz",
+        "brand:wikidata": "Q36008",
+        "building": "yes",
+        "building:levels": "3",
+        "name": "Sundaram Motors",
+        "name:kn": "\u0cb8\u0cc1\u0c82\u0ca6\u0cb0\u0c82 \u0cae\u0cc6\u0cc2\u0cd5\u0c9f\u0cbe\u0cb0\u0ccd\u0cb8\u0ccd",
+        "phone": "09606049529",
+        "shop": "car"
+      }
+    },
+    {
+      "id": "way/52060141",
+      "name": "HDFC Bank",
+      "category": "bank",
+      "latitude": 12.9733955,
+      "longitude": 77.5955623,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housename": "HDFC House",
+        "addr:housenumber": "24/3, 51",
+        "addr:postcode": "560001",
+        "addr:street": "Kasturba Road",
+        "amenity": "bank",
+        "atm": "yes",
+        "branch": "Ltd",
+        "brand": "HDFC Bank",
+        "brand:wikidata": "Q631047",
+        "building": "office",
+        "building:levels": "5",
+        "building:material": "granite",
+        "name": "HDFC Bank",
+        "name:kn": "\u0c8e\u0c9a\u0ccd \u0ca1\u0cbf \u0c8e\u0cab\u0ccd \u0cb8\u0cbf",
+        "short_name": "HDFC",
+        "source": "www.hdfcbank.com"
+      }
+    },
+    {
+      "id": "way/52060801",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9741823,
+      "longitude": 77.5973258,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/52063803",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9733652,
+      "longitude": 77.5914171,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/52063804",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9722786,
+      "longitude": 77.5928355,
+      "tags": {
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/52063805",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9723629,
+      "longitude": 77.59138,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/52063806",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9728801,
+      "longitude": 77.5927626,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/52063807",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9729375,
+      "longitude": 77.5919004,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/52245035",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9704647,
+      "longitude": 77.5895694,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/53624313",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.973999,
+      "longitude": 77.5929369,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/53624314",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9750073,
+      "longitude": 77.5937044,
+      "tags": {
+        "highway": "steps"
+      }
+    },
+    {
+      "id": "way/107240639",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9718003,
+      "longitude": 77.5968905,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/112028499",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9675901,
+      "longitude": 77.5923931,
+      "tags": {
+        "highway": "residential",
+        "name:kn": "\u0ce8\u0ca8\u0cc7 \u0c85\u0ca1\u0ccd\u0ca1 \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6"
+      }
+    },
+    {
+      "id": "way/112657835",
+      "name": "Lavelle Road",
+      "category": "road",
+      "latitude": 12.9681747,
+      "longitude": 77.5970868,
+      "tags": {
+        "abutters": "mixed",
+        "alt_name": "Subbaraju Road",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "30",
+        "name": "Lavelle Road",
+        "name:kn": "\u0cb2\u0cbe\u0cb5\u0cc6\u0cb2\u0ccd \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "official_name": "Sri. M. L. Subbaraju Road",
+        "sidewalk": "both",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/112657837",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.9707317,
+      "longitude": 77.5993625,
+      "tags": {
+        "hazard": "school_zone",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "25",
+        "name": "Vittal Mallya Road",
+        "name:etymology:wikidata": "Q7937268",
+        "name:kn": "\u0cb2\u0cbe\u0cb5\u0cc6\u0cb2\u0ccd \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Grant Road",
+        "oneway": "no",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/142321163",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9716284,
+      "longitude": 77.5972934,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/142321526",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9728019,
+      "longitude": 77.595391,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "maxspeed": "10",
+        "oneway": "no"
+      }
+    },
+    {
+      "id": "way/142321527",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9721684,
+      "longitude": 77.5955262,
+      "tags": {
+        "access": "permissive",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/150785560",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9722047,
+      "longitude": 77.5942789,
+      "tags": {
+        "highway": "secondary_link",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/154340361",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.9697885,
+      "longitude": 77.590899,
+      "tags": {
+        "highway": "primary",
+        "lanes": "3",
+        "name": "Kasturba Road",
+        "name:etymology:wikidata": "Q264908",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Sidney Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/173470557",
+      "name": "3rd Cross Road",
+      "category": "road",
+      "latitude": 12.9691314,
+      "longitude": 77.5962744,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "3rd Cross Road",
+        "name:kn": "\u0ce9\u0ca8\u0cc7 \u0c85\u0ca1\u0ccd\u0ca1 \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/173470558",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9705609,
+      "longitude": 77.5985735,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/173470560",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9705243,
+      "longitude": 77.5962132,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/208694344",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9751861,
+      "longitude": 77.5947351,
+      "tags": {
+        "access": "private",
+        "cycleway": "no",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/208697530",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9717862,
+      "longitude": 77.5927602,
+      "tags": {
+        "highway": "footway",
+        "surface": "ground"
+      }
+    },
+    {
+      "id": "way/208697538",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9728844,
+      "longitude": 77.59598,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "lit": "yes",
+        "smoothness": "good",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/208697543",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9715113,
+      "longitude": 77.5958318,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "smoothness": "good"
+      }
+    },
+    {
+      "id": "way/208701339",
+      "name": "7th Cross Road",
+      "category": "road",
+      "latitude": 12.9738132,
+      "longitude": 77.5989602,
+      "tags": {
+        "alt_name": "7th Cross Road - Lavelle Road",
+        "highway": "residential",
+        "lanes": "2",
+        "name": "7th Cross Road",
+        "name:kn": "\u0ced\u0ca8\u0cc7 \u0c85\u0ca1\u0ccd\u0ca1 \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "smoothness": "good",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/213087106",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9703353,
+      "longitude": 77.5978118,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/224618934",
+      "name": "Rajaram Mohan Roy Road",
+      "category": "road",
+      "latitude": 12.9675819,
+      "longitude": 77.5919942,
+      "tags": {
+        "alt_name": "Raja Ram Mohan Roy Road",
+        "highway": "primary",
+        "lit": "yes",
+        "name": "Rajaram Mohan Roy Road",
+        "name:etymology:wikidata": "Q335269",
+        "name:kn": "\u0cb0\u0cbe\u0c9c\u0cb0\u0cbe\u0cae\u0ccd \u0cae\u0ccb\u0cb9\u0ca8\u0ccd \u0cb0\u0cbe\u0caf\u0ccd \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Tank Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/251493080",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.967897,
+      "longitude": 77.5920925,
+      "tags": {
+        "highway": "steps"
+      }
+    },
+    {
+      "id": "way/254297307",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9676293,
+      "longitude": 77.5935142,
+      "tags": {
+        "bicycle": "no",
+        "foot": "yes",
+        "highway": "steps",
+        "horse": "no"
+      }
+    },
+    {
+      "id": "way/271062095",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9699709,
+      "longitude": 77.5922471,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "motor_vehicle": "destination",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/271062150",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9699885,
+      "longitude": 77.5922824,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "motor_vehicle": "destination",
+        "oneway": "yes",
+        "sidewalk": "no"
+      }
+    },
+    {
+      "id": "way/327551786",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9746051,
+      "longitude": 77.596068,
+      "tags": {
+        "access": "permissive",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/327551787",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.974998,
+      "longitude": 77.596629,
+      "tags": {
+        "access": "permissive",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/327551789",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9746659,
+      "longitude": 77.5957782,
+      "tags": {
+        "access": "permissive",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/328350806",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9719616,
+      "longitude": 77.5988197,
+      "tags": {
+        "access": "permissive",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/328996274",
+      "name": "The Churches' Council for Child and Youth Care",
+      "category": "office",
+      "latitude": 12.9731218,
+      "longitude": 77.5986467,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:housenumber": "26",
+        "addr:postcode": "560001",
+        "addr:street": "Lavelle Road",
+        "landuse": "commercial",
+        "name": "The Churches' Council for Child and Youth Care",
+        "office": "ngo",
+        "opening_hours": "24/7",
+        "smoking": "no"
+      }
+    },
+    {
+      "id": "way/331184053",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9695048,
+      "longitude": 77.5971371,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/331384308",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9718484,
+      "longitude": 77.5963613,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "maxspeed": "10",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/332394765",
+      "name": "Sunnys",
+      "category": "restaurant",
+      "latitude": 12.9718635,
+      "longitude": 77.5985557,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:street": "Lavelle Road",
+        "amenity": "restaurant",
+        "building": "yes",
+        "cuisine": "international",
+        "name": "Sunnys",
+        "name:kn": "\u0cb8\u0ca8\u0ccd\u0ca8\u0cbf\u200c\u0cb8\u0ccd"
+      }
+    },
+    {
+      "id": "way/337781310",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9740037,
+      "longitude": 77.5915074,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/337781311",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9722351,
+      "longitude": 77.591194,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/360675529",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.9672057,
+      "longitude": 77.5947731,
+      "tags": {
+        "highway": "primary_link",
+        "name": "Vittal Mallya Road",
+        "name:etymology:wikidata": "Q7937268",
+        "name:kn": "\u0cb5\u0cbf\u0ca0\u0ccd\u0ca0\u0cb2\u0ccd \u0cae\u0cb2\u0ccd\u0caf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/366192433",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9719901,
+      "longitude": 77.5919746,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/369295564",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9761102,
+      "longitude": 77.5945674,
+      "tags": {
+        "access": "permissive",
+        "bicycle": "yes",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "25",
+        "motor_vehicle:conditional": "yes @ (Mo-Sa 08:00-21:00)",
+        "note": "Vehicular Traffic Allowed only between - 8AM to 9PM from Monday to Saturday. Sunday Vehicles not permitted.",
+        "oneway": "yes",
+        "smoothness": "good",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/369801330",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9674976,
+      "longitude": 77.5957681,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/369801331",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9672021,
+      "longitude": 77.5956472,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/370418975",
+      "name": "Konark Kanteerava",
+      "category": "restaurant",
+      "latitude": 12.9700671,
+      "longitude": 77.5920245,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:postcode": "560001",
+        "addr:street": "Kasturba Road",
+        "amenity": "restaurant",
+        "building": "yes",
+        "building:levels": "1",
+        "building:levels:underground": "1",
+        "contact:mobile": "+91 94815 28812",
+        "contact:phone": "+91 80 2224 8812",
+        "cuisine": "north_indian;chinese",
+        "diet:vegetarian": "only",
+        "level": "0;1",
+        "name": "Konark Kanteerava",
+        "opening_hours": "06:30-22:30",
+        "roof:shape": "gabled",
+        "smoking": "no",
+        "toilets": "yes"
+      }
+    },
+    {
+      "id": "way/370418978",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.970233,
+      "longitude": 77.5920331,
+      "tags": {
+        "highway": "steps"
+      }
+    },
+    {
+      "id": "way/370418979",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9703171,
+      "longitude": 77.592086,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/370418980",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9688568,
+      "longitude": 77.5912762,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "motor_vehicle": "destination"
+      }
+    },
+    {
+      "id": "way/391160974",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.97214,
+      "longitude": 77.5937366,
+      "tags": {
+        "highway": "secondary_link",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/391160978",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9724316,
+      "longitude": 77.5940558,
+      "tags": {
+        "highway": "secondary_link",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/391160989",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9702691,
+      "longitude": 77.591547,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "smoothness": "good",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/395716924",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9694632,
+      "longitude": 77.5962483,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/399001081",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9749915,
+      "longitude": 77.5935306,
+      "tags": {
+        "access": "permissive",
+        "bicycle": "yes",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "lanes": "2",
+        "motor_vehicle:conditional": "yes @ (Mo-Sa 08:00-21:00)",
+        "note": "Vehicular Traffic Allowed only between - 8AM to 9PM from Monday to Saturday. Sunday Vehicles not permitted.",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/399001083",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9748172,
+      "longitude": 77.5918439,
+      "tags": {
+        "access": "permissive",
+        "bicycle": "no",
+        "bicycle:conditional": "yes @ (Mo-Su 08:00-21:00)",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "lanes": "2",
+        "motor_vehicle:conditional": "yes @ (Mo-Sa 08:00-21:00)",
+        "note": "Vehicular Traffic Allowed only between - 8AM to 9PM from Monday to Saturday. Sunday Vehicles not permitted.",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/401390111",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9694378,
+      "longitude": 77.5920418,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "motor_vehicle": "destination"
+      }
+    },
+    {
+      "id": "way/401390112",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9693289,
+      "longitude": 77.5920658,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "motor_vehicle": "destination"
+      }
+    },
+    {
+      "id": "way/401390113",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9694111,
+      "longitude": 77.5926123,
+      "tags": {
+        "access": "private",
+        "foot": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/403473951",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9722022,
+      "longitude": 77.5942602,
+      "tags": {
+        "crossing:markings": "zebra",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/403473952",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.9718918,
+      "longitude": 77.5939912,
+      "tags": {
+        "highway": "secondary",
+        "name": "Kasturba Road",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/403473957",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9719375,
+      "longitude": 77.5941208,
+      "tags": {
+        "highway": "secondary_link",
+        "old_name": "Grant Road",
+        "oneway": "yes",
+        "sidewalk": "separate"
+      }
+    },
+    {
+      "id": "way/474654132",
+      "name": "Third Wave Coffee",
+      "category": "restaurant",
+      "latitude": 12.9714678,
+      "longitude": 77.5978865,
+      "tags": {
+        "addr:city": "Bangalore",
+        "addr:street": "Lavelle Road",
+        "air_conditioning": "yes",
+        "amenity": "cafe",
+        "brand": "Third Wave Coffee",
+        "building": "commercial",
+        "check_date": "2025-01-31",
+        "cuisine": "coffee_shop",
+        "internet_access": "wlan",
+        "name": "Third Wave Coffee",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "toilets": "yes"
+      }
+    },
+    {
+      "id": "way/474657506",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9673035,
+      "longitude": 77.5936091,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/474657509",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9674451,
+      "longitude": 77.5938541,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/486815239",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9737266,
+      "longitude": 77.5925833,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/506310559",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9719445,
+      "longitude": 77.5953941,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/506310566",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9719341,
+      "longitude": 77.5954296,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/506310568",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9718564,
+      "longitude": 77.5949148,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/506310569",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9724278,
+      "longitude": 77.5956427,
+      "tags": {
+        "access": "permissive",
+        "bridge": "viaduct",
+        "highway": "service",
+        "layer": "1",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/508197004",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9756236,
+      "longitude": 77.5941045,
+      "tags": {
+        "access": "permissive",
+        "bicycle": "yes",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "lanes": "2",
+        "maxspeed": "25",
+        "motor_vehicle:conditional": "yes @ (Mo-Sa 08:00-21:00)",
+        "note": "Vehicular Traffic Allowed only between - 8AM to 9PM from Monday to Saturday. Sunday Vehicles not permitted.",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:kerb": "raised",
+        "smoothness": "good",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/508197007",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9734606,
+      "longitude": 77.5936471,
+      "tags": {
+        "access": "permissive",
+        "bicycle": "no",
+        "bicycle:conditional": "yes @ (Mo-Su 08:00-21:00)",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "maxspeed": "25",
+        "motor_vehicle:conditional": "yes @ (Mo-Sa 08:00-21:00)",
+        "note": "Vehicular Traffic Allowed only between - 8AM to 9PM from Monday to Saturday. Sunday Vehicles not permitted.",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:kerb": "raised",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/553253479",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.9719747,
+      "longitude": 77.5945186,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "designated",
+        "highway": "tertiary",
+        "name": "Vittal Mallya Road",
+        "name:etymology:wikidata": "Q7937268",
+        "name:kn": "\u0cb2\u0cbe\u0cb5\u0cc6\u0cb2\u0ccd \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Grant Road",
+        "oneway": "yes",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/553253480",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.9721027,
+      "longitude": 77.5941964,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "designated",
+        "highway": "tertiary",
+        "name": "Vittal Mallya Road",
+        "name:etymology:wikidata": "Q7937268",
+        "name:kn": "\u0cb5\u0cbf\u0ca0\u0ccd\u0ca0\u0cb2 \u0cae\u0cb2\u0ccd\u0caf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Grant Road",
+        "oneway": "yes",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/557009789",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9694308,
+      "longitude": 77.5924634,
+      "tags": {
+        "highway": "service",
+        "motor_vehicle": "destination"
+      }
+    },
+    {
+      "id": "way/557009790",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9694173,
+      "longitude": 77.5923925,
+      "tags": {
+        "access": "permissive",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/661659065",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9706804,
+      "longitude": 77.5970331,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/661659066",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9706533,
+      "longitude": 77.5969496,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/691346387",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9680409,
+      "longitude": 77.592897,
+      "tags": {
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "down",
+        "ramp": "no"
+      }
+    },
+    {
+      "id": "way/691346388",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9678654,
+      "longitude": 77.5928614,
+      "tags": {
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "up",
+        "ramp": "no"
+      }
+    },
+    {
+      "id": "way/691346389",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9679432,
+      "longitude": 77.5929305,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1"
+      }
+    },
+    {
+      "id": "way/700036810",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9728857,
+      "longitude": 77.5958326,
+      "tags": {
+        "access": "permissive",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/725426825",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9719529,
+      "longitude": 77.5959274,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "motor_vehicle": "no"
+      }
+    },
+    {
+      "id": "way/732820184",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9715148,
+      "longitude": 77.5959932,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/760700376",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.9718046,
+      "longitude": 77.5937737,
+      "tags": {
+        "highway": "primary",
+        "name": "Kasturba Road",
+        "name:etymology:wikidata": "Q264908",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Sidney Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/791095267",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9676684,
+      "longitude": 77.5952644,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/835026121",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9739064,
+      "longitude": 77.5956439,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1",
+        "lit": "yes",
+        "surface": "metal"
+      }
+    },
+    {
+      "id": "way/835026122",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9739773,
+      "longitude": 77.5955495,
+      "tags": {
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "up",
+        "ramp": "no",
+        "surface": "metal"
+      }
+    },
+    {
+      "id": "way/835026123",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9738074,
+      "longitude": 77.5957006,
+      "tags": {
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "down",
+        "ramp": "no",
+        "surface": "metal"
+      }
+    },
+    {
+      "id": "way/984660863",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9731708,
+      "longitude": 77.5924782,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/991536567",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.974702,
+      "longitude": 77.5918115,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/991661065",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9752407,
+      "longitude": 77.5939505,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/991661066",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.975116,
+      "longitude": 77.5919678,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/995213652",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9680475,
+      "longitude": 77.5967057,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1035562486",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9738804,
+      "longitude": 77.5911908,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1035562487",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9732743,
+      "longitude": 77.5911536,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1035562488",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9721427,
+      "longitude": 77.5913671,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1066895467",
+      "name": "Kasturba Cross Road",
+      "category": "road",
+      "latitude": 12.9740609,
+      "longitude": 77.597995,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Kasturba Cross Road",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0c85\u0ca1\u0ccd\u0ca1 \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1091791762",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.967649,
+      "longitude": 77.5935903,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1091791763",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9672759,
+      "longitude": 77.5940978,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1093504017",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9726605,
+      "longitude": 77.598751,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1096187529",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9734524,
+      "longitude": 77.5953413,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/1096187530",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9735503,
+      "longitude": 77.5955707,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/1096187531",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.97354,
+      "longitude": 77.5954143,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/1096187532",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9738903,
+      "longitude": 77.595824,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1096187533",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9740223,
+      "longitude": 77.5959895,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1096187534",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9735991,
+      "longitude": 77.5958876,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1096187535",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9739828,
+      "longitude": 77.5960816,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1096187536",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9727749,
+      "longitude": 77.5977953,
+      "tags": {
+        "highway": "living_street"
+      }
+    },
+    {
+      "id": "way/1096187546",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9749593,
+      "longitude": 77.5966085,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1096187547",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9749299,
+      "longitude": 77.5965597,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1098770435",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9712382,
+      "longitude": 77.5934362,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "motor_vehicle": "destination"
+      }
+    },
+    {
+      "id": "way/1098770436",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9703205,
+      "longitude": 77.5927147,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "motor_vehicle": "destination"
+      }
+    },
+    {
+      "id": "way/1098770439",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9696601,
+      "longitude": 77.593571,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "motor_vehicle": "destination"
+      }
+    },
+    {
+      "id": "way/1098770440",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.971682,
+      "longitude": 77.5941809,
+      "tags": {
+        "access": "private",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1098770445",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9710999,
+      "longitude": 77.5960928,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1098770446",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9698461,
+      "longitude": 77.5961329,
+      "tags": {
+        "access": "private",
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1098770448",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.972486,
+      "longitude": 77.5975799,
+      "tags": {
+        "highway": "living_street"
+      }
+    },
+    {
+      "id": "way/1098770450",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9708609,
+      "longitude": 77.5981369,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1098770451",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9708664,
+      "longitude": 77.59794,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1098776709",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9672848,
+      "longitude": 77.5952526,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1098776715",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9688044,
+      "longitude": 77.5967161,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/1098776716",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9690582,
+      "longitude": 77.5949763,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1098776719",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.970564,
+      "longitude": 77.591335,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1098776764",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9671155,
+      "longitude": 77.5937089,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1102326207",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9739865,
+      "longitude": 77.5978808,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1102326208",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9716406,
+      "longitude": 77.594879,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1102326210",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9718583,
+      "longitude": 77.5945277,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1102326211",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9718288,
+      "longitude": 77.5943386,
+      "tags": {
+        "access": "private",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1102326212",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9716276,
+      "longitude": 77.5943564,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1102326213",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9707083,
+      "longitude": 77.5943185,
+      "tags": {
+        "access": "permissive",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1107016502",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9674839,
+      "longitude": 77.595111,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1109911786",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.972254,
+      "longitude": 77.5938622,
+      "tags": {
+        "access": "permissive",
+        "bicycle": "yes",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "lanes": "2",
+        "maxspeed": "25",
+        "motor_vehicle:conditional": "yes @ (Mo-Sa 08:00-21:00)",
+        "note": "Vehicular Traffic Allowed only between - 8AM to 9PM from Monday to Saturday. Sunday Vehicles not permitted.",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1109911787",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.972315,
+      "longitude": 77.5939481,
+      "tags": {
+        "access": "permissive",
+        "bicycle": "yes",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "maxspeed": "25",
+        "motor_vehicle:conditional": "yes @ (Mo-Sa 08:00-21:00)",
+        "note": "Vehicular Traffic Allowed only between - 8AM to 9PM from Monday to Saturday. Sunday Vehicles not permitted.",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "sidewalk:both:kerb": "raised",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1109911788",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.9722329,
+      "longitude": 77.5940405,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxheight": "5.7",
+        "name": "Kasturba Road",
+        "name:etymology:wikidata": "Q264908",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Sidney Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1109911790",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.9721323,
+      "longitude": 77.594063,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxheight": "5.7",
+        "name": "Kasturba Road",
+        "name:etymology:wikidata": "Q264908",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Sidney Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1109911791",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.9721791,
+      "longitude": 77.5940464,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "designated",
+        "highway": "tertiary",
+        "name": "Vittal Mallya Road",
+        "name:etymology:wikidata": "Q7937268",
+        "name:kn": "\u0cb5\u0cbf\u0ca0\u0ccd\u0ca0\u0cb2 \u0cae\u0cb2\u0ccd\u0caf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Grant Road",
+        "oneway": "yes",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1109911794",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.9721201,
+      "longitude": 77.5939187,
+      "tags": {
+        "highway": "secondary",
+        "name": "Kasturba Road",
+        "name:etymology:wikidata": "Q264908",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Sidney Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1109911795",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9720805,
+      "longitude": 77.5937444,
+      "tags": {
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1110191850",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.9722831,
+      "longitude": 77.5941911,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxheight": "5.7",
+        "name": "Kasturba Road",
+        "name:etymology:wikidata": "Q264908",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Sidney Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1119627676",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9675115,
+      "longitude": 77.5963474,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1124083553",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9737467,
+      "longitude": 77.5973439,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/1125334904",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9729197,
+      "longitude": 77.5970178,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1125334905",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9734069,
+      "longitude": 77.5973935,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1125334906",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9733995,
+      "longitude": 77.5974222,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1125334911",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9730785,
+      "longitude": 77.5949749,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1125334912",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9731052,
+      "longitude": 77.5949964,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1125385914",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9697578,
+      "longitude": 77.5965911,
+      "tags": {
+        "access": "private",
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1132664940",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9685153,
+      "longitude": 77.592673,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "motor_vehicle": "destination"
+      }
+    },
+    {
+      "id": "way/1148155462",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.9721432,
+      "longitude": 77.5940073,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "designated",
+        "highway": "tertiary",
+        "name": "Vittal Mallya Road",
+        "name:etymology:wikidata": "Q7937268",
+        "name:kn": "\u0cb5\u0cbf\u0ca0\u0ccd\u0ca0\u0cb2 \u0cae\u0cb2\u0ccd\u0caf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Grant Road",
+        "oneway": "yes",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1148155463",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.9720215,
+      "longitude": 77.5940162,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxheight": "5.7",
+        "name": "Kasturba Road",
+        "name:etymology:wikidata": "Q264908",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Sidney Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1148155464",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.9720407,
+      "longitude": 77.5943439,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "designated",
+        "highway": "tertiary",
+        "name": "Vittal Mallya Road",
+        "name:etymology:wikidata": "Q7937268",
+        "name:kn": "\u0cb2\u0cbe\u0cb5\u0cc6\u0cb2\u0ccd \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Grant Road",
+        "oneway": "yes",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1148155465",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.97219,
+      "longitude": 77.5939907,
+      "tags": {
+        "highway": "secondary",
+        "name": "Kasturba Road",
+        "name:etymology:wikidata": "Q264908",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Sidney Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1148155466",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.9720672,
+      "longitude": 77.5941457,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "designated",
+        "highway": "tertiary",
+        "name": "Vittal Mallya Road",
+        "name:etymology:wikidata": "Q7937268",
+        "name:kn": "\u0cb2\u0cbe\u0cb5\u0cc6\u0cb2\u0ccd \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Grant Road",
+        "oneway": "yes",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1156298791",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9745993,
+      "longitude": 77.5966952,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1162816459",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9677771,
+      "longitude": 77.5932017,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1162816460",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9675943,
+      "longitude": 77.5909176,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1162816462",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9680379,
+      "longitude": 77.5910401,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "kerb": "raised",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1165376037",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9743558,
+      "longitude": 77.5954732,
+      "tags": {
+        "access": "permissive",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1165376038",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.974498,
+      "longitude": 77.595211,
+      "tags": {
+        "access": "permissive",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1165376130",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9743669,
+      "longitude": 77.5936554,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1182193014",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9680449,
+      "longitude": 77.5927468,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "motor_vehicle": "destination"
+      }
+    },
+    {
+      "id": "way/1182193015",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.968125,
+      "longitude": 77.5927442,
+      "tags": {
+        "access": "private",
+        "bridge": "yes",
+        "highway": "service",
+        "layer": "1",
+        "motor_vehicle": "destination"
+      }
+    },
+    {
+      "id": "way/1182217672",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9747868,
+      "longitude": 77.5938867,
+      "tags": {
+        "access": "private",
+        "cycleway": "no",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1183620703",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9749456,
+      "longitude": 77.5973986,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1183628554",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9712714,
+      "longitude": 77.597038,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1193543693",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9717134,
+      "longitude": 77.5953182,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1200760840",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.972529,
+      "longitude": 77.5936051,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1200760841",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9756282,
+      "longitude": 77.5950664,
+      "tags": {
+        "access": "permissive",
+        "cycleway": "no",
+        "highway": "service",
+        "lanes": "2"
+      }
+    },
+    {
+      "id": "way/1205171800",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.9720061,
+      "longitude": 77.593793,
+      "tags": {
+        "highway": "secondary",
+        "name": "Kasturba Road",
+        "name:etymology:wikidata": "Q264908",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Sidney Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1205171801",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.9721811,
+      "longitude": 77.594107,
+      "tags": {
+        "highway": "secondary",
+        "lanes": "2",
+        "maxheight": "5.7",
+        "name": "Kasturba Road",
+        "name:etymology:wikidata": "Q264908",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Sidney Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1205171802",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.9743785,
+      "longitude": 77.5964763,
+      "tags": {
+        "dual_carriageway": "yes",
+        "highway": "secondary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxheight": "5.7",
+        "name": "Kasturba Road",
+        "name:etymology:wikidata": "Q264908",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Sidney Road",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1219312242",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9711424,
+      "longitude": 77.597587,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:island": "no",
+        "crossing:markings": "zebra",
+        "footway": "crossing",
+        "highway": "footway",
+        "tactile_paving": "no"
+      }
+    },
+    {
+      "id": "way/1219331391",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9702464,
+      "longitude": 77.5921403,
+      "tags": {
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "id": "way/1219331393",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9702595,
+      "longitude": 77.5921092,
+      "tags": {
+        "highway": "footway",
+        "incline": "down"
+      }
+    },
+    {
+      "id": "way/1221674743",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9708666,
+      "longitude": 77.5974436,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1222902235",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9721375,
+      "longitude": 77.5938864,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1222902236",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9721625,
+      "longitude": 77.5941769,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1222902237",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9722773,
+      "longitude": 77.5940177,
+      "tags": {
+        "highway": "footway",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1222902239",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9720565,
+      "longitude": 77.5938742,
+      "tags": {
+        "crossing": "traffic_signals",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1222902240",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9722312,
+      "longitude": 77.5939504,
+      "tags": {
+        "crossing": "traffic_signals",
+        "crossing:markings": "zebra",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1222902241",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9720939,
+      "longitude": 77.594158,
+      "tags": {
+        "crossing": "traffic_signals",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1222902242",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9722297,
+      "longitude": 77.5941079,
+      "tags": {
+        "crossing": "traffic_signals",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1222902243",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9739535,
+      "longitude": 77.5955409,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1222902244",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.974554,
+      "longitude": 77.596496,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "smoothness": "good",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1222902245",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9738029,
+      "longitude": 77.5956816,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1224538514",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9736565,
+      "longitude": 77.5979686,
+      "tags": {
+        "highway": "living_street"
+      }
+    },
+    {
+      "id": "way/1227541118",
+      "name": "Lavelle Road",
+      "category": "road",
+      "latitude": 12.9712421,
+      "longitude": 77.5979738,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Lavelle Road",
+        "name:kn": "\u0cb2\u0cbe\u0cb5\u0cc6\u0cb2\u0ccd \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6"
+      }
+    },
+    {
+      "id": "way/1227941352",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9708418,
+      "longitude": 77.5962315,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1231870393",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.969641,
+      "longitude": 77.5945247,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "smoothness": "good",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1231870394",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.971409,
+      "longitude": 77.5943879,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1231870395",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.967165,
+      "longitude": 77.5947987,
+      "tags": {
+        "highway": "primary_link",
+        "lanes": "2",
+        "name": "Vittal Mallya Road",
+        "name:kn": "\u0cb5\u0cbf\u0ca0\u0ccd\u0ca0\u0cb2 \u0cae\u0cb2\u0ccd\u0caf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "oneway": "yes",
+        "smoothness": "good",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1231870397",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9680484,
+      "longitude": 77.592824,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1231870398",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9678994,
+      "longitude": 77.5927882,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1231870399",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9679808,
+      "longitude": 77.5928045,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:island": "no",
+        "crossing:markings": "zebra",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "tactile_paving": "no"
+      }
+    },
+    {
+      "id": "way/1231870402",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.969432,
+      "longitude": 77.5938488,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "smoothness": "good",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1231870406",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9712117,
+      "longitude": 77.5975825,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1231870407",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9710688,
+      "longitude": 77.5975915,
+      "tags": {
+        "crossing:island": "no",
+        "crossing:markings": "zebra",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "tactile_paving": "no"
+      }
+    },
+    {
+      "id": "way/1231870408",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9712762,
+      "longitude": 77.5977319,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "zebra",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "yes",
+        "smoothness": "good"
+      }
+    },
+    {
+      "id": "way/1231870410",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9718174,
+      "longitude": 77.5982482,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "smoothness": "good",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1231870411",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9723504,
+      "longitude": 77.5987132,
+      "tags": {
+        "crossing": "unmarked",
+        "crossing:markings": "no",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1231870412",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9732118,
+      "longitude": 77.599075,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "smoothness": "good",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1231870413",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9739851,
+      "longitude": 77.5955783,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1231870414",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9738325,
+      "longitude": 77.5957174,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1238638850",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9711372,
+      "longitude": 77.5964692,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1238638851",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9710601,
+      "longitude": 77.5976912,
+      "tags": {
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1238638852",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.9715427,
+      "longitude": 77.5959527,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "designated",
+        "highway": "tertiary",
+        "name": "Vittal Mallya Road",
+        "name:etymology:wikidata": "Q7937268",
+        "name:kn": "\u0cb5\u0cbf\u0ca0\u0ccd\u0ca0\u0cb2\u0ccd \u0cae\u0cb2\u0ccd\u0caf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Grant Road",
+        "oneway": "yes",
+        "smoothness": "excellent",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1238638853",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.9719349,
+      "longitude": 77.5944724,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "designated",
+        "highway": "tertiary",
+        "name": "Vittal Mallya Road",
+        "name:etymology:wikidata": "Q7937268",
+        "name:kn": "\u0cb5\u0cbf\u0ca0\u0ccd\u0ca0\u0cb2 \u0cae\u0cb2\u0ccd\u0caf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Grant Road",
+        "oneway": "yes",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1240447779",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9721174,
+      "longitude": 77.5960655,
+      "tags": {
+        "area": "yes",
+        "area:highway": "footway",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1254858427",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9759255,
+      "longitude": 77.595555,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1254858429",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9756338,
+      "longitude": 77.5958382,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1257318350",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9705991,
+      "longitude": 77.5896394,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "id": "way/1257318351",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9736256,
+      "longitude": 77.5904218,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1262778078",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9700124,
+      "longitude": 77.5916099,
+      "tags": {
+        "bicycle": "designated",
+        "cycleway:surface": "concrete",
+        "foot": "designated",
+        "footway:surface": "paving_stones",
+        "highway": "path",
+        "segregated": "yes",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1270571359",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9726041,
+      "longitude": 77.5908326,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1270571360",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9716486,
+      "longitude": 77.5923224,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1270571442",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9709668,
+      "longitude": 77.59169,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1270571443",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9707539,
+      "longitude": 77.5917931,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1270572124",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9717601,
+      "longitude": 77.5911329,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1270572125",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9712395,
+      "longitude": 77.5904615,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1270572126",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9709557,
+      "longitude": 77.5904534,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1297594206",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9717818,
+      "longitude": 77.5993591,
+      "tags": {
+        "bicycle": "no",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "kerb": "raised",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1303040690",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9723789,
+      "longitude": 77.5938196,
+      "tags": {
+        "highway": "secondary_link",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1307644487",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.976081,
+      "longitude": 77.5927552,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "smoothness": "excellent",
+        "surface": "paving_stones",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "id": "way/1308621813",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9711937,
+      "longitude": 77.5971688,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1308629005",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9742823,
+      "longitude": 77.598404,
+      "tags": {
+        "access": "private",
+        "highway": "residential",
+        "lanes": "2",
+        "source:access": "sign",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1308629011",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9685902,
+      "longitude": 77.595922,
+      "tags": {
+        "highway": "living_street"
+      }
+    },
+    {
+      "id": "way/1308629012",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9684164,
+      "longitude": 77.5954899,
+      "tags": {
+        "access": "private",
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1308629013",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9687002,
+      "longitude": 77.5978889,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/1308629017",
+      "name": "1st Cross Road",
+      "category": "road",
+      "latitude": 12.9684307,
+      "longitude": 77.595902,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "1st Cross Road",
+        "name:kn": "\u0ce7\u0ca8\u0cc7 \u0c85\u0ca1\u0ccd\u0ca1 \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1308632309",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9716848,
+      "longitude": 77.5985442,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/1308654698",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9706671,
+      "longitude": 77.5993177,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1308725870",
+      "name": "Rajaram Mohan Roy Road",
+      "category": "road",
+      "latitude": 12.9670023,
+      "longitude": 77.5950127,
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "50",
+        "name": "Rajaram Mohan Roy Road",
+        "name:etymology:wikidata": "Q335269",
+        "name:kn": "\u0cb0\u0cbe\u0cae\u0ccd \u0cae\u0ccb\u0cb9\u0ca8\u0ccd \u0cb0\u0cbe\u0caf\u0ccd \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Tank Road",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1308726387",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9715498,
+      "longitude": 77.5971583,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/1308726389",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9710639,
+      "longitude": 77.5976277,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1308726392",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9681771,
+      "longitude": 77.5972096,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "smoothness": "good",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1308726393",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9670919,
+      "longitude": 77.5964426,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "smoothness": "good",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1308727314",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9683944,
+      "longitude": 77.5957225,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/1308728837",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9721685,
+      "longitude": 77.5973502,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/1308734870",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9715949,
+      "longitude": 77.5941404,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1308734874",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9674466,
+      "longitude": 77.5949714,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1308734875",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9674411,
+      "longitude": 77.5949191,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:island": "no",
+        "crossing:markings": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "tactile_paving": "no"
+      }
+    },
+    {
+      "id": "way/1308734876",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9674359,
+      "longitude": 77.5948683,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1308734877",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9686989,
+      "longitude": 77.5945933,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1308734878",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.968718,
+      "longitude": 77.5947075,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1308734879",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9687076,
+      "longitude": 77.5946476,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:island": "no",
+        "crossing:markings": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "paving_stones",
+        "tactile_paving": "no"
+      }
+    },
+    {
+      "id": "way/1308734881",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9705165,
+      "longitude": 77.5942627,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "zebra",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1308734882",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9705235,
+      "longitude": 77.5943225,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1308734883",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9705106,
+      "longitude": 77.5942114,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1308734884",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9715761,
+      "longitude": 77.5940423,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "zebra",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt",
+        "tactile_paving": "no"
+      }
+    },
+    {
+      "id": "way/1308734885",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9715864,
+      "longitude": 77.5940929,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1308734886",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9715658,
+      "longitude": 77.5939915,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1308734887",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9719213,
+      "longitude": 77.5941453,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1308734888",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9719576,
+      "longitude": 77.5941205,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "zebra",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1308734889",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9711011,
+      "longitude": 77.5965562,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1308734890",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9711546,
+      "longitude": 77.5965626,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "yes",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1308734891",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9712094,
+      "longitude": 77.5965695,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1308734892",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9712453,
+      "longitude": 77.5966986,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1308734893",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9714333,
+      "longitude": 77.5967186,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "incline": "down"
+      }
+    },
+    {
+      "id": "way/1308946228",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9722998,
+      "longitude": 77.5986776,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1308946229",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9722854,
+      "longitude": 77.5987033,
+      "tags": {
+        "crossing": "unmarked",
+        "crossing:markings": "no",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1308946230",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9722696,
+      "longitude": 77.5987305,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1313770929",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9674446,
+      "longitude": 77.5940956,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1314840982",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9676798,
+      "longitude": 77.5930565,
+      "tags": {
+        "highway": "residential",
+        "name:kn": "\u0ce7\u0ca8\u0cc7 \u0c85\u0ca1\u0ccd\u0ca1 \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6"
+      }
+    },
+    {
+      "id": "way/1317160283",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9764814,
+      "longitude": 77.5967948,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "id": "way/1317160284",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9761399,
+      "longitude": 77.5945213,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1317160288",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9760024,
+      "longitude": 77.5946571,
+      "tags": {
+        "crossing": "unmarked",
+        "crossing:markings": "no",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1317160289",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9752419,
+      "longitude": 77.5940236,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1317160290",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9751771,
+      "longitude": 77.5919348,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones",
+        "tactile_paving": "yes"
+      }
+    },
+    {
+      "id": "way/1317160297",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9734793,
+      "longitude": 77.5905265,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1317160298",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9751721,
+      "longitude": 77.5925821,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "yes",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1317160299",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9751308,
+      "longitude": 77.5925595,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1343714130",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9729408,
+      "longitude": 77.5974253,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1343714131",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9715426,
+      "longitude": 77.5950259,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1343714132",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9692095,
+      "longitude": 77.5920978,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1343714133",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9686366,
+      "longitude": 77.5919177,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1343714134",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9689138,
+      "longitude": 77.5920148,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1343714135",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9691829,
+      "longitude": 77.5925717,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1347106633",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9717592,
+      "longitude": 77.5959519,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1347245636",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9696999,
+      "longitude": 77.5970696,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "smoothness": "good",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1347245637",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9683088,
+      "longitude": 77.596464,
+      "tags": {
+        "crossing": "unmarked",
+        "crossing:markings": "no",
+        "footway": "crossing",
+        "highway": "footway",
+        "smoothness": "good",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1347245638",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9716336,
+      "longitude": 77.5953983,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1347245639",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9715326,
+      "longitude": 77.5953566,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1347245640",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9715822,
+      "longitude": 77.5953771,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "zebra",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1347246053",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9734828,
+      "longitude": 77.5936814,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1347246054",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9736841,
+      "longitude": 77.5925994,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1347246055",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.975103,
+      "longitude": 77.5931523,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1347246056",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.975058,
+      "longitude": 77.59316,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "yes",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1356841809",
+      "name": "Walton Road",
+      "category": "road",
+      "latitude": 12.9712221,
+      "longitude": 77.5977496,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Walton Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1356841810",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.9711834,
+      "longitude": 77.5976126,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "designated",
+        "highway": "tertiary",
+        "name": "Vittal Mallya Road",
+        "name:etymology:wikidata": "Q7937268",
+        "name:kn": "\u0cb5\u0cbf\u0ca0\u0ccd\u0ca0\u0cb2 \u0cae\u0cb2\u0ccd\u0caf \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Grant Road",
+        "oneway": "yes",
+        "smoothness": "excellent",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1364673359",
+      "name": "Vittal Mallya Road",
+      "category": "road",
+      "latitude": 12.9711656,
+      "longitude": 77.5978674,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Vittal Mallya Road",
+        "name:etymology:wikidata": "Q7937268",
+        "name:kn": "\u0cb2\u0cbe\u0cb5\u0cc6\u0cb2\u0ccd \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "old_name": "Grant Road",
+        "oneway": "yes",
+        "sidewalk:both": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1368046448",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9714197,
+      "longitude": 77.5922764,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1368046449",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9714517,
+      "longitude": 77.5922533,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1"
+      }
+    },
+    {
+      "id": "way/1368046450",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9714902,
+      "longitude": 77.5922164,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1368046451",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9710572,
+      "longitude": 77.5924454,
+      "tags": {
+        "highway": "footway",
+        "surface": "ground"
+      }
+    },
+    {
+      "id": "way/1368046454",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9757977,
+      "longitude": 77.5936431,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1368284546",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9707398,
+      "longitude": 77.5906265,
+      "tags": {
+        "bridge": "yes",
+        "bridge:structure": "humpback",
+        "handrail": "yes",
+        "highway": "footway",
+        "layer": "1",
+        "surface": "metal"
+      }
+    },
+    {
+      "id": "way/1368284547",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9695479,
+      "longitude": 77.5899117,
+      "tags": {
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1368284552",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9706506,
+      "longitude": 77.5907657,
+      "tags": {
+        "bridge": "yes",
+        "bridge:structure": "cable-stayed",
+        "highway": "footway",
+        "layer": "1",
+        "surface": "ground"
+      }
+    },
+    {
+      "id": "way/1368284553",
+      "name": "Cubbon Park Nature Trail",
+      "category": "road",
+      "latitude": 12.9694231,
+      "longitude": 77.5900805,
+      "tags": {
+        "highway": "footway",
+        "name": "Cubbon Park Nature Trail",
+        "surface": "ground"
+      }
+    },
+    {
+      "id": "way/1368284555",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.970563,
+      "longitude": 77.5918904,
+      "tags": {
+        "highway": "footway",
+        "surface": "ground"
+      }
+    },
+    {
+      "id": "way/1368284556",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.970576,
+      "longitude": 77.5919276,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "layer": "1",
+        "surface": "metal"
+      }
+    },
+    {
+      "id": "way/1368422461",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.97586,
+      "longitude": 77.5958151,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1368422466",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9707561,
+      "longitude": 77.5912726,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1372985167",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9712213,
+      "longitude": 77.5927214,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1372985168",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.971235,
+      "longitude": 77.5927032,
+      "tags": {
+        "highway": "steps",
+        "incline": "up"
+      }
+    },
+    {
+      "id": "way/1372985169",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9714255,
+      "longitude": 77.5925897,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1372985171",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9699035,
+      "longitude": 77.5909766,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1372987213",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9711696,
+      "longitude": 77.5918097,
+      "tags": {
+        "bridge": "yes",
+        "highway": "footway",
+        "surface": "metal"
+      }
+    },
+    {
+      "id": "way/1372987214",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9709136,
+      "longitude": 77.5912797,
+      "tags": {
+        "highway": "footway",
+        "surface": "ground"
+      }
+    },
+    {
+      "id": "way/1421715811",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9712612,
+      "longitude": 77.5961967,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1422250267",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9747645,
+      "longitude": 77.5931345,
+      "tags": {
+        "access": "permissive",
+        "bicycle": "no",
+        "bicycle:conditional": "yes @ (Mo-Su 08:00-21:00)",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "honking": "no",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "20",
+        "motor_vehicle:conditional": "yes @ (Mo-Sa 08:00-21:00)",
+        "note": "Vehicular Traffic Allowed only between - 8AM to 9PM from Monday to Saturday. Sunday Vehicles not permitted.",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1422250268",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9750747,
+      "longitude": 77.5927699,
+      "tags": {
+        "access": "permissive",
+        "bicycle": "no",
+        "bicycle:conditional": "yes @ (Mo-Su 08:00-21:00)",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "honking": "no",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "20",
+        "motor_vehicle:conditional": "yes @ (Mo-Sa 08:00-21:00)",
+        "note": "Vehicular Traffic Allowed only between - 8AM to 9PM from Monday to Saturday. Sunday Vehicles not permitted.",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1422250269",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9750099,
+      "longitude": 77.5927607,
+      "tags": {
+        "access": "permissive",
+        "bicycle": "no",
+        "bicycle:conditional": "yes @ (Mo-Su 08:00-21:00)",
+        "cycleway": "no",
+        "foot": "yes",
+        "highway": "unclassified",
+        "lanes": "2",
+        "motor_vehicle:conditional": "yes @ (Mo-Sa 08:00-21:00)",
+        "note": "Vehicular Traffic Allowed only between - 8AM to 9PM from Monday to Saturday. Sunday Vehicles not permitted.",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1459047310",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9674837,
+      "longitude": 77.5949422,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1459047313",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9672967,
+      "longitude": 77.5950149,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "smoothness": "good",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1459047320",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9678967,
+      "longitude": 77.5964221,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "smoothness": "good",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1459047321",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9675137,
+      "longitude": 77.5964171,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1466162863",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9702911,
+      "longitude": 77.5919401,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1466162864",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9704033,
+      "longitude": 77.5918276,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1466162865",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9703468,
+      "longitude": 77.5918842,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "zebra",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1466162866",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9717481,
+      "longitude": 77.5937637,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1467492970",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9745207,
+      "longitude": 77.5955543,
+      "tags": {
+        "access": "permissive",
+        "bridge": "yes",
+        "highway": "service",
+        "layer": "1"
+      }
+    },
+    {
+      "id": "way/1467492971",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9745699,
+      "longitude": 77.595604,
+      "tags": {
+        "access": "permissive",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1467492972",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9745291,
+      "longitude": 77.5964374,
+      "tags": {
+        "area": "yes",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1467492973",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9733687,
+      "longitude": 77.5954547,
+      "tags": {
+        "area": "yes",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1467492974",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9746294,
+      "longitude": 77.5966464,
+      "tags": {
+        "footway": "crossing",
+        "highway": "footway",
+        "smoothness": "good",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1467492975",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9755502,
+      "longitude": 77.5979346,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "lit": "yes",
+        "smoothness": "good",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1467492977",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.975551,
+      "longitude": 77.5980067,
+      "tags": {
+        "area": "yes",
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1504026994",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9678121,
+      "longitude": 77.5926333,
+      "tags": {
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "id": "way/1512666760",
+      "name": "5th Cross Road",
+      "category": "road",
+      "latitude": 12.9697064,
+      "longitude": 77.598023,
+      "tags": {
+        "highway": "residential",
+        "name": "5th Cross Road",
+        "name:kn": "\u0ceb\u0ca8\u0cc7 \u0c85\u0ca1\u0ccd\u0ca1 \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "name:ur": "5 \u0648\u06cc\u06ba \u06a9\u0631\u0627\u0633 \u0631\u0648\u0688"
+      }
+    },
+    {
+      "id": "way/1512666766",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9727088,
+      "longitude": 77.596918,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1512666768",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9732014,
+      "longitude": 77.5967071,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1512666769",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9723244,
+      "longitude": 77.5945923,
+      "tags": {
+        "area": "yes",
+        "highway": "pedestrian"
+      }
+    },
+    {
+      "id": "way/1512666770",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9728504,
+      "longitude": 77.5950161,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1512666771",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9723423,
+      "longitude": 77.5950754,
+      "tags": {
+        "access": "private",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1536805325",
+      "name": "Chidananda Maharashi Ashram Road",
+      "category": "road",
+      "latitude": 12.9671653,
+      "longitude": 77.5926209,
+      "tags": {
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Chidananda Maharashi Ashram Road",
+        "name:kn": "\u0c9a\u0cbf\u0ca6\u0cbe\u0ca8\u0c82\u0ca6 \u0cae\u0cb9\u0cb0\u0ccd\u0cb7\u0cbf \u0c86\u0cb6\u0ccd\u0cb0\u0cae \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1551001627",
+      "name": "Kasturba Road",
+      "category": "road",
+      "latitude": 12.9718021,
+      "longitude": 77.5939991,
+      "tags": {
+        "highway": "secondary",
+        "name": "Kasturba Road",
+        "name:kn": "\u0c95\u0cb8\u0ccd\u0ca4\u0cc2\u0cb0\u0ccd\u0cac\u0cbe \u0cb0\u0cb8\u0ccd\u0ca4\u0cc6",
+        "oneway": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1562467428",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9716437,
+      "longitude": 77.5952877,
+      "tags": {
+        "access": "permissive",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1562467429",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9715302,
+      "longitude": 77.5967064,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1562467430",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9712257,
+      "longitude": 77.5966431,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1562467431",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 12.9725458,
+      "longitude": 77.5958106,
+      "tags": {
+        "access": "permissive",
+        "highway": "service",
+        "maxspeed": "10"
+      }
+    }
+  ]
+}
