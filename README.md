@@ -201,15 +201,15 @@ Backend tests mock external providers and models where appropriate. Frontend tes
 
 The current application includes a polished decision workspace built around two analysis modes:
 
-- **Evaluate Land (LAND → BUSINESS):** geocode a location, inspect nearby amenities and competitors, rank business opportunities, estimate land price per cent, and discover mapped empty-land parcels.
+- **Evaluate Land (LAND → BUSINESS):** geocode a location, inspect nearby amenities and competitors, rank business opportunities, estimate land price per square foot, and discover mapped empty-land parcels.
 - **Place Business (BUSINESS → LAND):** select a business type, scan a centred geographic grid, rank candidate locations, and inspect each candidate’s score, population, competition, infrastructure signals, and individual land-budget estimate.
-- **Per-location budget estimates:** every candidate returned by `POST /api/find-best-locations` now includes `budget_estimate`, containing the estimated price per cent, model source, population-density factor, road distance, school count and hospital count.
+- **Per-location budget estimates:** every candidate returned by `POST /api/find-best-locations` now includes `budget_estimate`, containing the estimated price per square foot (with the original per-cent value retained in the API), model source, population-density factor, road distance, school count and hospital count.
 - **Budget-aware map visualization:** candidate cell fill represents relative business suitability, while the cell border represents relative budget from lower to higher. Map popups and the selected-location panel show the exact estimate.
 - **Workspace UX:** saved analyses persist in browser storage, saved locations can be reopened or removed, profile preferences can be saved locally, and dark mode/map-label preferences are available.
 
 ### Budget interpretation
 
-Budget figures are **prototype planning estimates per cent**, not final plot prices or total acquisition costs. The current model is trained on synthetic data using population density, road distance, school count and hospital count. Replace it with time-stamped local transaction data before using it for commercial valuation.
+Budget figures are **prototype planning estimates per square foot**, not final plot prices or total acquisition costs. The current model is trained on synthetic data using population density, road distance, school count and hospital count. Replace it with time-stamped local transaction data before using it for commercial valuation.
 
 ### Frontend interaction model
 
@@ -226,7 +226,7 @@ The map also supports interactive **Center** and **Fit results** actions. Center
 5. Add exports (CSV/PDF), side-by-side comparisons and an admin workflow for reviewing model quality.
 ## 24. Comparison and reporting
 
-The BUSINESS → LAND workflow supports a shortlist of up to four candidate locations. Users can add candidates with **Compare**, inspect suitability, estimated budget per cent, population, competitors, schools and road distance side by side, clear the shortlist, and export the current analysis as a print-ready PDF report from the analysis header. The browser print dialog is used so the user can choose “Save as PDF” without a reporting server.
+The BUSINESS → LAND workflow supports a shortlist of up to four candidate locations. Users can add candidates with **Compare**, inspect suitability, estimated land price per square foot, population, competitors, schools and road distance side by side, clear the shortlist, and export the current analysis as a print-ready PDF report from the analysis header. The browser print dialog is used so the user can choose “Save as PDF” without a reporting server.
 
 ## 25. Real land-price data integration plan
 

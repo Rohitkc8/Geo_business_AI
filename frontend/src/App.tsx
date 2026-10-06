@@ -1317,7 +1317,7 @@ export default function App() {
                   <Popup>
                     <strong>Rank #{i + 1}</strong><br/>
                     Score: {c.model_score.toFixed(2)}<br/>
-                    {c.budget_estimate ? `Land budget: ${c.budget_estimate.formatted_price}` : 'Land budget: unavailable'}
+                    {c.budget_estimate ? `Land price / sq ft: ${c.budget_estimate.formatted_price}` : 'Land price / sq ft: unavailable'}
                   </Popup>
                 </Rectangle>
               ))}
