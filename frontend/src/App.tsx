@@ -51,7 +51,9 @@ type Page = 'dashboard' | 'analysis' | 'locations' | 'comparison' | 'settings' |
 type Factors = { positive_factors: string[]; negative_factors: string[] }
 type BudgetEstimate = {
   price_per_cent_inr: number
+  price_per_sqft_inr?: number
   formatted_price: string
+  formatted_price_per_cent?: string
   factors: {
     source: string
     population_density: string
@@ -486,7 +488,7 @@ const ComparisonView = ({ candidates, compareSelection, onClear, onBackToAnalysi
   return (
     <div className="page-content comparison-page fade-in">
       <div className="page-header"><div><span className="eyebrow">Decision workspace</span><h1>Comparison Workspace</h1><p>Review your shortlisted locations side by side before choosing where to invest.</p></div><div className="header-actions"><button type="button" className="btn btn-outline" onClick={onBackToAnalysis}><MapIcon size={15}/> Back to map</button>{selectedCandidates.length > 0 && <button type="button" className="btn btn-outline text-danger" onClick={onClear}><X size={15}/> Clear shortlist</button>}</div></div>
-      {selectedCandidates.length < 2 ? <div className="empty-state comparison-empty"><GitCompareArrows size={36}/><h3>{selectedCandidates.length === 1 ? 'Add one more location to compare' : 'No locations selected yet'}</h3><p>Go to New Analysis → Place Business, run a search, then click <strong>Compare</strong> on the candidate cards.</p><button type="button" className="btn btn-primary" onClick={onBackToAnalysis}><PlusCircle size={15}/> Open analysis</button></div> : <div className="comparison-page-card"><div className="comparison-page-intro"><div><span className="eyebrow">{selectedCandidates.length} locations selected</span><h2>Side-by-side comparison</h2></div><span className="comparison-tip">Higher suitability is better · lower budget may reduce entry cost</span></div><div className="comparison-page-grid" style={{ gridTemplateColumns: `repeat(${selectedCandidates.length}, minmax(170px, 1fr))` }}>{selectedCandidates.map((candidate, position) => { const originalIndex = compareSelection[position]; return <div className="comparison-page-location" key={`${candidate.lat}-${candidate.lon}`}><div className="comparison-page-location-top"><span>Rank #{originalIndex + 1}</span><button type="button" aria-label={`Remove location ${originalIndex + 1}`} onClick={() => onRemove(originalIndex)}><X size={14}/></button></div><strong>{candidate.lat.toFixed(5)}</strong><small>{candidate.lon.toFixed(5)}</small><b>{candidate.model_score.toFixed(2)} score</b></div> })}</div><div className="comparison-page-metrics">{[['Suitability', (c: Candidate) => c.model_score.toFixed(2)], ['Land budget / cent', (c: Candidate) => c.budget_estimate?.formatted_price || 'Unavailable'], ['Population', (c: Candidate) => c.details.population.toLocaleString()], ['Competitors / 500 m', (c: Candidate) => String(c.details.competitors)], ['Schools', (c: Candidate) => String(c.details.schools)], ['Colleges', (c: Candidate) => String(c.details.colleges)], ['Hospitals', (c: Candidate) => String(c.details.hospitals)], ['Road distance', (c: Candidate) => `${c.details.distance_to_major_road.toFixed(0)} m`]].map(([label, fn]) => { const value = fn as (candidate: Candidate) => string; return <div className="comparison-page-metric" key={String(label)}><span>{String(label)}</span>{selectedCandidates.map((candidate, index) => <strong key={`${String(label)}-${index}`}>{value(candidate)}</strong>)}</div> })}</div></div>}
+      {selectedCandidates.length < 2 ? <div className="empty-state comparison-empty"><GitCompareArrows size={36}/><h3>{selectedCandidates.length === 1 ? 'Add one more location to compare' : 'No locations selected yet'}</h3><p>Go to New Analysis → Place Business, run a search, then click <strong>Compare</strong> on the candidate cards.</p><button type="button" className="btn btn-primary" onClick={onBackToAnalysis}><PlusCircle size={15}/> Open analysis</button></div> : <div className="comparison-page-card"><div className="comparison-page-intro"><div><span className="eyebrow">{selectedCandidates.length} locations selected</span><h2>Side-by-side comparison</h2></div><span className="comparison-tip">Higher suitability is better · lower budget may reduce entry cost</span></div><div className="comparison-page-grid" style={{ gridTemplateColumns: `repeat(${selectedCandidates.length}, minmax(170px, 1fr))` }}>{selectedCandidates.map((candidate, position) => { const originalIndex = compareSelection[position]; return <div className="comparison-page-location" key={`${candidate.lat}-${candidate.lon}`}><div className="comparison-page-location-top"><span>Rank #{originalIndex + 1}</span><button type="button" aria-label={`Remove location ${originalIndex + 1}`} onClick={() => onRemove(originalIndex)}><X size={14}/></button></div><strong>{candidate.lat.toFixed(5)}</strong><small>{candidate.lon.toFixed(5)}</small><b>{candidate.model_score.toFixed(2)} score</b></div> })}</div><div className="comparison-page-metrics">{[['Suitability', (c: Candidate) => c.model_score.toFixed(2)], ['Land price / sq ft', (c: Candidate) => c.budget_estimate?.formatted_price || 'Unavailable'], ['Population', (c: Candidate) => c.details.population.toLocaleString()], ['Competitors / 500 m', (c: Candidate) => String(c.details.competitors)], ['Schools', (c: Candidate) => String(c.details.schools)], ['Colleges', (c: Candidate) => String(c.details.colleges)], ['Hospitals', (c: Candidate) => String(c.details.hospitals)], ['Road distance', (c: Candidate) => `${c.details.distance_to_major_road.toFixed(0)} m`]].map(([label, fn]) => { const value = fn as (candidate: Candidate) => string; return <div className="comparison-page-metric" key={String(label)}><span>{String(label)}</span>{selectedCandidates.map((candidate, index) => <strong key={`${String(label)}-${index}`}>{value(candidate)}</strong>)}</div> })}</div></div>}
     </div>
   )
 }
@@ -505,8 +507,8 @@ const ReportView = ({ mode, query, candidates, comparedCandidates, recommendatio
         {mode === 'land' ? <>
           <section className="report-section"><h2>Executive summary</h2><div className="report-metric-grid"><div><span>Estimated land budget</span><strong>{budgetEstimate?.formatted_price || 'Unavailable'}</strong></div><div><span>Recommendations</span><strong>{recommendations.length}</strong></div><div><span>Map features</span><strong>{geoJson?.features?.length || 0}</strong></div></div></section>
           <section className="report-section"><h2>Business recommendations</h2>{recommendations.length ? <div className="report-recommendations">{recommendations.map(item => <div className="report-recommendation" key={item.business}><div><strong>{item.business}</strong><span>{item.positive_factors?.[0] || 'Suitable local signals'}</span></div><b>{item.score_percent}%</b></div>)}</div> : <p className="report-muted">No business recommendations are available for this analysis.</p>}</section>
-        </> : <section className="report-section"><h2>{comparedCandidates.length ? 'Shortlisted location comparison' : 'Top candidate locations'}</h2><p className="report-muted">{comparedCandidates.length ? `${comparedCandidates.length} locations selected from the comparison workspace.` : 'Showing the five highest-ranked locations from the current scan.'}</p><div className="report-table-wrap"><table className="report-table"><thead><tr><th>Rank</th><th>Coordinates</th><th>Suitability</th><th>Land budget / cent</th><th>Population</th><th>Competitors</th><th>Schools</th></tr></thead><tbody>{rows.length ? rows.map((candidate, index) => <tr key={`${candidate.lat}-${candidate.lon}`}><td>#{candidates.indexOf(candidate) + 1 || index + 1}</td><td>{candidate.lat.toFixed(5)}, {candidate.lon.toFixed(5)}</td><td>{candidate.model_score.toFixed(2)}</td><td>{candidate.budget_estimate?.formatted_price || 'Unavailable'}</td><td>{candidate.details.population.toLocaleString()}</td><td>{candidate.details.competitors}</td><td>{candidate.details.schools}</td></tr>) : <tr><td colSpan={7}>No candidate locations available.</td></tr>}</tbody></table></div></section>}
-        <footer className="report-footer"><strong>GeoBusiness AI</strong><span>Prototype decision-support report · Budget figures are estimates per cent, not certified valuations.</span></footer>
+        </> : <section className="report-section"><h2>{comparedCandidates.length ? 'Shortlisted location comparison' : 'Top candidate locations'}</h2><p className="report-muted">{comparedCandidates.length ? `${comparedCandidates.length} locations selected from the comparison workspace.` : 'Showing the five highest-ranked locations from the current scan.'}</p><div className="report-table-wrap"><table className="report-table"><thead><tr><th>Rank</th><th>Coordinates</th><th>Suitability</th><th>Land price / sq ft</th><th>Population</th><th>Competitors</th><th>Schools</th></tr></thead><tbody>{rows.length ? rows.map((candidate, index) => <tr key={`${candidate.lat}-${candidate.lon}`}><td>#{candidates.indexOf(candidate) + 1 || index + 1}</td><td>{candidate.lat.toFixed(5)}, {candidate.lon.toFixed(5)}</td><td>{candidate.model_score.toFixed(2)}</td><td>{candidate.budget_estimate?.formatted_price || 'Unavailable'}</td><td>{candidate.details.population.toLocaleString()}</td><td>{candidate.details.competitors}</td><td>{candidate.details.schools}</td></tr>) : <tr><td colSpan={7}>No candidate locations available.</td></tr>}</tbody></table></div></section>}
+        <footer className="report-footer"><strong>GeoBusiness AI</strong><span>Prototype decision-support report · Land prices are estimates per sq ft, not certified valuations.</span></footer>
       </article>
     </div>
   )
@@ -602,7 +604,9 @@ export default function App() {
       .then(data => {
         if (data) setSelectedLandBudget({
           price_per_cent_inr: data.price_per_cent,
+          price_per_sqft_inr: data.price_per_sqft,
           formatted_price: data.formatted_price,
+          formatted_price_per_cent: data.formatted_price_per_cent,
           factors: {
             source: `${data.source} · ${data.data_quality}`,
             population_density: data.sample_count ? `${data.sample_count} observations` : 'Market data unavailable',
@@ -702,7 +706,7 @@ export default function App() {
   }
 
   const scores = candidates.map(c => c.model_score)
-  const budgets = candidates.map(c => c.budget_estimate?.price_per_cent_inr || 0).filter(Boolean)
+  const budgets = candidates.map(c => c.budget_estimate?.price_per_sqft_inr || (c.budget_estimate?.price_per_cent_inr || 0) / 435.6).filter(Boolean)
   const minBudget = budgets.length ? Math.min(...budgets) : 0
   const maxBudget = budgets.length ? Math.max(...budgets) : 0
   const min = scores.length ? Math.min(...scores) : 0
@@ -890,7 +894,7 @@ export default function App() {
               {/* Budget Estimate */}
               {mode === 'land' && budgetEstimate && (
                 <div className="results-wrapper">
-                  <h3 className="section-title">Estimated Land Budget (per cent)</h3>
+                  <h3 className="section-title">Estimated Land Price (per sq ft)</h3>
                   <div className="data-card" style={{ borderColor: '#10b981', backgroundColor: 'rgba(16, 185, 129, 0.05)' }}>
                     <div className="card-header" style={{ marginBottom: '8px' }}>
                       <div className="biz-title">
@@ -1082,7 +1086,7 @@ export default function App() {
                     <div className="selected-land-budget-heading">
                       <div>
                         <span className="eyebrow">Parcel estimate</span>
-                        <strong>Land budget per cent</strong>
+                        <strong>Land price per sq ft</strong>
                       </div>
                       {loadingLandBudget ? <span className="budget-loading">Calculating…</span> : selectedLandBudget && <strong className="land-price">{selectedLandBudget.formatted_price}</strong>}
                     </div>
@@ -1117,7 +1121,7 @@ export default function App() {
                     </div>
                     <div className="scan-summary-stats">
                       <span><b>{Math.round(Math.max(...scores))}</b><small>best score</small></span>
-                      {budgets.length > 0 && <span><b>₹{Math.round(minBudget / 1000)}k–₹{Math.round(maxBudget / 1000)}k</b><small>budget / cent</small></span>}
+                      {budgets.length > 0 && <span><b>₹{Math.round(minBudget)}–₹{Math.round(maxBudget)}</b><small>price / sq ft</small></span>}
                     </div>
                   </div>
                   <div className="data-provenance-strip">
@@ -1145,7 +1149,7 @@ export default function App() {
                           <span className="score">Score: {c.model_score.toFixed(2)}</span>
                         </div>
                         <div className="candidate-coords"><MapPin size={12}/> {c.lat.toFixed(4)}, {c.lon.toFixed(4)}</div>
-                        {c.budget_estimate && <div className="candidate-budget"><span>Estimated land budget</span><strong>{c.budget_estimate.formatted_price}</strong></div>}
+                        {c.budget_estimate && <div className="candidate-budget"><span>Estimated land price / sq ft</span><strong>{c.budget_estimate.formatted_price}</strong></div>}
                       </button>
                       <button type="button" className={`compare-toggle ${compareSelection.includes(i) ? 'active' : ''}`} onClick={() => toggleCompare(i)} aria-pressed={compareSelection.includes(i)} title={compareSelection.includes(i) ? 'Remove from comparison' : 'Add to comparison'}>
                         <GitCompareArrows size={13} /> {compareSelection.includes(i) ? 'Added' : 'Compare'}
@@ -1171,7 +1175,7 @@ export default function App() {
                   <div className="comparison-metrics">
                     {[
                       ['Suitability', (candidate: Candidate) => candidate.model_score.toFixed(2)],
-                      ['Budget / cent', (candidate: Candidate) => candidate.budget_estimate?.formatted_price || 'Unavailable'],
+                      ['Budget / sq ft', (candidate: Candidate) => candidate.budget_estimate?.formatted_price || 'Unavailable'],
                       ['Population', (candidate: Candidate) => candidate.details.population.toLocaleString()],
                       ['Competitors / 500 m', (candidate: Candidate) => String(competitorCountFor(candidate))],
                       ['Schools', (candidate: Candidate) => String(candidate.details.schools)],

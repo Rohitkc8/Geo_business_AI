@@ -62,7 +62,7 @@ describe('GeoBusiness redesigned workflows', () => {
     await user.click(screen.getAllByRole('button', { name: /Compare/ })[0])
     await user.click(screen.getAllByRole('button', { name: /Compare/ })[1])
     expect(await screen.findByText('Compare locations')).toBeInTheDocument()
-    expect(screen.getByText('Budget / cent')).toBeInTheDocument()
+    expect(screen.getByText('Budget / sq ft')).toBeInTheDocument()
     await user.click(screen.getByRole('button', { name: 'Fit results' }))
     await user.click(screen.getByRole('button', { name: 'Export PDF report' }))
     expect(await screen.findByRole('heading', { name: 'Location analysis report' })).toBeInTheDocument()

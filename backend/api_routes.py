@@ -104,8 +104,11 @@ def _get_input_features(lat, lon, radius, competitor_category='restaurant'):
     return pd.DataFrame([input_data]), fv
 
 
+SQFT_PER_CENT = 435.6
+
+
 def _estimate_budget(df_input):
-    """Estimate price per cent from the same spatial snapshot as a location."""
+    """Estimate land price per cent and expose the equivalent square-foot price."""
     pop_density = float(df_input.iloc[0]['population_density'])
     road_dist = float(df_input.iloc[0]['distance_to_major_road'])
     schools = float(df_input.iloc[0]['school_count'])
@@ -127,9 +130,12 @@ def _estimate_budget(df_input):
         source = 'Fallback'
 
     price_per_cent = max(100000, round(float(estimated_price), -3))
+    price_per_sqft = round(price_per_cent / SQFT_PER_CENT, 2)
     return {
         'price_per_cent_inr': price_per_cent,
-        'formatted_price': f'₹{price_per_cent:,.0f} per cent',
+        'price_per_sqft_inr': price_per_sqft,
+        'formatted_price': f'₹{price_per_sqft:,.2f} per sq ft',
+        'formatted_price_per_cent': f'₹{price_per_cent:,.0f} per cent',
         'factors': {
             'source': source,
             'population_density': f'{pop_density:.1f}',
@@ -152,11 +158,14 @@ def _distance_meters(lat1, lon1, lat2, lon2):
 
 def _normalized_price(price, source, quality, land_type=None, sample_count=0, observed_at=None, confidence=None, provenance_url=None):
     price = max(100000, round(float(price), -3))
+    price_per_sqft = round(price / SQFT_PER_CENT, 2)
     spread = confidence if confidence is not None else price * (0.15 if quality == 'medium' else 0.25)
     return {
         'price_per_cent': price,
         'currency': 'INR',
-        'formatted_price': f'₹{price:,.0f} per cent',
+        'price_per_sqft': price_per_sqft,
+        'formatted_price': f'₹{price_per_sqft:,.2f} per sq ft',
+        'formatted_price_per_cent': f'₹{price:,.0f} per cent',
         'confidence_low': max(0, round(price - spread, -3)),
         'confidence_high': round(price + spread, -3),
         'source': source,
