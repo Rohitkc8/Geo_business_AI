@@ -246,4 +246,19 @@ GET /api/land-price?lat=...&lon=...&radius=...&land_type=...
 → { price_per_cent, currency, confidence_low, confidence_high, source, observed_at, sample_count, data_quality }
 ```
 
+The backend now implements this endpoint. It checks sources in this order:
+
+1. `LAND_PRICE_PROVIDER_URL` — an optional JSON provider endpoint. It receives `lat`, `lon`, `radius` and `land_type` query parameters and must return `price_per_cent` (or `price`).
+2. `LAND_PRICE_DATA_PATH` — an optional local CSV containing `lat`, `lon`, `price_per_cent` and an optional `land_type` column. Nearby rows are matched by radius and aggregated using the median price.
+3. The existing budget model — returned as `data_quality: synthetic_fallback` so it is never confused with live market data.
+
+Example local configuration:
+
+```bash
+export LAND_PRICE_DATA_PATH=/absolute/path/land_transactions.csv
+export LAND_PRICE_PROVIDER_URL=https://your-provider.example/api/land-price
+```
+
+The clicked-parcel UI now calls `/api/land-price`, displays the source and data quality, and preserves the fallback behavior when no real provider or local transaction file is configured.
+
 Do not expose provider keys in the frontend, scrape sources that prohibit automated access, or present asking prices as certified valuations.

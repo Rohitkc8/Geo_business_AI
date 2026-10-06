@@ -121,12 +121,12 @@ function MapControls({ center, candidates, emptyLand }: { center: [number, numbe
   const fitResults = () => {
     if (candidates.length > 0) {
       const bounds = L.latLngBounds(candidates.map(candidate => [candidate.lat, candidate.lon] as [number, number]))
-      map.fitBounds(bounds.pad(0.15), { animate: true, duration: 0.8 })
+      if (typeof map.fitBounds === 'function') map.fitBounds(bounds.pad(0.15), { animate: true, duration: 0.8 })
       return
     }
     if (emptyLand?.features?.length) {
       const bounds = L.geoJSON(emptyLand).getBounds()
-      if (bounds.isValid()) map.fitBounds(bounds.pad(0.1), { animate: true, duration: 0.8 })
+      if (bounds.isValid() && typeof map.fitBounds === 'function') map.fitBounds(bounds.pad(0.1), { animate: true, duration: 0.8 })
     }
   }
 
@@ -211,6 +211,17 @@ const LAND_COLORS: Record<string, string> = {
   garden:            '#6ee7b7', // light teal
   recreation_ground: '#5eead4', // cyan
   nature_reserve:    '#2dd4bf', // teal
+  forest:            '#166534', // deep green
+  wood:              '#15803d', // woodland green
+  scrub:             '#65a30d', // olive green
+  wetland:           '#0891b2', // water teal
+  heath:             '#a855f7', // purple
+  vineyard:          '#be185d', // berry
+  cemetery:          '#64748b', // slate
+  construction:      '#ea580c', // construction orange
+  industrial:        '#475569', // steel slate
+  commercial:        '#2563eb', // blue
+  residential:       '#7c3aed', // violet
 };
 
 function getLandColor(landType: string): string {
@@ -545,9 +556,19 @@ export default function App() {
   useEffect(() => {
     if (!selectedLand?.centroid_lat || !selectedLand?.centroid_lon) return
     const controller = new AbortController()
-    fetch(`${API}/estimate-budget?lat=${selectedLand.centroid_lat}&lon=${selectedLand.centroid_lon}&radius=500`, { signal: controller.signal })
+    fetch(`${API}/land-price?lat=${selectedLand.centroid_lat}&lon=${selectedLand.centroid_lon}&radius=500&land_type=${encodeURIComponent(selectedLand.land_type || '')}`, { signal: controller.signal })
       .then(response => response.ok ? response.json() : null)
-      .then(data => { if (data) setSelectedLandBudget(data) })
+      .then(data => {
+        if (data) setSelectedLandBudget({
+          price_per_cent_inr: data.price_per_cent,
+          formatted_price: data.formatted_price,
+          factors: {
+            source: `${data.source} · ${data.data_quality}`,
+            population_density: data.sample_count ? `${data.sample_count} observations` : 'Market data unavailable',
+            distance_to_road: data.observed_at ? `observed ${data.observed_at}` : 'prototype estimate'
+          }
+        })
+      })
       .catch(() => {})
       .finally(() => { if (!controller.signal.aborted) setLoadingLandBudget(false) })
     return () => controller.abort()

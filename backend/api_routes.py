@@ -6,6 +6,11 @@ from pydantic import BaseModel, Field, field_validator
 import os
 import joblib
 import pandas as pd
+import json
+import math
+import urllib.parse
+import urllib.request
+from datetime import datetime, timezone
 
 from feature_engineer import SpatialFeatureEngineer
 from explainability import explain_land_to_business, explain_business_to_land
@@ -52,6 +57,20 @@ class LocationDetailsRequest(BaseModel):
     lat: float
     lon: float
     radius: int = 500
+
+
+class LandPriceResponse(BaseModel):
+    price_per_cent: float
+    currency: str = "INR"
+    formatted_price: str
+    confidence_low: Optional[float] = None
+    confidence_high: Optional[float] = None
+    source: str
+    observed_at: Optional[str] = None
+    sample_count: int = 0
+    data_quality: str
+    land_type: Optional[str] = None
+    provenance_url: Optional[str] = None
 
 # --- HELPER FUNCTIONS ---
 
@@ -120,6 +139,89 @@ def _estimate_budget(df_input):
         }
     }
 
+# --- LAND PRICE ADAPTERS ---
+
+def _distance_meters(lat1, lon1, lat2, lon2):
+    radius = 6371000
+    phi1, phi2 = math.radians(lat1), math.radians(lat2)
+    d_phi = math.radians(lat2 - lat1)
+    d_lambda = math.radians(lon2 - lon1)
+    a = math.sin(d_phi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(d_lambda / 2) ** 2
+    return 2 * radius * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+
+
+def _normalized_price(price, source, quality, land_type=None, sample_count=0, observed_at=None, confidence=None, provenance_url=None):
+    price = max(100000, round(float(price), -3))
+    spread = confidence if confidence is not None else price * (0.15 if quality == 'medium' else 0.25)
+    return {
+        'price_per_cent': price,
+        'currency': 'INR',
+        'formatted_price': f'₹{price:,.0f} per cent',
+        'confidence_low': max(0, round(price - spread, -3)),
+        'confidence_high': round(price + spread, -3),
+        'source': source,
+        'observed_at': observed_at,
+        'sample_count': sample_count,
+        'data_quality': quality,
+        'land_type': land_type,
+        'provenance_url': provenance_url,
+    }
+
+
+def _price_from_provider(lat, lon, radius, land_type=None):
+    provider_url = os.getenv('LAND_PRICE_PROVIDER_URL')
+    if not provider_url:
+        return None
+    query = urllib.parse.urlencode({'lat': lat, 'lon': lon, 'radius': radius, 'land_type': land_type or ''})
+    request = urllib.request.Request(f'{provider_url}?{query}', headers={'Accept': 'application/json', 'User-Agent': 'GeoBusinessAI/1.0'})
+    with urllib.request.urlopen(request, timeout=8) as response:
+        payload = json.loads(response.read().decode('utf-8'))
+    price = payload.get('price_per_cent', payload.get('price'))
+    if price is None:
+        raise ValueError('Configured land-price provider did not return price_per_cent')
+    spread = None
+    if payload.get('confidence_low') is not None and payload.get('confidence_high') is not None:
+        spread = (float(payload['confidence_high']) - float(payload['confidence_low'])) / 2
+    return _normalized_price(price, payload.get('source', 'configured_provider'), payload.get('data_quality', 'medium'), payload.get('land_type', land_type), int(payload.get('sample_count', 0)), payload.get('observed_at'), spread, payload.get('provenance_url', provider_url))
+
+
+def _price_from_csv(lat, lon, radius, land_type=None):
+    csv_path = os.getenv('LAND_PRICE_DATA_PATH')
+    if not csv_path or not os.path.exists(csv_path):
+        return None
+    data = pd.read_csv(csv_path)
+    required = {'lat', 'lon', 'price_per_cent'}
+    if not required.issubset(data.columns):
+        raise ValueError(f'LAND_PRICE_DATA_PATH must contain {sorted(required)}')
+    matches = []
+    for row in data.to_dict('records'):
+        if land_type and row.get('land_type') and str(row['land_type']).lower() != land_type.lower():
+            continue
+        distance = _distance_meters(lat, lon, float(row['lat']), float(row['lon']))
+        if distance <= radius:
+            matches.append(float(row['price_per_cent']))
+    if not matches:
+        return None
+    median_price = float(pd.Series(matches).median())
+    spread = max(median_price * 0.1, (max(matches) - min(matches)) / 2) if len(matches) > 1 else None
+    return _normalized_price(median_price, 'local_transaction_csv', 'high' if len(matches) >= 5 else 'medium', land_type, len(matches), datetime.now(timezone.utc).date().isoformat(), spread, f'file://{csv_path}')
+
+
+def _get_land_price(lat, lon, radius, land_type=None):
+    """Provider -> local transaction CSV -> clearly labelled prototype fallback."""
+    for adapter in (_price_from_provider, _price_from_csv):
+        try:
+            result = adapter(lat, lon, radius, land_type)
+            if result:
+                return result
+        except Exception as error:
+            logger.warning('Land-price adapter %s unavailable: %s', adapter.__name__, error)
+    df_input, _ = _get_input_features(lat, lon, radius)
+    fallback = _estimate_budget(df_input)
+    price = fallback['price_per_cent_inr']
+    return _normalized_price(price, 'prototype_budget_model', 'synthetic_fallback', land_type, 0, None, price * 0.25)
+
+
 # --- ENDPOINTS ---
 
 @router.get("/api/business-types")
@@ -159,6 +261,18 @@ def get_location_details(lat: float, lon: float, radius: int = 500):
     except Exception as e:
         logger.error(f"Location details error: {e}")
         raise HTTPException(status_code=500, detail="Failed to fetch location details")
+
+
+@router.get("/api/land-price", response_model=LandPriceResponse)
+def get_land_price(lat: float, lon: float, radius: int = 1000, land_type: Optional[str] = None):
+    """Return normalized land-price data from a configured provider or local fallback."""
+    if radius < 50 or radius > 10000:
+        raise HTTPException(status_code=422, detail="radius must be between 50 and 10000 metres")
+    try:
+        return _get_land_price(lat, lon, radius, land_type)
+    except Exception as e:
+        logger.error(f"Land-price endpoint error: {e}")
+        raise HTTPException(status_code=502, detail="Land-price provider unavailable")
 
 
 @router.get("/api/estimate-budget")
