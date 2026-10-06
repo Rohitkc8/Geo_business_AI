@@ -196,5 +196,22 @@ Backend tests mock external providers and models where appropriate. Frontend tes
 - Persist source provenance, feature snapshots and analysis results in PostGIS.
 - Add authentication, rate limiting, cache expiry, observability and deployment configuration.
 - Add accessible map controls, candidate exports, and user-provided constraints such as rent, zoning and budget.
-#   G e o _ b u s i n e s s _ A I  
- 
+# Geo_business_AI
+
+## 23. Current product capabilities
+
+The current application includes a polished decision workspace built around two analysis modes:
+
+- **Evaluate Land (LAND → BUSINESS):** geocode a location, inspect nearby amenities and competitors, rank business opportunities, estimate land price per cent, and discover mapped empty-land parcels.
+- **Place Business (BUSINESS → LAND):** select a business type, scan a centred geographic grid, rank candidate locations, and inspect each candidate’s score, population, competition, infrastructure signals, and individual land-budget estimate.
+- **Per-location budget estimates:** every candidate returned by `POST /api/find-best-locations` now includes `budget_estimate`, containing the estimated price per cent, model source, population-density factor, road distance, school count and hospital count.
+- **Budget-aware map visualization:** candidate cell fill represents relative business suitability, while the cell border represents relative budget from lower to higher. Map popups and the selected-location panel show the exact estimate.
+- **Workspace UX:** saved analyses persist in browser storage, saved locations can be reopened or removed, profile preferences can be saved locally, and dark mode/map-label preferences are available.
+
+### Budget interpretation
+
+Budget figures are **prototype planning estimates per cent**, not final plot prices or total acquisition costs. The current model is trained on synthetic data using population density, road distance, school count and hospital count. Replace it with time-stamped local transaction data before using it for commercial valuation.
+
+### Frontend interaction model
+
+The React + Leaflet frontend provides accessible form labels, loading and error states, responsive layouts, category-specific map colors, competitor highlighting, clickable candidate cards, clickable map cells, and a collapsible legend for suitability and budget scales.

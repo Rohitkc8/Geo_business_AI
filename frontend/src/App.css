@@ -1091,3 +1091,14 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
 .selected-budget-card span { color: var(--text-muted); font-size: .75rem; }
 .selected-budget-card strong { color: #34d399; font-size: .92rem; }
 .selected-budget-card small { display: block; margin-top: .35rem; color: var(--text-muted); font-size: .68rem; }
+
+/* MARKET SCAN SUMMARY */
+.scan-summary { display: flex; justify-content: space-between; gap: .8rem; margin-bottom: .85rem; padding: .9rem; border: 1px solid rgba(59,130,246,.28); border-radius: 12px; background: linear-gradient(135deg, rgba(37,99,235,.16), rgba(16,185,129,.08)); }
+.scan-summary > div:first-child { display: flex; flex-direction: column; gap: .2rem; }
+.scan-summary-kicker { color: #93c5fd; font-size: .62rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.scan-summary strong { font-size: .95rem; }
+.scan-summary small { color: var(--text-muted); font-size: .68rem; line-height: 1.35; }
+.scan-summary-stats { display: flex; gap: .8rem; align-items: center; }
+.scan-summary-stats span { display: flex; flex-direction: column; align-items: flex-end; gap: .1rem; }
+.scan-summary-stats b { color: #dbeafe; font-size: .9rem; white-space: nowrap; }
+@media (max-width: 720px) { .scan-summary { flex-direction: column; } .scan-summary-stats { justify-content: space-between; } .scan-summary-stats span { align-items: flex-start; } }

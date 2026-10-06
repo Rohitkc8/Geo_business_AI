@@ -937,6 +937,17 @@ export default function App() {
               {/* Candidates */}
               {mode === 'business' && candidates.length > 0 && (
                 <div className="results-wrapper">
+                  <div className="scan-summary">
+                    <div>
+                      <span className="scan-summary-kicker">Market scan complete</span>
+                      <strong>{candidates.length} locations ranked</strong>
+                      <small>Click any card or map cell to compare suitability and budget.</small>
+                    </div>
+                    <div className="scan-summary-stats">
+                      <span><b>{Math.round(Math.max(...scores))}</b><small>best score</small></span>
+                      {budgets.length > 0 && <span><b>₹{Math.round(minBudget / 1000)}k–₹{Math.round(maxBudget / 1000)}k</b><small>budget / cent</small></span>}
+                    </div>
+                  </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
                     <h3 className="section-title" style={{ margin: 0 }}>Top Hotspots</h3>
                     {geoJson && (
