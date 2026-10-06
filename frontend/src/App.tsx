@@ -29,7 +29,11 @@ import {
   Bus,
   Road,
   Landmark,
-  SquareArrowOutUpRight
+  SquareArrowOutUpRight,
+  Check,
+  Save,
+  Trash2,
+  ExternalLink
 } from 'lucide-react'
 import './App.css'
 
@@ -58,6 +62,16 @@ type Candidate = {
   explanation: Factors 
 }
 type Recommendation = Factors & { business: string; score_percent: number }
+type SavedLocation = {
+  id: string
+  name: string
+  lat: number
+  lon: number
+  mode: Mode
+  business?: string
+  score?: number
+  savedAt: string
+}
 
 type LandParcel = {
   name: string
@@ -92,45 +106,48 @@ function heat(score: number, min: number, max: number) {
 const formatNum = (n: number | null | undefined, suffix = '') => 
   n === null || n === undefined ? 'N/A' : `${n}${suffix}`
 
+const CATEGORY_COLORS: Record<string, string> = {
+  pharmacy: '#10b981', restaurant: '#2563eb', fast_food: '#3b82f6', cafe: '#f59e0b',
+  bank: '#f97316', hospital: '#ec4899', clinic: '#db2777', doctors: '#c026d3',
+  school: '#eab308', college: '#ca8a04', university: '#a16207', education: '#eab308',
+  supermarket: '#14b8a6', convenience: '#0d9488', grocery: '#0f766e', grocery_store: '#14b8a6',
+  bakery: '#fb7185', clothes: '#e11d48', fashion: '#be123c', electronics: '#8b5cf6',
+  mobile_phone: '#7c3aed', books: '#6366f1', furniture: '#a16207', beauty: '#ec4899',
+  hairdresser: '#f43f5e', sports: '#06b6d4', hardware: '#d97706', car: '#64748b',
+  bicycle: '#0891b2', office: '#8b5cf6', bus_stop: '#64748b', road: '#94a3b8',
+}
+
+const SHOP_LEGEND = [
+  ['pharmacy', 'Pharmacy'], ['restaurant', 'Restaurant'], ['cafe', 'Cafe'], ['bank', 'Bank'],
+  ['supermarket', 'Grocery / supermarket'], ['bakery', 'Bakery'], ['clothes', 'Clothing'],
+  ['electronics', 'Electronics'], ['mobile_phone', 'Mobile shop'], ['furniture', 'Furniture'],
+  ['beauty', 'Beauty / salon'], ['books', 'Books'], ['sports', 'Sports'], ['hardware', 'Hardware'],
+  ['office', 'Office / other'], ['bus_stop', 'Transit'],
+]
+
+const featureTokens = (props: any) => [props?.amenity, props?.shop, props?.category, props?.office, props?.highway]
+  .filter(Boolean).map((value: string) => value.toLowerCase())
+
 const isFeatureCompetitor = (feature: any, business: string) => {
-  const p = feature.properties || {};
-  const am = (p.amenity || '').toLowerCase();
-  const sh = (p.shop || '').toLowerCase();
-  const cat = (p.category || '').toLowerCase();
-  const b = business.toLowerCase();
-  
-  if (b === 'restaurant' && ['restaurant', 'fast_food'].includes(am)) return true;
-  if (b === 'cafe' && am === 'cafe') return true;
-  if (b === 'pharmacy' && am === 'pharmacy') return true;
-  if (b === 'bank' && am === 'bank') return true;
-  if (b === 'school' && ['school', 'college', 'university', 'education'].includes(cat || am)) return true;
-  if (b === 'hospital' && ['hospital', 'clinic', 'doctors', 'healthcare'].includes(cat || am)) return true;
-  if (b === 'grocery' && ['supermarket', 'convenience', 'grocery', 'grocery_store'].includes(cat || sh)) return true;
-  
-  return cat === b || am === b || sh === b;
-};
+  const tokens = featureTokens(feature.properties || {})
+  const b = business.toLowerCase()
+  if (b === 'restaurant') return tokens.some(t => ['restaurant', 'fast_food'].includes(t))
+  if (b === 'cafe') return tokens.includes('cafe')
+  if (b === 'grocery') return tokens.some(t => ['supermarket', 'convenience', 'grocery', 'grocery_store'].includes(t))
+  if (b === 'clinic') return tokens.some(t => ['clinic', 'doctors', 'healthcare'].includes(t))
+  if (b === 'school') return tokens.some(t => ['school', 'college', 'university', 'education'].includes(t))
+  if (b === 'hospital') return tokens.some(t => ['hospital', 'clinic', 'doctors', 'healthcare'].includes(t))
+  return tokens.includes(b) || tokens.includes(`shop_${b}`)
+}
 
 const getCategoryColor = (props: any, targetBusiness?: string) => {
-  if (!props) return '#94a3b8';
-  
-  if (targetBusiness && isFeatureCompetitor({ properties: props }, targetBusiness)) {
-    return '#ef4444'; // Red for competitors
-  }
-  
-  const am = (props.amenity || '').toLowerCase();
-  const sh = (props.shop || '').toLowerCase();
-  const cat = (props.category || '').toLowerCase();
-
-  if (['pharmacy'].includes(am)) return '#10b981'; // green
-  if (['restaurant', 'fast_food'].includes(am)) return '#3b82f6'; // blue
-  if (['cafe'].includes(am)) return '#f59e0b'; // orange
-  if (['bank'].includes(am)) return '#f97316'; // orange-red
-  if (['hospital', 'clinic', 'doctors', 'healthcare'].includes(cat || am)) return '#ec4899'; // pink
-  if (['school', 'college', 'university', 'education'].includes(cat || am)) return '#eab308'; // yellow
-  if (['supermarket', 'convenience', 'grocery', 'grocery_store'].includes(cat || sh)) return '#14b8a6'; // teal
-  if (['bus_stop', 'road', 'platform'].includes(cat || am)) return '#94a3b8'; // grey
-  
-  return '#8b5cf6'; // purple for others
+  if (!props) return '#94a3b8'
+  if (targetBusiness && isFeatureCompetitor({ properties: props }, targetBusiness)) return '#ef4444'
+  const tokens = featureTokens(props)
+  const exact = tokens.find(token => CATEGORY_COLORS[token])
+  if (exact) return CATEGORY_COLORS[exact]
+  const shopCategory = tokens.find(token => token.startsWith('shop_'))?.replace('shop_', '')
+  return (shopCategory && CATEGORY_COLORS[shopCategory]) || CATEGORY_COLORS.office
 }
 
 // Colour palette for empty-land parcel types
@@ -156,7 +173,7 @@ function getLandColor(landType: string): string {
 }
 
 // --- Dashboard View Component ---
-const DashboardView = ({ center, onNavigate }: { center: [number, number], onNavigate: (p: Page, m?: Mode) => void }) => (
+const DashboardView = ({ onNavigate }: { onNavigate: (p: Page, m?: Mode) => void }) => (
   <div className="page-content fade-in">
     <div className="page-header">
       <div>
@@ -260,17 +277,7 @@ const DashboardView = ({ center, onNavigate }: { center: [number, number], onNav
 
 
 // ── Map Legend Component ──────────────────────────────────────────────────────
-const LAND_DOT_LEGEND = [
-  { color: '#10b981', label: 'Pharmacy' },
-  { color: '#3b82f6', label: 'Restaurant / Café / Fast-food' },
-  { color: '#f59e0b', label: 'Café' },
-  { color: '#f97316', label: 'Bank' },
-  { color: '#ec4899', label: 'Hospital / Clinic' },
-  { color: '#eab308', label: 'School / College' },
-  { color: '#14b8a6', label: 'Grocery / Supermarket' },
-  { color: '#94a3b8', label: 'Bus stop / Road' },
-  { color: '#8b5cf6', label: 'Other amenity / Shop / Office' },
-]
+const LAND_DOT_LEGEND = SHOP_LEGEND.map(([key, label]) => ({ color: CATEGORY_COLORS[key], label }))
 
 const BUSINESS_SCORE_LEGEND = [
   { color: '#10b981', label: 'High score (top 25 %)' },
@@ -326,96 +333,67 @@ function MapLegend({ mode }: { mode: Mode }) {
 }
 
 // ── Locations View Component ──────────────────────────────────────────────────
-const LocationsView = () => (
+const LocationsView = ({
+  locations,
+  onAnalyze,
+  onRemove,
+  onViewMap,
+}: {
+  locations: SavedLocation[]
+  onAnalyze: (location: SavedLocation) => void
+  onRemove: (id: string) => void
+  onViewMap: () => void
+}) => (
   <div className="page-content fade-in">
     <div className="page-header">
       <div>
-        <h1>Saved Locations</h1>
-        <p>Manage and compare your bookmarked hotspots.</p>
+        <span className="eyebrow">Workspace</span>
+        <h1>Saved locations</h1>
+        <p>Keep promising areas together so you can compare them before making a decision.</p>
       </div>
       <div className="header-actions">
-        <button className="btn btn-primary"><MapIcon size={16}/> View All on Map</button>
+        <button type="button" className="btn btn-primary" onClick={onViewMap}><MapIcon size={16}/> View all on map</button>
       </div>
     </div>
-    
-    <div className="locations-grid">
-      {[1, 2, 3].map(i => (
-        <div key={i} className="location-card">
-          <div className="location-card-image"></div>
-          <div className="location-card-content">
-            <div className="loc-header">
-              <h4>Coimbatore South - Zone {i}</h4>
-              <span className="badge">Retail</span>
+    {locations.length === 0 ? (
+      <div className="empty-state"><MapPin size={28}/><h3>No saved locations yet</h3><p>Run an analysis, then save the area from the analysis header.</p></div>
+    ) : (
+      <div className="locations-grid">
+        {locations.map(location => (
+          <article key={location.id} className="location-card">
+            <div className="location-card-image"><span className={`location-mode ${location.mode}`}>{location.mode === 'land' ? 'Land evaluation' : 'Business placement'}</span><MapPin size={32}/></div>
+            <div className="location-card-content">
+              <div className="loc-header"><h4>{location.name}</h4><span className="badge">{location.business || 'Area'}</span></div>
+              <div className="loc-meta"><span className="loc-coord">{location.lat.toFixed(4)}, {location.lon.toFixed(4)}</span>{location.score !== undefined && <span className="loc-score">Score: {location.score.toFixed(0)}%</span>}</div>
+              <p className="loc-desc">Saved {new Date(location.savedAt).toLocaleDateString()} for quick comparison and follow-up analysis.</p>
+              <div className="loc-actions">
+                <button type="button" className="btn btn-primary btn-sm" onClick={() => onAnalyze(location)}><ExternalLink size={14}/> Analyze again</button>
+                <button type="button" className="btn btn-outline btn-sm text-danger" aria-label={`Remove ${location.name}`} onClick={() => onRemove(location.id)}><Trash2 size={14}/></button>
+              </div>
             </div>
-            <div className="loc-meta">
-              <span className="loc-coord"><MapPin size={14}/> 10.998{i}, 76.96{i}2</span>
-              <span className="loc-score">Score: 8{i}%</span>
-            </div>
-            <p className="loc-desc">High foot traffic area with excellent proximity to public transport and competitors.</p>
-            <div className="loc-actions">
-              <button className="btn btn-outline btn-sm">Analyze</button>
-              <button className="btn btn-outline btn-sm text-danger"><X size={14}/></button>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
+          </article>
+        ))}
+      </div>
+    )}
   </div>
 )
 
-// ── Settings View Component ──────────────────────────────────────────────────
-const SettingsView = ({ theme, toggleTheme, showLabels, toggleLabels }: { theme: 'dark' | 'light', toggleTheme: () => void, showLabels: boolean, toggleLabels: () => void }) => (
-  <div className="page-content fade-in">
-    <div className="page-header">
-      <div>
-        <h1>Settings</h1>
-        <p>Customize your GeoBusiness experience.</p>
+// ── Settings View Component ───────────────────────────────────────────────────
+const SettingsView = ({ theme, toggleTheme, showLabels, toggleLabels, onSaved }: { theme: 'dark' | 'light', toggleTheme: () => void, showLabels: boolean, toggleLabels: () => void, onSaved: () => void }) => {
+  const [name, setName] = useState('Rohit')
+  const [email, setEmail] = useState('rohitc295@gmail.com')
+  const [saved, setSaved] = useState(false)
+  const saveProfile = () => { setSaved(true); onSaved(); window.setTimeout(() => setSaved(false), 2200) }
+  return (
+    <div className="page-content fade-in">
+      <div className="page-header"><div><span className="eyebrow">Workspace</span><h1>Settings</h1><p>Customize your GeoBusiness workspace and map behavior.</p></div></div>
+      <div className="settings-container">
+        <div className="settings-section"><h3>Profile</h3><div className="settings-card"><div className="profile-edit"><div className="avatar-lg">{name.slice(0, 1).toUpperCase()}</div><div className="profile-details"><label className="field-label" htmlFor="profile-name">Display name</label><input id="profile-name" value={name} onChange={e => setName(e.target.value)} className="settings-input" /><label className="field-label" htmlFor="profile-email">Email address</label><input id="profile-email" type="email" value={email} onChange={e => setEmail(e.target.value)} className="settings-input" /><button type="button" className="btn btn-primary mt-2" onClick={saveProfile}>{saved ? <><Check size={15}/> Saved</> : <><Save size={15}/> Save profile</>}</button></div></div></div></div>
+        <div className="settings-section"><h3>Preferences</h3><div className="settings-card"><div className="setting-row"><div><h4>Dark mode</h4><p>Toggle between a focused dark workspace and a light canvas.</p></div><label className="switch"><input aria-label="Dark mode" type="checkbox" checked={theme === 'dark'} onChange={toggleTheme}/><span className="slider round"></span></label></div><div className="setting-row"><div><h4>Map labels</h4><p>Show business and amenity names directly on the map.</p></div><label className="switch"><input aria-label="Map labels" type="checkbox" checked={showLabels} onChange={toggleLabels}/><span className="slider round"></span></label></div></div></div>
       </div>
     </div>
-    
-    <div className="settings-container">
-      <div className="settings-section">
-        <h3>Profile</h3>
-        <div className="settings-card">
-          <div className="profile-edit">
-            <div className="avatar-lg">R</div>
-            <div className="profile-details">
-              <input type="text" defaultValue="Rohit" className="settings-input" />
-              <input type="email" defaultValue="rohitc295@gmail.com" className="settings-input" />
-              <button className="btn btn-primary mt-2">Save Profile</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div className="settings-section">
-        <h3>Preferences</h3>
-        <div className="settings-card">
-          <div className="setting-row">
-            <div>
-              <h4>Dark Mode</h4>
-              <p>Toggle between light and dark theme.</p>
-            </div>
-            <label className="switch">
-              <input type="checkbox" checked={theme === 'dark'} onChange={toggleTheme} />
-              <span className="slider round"></span>
-            </label>
-          </div>
-          <div className="setting-row">
-            <div>
-              <h4>Map Labels</h4>
-              <p>Show POI names on the map by default.</p>
-            </div>
-            <label className="switch">
-              <input type="checkbox" checked={showLabels} onChange={toggleLabels} />
-              <span className="slider round"></span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-)
+  )
+}
 
 export default function App() {
   const [activePage, setActivePage] = useState<Page>('dashboard')
@@ -445,6 +423,55 @@ export default function App() {
   const [budgetEstimate, setBudgetEstimate] = useState<any>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const [toast, setToast] = useState('')
+  const [savedLocations, setSavedLocations] = useState<SavedLocation[]>(() => {
+    try { return JSON.parse(localStorage.getItem('geobusiness.savedLocations') || '[]') } catch { return [] }
+  })
+
+  useEffect(() => {
+    localStorage.setItem('geobusiness.savedLocations', JSON.stringify(savedLocations))
+  }, [savedLocations])
+
+  const notify = (message: string) => {
+    setToast(message)
+    window.setTimeout(() => setToast(''), 2400)
+  }
+
+  const switchMode = (nextMode: Mode) => {
+    setMode(nextMode)
+    setError('')
+    setCandidates([])
+    setRecommendations([])
+    setGeoJson(null)
+    setBudgetEstimate(null)
+    setSelected(null)
+  }
+
+  const saveCurrentLocation = () => {
+    const record: SavedLocation = {
+      id: `${center[0]}-${center[1]}-${Date.now()}`,
+      name: query.trim() || 'Current analysis area',
+      lat: center[0], lon: center[1], mode,
+      business: mode === 'business' ? business : undefined,
+      score: mode === 'business' && chosen ? Math.max(0, Math.min(100, chosen.model_score)) : undefined,
+      savedAt: new Date().toISOString(),
+    }
+    setSavedLocations(current => [record, ...current.filter(item => Math.abs(item.lat - record.lat) > 0.00001 || Math.abs(item.lon - record.lon) > 0.00001)])
+    notify('Location saved to your workspace')
+  }
+
+  const openSavedLocation = (location: SavedLocation) => {
+    setMode(location.mode)
+    setQuery(location.name)
+    setCenter([location.lat, location.lon])
+    setActivePage('analysis')
+    notify('Location loaded — run the analysis to refresh its results')
+  }
+
+  const removeSavedLocation = (id: string) => {
+    setSavedLocations(current => current.filter(item => item.id !== id))
+    notify('Saved location removed')
+  }
 
   useEffect(() => { 
     fetch(`${API}/business-types`)
@@ -537,6 +564,7 @@ export default function App() {
 
   return (
     <div className="app-container">
+      {toast && <div className="toast" role="status"><Check size={15}/> {toast}</div>}
       {/* Sidebar - Designed exactly like BusinessRadius */}
       <aside className="sidebar">
         <div className="brand">
@@ -595,36 +623,36 @@ export default function App() {
           <button className="bottom-link" onClick={toggleTheme}>
             <Sun size={16}/> {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
           </button>
-          <button className="bottom-link"><LogOut size={16}/> Sign Out</button>
+          <button type="button" className="bottom-link" onClick={() => notify('Sign out is not connected to an account service yet')}><LogOut size={16}/> Sign out</button>
         </div>
       </aside>
 
       {/* Main Content Area */}
       <main className="main-area">
-        {activePage === 'dashboard' && <DashboardView center={center} onNavigate={(p, m) => { setActivePage(p); if (m) setMode(m); }} />}
-        {activePage === 'locations' && <LocationsView />}
-        {activePage === 'settings' && <SettingsView theme={theme} toggleTheme={toggleTheme} showLabels={showLabels} toggleLabels={toggleLabels} />}
+        {activePage === 'dashboard' && <DashboardView onNavigate={(p, m) => { setActivePage(p); if (m) setMode(m); }} />}
+        {activePage === 'locations' && <LocationsView locations={savedLocations} onAnalyze={openSavedLocation} onRemove={removeSavedLocation} onViewMap={() => { setActivePage('analysis'); switchMode('business') }} />}
+        {activePage === 'settings' && <SettingsView theme={theme} toggleTheme={toggleTheme} showLabels={showLabels} toggleLabels={toggleLabels} onSaved={() => notify('Profile preferences saved locally')} />}
         
         {/* Full Analysis Tool Page */}
-        <div className={`analysis-view ${activePage === 'analysis' ? 'visible' : 'hidden'}`}>
+        {activePage === 'analysis' && <div className="analysis-view visible">
           <div className="analysis-sidebar">
             <div className="analysis-header">
-              <h2>New Analysis</h2>
-              <p>Run geospatial models</p>
+              <div><span className="eyebrow">Decision workspace</span><h2>New analysis</h2><p>Turn local signals into a shortlist you can defend.</p></div>
+              <button type="button" className="icon-action" onClick={saveCurrentLocation} disabled={!recommendations.length && !candidates.length} title="Save this analysis"><Save size={16}/></button>
             </div>
 
             <div className="mode-toggle">
               <button 
                 type="button"
                 className={`mode-btn ${mode === 'land' ? 'active' : ''}`}
-                onClick={() => setMode('land')}
+                onClick={() => switchMode('land')}
               >
                 Evaluate Land
               </button>
               <button 
                 type="button"
                 className={`mode-btn ${mode === 'business' ? 'active' : ''}`}
-                onClick={() => setMode('business')}
+                onClick={() => switchMode('business')}
               >
                 Place Business
               </button>
@@ -633,6 +661,7 @@ export default function App() {
             <form onSubmit={search} className="search-form">
               {mode === 'business' && (
                 <div className="input-group">
+                  <label className="sr-only" htmlFor="business-type">Business type</label>
                   <Building2 className="input-icon" size={16} />
                   <select 
                     id="business-type"
@@ -645,6 +674,7 @@ export default function App() {
               )}
               
               <div className="input-group">
+                <label className="sr-only" htmlFor="location-search">{mode === 'land' ? 'Location' : 'Search area'}</label>
                 <Search className="input-icon" size={16} />
                 <input
                   id="location-search"
@@ -1038,7 +1068,7 @@ export default function App() {
               <MapLegend mode={mode} />
             )}
           </div>
-        </div>
+        </div>}
         
       </main>
     </div>

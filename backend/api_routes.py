@@ -11,6 +11,10 @@ from feature_engineer import SpatialFeatureEngineer
 from explainability import explain_land_to_business, explain_business_to_land
 from generate_dataset import generate_grid
 
+# Configure logging before loading optional models so failures are reported safely.
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
 # Load the pretrained budget model globally
 BUDGET_MODEL_PATH = os.path.join(os.path.dirname(__file__), 'models', 'budget_model.pkl')
 budget_model = None
@@ -18,9 +22,6 @@ try:
     budget_model = joblib.load(BUDGET_MODEL_PATH)
 except Exception as e:
     logger.warning(f"Could not load budget_model.pkl: {e}")
-
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
 
 router = APIRouter()
 engineer = SpatialFeatureEngineer()

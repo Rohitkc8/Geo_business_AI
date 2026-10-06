@@ -1057,3 +1057,27 @@ body.light-theme .leaflet-tooltip-right.poi-label-tooltip::before { border-right
 .metric-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
 .mt-4 { margin-top: 1rem; }
 
+
+/* PROFESSIONAL WORKSPACE POLISH */
+:root { --shadow-soft: 0 16px 40px rgba(0,0,0,.16); --radius-lg: 16px; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.eyebrow { display: inline-block; margin-bottom: .45rem; color: var(--primary); font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.analysis-header { display: flex; align-items: flex-start; justify-content: space-between; gap: .75rem; }
+.analysis-header h2 { margin-top: .1rem; }
+.icon-action { width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--border); border-radius: 9px; background: rgba(59,130,246,.1); color: var(--primary); cursor: pointer; transition: .2s ease; }
+.icon-action:hover:not(:disabled) { transform: translateY(-1px); background: rgba(59,130,246,.2); }
+.icon-action:disabled { cursor: not-allowed; opacity: .35; }
+.empty-state { min-height: 280px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: .6rem; border: 1px dashed var(--border); border-radius: var(--radius-lg); color: var(--text-muted); text-align: center; }
+.empty-state svg { color: var(--primary); }
+.empty-state h3 { color: var(--text-main); font-size: 1.05rem; }
+.empty-state p { max-width: 340px; font-size: .85rem; line-height: 1.5; }
+.location-card-image { position: relative; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.72); background: radial-gradient(circle at 20% 20%, rgba(59,130,246,.38), transparent 45%), linear-gradient(135deg, #172554, #0f766e); }
+.location-card-image::after { content: ''; position: absolute; inset: 0; opacity: .22; background-image: linear-gradient(rgba(255,255,255,.25) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.25) 1px, transparent 1px); background-size: 28px 28px; }
+.location-mode { position: absolute; z-index: 1; left: 12px; top: 12px; padding: .3rem .5rem; border-radius: 999px; background: rgba(15,23,42,.65); color: #fff; font-size: .64rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.location-card-image svg { position: relative; z-index: 1; }
+.field-label { color: var(--text-muted); font-size: .72rem; font-weight: 600; letter-spacing: .02em; }
+.toast { position: fixed; z-index: 2000; top: 20px; right: 24px; display: flex; align-items: center; gap: .5rem; padding: .75rem 1rem; border: 1px solid rgba(16,185,129,.35); border-radius: 10px; background: rgba(6,78,59,.95); color: #d1fae5; box-shadow: var(--shadow-soft); font-size: .82rem; animation: toastIn .22s ease-out; }
+@keyframes toastIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 960px) { .sidebar { width: 216px; } .page-content { padding: 1.5rem; } .analysis-sidebar { width: 320px; } }
+@media (max-width: 720px) { body { overflow: auto; } .app-container { min-height: 100vh; height: auto; flex-direction: column; } .sidebar { width: 100%; padding: .75rem; flex-direction: row; align-items: center; gap: 1rem; position: sticky; top: 0; z-index: 1000; } .brand { margin: 0; } .brand-text span, .sidebar-bottom { display: none; } .nav-menu { flex-direction: row; margin-left: auto; gap: .25rem; } .nav-item { padding: .55rem; } .nav-item span { display: none; } .main-area { min-height: calc(100vh - 64px); } .dashboard-grid, .dashboard-metrics { grid-template-columns: 1fr; } .analysis-view { position: relative; min-height: calc(100vh - 64px); flex-direction: column; } .analysis-sidebar { width: 100%; max-height: none; } .analysis-map-area { min-height: 460px; } .page-header { align-items: flex-start; gap: 1rem; flex-direction: column; } .header-actions { width: 100%; } .header-actions .btn { width: 100%; justify-content: center; } .toast { left: 16px; right: 16px; top: 76px; } }
