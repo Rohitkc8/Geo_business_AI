@@ -1218,3 +1218,42 @@ body.light-theme .map-action-bar button { color: #334155; }
 .provenance-dot.historical { background: #f59e0b; }
 .provenance-dot.model { background: #a78bfa; }
 @media (max-width: 720px) { .data-provenance-strip { grid-template-columns: 1fr; } }
+
+/* PROFESSIONAL UI POLISH */
+body { background: radial-gradient(circle at 78% -10%, rgba(37,99,235,.16), transparent 32%), var(--bg-main); }
+.sidebar { background: linear-gradient(180deg, #0f172a 0%, #111827 62%, #0b1220 100%); border-right-color: rgba(148,163,184,.14); box-shadow: 14px 0 40px rgba(2,6,23,.16); }
+.brand { margin-bottom: 2rem; }
+.brand-icon { background: linear-gradient(135deg, #14b8a6, #2563eb); box-shadow: 0 8px 22px rgba(37,99,235,.28); }
+.nav-menu { gap: .28rem; }
+.nav-item { border: 1px solid transparent; border-radius: 11px; }
+.nav-item:hover { background: rgba(148,163,184,.09); border-color: rgba(148,163,184,.12); }
+.nav-item.active { background: linear-gradient(100deg, #2563eb, #0f766e); box-shadow: 0 8px 20px rgba(37,99,235,.22); }
+.main-area { background: transparent; }
+.page-content { background: radial-gradient(circle at 85% 0%, rgba(20,184,166,.07), transparent 34%); }
+.page-header h1 { letter-spacing: -.035em; }
+.dashboard-grid { gap: 1rem; }
+.workflow-card { position: relative; overflow: hidden; border: 1px solid rgba(148,163,184,.16); border-radius: 16px; background: linear-gradient(135deg, rgba(30,41,59,.88), rgba(15,23,42,.7)); box-shadow: 0 16px 36px rgba(2,6,23,.16); transition: transform .22s ease, border-color .22s ease, box-shadow .22s ease; }
+.workflow-card::after { position: absolute; width: 180px; height: 180px; right: -70px; bottom: -100px; border-radius: 50%; background: rgba(20,184,166,.12); content: ''; }
+.workflow-card:hover { transform: translateY(-3px); border-color: rgba(45,212,191,.42); box-shadow: 0 18px 42px rgba(2,6,23,.28); }
+.metric-card, .report-card, .settings-card, .location-card { border-color: rgba(148,163,184,.16); box-shadow: 0 12px 30px rgba(2,6,23,.12); }
+.metric-card { background: linear-gradient(145deg, rgba(30,41,59,.8), rgba(15,23,42,.65)); }
+.btn-primary { background: linear-gradient(100deg, #2563eb, #0f766e); box-shadow: 0 8px 20px rgba(37,99,235,.2); }
+.btn-primary:hover { background: linear-gradient(100deg, #1d4ed8, #0d9488); box-shadow: 0 10px 24px rgba(20,184,166,.2); transform: translateY(-1px); }
+.btn-outline { border-color: rgba(148,163,184,.25); background: rgba(15,23,42,.24); }
+.analysis-view { background: #0b1220; }
+.analysis-sidebar { min-height: 0; padding: 1.15rem; background: linear-gradient(180deg, rgba(15,23,42,.98), rgba(17,24,39,.98)); border-right-color: rgba(148,163,184,.16); }
+.analysis-header { padding-bottom: .9rem; border-bottom: 1px solid rgba(148,163,184,.12); }
+.analysis-header h2 { letter-spacing: -.03em; }
+.results-container { min-height: 0; overflow-y: auto; padding-right: .2rem; }
+.data-card { border-color: rgba(148,163,184,.16); background: linear-gradient(145deg, rgba(30,41,59,.72), rgba(15,23,42,.58)); transition: border-color .2s ease, transform .2s ease, background .2s ease; }
+.data-card:hover { border-color: rgba(96,165,250,.42); background: rgba(30,64,175,.16); transform: translateX(2px); }
+.candidate-row { flex-shrink: 0; }
+.map-action-bar { border-color: rgba(30,64,175,.35); background: rgba(255,255,255,.9); box-shadow: 0 10px 24px rgba(15,23,42,.22); }
+.map-action-bar button { color: #1e3a8a; }
+.map-action-bar button:hover, .map-action-bar button:focus-visible { background: #dbeafe; color: #1d4ed8; }
+.map-legend { border-color: rgba(30,64,175,.28); background: rgba(255,255,255,.93); box-shadow: 0 12px 30px rgba(15,23,42,.22); }
+.map-legend-toggle, .map-legend-item, .map-legend-group-title { color: #1e293b; }
+.map-legend-toggle { border-bottom-color: rgba(148,163,184,.25); }
+.map-legend-group-title { color: #475569; }
+.toast { border: 1px solid rgba(45,212,191,.35); background: rgba(15,118,110,.92); box-shadow: 0 12px 28px rgba(2,6,23,.25); }
+@media (max-width: 720px) { .sidebar { box-shadow: 0 8px 24px rgba(2,6,23,.22); } .analysis-sidebar { padding: .9rem; } }
