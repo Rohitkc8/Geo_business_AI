@@ -15,12 +15,43 @@ PROCESSED_DIR = os.path.join(os.path.dirname(__file__), 'data', 'processed')
 os.makedirs(RAW_DIR, exist_ok=True)
 os.makedirs(PROCESSED_DIR, exist_ok=True)
 
+OVERPASS_SERVERS = [
+    "https://overpass-api.de/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter",
+    "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    "https://overpass.private.coffee/api/interpreter"
+]
+
 class GeoDataService:
     def __init__(self, cache_dir_raw=RAW_DIR, cache_dir_processed=PROCESSED_DIR):
         self.raw_dir = cache_dir_raw
         self.processed_dir = cache_dir_processed
-        self.overpass_url = "https://overpass-api.de/api/interpreter"
         self.population_service = PopulationService()
+
+    def _query_overpass(self, query: str, timeout: int = 25) -> Dict[str, Any]:
+        """
+        Execute an Overpass query against multiple mirror endpoints with fallback.
+        """
+        data = urllib.parse.urlencode({'data': query}).encode('utf-8')
+        last_err = None
+
+        for endpoint in OVERPASS_SERVERS:
+            try:
+                req = urllib.request.Request(
+                    endpoint,
+                    data=data,
+                    headers={'User-Agent': 'GeoBusinessAI_App/1.0 (contact@geobusiness-ai.com)'}
+                )
+                with urllib.request.urlopen(req, timeout=timeout) as response:
+                    raw_data = response.read().decode('utf-8')
+                    return json.loads(raw_data)
+            except Exception as e:
+                last_err = e
+                print(f"Overpass mirror {endpoint} failed ({e}), trying next mirror...")
+                time.sleep(0.5)
+
+        print(f"All Overpass mirrors failed: {last_err}. Returning empty response fallback.")
+        return {"elements": []}
 
     def get_features(self, lat: float, lon: float, radius: int = 1000):
         """
@@ -41,10 +72,8 @@ class GeoDataService:
 
         print(f"Fetching from Overpass API: lat={lat}, lon={lon}, radius={radius}")
         
-        # Construct Overpass QL query
-        # Fetching amenities, shops, offices, highway (roads/bus stops), etc.
         query = f"""
-        [out:json][timeout:25];
+        [out:json][timeout:20];
         (
           node["amenity"~"restaurant|cafe|fast_food|pharmacy|bank|school|college|university|hospital|clinic|doctors"](around:{radius},{lat},{lon});
           way["amenity"~"restaurant|cafe|fast_food|pharmacy|bank|school|college|university|hospital|clinic|doctors"](around:{radius},{lat},{lon});
@@ -61,34 +90,22 @@ class GeoDataService:
         out center;
         """
         
-        data = urllib.parse.urlencode({'data': query}).encode('utf-8')
-        req = urllib.request.Request(
-            self.overpass_url, 
-            data=data,
-            headers={'User-Agent': 'GeoBusinessAI_App/1.0 (contact@geobusiness-ai.com)'}
-        )
+        raw_json = self._query_overpass(query, timeout=25)
         
-        try:
-            with urllib.request.urlopen(req, timeout=30) as response:
-                raw_data = response.read().decode('utf-8')
-                raw_json = json.loads(raw_data)
-                
-                # Save raw response
-                with open(raw_file, 'w', encoding='utf-8') as f:
-                    json.dump(raw_json, f, indent=2)
-                
-                # Process the data
-                processed_json = self._process_data(raw_json, lat, lon, radius, query_hash)
-                
-                # Save processed data
-                with open(processed_file, 'w', encoding='utf-8') as f:
-                    json.dump(processed_json, f, indent=2)
-                
-                return processed_json
-                
-        except Exception as e:
-            print(f"Error fetching from Overpass: {e}")
-            raise
+        # Save raw response if non-empty
+        if raw_json.get('elements'):
+            with open(raw_file, 'w', encoding='utf-8') as f:
+                json.dump(raw_json, f, indent=2)
+        
+        # Process the data
+        processed_json = self._process_data(raw_json, lat, lon, radius, query_hash)
+        
+        # Save processed data
+        if processed_json.get('features'):
+            with open(processed_file, 'w', encoding='utf-8') as f:
+                json.dump(processed_json, f, indent=2)
+        
+        return processed_json
 
     def _process_data(self, raw_json, lat, lon, radius, query_hash):
         features = []
@@ -178,8 +195,14 @@ class GeoDataService:
         undeveloped or lightly-developed land (vacant, brownfield, farmland, meadow,
         grass, greenfield) and returns them as a GeoJSON FeatureCollection with
         Polygon geometry so the map can render them as filled areas.
+
+        Each feature's properties now also include a 'surroundings' sub-object
+        with nearby amenity counts (schools, hospitals, restaurants, pharmacies,
+        bus_stops, roads) fetched within 500 m of the parcel centroid.
         """
-        cache_key = f"empty_land_{lat}_{lon}_{radius}"
+        import math
+
+        cache_key = f"empty_land_v2_{lat}_{lon}_{radius}"
         cache_hash = hashlib.md5(cache_key.encode()).hexdigest()
         cache_file = os.path.join(self.processed_dir, f"{cache_hash}_empty_land.json")
 
@@ -203,19 +226,7 @@ class GeoDataService:
         out geom;
         """
 
-        data = urllib.parse.urlencode({'data': query}).encode('utf-8')
-        req = urllib.request.Request(
-            self.overpass_url,
-            data=data,
-            headers={'User-Agent': 'GeoBusinessAI_App/1.0 (contact@geobusiness-ai.com)'}
-        )
-
-        try:
-            with urllib.request.urlopen(req, timeout=35) as response:
-                raw_json = json.loads(response.read().decode('utf-8'))
-        except Exception as e:
-            print(f"Error fetching empty land from Overpass: {e}")
-            raise
+        raw_json = self._query_overpass(query, timeout=30)
 
         features: List[Dict[str, Any]] = []
 
@@ -279,23 +290,101 @@ class GeoDataService:
             lats = [p[1] for p in ring]
             lons = [p[0] for p in ring]
             lat_span = (max(lats) - min(lats)) * 111320
-            lon_span = (max(lons) - min(lons)) * 111320 * abs(__import__('math').cos(__import__('math').radians(lat)))
+            lon_span = (max(lons) - min(lons)) * 111320 * abs(math.cos(math.radians(lat)))
             approx_area_m2 = lat_span * lon_span
+
+            # Centroid of the parcel (simple average of ring vertices)
+            centroid_lat = sum(lats) / len(lats)
+            centroid_lon = sum(lons) / len(lons)
 
             features.append({
                 'type': 'Feature',
                 'geometry': geojson_geom,
                 'properties': {
-                    'id':          f"{etype}/{element['id']}",
-                    'name':        tags.get('name', label),
-                    'landuse':     landuse,
-                    'leisure':     leisure,
-                    'land_type':   land_key,
-                    'label':       label,
+                    'id':            f"{etype}/{element['id']}",
+                    'name':          tags.get('name', label),
+                    'landuse':       landuse,
+                    'leisure':       leisure,
+                    'land_type':     land_key,
+                    'label':         label,
                     'approx_area_m2': round(approx_area_m2),
-                    'tags':        tags,
+                    'centroid_lat':  round(centroid_lat, 6),
+                    'centroid_lon':  round(centroid_lon, 6),
+                    'tags':          tags,
+                    # surroundings populated below
+                    'surroundings':  {},
                 }
             })
+
+        # --- Enrich each parcel with surroundings (amenity counts within 500 m) ---
+        # We issue ONE batch Overpass query containing union clauses for all centroids
+        # to avoid N separate HTTP calls.
+        SURROUND_RADIUS = 500
+        if features:
+            surround_query_parts = []
+            for feat in features:
+                clat = feat['properties']['centroid_lat']
+                clon = feat['properties']['centroid_lon']
+                surround_query_parts.append(
+                    f'node["amenity"~"school|college|university|hospital|clinic|doctors|restaurant|cafe|fast_food|pharmacy|bank"](around:{SURROUND_RADIUS},{clat},{clon});'
+                )
+                surround_query_parts.append(
+                    f'node["highway"~"bus_stop|platform"](around:{SURROUND_RADIUS},{clat},{clon});'
+                )
+                surround_query_parts.append(
+                    f'way["highway"~"primary|secondary|tertiary|trunk|motorway"](around:{SURROUND_RADIUS},{clat},{clon});'
+                )
+
+            batch_query = (
+                f'[out:json][timeout:30];\n('
+                + '\n'.join(surround_query_parts)
+                + '\n);\nout center;'
+            )
+            surround_raw = self._query_overpass(batch_query, timeout=30)
+            surround_elements = surround_raw.get('elements', [])
+
+            # Map each element to all parcels whose centroid is ≤ SURROUND_RADIUS away
+            for feat in features:
+                clat = feat['properties']['centroid_lat']
+                clon = feat['properties']['centroid_lon']
+                counts = {
+                    'schools': 0,
+                    'hospitals': 0,
+                    'restaurants': 0,
+                    'pharmacies': 0,
+                    'bus_stops': 0,
+                    'major_roads': 0,
+                    'banks': 0,
+                }
+                for el in surround_elements:
+                    el_tags = el.get('tags', {})
+                    el_lat = el.get('lat') or (el.get('center') or {}).get('lat')
+                    el_lon = el.get('lon') or (el.get('center') or {}).get('lon')
+                    if el_lat is None or el_lon is None:
+                        continue
+                    # Quick distance check (equirectangular)
+                    dlat = (el_lat - clat) * 111320
+                    dlon = (el_lon - clon) * 111320 * abs(math.cos(math.radians(clat)))
+                    dist = math.sqrt(dlat ** 2 + dlon ** 2)
+                    if dist > SURROUND_RADIUS:
+                        continue
+                    amenity = el_tags.get('amenity', '')
+                    highway = el_tags.get('highway', '')
+                    if amenity in ('school', 'college', 'university'):
+                        counts['schools'] += 1
+                    elif amenity in ('hospital', 'clinic', 'doctors'):
+                        counts['hospitals'] += 1
+                    elif amenity in ('restaurant', 'cafe', 'fast_food'):
+                        counts['restaurants'] += 1
+                    elif amenity == 'pharmacy':
+                        counts['pharmacies'] += 1
+                    elif amenity == 'bank':
+                        counts['banks'] += 1
+                    elif highway in ('bus_stop', 'platform'):
+                        counts['bus_stops'] += 1
+                    elif highway in ('primary', 'secondary', 'tertiary', 'trunk', 'motorway'):
+                        counts['major_roads'] += 1
+                feat['properties']['surroundings'] = counts
 
         result = {
             'type': 'FeatureCollection',

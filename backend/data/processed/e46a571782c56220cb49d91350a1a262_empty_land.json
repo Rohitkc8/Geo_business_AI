@@ -1,0 +1,11 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "center_lat": 11.6777737,
+    "center_lon": 78.1242606,
+    "radius_meters": 1500,
+    "total_parcels": 0,
+    "source": "OpenStreetMap via Overpass API"
+  },
+  "features": []
+}

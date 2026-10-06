@@ -1,0 +1,10 @@
+{
+  "population": 18152,
+  "population_density": 18152.0,
+  "households": null,
+  "data_source": "WorldPop API",
+  "data_year": 2020,
+  "is_historical_estimate": true,
+  "coverage_status": "good",
+  "area_sq_km": 1.0
+}

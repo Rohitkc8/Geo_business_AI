@@ -19,7 +19,17 @@ import {
   Sparkles,
   Activity,
   ChevronRight,
-  Layers
+  Layers,
+  X,
+  TreePine,
+  School,
+  Hospital,
+  UtensilsCrossed,
+  Pill,
+  Bus,
+  Road,
+  Landmark,
+  SquareArrowOutUpRight
 } from 'lucide-react'
 import './App.css'
 
@@ -48,6 +58,25 @@ type Candidate = {
   explanation: Factors 
 }
 type Recommendation = Factors & { business: string; score_percent: number }
+
+type LandParcel = {
+  name: string
+  land_type: string
+  label: string
+  approx_area_m2: number
+  centroid_lat: number
+  centroid_lon: number
+  surroundings: {
+    schools: number
+    hospitals: number
+    restaurants: number
+    pharmacies: number
+    bus_stops: number
+    major_roads: number
+    banks: number
+  }
+  tags: Record<string, string>
+}
 
 function Viewport({ center }: { center: [number, number] }) { 
   const map = useMap()
@@ -159,6 +188,73 @@ const DashboardView = ({ center, onNavigate }: { center: [number, number], onNav
   </div>
 )
 
+
+// ── Map Legend Component ──────────────────────────────────────────────────────
+const LAND_DOT_LEGEND = [
+  { color: '#10b981', label: 'Pharmacy' },
+  { color: '#3b82f6', label: 'Restaurant / Café / Fast-food' },
+  { color: '#f59e0b', label: 'Café' },
+  { color: '#f97316', label: 'Bank' },
+  { color: '#ec4899', label: 'Hospital / Clinic' },
+  { color: '#eab308', label: 'School / College' },
+  { color: '#14b8a6', label: 'Grocery / Supermarket' },
+  { color: '#94a3b8', label: 'Bus stop / Road' },
+  { color: '#8b5cf6', label: 'Other amenity / Shop / Office' },
+]
+
+const BUSINESS_SCORE_LEGEND = [
+  { color: '#10b981', label: 'High score (top 25 %)' },
+  { color: '#f59e0b', label: 'Good score (50–75 %)' },
+  { color: '#f97316', label: 'Moderate (25–50 %)' },
+  { color: '#ef4444', label: 'Low score (bottom 25 %)' },
+]
+
+function MapLegend({ mode }: { mode: Mode }) {
+  const [open, setOpen] = useState(true)
+  const items = mode === 'land' ? LAND_DOT_LEGEND : BUSINESS_SCORE_LEGEND
+
+  return (
+    <div className={`map-legend ${open ? 'map-legend--open' : ''}`}>
+      <button
+        type="button"
+        className="map-legend-toggle"
+        onClick={() => setOpen(o => !o)}
+        title={open ? 'Collapse legend' : 'Expand legend'}
+      >
+        <span className="map-legend-icon">◉</span>
+        <span className="map-legend-label">Legend</span>
+        <span className="map-legend-chevron">{open ? '▲' : '▼'}</span>
+      </button>
+      {open && (
+        <ul className="map-legend-list">
+          {mode === 'land' && (
+            <li className="map-legend-group-title">Nearby amenities</li>
+          )}
+          {mode === 'business' && (
+            <li className="map-legend-group-title">Location score</li>
+          )}
+          {items.map(({ color, label }) => (
+            <li key={label} className="map-legend-item">
+              <span className="map-legend-dot" style={{ background: color }} />
+              <span>{label}</span>
+            </li>
+          ))}
+          {mode === 'land' && (
+            <>
+              <li className="map-legend-divider" />
+              <li className="map-legend-group-title">Target</li>
+              <li className="map-legend-item">
+                <span className="map-legend-dot" style={{ background: '#ef4444', boxShadow: '0 0 0 2px #fff2' }} />
+                <span>Searched location</span>
+              </li>
+            </>
+          )}
+        </ul>
+      )}
+    </div>
+  )
+}
+
 export default function App() {
   const [activePage, setActivePage] = useState<Page>('dashboard')
   
@@ -174,6 +270,7 @@ export default function App() {
   const [emptyLand, setEmptyLand] = useState<any>(null)
   const [showEmptyLand, setShowEmptyLand] = useState(false)
   const [loadingLand, setLoadingLand] = useState(false)
+  const [selectedLand, setSelectedLand] = useState<LandParcel | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
@@ -195,6 +292,7 @@ export default function App() {
     setGeoJson(null)
     setEmptyLand(null)
     setShowEmptyLand(false)
+    setSelectedLand(null)
 
     try {
       const geoResponse = await fetch(`${API}/geocode`, { 
@@ -445,6 +543,125 @@ export default function App() {
                       ))}
                     </div>
                   )}
+
+                  {showEmptyLand && emptyLand && (
+                    <p className="land-hint">Click a parcel on the map to see details</p>
+                  )}
+                </div>
+              )}
+
+              {/* Selected Land Parcel Detail Panel */}
+              {mode === 'land' && selectedLand && (
+                <div className="land-detail-panel">
+                  <div className="land-detail-header">
+                    <div className="land-detail-title">
+                      <span className="land-type-dot" style={{ background: getLandColor(selectedLand.land_type) }} />
+                      <div>
+                        <h4>{selectedLand.name || selectedLand.label}</h4>
+                        <span className="land-type-tag">{selectedLand.land_type.replace(/_/g, ' ')}</span>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      className="land-close-btn"
+                      onClick={() => setSelectedLand(null)}
+                      title="Close"
+                    >
+                      <X size={14} />
+                    </button>
+                  </div>
+
+                  <div className="land-detail-meta">
+                    <div className="land-meta-item">
+                      <TreePine size={13} />
+                      <span>Area</span>
+                      <strong>
+                        {selectedLand.approx_area_m2
+                          ? selectedLand.approx_area_m2 >= 10000
+                            ? `${(selectedLand.approx_area_m2 / 10000).toFixed(2)} ha`
+                            : `${selectedLand.approx_area_m2.toLocaleString()} m²`
+                          : 'N/A'}
+                      </strong>
+                    </div>
+                    <div className="land-meta-item">
+                      <SquareArrowOutUpRight size={13} />
+                      <span>Coords</span>
+                      <strong>
+                        {selectedLand.centroid_lat?.toFixed(5)}, {selectedLand.centroid_lon?.toFixed(5)}
+                      </strong>
+                    </div>
+                  </div>
+
+                  {selectedLand.surroundings && Object.keys(selectedLand.surroundings).length > 0 && (
+                    <>
+                      <div className="land-surround-title">Surroundings within 500 m</div>
+                      <div className="land-surround-grid">
+                        <div className="surround-item">
+                          <div className="surround-icon school-icon"><School size={14} /></div>
+                          <div className="surround-info">
+                            <span>Schools</span>
+                            <strong>{selectedLand.surroundings.schools ?? 0}</strong>
+                          </div>
+                        </div>
+                        <div className="surround-item">
+                          <div className="surround-icon hospital-icon"><Hospital size={14} /></div>
+                          <div className="surround-info">
+                            <span>Hospitals</span>
+                            <strong>{selectedLand.surroundings.hospitals ?? 0}</strong>
+                          </div>
+                        </div>
+                        <div className="surround-item">
+                          <div className="surround-icon restaurant-icon"><UtensilsCrossed size={14} /></div>
+                          <div className="surround-info">
+                            <span>Restaurants</span>
+                            <strong>{selectedLand.surroundings.restaurants ?? 0}</strong>
+                          </div>
+                        </div>
+                        <div className="surround-item">
+                          <div className="surround-icon pharmacy-icon"><Pill size={14} /></div>
+                          <div className="surround-info">
+                            <span>Pharmacies</span>
+                            <strong>{selectedLand.surroundings.pharmacies ?? 0}</strong>
+                          </div>
+                        </div>
+                        <div className="surround-item">
+                          <div className="surround-icon bus-icon"><Bus size={14} /></div>
+                          <div className="surround-info">
+                            <span>Bus Stops</span>
+                            <strong>{selectedLand.surroundings.bus_stops ?? 0}</strong>
+                          </div>
+                        </div>
+                        <div className="surround-item">
+                          <div className="surround-icon road-icon"><Road size={14} /></div>
+                          <div className="surround-info">
+                            <span>Major Roads</span>
+                            <strong>{selectedLand.surroundings.major_roads ?? 0}</strong>
+                          </div>
+                        </div>
+                        <div className="surround-item">
+                          <div className="surround-icon bank-icon"><Landmark size={14} /></div>
+                          <div className="surround-info">
+                            <span>Banks</span>
+                            <strong>{selectedLand.surroundings.banks ?? 0}</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </>
+                  )}
+
+                  {selectedLand.tags && Object.keys(selectedLand.tags).length > 0 && (
+                    <details className="land-tags-details">
+                      <summary>OSM Tags</summary>
+                      <div className="land-tags-body">
+                        {Object.entries(selectedLand.tags).map(([k, v]) => (
+                          <div key={k} className="land-tag-row">
+                            <span className="land-tag-key">{k}</span>
+                            <span className="land-tag-val">{v}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </details>
+                  )}
                 </div>
               )}
 
@@ -534,13 +751,15 @@ export default function App() {
                   style={(feature) => {
                     const landType = feature?.properties?.land_type || '';
                     const color = getLandColor(landType);
+                    const isSelected = selectedLand?.centroid_lat === feature?.properties?.centroid_lat &&
+                                       selectedLand?.centroid_lon === feature?.properties?.centroid_lon;
                     return {
-                      color: color,
-                      weight: 2,
+                      color: isSelected ? '#ffffff' : color,
+                      weight: isSelected ? 3 : 2,
                       fillColor: color,
-                      fillOpacity: 0.35,
-                      opacity: 0.8,
-                      dashArray: '4 3',
+                      fillOpacity: isSelected ? 0.65 : 0.35,
+                      opacity: 0.9,
+                      dashArray: isSelected ? undefined : '4 3',
                     };
                   }}
                   onEachFeature={(feature, layer) => {
@@ -548,16 +767,19 @@ export default function App() {
                     const areaHa = p.approx_area_m2
                       ? (p.approx_area_m2 / 10000).toFixed(2)
                       : 'N/A';
-                    layer.bindPopup(
-                      `<div style="font-family:sans-serif;min-width:160px">
-                        <strong style="font-size:0.9rem">${p.name || p.label || 'Empty Land'}</strong><br/>
-                        <span style="color:#64748b;font-size:0.78rem;text-transform:capitalize">${(p.land_type || '').replace(/_/g, ' ')}</span><br/>
-                        <hr style="margin:4px 0;border-color:#e2e8f0"/>
-                        <span style="font-size:0.78rem">🏷️ Est. area: <strong>${areaHa} ha</strong></span>
-                      </div>`
+                    layer.bindTooltip(
+                      `<strong>${p.name || p.label || 'Empty Land'}</strong><br/><span style="font-size:0.78rem;text-transform:capitalize;color:#64748b">${(p.land_type || '').replace(/_/g, ' ')}</span><br/><span style="font-size:0.75rem">📐 ${areaHa} ha — click for details</span>`,
+                      { sticky: true, opacity: 0.95 }
                     );
+                    (layer as any).on('click', () => {
+                      setSelectedLand(p as LandParcel);
+                    });
                     (layer as any).on('mouseover', function(this: any) { this.setStyle({ fillOpacity: 0.6 }); });
-                    (layer as any).on('mouseout',  function(this: any) { this.setStyle({ fillOpacity: 0.35 }); });
+                    (layer as any).on('mouseout',  function(this: any) {
+                      const sel = selectedLand;
+                      const isSel = sel?.centroid_lat === p.centroid_lat && sel?.centroid_lon === p.centroid_lon;
+                      this.setStyle({ fillOpacity: isSel ? 0.65 : 0.35 });
+                    });
                   }}
                 />
               )}
@@ -581,6 +803,11 @@ export default function App() {
                 </Rectangle>
               ))}
             </MapContainer>
+
+            {/* ── Floating Map Legend ── */}
+            {(geoJson || (mode === 'business' && candidates.length > 0)) && (
+              <MapLegend mode={mode} />
+            )}
           </div>
         </div>
         
