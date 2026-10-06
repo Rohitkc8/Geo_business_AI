@@ -1184,3 +1184,26 @@ body.light-theme .map-action-bar button { color: #334155; }
 .rotate-180 { transform: rotate(180deg); }
 @media (max-width: 760px) { .report-page { padding: 1rem .8rem 2rem; } .report-document { padding: 1.4rem 1rem; border-radius: 12px; } .report-meta, .report-metric-grid { grid-template-columns: 1fr; } .report-toolbar { align-items: stretch; flex-direction: column-reverse; } .report-toolbar .btn { justify-content: center; } .report-footer { flex-direction: column; } }
 @media print { body { background: #fff !important; } .sidebar, .toast, .no-print { display: none !important; } .main-area { margin: 0 !important; width: 100% !important; } .report-page { max-width: none; padding: 0; } .report-document { max-width: none; min-height: 100vh; padding: 0; border: 0; border-radius: 0; box-shadow: none; background: #fff; color: #172033; } .report-cover { padding: 0 0 1.2rem; } .report-brand, .report-cover h1, .report-section h2 { color: #172033; } .report-kicker, .report-metric-grid strong, .report-recommendation b { color: #0f766e; } .report-subtitle, .report-meta span, .report-muted, .report-table td, .report-footer { color: #475569; } .report-meta span, .report-metric-grid > div, .report-recommendation { border-color: #cbd5e1; background: #f8fafc; } .report-table th { background: #eff6ff; color: #1e3a8a; } .report-table td { border-color: #cbd5e1; } .report-footer strong { color: #334155; } }
+
+/* DEDICATED COMPARISON WORKSPACE PAGE */
+.comparison-page { max-width: 1240px; margin: 0 auto; padding: 2rem 2.4rem 3rem; }
+.comparison-page-card { padding: 1.4rem; border: 1px solid rgba(59,130,246,.3); border-radius: 16px; background: linear-gradient(145deg, rgba(30,64,175,.2), rgba(15,118,110,.1)); box-shadow: 0 18px 45px rgba(2,6,23,.2); }
+.comparison-page-intro { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1.25rem; }
+.comparison-page-intro h2 { margin: .2rem 0 0; color: var(--text-main); font-size: 1.35rem; }
+.comparison-tip { max-width: 310px; color: var(--text-muted); font-size: .74rem; line-height: 1.45; text-align: right; }
+.comparison-page-grid { display: grid; gap: .75rem; margin-bottom: 1rem; }
+.comparison-page-location { padding: 1rem; border: 1px solid rgba(148,163,184,.2); border-radius: 12px; background: rgba(15,23,42,.48); text-align: center; }
+.comparison-page-location-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: .75rem; color: #93c5fd; font-size: .7rem; font-weight: 800; }
+.comparison-page-location-top button { display: inline-flex; padding: .22rem; border: 0; border-radius: 5px; background: transparent; color: var(--text-muted); cursor: pointer; }
+.comparison-page-location-top button:hover { color: #fca5a5; background: rgba(239,68,68,.12); }
+.comparison-page-location strong, .comparison-page-location small, .comparison-page-location b { display: block; }
+.comparison-page-location strong { color: #e0f2fe; font-size: 1rem; }
+.comparison-page-location small { margin-top: .15rem; color: var(--text-muted); font-size: .75rem; }
+.comparison-page-location b { margin-top: .9rem; color: #5eead4; font-size: .85rem; }
+.comparison-page-metrics { display: flex; flex-direction: column; gap: .15rem; padding: .25rem 0; }
+.comparison-page-metric { display: grid; grid-template-columns: minmax(150px, .9fr) repeat(auto-fit, minmax(150px, 1fr)); gap: .7rem; align-items: center; min-height: 52px; padding: .65rem .75rem; border-top: 1px solid rgba(148,163,184,.15); }
+.comparison-page-metric span { color: var(--text-muted); font-size: .78rem; font-weight: 700; }
+.comparison-page-metric strong { color: var(--text-main); font-size: .88rem; text-align: center; }
+.comparison-empty { max-width: 720px; margin: 4rem auto; padding: 3rem 1.5rem; }
+.comparison-empty p { max-width: 500px; line-height: 1.6; }
+@media (max-width: 760px) { .comparison-page { padding: 1.2rem .8rem 2rem; } .comparison-page-intro { flex-direction: column; } .comparison-tip { max-width: none; text-align: left; } .comparison-page-metric { grid-template-columns: minmax(110px, .8fr) repeat(auto-fit, minmax(100px, 1fr)); gap: .35rem; padding: .55rem .35rem; } .comparison-page-metric strong { font-size: .72rem; } }

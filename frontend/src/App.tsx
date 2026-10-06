@@ -46,7 +46,7 @@ const API = 'http://localhost:8000/api'
 const CELL = 0.005
 
 type Mode = 'land' | 'business'
-type Page = 'dashboard' | 'analysis' | 'locations' | 'settings' | 'report'
+type Page = 'dashboard' | 'analysis' | 'locations' | 'comparison' | 'settings' | 'report'
 
 type Factors = { positive_factors: string[]; negative_factors: string[] }
 type BudgetEstimate = {
@@ -471,6 +471,16 @@ const SettingsView = ({ theme, toggleTheme, showLabels, toggleLabels, onSaved }:
   )
 }
 
+const ComparisonView = ({ candidates, compareSelection, onClear, onBackToAnalysis, onRemove }: { candidates: Candidate[]; compareSelection: number[]; onClear: () => void; onBackToAnalysis: () => void; onRemove: (index: number) => void }) => {
+  const selectedCandidates = compareSelection.map(index => candidates[index]).filter(Boolean)
+  return (
+    <div className="page-content comparison-page fade-in">
+      <div className="page-header"><div><span className="eyebrow">Decision workspace</span><h1>Comparison Workspace</h1><p>Review your shortlisted locations side by side before choosing where to invest.</p></div><div className="header-actions"><button type="button" className="btn btn-outline" onClick={onBackToAnalysis}><MapIcon size={15}/> Back to map</button>{selectedCandidates.length > 0 && <button type="button" className="btn btn-outline text-danger" onClick={onClear}><X size={15}/> Clear shortlist</button>}</div></div>
+      {selectedCandidates.length < 2 ? <div className="empty-state comparison-empty"><GitCompareArrows size={36}/><h3>{selectedCandidates.length === 1 ? 'Add one more location to compare' : 'No locations selected yet'}</h3><p>Go to New Analysis → Place Business, run a search, then click <strong>Compare</strong> on the candidate cards.</p><button type="button" className="btn btn-primary" onClick={onBackToAnalysis}><PlusCircle size={15}/> Open analysis</button></div> : <div className="comparison-page-card"><div className="comparison-page-intro"><div><span className="eyebrow">{selectedCandidates.length} locations selected</span><h2>Side-by-side comparison</h2></div><span className="comparison-tip">Higher suitability is better · lower budget may reduce entry cost</span></div><div className="comparison-page-grid" style={{ gridTemplateColumns: `repeat(${selectedCandidates.length}, minmax(170px, 1fr))` }}>{selectedCandidates.map((candidate, position) => { const originalIndex = compareSelection[position]; return <div className="comparison-page-location" key={`${candidate.lat}-${candidate.lon}`}><div className="comparison-page-location-top"><span>Rank #{originalIndex + 1}</span><button type="button" aria-label={`Remove location ${originalIndex + 1}`} onClick={() => onRemove(originalIndex)}><X size={14}/></button></div><strong>{candidate.lat.toFixed(5)}</strong><small>{candidate.lon.toFixed(5)}</small><b>{candidate.model_score.toFixed(2)} score</b></div> })}</div><div className="comparison-page-metrics">{[['Suitability', (c: Candidate) => c.model_score.toFixed(2)], ['Land budget / cent', (c: Candidate) => c.budget_estimate?.formatted_price || 'Unavailable'], ['Population', (c: Candidate) => c.details.population.toLocaleString()], ['Competitors', (c: Candidate) => String(c.details.competitors)], ['Schools', (c: Candidate) => String(c.details.schools)], ['Colleges', (c: Candidate) => String(c.details.colleges)], ['Hospitals', (c: Candidate) => String(c.details.hospitals)], ['Road distance', (c: Candidate) => `${c.details.distance_to_major_road.toFixed(0)} m`]].map(([label, fn]) => { const value = fn as (candidate: Candidate) => string; return <div className="comparison-page-metric" key={String(label)}><span>{String(label)}</span>{selectedCandidates.map((candidate, index) => <strong key={`${String(label)}-${index}`}>{value(candidate)}</strong>)}</div> })}</div></div>}
+    </div>
+  )
+}
+
 const ReportView = ({ mode, query, candidates, comparedCandidates, recommendations, budgetEstimate, geoJson, onBack, onPrint }: { mode: Mode; query: string; candidates: Candidate[]; comparedCandidates: Candidate[]; recommendations: Recommendation[]; budgetEstimate: any; geoJson: any; onBack: () => void; onPrint: () => void }) => {
   const rows = comparedCandidates.length ? comparedCandidates : candidates.slice(0, 5)
   const [generatedAt] = useState(() => new Date().toLocaleString())
@@ -749,6 +759,14 @@ export default function App() {
           </button>
           <button
             type="button"
+            className={`nav-item ${activePage === 'comparison' ? 'active' : ''}`}
+            onClick={() => setActivePage('comparison')}
+          >
+            <GitCompareArrows size={18} />
+            <span>Comparison Workspace</span>
+          </button>
+          <button
+            type="button"
             className={`nav-item ${activePage === 'settings' ? 'active' : ''}`}
             onClick={() => setActivePage('settings')}
           >
@@ -776,6 +794,7 @@ export default function App() {
       <main className="main-area">
         {activePage === 'dashboard' && <DashboardView onNavigate={(p, m) => { setActivePage(p); if (m) setMode(m); }} />}
         {activePage === 'locations' && <LocationsView locations={savedLocations} onAnalyze={openSavedLocation} onRemove={removeSavedLocation} onViewMap={() => { setActivePage('analysis'); switchMode('business') }} />}
+        {activePage === 'comparison' && <ComparisonView candidates={candidates} compareSelection={compareSelection} onClear={() => setCompareSelection([])} onBackToAnalysis={() => setActivePage('analysis')} onRemove={(index) => setCompareSelection(current => current.filter(item => item !== index))} />}
         {activePage === 'settings' && <SettingsView theme={theme} toggleTheme={toggleTheme} showLabels={showLabels} toggleLabels={toggleLabels} onSaved={() => notify('Profile preferences saved locally')} />}
         {activePage === 'report' && <ReportView mode={mode} query={query} candidates={candidates} comparedCandidates={comparedCandidates} recommendations={recommendations} budgetEstimate={budgetEstimate} geoJson={geoJson} onBack={() => setActivePage('analysis')} onPrint={printReport} />}
 
