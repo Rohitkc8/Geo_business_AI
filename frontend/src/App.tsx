@@ -46,7 +46,7 @@ const API = 'http://localhost:8000/api'
 const CELL = 0.005
 
 type Mode = 'land' | 'business'
-type Page = 'dashboard' | 'analysis' | 'locations' | 'settings'
+type Page = 'dashboard' | 'analysis' | 'locations' | 'settings' | 'report'
 
 type Factors = { positive_factors: string[]; negative_factors: string[] }
 type BudgetEstimate = {
@@ -471,6 +471,27 @@ const SettingsView = ({ theme, toggleTheme, showLabels, toggleLabels, onSaved }:
   )
 }
 
+const ReportView = ({ mode, query, candidates, comparedCandidates, recommendations, budgetEstimate, geoJson, onBack, onPrint }: { mode: Mode; query: string; candidates: Candidate[]; comparedCandidates: Candidate[]; recommendations: Recommendation[]; budgetEstimate: any; geoJson: any; onBack: () => void; onPrint: () => void }) => {
+  const rows = comparedCandidates.length ? comparedCandidates : candidates.slice(0, 5)
+  const [generatedAt] = useState(() => new Date().toLocaleString())
+  return (
+    <div className="report-page page-content fade-in">
+      <div className="report-toolbar no-print">
+        <button type="button" className="btn btn-outline" onClick={onBack}><ArrowRight className="rotate-180" size={15}/> Back to analysis</button>
+        <button type="button" className="btn btn-primary" onClick={onPrint}><FileText size={15}/> Save as PDF</button>
+      </div>
+      <article className="report-document">
+        <header className="report-cover"><div className="report-brand"><span className="brand-icon"><MapPin size={18} color="#fff" /></span><span>GeoBusiness AI</span></div><span className="report-kicker">Decision support report</span><h1>Location analysis report</h1><p className="report-subtitle">A structured snapshot of the signals, suitability scores and land budgets behind this analysis.</p><div className="report-meta"><span><strong>Area</strong>{query || 'Current analysis'}</span><span><strong>Workflow</strong>{mode === 'business' ? 'Business → Land' : 'Land → Business'}</span><span><strong>Generated</strong>{generatedAt}</span></div></header>
+        {mode === 'land' ? <>
+          <section className="report-section"><h2>Executive summary</h2><div className="report-metric-grid"><div><span>Estimated land budget</span><strong>{budgetEstimate?.formatted_price || 'Unavailable'}</strong></div><div><span>Recommendations</span><strong>{recommendations.length}</strong></div><div><span>Map features</span><strong>{geoJson?.features?.length || 0}</strong></div></div></section>
+          <section className="report-section"><h2>Business recommendations</h2>{recommendations.length ? <div className="report-recommendations">{recommendations.map(item => <div className="report-recommendation" key={item.business}><div><strong>{item.business}</strong><span>{item.positive_factors?.[0] || 'Suitable local signals'}</span></div><b>{item.score_percent}%</b></div>)}</div> : <p className="report-muted">No business recommendations are available for this analysis.</p>}</section>
+        </> : <section className="report-section"><h2>{comparedCandidates.length ? 'Shortlisted location comparison' : 'Top candidate locations'}</h2><p className="report-muted">{comparedCandidates.length ? `${comparedCandidates.length} locations selected from the comparison workspace.` : 'Showing the five highest-ranked locations from the current scan.'}</p><div className="report-table-wrap"><table className="report-table"><thead><tr><th>Rank</th><th>Coordinates</th><th>Suitability</th><th>Land budget / cent</th><th>Population</th><th>Competitors</th><th>Schools</th></tr></thead><tbody>{rows.length ? rows.map((candidate, index) => <tr key={`${candidate.lat}-${candidate.lon}`}><td>#{candidates.indexOf(candidate) + 1 || index + 1}</td><td>{candidate.lat.toFixed(5)}, {candidate.lon.toFixed(5)}</td><td>{candidate.model_score.toFixed(2)}</td><td>{candidate.budget_estimate?.formatted_price || 'Unavailable'}</td><td>{candidate.details.population.toLocaleString()}</td><td>{candidate.details.competitors}</td><td>{candidate.details.schools}</td></tr>) : <tr><td colSpan={7}>No candidate locations available.</td></tr>}</tbody></table></div></section>}
+        <footer className="report-footer"><strong>GeoBusiness AI</strong><span>Prototype decision-support report · Budget figures are estimates per cent, not certified valuations.</span></footer>
+      </article>
+    </div>
+  )
+}
+
 export default function App() {
   const [activePage, setActivePage] = useState<Page>('dashboard')
   const [theme, setTheme] = useState<'dark' | 'light'>('dark')
@@ -667,6 +688,7 @@ export default function App() {
   const min = scores.length ? Math.min(...scores) : 0
   const max = scores.length ? Math.max(...scores) : 1
   const chosen = selected === null ? null : candidates[selected]
+  const comparedCandidates = compareSelection.map(index => candidates[index]).filter(Boolean)
 
   const toggleCompare = (index: number) => {
     setCompareSelection(current => {
@@ -680,21 +702,10 @@ export default function App() {
   }
 
   const exportPdfReport = () => {
-    const reportWindow = window.open('', '_blank', 'noopener,noreferrer')
-    if (!reportWindow) {
-      notify('Allow pop-ups to export the PDF report')
-      return
-    }
-    const escapeHtml = (value: unknown) => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[char] || char))
-    const compared = compareSelection.map(index => candidates[index]).filter(Boolean)
-    const reportRows = (compared.length ? compared : candidates.slice(0, 5)).map((candidate, index) => `
-      <tr><td>Location ${index + 1}</td><td>${candidate.lat.toFixed(5)}, ${candidate.lon.toFixed(5)}</td><td>${candidate.model_score.toFixed(2)}</td><td>${escapeHtml(candidate.budget_estimate?.formatted_price || 'Unavailable')}</td><td>${candidate.details.population.toLocaleString()}</td><td>${candidate.details.competitors}</td></tr>`).join('')
-    const recommendationsHtml = recommendations.map(item => `<li><strong>${escapeHtml(item.business)}</strong> — ${item.score_percent}% suitability</li>`).join('')
-    reportWindow.document.write(`<!doctype html><html><head><title>GeoBusiness AI Report</title><style>body{font-family:Arial,sans-serif;color:#172033;max-width:980px;margin:40px auto;padding:0 24px}h1{color:#0f766e;margin-bottom:4px}h2{margin-top:28px;border-bottom:2px solid #dbeafe;padding-bottom:6px}p{color:#475569}table{width:100%;border-collapse:collapse;margin-top:12px}th,td{border:1px solid #cbd5e1;padding:9px;text-align:left;font-size:12px}th{background:#eff6ff;color:#1e3a8a}.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric{background:#f8fafc;border:1px solid #e2e8f0;padding:12px;border-radius:8px}.metric b{display:block;font-size:18px;color:#0f766e;margin-top:4px}.note{margin-top:28px;font-size:11px;color:#64748b}</style></head><body><h1>GeoBusiness AI — Location Analysis Report</h1><p>Generated ${new Date().toLocaleString()} · Search area: <strong>${escapeHtml(query || 'Current analysis')}</strong> · Workflow: ${mode === 'business' ? 'Business → Land' : 'Land → Business'}</p>${mode === 'land' ? `<h2>Land evaluation</h2><div class="meta"><div class="metric">Budget estimate<b>${escapeHtml(budgetEstimate?.formatted_price || 'Unavailable')}</b></div><div class="metric">Recommendations<b>${recommendations.length}</b></div><div class="metric">Map features<b>${geoJson?.features?.length || 0}</b></div></div><h2>Business recommendations</h2><ul>${recommendationsHtml || '<li>No recommendations available.</li>'}</ul>` : `<h2>Candidate location comparison</h2><p>${compared.length ? `Shortlisted ${compared.length} locations.` : 'Top five ranked locations shown.'}</p><table><thead><tr><th>Location</th><th>Coordinates</th><th>Suitability</th><th>Land budget / cent</th><th>Population</th><th>Competitors</th></tr></thead><tbody>${reportRows || '<tr><td colspan="6">No candidate locations available.</td></tr>'}</tbody></table>`}<p class="note">Prototype decision-support report. Budget values are estimates per cent and are not certified market valuations or financial advice.</p></body></html>`)
-    reportWindow.document.close()
-    reportWindow.focus()
-    window.setTimeout(() => reportWindow.print(), 300)
+    setActivePage('report')
   }
+
+  const printReport = () => window.setTimeout(() => window.print(), 120)
 
   return (
     <div className="app-container">
@@ -766,6 +777,7 @@ export default function App() {
         {activePage === 'dashboard' && <DashboardView onNavigate={(p, m) => { setActivePage(p); if (m) setMode(m); }} />}
         {activePage === 'locations' && <LocationsView locations={savedLocations} onAnalyze={openSavedLocation} onRemove={removeSavedLocation} onViewMap={() => { setActivePage('analysis'); switchMode('business') }} />}
         {activePage === 'settings' && <SettingsView theme={theme} toggleTheme={toggleTheme} showLabels={showLabels} toggleLabels={toggleLabels} onSaved={() => notify('Profile preferences saved locally')} />}
+        {activePage === 'report' && <ReportView mode={mode} query={query} candidates={candidates} comparedCandidates={comparedCandidates} recommendations={recommendations} budgetEstimate={budgetEstimate} geoJson={geoJson} onBack={() => setActivePage('analysis')} onPrint={printReport} />}
 
         {/* Full Analysis Tool Page */}
         {activePage === 'analysis' && <div className="analysis-view visible">
