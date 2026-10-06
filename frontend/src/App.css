@@ -1207,3 +1207,14 @@ body.light-theme .map-action-bar button { color: #334155; }
 .comparison-empty { max-width: 720px; margin: 4rem auto; padding: 3rem 1.5rem; }
 .comparison-empty p { max-width: 500px; line-height: 1.6; }
 @media (max-width: 760px) { .comparison-page { padding: 1.2rem .8rem 2rem; } .comparison-page-intro { flex-direction: column; } .comparison-tip { max-width: none; text-align: left; } .comparison-page-metric { grid-template-columns: minmax(110px, .8fr) repeat(auto-fit, minmax(100px, 1fr)); gap: .35rem; padding: .55rem .35rem; } .comparison-page-metric strong { font-size: .72rem; } }
+
+/* DATA PROVENANCE / ACCURACY TRANSPARENCY */
+.data-provenance-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .35rem; margin: 0 0 .8rem; padding: .5rem; border: 1px solid rgba(148,163,184,.18); border-radius: 9px; background: rgba(15,23,42,.32); }
+.data-provenance-strip > div { display: grid; grid-template-columns: auto 1fr; column-gap: .35rem; align-items: center; min-width: 0; }
+.data-provenance-strip strong { color: var(--text-main); font-size: .62rem; }
+.data-provenance-strip small { grid-column: 2; color: var(--text-muted); font-size: .56rem; line-height: 1.25; }
+.provenance-dot { width: 7px; height: 7px; grid-row: 1 / span 2; border-radius: 50%; box-shadow: 0 0 0 3px rgba(255,255,255,.06); }
+.provenance-dot.live { background: #22c55e; }
+.provenance-dot.historical { background: #f59e0b; }
+.provenance-dot.model { background: #a78bfa; }
+@media (max-width: 720px) { .data-provenance-strip { grid-template-columns: 1fr; } }

@@ -58,7 +58,7 @@ describe('GeoBusiness redesigned workflows', () => {
     await user.click(screen.getByRole('button', { name: 'Run Analysis' }))
     await user.click((await screen.findAllByRole('button', { name: /Rank #1/ }))[0])
     expect(screen.getByText('Selected Hotspot')).toBeInTheDocument()
-    expect(screen.getByText('Population')).toBeInTheDocument()
+    expect(screen.getAllByText('Population').length).toBeGreaterThan(0)
     await user.click(screen.getAllByRole('button', { name: /Compare/ })[0])
     await user.click(screen.getAllByRole('button', { name: /Compare/ })[1])
     expect(await screen.findByText('Compare locations')).toBeInTheDocument()

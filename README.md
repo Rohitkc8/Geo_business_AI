@@ -262,3 +262,14 @@ export LAND_PRICE_PROVIDER_URL=https://your-provider.example/api/land-price
 The clicked-parcel UI now calls `/api/land-price`, displays the source and data quality, and preserves the fallback behavior when no real provider or local transaction file is configured.
 
 Do not expose provider keys in the frontend, scrape sources that prohibit automated access, or present asking prices as certified valuations.
+
+## 26. Data freshness and prediction accuracy
+
+The application combines different data types, and they should not be interpreted as equally current:
+
+- **Map features and competitors:** fetched from OpenStreetMap through Overpass when an analysis runs, subject to OSM coverage, cache state, and Overpass rate limits.
+- **Population:** WorldPop **2020**, a historical raster baseline; it is not a live census feed.
+- **Suitability scores:** produced by the repository's trained prototype models using spatial features. These scores are decision-support rankings, not validated forecasts.
+- **Land budgets:** prototype estimates unless `LAND_PRICE_PROVIDER_URL` or `LAND_PRICE_DATA_PATH` is configured with real transaction data.
+
+The UI now shows a provenance strip for business-placement scans and keeps map colors light so candidate cells and competitor markers are easier to inspect. For production accuracy, the next priority is validating model outputs against recent local transactions and actual business openings/closures, then retraining with a time-based holdout and adding provider freshness/confidence fields to every result.

@@ -309,7 +309,16 @@ def get_map_data(lat: float, lon: float, radius: int = 500):
                     **item.get("tags", {})
                 }
             })
-        return {"type": "FeatureCollection", "features": features}
+        return {
+            "type": "FeatureCollection",
+            "features": features,
+            "metadata": {
+                "source": "OpenStreetMap via Overpass API",
+                "fetched_at": datetime.now(timezone.utc).isoformat(),
+                "radius_meters": radius,
+                "data_note": "Live map features are subject to OpenStreetMap coverage and Overpass availability."
+            }
+        }
     except Exception as e:
         logger.error(f"Map data error: {e}")
         raise HTTPException(status_code=500, detail="Failed to fetch map data")

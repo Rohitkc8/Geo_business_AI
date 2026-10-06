@@ -1120,6 +1120,11 @@ export default function App() {
                       {budgets.length > 0 && <span><b>₹{Math.round(minBudget / 1000)}k–₹{Math.round(maxBudget / 1000)}k</b><small>budget / cent</small></span>}
                     </div>
                   </div>
+                  <div className="data-provenance-strip">
+                    <div><span className="provenance-dot live" /><strong>Map data</strong><small>OpenStreetMap · fetched for this scan</small></div>
+                    <div><span className="provenance-dot historical" /><strong>Population</strong><small>WorldPop 2020 baseline</small></div>
+                    <div><span className="provenance-dot model" /><strong>Prediction</strong><small>Prototype ML score + budget estimate</small></div>
+                  </div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
                     <h3 className="section-title" style={{ margin: 0 }}>Top Hotspots</h3>
                     {geoJson && (
