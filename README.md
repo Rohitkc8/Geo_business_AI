@@ -215,3 +215,13 @@ Budget figures are **prototype planning estimates per cent**, not final plot pri
 ### Frontend interaction model
 
 The React + Leaflet frontend provides accessible form labels, loading and error states, responsive layouts, category-specific map colors, competitor highlighting, clickable candidate cards, clickable map cells, and a collapsible legend for suitability and budget scales.
+
+The map also supports interactive **Center** and **Fit results** actions. Center returns to the searched area, while Fit results frames all candidate cells or available-land parcels so users can inspect the full analysis region without manually zooming.
+
+### Recommended next milestones
+
+1. Replace the synthetic budget model with time-stamped local land transactions and expose confidence ranges.
+2. Add user constraints such as rent, plot size, zoning, parking, budget ceiling and target customer profile.
+3. Persist analysis snapshots and source provenance in PostGIS so results can be audited and compared over time.
+4. Add authentication, rate limiting, provider-health monitoring and background processing for larger candidate grids.
+5. Add exports (CSV/PDF), side-by-side comparisons and an admin workflow for reviewing model quality.

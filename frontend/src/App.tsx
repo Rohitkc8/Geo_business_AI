@@ -33,7 +33,9 @@ import {
   Check,
   Save,
   Trash2,
-  ExternalLink
+  ExternalLink,
+  Maximize2,
+  LocateFixed
 } from 'lucide-react'
 import './App.css'
 
@@ -108,6 +110,30 @@ function Viewport({ center }: { center: [number, number] }) {
   const map = useMap()
   useEffect(() => { map.flyTo(center, 13, { animate: true, duration: 1.5 }) }, [center, map])
   return null
+}
+
+function MapControls({ center, candidates, emptyLand }: { center: [number, number]; candidates: Candidate[]; emptyLand: any }) {
+  const map = useMap()
+
+  const resetView = () => map.flyTo(center, 13, { animate: true, duration: 0.8 })
+  const fitResults = () => {
+    if (candidates.length > 0) {
+      const bounds = L.latLngBounds(candidates.map(candidate => [candidate.lat, candidate.lon] as [number, number]))
+      map.fitBounds(bounds.pad(0.15), { animate: true, duration: 0.8 })
+      return
+    }
+    if (emptyLand?.features?.length) {
+      const bounds = L.geoJSON(emptyLand).getBounds()
+      if (bounds.isValid()) map.fitBounds(bounds.pad(0.1), { animate: true, duration: 0.8 })
+    }
+  }
+
+  return (
+    <div className="map-action-bar" aria-label="Map actions">
+      <button type="button" onClick={resetView} title="Return to searched location"><LocateFixed size={15} /><span>Center</span></button>
+      <button type="button" onClick={fitResults} title="Fit all candidates or parcels in view"><Maximize2 size={15} /><span>Fit results</span></button>
+    </div>
+  )
 }
 
 function heat(score: number, min: number, max: number) {
@@ -1045,6 +1071,7 @@ export default function App() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
               <Viewport center={center} />
+              <MapControls center={center} candidates={candidates} emptyLand={emptyLand} />
 
               {mode === 'land' && (
                 <CircleMarker center={center} radius={8} pathOptions={{ color: '#ef4444', fillColor: '#ef4444', fillOpacity: 0.8, weight: 2 }}>
