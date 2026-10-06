@@ -444,6 +444,8 @@ export default function App() {
   const [showEmptyLand, setShowEmptyLand] = useState(false)
   const [loadingLand, setLoadingLand] = useState(false)
   const [selectedLand, setSelectedLand] = useState<LandParcel | null>(null)
+  const [selectedLandBudget, setSelectedLandBudget] = useState<BudgetEstimate | null>(null)
+  const [loadingLandBudget, setLoadingLandBudget] = useState(false)
   const [budgetEstimate, setBudgetEstimate] = useState<any>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
@@ -498,6 +500,17 @@ export default function App() {
   }
 
   useEffect(() => {
+    if (!selectedLand?.centroid_lat || !selectedLand?.centroid_lon) return
+    const controller = new AbortController()
+    fetch(`${API}/estimate-budget?lat=${selectedLand.centroid_lat}&lon=${selectedLand.centroid_lon}&radius=500`, { signal: controller.signal })
+      .then(response => response.ok ? response.json() : null)
+      .then(data => { if (data) setSelectedLandBudget(data) })
+      .catch(() => {})
+      .finally(() => { if (!controller.signal.aborted) setLoadingLandBudget(false) })
+    return () => controller.abort()
+  }, [selectedLand])
+
+  useEffect(() => {
     fetch(`${API}/business-types`)
       .then(r => r.json())
       .then(d => setTypes(d.business_types || []))
@@ -517,6 +530,7 @@ export default function App() {
     setEmptyLand(null)
     setShowEmptyLand(false)
     setSelectedLand(null)
+    setSelectedLandBudget(null)
 
     try {
       const geoResponse = await fetch(`${API}/geocode`, {
@@ -833,7 +847,7 @@ export default function App() {
                     <button
                       type="button"
                       className="land-close-btn"
-                      onClick={() => setSelectedLand(null)}
+                      onClick={() => { setSelectedLand(null); setSelectedLandBudget(null); setLoadingLandBudget(false) }}
                       title="Close"
                     >
                       <X size={14} />
@@ -917,6 +931,18 @@ export default function App() {
                       </div>
                     </>
                   )}
+
+                  <div className="selected-land-budget">
+                    <div className="selected-land-budget-heading">
+                      <div>
+                        <span className="eyebrow">Parcel estimate</span>
+                        <strong>Land budget per cent</strong>
+                      </div>
+                      {loadingLandBudget ? <span className="budget-loading">Calculating…</span> : selectedLandBudget && <strong className="land-price">{selectedLandBudget.formatted_price}</strong>}
+                    </div>
+                    {selectedLandBudget && <small>Based on {selectedLandBudget.factors.source} · {selectedLandBudget.factors.distance_to_road} to major road · population density {selectedLandBudget.factors.population_density}</small>}
+                    {!loadingLandBudget && !selectedLandBudget && <small>Budget could not be calculated for this parcel.</small>}
+                  </div>
 
                   {selectedLand.tags && Object.keys(selectedLand.tags).length > 0 && (
                     <details className="land-tags-details">
@@ -1076,6 +1102,8 @@ export default function App() {
                       { sticky: true, opacity: 0.95 }
                     );
                     (layer as any).on('click', () => {
+                      setSelectedLandBudget(null)
+                      setLoadingLandBudget(true)
                       setSelectedLand(p as LandParcel);
                     });
                     (layer as any).on('mouseover', function(this: any) { this.setStyle({ fillOpacity: 0.6 }); });

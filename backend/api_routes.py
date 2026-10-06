@@ -160,6 +160,18 @@ def get_location_details(lat: float, lon: float, radius: int = 500):
         logger.error(f"Location details error: {e}")
         raise HTTPException(status_code=500, detail="Failed to fetch location details")
 
+
+@router.get("/api/estimate-budget")
+def estimate_budget(lat: float, lon: float, radius: int = 500):
+    """Estimate land price per cent for a specific clicked map location."""
+    logger.info(f"Estimating budget for clicked land at {lat}, {lon}")
+    try:
+        df_input, _ = _get_input_features(lat, lon, radius)
+        return _estimate_budget(df_input)
+    except Exception as e:
+        logger.error(f"Budget estimate error: {e}")
+        raise HTTPException(status_code=500, detail="Failed to estimate land budget")
+
 @router.get("/api/map-data")
 def get_map_data(lat: float, lon: float, radius: int = 500):
     """Returns raw GeoJSON features for map rendering."""
