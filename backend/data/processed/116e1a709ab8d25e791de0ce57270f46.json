@@ -1,0 +1,702 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 11.4562338,
+      "center_longitude": 78.1809576,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-06T11:20:41.746846+00:00",
+    "query_hash": "116e1a709ab8d25e791de0ce57270f46",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 59
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/7161554509",
+      "name": "sri vidya mandir school",
+      "category": "other",
+      "latitude": 11.4532638,
+      "longitude": 78.1810046,
+      "tags": {
+        "amenity": "language_school",
+        "name": "sri vidya mandir school"
+      }
+    },
+    {
+      "id": "node/7161554510",
+      "name": "lic office",
+      "category": "office",
+      "latitude": 11.456145,
+      "longitude": 78.1806184,
+      "tags": {
+        "brand": "Life Insurance Corporation",
+        "brand:wikidata": "Q2767170",
+        "brand:wikipedia": "en:Life Insurance Corporation",
+        "check_date:opening_hours": "2023-12-17",
+        "name": "lic office",
+        "office": "insurance",
+        "opening_hours": "Mo-Fr 10:30-16:30",
+        "short_name": "LIC",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "id": "way/232497136",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4542395,
+      "longitude": 78.1808097,
+      "tags": {
+        "highway": "residential",
+        "lit": "yes",
+        "sidewalk": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/345715126",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4470942,
+      "longitude": 78.1944276,
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    {
+      "id": "way/1013260876",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4529891,
+      "longitude": 78.1820367,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1013260911",
+      "name": "Mallikkarai - Rasipuram - Thiruchengode - Erode Road",
+      "category": "road",
+      "latitude": 11.4558634,
+      "longitude": 78.1779966,
+      "tags": {
+        "bridge": "yes",
+        "highway": "primary",
+        "lane_markings": "no",
+        "layer": "1",
+        "lit": "yes",
+        "maxspeed": "40",
+        "maxspeed:type": "sign",
+        "name": "Mallikkarai - Rasipuram - Thiruchengode - Erode Road",
+        "ref": "SH79",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1111536591",
+      "name": "Railway Station Rd",
+      "category": "road",
+      "latitude": 11.4549139,
+      "longitude": 78.179868,
+      "tags": {
+        "highway": "residential",
+        "lane_markings": "no",
+        "lit": "yes",
+        "maxspeed": "30",
+        "maxspeed:type": "sign",
+        "name": "Railway Station Rd",
+        "sidewalk": "no",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1120037761",
+      "name": "Mallikkarai - Rasipuram - Thiruchengode - Erode Road",
+      "category": "road",
+      "latitude": 11.4580913,
+      "longitude": 78.1827177,
+      "tags": {
+        "highway": "primary",
+        "lit": "no",
+        "maxspeed": "40",
+        "maxspeed:type": "sign",
+        "name": "Mallikkarai - Rasipuram - Thiruchengode - Erode Road",
+        "ref": "SH79",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1222149544",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.453098,
+      "longitude": 78.176136,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222149545",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4557468,
+      "longitude": 78.1766611,
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1222149546",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4556887,
+      "longitude": 78.1787914,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222149547",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4557038,
+      "longitude": 78.1786202,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1222149548",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4557096,
+      "longitude": 78.178468,
+      "tags": {
+        "highway": "residential",
+        "layer": "-1",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "id": "way/1222150465",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4606718,
+      "longitude": 78.1828139,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222150467",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4605088,
+      "longitude": 78.1810708,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222150469",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4604055,
+      "longitude": 78.1818434,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222150470",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4609717,
+      "longitude": 78.1830565,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222151062",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4599797,
+      "longitude": 78.1815327,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222151063",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4594438,
+      "longitude": 78.1814854,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222151064",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.459544,
+      "longitude": 78.1825934,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222151065",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4598071,
+      "longitude": 78.1825277,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222151066",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4597572,
+      "longitude": 78.1832238,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222151067",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4592867,
+      "longitude": 78.1829764,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222151068",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.459452,
+      "longitude": 78.1821073,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222151069",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4591671,
+      "longitude": 78.1827563,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222151070",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4583844,
+      "longitude": 78.1816342,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222151071",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4588637,
+      "longitude": 78.1826221,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222151072",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4585946,
+      "longitude": 78.1825073,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222151143",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4577224,
+      "longitude": 78.180221,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222151144",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.459127,
+      "longitude": 78.1793164,
+      "tags": {
+        "highway": "service",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222151145",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4596225,
+      "longitude": 78.1794991,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1222151146",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4592996,
+      "longitude": 78.1794579,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1222151147",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4589393,
+      "longitude": 78.1794318,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1222153433",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4565891,
+      "longitude": 78.1803992,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153434",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4566505,
+      "longitude": 78.179863,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153435",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4574342,
+      "longitude": 78.1807577,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153436",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4561808,
+      "longitude": 78.1811457,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153437",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4564423,
+      "longitude": 78.1817931,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153438",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.453924,
+      "longitude": 78.1792104,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153439",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4548396,
+      "longitude": 78.1795958,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153440",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4538046,
+      "longitude": 78.1800901,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153580",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4533042,
+      "longitude": 78.1829984,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153581",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4542176,
+      "longitude": 78.1842099,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153582",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4545969,
+      "longitude": 78.1835152,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153583",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4545996,
+      "longitude": 78.1834213,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153584",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4546087,
+      "longitude": 78.1835146,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153585",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4546376,
+      "longitude": 78.1826428,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153586",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4547967,
+      "longitude": 78.1827882,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153587",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4552843,
+      "longitude": 78.182486,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222153588",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4536058,
+      "longitude": 78.1844433,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222155290",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4573458,
+      "longitude": 78.1858098,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222162712",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4495338,
+      "longitude": 78.180503,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222162713",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4521451,
+      "longitude": 78.1807339,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222162714",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4522713,
+      "longitude": 78.1800499,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222162715",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4523143,
+      "longitude": 78.1816914,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222162716",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4525042,
+      "longitude": 78.1821286,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222162717",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.452529,
+      "longitude": 78.1828103,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222162718",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4521794,
+      "longitude": 78.1824175,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1222162719",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.4521816,
+      "longitude": 78.1821306,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    }
+  ]
+}

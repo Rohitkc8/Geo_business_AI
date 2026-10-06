@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 8.081752,
+      "center_longitude": 77.5574338,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-06T10:13:07.400907+00:00",
+    "query_hash": "c1db75c5b1cb0e35ad4adee778fa4f21",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 12
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "way/104708226",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0780819,
+      "longitude": 77.5554314,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/205231169",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0832475,
+      "longitude": 77.5544213,
+      "tags": {
+        "highway": "path",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "id": "way/320143477",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0781446,
+      "longitude": 77.5552165,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/320143478",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0780592,
+      "longitude": 77.5554862,
+      "tags": {
+        "highway": "steps",
+        "stairs:type": "full",
+        "step_count": "32"
+      }
+    },
+    {
+      "id": "way/320143479",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0782727,
+      "longitude": 77.5555231,
+      "tags": {
+        "highway": "steps"
+      }
+    },
+    {
+      "id": "way/1223215374",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0781459,
+      "longitude": 77.5552924,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1223215375",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0781586,
+      "longitude": 77.5552781,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1223215376",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0781268,
+      "longitude": 77.5553626,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1223215377",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0782185,
+      "longitude": 77.5554142,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1223215378",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0780306,
+      "longitude": 77.5558148,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1223215379",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0777931,
+      "longitude": 77.5558492,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1524577513",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0780586,
+      "longitude": 77.5545846,
+      "tags": {
+        "highway": "bridge",
+        "surface": "metal"
+      }
+    }
+  ]
+}

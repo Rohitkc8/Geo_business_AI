@@ -1,0 +1,453 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 8.076752,
+      "center_longitude": 77.54743380000001,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-06T09:52:46.266615+00:00",
+    "query_hash": "1a56c2c4614473eeb227df5d797d1450",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 41
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/13503976401",
+      "name": "Prathiba",
+      "category": "restaurant",
+      "latitude": 8.0792337,
+      "longitude": 77.5487646,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Prathiba"
+      }
+    },
+    {
+      "id": "node/13503976402",
+      "name": "Hotel Sagha",
+      "category": "restaurant",
+      "latitude": 8.0792295,
+      "longitude": 77.5485421,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Hotel Sagha"
+      }
+    },
+    {
+      "id": "node/13503976486",
+      "name": "Capeista",
+      "category": "restaurant",
+      "latitude": 8.0791516,
+      "longitude": 77.5444421,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Capeista"
+      }
+    },
+    {
+      "id": "way/56394995",
+      "name": "Beach Road",
+      "category": "road",
+      "latitude": 8.0806452,
+      "longitude": 77.5434598,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Beach Road"
+      }
+    },
+    {
+      "id": "way/104700734",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0795947,
+      "longitude": 77.5470749,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104700739",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0803761,
+      "longitude": 77.5464344,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104700740",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0803284,
+      "longitude": 77.5479388,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104700742",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0795257,
+      "longitude": 77.5510114,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/104700744",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0807718,
+      "longitude": 77.5464704,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104700747",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0805272,
+      "longitude": 77.5469544,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104700750",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0808074,
+      "longitude": 77.5488965,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104700752",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0797054,
+      "longitude": 77.5506262,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/104700758",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0793379,
+      "longitude": 77.5510071,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/104700765",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.078609,
+      "longitude": 77.5460806,
+      "tags": {
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/104700772",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0795017,
+      "longitude": 77.5498037,
+      "tags": {
+        "highway": "pedestrian"
+      }
+    },
+    {
+      "id": "way/104700778",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0801219,
+      "longitude": 77.5483186,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104700779",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0811668,
+      "longitude": 77.5491006,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104700781",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.081025,
+      "longitude": 77.5468116,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104700782",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0807523,
+      "longitude": 77.5487581,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104700785",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0806131,
+      "longitude": 77.5490874,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104702257",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0803086,
+      "longitude": 77.5490918,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/253596582",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0788467,
+      "longitude": 77.5507527,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/254756102",
+      "name": "Beach Road",
+      "category": "road",
+      "latitude": 8.0802063,
+      "longitude": 77.5488936,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Beach Road"
+      }
+    },
+    {
+      "id": "way/364676678",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0804426,
+      "longitude": 77.5461643,
+      "tags": {
+        "highway": "service",
+        "layer": "-1",
+        "tunnel": "building_passage"
+      }
+    },
+    {
+      "id": "way/364676680",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0805287,
+      "longitude": 77.5463517,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1471635394",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0783288,
+      "longitude": 77.5508338,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635401",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0788964,
+      "longitude": 77.5506562,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635402",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0787739,
+      "longitude": 77.5504217,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635405",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0790545,
+      "longitude": 77.5500003,
+      "tags": {
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "id": "way/1471635406",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.079068,
+      "longitude": 77.5499344,
+      "tags": {
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "id": "way/1471635407",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0791251,
+      "longitude": 77.5499636,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635409",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0789792,
+      "longitude": 77.54997,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635412",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0788982,
+      "longitude": 77.5479475,
+      "tags": {
+        "highway": "track"
+      }
+    },
+    {
+      "id": "way/1471635413",
+      "name": "Unnamed Feature",
+      "category": "restaurant",
+      "latitude": 8.0787617,
+      "longitude": 77.5473401,
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes"
+      }
+    },
+    {
+      "id": "way/1471635414",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0790115,
+      "longitude": 77.5474271,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635415",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0788376,
+      "longitude": 77.5469269,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635416",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0789448,
+      "longitude": 77.5473792,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635417",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0788176,
+      "longitude": 77.5468648,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635418",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0789098,
+      "longitude": 77.5468161,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635419",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0781629,
+      "longitude": 77.5462248,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1472354008",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0807454,
+      "longitude": 77.550047,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    }
+  ]
+}

@@ -57,8 +57,8 @@ class GeoDataService:
         """
         Fetch geographic features from Overpass API or cache.
         """
-        # Create a unique query hash based on inputs
-        query_key = f"{lat}_{lon}_{radius}"
+        # Create a unique query hash based on inputs (v2 to invalidate old missing-relations cache)
+        query_key = f"{lat}_{lon}_{radius}_v2"
         query_hash = hashlib.md5(query_key.encode('utf-8')).hexdigest()
         
         raw_file = os.path.join(self.raw_dir, f"{query_hash}.json")
@@ -77,15 +77,19 @@ class GeoDataService:
         (
           node["amenity"~"restaurant|cafe|fast_food|pharmacy|bank|school|college|university|hospital|clinic|doctors"](around:{radius},{lat},{lon});
           way["amenity"~"restaurant|cafe|fast_food|pharmacy|bank|school|college|university|hospital|clinic|doctors"](around:{radius},{lat},{lon});
+          relation["amenity"~"restaurant|cafe|fast_food|pharmacy|bank|school|college|university|hospital|clinic|doctors"](around:{radius},{lat},{lon});
           
           node["shop"](around:{radius},{lat},{lon});
           way["shop"](around:{radius},{lat},{lon});
+          relation["shop"](around:{radius},{lat},{lon});
           
           node["office"](around:{radius},{lat},{lon});
           way["office"](around:{radius},{lat},{lon});
+          relation["office"](around:{radius},{lat},{lon});
           
           node["highway"~"bus_stop|platform"](around:{radius},{lat},{lon});
           way["highway"](around:{radius},{lat},{lon});
+          relation["highway"~"bus_stop|platform"](around:{radius},{lat},{lon});
         );
         out center;
         """

@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 9.175314100000001,
+      "center_longitude": 79.4202555,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T10:42:55.967555+00:00",
+    "query_hash": "be290a44cb1bb3a4a19bc5ded00cbae7",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 4
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/7200117466",
+      "name": "Danushkodi (village)",
+      "category": "bus_stop",
+      "latitude": 9.1778804,
+      "longitude": 79.4170828,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Danushkodi (village)",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "way/96066112",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 9.1727321,
+      "longitude": 79.4238283,
+      "tags": {
+        "highway": "path"
+      }
+    },
+    {
+      "id": "way/626383137",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 9.1795924,
+      "longitude": 79.4098654,
+      "tags": {
+        "highway": "path"
+      }
+    },
+    {
+      "id": "way/1366383170",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 9.1721771,
+      "longitude": 79.4239888,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "oneway": "no",
+        "ref": "NH87",
+        "surface": "asphalt"
+      }
+    }
+  ]
+}

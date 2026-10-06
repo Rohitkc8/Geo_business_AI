@@ -34,7 +34,7 @@ import {
 import './App.css'
 
 
-const API = 'http://127.0.0.1:8000/api'
+const API = 'http://localhost:8000/api'
 const CELL = 0.005
 
 type Mode = 'land' | 'business'
@@ -92,26 +92,45 @@ function heat(score: number, min: number, max: number) {
 const formatNum = (n: number | null | undefined, suffix = '') => 
   n === null || n === undefined ? 'N/A' : `${n}${suffix}`
 
-const getCategoryColor = (props: any) => {
-  if (!props) return '#94a3b8';
-  const cat = props.category || props.amenity || props.shop || props.healthcare || props.office || props.leisure || '';
-  if (!cat) return '#8b5cf6';
+const isFeatureCompetitor = (feature: any, business: string) => {
+  const p = feature.properties || {};
+  const am = (p.amenity || '').toLowerCase();
+  const sh = (p.shop || '').toLowerCase();
+  const cat = (p.category || '').toLowerCase();
+  const b = business.toLowerCase();
   
-  const colors: Record<string, string> = {
-    'pharmacy': '#10b981', // green
-    'restaurant': '#3b82f6', // blue
-    'fast_food': '#3b82f6',
-    'cafe': '#f59e0b',
-    'bank': '#f97316',
-    'hospital': '#ec4899',
-    'clinic': '#ec4899',
-    'school': '#eab308',
-    'college': '#eab308',
-    'supermarket': '#14b8a6',
-    'convenience': '#14b8a6',
-    'grocery': '#14b8a6',
-  };
-  return colors[cat.toLowerCase()] || '#8b5cf6';
+  if (b === 'restaurant' && ['restaurant', 'fast_food'].includes(am)) return true;
+  if (b === 'cafe' && am === 'cafe') return true;
+  if (b === 'pharmacy' && am === 'pharmacy') return true;
+  if (b === 'bank' && am === 'bank') return true;
+  if (b === 'school' && ['school', 'college', 'university', 'education'].includes(cat || am)) return true;
+  if (b === 'hospital' && ['hospital', 'clinic', 'doctors', 'healthcare'].includes(cat || am)) return true;
+  if (b === 'grocery' && ['supermarket', 'convenience', 'grocery', 'grocery_store'].includes(cat || sh)) return true;
+  
+  return cat === b || am === b || sh === b;
+};
+
+const getCategoryColor = (props: any, targetBusiness?: string) => {
+  if (!props) return '#94a3b8';
+  
+  if (targetBusiness && isFeatureCompetitor({ properties: props }, targetBusiness)) {
+    return '#ef4444'; // Red for competitors
+  }
+  
+  const am = (props.amenity || '').toLowerCase();
+  const sh = (props.shop || '').toLowerCase();
+  const cat = (props.category || '').toLowerCase();
+
+  if (['pharmacy'].includes(am)) return '#10b981'; // green
+  if (['restaurant', 'fast_food'].includes(am)) return '#3b82f6'; // blue
+  if (['cafe'].includes(am)) return '#f59e0b'; // orange
+  if (['bank'].includes(am)) return '#f97316'; // orange-red
+  if (['hospital', 'clinic', 'doctors', 'healthcare'].includes(cat || am)) return '#ec4899'; // pink
+  if (['school', 'college', 'university', 'education'].includes(cat || am)) return '#eab308'; // yellow
+  if (['supermarket', 'convenience', 'grocery', 'grocery_store'].includes(cat || sh)) return '#14b8a6'; // teal
+  if (['bus_stop', 'road', 'platform'].includes(cat || am)) return '#94a3b8'; // grey
+  
+  return '#8b5cf6'; // purple for others
 }
 
 // Colour palette for empty-land parcel types
@@ -137,50 +156,101 @@ function getLandColor(landType: string): string {
 }
 
 // --- Dashboard View Component ---
-const DashboardView = ({ center, onNavigate }: { center: [number, number], onNavigate: (p: Page) => void }) => (
-  <div className="page-content">
+const DashboardView = ({ center, onNavigate }: { center: [number, number], onNavigate: (p: Page, m?: Mode) => void }) => (
+  <div className="page-content fade-in">
     <div className="page-header">
       <div>
         <h1>Dashboard</h1>
-        <p>Overview of your business intelligence.</p>
+        <p>GeoBusiness AI — Geographic business and location suitability prototype.</p>
       </div>
       <div className="header-actions">
-        <button className="btn btn-outline"><MapPin size={16}/> Manage Locations</button>
-        <button className="btn btn-primary" onClick={() => onNavigate('analysis')}><PlusCircle size={16}/> New Analysis</button>
+        <button className="btn btn-outline" onClick={() => onNavigate('locations')}><MapPin size={16}/> Saved Locations</button>
       </div>
     </div>
     
-    <div className="embedded-map-container">
-      <MapContainer center={center} zoom={13} className="dashboard-map">
-        {/* Light Mode OSM Map exactly like the screenshot */}
-        <TileLayer 
-          attribution="&copy; OpenStreetMap contributors" 
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
-        />
-        <CircleMarker center={center} radius={6} pathOptions={{ color: '#ef4444', fillColor: '#ef4444', fillOpacity: 1 }} />
-      </MapContainer>
+    <div className="dashboard-grid">
+      {/* Quick Actions for the Two Main Workflows */}
+      <div className="workflow-card land-workflow" onClick={() => onNavigate('analysis', 'land')}>
+        <div className="workflow-icon"><Layers size={24} /></div>
+        <div className="workflow-content">
+          <h3>Evaluate Land</h3>
+          <span className="workflow-subtitle">LAND → BUSINESS</span>
+          <p>Analyse a selected location and rank supported business categories based on demographics and POIs.</p>
+        </div>
+        <ArrowRight className="workflow-arrow" size={20} />
+      </div>
+
+      <div className="workflow-card business-workflow" onClick={() => onNavigate('analysis', 'business')}>
+        <div className="workflow-icon"><Building2 size={24} /></div>
+        <div className="workflow-content">
+          <h3>Place Business</h3>
+          <span className="workflow-subtitle">BUSINESS → LAND</span>
+          <p>Select a business category and search an area to rank candidate geographic cells by suitability score.</p>
+        </div>
+        <ArrowRight className="workflow-arrow" size={20} />
+      </div>
     </div>
 
-    <div className="recent-section">
+    <div className="dashboard-metrics">
+      <div className="metric-card">
+        <Activity className="metric-icon" size={20} />
+        <div className="metric-details">
+          <span className="metric-val">2 AI Models</span>
+          <span className="metric-label">Random Forest & Gradient Boosting</span>
+        </div>
+      </div>
+      <div className="metric-card">
+        <MapIcon className="metric-icon" size={20} />
+        <div className="metric-details">
+          <span className="metric-val">10+</span>
+          <span className="metric-label">Spatial Features Derived</span>
+        </div>
+      </div>
+      <div className="metric-card">
+        <Building2 className="metric-icon" size={20} />
+        <div className="metric-details">
+          <span className="metric-val">Multiple</span>
+          <span className="metric-label">Business Categories Supported</span>
+        </div>
+      </div>
+    </div>
+
+    <div className="recent-section mt-4">
       <div className="section-header">
         <h3>Recent Analyses</h3>
-        <span className="total-count">1 total reports</span>
+        <span className="total-count">2 total reports</span>
       </div>
       
       <div className="recent-grid">
         <div className="report-card">
           <div className="report-card-header">
-            <span className="badge">Retail</span>
+            <span className="badge" style={{ background: 'rgba(59, 130, 246, 0.15)', color: '#3b82f6' }}>Pharmacy</span>
+            <span className="date"><Calendar size={12}/> Oct 6, 2026</span>
+          </div>
+          <h4>Coimbatore South Expansion</h4>
+          <div className="location-info">
+            <MapPin size={14} className="text-primary"/> Coimbatore, Tamil Nadu
+          </div>
+          <div className="target-info">Workflow: Business → Land</div>
+          
+          <button className="view-report-btn" onClick={() => onNavigate('analysis', 'business')}>
+            Open Analysis <ArrowRight size={14}/>
+          </button>
+        </div>
+
+        <div className="report-card">
+          <div className="report-card-header">
+            <span className="badge" style={{ background: 'rgba(16, 185, 129, 0.15)', color: '#10b981' }}>Land Evaluation</span>
             <span className="date"><Calendar size={12}/> Oct 5, 2026</span>
           </div>
-          <h4>Analysis #192</h4>
+          <h4>RS Puram Plot</h4>
           <div className="location-info">
             <MapPin size={14} className="text-primary"/> 11.0168, 76.9558
           </div>
-          <div className="target-info">Targeting: general public</div>
+          <div className="target-info">Workflow: Land → Business</div>
           
-          <button className="view-report-btn">
-            View Report <ArrowRight size={14}/>
+          <button className="view-report-btn" onClick={() => onNavigate('analysis', 'land')}>
+            Open Analysis <ArrowRight size={14}/>
           </button>
         </div>
       </div>
@@ -255,8 +325,109 @@ function MapLegend({ mode }: { mode: Mode }) {
   )
 }
 
+// ── Locations View Component ──────────────────────────────────────────────────
+const LocationsView = () => (
+  <div className="page-content fade-in">
+    <div className="page-header">
+      <div>
+        <h1>Saved Locations</h1>
+        <p>Manage and compare your bookmarked hotspots.</p>
+      </div>
+      <div className="header-actions">
+        <button className="btn btn-primary"><MapIcon size={16}/> View All on Map</button>
+      </div>
+    </div>
+    
+    <div className="locations-grid">
+      {[1, 2, 3].map(i => (
+        <div key={i} className="location-card">
+          <div className="location-card-image"></div>
+          <div className="location-card-content">
+            <div className="loc-header">
+              <h4>Coimbatore South - Zone {i}</h4>
+              <span className="badge">Retail</span>
+            </div>
+            <div className="loc-meta">
+              <span className="loc-coord"><MapPin size={14}/> 10.998{i}, 76.96{i}2</span>
+              <span className="loc-score">Score: 8{i}%</span>
+            </div>
+            <p className="loc-desc">High foot traffic area with excellent proximity to public transport and competitors.</p>
+            <div className="loc-actions">
+              <button className="btn btn-outline btn-sm">Analyze</button>
+              <button className="btn btn-outline btn-sm text-danger"><X size={14}/></button>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+)
+
+// ── Settings View Component ──────────────────────────────────────────────────
+const SettingsView = ({ theme, toggleTheme, showLabels, toggleLabels }: { theme: 'dark' | 'light', toggleTheme: () => void, showLabels: boolean, toggleLabels: () => void }) => (
+  <div className="page-content fade-in">
+    <div className="page-header">
+      <div>
+        <h1>Settings</h1>
+        <p>Customize your GeoBusiness experience.</p>
+      </div>
+    </div>
+    
+    <div className="settings-container">
+      <div className="settings-section">
+        <h3>Profile</h3>
+        <div className="settings-card">
+          <div className="profile-edit">
+            <div className="avatar-lg">R</div>
+            <div className="profile-details">
+              <input type="text" defaultValue="Rohit" className="settings-input" />
+              <input type="email" defaultValue="rohitc295@gmail.com" className="settings-input" />
+              <button className="btn btn-primary mt-2">Save Profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className="settings-section">
+        <h3>Preferences</h3>
+        <div className="settings-card">
+          <div className="setting-row">
+            <div>
+              <h4>Dark Mode</h4>
+              <p>Toggle between light and dark theme.</p>
+            </div>
+            <label className="switch">
+              <input type="checkbox" checked={theme === 'dark'} onChange={toggleTheme} />
+              <span className="slider round"></span>
+            </label>
+          </div>
+          <div className="setting-row">
+            <div>
+              <h4>Map Labels</h4>
+              <p>Show POI names on the map by default.</p>
+            </div>
+            <label className="switch">
+              <input type="checkbox" checked={showLabels} onChange={toggleLabels} />
+              <span className="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+)
+
 export default function App() {
   const [activePage, setActivePage] = useState<Page>('dashboard')
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark')
+  const [showLabels, setShowLabels] = useState(false)
+  
+  const toggleTheme = () => setTheme(t => t === 'dark' ? 'light' : 'dark')
+  const toggleLabels = () => setShowLabels(s => !s)
+
+  useEffect(() => {
+    document.body.className = theme === 'light' ? 'light-theme' : '';
+  }, [theme]);
   
   const [mode, setMode] = useState<Mode>('land')
   const [query, setQuery] = useState('')
@@ -271,6 +442,7 @@ export default function App() {
   const [showEmptyLand, setShowEmptyLand] = useState(false)
   const [loadingLand, setLoadingLand] = useState(false)
   const [selectedLand, setSelectedLand] = useState<LandParcel | null>(null)
+  const [budgetEstimate, setBudgetEstimate] = useState<any>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
@@ -289,6 +461,7 @@ export default function App() {
     setCandidates([])
     setSelected(null)
     setRecommendations([])
+    setBudgetEstimate(null)
     setGeoJson(null)
     setEmptyLand(null)
     setShowEmptyLand(false)
@@ -317,6 +490,7 @@ export default function App() {
         const analysis = await analysisResponse.json()
         if (!analysisResponse.ok) throw new Error(analysis.detail || 'Model 1 could not analyse this location.')
         setRecommendations(analysis.recommendations || [])
+        setBudgetEstimate(analysis.budget_estimate || null)
         if (mapResponse.ok) setGeoJson(await mapResponse.json())
 
         // Fetch empty land in background — don't block the main result
@@ -324,9 +498,11 @@ export default function App() {
         fetch(`${API}/empty-land?lat=${position[0]}&lon=${position[1]}&radius=1500`)
           .then(r => r.ok ? r.json() : null)
           .then(data => {
-            if (data && data.features?.length > 0) {
+            if (data) {
               setEmptyLand(data)
-              setShowEmptyLand(true) // auto-show when parcels are found
+              if (data.features?.length > 0) {
+                setShowEmptyLand(true) // auto-show when parcels are found
+              }
             }
           })
           .catch(() => {})
@@ -336,10 +512,16 @@ export default function App() {
           method: 'POST', 
           headers: { 'Content-Type': 'application/json' }, 
           body: JSON.stringify({ business_type: business, start_lat: position[0], start_lon: position[1], steps: 4, step_size: CELL }) 
-        })
+        });
         const data = await response.json()
         if (!response.ok) throw new Error(data.detail || 'Model 2 could not evaluate this area.')
         setCandidates(data.candidates || [])
+        
+        // Fetch map data in background so it doesn't block the candidates showing up
+        fetch(`${API}/map-data?lat=${position[0]}&lon=${position[1]}&radius=2500`)
+          .then(r => r.ok ? r.json() : null)
+          .then(d => { if(d) setGeoJson(d) })
+          .catch(() => {})
       }
     } catch (err) { 
       setError(err instanceof Error ? err.message : 'Unable to complete the analysis.') 
@@ -410,14 +592,18 @@ export default function App() {
               <p>rohitc295@gmail.com</p>
             </div>
           </div>
-          <button className="bottom-link"><Sun size={16}/> Light Mode</button>
+          <button className="bottom-link" onClick={toggleTheme}>
+            <Sun size={16}/> {theme === 'dark' ? 'Light Mode' : 'Dark Mode'}
+          </button>
           <button className="bottom-link"><LogOut size={16}/> Sign Out</button>
         </div>
       </aside>
 
       {/* Main Content Area */}
       <main className="main-area">
-        {activePage === 'dashboard' && <DashboardView center={center} onNavigate={setActivePage} />}
+        {activePage === 'dashboard' && <DashboardView center={center} onNavigate={(p, m) => { setActivePage(p); if (m) setMode(m); }} />}
+        {activePage === 'locations' && <LocationsView />}
+        {activePage === 'settings' && <SettingsView theme={theme} toggleTheme={toggleTheme} showLabels={showLabels} toggleLabels={toggleLabels} />}
         
         {/* Full Analysis Tool Page */}
         <div className={`analysis-view ${activePage === 'analysis' ? 'visible' : 'hidden'}`}>
@@ -484,25 +670,51 @@ export default function App() {
             {error && <div className="error-box"><Activity size={16}/> {error}</div>}
 
             <div className="results-container scrollable">
+              {/* Budget Estimate */}
+              {mode === 'land' && budgetEstimate && (
+                <div className="results-wrapper">
+                  <h3 className="section-title">Estimated Land Budget (per cent)</h3>
+                  <div className="data-card" style={{ borderColor: '#10b981', backgroundColor: 'rgba(16, 185, 129, 0.05)' }}>
+                    <div className="card-header" style={{ marginBottom: '8px' }}>
+                      <div className="biz-title">
+                        <h4>Budget Estimate</h4>
+                      </div>
+                      <span className="score-badge" style={{ backgroundColor: '#10b981', color: '#ffffff' }}>{budgetEstimate.formatted_price}</span>
+                    </div>
+                    <div className="factors">
+                      <div className="factor" style={{ color: '#a1a1aa', fontSize: '12px' }}>
+                        Based on {budgetEstimate.factors.source} (Pop. Density: {budgetEstimate.factors.population_density}, Road Dist: {budgetEstimate.factors.distance_to_road})
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               {/* Recommendations */}
               {mode === 'land' && recommendations.length > 0 && (
                 <div className="results-wrapper">
                   <h3 className="section-title">AI Recommendations</h3>
-                  {recommendations.map((r, i) => (
-                    <div key={r.business + i} className="data-card">
-                      <div className="card-header">
-                        <div className="biz-title">
-                          <h4>{r.business}</h4>
+                  {recommendations.map((r, i) => {
+                    const count = geoJson?.features?.filter((f: any) => isFeatureCompetitor(f, r.business)).length || 0;
+                    return (
+                      <div key={r.business + i} className="data-card">
+                        <div className="card-header">
+                          <div className="biz-title">
+                            <h4>{r.business}</h4>
+                            <span className="competitor-count-badge" style={{ fontSize: '11px', color: '#ef4444', marginLeft: '8px' }}>
+                              {count} {count === 1 ? 'competitor' : 'competitors'} nearby
+                            </span>
+                          </div>
+                          <span className="score-badge">{r.score_percent}%</span>
                         </div>
-                        <span className="score-badge">{r.score_percent}%</span>
+                        <div className="factors">
+                          {r.positive_factors.slice(0, 2).map((x, i) => (
+                            <div key={i} className="factor pos"><ChevronRight size={14} /> {x}</div>
+                          ))}
+                        </div>
                       </div>
-                      <div className="factors">
-                        {r.positive_factors.slice(0, 2).map((x, i) => (
-                          <div key={i} className="factor pos"><ChevronRight size={14} /> {x}</div>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               )}
 
@@ -668,7 +880,14 @@ export default function App() {
               {/* Candidates */}
               {mode === 'business' && candidates.length > 0 && (
                 <div className="results-wrapper">
-                  <h3 className="section-title">Top Hotspots</h3>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+                    <h3 className="section-title" style={{ margin: 0 }}>Top Hotspots</h3>
+                    {geoJson && (
+                      <span className="badge" style={{ backgroundColor: '#ef4444', color: '#fff', fontSize: '11px', padding: '4px 8px', borderRadius: '12px' }}>
+                        {geoJson.features?.filter((f: any) => isFeatureCompetitor(f, business)).length || 0} Competitors Nearby
+                      </span>
+                    )}
+                  </div>
                   {candidates.map((c, i) => (
                     <button 
                       type="button"
@@ -719,14 +938,18 @@ export default function App() {
                 </CircleMarker>
               )}
               
-              {mode === 'land' && geoJson && (
+              {(mode === 'land' || mode === 'business') && geoJson && (
                 <GeoJSON 
-                  key={JSON.stringify(geoJson)}
-                  data={geoJson} 
+                  key={`${JSON.stringify(geoJson)}-${showLabels}`}
+                  data={mode === 'business' ? { 
+                    ...geoJson, 
+                    features: (geoJson.features || []).filter((f: any) => isFeatureCompetitor(f, business))
+                  } : geoJson} 
                   pointToLayer={(feature, latlng) => {
-                    const color = getCategoryColor(feature.properties);
+                    const color = getCategoryColor(feature.properties, mode === 'business' ? business : undefined);
+                    const isCompetitor = mode === 'business' && isFeatureCompetitor(feature, business);
                     return L.circleMarker(latlng, { 
-                      radius: 5, 
+                      radius: isCompetitor ? 7 : 5, 
                       color: '#ffffff', 
                       weight: 1.5, 
                       fillColor: color, 
@@ -736,8 +959,14 @@ export default function App() {
                   onEachFeature={(feature, layer) => {
                     if (feature.properties) {
                       const name = feature.properties.name || 'Unknown Location';
-                      const cat = feature.properties.category || feature.properties.amenity || feature.properties.shop || 'Amenity';
-                      layer.bindPopup(`<strong>${name}</strong><br/><span style="text-transform:capitalize;color:#666;font-size:0.8rem">${cat}</span>`);
+                      const p = feature.properties;
+                      const displayCat = p.amenity || p.shop || p.category || 'Amenity';
+                      const isCompetitor = mode === 'business' && isFeatureCompetitor(feature, business);
+                      const tag = isCompetitor ? '<br/><span style="color:#ef4444;font-weight:bold">Competitor</span>' : '';
+                      layer.bindPopup(`<strong>${name}</strong><br/><span style="text-transform:capitalize;color:#666;font-size:0.8rem">${displayCat}</span>${tag}`);
+                      if (showLabels && name !== 'Unknown Location') {
+                        layer.bindTooltip(name, { permanent: true, direction: 'right', className: 'poi-label-tooltip', offset: [10, 0] });
+                      }
                     }
                   }}
                 />
@@ -811,29 +1040,6 @@ export default function App() {
           </div>
         </div>
         
-        {activePage === 'locations' && (
-          <div className="page-content">
-            <div className="page-header">
-              <div>
-                <h1>Saved Locations</h1>
-                <p>Manage your saved business locations.</p>
-              </div>
-            </div>
-            <p className="text-muted">No locations saved yet.</p>
-          </div>
-        )}
-
-        {activePage === 'settings' && (
-          <div className="page-content">
-            <div className="page-header">
-              <div>
-                <h1>Settings</h1>
-                <p>Manage your account preferences.</p>
-              </div>
-            </div>
-            <p className="text-muted">Settings panel goes here.</p>
-          </div>
-        )}
       </main>
     </div>
   )

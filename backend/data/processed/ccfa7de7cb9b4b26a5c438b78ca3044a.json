@@ -1,0 +1,470 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 8.076752,
+      "center_longitude": 77.5524338,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-06T09:53:08.586533+00:00",
+    "query_hash": "ccfa7de7cb9b4b26a5c438b78ca3044a",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 42
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/2152043262",
+      "name": "Kanya Handicrafts",
+      "category": "shop_interior_decoration",
+      "latitude": 8.0809035,
+      "longitude": 77.5508605,
+      "tags": {
+        "name": "Kanya Handicrafts",
+        "shop": "interior_decoration"
+      }
+    },
+    {
+      "id": "node/13503976309",
+      "name": "Prasanthi Hotel",
+      "category": "restaurant",
+      "latitude": 8.0808065,
+      "longitude": 77.5507575,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Prasanthi Hotel"
+      }
+    },
+    {
+      "id": "node/13503976314",
+      "name": "Hotel Savana",
+      "category": "restaurant",
+      "latitude": 8.0804794,
+      "longitude": 77.5507783,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Hotel Savana"
+      }
+    },
+    {
+      "id": "node/13503976401",
+      "name": "Prathiba",
+      "category": "restaurant",
+      "latitude": 8.0792337,
+      "longitude": 77.5487646,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Prathiba"
+      }
+    },
+    {
+      "id": "way/104700742",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0795257,
+      "longitude": 77.5510114,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/104700752",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0797054,
+      "longitude": 77.5506262,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/104700758",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0793379,
+      "longitude": 77.5510071,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/104700772",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0795017,
+      "longitude": 77.5498037,
+      "tags": {
+        "highway": "pedestrian"
+      }
+    },
+    {
+      "id": "way/104708226",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0780819,
+      "longitude": 77.5554314,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/199708003",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0809117,
+      "longitude": 77.5503224,
+      "tags": {
+        "highway": "residential",
+        "surface": "dirt"
+      }
+    },
+    {
+      "id": "way/253586129",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0808132,
+      "longitude": 77.5517497,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/253596086",
+      "name": "Sannathi Street",
+      "category": "road",
+      "latitude": 8.0807043,
+      "longitude": 77.5508346,
+      "tags": {
+        "highway": "pedestrian",
+        "name": "Sannathi Street"
+      }
+    },
+    {
+      "id": "way/253596582",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0788467,
+      "longitude": 77.5507527,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/254756102",
+      "name": "Beach Road",
+      "category": "road",
+      "latitude": 8.0802063,
+      "longitude": 77.5488936,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Beach Road"
+      }
+    },
+    {
+      "id": "way/319385609",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0777639,
+      "longitude": 77.5540027,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/320143477",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0781446,
+      "longitude": 77.5552165,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/320143478",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0780592,
+      "longitude": 77.5554862,
+      "tags": {
+        "highway": "steps",
+        "stairs:type": "full",
+        "step_count": "32"
+      }
+    },
+    {
+      "id": "way/320143479",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0782727,
+      "longitude": 77.5555231,
+      "tags": {
+        "highway": "steps"
+      }
+    },
+    {
+      "id": "way/390016067",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0810175,
+      "longitude": 77.5517952,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/438750597",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0782049,
+      "longitude": 77.5540402,
+      "tags": {
+        "area": "yes",
+        "highway": "pedestrian"
+      }
+    },
+    {
+      "id": "way/438752387",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0780325,
+      "longitude": 77.5541402,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/438752388",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0781584,
+      "longitude": 77.5541013,
+      "tags": {
+        "covered": "yes",
+        "highway": "footway",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/438752389",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0783134,
+      "longitude": 77.5540591,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/438752390",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0781462,
+      "longitude": 77.5540923,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/479752689",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0808211,
+      "longitude": 77.5512527,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1223215374",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0781459,
+      "longitude": 77.5552924,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1223215375",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0781586,
+      "longitude": 77.5552781,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1223215376",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0781268,
+      "longitude": 77.5553626,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1223215377",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0782185,
+      "longitude": 77.5554142,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1223215378",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0780306,
+      "longitude": 77.5558148,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1223215379",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0777931,
+      "longitude": 77.5558492,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635394",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0783288,
+      "longitude": 77.5508338,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635401",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0788964,
+      "longitude": 77.5506562,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635402",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0787739,
+      "longitude": 77.5504217,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635405",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0790545,
+      "longitude": 77.5500003,
+      "tags": {
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "id": "way/1471635406",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.079068,
+      "longitude": 77.5499344,
+      "tags": {
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "id": "way/1471635407",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0791251,
+      "longitude": 77.5499636,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635409",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0789792,
+      "longitude": 77.54997,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1472354008",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0807454,
+      "longitude": 77.550047,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1472354009",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.080754,
+      "longitude": 77.5501256,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1472354010",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0807426,
+      "longitude": 77.5500399,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1524577513",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0780586,
+      "longitude": 77.5545846,
+      "tags": {
+        "highway": "bridge",
+        "surface": "metal"
+      }
+    }
+  ]
+}

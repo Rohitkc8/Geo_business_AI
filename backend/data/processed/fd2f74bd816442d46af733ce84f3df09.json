@@ -1,0 +1,849 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 8.081752,
+      "center_longitude": 77.54243380000001,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-06T09:53:54.668296+00:00",
+    "query_hash": "fd2f74bd816442d46af733ce84f3df09",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 74
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/987491502",
+      "name": "Gujarati Bhavan",
+      "category": "restaurant",
+      "latitude": 8.0829273,
+      "longitude": 77.539247,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Gujarati Bhavan"
+      }
+    },
+    {
+      "id": "node/2376007025",
+      "name": "Mary Inmiculate High School",
+      "category": "education",
+      "latitude": 8.0816162,
+      "longitude": 77.5453485,
+      "tags": {
+        "amenity": "school",
+        "check_date": "2023-01-16",
+        "name": "Mary Inmiculate High School",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "id": "node/13503976486",
+      "name": "Capeista",
+      "category": "restaurant",
+      "latitude": 8.0791516,
+      "longitude": 77.5444421,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Capeista"
+      }
+    },
+    {
+      "id": "node/13504472484",
+      "name": "Hotel Winco",
+      "category": "restaurant",
+      "latitude": 8.0818828,
+      "longitude": 77.5416347,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Hotel Winco"
+      }
+    },
+    {
+      "id": "node/13504498709",
+      "name": "Eden",
+      "category": "grocery_store",
+      "latitude": 8.081761,
+      "longitude": 77.5443705,
+      "tags": {
+        "name": "Eden",
+        "shop": "convenience"
+      }
+    },
+    {
+      "id": "node/13504498710",
+      "name": "Sathiya Sky Tech",
+      "category": "shop_mobile_phone",
+      "latitude": 8.081861,
+      "longitude": 77.5448624,
+      "tags": {
+        "name": "Sathiya Sky Tech",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "id": "node/13511852134",
+      "name": "Dosa Corner",
+      "category": "restaurant",
+      "latitude": 8.0822039,
+      "longitude": 77.5381051,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Dosa Corner"
+      }
+    },
+    {
+      "id": "way/56394995",
+      "name": "Beach Road",
+      "category": "road",
+      "latitude": 8.0806452,
+      "longitude": 77.5434598,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Beach Road"
+      }
+    },
+    {
+      "id": "way/85133976",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0825489,
+      "longitude": 77.5392311,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104700739",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0803761,
+      "longitude": 77.5464344,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104700743",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0887288,
+      "longitude": 77.5292498,
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    {
+      "id": "way/104700744",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0807718,
+      "longitude": 77.5464704,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104700747",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0805272,
+      "longitude": 77.5469544,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104700765",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.078609,
+      "longitude": 77.5460806,
+      "tags": {
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/104700769",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0821884,
+      "longitude": 77.543141,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/104700781",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.081025,
+      "longitude": 77.5468116,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/104708218",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0851874,
+      "longitude": 77.5439306,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/104708221",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0856397,
+      "longitude": 77.5436811,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/104708222",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0829225,
+      "longitude": 77.548159,
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "id": "way/104708223",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0852169,
+      "longitude": 77.5436845,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/104708229",
+      "name": "Anju Koottu Vilai Road",
+      "category": "road",
+      "latitude": 8.0844982,
+      "longitude": 77.5458532,
+      "tags": {
+        "highway": "residential",
+        "lane_markings": "no",
+        "name": "Anju Koottu Vilai Road",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/104708235",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.084147,
+      "longitude": 77.5436639,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/104708248",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0854351,
+      "longitude": 77.5436883,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/104708254",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0833728,
+      "longitude": 77.5457445,
+      "tags": {
+        "highway": "residential",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/104708287",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0858489,
+      "longitude": 77.5437848,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/104708291",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0853252,
+      "longitude": 77.5450214,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/157804917",
+      "name": "Salem - Kochi - Kanyakumari Road",
+      "category": "road",
+      "latitude": 8.0850528,
+      "longitude": 77.5394117,
+      "tags": {
+        "dual_carriageway": "yes",
+        "expressway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Salem - Kochi - Kanyakumari Road",
+        "name:ur": "\u0633\u06cc\u0644\u0645 - \u06a9\u0648\u0686\u06cc - \u06a9\u0646\u06cc\u0627\u06a9\u0645\u0627\u0631\u06cc \u0631\u0648\u0688",
+        "oneway": "yes",
+        "ref": "NH44",
+        "ref:old": "NH7",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/188614642",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0803741,
+      "longitude": 77.5352632,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "no",
+        "source": "bing"
+      }
+    },
+    {
+      "id": "way/199708006",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0851792,
+      "longitude": 77.5457622,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/199708007",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0834328,
+      "longitude": 77.5462444,
+      "tags": {
+        "highway": "residential",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/199708025",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0832338,
+      "longitude": 77.5462359,
+      "tags": {
+        "highway": "residential",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/199708027",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0847486,
+      "longitude": 77.5450977,
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/199708029",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0862155,
+      "longitude": 77.5413899,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/215199150",
+      "name": "Salem - Kochi - Kanyakumari Road",
+      "category": "road",
+      "latitude": 8.0841706,
+      "longitude": 77.5393313,
+      "tags": {
+        "dual_carriageway": "yes",
+        "expressway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Salem - Kochi - Kanyakumari Road",
+        "name:ur": "\u0633\u06cc\u0644\u0645 - \u06a9\u0648\u0686\u06cc - \u06a9\u0646\u06cc\u0627\u06a9\u0645\u0627\u0631\u06cc \u0631\u0648\u0688",
+        "oneway": "yes",
+        "ref": "NH44",
+        "ref:old": "NH7",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/364676678",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0804426,
+      "longitude": 77.5461643,
+      "tags": {
+        "highway": "service",
+        "layer": "-1",
+        "tunnel": "building_passage"
+      }
+    },
+    {
+      "id": "way/364676680",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0805287,
+      "longitude": 77.5463517,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/374461587",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0808429,
+      "longitude": 77.5381848,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/374461589",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0813113,
+      "longitude": 77.5388598,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/374461592",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0812804,
+      "longitude": 77.5385389,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/387465239",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0830481,
+      "longitude": 77.5460839,
+      "tags": {
+        "highway": "residential",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/387465240",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0845937,
+      "longitude": 77.541913,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/387465259",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0825815,
+      "longitude": 77.5439302,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/387465277",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0830853,
+      "longitude": 77.5383053,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/387465283",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0822122,
+      "longitude": 77.545723,
+      "tags": {
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/387465286",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0861687,
+      "longitude": 77.5437493,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/387465305",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0844875,
+      "longitude": 77.5416206,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/387465313",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.079954,
+      "longitude": 77.5390505,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/387465320",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0811033,
+      "longitude": 77.5438444,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/387465325",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0827653,
+      "longitude": 77.5382745,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/387465332",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0813585,
+      "longitude": 77.5445029,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/387465347",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0797956,
+      "longitude": 77.5391277,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/387465353",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0809706,
+      "longitude": 77.5434433,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/387465354",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0821818,
+      "longitude": 77.5443559,
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/387465356",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0835567,
+      "longitude": 77.5449885,
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/387465358",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0823847,
+      "longitude": 77.5443575,
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/387465359",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0814056,
+      "longitude": 77.5442923,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/387465369",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0831115,
+      "longitude": 77.5447123,
+      "tags": {
+        "highway": "residential",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/387465374",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0861443,
+      "longitude": 77.5439502,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/548839367",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0805636,
+      "longitude": 77.542342,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/801528194",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0866256,
+      "longitude": 77.5412786,
+      "tags": {
+        "highway": "residential",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/807603051",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0812135,
+      "longitude": 77.5451498,
+      "tags": {
+        "highway": "service",
+        "source": "digitalglobe"
+      }
+    },
+    {
+      "id": "way/1083525433",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0795781,
+      "longitude": 77.5433635,
+      "tags": {
+        "highway": "service",
+        "service": "driveway",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1305507403",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0799129,
+      "longitude": 77.538133,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1350639270",
+      "name": "Salem - Kochi - Kanyakumari Road",
+      "category": "road",
+      "latitude": 8.0824689,
+      "longitude": 77.5404381,
+      "tags": {
+        "dual_carriageway": "yes",
+        "expressway": "yes",
+        "highway": "trunk",
+        "lanes": "3",
+        "name": "Salem - Kochi - Kanyakumari Road",
+        "name:ur": "\u0633\u06cc\u0644\u0645 - \u06a9\u0648\u0686\u06cc - \u06a9\u0646\u06cc\u0627\u06a9\u0645\u0627\u0631\u06cc \u0631\u0648\u0688",
+        "oneway": "yes",
+        "ref": "NH44",
+        "ref:old": "NH7",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1471635360",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0849898,
+      "longitude": 77.5453212,
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1471635423",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0818986,
+      "longitude": 77.5425714,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/1471635424",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0790787,
+      "longitude": 77.5418144,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471635425",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0793153,
+      "longitude": 77.540733,
+      "tags": {
+        "highway": "steps",
+        "incline": "up"
+      }
+    },
+    {
+      "id": "way/1471707629",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0794657,
+      "longitude": 77.5407563,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471707632",
+      "name": "Dheeran Bakery",
+      "category": "restaurant",
+      "latitude": 8.0818071,
+      "longitude": 77.5429464,
+      "tags": {
+        "amenity": "restaurant",
+        "building": "yes",
+        "name": "Dheeran Bakery"
+      }
+    },
+    {
+      "id": "way/1471707639",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0834941,
+      "longitude": 77.5458795,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1471707640",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0833805,
+      "longitude": 77.5445232,
+      "tags": {
+        "highway": "path",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/1471707645",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 8.0822831,
+      "longitude": 77.5449265,
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1471972941",
+      "name": "Kanniyakumari - Pazhaya Uchakkada Road",
+      "category": "road",
+      "latitude": 8.0846091,
+      "longitude": 77.5332666,
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "name": "Kanniyakumari - Pazhaya Uchakkada Road",
+        "ref": "SH179",
+        "surface": "asphalt"
+      }
+    }
+  ]
+}

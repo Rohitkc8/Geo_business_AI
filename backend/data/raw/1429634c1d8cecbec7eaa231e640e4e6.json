@@ -1,0 +1,59 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-06T09:48:46Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "way",
+      "id": 12984800,
+      "center": {
+        "lat": 38.275545,
+        "lon": -98.6364315
+      },
+      "nodes": [
+        119392356,
+        119388435,
+        119386569,
+        119362796,
+        119385163,
+        119392362,
+        119383800,
+        119381946,
+        119378814,
+        119370970,
+        119377306,
+        119392366,
+        119368332,
+        119376497,
+        119374782,
+        119392369,
+        119392370,
+        8961900202,
+        119392371,
+        8961900263,
+        119392375,
+        119392376,
+        119375243,
+        5646537299,
+        119392378,
+        119392379,
+        119382218
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Southeast 60 Road",
+        "surface": "unpaved",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Barton, KS",
+        "tiger:name_base": "60",
+        "tiger:name_direction_prefix": "SE",
+        "tiger:name_type": "Rd",
+        "tiger:zip_left": "67530",
+        "tiger:zip_right": "67530"
+      }
+    }
+  ]
+}

@@ -94,24 +94,10 @@ class SpatialFeatureEngineer:
             if distances:
                 distance_to_major_road = min(distances)
                 
-        # Try to use OSMnx for actual road length density if installed, otherwise fallback
-        road_density = 0
-        try:
-            import osmnx as ox
-            import networkx as nx
-            # Fetch graph within radius
-            # Setting simplify=True to just get road network lengths
-            ox.settings.log_console = False
-            ox.settings.use_cache = True
-            G = ox.graph_from_point((lat, lon), dist=radius, network_type='drive')
-            
-            total_length_m = sum([d['length'] for u, v, d in G.edges(data=True) if 'length' in d])
-            # Density as km of road per sq km
-            road_density = (total_length_m / 1000.0) / area_sq_km
-        except Exception as e:
-            # Fallback: estimate road density as count of highway nodes/ways per sq km
-            highway_count = sum(1 for f in features if 'highway' in f.get('tags', {}))
-            road_density = highway_count / area_sq_km if area_sq_km > 0 else 0
+        # Estimate road density as count of highway nodes/ways per sq km
+        # (Disabled OSMnx graph download as it causes severe performance issues during grid search)
+        highway_count = sum(1 for f in features if 'highway' in f.get('tags', {}))
+        road_density = highway_count / area_sq_km if area_sq_km > 0 else 0
 
         # 5. Assemble Feature Vector
         feature_vector = {

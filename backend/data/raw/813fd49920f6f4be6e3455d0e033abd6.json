@@ -1,0 +1,3535 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-06T10:09:07Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 2152043262,
+      "lat": 8.0809035,
+      "lon": 77.5508605,
+      "tags": {
+        "name": "Kanya Handicrafts",
+        "shop": "interior_decoration"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2152043507,
+      "lat": 8.0813875,
+      "lon": 77.5508171,
+      "tags": {
+        "amenity": "cafe",
+        "name": "Tonys Internetcafe"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4367453289,
+      "lat": 8.0836749,
+      "lon": 77.549599,
+      "tags": {
+        "addr:street": "Main Road",
+        "amenity": "restaurant",
+        "cuisine": "seafood;indian;breakfast;local",
+        "name": "Hotel Sangam",
+        "opening_hours": "Mo-Su 09:00-21:00"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4638963790,
+      "lat": 8.0811324,
+      "lon": 77.5508412,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Hotel saravana"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4679625590,
+      "lat": 8.0822536,
+      "lon": 77.5503104,
+      "tags": {
+        "name:en": "Maria Travels",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7844921913,
+      "lat": 8.0835552,
+      "lon": 77.5513421,
+      "tags": {
+        "addr:district": "Kanyakumari",
+        "addr:postcode": "629702",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Deivanayagam Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7844921929,
+      "lat": 8.0830107,
+      "lon": 77.5512866,
+      "tags": {
+        "addr:district": "Kanyakumari",
+        "addr:postcode": "629702",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Rajaram Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10605606201,
+      "lat": 8.0842412,
+      "lon": 77.5495646,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-02-04",
+        "diet:non-vegetarian": "yes",
+        "diet:vegetarian": "yes",
+        "name": "Hotel Saran"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10606030151,
+      "lat": 8.0822485,
+      "lon": 77.5497432,
+      "tags": {
+        "amenity": "restaurant",
+        "check_date": "2023-02-04",
+        "name": "Hotel Viswa"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10606030152,
+      "lat": 8.0822902,
+      "lon": 77.5497983,
+      "tags": {
+        "amenity": "fast_food",
+        "check_date": "2023-02-05",
+        "cuisine": "fish",
+        "internet_access": "no",
+        "name": "Fish frying stalls",
+        "opening_hours": "16:00-23:00",
+        "outdoor_seating": "yes",
+        "payment:cards": "no",
+        "payment:credit_cards": "no",
+        "payment:debit_cards": "no",
+        "source": "local knowledge",
+        "takeaway": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10607512634,
+      "lat": 8.0824032,
+      "lon": 77.5509358,
+      "tags": {
+        "check_date": "2023-02-05",
+        "name": "Royal Travels",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10607566738,
+      "lat": 8.0822764,
+      "lon": 77.55092,
+      "tags": {
+        "check_date": "2023-02-05",
+        "name": "Triveni Tourers Travel",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10607566739,
+      "lat": 8.0822721,
+      "lon": 77.5508209,
+      "tags": {
+        "check_date": "2023-02-05",
+        "name": "Kanya Travels",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10607566740,
+      "lat": 8.0822732,
+      "lon": 77.5509876,
+      "tags": {
+        "check_date": "2023-02-05",
+        "name": "Triveni Sanganam Travel",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12312532515,
+      "lat": 8.0818212,
+      "lon": 77.5502747,
+      "tags": {
+        "name": "Kanniyakumari Town Panchayat Office",
+        "office": "government"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12312532554,
+      "lat": 8.0829764,
+      "lon": 77.5495183,
+      "tags": {
+        "highway": "bus_stop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12543781501,
+      "lat": 8.082411,
+      "lon": 77.5497065,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Hotel Sun",
+        "name:fr": "Hotel Sun"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13380751239,
+      "lat": 8.0838955,
+      "lon": 77.5495884,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "only",
+        "name": "Sri Kumari pure veg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13380759252,
+      "lat": 8.0829671,
+      "lon": 77.5496184,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "only",
+        "name": "Hotel Kiwi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976235,
+      "lat": 8.0840199,
+      "lon": 77.5495782,
+      "tags": {
+        "name": "Muthu Saloon",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976248,
+      "lat": 8.0840295,
+      "lon": 77.5501023,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976249,
+      "lat": 8.0838051,
+      "lon": 77.5504287,
+      "tags": {
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976250,
+      "lat": 8.083772,
+      "lon": 77.5503394,
+      "tags": {
+        "name": "Sri Krishna",
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976268,
+      "lat": 8.0830376,
+      "lon": 77.5496039,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976287,
+      "lat": 8.0823951,
+      "lon": 77.5505519,
+      "tags": {
+        "name": "Emma tours and Travels",
+        "shop": "travel_agency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976288,
+      "lat": 8.0823844,
+      "lon": 77.5504234,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Delhi Punjab Dhaba"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976289,
+      "lat": 8.0823838,
+      "lon": 77.5503658,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Mumbau Dapha"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976290,
+      "lat": 8.0823777,
+      "lon": 77.5502969,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Applerestaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976292,
+      "lat": 8.0824435,
+      "lon": 77.5501087,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Subiksha Restaurant"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976296,
+      "lat": 8.0822497,
+      "lon": 77.5504501,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Parimal Dosa corner"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976297,
+      "lat": 8.0822548,
+      "lon": 77.5505282,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Sri Punjab Dhaba"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976309,
+      "lat": 8.0808065,
+      "lon": 77.5507575,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Prasanthi Hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976314,
+      "lat": 8.0804794,
+      "lon": 77.5507783,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Hotel Savana"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13503976401,
+      "lat": 8.0792337,
+      "lon": 77.5487646,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Prathiba"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13504498730,
+      "lat": 8.0816197,
+      "lon": 77.5485376,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Shree Rajasthani Punjabi Dhaba"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13504498811,
+      "lat": 8.0833583,
+      "lon": 77.5492582,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Triveli"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13506698666,
+      "lat": 8.0824533,
+      "lon": 77.5510556,
+      "tags": {
+        "amenity": "restaurant",
+        "diet:vegetarian": "yes",
+        "name": "Maruthi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13506698677,
+      "lat": 8.0827552,
+      "lon": 77.5510983,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "The curry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13508900769,
+      "lat": 8.085703,
+      "lon": 77.551547,
+      "tags": {
+        "shop": "gift"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14233835179,
+      "lat": 8.0832977,
+      "lon": 77.5511262,
+      "tags": {
+        "contact:mobile": "+91 97904 36465",
+        "name": "Easwar Medicals",
+        "shop": "chemist",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14233903206,
+      "lat": 8.0841364,
+      "lon": 77.5501059,
+      "tags": {
+        "name": "N.N store",
+        "shop": "general"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14233903225,
+      "lat": 8.0841461,
+      "lon": 77.5500835,
+      "tags": {
+        "name": "SPS Milk",
+        "shop": "dairy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14233903242,
+      "lat": 8.0843112,
+      "lon": 77.5498274,
+      "tags": {
+        "shop": "general"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14233903252,
+      "lat": 8.0843322,
+      "lon": 77.5497914,
+      "tags": {
+        "shop": "tailor"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14233903265,
+      "lat": 8.0843011,
+      "lon": 77.5498809,
+      "tags": {
+        "name": "Asian Tours & Travels",
+        "office": "travel_agent"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14233903278,
+      "lat": 8.0841653,
+      "lon": 77.5500664,
+      "tags": {
+        "shop": "general"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14233903284,
+      "lat": 8.0842945,
+      "lon": 77.5500057,
+      "tags": {
+        "shop": "greengrocer"
+      }
+    },
+    {
+      "type": "way",
+      "id": 50857184,
+      "center": {
+        "lat": 8.0823127,
+        "lon": 77.550383
+      },
+      "nodes": [
+        648648820,
+        13503976293,
+        2162584936,
+        1207709329,
+        1521263283,
+        1207709493,
+        1521263611,
+        7488480822,
+        7488480823,
+        648648822
+      ],
+      "tags": {
+        "highway": "unclassified",
+        "name": "South Car Road"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104700740,
+      "center": {
+        "lat": 8.0803284,
+        "lon": 77.5479388
+      },
+      "nodes": [
+        1207709540,
+        7488472466,
+        1207709790,
+        1207709331,
+        1207709864,
+        1207709881,
+        7488472465,
+        7488472464,
+        1207709709,
+        1207709316
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104700742,
+      "center": {
+        "lat": 8.0795257,
+        "lon": 77.5510114
+      },
+      "nodes": [
+        2595131163,
+        2595131162,
+        2595131145,
+        2595131147,
+        2595131165,
+        2595131163,
+        2595131166,
+        2595131175,
+        1207709745
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104700746,
+      "center": {
+        "lat": 8.0840654,
+        "lon": 77.5499554
+      },
+      "nodes": [
+        1207709371,
+        1207709275,
+        2152043283,
+        2162700892,
+        1207709404,
+        1207709308
+      ],
+      "tags": {
+        "highway": "unclassified",
+        "name": "North Street",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104700750,
+      "center": {
+        "lat": 8.0808074,
+        "lon": 77.5488965
+      },
+      "nodes": [
+        1207709647,
+        2162531680,
+        2162531685,
+        2162531686,
+        1207709502,
+        1207709707,
+        1207709546
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104700752,
+      "center": {
+        "lat": 8.0797054,
+        "lon": 77.5506262
+      },
+      "nodes": [
+        8068819731,
+        1207709606,
+        1207709427,
+        2595131166,
+        1207709920
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104700758,
+      "center": {
+        "lat": 8.0793379,
+        "lon": 77.5510071
+      },
+      "nodes": [
+        1207709920,
+        2605729676,
+        1207709313,
+        1207709252,
+        1207709427
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104700767,
+      "center": {
+        "lat": 8.0815484,
+        "lon": 77.5494559
+      },
+      "nodes": [
+        1207709861,
+        13504498731,
+        247924656
+      ],
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "name": "Kanniyakumari - Pazhaya Uchakkada Road",
+        "oneway": "yes",
+        "ref": "SH179",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104700772,
+      "center": {
+        "lat": 8.0795017,
+        "lon": 77.5498037
+      },
+      "nodes": [
+        1207709334,
+        13503976381,
+        1207709270,
+        1207709848,
+        1207709606,
+        706922121
+      ],
+      "tags": {
+        "highway": "pedestrian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104700778,
+      "center": {
+        "lat": 8.0801219,
+        "lon": 77.5483186
+      },
+      "nodes": [
+        1207709379,
+        1207709737,
+        1207709563,
+        1207709820,
+        1207709676
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104700779,
+      "center": {
+        "lat": 8.0811668,
+        "lon": 77.5491006
+      },
+      "nodes": [
+        1207709376,
+        1207716738,
+        1207709262,
+        1207709284,
+        1207709546,
+        2162531688,
+        1207709460
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104700782,
+      "center": {
+        "lat": 8.0807523,
+        "lon": 77.5487581
+      },
+      "nodes": [
+        1207709262,
+        2162531700,
+        1207709515,
+        2162531683,
+        2162531682,
+        1207709423,
+        2162531676,
+        1207709596,
+        2162531673,
+        1207709676,
+        1207709747,
+        1207709864
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104700785,
+      "center": {
+        "lat": 8.0806131,
+        "lon": 77.5490874
+      },
+      "nodes": [
+        1207709423,
+        1207709923,
+        1207709647
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104702254,
+      "center": {
+        "lat": 8.0873362,
+        "lon": 77.5494498
+      },
+      "nodes": [
+        13504498732,
+        9651853543,
+        648648820,
+        1207752854,
+        13503976265,
+        13504498809,
+        13503976230,
+        2162700888,
+        1207752733,
+        1207709308,
+        1207752981,
+        1207752743,
+        1207752702,
+        247924655,
+        1207752996,
+        13504498799,
+        247924654,
+        2162381989,
+        2163599086,
+        2163599089,
+        2163599093,
+        13506716192,
+        2162466582,
+        1207753027,
+        1115470274,
+        1052086973,
+        1207752941,
+        4293849277,
+        1207752792,
+        9259329139
+      ],
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "name": "Main Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104702257,
+      "center": {
+        "lat": 8.0803086,
+        "lon": 77.5490918
+      },
+      "nodes": [
+        1207709596,
+        1207716702
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104708215,
+      "center": {
+        "lat": 8.0814911,
+        "lon": 77.550331
+      },
+      "nodes": [
+        5327371948,
+        2595131208,
+        1207709919
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104708216,
+      "center": {
+        "lat": 8.0849939,
+        "lon": 77.5511988
+      },
+      "nodes": [
+        2162700904,
+        2162700908,
+        2162700912,
+        1207752966,
+        1207752769,
+        2162700921,
+        1207752866
+      ],
+      "tags": {
+        "highway": "living_street",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104708219,
+      "center": {
+        "lat": 8.0850824,
+        "lon": 77.5520997
+      },
+      "nodes": [
+        2162700894,
+        3931770263,
+        13508900701,
+        2162700896,
+        13508865598,
+        2162700919,
+        1207752797,
+        13508900720,
+        13508900767,
+        7488472462,
+        7488472463,
+        2162700925,
+        7488472480,
+        2162700929,
+        7488472481,
+        7488472479,
+        1207753085
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104708220,
+      "center": {
+        "lat": 8.0845615,
+        "lon": 77.5503246
+      },
+      "nodes": [
+        1207753135,
+        1207752904,
+        1207753028
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104708222,
+      "center": {
+        "lat": 8.0829225,
+        "lon": 77.548159
+      },
+      "nodes": [
+        1207753174,
+        7489369900,
+        1207753122,
+        1207753004,
+        1207752854
+      ],
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104708225,
+      "center": {
+        "lat": 8.0849118,
+        "lon": 77.5501778
+      },
+      "nodes": [
+        1207753100,
+        2162700910,
+        1207753028,
+        2162700915,
+        1207752721
+      ],
+      "tags": {
+        "highway": "living_street",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104708226,
+      "center": {
+        "lat": 8.0780819,
+        "lon": 77.5554314
+      },
+      "nodes": [
+        1053621079,
+        1207753156,
+        1207752679,
+        3266399382,
+        11346431694,
+        1207752849,
+        11346431699,
+        11346431696,
+        1207752644,
+        11346431695,
+        1207753171
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104708227,
+      "center": {
+        "lat": 8.0850487,
+        "lon": 77.5506632
+      },
+      "nodes": [
+        1207752961,
+        1207752853,
+        1207752721,
+        1207752866,
+        13508865596,
+        1207752664,
+        1207753124,
+        2162700939,
+        1207753127
+      ],
+      "tags": {
+        "highway": "living_street",
+        "name": "Maracudi Street",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104708229,
+      "center": {
+        "lat": 8.0844982,
+        "lon": 77.5458532
+      },
+      "nodes": [
+        1207752733,
+        1207753037,
+        2162381978,
+        3907599801,
+        1207752788,
+        1207752712,
+        7489369901,
+        1207753000,
+        1207752892,
+        1207752685,
+        1207753080,
+        1207752943,
+        1207752640,
+        1207753159,
+        1207752771,
+        1207752929,
+        2162381980,
+        1207753176,
+        1207752847,
+        1207752906,
+        5792618677,
+        1207753148,
+        3907599707,
+        3907599029,
+        3907599631
+      ],
+      "tags": {
+        "highway": "residential",
+        "lane_markings": "no",
+        "name": "Anju Koottu Vilai Road",
+        "smoothness": "excellent",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104708230,
+      "center": {
+        "lat": 8.0858418,
+        "lon": 77.5510479
+      },
+      "nodes": [
+        1207752738,
+        13508865597,
+        13508900759,
+        1207752799,
+        2162700931,
+        1207753124
+      ],
+      "tags": {
+        "highway": "living_street",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104708234,
+      "center": {
+        "lat": 8.084631,
+        "lon": 77.5500715
+      },
+      "nodes": [
+        1207753136,
+        13512129283,
+        1207752904
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104708258,
+      "center": {
+        "lat": 8.0841986,
+        "lon": 77.5504887
+      },
+      "nodes": [
+        1207752853,
+        1207753135
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104708285,
+      "center": {
+        "lat": 8.084971,
+        "lon": 77.5491993
+      },
+      "nodes": [
+        2162381985,
+        2162381987,
+        1207752981
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104708297,
+      "center": {
+        "lat": 8.0846549,
+        "lon": 77.5498485
+      },
+      "nodes": [
+        1207709404,
+        2162700893,
+        1207753136,
+        1207753100,
+        13512129278
+      ],
+      "tags": {
+        "highway": "unclassified"
+      }
+    },
+    {
+      "type": "way",
+      "id": 113984895,
+      "center": {
+        "lat": 8.0860343,
+        "lon": 77.5527144
+      },
+      "nodes": [
+        1207752763,
+        1207753142,
+        1207753102,
+        13508900774,
+        1291808341,
+        1207753048,
+        2162700956,
+        1207752618,
+        2162700968,
+        1291808330,
+        2162700937,
+        1207753133,
+        13508900753,
+        2152043290,
+        1207753085
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 113986943,
+      "center": {
+        "lat": 8.0861232,
+        "lon": 77.552409
+      },
+      "nodes": [
+        1291808342,
+        1291808330
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 113986946,
+      "center": {
+        "lat": 8.0861487,
+        "lon": 77.5526397
+      },
+      "nodes": [
+        1291808342,
+        1291808341
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 113986947,
+      "center": {
+        "lat": 8.0859027,
+        "lon": 77.5528345
+      },
+      "nodes": [
+        2162796025,
+        2162796021,
+        2162796022,
+        2162796024,
+        2162796023,
+        1291808329,
+        1291808342,
+        1291808340,
+        2162796025,
+        1291808339,
+        2162700932,
+        1291808343
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 138733127,
+      "center": {
+        "lat": 8.0829401,
+        "lon": 77.5504613
+      },
+      "nodes": [
+        1521263283,
+        7487875512,
+        1207709371
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 138733134,
+      "center": {
+        "lat": 8.0829742,
+        "lon": 77.5509354
+      },
+      "nodes": [
+        1992350792,
+        1521263481,
+        2162584945,
+        2162584946,
+        1521263476
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 138733153,
+      "center": {
+        "lat": 8.0829671,
+        "lon": 77.5506876
+      },
+      "nodes": [
+        1521263611,
+        1521263476,
+        13506698697,
+        1521263573
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 188614647,
+      "center": {
+        "lat": 8.0844505,
+        "lon": 77.552667
+      },
+      "nodes": [
+        1207752688,
+        13509509135,
+        2152043274,
+        13508900716,
+        1207752653,
+        13508900717,
+        1207752825,
+        2162700887,
+        13508900718,
+        2162700894,
+        13508865599,
+        2162700900,
+        2162700917,
+        13508900724,
+        2152043285,
+        1207753180,
+        13506716130,
+        2162700930,
+        1291808343,
+        13506716129,
+        1207753102
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 199708003,
+      "center": {
+        "lat": 8.0809117,
+        "lon": 77.5503224
+      },
+      "nodes": [
+        13509509159,
+        2162531678,
+        2162531697,
+        2595131208
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "dirt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 199708014,
+      "center": {
+        "lat": 8.082126,
+        "lon": 77.5488243
+      },
+      "nodes": [
+        2096924652,
+        1207753004
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 205231147,
+      "center": {
+        "lat": 8.0830202,
+        "lon": 77.5511532
+      },
+      "nodes": [
+        648648822,
+        2162584942,
+        1992350792,
+        2162584947,
+        13506698699,
+        2152043277,
+        7488480824,
+        1207709422
+      ],
+      "tags": {
+        "highway": "unclassified",
+        "name": "East Car Road"
+      }
+    },
+    {
+      "type": "way",
+      "id": 205231148,
+      "center": {
+        "lat": 8.0835432,
+        "lon": 77.5505244
+      },
+      "nodes": [
+        1207709422,
+        7488480825,
+        7488480826,
+        1207752961,
+        1521263573,
+        1207709371,
+        7487875514,
+        1207709793
+      ],
+      "tags": {
+        "highway": "unclassified",
+        "name": "North Car Road"
+      }
+    },
+    {
+      "type": "way",
+      "id": 205231155,
+      "center": {
+        "lat": 8.0821884,
+        "lon": 77.5519666
+      },
+      "nodes": [
+        13509509139,
+        13508900867,
+        2162584939,
+        13509509145,
+        13509509146,
+        2162584933,
+        13506716131,
+        1306138822
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 205231157,
+      "center": {
+        "lat": 8.0841735,
+        "lon": 77.5502601
+      },
+      "nodes": [
+        2162700891,
+        1207753135
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 205231163,
+      "center": {
+        "lat": 8.0856687,
+        "lon": 77.5523773
+      },
+      "nodes": [
+        2152043290,
+        2152043288,
+        2162796019
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 205231169,
+      "center": {
+        "lat": 8.0832475,
+        "lon": 77.5544213
+      },
+      "nodes": [
+        2152043276,
+        2152043272,
+        2152043273,
+        2152043279
+      ],
+      "tags": {
+        "highway": "path",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "type": "way",
+      "id": 205231170,
+      "center": {
+        "lat": 8.0834618,
+        "lon": 77.5521837
+      },
+      "nodes": [
+        1207752825,
+        2152043279,
+        2152043275,
+        2152043274
+      ],
+      "tags": {
+        "highway": "service",
+        "surface": "dirt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 205231176,
+      "center": {
+        "lat": 8.086316,
+        "lon": 77.5506154
+      },
+      "nodes": [
+        1207753085,
+        13508900772,
+        1207752845,
+        1207752738,
+        9658034549,
+        2162700935,
+        1207753046,
+        1207752927,
+        2162700976,
+        2162700977,
+        2162700979,
+        2162700980,
+        1207753127,
+        13506716145,
+        1207753109,
+        13506716146,
+        1207752996
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 205231180,
+      "center": {
+        "lat": 8.0837178,
+        "lon": 77.5517332
+      },
+      "nodes": [
+        13506716121,
+        2152043278,
+        7488480820,
+        7488480821,
+        7488480819,
+        2152043280,
+        7488480817,
+        7488480818,
+        7488480816,
+        13508900709,
+        13508900708,
+        2152043281,
+        2152043282,
+        2152043284,
+        13508900717
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 205231181,
+      "center": {
+        "lat": 8.0828663,
+        "lon": 77.5500259
+      },
+      "nodes": [
+        1207709793,
+        1207709673,
+        13503976264,
+        7487875513,
+        1207709420,
+        13503976291,
+        2162584938,
+        1207709329
+      ],
+      "tags": {
+        "highway": "unclassified",
+        "name": "West Car Road"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206254461,
+      "center": {
+        "lat": 8.0815768,
+        "lon": 77.5513949
+      },
+      "nodes": [
+        2162531707,
+        2162531702,
+        2162531721,
+        13503976307,
+        5327371947
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206260924,
+      "center": {
+        "lat": 8.0830823,
+        "lon": 77.551314
+      },
+      "nodes": [
+        2162584947,
+        2162584948
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206260925,
+      "center": {
+        "lat": 8.0822316,
+        "lon": 77.551413
+      },
+      "nodes": [
+        2162584942,
+        2162584941,
+        2162584940,
+        13509509143,
+        2162584935,
+        13509509147,
+        13509509148
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206272114,
+      "center": {
+        "lat": 8.0852554,
+        "lon": 77.5509385
+      },
+      "nodes": [
+        2162700921,
+        2162700927
+      ],
+      "tags": {
+        "highway": "living_street",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206272116,
+      "center": {
+        "lat": 8.0850935,
+        "lon": 77.5500807
+      },
+      "nodes": [
+        2162700923,
+        2162700910
+      ],
+      "tags": {
+        "highway": "living_street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206272117,
+      "center": {
+        "lat": 8.0849154,
+        "lon": 77.5522136
+      },
+      "nodes": [
+        2162700919,
+        2162700900
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206272119,
+      "center": {
+        "lat": 8.0841022,
+        "lon": 77.549825
+      },
+      "nodes": [
+        2162700892,
+        2162700886,
+        13506716157,
+        2162700885
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206272123,
+      "center": {
+        "lat": 8.0861756,
+        "lon": 77.5508607
+      },
+      "nodes": [
+        2162700931,
+        2162700979
+      ],
+      "tags": {
+        "highway": "service",
+        "name": "Asarimar street",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206272125,
+      "center": {
+        "lat": 8.0862956,
+        "lon": 77.5521039
+      },
+      "nodes": [
+        2162700945,
+        2162700974,
+        2162700968
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206272127,
+      "center": {
+        "lat": 8.0862445,
+        "lon": 77.5510144
+      },
+      "nodes": [
+        2162700926,
+        1207752799,
+        2162700976,
+        2162700993,
+        2162701015,
+        2162701033
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206279465,
+      "center": {
+        "lat": 8.0855899,
+        "lon": 77.5527546
+      },
+      "nodes": [
+        2162796021,
+        2162796020,
+        2162796019,
+        2162796018,
+        1207753180
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 206279470,
+      "center": {
+        "lat": 8.0863204,
+        "lon": 77.5532164
+      },
+      "nodes": [
+        1207753102,
+        2162796028,
+        2162796029,
+        2162796031,
+        2162796035,
+        2162796030
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 253586129,
+      "center": {
+        "lat": 8.0808132,
+        "lon": 77.5517497
+      },
+      "nodes": [
+        2152043269,
+        2595015656,
+        2595015657,
+        2595015660,
+        2595015664,
+        7488472460,
+        2595015665,
+        2595015668,
+        4728010097,
+        2595015675
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 253595101,
+      "center": {
+        "lat": 8.0853007,
+        "lon": 77.5513476
+      },
+      "nodes": [
+        1207752664,
+        2162700928,
+        2162700927,
+        2162700926,
+        1207752643,
+        1207753169,
+        1207752797
+      ],
+      "tags": {
+        "highway": "living_street",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 253596086,
+      "center": {
+        "lat": 8.0807043,
+        "lon": 77.5508346
+      },
+      "nodes": [
+        1207709745,
+        1207709644
+      ],
+      "tags": {
+        "highway": "pedestrian",
+        "name": "Sannathi Street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 253596582,
+      "center": {
+        "lat": 8.0788467,
+        "lon": 77.5507527
+      },
+      "nodes": [
+        1207709270,
+        2595131140,
+        2595131141,
+        13503976364,
+        2595131115,
+        2595131118,
+        2595131135,
+        1207709313
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 254756102,
+      "center": {
+        "lat": 8.0802063,
+        "lon": 77.5488936
+      },
+      "nodes": [
+        1207709540,
+        13503976412,
+        13503976400,
+        1207709334,
+        13509509165,
+        706922087,
+        1207709361,
+        8068819731,
+        706922121,
+        13509509172,
+        13509509166,
+        2162531687,
+        1207709376
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "name": "Beach Road"
+      }
+    },
+    {
+      "type": "way",
+      "id": 319385609,
+      "center": {
+        "lat": 8.0777639,
+        "lon": 77.5540027
+      },
+      "nodes": [
+        3257971602,
+        3257971600,
+        3257971601,
+        3257971604,
+        13895905335,
+        3257971606,
+        3257971607,
+        3257971605,
+        3257971603,
+        3257971602
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 320143477,
+      "center": {
+        "lat": 8.0781446,
+        "lon": 77.5552165
+      },
+      "nodes": [
+        3266399378,
+        3266399384,
+        3266399383,
+        3266399385,
+        3266399380,
+        13895905334,
+        3266399377,
+        3266399376,
+        3266399374,
+        3266399372,
+        11346431685,
+        1207753171
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 387465327,
+      "center": {
+        "lat": 8.0841953,
+        "lon": 77.5484372
+      },
+      "nodes": [
+        12312532560,
+        12312532561,
+        3907599560,
+        3907599801
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 390016064,
+      "center": {
+        "lat": 8.0821078,
+        "lon": 77.5515362
+      },
+      "nodes": [
+        1207709644,
+        1207709274,
+        2162531709,
+        1306138820,
+        5327371947,
+        13509509149,
+        13509509150,
+        2162531727,
+        1306138822,
+        2162531725,
+        2162531729,
+        2162531732,
+        2162584934,
+        1992350957,
+        2162584943,
+        1992351022,
+        1207752688
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 390016066,
+      "center": {
+        "lat": 8.0818749,
+        "lon": 77.5506778
+      },
+      "nodes": [
+        1207709493,
+        1207709337,
+        2162531723,
+        1207709919,
+        1207709644
+      ],
+      "tags": {
+        "highway": "pedestrian",
+        "name": "Sannathi Street"
+      }
+    },
+    {
+      "type": "way",
+      "id": 390016067,
+      "center": {
+        "lat": 8.0810175,
+        "lon": 77.5517952
+      },
+      "nodes": [
+        1207709274,
+        1053621982,
+        4728010099,
+        1053621216,
+        2595015655,
+        7488472468,
+        1053621501,
+        1053622103,
+        1053621729,
+        1053622193,
+        7488472467,
+        2096924647,
+        1053621972
+      ],
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "type": "way",
+      "id": 438750597,
+      "center": {
+        "lat": 8.0782049,
+        "lon": 77.5540402
+      },
+      "nodes": [
+        3686706230,
+        4364305709,
+        4364305708,
+        3686706228,
+        3686706233,
+        3686706234,
+        3686706238,
+        4364305711,
+        4364305714,
+        4364305716,
+        4364305719,
+        4364305720,
+        4364305724,
+        4364319223,
+        4001771703,
+        4001771702,
+        4364305723,
+        4364305722,
+        4364305721,
+        3686706240,
+        3686706230
+      ],
+      "tags": {
+        "area": "yes",
+        "highway": "pedestrian"
+      }
+    },
+    {
+      "type": "way",
+      "id": 438752387,
+      "center": {
+        "lat": 8.0780325,
+        "lon": 77.5541402
+      },
+      "nodes": [
+        3257971607,
+        4364319225
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 438752388,
+      "center": {
+        "lat": 8.0781584,
+        "lon": 77.5541013
+      },
+      "nodes": [
+        4364319225,
+        4364319227
+      ],
+      "tags": {
+        "covered": "yes",
+        "highway": "footway",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 438752389,
+      "center": {
+        "lat": 8.0783134,
+        "lon": 77.5540591
+      },
+      "nodes": [
+        4364319227,
+        4364319228,
+        4364319223
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 438752390,
+      "center": {
+        "lat": 8.0781462,
+        "lon": 77.5540923
+      },
+      "nodes": [
+        4364319228,
+        4364319226,
+        4364319224,
+        3257971607
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 479752689,
+      "center": {
+        "lat": 8.0808211,
+        "lon": 77.5512527
+      },
+      "nodes": [
+        4728010097,
+        4728010098,
+        4728010099
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 800592752,
+      "center": {
+        "lat": 8.0829512,
+        "lon": 77.550286
+      },
+      "nodes": [
+        1521263476,
+        7487875512,
+        13503976260
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "source": "digitalglobe",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 800592753,
+      "center": {
+        "lat": 8.0838011,
+        "lon": 77.549969
+      },
+      "nodes": [
+        7487875514,
+        2162700886
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "source": "digitalglobe",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1330717987,
+      "center": {
+        "lat": 8.0832459,
+        "lon": 77.5480499
+      },
+      "nodes": [
+        12312532568,
+        12312532567,
+        12312532566,
+        12312532577,
+        12312532576,
+        12312532575,
+        12312532574,
+        12312532568
+      ],
+      "tags": {
+        "amenity": "college"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471635368,
+      "center": {
+        "lat": 8.0840644,
+        "lon": 77.5495477
+      },
+      "nodes": [
+        2162700885,
+        13503976230
+      ],
+      "tags": {
+        "highway": "steps",
+        "incline": "up"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471635371,
+      "center": {
+        "lat": 8.0841307,
+        "lon": 77.5501383
+      },
+      "nodes": [
+        2152043283,
+        2162700891
+      ],
+      "tags": {
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471635377,
+      "center": {
+        "lat": 8.0829444,
+        "lon": 77.5498628
+      },
+      "nodes": [
+        13503976260,
+        7487875513
+      ],
+      "tags": {
+        "highway": "steps",
+        "incline": "down",
+        "source": "digitalglobe",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471635379,
+      "center": {
+        "lat": 8.0833031,
+        "lon": 77.5496923
+      },
+      "nodes": [
+        13503976267,
+        13503976266
+      ],
+      "tags": {
+        "highway": "steps",
+        "incline": "up"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471635380,
+      "center": {
+        "lat": 8.0833097,
+        "lon": 77.5498002
+      },
+      "nodes": [
+        13503976264,
+        13503976267
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471635381,
+      "center": {
+        "lat": 8.0832962,
+        "lon": 77.5495804
+      },
+      "nodes": [
+        13503976266,
+        13503976265
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471635389,
+      "center": {
+        "lat": 8.0814343,
+        "lon": 77.5512066
+      },
+      "nodes": [
+        2162531709,
+        2162531707
+      ],
+      "tags": {
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471635394,
+      "center": {
+        "lat": 8.0783288,
+        "lon": 77.5508338
+      },
+      "nodes": [
+        2595131118,
+        13503976337,
+        13503976338,
+        13503976339,
+        13503976340,
+        13503976341,
+        2595131115
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471635401,
+      "center": {
+        "lat": 8.0788964,
+        "lon": 77.5506562
+      },
+      "nodes": [
+        2595131141,
+        1207709252
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471635402,
+      "center": {
+        "lat": 8.0787739,
+        "lon": 77.5504217
+      },
+      "nodes": [
+        13503976364,
+        13503976365,
+        2595131140
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471635405,
+      "center": {
+        "lat": 8.0790545,
+        "lon": 77.5500003
+      },
+      "nodes": [
+        13503976374,
+        13503976375,
+        13503976376,
+        13503976377,
+        13503976378
+      ],
+      "tags": {
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471635406,
+      "center": {
+        "lat": 8.079068,
+        "lon": 77.5499344
+      },
+      "nodes": [
+        13503976374,
+        13503976379,
+        13503976380,
+        13503976377
+      ],
+      "tags": {
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471635407,
+      "center": {
+        "lat": 8.0791251,
+        "lon": 77.5499636
+      },
+      "nodes": [
+        13503976381,
+        13503976374
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471635409,
+      "center": {
+        "lat": 8.0789792,
+        "lon": 77.54997
+      },
+      "nodes": [
+        13503976378,
+        13503976395
+      ],
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471707643,
+      "center": {
+        "lat": 8.081408,
+        "lon": 77.5498322
+      },
+      "nodes": [
+        1207709376,
+        13504498759,
+        13504498760,
+        5327371948
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471707651,
+      "center": {
+        "lat": 8.0833346,
+        "lon": 77.5492052
+      },
+      "nodes": [
+        13504498809,
+        13504498810
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972922,
+      "center": {
+        "lat": 8.0832993,
+        "lon": 77.5509259
+      },
+      "nodes": [
+        13506698697,
+        13506698698,
+        13506698699
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972925,
+      "center": {
+        "lat": 8.0838179,
+        "lon": 77.5511157
+      },
+      "nodes": [
+        7488480825,
+        13506716107,
+        13506716106
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972929,
+      "center": {
+        "lat": 8.0834929,
+        "lon": 77.5512079
+      },
+      "nodes": [
+        2152043277,
+        13506716121
+      ],
+      "tags": {
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972930,
+      "center": {
+        "lat": 8.0841993,
+        "lon": 77.550736
+      },
+      "nodes": [
+        1207752761,
+        13506716122
+      ],
+      "tags": {
+        "highway": "pedestrian",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972931,
+      "center": {
+        "lat": 8.0842053,
+        "lon": 77.5506497
+      },
+      "nodes": [
+        13506716122,
+        1207752853
+      ],
+      "tags": {
+        "highway": "steps"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972933,
+      "center": {
+        "lat": 8.0841181,
+        "lon": 77.5497078
+      },
+      "nodes": [
+        13506716158,
+        13506716155,
+        13506716156,
+        13506716157
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972934,
+      "center": {
+        "lat": 8.0841561,
+        "lon": 77.5495284
+      },
+      "nodes": [
+        2162700888,
+        13506716158
+      ],
+      "tags": {
+        "highway": "steps",
+        "incline": "down",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972935,
+      "center": {
+        "lat": 8.0815316,
+        "lon": 77.5495626
+      },
+      "nodes": [
+        13506716162,
+        13506716163,
+        13506716164,
+        13506716165,
+        247924656
+      ],
+      "tags": {
+        "highway": "primary",
+        "name": "Kanniyakumari - Pazhaya Uchakkada Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972936,
+      "center": {
+        "lat": 8.0817247,
+        "lon": 77.5496919
+      },
+      "nodes": [
+        13504498732,
+        13504498741
+      ],
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "name": "Main Road",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972937,
+      "center": {
+        "lat": 8.0814002,
+        "lon": 77.5496831
+      },
+      "nodes": [
+        1207709376,
+        13504498740,
+        13504498764
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "name": "Beach Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972938,
+      "center": {
+        "lat": 8.0815409,
+        "lon": 77.5498169
+      },
+      "nodes": [
+        13504498742,
+        13504498757,
+        13504498758,
+        5327371948
+      ],
+      "tags": {
+        "highway": "residential",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972939,
+      "center": {
+        "lat": 8.0814302,
+        "lon": 77.5497304
+      },
+      "nodes": [
+        13506716167,
+        13506716175,
+        1207709376
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "name": "Beach Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972940,
+      "center": {
+        "lat": 8.0814975,
+        "lon": 77.5494836
+      },
+      "nodes": [
+        13506716162,
+        13506716176,
+        1207709861
+      ],
+      "tags": {
+        "highway": "primary",
+        "name": "Kanniyakumari - Pazhaya Uchakkada Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972941,
+      "center": {
+        "lat": 8.0846091,
+        "lon": 77.5332666
+      },
+      "nodes": [
+        1207709861,
+        2096924652,
+        1207709316,
+        2641747172,
+        1053621699,
+        14174767464,
+        3907599656,
+        7552215312,
+        3907599596,
+        3907599037,
+        3907599618,
+        1207709708,
+        648672615,
+        1207709433,
+        5301961316,
+        1115469399,
+        1053622092,
+        2595015689,
+        5301979816,
+        1052086963,
+        2595015694,
+        706922165,
+        706922103,
+        1053621397,
+        3778504714,
+        3907599378,
+        987491475,
+        3778504705,
+        3907599589,
+        987491499,
+        3778504732,
+        12091418880,
+        2642642935,
+        7496861311,
+        3907599776,
+        3907599611,
+        3907599480,
+        1992350836,
+        3907599649,
+        3907599590,
+        3907599710,
+        3907599444,
+        3907599653,
+        3907599622,
+        987491485,
+        3907599585,
+        3907599821,
+        3907599462,
+        1115475408,
+        3907599683,
+        3907599428,
+        1115478729,
+        3907599552,
+        3907599838,
+        3907599396,
+        1115471246,
+        1115472023,
+        7485198631,
+        5284615322,
+        3907599829,
+        987491491,
+        3907599521,
+        3907599762,
+        3907599644,
+        3907598997,
+        3907598996,
+        987491473,
+        1053644162,
+        1053644361,
+        3931760724,
+        3931760723,
+        9651853545,
+        9651853546,
+        1115470774,
+        5287245935
+      ],
+      "tags": {
+        "highway": "primary",
+        "lanes": "2",
+        "name": "Kanniyakumari - Pazhaya Uchakkada Road",
+        "ref": "SH179",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972942,
+      "center": {
+        "lat": 8.0815637,
+        "lon": 77.5496698
+      },
+      "nodes": [
+        13506716160,
+        13506716161,
+        13504498741,
+        13504498742,
+        13506716166,
+        13506716167,
+        13506716168,
+        13506716169,
+        13506716170,
+        13504498764
+      ],
+      "tags": {
+        "highway": "primary",
+        "name": "Kanniyakumari - Pazhaya Uchakkada Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972943,
+      "center": {
+        "lat": 8.0814772,
+        "lon": 77.5496051
+      },
+      "nodes": [
+        13504498764,
+        13506716162
+      ],
+      "tags": {
+        "highway": "primary",
+        "name": "Kanniyakumari - Pazhaya Uchakkada Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972944,
+      "center": {
+        "lat": 8.0816202,
+        "lon": 77.5495949
+      },
+      "nodes": [
+        247924656,
+        13506716171,
+        13506716172,
+        13506716173,
+        13506716174,
+        13506716160
+      ],
+      "tags": {
+        "highway": "primary",
+        "name": "Kanniyakumari - Pazhaya Uchakkada Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1471972945,
+      "center": {
+        "lat": 8.0817409,
+        "lon": 77.549637
+      },
+      "nodes": [
+        13506716173,
+        13506716177,
+        13504498732
+      ],
+      "tags": {
+        "highway": "primary",
+        "name": "Kanniyakumari - Pazhaya Uchakkada Road",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245616,
+      "center": {
+        "lat": 8.0853447,
+        "lon": 77.5505101
+      },
+      "nodes": [
+        1207752897,
+        13508865596
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones",
+        "width": "1"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245617,
+      "center": {
+        "lat": 8.085338,
+        "lon": 77.5502126
+      },
+      "nodes": [
+        1207752647,
+        2162700923,
+        1207752897,
+        7488480829,
+        1207752804,
+        7488480828,
+        1207752664
+      ],
+      "tags": {
+        "highway": "living_street",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245618,
+      "center": {
+        "lat": 8.0856347,
+        "lon": 77.5512516
+      },
+      "nodes": [
+        1207752643,
+        13508865597
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245619,
+      "center": {
+        "lat": 8.0846624,
+        "lon": 77.5521532
+      },
+      "nodes": [
+        13508865598,
+        13508865599
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245620,
+      "center": {
+        "lat": 8.084626,
+        "lon": 77.5518519
+      },
+      "nodes": [
+        2162700896,
+        2162700898,
+        13508865600
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245621,
+      "center": {
+        "lat": 8.084244,
+        "lon": 77.5519811
+      },
+      "nodes": [
+        13508900701,
+        13508900702,
+        13508900703,
+        13508900719,
+        13508900704,
+        13508900705,
+        13508900706,
+        2152043282
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245622,
+      "center": {
+        "lat": 8.0841572,
+        "lon": 77.5520907
+      },
+      "nodes": [
+        13508900704,
+        2162700887
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245623,
+      "center": {
+        "lat": 8.0841069,
+        "lon": 77.551731
+      },
+      "nodes": [
+        13508900706,
+        13508900707
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245624,
+      "center": {
+        "lat": 8.0836017,
+        "lon": 77.5517528
+      },
+      "nodes": [
+        13508900709,
+        13508900710,
+        13508900711,
+        13508900712
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245625,
+      "center": {
+        "lat": 8.0836007,
+        "lon": 77.5519834
+      },
+      "nodes": [
+        13508900711,
+        13508900713,
+        13508900714,
+        13508900715
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245626,
+      "center": {
+        "lat": 8.0835618,
+        "lon": 77.5521438
+      },
+      "nodes": [
+        13508900715,
+        13508900716
+      ],
+      "tags": {
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245627,
+      "center": {
+        "lat": 8.0842649,
+        "lon": 77.5521012
+      },
+      "nodes": [
+        13508900718,
+        13508900719
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245628,
+      "center": {
+        "lat": 8.0851049,
+        "lon": 77.5521787
+      },
+      "nodes": [
+        13508900720,
+        13508900721,
+        13508900722,
+        13508900723
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245629,
+      "center": {
+        "lat": 8.0852376,
+        "lon": 77.5526352
+      },
+      "nodes": [
+        13508900724,
+        13508900725
+      ],
+      "tags": {
+        "access": "yes",
+        "highway": "steps",
+        "incline": "up"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245630,
+      "center": {
+        "lat": 8.0853058,
+        "lon": 77.5524233
+      },
+      "nodes": [
+        13508900725,
+        13508900726
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245634,
+      "center": {
+        "lat": 8.0856746,
+        "lon": 77.5508544
+      },
+      "nodes": [
+        2162700928,
+        2162700931
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "concrete"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245635,
+      "center": {
+        "lat": 8.0861736,
+        "lon": 77.5519681
+      },
+      "nodes": [
+        2162700937,
+        2162700945,
+        2162700950
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245636,
+      "center": {
+        "lat": 8.0860834,
+        "lon": 77.5519396
+      },
+      "nodes": [
+        2162700945,
+        13508900770
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245637,
+      "center": {
+        "lat": 8.0860111,
+        "lon": 77.5516794
+      },
+      "nodes": [
+        2162700950,
+        13508900771,
+        13508900772
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245638,
+      "center": {
+        "lat": 8.0858374,
+        "lon": 77.5525258
+      },
+      "nodes": [
+        1291808329,
+        13508900773
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245639,
+      "center": {
+        "lat": 8.0860961,
+        "lon": 77.5528546
+      },
+      "nodes": [
+        13508900774,
+        2162796025
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245641,
+      "center": {
+        "lat": 8.0862964,
+        "lon": 77.5537142
+      },
+      "nodes": [
+        1291795856,
+        2162796033,
+        2162796032,
+        1291795848,
+        1291795858,
+        1207752763
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245647,
+      "center": {
+        "lat": 8.0863317,
+        "lon": 77.5538422
+      },
+      "nodes": [
+        1207752763,
+        13508900792,
+        13508900793,
+        13508900798,
+        13508900794,
+        13508900799,
+        13508900795,
+        13508900796
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472245657,
+      "center": {
+        "lat": 8.0858525,
+        "lon": 77.5498182
+      },
+      "nodes": [
+        1207752981,
+        13512129278,
+        1207752647,
+        2595116221,
+        1207753109
+      ],
+      "tags": {
+        "highway": "unclassified",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472353998,
+      "center": {
+        "lat": 8.0828479,
+        "lon": 77.5518955
+      },
+      "nodes": [
+        13509509135,
+        13509509137,
+        13509509136
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472353999,
+      "center": {
+        "lat": 8.0829027,
+        "lon": 77.5518575
+      },
+      "nodes": [
+        13509509137,
+        13509509138
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472354000,
+      "center": {
+        "lat": 8.0826961,
+        "lon": 77.5519809
+      },
+      "nodes": [
+        1207752688,
+        13509509139
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472354001,
+      "center": {
+        "lat": 8.0825909,
+        "lon": 77.5519297
+      },
+      "nodes": [
+        13509509139,
+        13509509140
+      ],
+      "tags": {
+        "access": "yes",
+        "highway": "steps",
+        "incline": "up"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472354002,
+      "center": {
+        "lat": 8.0825283,
+        "lon": 77.5517326
+      },
+      "nodes": [
+        13509509140,
+        13509509141,
+        13509509142,
+        2162584940
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472354003,
+      "center": {
+        "lat": 8.0822847,
+        "lon": 77.5517551
+      },
+      "nodes": [
+        13509509143,
+        13509509144,
+        13509509145
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472354004,
+      "center": {
+        "lat": 8.0820968,
+        "lon": 77.5518122
+      },
+      "nodes": [
+        13509509146,
+        13509509147
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472354005,
+      "center": {
+        "lat": 8.0818747,
+        "lon": 77.5515887
+      },
+      "nodes": [
+        13509509148,
+        13509509149
+      ],
+      "tags": {
+        "access": "yes",
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472354008,
+      "center": {
+        "lat": 8.0807454,
+        "lon": 77.550047
+      },
+      "nodes": [
+        13509509166,
+        13509509167,
+        13509509171,
+        13509509176,
+        13509509174,
+        13509509168,
+        13509509169,
+        13509509173,
+        13509509175,
+        13509509170,
+        13509509171
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472354009,
+      "center": {
+        "lat": 8.080754,
+        "lon": 77.5501256
+      },
+      "nodes": [
+        13509509173,
+        13509509174
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1472354010,
+      "center": {
+        "lat": 8.0807426,
+        "lon": 77.5500399
+      },
+      "nodes": [
+        13509509175,
+        13509509176
+      ],
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1524577513,
+      "center": {
+        "lat": 8.0780586,
+        "lon": 77.5545846
+      },
+      "nodes": [
+        13895905335,
+        13895905332,
+        13895905333,
+        13895905334,
+        3266399377
+      ],
+      "tags": {
+        "highway": "bridge",
+        "surface": "metal"
+      }
+    }
+  ]
+}

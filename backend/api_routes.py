@@ -3,11 +3,22 @@ from typing import List, Optional
 from fastapi import APIRouter, HTTPException, BackgroundTasks
 from pydantic import BaseModel, Field, field_validator
 
+import os
+import joblib
+import pandas as pd
+
 from feature_engineer import SpatialFeatureEngineer
 from explainability import explain_land_to_business, explain_business_to_land
 from generate_dataset import generate_grid
 
-# Configure logging
+# Load the pretrained budget model globally
+BUDGET_MODEL_PATH = os.path.join(os.path.dirname(__file__), 'models', 'budget_model.pkl')
+budget_model = None
+try:
+    budget_model = joblib.load(BUDGET_MODEL_PATH)
+except Exception as e:
+    logger.warning(f"Could not load budget_model.pkl: {e}")
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -151,13 +162,44 @@ def analyze_location(request: AnalyzeLocationRequest):
         df_input, _ = _get_input_features(request.lat, request.lon, request.radius)
         results = explain_land_to_business(df_input)
         
+        # Pretrained Budget Model prediction
+        pop_density = float(df_input.iloc[0]['population_density'])
+        road_dist = float(df_input.iloc[0]['distance_to_major_road'])
+        schools = float(df_input.iloc[0]['school_count'])
+        hospitals = float(df_input.iloc[0]['hospital_count'])
+        
+        estimated_price_per_cent = 500000 # default
+        if budget_model is not None:
+            features_for_budget = pd.DataFrame({
+                'population_density': [pop_density],
+                'distance_to_major_road': [road_dist],
+                'school_count': [schools],
+                'hospital_count': [hospitals]
+            })
+            pred = budget_model.predict(features_for_budget)[0]
+            estimated_price_per_cent = round(pred, -3)
+        else:
+            # Fallback
+            density_factor = pop_density * 150
+            road_factor = 200000 if road_dist >= 0 and road_dist < 100 else (100000 if road_dist >= 0 and road_dist < 500 else 0)
+            estimated_price_per_cent = round(500000 + density_factor + road_factor, -3)
+
         # Optionally save to DB here asynchronously (skipping hard failure if DB is offline)
         
         return {
             "lat": request.lat,
             "lon": request.lon,
             "radius": request.radius,
-            "recommendations": results
+            "recommendations": results,
+            "budget_estimate": {
+                "price_per_cent_inr": estimated_price_per_cent,
+                "formatted_price": f"₹{estimated_price_per_cent:,.0f} per cent",
+                "factors": {
+                    "source": "Pretrained Model" if budget_model else "Fallback",
+                    "population_density": f"{pop_density:.1f}",
+                    "distance_to_road": f"{road_dist:.1f}m"
+                }
+            }
         }
     except HTTPException:
         raise
@@ -187,35 +229,39 @@ def find_best_locations(request: FindBestLocationsRequest):
         ]
         candidates = []
         
-        for lat, lon in points:
-            try:
-                df_input, fv = _get_input_features(lat, lon, 500, request.business_type)
-                explanation = explain_business_to_land(df_input)
-                
-                candidates.append({
-                    "lat": lat,
-                    "lon": lon,
-                    # This is the direct output of Model 2.  It is deliberately
-                    # not normalised, bucketed, or otherwise manufactured here.
-                    "score": explanation["predicted_demand_score"],
-                    "model_score": explanation["predicted_demand_score"],
-                    "explanation": explanation,
-                    "details": {
-                        # Convert pandas/NumPy scalar values into plain JSON
-                        # numbers before FastAPI serialises the response.
-                        "population": float(df_input.iloc[0]['population']),
-                        "competitors": int(fv.get('amenity_counts', {}).get(request.business_type + '_count', 0)),
-                        "schools": int(df_input.iloc[0]['school_count']),
-                        "colleges": int(df_input.iloc[0]['college_count']),
-                        "hospitals": int(df_input.iloc[0]['hospital_count']),
-                        "bus_stops": int(df_input.iloc[0]['bus_stop_count']),
-                        "road_density": float(df_input.iloc[0]['road_density']),
-                        "distance_to_major_road": float(df_input.iloc[0]['distance_to_major_road'])
-                    }
-                })
-            except Exception as inner_e:
-                logger.warning(f"Failed to process grid point {lat},{lon}: {inner_e}")
-                continue
+        import concurrent.futures
+
+        def process_point(pt):
+            lat, lon = pt
+            df_input, fv = _get_input_features(lat, lon, 500, request.business_type)
+            explanation = explain_business_to_land(df_input)
+            
+            return {
+                "lat": lat,
+                "lon": lon,
+                "score": explanation["predicted_demand_score"],
+                "model_score": explanation["predicted_demand_score"],
+                "explanation": explanation,
+                "details": {
+                    "population": float(df_input.iloc[0]['population']),
+                    "competitors": int(fv.get('amenity_counts', {}).get(request.business_type + '_count', 0)),
+                    "schools": int(df_input.iloc[0]['school_count']),
+                    "colleges": int(df_input.iloc[0]['college_count']),
+                    "hospitals": int(df_input.iloc[0]['hospital_count']),
+                    "bus_stops": int(df_input.iloc[0]['bus_stop_count']),
+                    "road_density": float(df_input.iloc[0]['road_density']),
+                    "distance_to_major_road": float(df_input.iloc[0]['distance_to_major_road'])
+                }
+            }
+            
+        with concurrent.futures.ThreadPoolExecutor(max_workers=16) as executor:
+            future_to_pt = {executor.submit(process_point, pt): pt for pt in points}
+            for future in concurrent.futures.as_completed(future_to_pt):
+                try:
+                    candidates.append(future.result())
+                except Exception as inner_e:
+                    pt = future_to_pt[future]
+                    logger.warning(f"Failed to process grid point {pt[0]},{pt[1]}: {inner_e}")
                 
         if not candidates:
             raise HTTPException(status_code=404, detail="Could not successfully evaluate any candidates in this grid.")

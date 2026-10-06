@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 9.1803141,
+      "center_longitude": 79.4102555,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T10:43:28.767053+00:00",
+    "query_hash": "85c1a1140b51e2512d692774ad1452fc",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 8
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "way/475473281",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 9.1835957,
+      "longitude": 79.4134685,
+      "tags": {
+        "abandoned:railway": "narrow_gauge",
+        "electrified": "no",
+        "gauge": "1000",
+        "highway": "residential",
+        "old_name": "Pamban \u2013 Dhanushkodi railway",
+        "railway:end_date": "1964",
+        "source": "bing;extimated from bing",
+        "surface": "sand",
+        "tracktype": "grade5",
+        "wikipedia": "en:Pamban\u2013Dhanushkodi branch line"
+      }
+    },
+    {
+      "id": "way/477304123",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 9.1822234,
+      "longitude": 79.4114011,
+      "tags": {
+        "highway": "residential",
+        "surface": "sand",
+        "tracktype": "grade5"
+      }
+    },
+    {
+      "id": "way/626383137",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 9.1795924,
+      "longitude": 79.4098654,
+      "tags": {
+        "highway": "path"
+      }
+    },
+    {
+      "id": "way/975135344",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 9.180224,
+      "longitude": 79.4138344,
+      "tags": {
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/1030075050",
+      "name": "Dhanushkodi road",
+      "category": "road",
+      "latitude": 9.1892105,
+      "longitude": 79.3985058,
+      "tags": {
+        "highway": "trunk",
+        "lanes": "2",
+        "name": "Dhanushkodi road",
+        "name:ta": "\u0ba4\u0ba9\u0bc1\u0bb7\u0bcd\u0b95\u0bcb\u0b9f\u0bbf \u0b9a\u0bbe\u0bb2\u0bc8",
+        "ref": "NH87",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1218631696",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 9.1836344,
+      "longitude": 79.4136751,
+      "tags": {
+        "highway": "path"
+      }
+    },
+    {
+      "id": "way/1493141036",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 9.1828025,
+      "longitude": 79.4123483,
+      "tags": {
+        "highway": "residential",
+        "source": "bing;extimated from bing",
+        "surface": "sand",
+        "tracktype": "grade5"
+      }
+    },
+    {
+      "id": "way/1493141037",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 9.1813929,
+      "longitude": 79.4152427,
+      "tags": {
+        "abandoned:railway": "rail",
+        "electrified": "no",
+        "gauge": "1000",
+        "highway": "residential",
+        "old_name": "Pamban \u2013 Dhanushkodi railway",
+        "railway": "abandoned",
+        "railway:end_date": "1964",
+        "surface": "sand",
+        "wikipedia": "en:Pamban\u2013Dhanushkodi branch line"
+      }
+    }
+  ]
+}

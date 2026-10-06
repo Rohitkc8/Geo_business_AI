@@ -1,0 +1,318 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-05T10:43:18Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "way",
+      "id": 475473281,
+      "center": {
+        "lat": 9.1835957,
+        "lon": 79.4134685
+      },
+      "nodes": [
+        4692126966,
+        4706782178,
+        11292007183,
+        4692126965,
+        11215552857,
+        4692126964,
+        11292007194,
+        4692126977
+      ],
+      "tags": {
+        "abandoned:railway": "narrow_gauge",
+        "electrified": "no",
+        "gauge": "1000",
+        "highway": "residential",
+        "old_name": "Pamban \u2013 Dhanushkodi railway",
+        "railway:end_date": "1964",
+        "source": "bing;extimated from bing",
+        "surface": "sand",
+        "tracktype": "grade5",
+        "wikipedia": "en:Pamban\u2013Dhanushkodi branch line"
+      }
+    },
+    {
+      "type": "way",
+      "id": 477304123,
+      "center": {
+        "lat": 9.1822234,
+        "lon": 79.4114011
+      },
+      "nodes": [
+        4706782177,
+        4706782176,
+        4706782175,
+        4706782174,
+        4692126967
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "sand",
+        "tracktype": "grade5"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1210539675,
+      "center": {
+        "lat": 9.1848491,
+        "lon": 79.4146943
+      },
+      "nodes": [
+        1113034598,
+        11292007236,
+        13682277726,
+        11292007235,
+        4692126977
+      ],
+      "tags": {
+        "abandoned:railway": "narrow_gauge",
+        "electrified": "no",
+        "gauge": "1000",
+        "highway": "residential",
+        "old_name": "Pamban \u2013 Dhanushkodi railway",
+        "oneway": "no",
+        "railway:end_date": "1964",
+        "surface": "sand",
+        "wikipedia": "en:Pamban\u2013Dhanushkodi branch line"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1218631696,
+      "center": {
+        "lat": 9.1836344,
+        "lon": 79.4136751
+      },
+      "nodes": [
+        11292007179,
+        11292007180,
+        11292007181,
+        11292007182,
+        11292007183,
+        11292007184,
+        11292007185,
+        11292007186,
+        11292007187,
+        11292007188,
+        11292007189,
+        11292007190,
+        11292007191,
+        11292007192,
+        11292007195,
+        11292007194,
+        11292007193
+      ],
+      "tags": {
+        "highway": "path"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1218631697,
+      "center": {
+        "lat": 9.1843336,
+        "lon": 79.4149398
+      },
+      "nodes": [
+        11292007199,
+        11292007198,
+        11292007197,
+        11292007196,
+        11292007222
+      ],
+      "tags": {
+        "highway": "path"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1218631698,
+      "center": {
+        "lat": 9.1840654,
+        "lon": 79.4148325
+      },
+      "nodes": [
+        11292007227,
+        11292007201,
+        11292007200
+      ],
+      "tags": {
+        "highway": "path"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1218631699,
+      "center": {
+        "lat": 9.1836718,
+        "lon": 79.4147804
+      },
+      "nodes": [
+        11292007218,
+        11292007202
+      ],
+      "tags": {
+        "highway": "path"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1218631700,
+      "center": {
+        "lat": 9.1838363,
+        "lon": 79.4144568
+      },
+      "nodes": [
+        11292007203,
+        11292007219,
+        11292007218,
+        11292007217,
+        11292007216,
+        11292007215,
+        11292007214,
+        11292007213,
+        11292007212,
+        11292007211,
+        11292007210,
+        11292007209,
+        11292007208,
+        11292007207,
+        11292007206,
+        11292007205,
+        11292007204
+      ],
+      "tags": {
+        "highway": "path"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1218631701,
+      "center": {
+        "lat": 9.1842791,
+        "lon": 79.4147179
+      },
+      "nodes": [
+        11292007232,
+        11292007231,
+        11292007230,
+        11292007229,
+        11292007228,
+        11292007227,
+        11292007226,
+        11292007225,
+        11292007224,
+        11292007223,
+        11292007222,
+        11292007221,
+        11292007220,
+        11292007241
+      ],
+      "tags": {
+        "highway": "path"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1218631702,
+      "center": {
+        "lat": 9.1842756,
+        "lon": 79.4144807
+      },
+      "nodes": [
+        11292007235,
+        11292007243,
+        11292007232,
+        11292007233
+      ],
+      "tags": {
+        "highway": "path"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1218631703,
+      "center": {
+        "lat": 9.1846433,
+        "lon": 79.4147531
+      },
+      "nodes": [
+        11292007243,
+        11292007242,
+        11292007241,
+        11292007240,
+        11292007239,
+        11292007238,
+        11292007236
+      ],
+      "tags": {
+        "highway": "path"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1493141036,
+      "center": {
+        "lat": 9.1828025,
+        "lon": 79.4123483
+      },
+      "nodes": [
+        4692126967,
+        4692126966
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "bing;extimated from bing",
+        "surface": "sand",
+        "tracktype": "grade5"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1493141037,
+      "center": {
+        "lat": 9.1813929,
+        "lon": 79.4152427
+      },
+      "nodes": [
+        4692126977,
+        11292007204,
+        11292007193,
+        1113033470,
+        1113034409,
+        11292007179,
+        1113033732,
+        13682277739,
+        1113034546,
+        1113033928,
+        13682277728,
+        13682277729,
+        13682277730,
+        13682277731,
+        13682277733,
+        13682277732,
+        1113033505,
+        13682277734,
+        11292007251,
+        13682277735
+      ],
+      "tags": {
+        "abandoned:railway": "rail",
+        "electrified": "no",
+        "gauge": "1000",
+        "highway": "residential",
+        "old_name": "Pamban \u2013 Dhanushkodi railway",
+        "railway": "abandoned",
+        "railway:end_date": "1964",
+        "surface": "sand",
+        "wikipedia": "en:Pamban\u2013Dhanushkodi branch line"
+      }
+    }
+  ]
+}

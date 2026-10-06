@@ -1,0 +1,7035 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 44.9316565,
+      "center_longitude": -123.025621,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-06T10:42:37.796691+00:00",
+    "query_hash": "e6bc07da568e3b9a3435fe7fa3d27c33",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 513
+  },
+  "population_metrics": {
+    "population": null,
+    "population_density": null,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "error",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/341447766",
+      "name": "First Tech Credit Union",
+      "category": "bank",
+      "latitude": 44.9355944,
+      "longitude": -123.022639,
+      "tags": {
+        "amenity": "bank",
+        "brand": "First Tech Credit Union",
+        "brand:wikidata": "Q5453865",
+        "name": "First Tech Credit Union"
+      }
+    },
+    {
+      "id": "node/357363688",
+      "name": "Bilingual Gateway School",
+      "category": "education",
+      "latitude": 44.9358333,
+      "longitude": -123.0258333,
+      "tags": {
+        "addr:state": "OR",
+        "amenity": "school",
+        "ele": "53",
+        "gnis:feature_id": "2485885",
+        "name": "Bilingual Gateway School"
+      }
+    },
+    {
+      "id": "node/1169477715",
+      "name": "Kaneko Dining",
+      "category": "restaurant",
+      "latitude": 44.9328306,
+      "longitude": -123.0271285,
+      "tags": {
+        "amenity": "cafe",
+        "cuisine": "japanese",
+        "name": "Kaneko Dining",
+        "opening_hours": "closed"
+      }
+    },
+    {
+      "id": "node/5349549821",
+      "name": "Greyhound",
+      "category": "bus_stop",
+      "latitude": 44.9319574,
+      "longitude": -123.029788,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Greyhound",
+        "network": "Greyhound",
+        "network:wikidata": "Q755309",
+        "network:wikipedia": "en:Greyhound Lines",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/7256215341",
+      "name": "Salem Greyhound Station",
+      "category": "bus_stop",
+      "latitude": 44.9315355,
+      "longitude": -123.028127,
+      "tags": {
+        "bench": "yes",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Salem Greyhound Station",
+        "network": "Tillamook County Transportation District",
+        "network:short": "TCTD",
+        "network:wikidata": "Q7802245",
+        "network:wikipedia": "en:Tillamook County Transportation District",
+        "operator": "Tillamook County",
+        "public_transport": "platform",
+        "ref": "194",
+        "shelter": "yes"
+      }
+    },
+    {
+      "id": "node/8984225327",
+      "name": "Taproot Old Mill Cafe",
+      "category": "restaurant",
+      "latitude": 44.9343474,
+      "longitude": -123.0270238,
+      "tags": {
+        "amenity": "restaurant",
+        "cuisine": "american",
+        "name": "Taproot Old Mill Cafe",
+        "opening_hours": "We-Sa 16:00-23:00; Su 11:00-17:00",
+        "phone": "+1 503-364-3396",
+        "website": "http://www.taprootloungeandcafe.com"
+      }
+    },
+    {
+      "id": "node/8984357151",
+      "name": "Architect: Patrick Bickler, LLC",
+      "category": "office",
+      "latitude": 44.9345184,
+      "longitude": -123.0271871,
+      "tags": {
+        "name": "Architect: Patrick Bickler, LLC",
+        "office": "architect",
+        "phone": "+1 503-588-7046",
+        "website": "https://www.architectpatrickbickler.com/"
+      }
+    },
+    {
+      "id": "node/8984357153",
+      "name": "Teaselwick Wools",
+      "category": "shop_craft",
+      "latitude": 44.9344969,
+      "longitude": -123.0270197,
+      "tags": {
+        "name": "Teaselwick Wools",
+        "phone": "+1 971-304-7050",
+        "shop": "craft",
+        "website": "http://teaselwickwools.blogspot.com/"
+      }
+    },
+    {
+      "id": "node/8984357154",
+      "name": "Eco Hub",
+      "category": "office",
+      "latitude": 44.9344816,
+      "longitude": -123.0269486,
+      "tags": {
+        "addr:city": "Salem",
+        "addr:housenumber": "1313",
+        "addr:postcode": "97301",
+        "addr:state": "OR",
+        "addr:street": "Mill Street Southeast",
+        "addr:unit": "107",
+        "name": "Eco Hub",
+        "office": "educational_institution",
+        "phone": "+1 503-779-5227",
+        "website": "https://strauboutdoors.org/"
+      }
+    },
+    {
+      "id": "node/8984357155",
+      "name": "Bella Hill",
+      "category": "shop_collector",
+      "latitude": 44.9344726,
+      "longitude": -123.0268814,
+      "tags": {
+        "name": "Bella Hill",
+        "phone": "+1 971-304-7050",
+        "shop": "collector",
+        "website": "https://www.facebook.com/Bella-Hill-335474333237613/"
+      }
+    },
+    {
+      "id": "node/9971400883",
+      "name": "Andrea's Salon de Fleur",
+      "category": "shop_beauty",
+      "latitude": 44.9316923,
+      "longitude": -123.0292797,
+      "tags": {
+        "beauty": "hair",
+        "name": "Andrea's Salon de Fleur",
+        "shop": "beauty"
+      }
+    },
+    {
+      "id": "node/11363194537",
+      "name": "Mission @ University",
+      "category": "bus_stop",
+      "latitude": 44.9304184,
+      "longitude": -123.0315906,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Mission @ University",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/11363208125",
+      "name": "12th @ Lee",
+      "category": "bus_stop",
+      "latitude": 44.9290587,
+      "longitude": -123.0308062,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "12th @ Lee",
+        "public_transport": "platform",
+        "shelter": "no"
+      }
+    },
+    {
+      "id": "node/14104365457",
+      "name": "Lively Station",
+      "category": "restaurant",
+      "latitude": 44.9344514,
+      "longitude": -123.02684,
+      "tags": {
+        "air_conditioning": "yes",
+        "amenity": "restaurant",
+        "changing_table": "yes",
+        "name": "Lively Station",
+        "outdoor_seating": "yes",
+        "toilets": "yes"
+      }
+    },
+    {
+      "id": "way/5497897",
+      "name": "14th Street Southeast",
+      "category": "road",
+      "latitude": 44.9298716,
+      "longitude": -123.0275418,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "14th Street Southeast",
+        "sidewalk": "no",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "14th"
+      }
+    },
+    {
+      "id": "way/5501752",
+      "name": "Oak Street Southeast",
+      "category": "road",
+      "latitude": 44.9303879,
+      "longitude": -123.0235143,
+      "tags": {
+        "highway": "residential",
+        "name": "Oak Street Southeast",
+        "name_1": "Simpson Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Oak",
+        "tiger:name_base_1": "Simpson"
+      }
+    },
+    {
+      "id": "way/5501757",
+      "name": "Oak Street Southeast",
+      "category": "road",
+      "latitude": 44.9310275,
+      "longitude": -123.025797,
+      "tags": {
+        "highway": "residential",
+        "name": "Oak Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Oak"
+      }
+    },
+    {
+      "id": "way/5502252",
+      "name": "18th Street Southeast",
+      "category": "road",
+      "latitude": 44.9314019,
+      "longitude": -123.0209301,
+      "tags": {
+        "highway": "residential",
+        "name": "18th Street Southeast",
+        "sidewalk": "both",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "18th"
+      }
+    },
+    {
+      "id": "way/5502254",
+      "name": "18th Street Southeast",
+      "category": "road",
+      "latitude": 44.9274766,
+      "longitude": -123.0227719,
+      "tags": {
+        "highway": "residential",
+        "name": "18th Street Southeast",
+        "sidewalk": "no",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/5502827",
+      "name": "Tripp Street Southeast",
+      "category": "road",
+      "latitude": 44.9291202,
+      "longitude": -123.0257167,
+      "tags": {
+        "highway": "residential",
+        "name": "Tripp Street Southeast",
+        "sidewalk": "right",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Tripp"
+      }
+    },
+    {
+      "id": "way/5502938",
+      "name": "Leslie Street Southeast",
+      "category": "road",
+      "latitude": 44.930014,
+      "longitude": -123.0270974,
+      "tags": {
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Leslie Street Southeast",
+        "sidewalk": "no",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Leslie"
+      }
+    },
+    {
+      "id": "way/5503510",
+      "name": "Lee Street Southeast",
+      "category": "road",
+      "latitude": 44.9283125,
+      "longitude": -123.0252403,
+      "tags": {
+        "highway": "residential",
+        "name": "Lee Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Lee"
+      }
+    },
+    {
+      "id": "way/5503514",
+      "name": "Lee Street Southeast",
+      "category": "road",
+      "latitude": 44.9287543,
+      "longitude": -123.0308869,
+      "tags": {
+        "highway": "residential",
+        "lane_markings": "no",
+        "name": "Lee Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Lee"
+      }
+    },
+    {
+      "id": "way/5505441",
+      "name": "University Street Southeast",
+      "category": "road",
+      "latitude": 44.9341484,
+      "longitude": -123.0305856,
+      "tags": {
+        "highway": "service",
+        "name": "University Street Southeast",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/5505906",
+      "name": "Waller Street Southeast",
+      "category": "road",
+      "latitude": 44.9275515,
+      "longitude": -123.0247827,
+      "tags": {
+        "highway": "residential",
+        "name": "Waller Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/5506368",
+      "name": "17th Street Southeast",
+      "category": "road",
+      "latitude": 44.9319818,
+      "longitude": -123.0218307,
+      "tags": {
+        "cycleway:both": "lane",
+        "cycleway:both:lane": "exclusive",
+        "highway": "secondary",
+        "lane_markings": "yes",
+        "lanes": "3",
+        "lanes:backward": "1",
+        "lanes:both_ways": "1",
+        "lanes:forward": "1",
+        "lit": "yes",
+        "maxspeed": "30 mph",
+        "name": "17th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/5507472",
+      "name": "15th Street Southeast",
+      "category": "road",
+      "latitude": 44.9356997,
+      "longitude": -123.0231053,
+      "tags": {
+        "highway": "residential",
+        "name": "15th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "15th"
+      }
+    },
+    {
+      "id": "way/5508148",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9306561,
+      "longitude": -123.0287521,
+      "tags": {
+        "description": "Mission Street Connection #3",
+        "highway": "trunk_link",
+        "lanes": "1",
+        "maxspeed": "30 mph",
+        "oneway": "yes",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/5508152",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.935923,
+      "longitude": -123.0261088,
+      "tags": {
+        "highway": "residential",
+        "name": "13th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "13th"
+      }
+    },
+    {
+      "id": "way/5509789",
+      "name": "Strand Avenue Southeast",
+      "category": "road",
+      "latitude": 44.9326882,
+      "longitude": -123.0234941,
+      "tags": {
+        "highway": "service",
+        "name": "Strand Avenue Southeast",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/5512229",
+      "name": "Bellevue Street Southeast",
+      "category": "road",
+      "latitude": 44.9305776,
+      "longitude": -123.0197234,
+      "tags": {
+        "highway": "residential",
+        "name": "Bellevue Street Southeast",
+        "sidewalk:both": "separate",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Bellevue"
+      }
+    },
+    {
+      "id": "way/5512230",
+      "name": "Bellevue Street Southeast",
+      "category": "road",
+      "latitude": 44.9320189,
+      "longitude": -123.02516,
+      "tags": {
+        "highway": "residential",
+        "name": "Bellevue Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Bellevue"
+      }
+    },
+    {
+      "id": "way/5512838",
+      "name": "Trade Street Southeast",
+      "category": "road",
+      "latitude": 44.9328207,
+      "longitude": -123.0194531,
+      "tags": {
+        "bicycle": "designated",
+        "highway": "residential",
+        "name": "Trade Street Southeast",
+        "sidewalk:both": "separate"
+      }
+    },
+    {
+      "id": "way/5513030",
+      "name": "12th Street Southeast",
+      "category": "road",
+      "latitude": 44.9340365,
+      "longitude": -123.0285283,
+      "tags": {
+        "cycleway": "proposed",
+        "highway": "primary",
+        "lanes": "2",
+        "maxspeed": "30 mph",
+        "name": "12th Street Southeast",
+        "oneway": "yes",
+        "proposed": "lane",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/5513336",
+      "name": "Ferry Street Southeast",
+      "category": "road",
+      "latitude": 44.9348068,
+      "longitude": -123.0228041,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "residential",
+        "name": "Ferry Street Southeast",
+        "sidewalk": "right",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/5513825",
+      "name": "16th Street Southeast",
+      "category": "road",
+      "latitude": 44.9324753,
+      "longitude": -123.0227309,
+      "tags": {
+        "highway": "residential",
+        "name": "16th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "16th"
+      }
+    },
+    {
+      "id": "way/5514417",
+      "name": "14th Street Southeast",
+      "category": "road",
+      "latitude": 44.934317,
+      "longitude": -123.0253403,
+      "tags": {
+        "highway": "tertiary",
+        "maxspeed": "25 mph",
+        "name": "14th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30266859",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9320666,
+      "longitude": -123.028766,
+      "tags": {
+        "description": "Mission Street Connection #3",
+        "highway": "trunk_link",
+        "maxspeed": "30 mph",
+        "oneway": "yes",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30266963",
+      "name": "17th Street Southeast",
+      "category": "road",
+      "latitude": 44.9282657,
+      "longitude": -123.0237569,
+      "tags": {
+        "highway": "residential",
+        "name": "17th Street Southeast",
+        "sidewalk": "no",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "17th"
+      }
+    },
+    {
+      "id": "way/30453509",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9294901,
+      "longitude": -123.027087,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "bicycle": "no",
+        "bridge": "yes",
+        "expressway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "40 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30455087",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9296322,
+      "longitude": -123.0286377,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "bicycle": "no",
+        "expressway": "yes",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "40 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30455093",
+      "name": "Bellevue Street Southeast",
+      "category": "road",
+      "latitude": 44.933693,
+      "longitude": -123.0317083,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "cycleway:right": "lane",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "30 mph",
+        "name": "Bellevue Street Southeast",
+        "name_1": "State Highway 99E (Business)",
+        "name_2": "State Highway 22",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30596516",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.929564,
+      "longitude": -123.0269219,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "no",
+        "bridge": "yes",
+        "expressway": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "25 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "no",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30596517",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9329736,
+      "longitude": -123.0288777,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "3",
+        "maxspeed": "30 mph",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "no",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "13th"
+      }
+    },
+    {
+      "id": "way/30596518",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9321498,
+      "longitude": -123.0286965,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "no",
+        "foot": "no",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "30 mph",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "no",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30596521",
+      "name": "12th Street Southeast",
+      "category": "road",
+      "latitude": 44.9329063,
+      "longitude": -123.0291476,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "yes",
+        "cycleway": "lane",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "3",
+        "lit": "yes",
+        "maxspeed": "30 mph",
+        "name": "12th Street Southeast",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30596533",
+      "name": "12th Street Southeast",
+      "category": "road",
+      "latitude": 44.9326572,
+      "longitude": -123.0292738,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "yes",
+        "bridge": "yes",
+        "cycleway": "lane",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "3",
+        "layer": "1",
+        "maxspeed": "30 mph",
+        "name": "12th Street Southeast",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk:both": "separate",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30596534",
+      "name": "12th Street Southeast",
+      "category": "road",
+      "latitude": 44.9321847,
+      "longitude": -123.0295086,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "yes",
+        "cycleway": "lane",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "3",
+        "maxspeed": "30 mph",
+        "name": "12th Street Southeast",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Business",
+        "sidewalk:both": "separate",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30596536",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.93115,
+      "longitude": -123.0298822,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "no",
+        "destination:ref": "OR 22;OR 99E Business",
+        "destination:street": "Mission Street East",
+        "foot": "no",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "35 mph",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "no",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30596537",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.929361,
+      "longitude": -123.0260521,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "no",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "40 mph",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "right",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23"
+      }
+    },
+    {
+      "id": "way/30636631",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9297166,
+      "longitude": -123.0291744,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "bicycle": "no",
+        "bridge": "yes",
+        "expressway": "yes",
+        "highway": "secondary",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "25 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30636634",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.9321948,
+      "longitude": -123.0285661,
+      "tags": {
+        "cycleway": "lane",
+        "highway": "secondary",
+        "maxspeed": "30 mph",
+        "name": "13th Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/30637380",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.929916,
+      "longitude": -123.0281716,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "no",
+        "bridge": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "1",
+        "layer": "1",
+        "maxspeed": "35 mph",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "no",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30809046",
+      "name": "First Tech Credit Union",
+      "category": "road",
+      "latitude": 44.9356702,
+      "longitude": -123.0226831,
+      "tags": {
+        "access": "destination",
+        "highway": "service",
+        "name": "First Tech Credit Union",
+        "oneway": "yes",
+        "service": "drive-through",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/30810611",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.935959,
+      "longitude": -123.0252544,
+      "tags": {
+        "highway": "service",
+        "maxspeed": "15 mph",
+        "service": "alley",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/30810865",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9358955,
+      "longitude": -123.0238699,
+      "tags": {
+        "highway": "service",
+        "maxspeed": "15 mph",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/30830083",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9353754,
+      "longitude": -123.0222774,
+      "tags": {
+        "highway": "service",
+        "maxspeed": "15 mph",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/30967158",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9294027,
+      "longitude": -123.0257047,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "bicycle": "no",
+        "expressway": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "40 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk": "no"
+      }
+    },
+    {
+      "id": "way/31126681",
+      "name": "Lee Street Southeast",
+      "category": "road",
+      "latitude": 44.9281985,
+      "longitude": -123.0220391,
+      "tags": {
+        "highway": "residential",
+        "name": "Lee Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/31126682",
+      "name": "Lee Street Southeast",
+      "category": "road",
+      "latitude": 44.9283832,
+      "longitude": -123.0202728,
+      "tags": {
+        "highway": "residential",
+        "name": "Lee Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Lee"
+      }
+    },
+    {
+      "id": "way/31126705",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9293952,
+      "longitude": -123.0285646,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "3.7",
+        "foot": "designated",
+        "highway": "path",
+        "name": "Mission Street Southeast",
+        "oneway:bicycle": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/31126707",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9279564,
+      "longitude": -123.0220736,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "cycleway": "lane",
+        "expressway": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "40 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "separate",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23"
+      }
+    },
+    {
+      "id": "way/31126710",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9296549,
+      "longitude": -123.0291953,
+      "tags": {
+        "bicycle": "designated",
+        "bridge": "yes",
+        "est_width": "3.7",
+        "foot": "designated",
+        "highway": "path",
+        "layer": "1",
+        "name": "Mission Street Southeast",
+        "oneway:bicycle": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/31126711",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9293156,
+      "longitude": -123.0260867,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "3.7",
+        "foot": "designated",
+        "highway": "path",
+        "name": "Mission Street Southeast",
+        "oneway:bicycle": "yes",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/31126712",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9292995,
+      "longitude": -123.0274055,
+      "tags": {
+        "bicycle": "designated",
+        "bridge": "yes",
+        "est_width": "3.7",
+        "foot": "designated",
+        "highway": "path",
+        "layer": "1",
+        "name": "Mission Street Southeast",
+        "oneway:bicycle": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/31126713",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9298126,
+      "longitude": -123.0298222,
+      "tags": {
+        "foot": "no",
+        "highway": "cycleway",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/31126714",
+      "name": "12th Street Southeast",
+      "category": "road",
+      "latitude": 44.9266465,
+      "longitude": -123.0306386,
+      "tags": {
+        "cycleway": "lane",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "30 mph",
+        "name": "12th Street Southeast",
+        "oneway": "yes",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/31126715",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9299331,
+      "longitude": -123.0302409,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "bicycle": "yes",
+        "cycleway": "lane",
+        "expressway": "yes",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "25 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate"
+      }
+    },
+    {
+      "id": "way/31126716",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9298014,
+      "longitude": -123.029601,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "bicycle": "no",
+        "expressway": "yes",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "25 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate"
+      }
+    },
+    {
+      "id": "way/31531266",
+      "name": "15th Street Southeast",
+      "category": "road",
+      "latitude": 44.9275511,
+      "longitude": -123.0257802,
+      "tags": {
+        "highway": "residential",
+        "name": "15th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/31531268",
+      "name": "14th Street Southeast",
+      "category": "road",
+      "latitude": 44.9307727,
+      "longitude": -123.0268303,
+      "tags": {
+        "bicycle": "designated",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxspeed": "25 mph",
+        "name": "14th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/32077955",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9353984,
+      "longitude": -123.0230344,
+      "tags": {
+        "highway": "service",
+        "maxspeed": "15 mph",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/32335445",
+      "name": "15th Street Southeast",
+      "category": "road",
+      "latitude": 44.934236,
+      "longitude": -123.0238368,
+      "tags": {
+        "highway": "residential",
+        "name": "15th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "15th"
+      }
+    },
+    {
+      "id": "way/32358409",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.931359,
+      "longitude": -123.0204721,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/32358410",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9315922,
+      "longitude": -123.0214847,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/32358412",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9347363,
+      "longitude": -123.0278814,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "4.1",
+        "foot": "designated",
+        "highway": "cycleway",
+        "lit": "yes",
+        "oneway": "no",
+        "segregated": "no",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/32358413",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9361971,
+      "longitude": -123.027407,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "4.1",
+        "foot": "designated",
+        "highway": "cycleway",
+        "lit": "yes",
+        "segregated": "no",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/32358461",
+      "name": "13th Street Ramp",
+      "category": "road",
+      "latitude": 44.9296892,
+      "longitude": -123.0281385,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "3.7",
+        "foot": "designated",
+        "highway": "path",
+        "name": "13th Street Ramp",
+        "oneway:bicycle": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/32358463",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9295428,
+      "longitude": -123.0259043,
+      "tags": {
+        "foot": "no",
+        "highway": "cycleway",
+        "name": "Mission Street Southeast",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/32358464",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9301019,
+      "longitude": -123.0281192,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "3.7",
+        "foot": "designated",
+        "highway": "path",
+        "name": "Mission Street Southeast",
+        "oneway:bicycle": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/32358466",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9332043,
+      "longitude": -123.0283793,
+      "tags": {
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/32358468",
+      "name": "Mill Street Southeast",
+      "category": "road",
+      "latitude": 44.9325547,
+      "longitude": -123.0227677,
+      "tags": {
+        "highway": "residential",
+        "name": "Mill Street Southeast",
+        "sidewalk": "both"
+      }
+    },
+    {
+      "id": "way/32358736",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9299433,
+      "longitude": -123.0285534,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "3.7",
+        "foot": "designated",
+        "highway": "path",
+        "name": "Mission Street Southeast",
+        "oneway:bicycle": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/32358737",
+      "name": "13th Street Ramp",
+      "category": "road",
+      "latitude": 44.9303467,
+      "longitude": -123.0284161,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "3.7",
+        "foot": "designated",
+        "highway": "path",
+        "name": "13th Street Ramp",
+        "oneway:bicycle": "yes"
+      }
+    },
+    {
+      "id": "way/32358738",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.93077,
+      "longitude": -123.0286203,
+      "tags": {
+        "cycleway": "lane",
+        "highway": "secondary",
+        "lanes": "1",
+        "name": "13th Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/34157106",
+      "name": "12th Street Southeast",
+      "category": "road",
+      "latitude": 44.9335296,
+      "longitude": -123.0288745,
+      "tags": {
+        "cycleway": "lane",
+        "highway": "primary",
+        "maxspeed": "30 mph",
+        "name": "12th Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/34157107",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9330578,
+      "longitude": -123.0290226,
+      "tags": {
+        "highway": "trunk_link",
+        "maxspeed": "30 mph",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/34157109",
+      "name": "12th Street Southeast",
+      "category": "road",
+      "latitude": 44.9355751,
+      "longitude": -123.027959,
+      "tags": {
+        "cycleway": "proposed",
+        "highway": "primary",
+        "lanes": "2",
+        "maxspeed": "30 mph",
+        "name": "12th Street Southeast",
+        "oneway": "yes",
+        "proposed": "lane",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/34371817",
+      "name": "Bellevue Street Southeast",
+      "category": "road",
+      "latitude": 44.9339583,
+      "longitude": -123.0323117,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "cycleway:right": "lane",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "30 mph",
+        "name": "Bellevue Street Southeast",
+        "name_1": "State Highway 99E (Business)",
+        "name_2": "State Highway 22",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/34580774",
+      "name": "Bellevue Street Southeast",
+      "category": "road",
+      "latitude": 44.9330822,
+      "longitude": -123.0286301,
+      "tags": {
+        "bicycle": "designated",
+        "crossing": "traffic_signals",
+        "crossing:markings": "lines",
+        "crossing:signals": "yes",
+        "foot": "designated",
+        "footway": "crossing",
+        "highway": "footway",
+        "name": "Bellevue Street Southeast",
+        "oneway:bicycle": "yes",
+        "path": "crossing"
+      }
+    },
+    {
+      "id": "way/34894556",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9295814,
+      "longitude": -123.0260841,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "3.7",
+        "foot": "designated",
+        "highway": "path",
+        "name": "Mission Street Southeast",
+        "oneway:bicycle": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/34894559",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9293612,
+      "longitude": -123.0255298,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "yes",
+        "cycleway": "lane",
+        "fixme": "This is really a lane restriction that will need to be changed after such restrictions are implemented.",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "1",
+        "maxspeed": "40 mph",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "right",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23"
+      }
+    },
+    {
+      "id": "way/34894572",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9297462,
+      "longitude": -123.0286064,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "bicycle": "no",
+        "expressway": "yes",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "25 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/34894573",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9298451,
+      "longitude": -123.0291207,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "bicycle": "no",
+        "bridge": "yes",
+        "expressway": "yes",
+        "highway": "secondary",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "25 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/34894574",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9299306,
+      "longitude": -123.0295385,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "bicycle": "no",
+        "expressway": "yes",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "25 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate"
+      }
+    },
+    {
+      "id": "way/34894577",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9287677,
+      "longitude": -123.0288833,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "3.7",
+        "foot": "designated",
+        "highway": "path",
+        "oneway:bicycle": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/34899296",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.929642,
+      "longitude": -123.0279358,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "bicycle": "no",
+        "bridge": "yes",
+        "expressway": "yes",
+        "highway": "secondary",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "25 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/34905100",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9295164,
+      "longitude": -123.0260403,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "no",
+        "expressway": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "25 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "right",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23"
+      }
+    },
+    {
+      "id": "way/37102150",
+      "name": "American Market",
+      "category": "grocery_store",
+      "latitude": 44.9359199,
+      "longitude": -123.0241029,
+      "tags": {
+        "building": "retail",
+        "name": "American Market",
+        "old_name": "Capital Market",
+        "opening_hours": "Mo-Su,PH 06:00-23:00",
+        "shop": "convenience",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "id": "way/37751747",
+      "name": "University Street Southeast",
+      "category": "road",
+      "latitude": 44.9316129,
+      "longitude": -123.0312599,
+      "tags": {
+        "highway": "residential",
+        "name": "University Street Southeast",
+        "sidewalk": "both",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "University"
+      }
+    },
+    {
+      "id": "way/38608632",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9302731,
+      "longitude": -123.0315324,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "cycleway": "lane",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "25 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate"
+      }
+    },
+    {
+      "id": "way/38608634",
+      "name": "12th Street Southeast",
+      "category": "road",
+      "latitude": 44.9309876,
+      "longitude": -123.0301117,
+      "tags": {
+        "cycleway": "lane",
+        "highway": "secondary",
+        "lanes": "3",
+        "maxspeed": "30 mph",
+        "name": "12th Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt",
+        "turn:lanes": "left|through|"
+      }
+    },
+    {
+      "id": "way/44670101",
+      "name": "15th Street Southeast",
+      "category": "road",
+      "latitude": 44.9302711,
+      "longitude": -123.0256901,
+      "tags": {
+        "highway": "residential",
+        "name": "15th Street Southeast",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/98516378",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9329137,
+      "longitude": -123.028684,
+      "tags": {
+        "highway": "trunk_link",
+        "maxspeed": "30 mph",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/101310819",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9343217,
+      "longitude": -123.0307675,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/101310821",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9344775,
+      "longitude": -123.0305077,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/101310822",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9342879,
+      "longitude": -123.0308879,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/101310824",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9343584,
+      "longitude": -123.0306799,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/101310972",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9349051,
+      "longitude": -123.0313737,
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/101311112",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9332408,
+      "longitude": -123.0270678,
+      "tags": {
+        "check_date:surface": "2026-02-27",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/101311113",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9339207,
+      "longitude": -123.0284209,
+      "tags": {
+        "bicycle": "dismount",
+        "bridge": "yes",
+        "check_date:surface": "2026-02-26",
+        "highway": "footway",
+        "layer": "2",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/101311173",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9321863,
+      "longitude": -123.0276726,
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/101323303",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9355594,
+      "longitude": -123.0287963,
+      "tags": {
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/101473511",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9355363,
+      "longitude": -123.0290843,
+      "tags": {
+        "bicycle": "designated",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "segregated": "no",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/107269410",
+      "name": "Tokyo International University of America",
+      "category": "education",
+      "latitude": 44.9330855,
+      "longitude": -123.0267362,
+      "tags": {
+        "amenity": "university",
+        "building": "university",
+        "education": "university",
+        "name": "Tokyo International University of America",
+        "operator": "Tokyo International University of America"
+      }
+    },
+    {
+      "id": "way/133889958",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9293215,
+      "longitude": -123.0245667,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "yes",
+        "cycleway": "lane",
+        "expressway": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "40 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "right",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23"
+      }
+    },
+    {
+      "id": "way/133889960",
+      "name": "17th Street Southeast",
+      "category": "road",
+      "latitude": 44.9290831,
+      "longitude": -123.0233311,
+      "tags": {
+        "cycleway:both": "lane",
+        "cycleway:both:lane": "exclusive",
+        "highway": "secondary",
+        "lane_markings": "no",
+        "maxspeed": "30 mph",
+        "name": "17th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/133919907",
+      "name": "Leslie Street Southeast",
+      "category": "road",
+      "latitude": 44.9311589,
+      "longitude": -123.030755,
+      "tags": {
+        "highway": "residential",
+        "name": "Leslie Street Southeast",
+        "sidewalk": "both",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Leslie"
+      }
+    },
+    {
+      "id": "way/133919908",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9316901,
+      "longitude": -123.0318201,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/162917402",
+      "name": "Lee Street Southeast",
+      "category": "road",
+      "latitude": 44.9287557,
+      "longitude": -123.0285201,
+      "tags": {
+        "highway": "residential",
+        "name": "Lee Street Southeast",
+        "sidewalk": "right",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Lee"
+      }
+    },
+    {
+      "id": "way/162917406",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9299064,
+      "longitude": -123.0290801,
+      "tags": {
+        "bicycle": "designated",
+        "bridge": "yes",
+        "est_width": "3.7",
+        "foot": "designated",
+        "highway": "path",
+        "layer": "1",
+        "name": "Mission Street Southeast",
+        "oneway:bicycle": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/162917410",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9299868,
+      "longitude": -123.0294597,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "3.7",
+        "foot": "designated",
+        "highway": "path",
+        "name": "Mission Street Southeast",
+        "oneway:bicycle": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/162917411",
+      "name": "Oak Street Southeast",
+      "category": "road",
+      "latitude": 44.9294327,
+      "longitude": -123.0197396,
+      "tags": {
+        "highway": "residential",
+        "name": "Oak Street Southeast",
+        "name_1": "Simpson Street Southeast",
+        "sidewalk": "no",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Oak",
+        "tiger:name_base_1": "Simpson"
+      }
+    },
+    {
+      "id": "way/162917412",
+      "name": "Oak Street Southeast",
+      "category": "road",
+      "latitude": 44.9297993,
+      "longitude": -123.0212495,
+      "tags": {
+        "highway": "residential",
+        "name": "Oak Street Southeast",
+        "name_1": "Simpson Street Southeast",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Oak",
+        "tiger:name_base_1": "Simpson"
+      }
+    },
+    {
+      "id": "way/162917417",
+      "name": "Oak Street Southeast",
+      "category": "road",
+      "latitude": 44.9297923,
+      "longitude": -123.0212495,
+      "tags": {
+        "highway": "residential",
+        "name": "Oak Street Southeast",
+        "name_1": "Simpson Street Southeast",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Oak",
+        "tiger:name_base_1": "Simpson"
+      }
+    },
+    {
+      "id": "way/162917422",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9327964,
+      "longitude": -123.0290102,
+      "tags": {
+        "highway": "trunk_link",
+        "maxspeed": "30 mph",
+        "oneway": "yes",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/162917429",
+      "name": "14th Street Southeast",
+      "category": "road",
+      "latitude": 44.9284157,
+      "longitude": -123.0276946,
+      "tags": {
+        "highway": "residential",
+        "name": "14th Street Southeast",
+        "sidewalk": "no",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "14th"
+      }
+    },
+    {
+      "id": "way/162922287",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9301105,
+      "longitude": -123.030039,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "name": "Mission Street Southeast"
+      }
+    },
+    {
+      "id": "way/162922288",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9301863,
+      "longitude": -123.0307401,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "cycleway": "lane",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "25 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk": "right"
+      }
+    },
+    {
+      "id": "way/162922289",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9299277,
+      "longitude": -123.0306369,
+      "tags": {
+        "crossing": "traffic_signals",
+        "footway": "crossing",
+        "highway": "footway",
+        "name": "Mission Street Southeast",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/162922290",
+      "name": "Oak Street Southeast",
+      "category": "road",
+      "latitude": 44.9321769,
+      "longitude": -123.0302471,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Oak Street Southeast",
+        "sidewalk": "both",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Oak"
+      }
+    },
+    {
+      "id": "way/162922291",
+      "name": "Oak Street Southeast",
+      "category": "road",
+      "latitude": 44.9326157,
+      "longitude": -123.0319684,
+      "tags": {
+        "highway": "unclassified",
+        "lanes": "3",
+        "lanes:backward": "2",
+        "lanes:forward": "1",
+        "name": "Oak Street Southeast",
+        "sidewalk:both": "separate",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Oak",
+        "turn:lanes:backward": "left|"
+      }
+    },
+    {
+      "id": "way/162922301",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9296722,
+      "longitude": -123.0295491,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "2.3",
+        "foot": "designated",
+        "highway": "path",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/163118983",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9305188,
+      "longitude": -123.0281105,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "no",
+        "bridge": "yes",
+        "destination:ref": "OR 22",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "1",
+        "layer": "2",
+        "maxspeed": "30 mph",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "no",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/163751246",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.930064,
+      "longitude": -123.03017,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "bicycle": "yes",
+        "cycleway": "lane",
+        "expressway": "yes",
+        "highway": "secondary",
+        "lanes": "4",
+        "maxspeed": "25 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "turn:lanes": "left|left||"
+      }
+    },
+    {
+      "id": "way/163751844",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9291772,
+      "longitude": -123.0238526,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "yes",
+        "cycleway": "lane",
+        "expressway": "yes",
+        "fixme": "This is really a lane restriction that will need to be changed after such restrictions are implemented.",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lane_markings": "yes",
+        "lanes": "4",
+        "maxspeed": "40 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "right",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "turn:lanes": "left|left||"
+      }
+    },
+    {
+      "id": "way/163751846",
+      "name": "Waller Street Southeast",
+      "category": "road",
+      "latitude": 44.9282559,
+      "longitude": -123.0281442,
+      "tags": {
+        "highway": "residential",
+        "name": "Waller Street Southeast",
+        "sidewalk": "left",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Waller"
+      }
+    },
+    {
+      "id": "way/163751847",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9288834,
+      "longitude": -123.0290116,
+      "tags": {
+        "alt_name": "Mission Street Connection #2",
+        "bicycle": "no",
+        "destination:ref": "OR 22",
+        "highway": "trunk_link",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/164560314",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9323891,
+      "longitude": -123.0267921,
+      "tags": {
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/164560325",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9331353,
+      "longitude": -123.0270053,
+      "tags": {
+        "check_date:surface": "2026-02-27",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/164560326",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9324229,
+      "longitude": -123.0269284,
+      "tags": {
+        "highway": "footway",
+        "surface": "paving_stones"
+      }
+    },
+    {
+      "id": "way/164560328",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9334819,
+      "longitude": -123.0274033,
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/167146122",
+      "name": "Lee Street Southeast",
+      "category": "road",
+      "latitude": 44.9282998,
+      "longitude": -123.0218507,
+      "tags": {
+        "bridge": "yes",
+        "highway": "residential",
+        "layer": "1",
+        "name": "Lee Street Southeast",
+        "sidewalk": "both",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/167146198",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9336596,
+      "longitude": -123.0248009,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/167146206",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9333133,
+      "longitude": -123.0191703,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/167146207",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9328709,
+      "longitude": -123.0219727,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/167146212",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9316678,
+      "longitude": -123.0172048,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/167147809",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9345101,
+      "longitude": -123.027226,
+      "tags": {
+        "bicycle": "yes",
+        "est_width": "1.5",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/167147810",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9344175,
+      "longitude": -123.0268621,
+      "tags": {
+        "highway": "pedestrian"
+      }
+    },
+    {
+      "id": "way/167147811",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.934337,
+      "longitude": -123.0273124,
+      "tags": {
+        "bicycle": "yes",
+        "est_width": "1.5",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/167147812",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9348968,
+      "longitude": -123.0277435,
+      "tags": {
+        "bicycle": "yes",
+        "est_width": "1.5",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/167147814",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9345636,
+      "longitude": -123.0276382,
+      "tags": {
+        "bicycle": "yes",
+        "bridge": "yes",
+        "est_width": "1.5",
+        "highway": "footway",
+        "layer": "1",
+        "surface": "wood"
+      }
+    },
+    {
+      "id": "way/167147815",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9341485,
+      "longitude": -123.0275511,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/167147816",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9347195,
+      "longitude": -123.0271052,
+      "tags": {
+        "bridge": "yes",
+        "highway": "pedestrian",
+        "layer": "1",
+        "surface": "wood"
+      }
+    },
+    {
+      "id": "way/167147817",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9341007,
+      "longitude": -123.0273506,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/167147818",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9340528,
+      "longitude": -123.0271542,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/167147820",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9339588,
+      "longitude": -123.0266705,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/167147823",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9350884,
+      "longitude": -123.0273739,
+      "tags": {
+        "highway": "pedestrian"
+      }
+    },
+    {
+      "id": "way/167147824",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9340364,
+      "longitude": -123.027093,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/167147826",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9337413,
+      "longitude": -123.0268212,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/167147827",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9350316,
+      "longitude": -123.0257722,
+      "tags": {
+        "bridge": "yes",
+        "highway": "service",
+        "layer": "1",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/167147828",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9347829,
+      "longitude": -123.0276083,
+      "tags": {
+        "bicycle": "yes",
+        "est_width": "1.5",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/167147829",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9352867,
+      "longitude": -123.0267775,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/167281911",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9282649,
+      "longitude": -123.0286997,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/167405456",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9334607,
+      "longitude": -123.0314538,
+      "tags": {
+        "highway": "service",
+        "service": "driveway",
+        "tunnel": "building_passage"
+      }
+    },
+    {
+      "id": "way/167405459",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9332287,
+      "longitude": -123.0307767,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/167405491",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9331352,
+      "longitude": -123.0302315,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/167405543",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9310952,
+      "longitude": -123.0287078,
+      "tags": {
+        "bridge": "yes",
+        "description": "Mission Street Connection #3",
+        "highway": "trunk_link",
+        "lanes": "1",
+        "layer": "1",
+        "maxspeed": "30 mph",
+        "oneway": "yes",
+        "sidewalk": "left",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/167405557",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9332838,
+      "longitude": -123.0304377,
+      "tags": {
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/167405581",
+      "name": "14th Street Southeast",
+      "category": "road",
+      "latitude": 44.9283966,
+      "longitude": -123.0267698,
+      "tags": {
+        "bicycle": "designated",
+        "highway": "tertiary",
+        "lanes": "2",
+        "maxheight": "default",
+        "maxspeed": "25 mph",
+        "name": "14th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/167405582",
+      "name": "14th Street Southeast",
+      "category": "road",
+      "latitude": 44.9301191,
+      "longitude": -123.0267384,
+      "tags": {
+        "bicycle": "designated",
+        "bridge": "yes",
+        "highway": "tertiary",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "25 mph",
+        "name": "14th Street Southeast",
+        "sidewalk": "both"
+      }
+    },
+    {
+      "id": "way/167413015",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9290589,
+      "longitude": -123.0214512,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/167413023",
+      "name": "17th Street Southeast",
+      "category": "road",
+      "latitude": 44.9291896,
+      "longitude": -123.0232124,
+      "tags": {
+        "cycleway:both": "lane",
+        "cycleway:both:lane": "exclusive",
+        "highway": "secondary",
+        "lane_markings": "yes",
+        "lanes": "5",
+        "lanes:backward": "2",
+        "lanes:forward": "3",
+        "lit": "yes",
+        "maxspeed": "30 mph",
+        "name": "17th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "turn:lanes:forward": "left|right|right"
+      }
+    },
+    {
+      "id": "way/167413024",
+      "name": "17th Street Southeast",
+      "category": "road",
+      "latitude": 44.9294005,
+      "longitude": -123.0230435,
+      "tags": {
+        "bridge": "yes",
+        "cycleway:both": "lane",
+        "cycleway:both:lane": "exclusive",
+        "highway": "secondary",
+        "lane_markings": "yes",
+        "lanes": "5",
+        "lanes:backward": "2",
+        "lanes:forward": "3",
+        "layer": "1",
+        "lit": "yes",
+        "maxspeed": "30 mph",
+        "maxweight:signed": "no",
+        "name": "17th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "turn:lanes:forward": "left|right|right"
+      }
+    },
+    {
+      "id": "way/168371505",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9309,
+      "longitude": -123.0272559,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle",
+        "surface": "gravel"
+      }
+    },
+    {
+      "id": "way/169069988",
+      "name": "Bush Elementary",
+      "category": "education",
+      "latitude": 44.9326458,
+      "longitude": -123.0252961,
+      "tags": {
+        "amenity": "school",
+        "name": "Bush Elementary",
+        "note": "New location"
+      }
+    },
+    {
+      "id": "way/169070014",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.93244,
+      "longitude": -123.0237628,
+      "tags": {
+        "bicycle": "yes",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169070017",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9322253,
+      "longitude": -123.023291,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/169070022",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9328733,
+      "longitude": -123.025205,
+      "tags": {
+        "area": "yes",
+        "bicycle": "yes",
+        "highway": "pedestrian",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169070023",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9324871,
+      "longitude": -123.0252248,
+      "tags": {
+        "bicycle": "yes",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169070024",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.93153,
+      "longitude": -123.0253996,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/169070026",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9326564,
+      "longitude": -123.0254047,
+      "tags": {
+        "bicycle": "yes",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169070027",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.932091,
+      "longitude": -123.0244994,
+      "tags": {
+        "bicycle": "yes",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169070028",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.932365,
+      "longitude": -123.024629,
+      "tags": {
+        "bicycle": "yes",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169070032",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9321018,
+      "longitude": -123.0240531,
+      "tags": {
+        "bicycle": "yes",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169070045",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9325908,
+      "longitude": -123.0254276,
+      "tags": {
+        "bicycle": "yes",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169070049",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9331509,
+      "longitude": -123.02541,
+      "tags": {
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/169070052",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9327449,
+      "longitude": -123.0254277,
+      "tags": {
+        "bicycle": "yes",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949623",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9292349,
+      "longitude": -123.0232912,
+      "tags": {
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "yes",
+        "name": "Mission Street Southeast",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949624",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9297284,
+      "longitude": -123.0295679,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "3.7",
+        "foot": "designated",
+        "highway": "path",
+        "name": "Mission Street Southeast",
+        "oneway:bicycle": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949625",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9302161,
+      "longitude": -123.0305306,
+      "tags": {
+        "crossing": "traffic_signals",
+        "footway": "crossing",
+        "highway": "footway",
+        "name": "Mission Street Southeast",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949626",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9293368,
+      "longitude": -123.0259137,
+      "tags": {
+        "foot": "no",
+        "highway": "cycleway",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949627",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9294295,
+      "longitude": -123.0246616,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "name": "Mission Street Southeast"
+      }
+    },
+    {
+      "id": "way/169949628",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9290963,
+      "longitude": -123.0246264,
+      "tags": {
+        "bicycle": "yes",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "name": "Mission Street Southeast"
+      }
+    },
+    {
+      "id": "way/169949629",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9300099,
+      "longitude": -123.0297424,
+      "tags": {
+        "foot": "no",
+        "highway": "cycleway",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949630",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.929966,
+      "longitude": -123.0273042,
+      "tags": {
+        "bicycle": "designated",
+        "bridge": "yes",
+        "est_width": "3.7",
+        "foot": "designated",
+        "highway": "path",
+        "layer": "1",
+        "name": "Mission Street Southeast",
+        "oneway:bicycle": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949632",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9298403,
+      "longitude": -123.0301405,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "name": "Mission Street Southeast"
+      }
+    },
+    {
+      "id": "way/169949638",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9311804,
+      "longitude": -123.0292768,
+      "tags": {
+        "highway": "service",
+        "lanes": "2",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949641",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9304807,
+      "longitude": -123.0295642,
+      "tags": {
+        "highway": "service",
+        "lanes": "2",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949643",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9293837,
+      "longitude": -123.0300734,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/169949646",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9316368,
+      "longitude": -123.0282032,
+      "tags": {
+        "access": "private",
+        "bus": "yes",
+        "highway": "service",
+        "oneway": "yes",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/169949647",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.929291,
+      "longitude": -123.0266208,
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/169949648",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.927511,
+      "longitude": -123.0216298,
+      "tags": {
+        "bicycle": "yes",
+        "est_width": "1.5",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949652",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.930586,
+      "longitude": -123.0296754,
+      "tags": {
+        "highway": "service",
+        "lanes": "2",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949653",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9291635,
+      "longitude": -123.030203,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/169949657",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9331233,
+      "longitude": -123.0281891,
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/169949658",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9292894,
+      "longitude": -123.0263529,
+      "tags": {
+        "handrail": "yes",
+        "highway": "steps",
+        "incline": "up",
+        "ramp": "no",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/169949660",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9307352,
+      "longitude": -123.0296151,
+      "tags": {
+        "highway": "service",
+        "lanes": "2",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949662",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9281986,
+      "longitude": -123.0225904,
+      "tags": {
+        "est_width": "1.5",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949663",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9323938,
+      "longitude": -123.0264711,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949671",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9295183,
+      "longitude": -123.028667,
+      "tags": {
+        "alt_name": "Mission Street Connection #2",
+        "bicycle": "no",
+        "bridge": "yes",
+        "highway": "trunk_link",
+        "layer": "1",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949673",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9280587,
+      "longitude": -123.0220556,
+      "tags": {
+        "bicycle": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949674",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9320287,
+      "longitude": -123.0275872,
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/169949676",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9348627,
+      "longitude": -123.0250889,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/169949678",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9289473,
+      "longitude": -123.023201,
+      "tags": {
+        "bicycle": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949680",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9330947,
+      "longitude": -123.0282528,
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/169949682",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.929301,
+      "longitude": -123.0261728,
+      "tags": {
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949694",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9290203,
+      "longitude": -123.0236998,
+      "tags": {
+        "est_width": "1.0",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949696",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9295321,
+      "longitude": -123.0284314,
+      "tags": {
+        "alt_name": "Mission Street Connection #2",
+        "bicycle": "no",
+        "highway": "trunk_link",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949697",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9302339,
+      "longitude": -123.029786,
+      "tags": {
+        "highway": "service",
+        "lanes": "2",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949698",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.929462,
+      "longitude": -123.0297219,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/169949701",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9303889,
+      "longitude": -123.0296512,
+      "tags": {
+        "highway": "service",
+        "lanes": "2",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949703",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9307748,
+      "longitude": -123.0292551,
+      "tags": {
+        "highway": "service",
+        "lanes": "2",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949708",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9272748,
+      "longitude": -123.0299725,
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949710",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9292672,
+      "longitude": -123.029432,
+      "tags": {
+        "bicycle": "yes",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949711",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9287626,
+      "longitude": -123.0257306,
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "id": "way/169949712",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9287291,
+      "longitude": -123.0289948,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "1.5",
+        "foot": "designated",
+        "highway": "path",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949718",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.927925,
+      "longitude": -123.0252364,
+      "tags": {
+        "highway": "service",
+        "service": "alley",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "id": "way/169949719",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9314853,
+      "longitude": -123.0295015,
+      "tags": {
+        "highway": "service",
+        "lanes": "2",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949720",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.929131,
+      "longitude": -123.0302109,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/169949722",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9300386,
+      "longitude": -123.0294051,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "2.3",
+        "foot": "designated",
+        "highway": "path",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949725",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9322035,
+      "longitude": -123.0270606,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/169949727",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9290451,
+      "longitude": -123.0300422,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/169949735",
+      "name": "13th Street Ramp",
+      "category": "road",
+      "latitude": 44.9307089,
+      "longitude": -123.028615,
+      "tags": {
+        "foot": "no",
+        "highway": "cycleway",
+        "name": "13th Street Ramp",
+        "oneway": "yes",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949736",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.9314915,
+      "longitude": -123.0284085,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "name": "13th Street Southeast"
+      }
+    },
+    {
+      "id": "way/169949737",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.9296512,
+      "longitude": -123.0291876,
+      "tags": {
+        "bicycle": "designated",
+        "est_width": "2.3",
+        "foot": "designated",
+        "highway": "path",
+        "name": "13th Street Southeast",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/169949738",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.9306906,
+      "longitude": -123.0285923,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "name": "13th Street Southeast"
+      }
+    },
+    {
+      "id": "way/169949739",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.9289512,
+      "longitude": -123.029364,
+      "tags": {
+        "bicycle": "designated",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "name": "13th Street Southeast"
+      }
+    },
+    {
+      "id": "way/169949743",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.930851,
+      "longitude": -123.0285133,
+      "tags": {
+        "bridge": "yes",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "layer": "1",
+        "name": "13th Street Southeast"
+      }
+    },
+    {
+      "id": "way/169949744",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.9306263,
+      "longitude": -123.0288418,
+      "tags": {
+        "bicycle": "designated",
+        "footway": "crossing",
+        "highway": "footway",
+        "name": "13th Street Southeast"
+      }
+    },
+    {
+      "id": "way/169949745",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.9287998,
+      "longitude": -123.0293655,
+      "tags": {
+        "bicycle": "designated",
+        "crossing": "unmarked",
+        "crossing:markings": "no",
+        "footway": "crossing",
+        "highway": "footway",
+        "name": "13th Street Southeast"
+      }
+    },
+    {
+      "id": "way/169949746",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.9304122,
+      "longitude": -123.028935,
+      "tags": {
+        "bicycle": "designated",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "name": "13th Street Southeast"
+      }
+    },
+    {
+      "id": "way/171170339",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.930926,
+      "longitude": -123.0285589,
+      "tags": {
+        "bridge": "yes",
+        "cycleway": "lane",
+        "highway": "secondary",
+        "lanes": "1",
+        "layer": "1",
+        "maxspeed": "30 mph",
+        "name": "13th Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/173084721",
+      "name": "Leslie Street Southeast",
+      "category": "road",
+      "latitude": 44.9300119,
+      "longitude": -123.0251928,
+      "tags": {
+        "highway": "residential",
+        "name": "Leslie Street Southeast",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/174168870",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9341003,
+      "longitude": -123.0301004,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/174168883",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9344551,
+      "longitude": -123.0297749,
+      "tags": {
+        "check_date:surface": "2026-02-26",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/174168887",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9338594,
+      "longitude": -123.0302237,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/182942264",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9304243,
+      "longitude": -123.0324969,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "width": "1.8"
+      }
+    },
+    {
+      "id": "way/182944846",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9301003,
+      "longitude": -123.0307417,
+      "tags": {
+        "crossing:island": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/183244807",
+      "name": "14th Street Southeast",
+      "category": "road",
+      "latitude": 44.9318186,
+      "longitude": -123.0265841,
+      "tags": {
+        "bicycle": "designated",
+        "highway": "tertiary",
+        "maxspeed": "25 mph",
+        "name": "14th Street Southeast",
+        "sidewalk": "both"
+      }
+    },
+    {
+      "id": "way/183376514",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9303066,
+      "longitude": -123.0314084,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "cycleway": "proposed",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "25 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "proposed": "lane",
+        "sidewalk": "right"
+      }
+    },
+    {
+      "id": "way/183376516",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.935824,
+      "longitude": -123.028838,
+      "tags": {
+        "highway": "service",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/183811430",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9316649,
+      "longitude": -123.0304993,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/183811432",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9306465,
+      "longitude": -123.0310142,
+      "tags": {
+        "highway": "service",
+        "service": "alley"
+      }
+    },
+    {
+      "id": "way/197954671",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.9225431,
+      "longitude": -123.0293585,
+      "tags": {
+        "cycleway": "lane",
+        "highway": "secondary",
+        "lanes": "2",
+        "name": "13th Street Southeast",
+        "oneway": "yes",
+        "sidewalk:both": "separate",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/197954685",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9328124,
+      "longitude": -123.0288058,
+      "tags": {
+        "description": "Mission Street Connection #3",
+        "highway": "trunk_link",
+        "maxspeed": "30 mph",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/197954692",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.9306249,
+      "longitude": -123.0287073,
+      "tags": {
+        "cycleway": "lane",
+        "highway": "secondary",
+        "lanes": "1",
+        "maxspeed": "30 mph",
+        "name": "13th Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/203029077",
+      "name": "General Services Building",
+      "category": "office",
+      "latitude": 44.936161,
+      "longitude": -123.0268834,
+      "tags": {
+        "alt_name": "DAS East",
+        "building": "yes",
+        "government": "administrative",
+        "name": "General Services Building",
+        "office": "government"
+      }
+    },
+    {
+      "id": "way/222714942",
+      "name": "12th Street Southeast",
+      "category": "road",
+      "latitude": 44.930077,
+      "longitude": -123.030577,
+      "tags": {
+        "cycleway": "lane",
+        "highway": "secondary",
+        "lanes": "3",
+        "maxspeed": "30 mph",
+        "name": "12th Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt",
+        "turn:lanes": "left|through|through"
+      }
+    },
+    {
+      "id": "way/260552693",
+      "name": "Pioneer Trust Bank",
+      "category": "bank",
+      "latitude": 44.93191,
+      "longitude": -123.0299826,
+      "tags": {
+        "amenity": "bank",
+        "building": "commercial",
+        "name": "Pioneer Trust Bank"
+      }
+    },
+    {
+      "id": "way/476759736",
+      "name": "Ferry Street Southeast",
+      "category": "road",
+      "latitude": 44.9356549,
+      "longitude": -123.0261752,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "residential",
+        "name": "Ferry Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/476760105",
+      "name": "15th Street Southeast",
+      "category": "road",
+      "latitude": 44.931245,
+      "longitude": -123.0253226,
+      "tags": {
+        "highway": "residential",
+        "name": "15th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/476761259",
+      "name": "Oak Street Southeast",
+      "category": "road",
+      "latitude": 44.9300436,
+      "longitude": -123.0222452,
+      "tags": {
+        "highway": "residential",
+        "lane_markings": "no",
+        "name": "Oak Street Southeast",
+        "name_1": "Simpson Street Southeast",
+        "sidewalk": "left",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Oak",
+        "tiger:name_base_1": "Simpson"
+      }
+    },
+    {
+      "id": "way/476761262",
+      "name": "Oak Street Southeast",
+      "category": "road",
+      "latitude": 44.9306695,
+      "longitude": -123.0245292,
+      "tags": {
+        "highway": "residential",
+        "name": "Oak Street Southeast",
+        "name_1": "Simpson Street Southeast",
+        "sidewalk": "left",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Oak",
+        "tiger:name_base_1": "Simpson"
+      }
+    },
+    {
+      "id": "way/476787454",
+      "name": "16th Street Southeast",
+      "category": "road",
+      "latitude": 44.9283585,
+      "longitude": -123.024759,
+      "tags": {
+        "highway": "residential",
+        "name": "16th Street Southeast",
+        "sidewalk": "no",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "16th"
+      }
+    },
+    {
+      "id": "way/476790024",
+      "name": "17th Street Southeast",
+      "category": "road",
+      "latitude": 44.9266156,
+      "longitude": -123.0237864,
+      "tags": {
+        "highway": "residential",
+        "name": "17th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "17th"
+      }
+    },
+    {
+      "id": "way/476790028",
+      "name": "15th Street Southeast",
+      "category": "road",
+      "latitude": 44.9287628,
+      "longitude": -123.0257525,
+      "tags": {
+        "highway": "residential",
+        "name": "15th Street Southeast",
+        "sidewalk": "no",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/476796622",
+      "name": "Waller Street Southeast",
+      "category": "road",
+      "latitude": 44.9277692,
+      "longitude": -123.0287282,
+      "tags": {
+        "highway": "residential",
+        "name": "Waller Street Southeast",
+        "sidewalk": "both",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Waller"
+      }
+    },
+    {
+      "id": "way/476796623",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.9293786,
+      "longitude": -123.0290347,
+      "tags": {
+        "cycleway": "lane",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxheight": "default",
+        "maxspeed": "30 mph",
+        "name": "13th Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "separate",
+        "sidewalk:right": "no",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/478493283",
+      "name": "Salem Hospital",
+      "category": "healthcare",
+      "latitude": 44.9326957,
+      "longitude": -123.0340831,
+      "tags": {
+        "addr:city": "Salem",
+        "addr:housenumber": "890",
+        "addr:postcode": "97301",
+        "addr:street": "Oak Street Southeast",
+        "amenity": "hospital",
+        "beds": "454",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "Salem Hospital",
+        "opening_hours": "24/7",
+        "operator": "Salem Health",
+        "phone": "+1-503-561-5200",
+        "website": "https://www.salemhealth.org/",
+        "wikidata": "Q7404125",
+        "wikipedia": "en:Salem Hospital (Oregon)"
+      }
+    },
+    {
+      "id": "way/478493287",
+      "name": "Hanger Clinic",
+      "category": "healthcare",
+      "latitude": 44.9313654,
+      "longitude": -123.0302624,
+      "tags": {
+        "amenity": "doctors",
+        "building": "office",
+        "healthcare": "doctor",
+        "healthcare:speciality": "orthopaedics",
+        "name": "Hanger Clinic"
+      }
+    },
+    {
+      "id": "way/478493313",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9310742,
+      "longitude": -123.0322788,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/478493314",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9324117,
+      "longitude": -123.0315896,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/478493315",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9321915,
+      "longitude": -123.0317281,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/478493316",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9320449,
+      "longitude": -123.0318004,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/478493317",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9318885,
+      "longitude": -123.0318775,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/478493320",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9312313,
+      "longitude": -123.0322014,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/478493321",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9313985,
+      "longitude": -123.0321189,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/478493322",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.931563,
+      "longitude": -123.0320379,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/478493323",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9315317,
+      "longitude": -123.0320533,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/478493329",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9333237,
+      "longitude": -123.0311158,
+      "tags": {
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/494034839",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.9334918,
+      "longitude": -123.0286739,
+      "tags": {
+        "cycleway": "lane",
+        "highway": "primary",
+        "lanes": "2",
+        "maxspeed": "30 mph",
+        "name": "13th Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/494034840",
+      "name": "Bellevue Street Southeast",
+      "category": "road",
+      "latitude": 44.9332938,
+      "longitude": -123.0296936,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "cycleway:right": "lane",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "3",
+        "lit": "yes",
+        "maxspeed": "30 mph",
+        "name": "Bellevue Street Southeast",
+        "name_1": "State Highway 99E (Business)",
+        "name_2": "State Highway 22",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/494034841",
+      "name": "Oak Street Southeast",
+      "category": "road",
+      "latitude": 44.9323682,
+      "longitude": -123.030997,
+      "tags": {
+        "highway": "unclassified",
+        "name": "Oak Street Southeast",
+        "sidewalk:both": "separate",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Oak"
+      }
+    },
+    {
+      "id": "way/494034842",
+      "name": "Oak Street Southeast",
+      "category": "road",
+      "latitude": 44.9324756,
+      "longitude": -123.0314185,
+      "tags": {
+        "highway": "unclassified",
+        "lanes": "3",
+        "lanes:backward": "1",
+        "lanes:both_ways": "1",
+        "lanes:forward": "1",
+        "name": "Oak Street Southeast",
+        "sidewalk:both": "separate",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Oak"
+      }
+    },
+    {
+      "id": "way/494034850",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9300866,
+      "longitude": -123.0308996,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "cycleway": "lane",
+        "highway": "secondary",
+        "lanes": "3",
+        "maxspeed": "25 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "turn:lanes": "||right"
+      }
+    },
+    {
+      "id": "way/519173732",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9331728,
+      "longitude": -123.0288233,
+      "tags": {
+        "highway": "trunk_link",
+        "maxspeed": "30 mph",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/519173733",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9331059,
+      "longitude": -123.0290019,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk_link",
+        "lanes": "3",
+        "maxspeed": "30 mph",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "separate",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "13th"
+      }
+    },
+    {
+      "id": "way/549787121",
+      "name": "General Services Maintenance Office",
+      "category": "office",
+      "latitude": 44.9357177,
+      "longitude": -123.0271441,
+      "tags": {
+        "building": "yes",
+        "government": "administrative",
+        "name": "General Services Maintenance Office",
+        "office": "government"
+      }
+    },
+    {
+      "id": "way/673065749",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9319161,
+      "longitude": -123.0201882,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/673065752",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9322571,
+      "longitude": -123.0195484,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/673065880",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9324597,
+      "longitude": -123.0203584,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/673113492",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.931674,
+      "longitude": -123.0192258,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/674614805",
+      "name": "17th Street Southeast",
+      "category": "road",
+      "latitude": 44.9347733,
+      "longitude": -123.020548,
+      "tags": {
+        "cycleway": "lane",
+        "highway": "secondary",
+        "lanes": "2",
+        "lit": "yes",
+        "maxspeed": "30 mph",
+        "name": "17th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/674614806",
+      "name": "Ferry Street Southeast",
+      "category": "road",
+      "latitude": 44.933777,
+      "longitude": -123.0187422,
+      "tags": {
+        "bicycle": "yes",
+        "foot": "yes",
+        "highway": "residential",
+        "name": "Ferry Street Southeast",
+        "sidewalk": "right",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/674615762",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9329776,
+      "longitude": -123.0200995,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/674615925",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9330613,
+      "longitude": -123.0201215,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/674615926",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.93352,
+      "longitude": -123.0198286,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/674615927",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9329231,
+      "longitude": -123.0201899,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/674616020",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9329453,
+      "longitude": -123.0196598,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/674616022",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9328046,
+      "longitude": -123.0197294,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/723507603",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9307244,
+      "longitude": -123.0203067,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/723507687",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9307689,
+      "longitude": -123.0201837,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/723507720",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.930683,
+      "longitude": -123.0201235,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/723507745",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9306385,
+      "longitude": -123.0202465,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/723508143",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9309586,
+      "longitude": -123.0212313,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/723508749",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9308998,
+      "longitude": -123.0206969,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/723508789",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9307632,
+      "longitude": -123.0207633,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/723509275",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9306398,
+      "longitude": -123.0196776,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/723509366",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9305133,
+      "longitude": -123.0197439,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/723509920",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9312362,
+      "longitude": -123.0200536,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/723510036",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9311904,
+      "longitude": -123.0194642,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/731627372",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9322089,
+      "longitude": -123.0193584,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743248155",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9333246,
+      "longitude": -123.0211575,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743248202",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9332859,
+      "longitude": -123.0213058,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743248237",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9332292,
+      "longitude": -123.0210821,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743248296",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9331905,
+      "longitude": -123.0212304,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743248420",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9335771,
+      "longitude": -123.0221678,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743248440",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9335363,
+      "longitude": -123.0222809,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743248466",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9334914,
+      "longitude": -123.0221149,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743248494",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9334506,
+      "longitude": -123.0222279,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743248789",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9338258,
+      "longitude": -123.022936,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743249130",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9336589,
+      "longitude": -123.023005,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743249169",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9336986,
+      "longitude": -123.022924,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743249327",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9336839,
+      "longitude": -123.0225767,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743249376",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.933551,
+      "longitude": -123.0226281,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743249437",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9334545,
+      "longitude": -123.0216786,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743249515",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9333228,
+      "longitude": -123.021742,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743249536",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9331946,
+      "longitude": -123.0206507,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743249563",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9330588,
+      "longitude": -123.0207164,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743249715",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9330848,
+      "longitude": -123.0202184,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743249995",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9329463,
+      "longitude": -123.0202786,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/743250062",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9330243,
+      "longitude": -123.020285,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/749708171",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9326801,
+      "longitude": -123.0299935,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/771325095",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9283772,
+      "longitude": -123.0303128,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/771517445",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9361953,
+      "longitude": -123.0250325,
+      "tags": {
+        "access": "destination",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/771523402",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9351933,
+      "longitude": -123.0284184,
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/771534841",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9300903,
+      "longitude": -123.0238305,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/771534842",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9300187,
+      "longitude": -123.02468,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/777548942",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9310724,
+      "longitude": -123.0281471,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/777548943",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9312542,
+      "longitude": -123.0282287,
+      "tags": {
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/777548946",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9324525,
+      "longitude": -123.0284773,
+      "tags": {
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/777548947",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9337927,
+      "longitude": -123.0286898,
+      "tags": {
+        "highway": "primary_link",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/777548948",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9319976,
+      "longitude": -123.0284231,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/786343791",
+      "name": "Mill Street Southeast",
+      "category": "road",
+      "latitude": 44.9340202,
+      "longitude": -123.0286017,
+      "tags": {
+        "cycleway": "shared_lane",
+        "highway": "residential",
+        "maxheight:signed": "no",
+        "name": "Mill Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/786343792",
+      "name": "Mill Street Southeast",
+      "category": "road",
+      "latitude": 44.9339349,
+      "longitude": -123.0280422,
+      "tags": {
+        "cycleway": "shared_lane",
+        "highway": "residential",
+        "maxheight:signed": "no",
+        "name": "Mill Street Southeast",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/791565424",
+      "name": "Salem Health Orthopedics",
+      "category": "healthcare",
+      "latitude": 44.9348243,
+      "longitude": -123.0215099,
+      "tags": {
+        "addr:city": "Salem",
+        "addr:housenumber": "1600",
+        "addr:state": "OR",
+        "addr:street": "State Street",
+        "amenity": "doctors",
+        "building": "yes",
+        "healthcare": "doctor",
+        "healthcare:speciality": "orthopaedics",
+        "name": "Salem Health Orthopedics"
+      }
+    },
+    {
+      "id": "way/798353567",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.93264,
+      "longitude": -123.0309779,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/801025207",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9310167,
+      "longitude": -123.0266784,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/801025208",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9309304,
+      "longitude": -123.0263217,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/807939030",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9329609,
+      "longitude": -123.0272616,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/807939031",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9329972,
+      "longitude": -123.0288747,
+      "tags": {
+        "crossing": "traffic_signals",
+        "crossing:markings": "lines",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/807939032",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9327406,
+      "longitude": -123.0290806,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/807939033",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9320115,
+      "longitude": -123.0294468,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/807939034",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9325927,
+      "longitude": -123.0291955,
+      "tags": {
+        "bridge": "yes",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "layer": "1"
+      }
+    },
+    {
+      "id": "way/807939035",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.933088,
+      "longitude": -123.0284648,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/807939036",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9332589,
+      "longitude": -123.0290485,
+      "tags": {
+        "crossing": "traffic_signals",
+        "crossing:markings": "lines",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "yes"
+      }
+    },
+    {
+      "id": "way/807939038",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9331251,
+      "longitude": -123.0291721,
+      "tags": {
+        "crossing": "traffic_signals",
+        "crossing:markings": "lines",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "lit": "yes"
+      }
+    },
+    {
+      "id": "way/807939039",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9330362,
+      "longitude": -123.0298259,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/807939040",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9323799,
+      "longitude": -123.0300893,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/807939041",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9327141,
+      "longitude": -123.0293549,
+      "tags": {
+        "bridge": "yes",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "layer": "1"
+      }
+    },
+    {
+      "id": "way/807939042",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9324105,
+      "longitude": -123.0308518,
+      "tags": {
+        "crossing": "unmarked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/807939043",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9325707,
+      "longitude": -123.0314952,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/807939045",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9340067,
+      "longitude": -123.0284272,
+      "tags": {
+        "button_operated": "yes",
+        "crossing": "traffic_signals",
+        "crossing:island": "no",
+        "crossing:markings": "lines",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "kerb": "lowered"
+      }
+    },
+    {
+      "id": "way/807939046",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9333756,
+      "longitude": -123.0257682,
+      "tags": {
+        "crossing": "marked",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/807939047",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9329858,
+      "longitude": -123.0246005,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/807939048",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9343705,
+      "longitude": -123.0266835,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/808984209",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9315208,
+      "longitude": -123.0320272,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/898366599",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9350007,
+      "longitude": -123.0220475,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/903993527",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9359385,
+      "longitude": -123.0236836,
+      "tags": {
+        "highway": "service",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/903993528",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9356633,
+      "longitude": -123.0236996,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/903993529",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9356822,
+      "longitude": -123.023816,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/904024028",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9293666,
+      "longitude": -123.0203039,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/906038336",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9319443,
+      "longitude": -123.0299547,
+      "tags": {
+        "access": "customers",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/906038337",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9317567,
+      "longitude": -123.0297044,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/906038338",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9317453,
+      "longitude": -123.0302671,
+      "tags": {
+        "access": "customers",
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/906055633",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9295436,
+      "longitude": -123.0304013,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/906055634",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9295783,
+      "longitude": -123.0300084,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/906055635",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9296678,
+      "longitude": -123.0302951,
+      "tags": {
+        "access": "private",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/915060272",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9295589,
+      "longitude": -123.028102,
+      "tags": {
+        "alt_name": "Mission Street Connection #1",
+        "bicycle": "no",
+        "bridge": "yes",
+        "expressway": "yes",
+        "highway": "secondary",
+        "lanes": "2",
+        "layer": "1",
+        "maxspeed": "40 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/915060273",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9295367,
+      "longitude": -123.0281068,
+      "tags": {
+        "alt_name": "Mission Street Connection #2",
+        "bicycle": "no",
+        "bridge": "yes",
+        "highway": "trunk_link",
+        "layer": "1",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/930882050",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9358399,
+      "longitude": -123.0251791,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/930882051",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9359628,
+      "longitude": -123.0263137,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/930882052",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9353388,
+      "longitude": -123.0256155,
+      "tags": {
+        "highway": "service",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/930883707",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9309368,
+      "longitude": -123.0310204,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/930883708",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9308199,
+      "longitude": -123.0308302,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/930883709",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9319292,
+      "longitude": -123.0309178,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/930883710",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9321445,
+      "longitude": -123.0293996,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/930883711",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.931844,
+      "longitude": -123.0295768,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/937918083",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9298876,
+      "longitude": -123.0312603,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/937918085",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.929574,
+      "longitude": -123.0314953,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/937918086",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9293858,
+      "longitude": -123.0309831,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/962465324",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9339541,
+      "longitude": -123.024718,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/962477872",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9359939,
+      "longitude": -123.0242601,
+      "tags": {
+        "access": "customers",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/962570373",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9352755,
+      "longitude": -123.0286447,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/962570374",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9353625,
+      "longitude": -123.0288577,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/962570375",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9354473,
+      "longitude": -123.0290864,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/965277281",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9348246,
+      "longitude": -123.0270766,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/965277282",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9347931,
+      "longitude": -123.0271371,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/965277283",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9348,
+      "longitude": -123.027112,
+      "tags": {
+        "highway": "steps"
+      }
+    },
+    {
+      "id": "way/965277284",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9347742,
+      "longitude": -123.0271122,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/965277285",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9347807,
+      "longitude": -123.027042,
+      "tags": {
+        "highway": "footway",
+        "incline": "up",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/965277286",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9347962,
+      "longitude": -123.0269854,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/965277287",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9348113,
+      "longitude": -123.0270266,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/965277288",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9345923,
+      "longitude": -123.0271548,
+      "tags": {
+        "highway": "footway",
+        "incline": "down"
+      }
+    },
+    {
+      "id": "way/965277289",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9346175,
+      "longitude": -123.0270048,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/965277290",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9345522,
+      "longitude": -123.0270598,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/965277291",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9345768,
+      "longitude": -123.0269754,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/965277292",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9345527,
+      "longitude": -123.0269907,
+      "tags": {
+        "highway": "steps",
+        "incline": "down"
+      }
+    },
+    {
+      "id": "way/965277303",
+      "name": "First Tech Credit Union",
+      "category": "road",
+      "latitude": 44.9353746,
+      "longitude": -123.0228055,
+      "tags": {
+        "access": "destination",
+        "highway": "service",
+        "name": "First Tech Credit Union",
+        "oneway": "yes",
+        "service": "drive-through",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/965277304",
+      "name": "First Tech Credit Union",
+      "category": "road",
+      "latitude": 44.9354368,
+      "longitude": -123.0227526,
+      "tags": {
+        "access": "destination",
+        "highway": "service",
+        "name": "First Tech Credit Union",
+        "oneway": "yes",
+        "service": "drive-through",
+        "surface": "paved",
+        "tunnel": "building_passage"
+      }
+    },
+    {
+      "id": "way/965277307",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.936182,
+      "longitude": -123.0257036,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/968958007",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.933376,
+      "longitude": -123.0268433,
+      "tags": {
+        "check_date:surface": "2026-02-27",
+        "footway": "sidewalk",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/968958008",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9317295,
+      "longitude": -123.0282496,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/968958009",
+      "name": "13th Street Southeast",
+      "category": "road",
+      "latitude": 44.9338322,
+      "longitude": -123.0286026,
+      "tags": {
+        "cycleway": "lane",
+        "highway": "primary",
+        "lanes": "2",
+        "maxspeed": "30 mph",
+        "name": "13th Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/968958014",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9333198,
+      "longitude": -123.0269115,
+      "tags": {
+        "check_date:surface": "2026-02-27",
+        "highway": "footway",
+        "surface": "paved"
+      }
+    },
+    {
+      "id": "way/968958016",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9329314,
+      "longitude": -123.0282096,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/970751710",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9340915,
+      "longitude": -123.0268899,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/970751716",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9342731,
+      "longitude": -123.026455,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/970751717",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9342843,
+      "longitude": -123.0264334,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/970751718",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9345552,
+      "longitude": -123.0262777,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/970751719",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9349502,
+      "longitude": -123.0263834,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/970751720",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9348337,
+      "longitude": -123.0264186,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/970751721",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9348083,
+      "longitude": -123.0261773,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/986862894",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9351942,
+      "longitude": -123.0213371,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/986862904",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9349206,
+      "longitude": -123.0209804,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1021089276",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9280448,
+      "longitude": -123.0219647,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "cycleway": "lane",
+        "expressway": "yes",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lanes": "2",
+        "maxspeed": "40 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "right",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23"
+      }
+    },
+    {
+      "id": "way/1086538087",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9281749,
+      "longitude": -123.0219646,
+      "tags": {
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1086538090",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9285372,
+      "longitude": -123.0228673,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1088334481",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9318509,
+      "longitude": -123.0294296,
+      "tags": {
+        "footway": "access_aisle",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1094360603",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9328723,
+      "longitude": -123.0315787,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1095096758",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9325383,
+      "longitude": -123.0307196,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1095096764",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9323948,
+      "longitude": -123.0303009,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle",
+        "tunnel": "building_passage"
+      }
+    },
+    {
+      "id": "way/1095096765",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9321998,
+      "longitude": -123.0300251,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1173214580",
+      "name": "Mission Street Southeast",
+      "category": "road",
+      "latitude": 44.9293427,
+      "longitude": -123.0247491,
+      "tags": {
+        "NHS": "yes",
+        "alt_name": "Salem Highway #72",
+        "bicycle": "yes",
+        "cycleway": "lane",
+        "expressway": "yes",
+        "fixme": "This is really a lane restriction that will need to be changed after such restrictions are implemented.",
+        "hgv": "designated",
+        "hgv:national_network": "yes",
+        "highway": "trunk",
+        "lane_markings": "yes",
+        "lanes": "3",
+        "maxspeed": "40 mph",
+        "name": "Mission Street Southeast",
+        "oneway": "yes",
+        "ref": "OR 22;OR 99E Bus",
+        "sidewalk": "right",
+        "source:hgv:national_network": "Title 23: Highways Part 658 http://ecfr.gpoaccess.gov/cgi/t/text/text-idx?c=ecfr&rgn=div5&view=text&node=23:1.0.1.7.33&idno=23",
+        "turn:lanes": "left||"
+      }
+    },
+    {
+      "id": "way/1173214581",
+      "name": "17th Street Southeast",
+      "category": "road",
+      "latitude": 44.9296121,
+      "longitude": -123.0229102,
+      "tags": {
+        "cycleway:both": "lane",
+        "cycleway:both:lane": "exclusive",
+        "highway": "secondary",
+        "lane_markings": "yes",
+        "lanes": "5",
+        "lanes:backward": "2",
+        "lanes:forward": "3",
+        "lit": "yes",
+        "maxspeed": "30 mph",
+        "name": "17th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "turn:lanes:forward": "left|right|right"
+      }
+    },
+    {
+      "id": "way/1183355417",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9360527,
+      "longitude": -123.0280411,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1183355418",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9355308,
+      "longitude": -123.0287603,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1183355424",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9355833,
+      "longitude": -123.028529,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1183355425",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9356504,
+      "longitude": -123.0285813,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1183355445",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9344027,
+      "longitude": -123.0297525,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1183355446",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9343837,
+      "longitude": -123.0291421,
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1183355447",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9344081,
+      "longitude": -123.0287392,
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1183355448",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9344887,
+      "longitude": -123.0287035,
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1183355449",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9346046,
+      "longitude": -123.028565,
+      "tags": {
+        "highway": "footway",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1183355461",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9340231,
+      "longitude": -123.0322225,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1183355508",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9334548,
+      "longitude": -123.0310701,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1183355509",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9334086,
+      "longitude": -123.031098,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1183355510",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.933331,
+      "longitude": -123.0311373,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "yes",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1183355511",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9332936,
+      "longitude": -123.0311704,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1183355514",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9335398,
+      "longitude": -123.030268,
+      "tags": {
+        "crossing": "unmarked",
+        "crossing:markings": "no",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1191696771",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9323463,
+      "longitude": -123.0280986,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1191696772",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9323447,
+      "longitude": -123.0283214,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1286462035",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9324778,
+      "longitude": -123.0297001,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1286462036",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9323194,
+      "longitude": -123.0297112,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1286462037",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9311544,
+      "longitude": -123.0303208,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1286462038",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9315275,
+      "longitude": -123.0302435,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1286462041",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9308213,
+      "longitude": -123.0307289,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1286462042",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9307965,
+      "longitude": -123.030459,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1286462043",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9310231,
+      "longitude": -123.0304936,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1286462045",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9304654,
+      "longitude": -123.030703,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1286462046",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9308233,
+      "longitude": -123.0313343,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1286462047",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9304474,
+      "longitude": -123.03078,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1286462048",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9302964,
+      "longitude": -123.0307255,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1286462049",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.930345,
+      "longitude": -123.0309582,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1286462054",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9316379,
+      "longitude": -123.0300836,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1286462057",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9318634,
+      "longitude": -123.0305113,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1286469986",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9300908,
+      "longitude": -123.0315265,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1286469987",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9293221,
+      "longitude": -123.031196,
+      "tags": {
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1290727654",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9281777,
+      "longitude": -123.0274875,
+      "tags": {
+        "highway": "service",
+        "surface": "unpaved"
+      }
+    },
+    {
+      "id": "way/1293409450",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9321572,
+      "longitude": -123.0217409,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "zebra",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1314290014",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.935287,
+      "longitude": -123.0214068,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1314290015",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9350489,
+      "longitude": -123.0214055,
+      "tags": {
+        "covered": "yes",
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1314290016",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9349126,
+      "longitude": -123.0209061,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1316552402",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9355826,
+      "longitude": -123.0251681,
+      "tags": {
+        "highway": "service",
+        "service": "driveway"
+      }
+    },
+    {
+      "id": "way/1316552403",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9355996,
+      "longitude": -123.0252385,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1316552404",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9360303,
+      "longitude": -123.0247193,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1316552408",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.935021,
+      "longitude": -123.0220343,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1316552409",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9352832,
+      "longitude": -123.0220386,
+      "tags": {
+        "highway": "service",
+        "service": "parking_aisle"
+      }
+    },
+    {
+      "id": "way/1316552417",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9344844,
+      "longitude": -123.0255844,
+      "tags": {
+        "highway": "service"
+      }
+    },
+    {
+      "id": "way/1458686838",
+      "name": "12th Street Southeast",
+      "category": "road",
+      "latitude": 44.9330838,
+      "longitude": -123.0290625,
+      "tags": {
+        "cycleway": "lane",
+        "highway": "primary",
+        "maxspeed": "30 mph",
+        "name": "12th Street Southeast",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1458686839",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9332955,
+      "longitude": -123.0286797,
+      "tags": {
+        "highway": "trunk_link",
+        "maxspeed": "30 mph",
+        "oneway": "yes",
+        "sidewalk": "no",
+        "surface": "asphalt",
+        "tiger:county": "Marion, OR"
+      }
+    },
+    {
+      "id": "way/1458686840",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9328408,
+      "longitude": -123.0290049,
+      "tags": {
+        "crossing": "uncontrolled",
+        "crossing:markings": "lines",
+        "crossing:signals": "no",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1458686841",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9329203,
+      "longitude": -123.0289676,
+      "tags": {
+        "footway": "traffic_island",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1458686842",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9330575,
+      "longitude": -123.0288029,
+      "tags": {
+        "footway": "traffic_island",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1458686843",
+      "name": "Bellevue Street Southeast",
+      "category": "road",
+      "latitude": 44.9331417,
+      "longitude": -123.0288324,
+      "tags": {
+        "bicycle": "designated",
+        "crossing": "traffic_signals",
+        "crossing:markings": "lines",
+        "crossing:signals": "yes",
+        "foot": "designated",
+        "footway": "crossing",
+        "highway": "footway",
+        "name": "Bellevue Street Southeast",
+        "oneway:bicycle": "yes",
+        "path": "crossing"
+      }
+    },
+    {
+      "id": "way/1458686844",
+      "name": "Bellevue Street Southeast",
+      "category": "road",
+      "latitude": 44.93309,
+      "longitude": -123.028765,
+      "tags": {
+        "bicycle": "designated",
+        "foot": "designated",
+        "footway": "traffic_island",
+        "highway": "footway",
+        "name": "Bellevue Street Southeast",
+        "oneway:bicycle": "yes",
+        "path": "crossing"
+      }
+    },
+    {
+      "id": "way/1458686845",
+      "name": "Bellevue Street Southeast",
+      "category": "road",
+      "latitude": 44.9332334,
+      "longitude": -123.0289425,
+      "tags": {
+        "bicycle": "designated",
+        "crossing": "traffic_signals",
+        "crossing:markings": "lines",
+        "crossing:signals": "yes",
+        "foot": "designated",
+        "footway": "crossing",
+        "highway": "footway",
+        "name": "Bellevue Street Southeast",
+        "oneway:bicycle": "yes",
+        "path": "crossing"
+      }
+    },
+    {
+      "id": "way/1458686846",
+      "name": "Bellevue Street Southeast",
+      "category": "road",
+      "latitude": 44.9331999,
+      "longitude": -123.0288728,
+      "tags": {
+        "bicycle": "designated",
+        "foot": "designated",
+        "footway": "traffic_island",
+        "highway": "footway",
+        "name": "Bellevue Street Southeast",
+        "oneway:bicycle": "yes",
+        "path": "crossing"
+      }
+    },
+    {
+      "id": "way/1471889937",
+      "name": "16th Street Southeast",
+      "category": "road",
+      "latitude": 44.9271433,
+      "longitude": -123.0247864,
+      "tags": {
+        "highway": "residential",
+        "name": "16th Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "16th"
+      }
+    },
+    {
+      "id": "way/1471889965",
+      "name": "19th Street Southeast",
+      "category": "road",
+      "latitude": 44.9317289,
+      "longitude": -123.0197189,
+      "tags": {
+        "highway": "residential",
+        "name": "19th Street Southeast",
+        "sidewalk:both": "separate",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "19th"
+      }
+    },
+    {
+      "id": "way/1471889966",
+      "name": "19th Street Southeast",
+      "category": "road",
+      "latitude": 44.9295507,
+      "longitude": -123.0206515,
+      "tags": {
+        "highway": "residential",
+        "name": "19th Street Southeast",
+        "sidewalk": "both",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "19th"
+      }
+    },
+    {
+      "id": "way/1471889967",
+      "name": "Trade Street Southeast",
+      "category": "road",
+      "latitude": 44.9340636,
+      "longitude": -123.0241463,
+      "tags": {
+        "bicycle": "designated",
+        "highway": "residential",
+        "name": "Trade Street Southeast",
+        "sidewalk": "both"
+      }
+    },
+    {
+      "id": "way/1471889969",
+      "name": "Mill Street Southeast",
+      "category": "road",
+      "latitude": 44.9314858,
+      "longitude": -123.0187204,
+      "tags": {
+        "highway": "residential",
+        "name": "Mill Street Southeast",
+        "sidewalk:both": "separate"
+      }
+    },
+    {
+      "id": "way/1471889972",
+      "name": "Bellevue Street Southeast",
+      "category": "road",
+      "latitude": 44.9313348,
+      "longitude": -123.0226017,
+      "tags": {
+        "highway": "residential",
+        "name": "Bellevue Street Southeast",
+        "sidewalk": "both",
+        "surface": "asphalt",
+        "tiger:cfcc": "A41",
+        "tiger:county": "Marion, OR",
+        "tiger:name_base": "Bellevue"
+      }
+    },
+    {
+      "id": "way/1471890110",
+      "name": "Mill Street Southeast",
+      "category": "road",
+      "latitude": 44.933586,
+      "longitude": -123.0266956,
+      "tags": {
+        "highway": "residential",
+        "name": "Mill Street Southeast",
+        "sidewalk:both": "separate"
+      }
+    },
+    {
+      "id": "way/1491689296",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9280409,
+      "longitude": -123.0291579,
+      "tags": {
+        "bicycle": "designated",
+        "foot": "yes",
+        "highway": "path",
+        "surface": "concrete"
+      }
+    },
+    {
+      "id": "way/1496918792",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9315214,
+      "longitude": -123.0299605,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1496918793",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9305955,
+      "longitude": -123.0304218,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1496918794",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9310158,
+      "longitude": -123.030213,
+      "tags": {
+        "crossing": "unmarked",
+        "crossing:markings": "no",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1496918795",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9320352,
+      "longitude": -123.0297027,
+      "tags": {
+        "crossing": "unmarked",
+        "crossing:markings": "no",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1496918796",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9321068,
+      "longitude": -123.0296667,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1496932954",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9339807,
+      "longitude": -123.028724,
+      "tags": {
+        "button_operated": "yes",
+        "crossing": "traffic_signals",
+        "crossing:island": "yes",
+        "crossing:markings": "zebra",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "kerb": "lowered"
+      }
+    },
+    {
+      "id": "way/1496932955",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.933962,
+      "longitude": -123.0286347,
+      "tags": {
+        "button_operated": "yes",
+        "footway": "traffic_island",
+        "highway": "footway",
+        "kerb": "lowered"
+      }
+    },
+    {
+      "id": "way/1496932956",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9339416,
+      "longitude": -123.0285368,
+      "tags": {
+        "button_operated": "yes",
+        "crossing": "traffic_signals",
+        "crossing:island": "no",
+        "crossing:markings": "zebra",
+        "crossing:signals": "yes",
+        "footway": "crossing",
+        "highway": "footway",
+        "kerb": "lowered"
+      }
+    },
+    {
+      "id": "way/1497622816",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9282719,
+      "longitude": -123.0293642,
+      "tags": {
+        "footway": "sidewalk",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1497622834",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 44.9287304,
+      "longitude": -123.0293654,
+      "tags": {
+        "crossing": "unmarked",
+        "crossing:markings": "no",
+        "footway": "crossing",
+        "highway": "footway"
+      }
+    },
+    {
+      "id": "way/1531757909",
+      "name": "12th Street Southeast",
+      "category": "road",
+      "latitude": 44.9355499,
+      "longitude": -123.0278543,
+      "tags": {
+        "cycleway": "proposed",
+        "highway": "primary",
+        "lanes": "2",
+        "maxspeed": "30 mph",
+        "name": "12th Street Southeast",
+        "oneway": "yes",
+        "proposed": "lane",
+        "sidewalk": "no",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1531757910",
+      "name": "Mill Street Southeast",
+      "category": "road",
+      "latitude": 44.9340809,
+      "longitude": -123.0285765,
+      "tags": {
+        "cycleway": "shared_lane",
+        "highway": "residential",
+        "maxheight:signed": "no",
+        "name": "Mill Street Southeast",
+        "oneway": "yes",
+        "sidewalk": "right",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1531757911",
+      "name": "12th Street Southeast",
+      "category": "road",
+      "latitude": 44.9340646,
+      "longitude": -123.02865,
+      "tags": {
+        "cycleway": "proposed",
+        "highway": "primary",
+        "lanes": "2",
+        "maxspeed": "30 mph",
+        "name": "12th Street Southeast",
+        "oneway": "yes",
+        "proposed": "lane",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1531757912",
+      "name": "12th Street Southeast",
+      "category": "road",
+      "latitude": 44.9339808,
+      "longitude": -123.0286849,
+      "tags": {
+        "cycleway": "proposed",
+        "highway": "primary",
+        "lanes": "2",
+        "maxspeed": "30 mph",
+        "name": "12th Street Southeast",
+        "oneway": "yes",
+        "proposed": "lane",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1531757913",
+      "name": "Mill Street Southeast",
+      "category": "road",
+      "latitude": 44.9339016,
+      "longitude": -123.0280546,
+      "tags": {
+        "cycleway": "shared_lane",
+        "highway": "residential",
+        "maxheight:signed": "no",
+        "name": "Mill Street Southeast",
+        "oneway": "yes",
+        "sidewalk:left": "no",
+        "sidewalk:right": "separate",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "id": "way/1554647664",
+      "name": "Cajun El Tijuanense",
+      "category": "restaurant",
+      "latitude": 44.9358241,
+      "longitude": -123.0243016,
+      "tags": {
+        "amenity": "fast_food",
+        "building": "static_caravan",
+        "cuisine": "american;regional;mexican",
+        "name": "Cajun El Tijuanense"
+      }
+    }
+  ]
+}
