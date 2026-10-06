@@ -185,6 +185,16 @@ const isFeatureCompetitor = (feature: any, business: string) => {
   return tokens.includes(b) || tokens.includes(`shop_${b}`)
 }
 
+function distanceMeters(lat1: number, lon1: number, lat2: number, lon2: number): number {
+  const radius = 6371000
+  const phi1 = lat1 * Math.PI / 180
+  const phi2 = lat2 * Math.PI / 180
+  const dPhi = (lat2 - lat1) * Math.PI / 180
+  const dLambda = (lon2 - lon1) * Math.PI / 180
+  const a = Math.sin(dPhi / 2) ** 2 + Math.cos(phi1) * Math.cos(phi2) * Math.sin(dLambda / 2) ** 2
+  return 2 * radius * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+}
+
 const getCategoryColor = (props: any, targetBusiness?: string) => {
   if (!props) return '#94a3b8'
   if (targetBusiness && isFeatureCompetitor({ properties: props }, targetBusiness)) return '#ef4444'
@@ -476,7 +486,7 @@ const ComparisonView = ({ candidates, compareSelection, onClear, onBackToAnalysi
   return (
     <div className="page-content comparison-page fade-in">
       <div className="page-header"><div><span className="eyebrow">Decision workspace</span><h1>Comparison Workspace</h1><p>Review your shortlisted locations side by side before choosing where to invest.</p></div><div className="header-actions"><button type="button" className="btn btn-outline" onClick={onBackToAnalysis}><MapIcon size={15}/> Back to map</button>{selectedCandidates.length > 0 && <button type="button" className="btn btn-outline text-danger" onClick={onClear}><X size={15}/> Clear shortlist</button>}</div></div>
-      {selectedCandidates.length < 2 ? <div className="empty-state comparison-empty"><GitCompareArrows size={36}/><h3>{selectedCandidates.length === 1 ? 'Add one more location to compare' : 'No locations selected yet'}</h3><p>Go to New Analysis → Place Business, run a search, then click <strong>Compare</strong> on the candidate cards.</p><button type="button" className="btn btn-primary" onClick={onBackToAnalysis}><PlusCircle size={15}/> Open analysis</button></div> : <div className="comparison-page-card"><div className="comparison-page-intro"><div><span className="eyebrow">{selectedCandidates.length} locations selected</span><h2>Side-by-side comparison</h2></div><span className="comparison-tip">Higher suitability is better · lower budget may reduce entry cost</span></div><div className="comparison-page-grid" style={{ gridTemplateColumns: `repeat(${selectedCandidates.length}, minmax(170px, 1fr))` }}>{selectedCandidates.map((candidate, position) => { const originalIndex = compareSelection[position]; return <div className="comparison-page-location" key={`${candidate.lat}-${candidate.lon}`}><div className="comparison-page-location-top"><span>Rank #{originalIndex + 1}</span><button type="button" aria-label={`Remove location ${originalIndex + 1}`} onClick={() => onRemove(originalIndex)}><X size={14}/></button></div><strong>{candidate.lat.toFixed(5)}</strong><small>{candidate.lon.toFixed(5)}</small><b>{candidate.model_score.toFixed(2)} score</b></div> })}</div><div className="comparison-page-metrics">{[['Suitability', (c: Candidate) => c.model_score.toFixed(2)], ['Land budget / cent', (c: Candidate) => c.budget_estimate?.formatted_price || 'Unavailable'], ['Population', (c: Candidate) => c.details.population.toLocaleString()], ['Competitors', (c: Candidate) => String(c.details.competitors)], ['Schools', (c: Candidate) => String(c.details.schools)], ['Colleges', (c: Candidate) => String(c.details.colleges)], ['Hospitals', (c: Candidate) => String(c.details.hospitals)], ['Road distance', (c: Candidate) => `${c.details.distance_to_major_road.toFixed(0)} m`]].map(([label, fn]) => { const value = fn as (candidate: Candidate) => string; return <div className="comparison-page-metric" key={String(label)}><span>{String(label)}</span>{selectedCandidates.map((candidate, index) => <strong key={`${String(label)}-${index}`}>{value(candidate)}</strong>)}</div> })}</div></div>}
+      {selectedCandidates.length < 2 ? <div className="empty-state comparison-empty"><GitCompareArrows size={36}/><h3>{selectedCandidates.length === 1 ? 'Add one more location to compare' : 'No locations selected yet'}</h3><p>Go to New Analysis → Place Business, run a search, then click <strong>Compare</strong> on the candidate cards.</p><button type="button" className="btn btn-primary" onClick={onBackToAnalysis}><PlusCircle size={15}/> Open analysis</button></div> : <div className="comparison-page-card"><div className="comparison-page-intro"><div><span className="eyebrow">{selectedCandidates.length} locations selected</span><h2>Side-by-side comparison</h2></div><span className="comparison-tip">Higher suitability is better · lower budget may reduce entry cost</span></div><div className="comparison-page-grid" style={{ gridTemplateColumns: `repeat(${selectedCandidates.length}, minmax(170px, 1fr))` }}>{selectedCandidates.map((candidate, position) => { const originalIndex = compareSelection[position]; return <div className="comparison-page-location" key={`${candidate.lat}-${candidate.lon}`}><div className="comparison-page-location-top"><span>Rank #{originalIndex + 1}</span><button type="button" aria-label={`Remove location ${originalIndex + 1}`} onClick={() => onRemove(originalIndex)}><X size={14}/></button></div><strong>{candidate.lat.toFixed(5)}</strong><small>{candidate.lon.toFixed(5)}</small><b>{candidate.model_score.toFixed(2)} score</b></div> })}</div><div className="comparison-page-metrics">{[['Suitability', (c: Candidate) => c.model_score.toFixed(2)], ['Land budget / cent', (c: Candidate) => c.budget_estimate?.formatted_price || 'Unavailable'], ['Population', (c: Candidate) => c.details.population.toLocaleString()], ['Competitors / 500 m', (c: Candidate) => String(c.details.competitors)], ['Schools', (c: Candidate) => String(c.details.schools)], ['Colleges', (c: Candidate) => String(c.details.colleges)], ['Hospitals', (c: Candidate) => String(c.details.hospitals)], ['Road distance', (c: Candidate) => `${c.details.distance_to_major_road.toFixed(0)} m`]].map(([label, fn]) => { const value = fn as (candidate: Candidate) => string; return <div className="comparison-page-metric" key={String(label)}><span>{String(label)}</span>{selectedCandidates.map((candidate, index) => <strong key={`${String(label)}-${index}`}>{value(candidate)}</strong>)}</div> })}</div></div>}
     </div>
   )
 }
@@ -699,6 +709,15 @@ export default function App() {
   const max = scores.length ? Math.max(...scores) : 1
   const chosen = selected === null ? null : candidates[selected]
   const comparedCandidates = compareSelection.map(index => candidates[index]).filter(Boolean)
+  const competitorCountFor = (candidate: Candidate) => {
+    if (!geoJson?.features?.length) return candidate.details.competitors
+    return geoJson.features.filter((feature: any) => {
+      const [featureLon, featureLat] = feature.geometry?.coordinates || []
+      return typeof featureLat === 'number' && typeof featureLon === 'number' && distanceMeters(candidate.lat, candidate.lon, featureLat, featureLon) <= 500 && isFeatureCompetitor(feature, business)
+    }).length
+  }
+  const comparisonCandidate = (candidate: Candidate): Candidate => ({ ...candidate, details: { ...candidate.details, competitors: competitorCountFor(candidate) } })
+  const comparedDisplayCandidates = comparedCandidates.map(comparisonCandidate)
 
   const toggleCompare = (index: number) => {
     setCompareSelection(current => {
@@ -794,9 +813,9 @@ export default function App() {
       <main className="main-area">
         {activePage === 'dashboard' && <DashboardView onNavigate={(p, m) => { setActivePage(p); if (m) setMode(m); }} />}
         {activePage === 'locations' && <LocationsView locations={savedLocations} onAnalyze={openSavedLocation} onRemove={removeSavedLocation} onViewMap={() => { setActivePage('analysis'); switchMode('business') }} />}
-        {activePage === 'comparison' && <ComparisonView candidates={candidates} compareSelection={compareSelection} onClear={() => setCompareSelection([])} onBackToAnalysis={() => setActivePage('analysis')} onRemove={(index) => setCompareSelection(current => current.filter(item => item !== index))} />}
+        {activePage === 'comparison' && <ComparisonView candidates={candidates.map(comparisonCandidate)} compareSelection={compareSelection} onClear={() => setCompareSelection([])} onBackToAnalysis={() => setActivePage('analysis')} onRemove={(index) => setCompareSelection(current => current.filter(item => item !== index))} />}
         {activePage === 'settings' && <SettingsView theme={theme} toggleTheme={toggleTheme} showLabels={showLabels} toggleLabels={toggleLabels} onSaved={() => notify('Profile preferences saved locally')} />}
-        {activePage === 'report' && <ReportView mode={mode} query={query} candidates={candidates} comparedCandidates={comparedCandidates} recommendations={recommendations} budgetEstimate={budgetEstimate} geoJson={geoJson} onBack={() => setActivePage('analysis')} onPrint={printReport} />}
+        {activePage === 'report' && <ReportView mode={mode} query={query} candidates={candidates.map(comparisonCandidate)} comparedCandidates={comparedDisplayCandidates} recommendations={recommendations} budgetEstimate={budgetEstimate} geoJson={geoJson} onBack={() => setActivePage('analysis')} onPrint={printReport} />}
 
         {/* Full Analysis Tool Page */}
         {activePage === 'analysis' && <div className="analysis-view visible">
@@ -1105,7 +1124,7 @@ export default function App() {
                     <h3 className="section-title" style={{ margin: 0 }}>Top Hotspots</h3>
                     {geoJson && (
                       <span className="badge" style={{ backgroundColor: '#ef4444', color: '#fff', fontSize: '11px', padding: '4px 8px', borderRadius: '12px' }}>
-                        {geoJson.features?.filter((f: any) => isFeatureCompetitor(f, business)).length || 0} Competitors Nearby
+                        {geoJson.features?.filter((f: any) => isFeatureCompetitor(f, business)).length || 0} Competitors in scan area
                       </span>
                     )}
                   </div>
@@ -1149,7 +1168,7 @@ export default function App() {
                       ['Suitability', (candidate: Candidate) => candidate.model_score.toFixed(2)],
                       ['Budget / cent', (candidate: Candidate) => candidate.budget_estimate?.formatted_price || 'Unavailable'],
                       ['Population', (candidate: Candidate) => candidate.details.population.toLocaleString()],
-                      ['Competitors', (candidate: Candidate) => String(candidate.details.competitors)],
+                      ['Competitors / 500 m', (candidate: Candidate) => String(competitorCountFor(candidate))],
                       ['Schools', (candidate: Candidate) => String(candidate.details.schools)],
                       ['Road distance', (candidate: Candidate) => `${candidate.details.distance_to_major_road.toFixed(0)} m`],
                     ].map(([label, value]) => { const metricValue = value as (candidate: Candidate) => string; return <div key={String(label)} className="comparison-metric-row"><span>{String(label)}</span>{compareSelection.map(index => <strong key={`${String(label)}-${index}`}>{metricValue(candidates[index])}</strong>)}</div> })}
@@ -1168,7 +1187,7 @@ export default function App() {
                     </div>
                     <div className="metric-box">
                       <label>Competition</label>
-                      <strong>{formatNum(chosen.details.competitors)}</strong>
+                      <strong>{formatNum(competitorCountFor(chosen))}</strong>
                     </div>
                   </div>
                   {chosen.budget_estimate && (
