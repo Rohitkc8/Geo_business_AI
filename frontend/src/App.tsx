@@ -35,7 +35,9 @@ import {
   Trash2,
   ExternalLink,
   Maximize2,
-  LocateFixed
+  LocateFixed,
+  GitCompareArrows,
+  FileText
 } from 'lucide-react'
 import './App.css'
 
@@ -477,6 +479,7 @@ export default function App() {
   const [center, setCenter] = useState<[number, number]>([11.0168, 76.9558])
   const [candidates, setCandidates] = useState<Candidate[]>([])
   const [selected, setSelected] = useState<number | null>(null)
+  const [compareSelection, setCompareSelection] = useState<number[]>([])
   const [recommendations, setRecommendations] = useState<Recommendation[]>([])
   const [geoJson, setGeoJson] = useState<any>(null)
   const [emptyLand, setEmptyLand] = useState<any>(null)
@@ -510,6 +513,7 @@ export default function App() {
     setGeoJson(null)
     setBudgetEstimate(null)
     setSelected(null)
+    setCompareSelection([])
   }
 
   const saveCurrentLocation = () => {
@@ -563,6 +567,7 @@ export default function App() {
     setError('')
     setCandidates([])
     setSelected(null)
+    setCompareSelection([])
     setRecommendations([])
     setBudgetEstimate(null)
     setGeoJson(null)
@@ -642,6 +647,34 @@ export default function App() {
   const max = scores.length ? Math.max(...scores) : 1
   const chosen = selected === null ? null : candidates[selected]
 
+  const toggleCompare = (index: number) => {
+    setCompareSelection(current => {
+      if (current.includes(index)) return current.filter(item => item !== index)
+      if (current.length >= 4) {
+        notify('Compare up to four locations at a time')
+        return current
+      }
+      return [...current, index]
+    })
+  }
+
+  const exportPdfReport = () => {
+    const reportWindow = window.open('', '_blank', 'noopener,noreferrer')
+    if (!reportWindow) {
+      notify('Allow pop-ups to export the PDF report')
+      return
+    }
+    const escapeHtml = (value: unknown) => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' }[char] || char))
+    const compared = compareSelection.map(index => candidates[index]).filter(Boolean)
+    const reportRows = (compared.length ? compared : candidates.slice(0, 5)).map((candidate, index) => `
+      <tr><td>Location ${index + 1}</td><td>${candidate.lat.toFixed(5)}, ${candidate.lon.toFixed(5)}</td><td>${candidate.model_score.toFixed(2)}</td><td>${escapeHtml(candidate.budget_estimate?.formatted_price || 'Unavailable')}</td><td>${candidate.details.population.toLocaleString()}</td><td>${candidate.details.competitors}</td></tr>`).join('')
+    const recommendationsHtml = recommendations.map(item => `<li><strong>${escapeHtml(item.business)}</strong> — ${item.score_percent}% suitability</li>`).join('')
+    reportWindow.document.write(`<!doctype html><html><head><title>GeoBusiness AI Report</title><style>body{font-family:Arial,sans-serif;color:#172033;max-width:980px;margin:40px auto;padding:0 24px}h1{color:#0f766e;margin-bottom:4px}h2{margin-top:28px;border-bottom:2px solid #dbeafe;padding-bottom:6px}p{color:#475569}table{width:100%;border-collapse:collapse;margin-top:12px}th,td{border:1px solid #cbd5e1;padding:9px;text-align:left;font-size:12px}th{background:#eff6ff;color:#1e3a8a}.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.metric{background:#f8fafc;border:1px solid #e2e8f0;padding:12px;border-radius:8px}.metric b{display:block;font-size:18px;color:#0f766e;margin-top:4px}.note{margin-top:28px;font-size:11px;color:#64748b}</style></head><body><h1>GeoBusiness AI — Location Analysis Report</h1><p>Generated ${new Date().toLocaleString()} · Search area: <strong>${escapeHtml(query || 'Current analysis')}</strong> · Workflow: ${mode === 'business' ? 'Business → Land' : 'Land → Business'}</p>${mode === 'land' ? `<h2>Land evaluation</h2><div class="meta"><div class="metric">Budget estimate<b>${escapeHtml(budgetEstimate?.formatted_price || 'Unavailable')}</b></div><div class="metric">Recommendations<b>${recommendations.length}</b></div><div class="metric">Map features<b>${geoJson?.features?.length || 0}</b></div></div><h2>Business recommendations</h2><ul>${recommendationsHtml || '<li>No recommendations available.</li>'}</ul>` : `<h2>Candidate location comparison</h2><p>${compared.length ? `Shortlisted ${compared.length} locations.` : 'Top five ranked locations shown.'}</p><table><thead><tr><th>Location</th><th>Coordinates</th><th>Suitability</th><th>Land budget / cent</th><th>Population</th><th>Competitors</th></tr></thead><tbody>${reportRows || '<tr><td colspan="6">No candidate locations available.</td></tr>'}</tbody></table>`}<p class="note">Prototype decision-support report. Budget values are estimates per cent and are not certified market valuations or financial advice.</p></body></html>`)
+    reportWindow.document.close()
+    reportWindow.focus()
+    window.setTimeout(() => reportWindow.print(), 300)
+  }
+
   return (
     <div className="app-container">
       {toast && <div className="toast" role="status"><Check size={15}/> {toast}</div>}
@@ -718,7 +751,10 @@ export default function App() {
           <div className="analysis-sidebar">
             <div className="analysis-header">
               <div><span className="eyebrow">Decision workspace</span><h2>New analysis</h2><p>Turn local signals into a shortlist you can defend.</p></div>
-              <button type="button" className="icon-action" onClick={saveCurrentLocation} disabled={!recommendations.length && !candidates.length} title="Save this analysis"><Save size={16}/></button>
+              <div className="analysis-header-actions">
+                <button type="button" className="icon-action" onClick={exportPdfReport} disabled={!recommendations.length && !candidates.length} title="Export PDF report"><FileText size={16}/></button>
+                <button type="button" className="icon-action" onClick={saveCurrentLocation} disabled={!recommendations.length && !candidates.length} title="Save this analysis"><Save size={16}/></button>
+              </div>
             </div>
 
             <div className="mode-toggle">
@@ -1022,20 +1058,50 @@ export default function App() {
                     )}
                   </div>
                   {candidates.map((c, i) => (
-                    <button
-                      type="button"
-                      key={`${c.lat}-${c.lon}`}
-                      onClick={() => setSelected(i)}
-                      className={`data-card candidate-btn ${selected === i ? 'selected' : ''}`}
-                    >
-                      <div className="candidate-info">
-                        <strong>Rank #{i + 1}</strong>
-                        <span className="score">Score: {c.model_score.toFixed(2)}</span>
-                      </div>
-                      <div className="candidate-coords"><MapPin size={12}/> {c.lat.toFixed(4)}, {c.lon.toFixed(4)}</div>
-                      {c.budget_estimate && <div className="candidate-budget"><span>Estimated land budget</span><strong>{c.budget_estimate.formatted_price}</strong></div>}
-                    </button>
+                    <div key={`${c.lat}-${c.lon}`} className={`candidate-row ${selected === i ? 'selected' : ''}`}>
+                      <button
+                        type="button"
+                        onClick={() => setSelected(i)}
+                        className={`data-card candidate-btn ${selected === i ? 'selected' : ''}`}
+                      >
+                        <div className="candidate-info">
+                          <strong>Rank #{i + 1}</strong>
+                          <span className="score">Score: {c.model_score.toFixed(2)}</span>
+                        </div>
+                        <div className="candidate-coords"><MapPin size={12}/> {c.lat.toFixed(4)}, {c.lon.toFixed(4)}</div>
+                        {c.budget_estimate && <div className="candidate-budget"><span>Estimated land budget</span><strong>{c.budget_estimate.formatted_price}</strong></div>}
+                      </button>
+                      <button type="button" className={`compare-toggle ${compareSelection.includes(i) ? 'active' : ''}`} onClick={() => toggleCompare(i)} aria-pressed={compareSelection.includes(i)} title={compareSelection.includes(i) ? 'Remove from comparison' : 'Add to comparison'}>
+                        <GitCompareArrows size={13} /> {compareSelection.includes(i) ? 'Added' : 'Compare'}
+                      </button>
+                    </div>
                   ))}
+                  {compareSelection.length > 0 && <div className="compare-hint"><GitCompareArrows size={13} /> {compareSelection.length} selected for comparison{compareSelection.length < 2 ? ' — select one more location' : ''}</div>}
+                </div>
+              )}
+
+              {mode === 'business' && compareSelection.length >= 2 && (
+                <div className="comparison-workspace">
+                  <div className="comparison-header">
+                    <div><span className="eyebrow">Shortlist workspace</span><h3>Compare locations</h3></div>
+                    <button type="button" className="compare-clear" onClick={() => setCompareSelection([])}>Clear</button>
+                  </div>
+                  <div className="comparison-grid" style={{ gridTemplateColumns: `repeat(${compareSelection.length}, minmax(112px, 1fr))` }}>
+                    {compareSelection.map((index) => {
+                      const candidate = candidates[index]
+                      return <div key={`${candidate.lat}-${candidate.lon}`} className="comparison-location"><span className="comparison-rank">Rank #{index + 1}</span><strong>{candidate.lat.toFixed(4)}</strong><small>{candidate.lon.toFixed(4)}</small></div>
+                    })}
+                  </div>
+                  <div className="comparison-metrics">
+                    {[
+                      ['Suitability', (candidate: Candidate) => candidate.model_score.toFixed(2)],
+                      ['Budget / cent', (candidate: Candidate) => candidate.budget_estimate?.formatted_price || 'Unavailable'],
+                      ['Population', (candidate: Candidate) => candidate.details.population.toLocaleString()],
+                      ['Competitors', (candidate: Candidate) => String(candidate.details.competitors)],
+                      ['Schools', (candidate: Candidate) => String(candidate.details.schools)],
+                      ['Road distance', (candidate: Candidate) => `${candidate.details.distance_to_major_road.toFixed(0)} m`],
+                    ].map(([label, value]) => { const metricValue = value as (candidate: Candidate) => string; return <div key={String(label)} className="comparison-metric-row"><span>{String(label)}</span>{compareSelection.map(index => <strong key={`${String(label)}-${index}`}>{metricValue(candidates[index])}</strong>)}</div> })}
+                  </div>
                 </div>
               )}
 

@@ -196,7 +196,6 @@ Backend tests mock external providers and models where appropriate. Frontend tes
 - Persist source provenance, feature snapshots and analysis results in PostGIS.
 - Add authentication, rate limiting, cache expiry, observability and deployment configuration.
 - Add accessible map controls, candidate exports, and user-provided constraints such as rent, zoning and budget.
-# Geo_business_AI
 
 ## 23. Current product capabilities
 
@@ -225,3 +224,26 @@ The map also supports interactive **Center** and **Fit results** actions. Center
 3. Persist analysis snapshots and source provenance in PostGIS so results can be audited and compared over time.
 4. Add authentication, rate limiting, provider-health monitoring and background processing for larger candidate grids.
 5. Add exports (CSV/PDF), side-by-side comparisons and an admin workflow for reviewing model quality.
+## 24. Comparison and reporting
+
+The BUSINESS → LAND workflow supports a shortlist of up to four candidate locations. Users can add candidates with **Compare**, inspect suitability, estimated budget per cent, population, competitors, schools and road distance side by side, clear the shortlist, and export the current analysis as a print-ready PDF report from the analysis header. The browser print dialog is used so the user can choose “Save as PDF” without a reporting server.
+
+## 25. Real land-price data integration plan
+
+The current budget model is a prototype estimate. To integrate real data safely, add a provider adapter rather than calling a vendor directly from the React app:
+
+1. Create a backend `LandPriceProvider` interface with `get_price_estimate(lat, lon, radius, property_type)` and a normalized response containing `price_per_cent`, `currency`, `source`, `observed_at`, `sample_count`, `confidence_low`, `confidence_high`, and `provenance_url`.
+2. Implement adapters for official registration/transaction datasets, government open-data portals, licensed market-data vendors, or a user-uploaded CSV. Keep provider credentials and API keys in backend environment variables.
+3. Normalize units before storage: INR per square metre, cent and acre; retain the original unit and conversion method. Store time period, transaction type, land-use classification and whether the value is an asking price or a registered transaction.
+4. Match transactions to coordinates using geocoding or parcel identifiers, then aggregate nearby observations using distance and recency weighting. Return a confidence range when there are too few comparable observations.
+5. Cache provider responses with a timestamp, respect rate limits, log provenance, and expose a `data_quality` field so the UI can distinguish live market data from the fallback model.
+6. Replace `budget_estimate` in the API only after validation against held-out local transactions; keep the synthetic model as a clearly labelled fallback for areas without coverage.
+
+Recommended API shape:
+
+```text
+GET /api/land-price?lat=...&lon=...&radius=...&land_type=...
+→ { price_per_cent, currency, confidence_low, confidence_high, source, observed_at, sample_count, data_quality }
+```
+
+Do not expose provider keys in the frontend, scrape sources that prohibit automated access, or present asking prices as certified valuations.
