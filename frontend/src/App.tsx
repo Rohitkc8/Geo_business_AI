@@ -3,9 +3,9 @@ import type { FormEvent } from 'react'
 import { CircleMarker, GeoJSON, MapContainer, Popup, Rectangle, TileLayer, useMap } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
-import { 
-  LayoutDashboard, 
-  PlusCircle, 
+import {
+  LayoutDashboard,
+  PlusCircle,
   MapPin,
   Settings,
   LogOut,
@@ -45,11 +45,23 @@ type Mode = 'land' | 'business'
 type Page = 'dashboard' | 'analysis' | 'locations' | 'settings'
 
 type Factors = { positive_factors: string[]; negative_factors: string[] }
-type Candidate = { 
+type BudgetEstimate = {
+  price_per_cent_inr: number
+  formatted_price: string
+  factors: {
+    source: string
+    population_density: string
+    distance_to_road: string
+    school_count?: number
+    hospital_count?: number
+  }
+}
+type Candidate = {
   lat: number
   lon: number
   model_score: number
-  details: { 
+  budget_estimate?: BudgetEstimate
+  details: {
     population: number
     competitors: number
     schools: number
@@ -57,9 +69,9 @@ type Candidate = {
     hospitals: number
     bus_stops: number
     road_density: number
-    distance_to_major_road: number 
+    distance_to_major_road: number
   }
-  explanation: Factors 
+  explanation: Factors
 }
 type Recommendation = Factors & { business: string; score_percent: number }
 type SavedLocation = {
@@ -92,18 +104,23 @@ type LandParcel = {
   tags: Record<string, string>
 }
 
-function Viewport({ center }: { center: [number, number] }) { 
+function Viewport({ center }: { center: [number, number] }) {
   const map = useMap()
   useEffect(() => { map.flyTo(center, 13, { animate: true, duration: 1.5 }) }, [center, map])
-  return null 
+  return null
 }
 
-function heat(score: number, min: number, max: number) { 
+function heat(score: number, min: number, max: number) {
   const r = max === min ? 1 : (score - min) / (max - min)
-  return r > .75 ? '#10b981' : r > .5 ? '#f59e0b' : r > .25 ? '#f97316' : '#ef4444' 
+  return r > .75 ? '#10b981' : r > .5 ? '#f59e0b' : r > .25 ? '#f97316' : '#ef4444'
 }
 
-const formatNum = (n: number | null | undefined, suffix = '') => 
+function budgetHeat(price: number, min: number, max: number) {
+  const r = max === min ? 0.5 : (price - min) / (max - min)
+  return r > .75 ? '#dc2626' : r > .5 ? '#f97316' : r > .25 ? '#eab308' : '#16a34a'
+}
+
+const formatNum = (n: number | null | undefined, suffix = '') =>
   n === null || n === undefined ? 'N/A' : `${n}${suffix}`
 
 const CATEGORY_COLORS: Record<string, string> = {
@@ -184,7 +201,7 @@ const DashboardView = ({ onNavigate }: { onNavigate: (p: Page, m?: Mode) => void
         <button className="btn btn-outline" onClick={() => onNavigate('locations')}><MapPin size={16}/> Saved Locations</button>
       </div>
     </div>
-    
+
     <div className="dashboard-grid">
       {/* Quick Actions for the Two Main Workflows */}
       <div className="workflow-card land-workflow" onClick={() => onNavigate('analysis', 'land')}>
@@ -237,7 +254,7 @@ const DashboardView = ({ onNavigate }: { onNavigate: (p: Page, m?: Mode) => void
         <h3>Recent Analyses</h3>
         <span className="total-count">2 total reports</span>
       </div>
-      
+
       <div className="recent-grid">
         <div className="report-card">
           <div className="report-card-header">
@@ -249,7 +266,7 @@ const DashboardView = ({ onNavigate }: { onNavigate: (p: Page, m?: Mode) => void
             <MapPin size={14} className="text-primary"/> Coimbatore, Tamil Nadu
           </div>
           <div className="target-info">Workflow: Business → Land</div>
-          
+
           <button className="view-report-btn" onClick={() => onNavigate('analysis', 'business')}>
             Open Analysis <ArrowRight size={14}/>
           </button>
@@ -265,7 +282,7 @@ const DashboardView = ({ onNavigate }: { onNavigate: (p: Page, m?: Mode) => void
             <MapPin size={14} className="text-primary"/> 11.0168, 76.9558
           </div>
           <div className="target-info">Workflow: Land → Business</div>
-          
+
           <button className="view-report-btn" onClick={() => onNavigate('analysis', 'land')}>
             Open Analysis <ArrowRight size={14}/>
           </button>
@@ -286,9 +303,16 @@ const BUSINESS_SCORE_LEGEND = [
   { color: '#ef4444', label: 'Low score (bottom 25 %)' },
 ]
 
+const BUSINESS_BUDGET_LEGEND = [
+  { color: '#16a34a', label: 'Lower budget' },
+  { color: '#eab308', label: 'Mid budget' },
+  { color: '#f97316', label: 'High budget' },
+  { color: '#dc2626', label: 'Highest budget' },
+]
+
 function MapLegend({ mode }: { mode: Mode }) {
   const [open, setOpen] = useState(true)
-  const items = mode === 'land' ? LAND_DOT_LEGEND : BUSINESS_SCORE_LEGEND
+  const items = mode === 'land' ? LAND_DOT_LEGEND : [...BUSINESS_SCORE_LEGEND, ...BUSINESS_BUDGET_LEGEND]
 
   return (
     <div className={`map-legend ${open ? 'map-legend--open' : ''}`}>
@@ -399,14 +423,14 @@ export default function App() {
   const [activePage, setActivePage] = useState<Page>('dashboard')
   const [theme, setTheme] = useState<'dark' | 'light'>('dark')
   const [showLabels, setShowLabels] = useState(false)
-  
+
   const toggleTheme = () => setTheme(t => t === 'dark' ? 'light' : 'dark')
   const toggleLabels = () => setShowLabels(s => !s)
 
   useEffect(() => {
     document.body.className = theme === 'light' ? 'light-theme' : '';
   }, [theme]);
-  
+
   const [mode, setMode] = useState<Mode>('land')
   const [query, setQuery] = useState('')
   const [business, setBusiness] = useState('pharmacy')
@@ -473,11 +497,11 @@ export default function App() {
     notify('Saved location removed')
   }
 
-  useEffect(() => { 
+  useEffect(() => {
     fetch(`${API}/business-types`)
       .then(r => r.json())
       .then(d => setTypes(d.business_types || []))
-      .catch(() => setError('Could not load business categories. Is the API running?')) 
+      .catch(() => setError('Could not load business categories. Is the API running?'))
   }, [])
 
   const search = async (event: FormEvent) => {
@@ -495,22 +519,22 @@ export default function App() {
     setSelectedLand(null)
 
     try {
-      const geoResponse = await fetch(`${API}/geocode`, { 
-        method: 'POST', 
-        headers: { 'Content-Type': 'application/json' }, 
-        body: JSON.stringify({ query }) 
+      const geoResponse = await fetch(`${API}/geocode`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query })
       })
       if (!geoResponse.ok) throw new Error('The requested location could not be found.')
       const location = await geoResponse.json()
       const position: [number, number] = [location.latitude, location.longitude]
       setCenter(position)
-      
+
       if (mode === 'land') {
         const [analysisResponse, mapResponse] = await Promise.all([
-          fetch(`${API}/analyze-location`, { 
-            method: 'POST', 
-            headers: { 'Content-Type': 'application/json' }, 
-            body: JSON.stringify({ lat: position[0], lon: position[1], radius: 500 }) 
+          fetch(`${API}/analyze-location`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ lat: position[0], lon: position[1], radius: 500 })
           }),
           fetch(`${API}/map-data?lat=${position[0]}&lon=${position[1]}&radius=500`)
         ])
@@ -535,29 +559,32 @@ export default function App() {
           .catch(() => {})
           .finally(() => setLoadingLand(false))
       } else {
-        const response = await fetch(`${API}/find-best-locations`, { 
-          method: 'POST', 
-          headers: { 'Content-Type': 'application/json' }, 
-          body: JSON.stringify({ business_type: business, start_lat: position[0], start_lon: position[1], steps: 4, step_size: CELL }) 
+        const response = await fetch(`${API}/find-best-locations`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ business_type: business, start_lat: position[0], start_lon: position[1], steps: 4, step_size: CELL })
         });
         const data = await response.json()
         if (!response.ok) throw new Error(data.detail || 'Model 2 could not evaluate this area.')
         setCandidates(data.candidates || [])
-        
+
         // Fetch map data in background so it doesn't block the candidates showing up
         fetch(`${API}/map-data?lat=${position[0]}&lon=${position[1]}&radius=2500`)
           .then(r => r.ok ? r.json() : null)
           .then(d => { if(d) setGeoJson(d) })
           .catch(() => {})
       }
-    } catch (err) { 
-      setError(err instanceof Error ? err.message : 'Unable to complete the analysis.') 
-    } finally { 
-      setLoading(false) 
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Unable to complete the analysis.')
+    } finally {
+      setLoading(false)
     }
   }
 
   const scores = candidates.map(c => c.model_score)
+  const budgets = candidates.map(c => c.budget_estimate?.price_per_cent_inr || 0).filter(Boolean)
+  const minBudget = budgets.length ? Math.min(...budgets) : 0
+  const maxBudget = budgets.length ? Math.max(...budgets) : 0
   const min = scores.length ? Math.min(...scores) : 0
   const max = scores.length ? Math.max(...scores) : 1
   const chosen = selected === null ? null : candidates[selected]
@@ -578,32 +605,32 @@ export default function App() {
         </div>
 
         <nav className="nav-menu">
-          <button 
-            type="button" 
+          <button
+            type="button"
             className={`nav-item ${activePage === 'dashboard' ? 'active' : ''}`}
             onClick={() => setActivePage('dashboard')}
           >
             <LayoutDashboard size={18} />
             <span>Dashboard</span>
           </button>
-          <button 
-            type="button" 
+          <button
+            type="button"
             className={`nav-item ${activePage === 'analysis' ? 'active' : ''}`}
             onClick={() => setActivePage('analysis')}
           >
             <PlusCircle size={18} />
             <span>New Analysis</span>
           </button>
-          <button 
-            type="button" 
+          <button
+            type="button"
             className={`nav-item ${activePage === 'locations' ? 'active' : ''}`}
             onClick={() => setActivePage('locations')}
           >
             <MapIcon size={18} />
             <span>Saved Locations</span>
           </button>
-          <button 
-            type="button" 
+          <button
+            type="button"
             className={`nav-item ${activePage === 'settings' ? 'active' : ''}`}
             onClick={() => setActivePage('settings')}
           >
@@ -632,7 +659,7 @@ export default function App() {
         {activePage === 'dashboard' && <DashboardView onNavigate={(p, m) => { setActivePage(p); if (m) setMode(m); }} />}
         {activePage === 'locations' && <LocationsView locations={savedLocations} onAnalyze={openSavedLocation} onRemove={removeSavedLocation} onViewMap={() => { setActivePage('analysis'); switchMode('business') }} />}
         {activePage === 'settings' && <SettingsView theme={theme} toggleTheme={toggleTheme} showLabels={showLabels} toggleLabels={toggleLabels} onSaved={() => notify('Profile preferences saved locally')} />}
-        
+
         {/* Full Analysis Tool Page */}
         {activePage === 'analysis' && <div className="analysis-view visible">
           <div className="analysis-sidebar">
@@ -642,14 +669,14 @@ export default function App() {
             </div>
 
             <div className="mode-toggle">
-              <button 
+              <button
                 type="button"
                 className={`mode-btn ${mode === 'land' ? 'active' : ''}`}
                 onClick={() => switchMode('land')}
               >
                 Evaluate Land
               </button>
-              <button 
+              <button
                 type="button"
                 className={`mode-btn ${mode === 'business' ? 'active' : ''}`}
                 onClick={() => switchMode('business')}
@@ -663,16 +690,16 @@ export default function App() {
                 <div className="input-group">
                   <label className="sr-only" htmlFor="business-type">Business type</label>
                   <Building2 className="input-icon" size={16} />
-                  <select 
+                  <select
                     id="business-type"
-                    value={business} 
+                    value={business}
                     onChange={e => setBusiness(e.target.value)}
                   >
                     {types.length ? types.map(t => <option key={t} value={t}>{t}</option>) : <option>Loading...</option>}
                   </select>
                 </div>
               )}
-              
+
               <div className="input-group">
                 <label className="sr-only" htmlFor="location-search">{mode === 'land' ? 'Location' : 'Search area'}</label>
                 <Search className="input-icon" size={16} />
@@ -684,9 +711,9 @@ export default function App() {
                 />
               </div>
 
-              <button 
-                type="submit" 
-                disabled={loading} 
+              <button
+                type="submit"
+                disabled={loading}
                 className="btn btn-primary w-full mt-2"
               >
                 {loading ? (
@@ -919,10 +946,10 @@ export default function App() {
                     )}
                   </div>
                   {candidates.map((c, i) => (
-                    <button 
+                    <button
                       type="button"
                       key={`${c.lat}-${c.lon}`}
-                      onClick={() => setSelected(i)} 
+                      onClick={() => setSelected(i)}
                       className={`data-card candidate-btn ${selected === i ? 'selected' : ''}`}
                     >
                       <div className="candidate-info">
@@ -930,6 +957,7 @@ export default function App() {
                         <span className="score">Score: {c.model_score.toFixed(2)}</span>
                       </div>
                       <div className="candidate-coords"><MapPin size={12}/> {c.lat.toFixed(4)}, {c.lon.toFixed(4)}</div>
+                      {c.budget_estimate && <div className="candidate-budget"><span>Estimated land budget</span><strong>{c.budget_estimate.formatted_price}</strong></div>}
                     </button>
                   ))}
                 </div>
@@ -949,43 +977,49 @@ export default function App() {
                       <strong>{formatNum(chosen.details.competitors)}</strong>
                     </div>
                   </div>
+                  {chosen.budget_estimate && (
+                    <div className="selected-budget-card">
+                      <div><span>Estimated land budget</span><strong>{chosen.budget_estimate.formatted_price}</strong></div>
+                      <small>{chosen.budget_estimate.factors.source} · {chosen.budget_estimate.factors.distance_to_road} to major road</small>
+                    </div>
+                  )}
                 </div>
               )}
             </div>
           </div>
-          
+
           <div className="analysis-map-area">
             <MapContainer center={center} zoom={13} className="full-map">
-              <TileLayer 
-                attribution="&copy; OpenStreetMap contributors" 
-                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
+              <TileLayer
+                attribution="&copy; OpenStreetMap contributors"
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
               <Viewport center={center} />
-              
+
               {mode === 'land' && (
                 <CircleMarker center={center} radius={8} pathOptions={{ color: '#ef4444', fillColor: '#ef4444', fillOpacity: 0.8, weight: 2 }}>
                   <Popup>Target Location</Popup>
                 </CircleMarker>
               )}
-              
+
               {(mode === 'land' || mode === 'business') && geoJson && (
-                <GeoJSON 
+                <GeoJSON
                   key={`${JSON.stringify(geoJson)}-${showLabels}`}
-                  data={mode === 'business' ? { 
-                    ...geoJson, 
+                  data={mode === 'business' ? {
+                    ...geoJson,
                     features: (geoJson.features || []).filter((f: any) => isFeatureCompetitor(f, business))
-                  } : geoJson} 
+                  } : geoJson}
                   pointToLayer={(feature, latlng) => {
                     const color = getCategoryColor(feature.properties, mode === 'business' ? business : undefined);
                     const isCompetitor = mode === 'business' && isFeatureCompetitor(feature, business);
-                    return L.circleMarker(latlng, { 
-                      radius: isCompetitor ? 7 : 5, 
-                      color: '#ffffff', 
-                      weight: 1.5, 
-                      fillColor: color, 
-                      fillOpacity: 0.9 
+                    return L.circleMarker(latlng, {
+                      radius: isCompetitor ? 7 : 5,
+                      color: '#ffffff',
+                      weight: 1.5,
+                      fillColor: color,
+                      fillOpacity: 0.9
                     });
-                  }} 
+                  }}
                   onEachFeature={(feature, layer) => {
                     if (feature.properties) {
                       const name = feature.properties.name || 'Unknown Location';
@@ -1042,22 +1076,23 @@ export default function App() {
                   }}
                 />
               )}
-              
+
               {mode === 'business' && candidates.map((c, i) => (
-                <Rectangle 
-                  key={`${c.lat}-${c.lon}`} 
-                  bounds={[[c.lat - CELL / 2, c.lon - CELL / 2], [c.lat + CELL / 2, c.lon + CELL / 2]]} 
-                  pathOptions={{ 
-                    color: selected === i ? '#2563eb' : 'transparent', 
-                    weight: selected === i ? 2 : 0, 
-                    fillColor: heat(c.model_score, min, max), 
-                    fillOpacity: selected === i ? 0.7 : 0.4 
-                  }} 
+                <Rectangle
+                  key={`${c.lat}-${c.lon}`}
+                  bounds={[[c.lat - CELL / 2, c.lon - CELL / 2], [c.lat + CELL / 2, c.lon + CELL / 2]]}
+                  pathOptions={{
+                    color: selected === i ? '#2563eb' : budgetHeat(c.budget_estimate?.price_per_cent_inr || 0, minBudget, maxBudget),
+                    weight: selected === i ? 3 : 2,
+                    fillColor: heat(c.model_score, min, max),
+                    fillOpacity: selected === i ? 0.7 : 0.4
+                  }}
                   eventHandlers={{ click: () => setSelected(i) }}
                 >
                   <Popup>
                     <strong>Rank #{i + 1}</strong><br/>
-                    Score: {c.model_score.toFixed(2)}
+                    Score: {c.model_score.toFixed(2)}<br/>
+                    {c.budget_estimate ? `Land budget: ${c.budget_estimate.formatted_price}` : 'Land budget: unavailable'}
                   </Popup>
                 </Rectangle>
               ))}
@@ -1069,7 +1104,7 @@ export default function App() {
             )}
           </div>
         </div>}
-        
+
       </main>
     </div>
   )

@@ -84,6 +84,42 @@ def _get_input_features(lat, lon, radius, competitor_category='restaurant'):
     import pandas as pd
     return pd.DataFrame([input_data]), fv
 
+
+def _estimate_budget(df_input):
+    """Estimate price per cent from the same spatial snapshot as a location."""
+    pop_density = float(df_input.iloc[0]['population_density'])
+    road_dist = float(df_input.iloc[0]['distance_to_major_road'])
+    schools = float(df_input.iloc[0]['school_count'])
+    hospitals = float(df_input.iloc[0]['hospital_count'])
+
+    if budget_model is not None:
+        features = pd.DataFrame({
+            'population_density': [pop_density],
+            'distance_to_major_road': [road_dist],
+            'school_count': [schools],
+            'hospital_count': [hospitals]
+        })
+        estimated_price = budget_model.predict(features)[0]
+        source = 'Pretrained Model'
+    else:
+        density_factor = pop_density * 150
+        road_factor = 200000 if 0 <= road_dist < 100 else (100000 if 0 <= road_dist < 500 else 0)
+        estimated_price = 500000 + density_factor + road_factor
+        source = 'Fallback'
+
+    price_per_cent = max(100000, round(float(estimated_price), -3))
+    return {
+        'price_per_cent_inr': price_per_cent,
+        'formatted_price': f'₹{price_per_cent:,.0f} per cent',
+        'factors': {
+            'source': source,
+            'population_density': f'{pop_density:.1f}',
+            'distance_to_road': f'{road_dist:.1f}m',
+            'school_count': int(schools),
+            'hospital_count': int(hospitals)
+        }
+    }
+
 # --- ENDPOINTS ---
 
 @router.get("/api/business-types")
@@ -163,27 +199,7 @@ def analyze_location(request: AnalyzeLocationRequest):
         df_input, _ = _get_input_features(request.lat, request.lon, request.radius)
         results = explain_land_to_business(df_input)
         
-        # Pretrained Budget Model prediction
-        pop_density = float(df_input.iloc[0]['population_density'])
-        road_dist = float(df_input.iloc[0]['distance_to_major_road'])
-        schools = float(df_input.iloc[0]['school_count'])
-        hospitals = float(df_input.iloc[0]['hospital_count'])
-        
-        estimated_price_per_cent = 500000 # default
-        if budget_model is not None:
-            features_for_budget = pd.DataFrame({
-                'population_density': [pop_density],
-                'distance_to_major_road': [road_dist],
-                'school_count': [schools],
-                'hospital_count': [hospitals]
-            })
-            pred = budget_model.predict(features_for_budget)[0]
-            estimated_price_per_cent = round(pred, -3)
-        else:
-            # Fallback
-            density_factor = pop_density * 150
-            road_factor = 200000 if road_dist >= 0 and road_dist < 100 else (100000 if road_dist >= 0 and road_dist < 500 else 0)
-            estimated_price_per_cent = round(500000 + density_factor + road_factor, -3)
+        budget_estimate = _estimate_budget(df_input)
 
         # Optionally save to DB here asynchronously (skipping hard failure if DB is offline)
         
@@ -192,15 +208,7 @@ def analyze_location(request: AnalyzeLocationRequest):
             "lon": request.lon,
             "radius": request.radius,
             "recommendations": results,
-            "budget_estimate": {
-                "price_per_cent_inr": estimated_price_per_cent,
-                "formatted_price": f"₹{estimated_price_per_cent:,.0f} per cent",
-                "factors": {
-                    "source": "Pretrained Model" if budget_model else "Fallback",
-                    "population_density": f"{pop_density:.1f}",
-                    "distance_to_road": f"{road_dist:.1f}m"
-                }
-            }
+            "budget_estimate": budget_estimate
         }
     except HTTPException:
         raise
@@ -243,6 +251,7 @@ def find_best_locations(request: FindBestLocationsRequest):
                 "score": explanation["predicted_demand_score"],
                 "model_score": explanation["predicted_demand_score"],
                 "explanation": explanation,
+                "budget_estimate": _estimate_budget(df_input),
                 "details": {
                     "population": float(df_input.iloc[0]['population']),
                     "competitors": int(fv.get('amenity_counts', {}).get(request.business_type + '_count', 0)),
