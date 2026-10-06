@@ -204,7 +204,7 @@ const DashboardView = ({ onNavigate }: { onNavigate: (p: Page, m?: Mode) => void
 
     <div className="dashboard-grid">
       {/* Quick Actions for the Two Main Workflows */}
-      <div className="workflow-card land-workflow" onClick={() => onNavigate('analysis', 'land')}>
+      <button type="button" className="workflow-card land-workflow" onClick={() => onNavigate('analysis', 'land')}>
         <div className="workflow-icon"><Layers size={24} /></div>
         <div className="workflow-content">
           <h3>Evaluate Land</h3>
@@ -212,9 +212,9 @@ const DashboardView = ({ onNavigate }: { onNavigate: (p: Page, m?: Mode) => void
           <p>Analyse a selected location and rank supported business categories based on demographics and POIs.</p>
         </div>
         <ArrowRight className="workflow-arrow" size={20} />
-      </div>
+      </button>
 
-      <div className="workflow-card business-workflow" onClick={() => onNavigate('analysis', 'business')}>
+      <button type="button" className="workflow-card business-workflow" onClick={() => onNavigate('analysis', 'business')}>
         <div className="workflow-icon"><Building2 size={24} /></div>
         <div className="workflow-content">
           <h3>Place Business</h3>
@@ -222,7 +222,7 @@ const DashboardView = ({ onNavigate }: { onNavigate: (p: Page, m?: Mode) => void
           <p>Select a business category and search an area to rank candidate geographic cells by suitability score.</p>
         </div>
         <ArrowRight className="workflow-arrow" size={20} />
-      </div>
+      </button>
     </div>
 
     <div className="dashboard-metrics">
@@ -310,9 +310,10 @@ const BUSINESS_BUDGET_LEGEND = [
   { color: '#dc2626', label: 'Highest budget' },
 ]
 
-function MapLegend({ mode }: { mode: Mode }) {
+function MapLegend({ mode, landTypes = [] }: { mode: Mode; landTypes?: string[] }) {
   const [open, setOpen] = useState(true)
   const items = mode === 'land' ? LAND_DOT_LEGEND : [...BUSINESS_SCORE_LEGEND, ...BUSINESS_BUDGET_LEGEND]
+  const landTypeItems = landTypes.map(type => ({ color: getLandColor(type), label: type.replace(/_/g, ' ') }))
 
   return (
     <div className={`map-legend ${open ? 'map-legend--open' : ''}`}>
@@ -340,6 +341,18 @@ function MapLegend({ mode }: { mode: Mode }) {
               <span>{label}</span>
             </li>
           ))}
+          {mode === 'land' && landTypeItems.length > 0 && (
+            <>
+              <li className="map-legend-divider" />
+              <li className="map-legend-group-title">Available land parcels</li>
+              {landTypeItems.map(({ color, label }) => (
+                <li key={`land-${label}`} className="map-legend-item">
+                  <span className="map-legend-dot land-legend-swatch" style={{ background: color }} />
+                  <span>{label}</span>
+                </li>
+              ))}
+            </>
+          )}
           {mode === 'land' && (
             <>
               <li className="map-legend-divider" />
@@ -1138,8 +1151,13 @@ export default function App() {
             </MapContainer>
 
             {/* ── Floating Map Legend ── */}
-            {(geoJson || (mode === 'business' && candidates.length > 0)) && (
-              <MapLegend mode={mode} />
+            {(geoJson || (mode === 'business' && candidates.length > 0) || (mode === 'land' && showEmptyLand && emptyLand)) && (
+              <MapLegend
+                mode={mode}
+                landTypes={mode === 'land' && emptyLand
+                  ? Array.from(new Set((emptyLand.features as any[]).map((f: any) => f.properties?.land_type).filter(Boolean))) as string[]
+                  : []}
+              />
             )}
           </div>
         </div>}

@@ -1112,3 +1112,8 @@ button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px s
 .selected-land-budget small { display: block; margin-top: .4rem; color: var(--text-muted); font-size: .67rem; line-height: 1.35; }
 .budget-loading { color: #fbbf24; font-size: .72rem; animation: pulse 1.2s ease-in-out infinite; }
 @keyframes pulse { 50% { opacity: .45; } }
+
+/* ACCESSIBLE WORKFLOW BUTTONS + LAND MAP LEGEND */
+.workflow-card { width: 100%; color: inherit; text-align: left; font: inherit; }
+.workflow-card:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.land-legend-swatch { border-radius: 4px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.35); }
