@@ -571,3 +571,94 @@ body {
 
 /* LEAFLET OVERRIDES */
 .leaflet-container { background: #e5e5e5 !important; }
+
+/* EMPTY LAND PANEL */
+.empty-land-panel {
+  margin-top: 1rem;
+  background: rgba(249, 115, 22, 0.06);
+  border: 1px solid rgba(249, 115, 22, 0.25);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.empty-land-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.empty-land-title {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #fb923c;
+}
+
+.land-loading-badge {
+  background: rgba(249, 115, 22, 0.15);
+  color: #fb923c;
+  font-size: 0.68rem;
+  font-weight: 500;
+  padding: 1px 6px;
+  border-radius: 999px;
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+.land-count-badge {
+  background: rgba(249, 115, 22, 0.18);
+  color: #fb923c;
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+.layer-toggle-btn {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(249, 115, 22, 0.4);
+  background: transparent;
+  color: #fb923c;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.layer-toggle-btn:hover {
+  background: rgba(249, 115, 22, 0.15);
+}
+.layer-toggle-btn.active {
+  background: rgba(249, 115, 22, 0.2);
+  color: #fff;
+  border-color: #fb923c;
+}
+
+/* LAND LEGEND */
+.land-legend {
+  margin-top: 0.65rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: capitalize;
+}
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}

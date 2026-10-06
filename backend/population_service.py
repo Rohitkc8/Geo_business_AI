@@ -83,7 +83,7 @@ class PopulationService:
         
         try:
             req = urllib.request.Request(url)
-            res = urllib.request.urlopen(req, timeout=10)
+            res = urllib.request.urlopen(req, timeout=30)
             data = json.loads(res.read().decode())
             
             if data.get('error') is False and 'data' in data:

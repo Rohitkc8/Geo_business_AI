@@ -1,0 +1,2381 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-05T17:19:20Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 313764625,
+      "lat": 11.6712883,
+      "lon": 78.1582122,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Gandhi Road",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4444431841,
+      "lat": 11.6748637,
+      "lon": 78.1528099,
+      "tags": {
+        "addr:city": "salem",
+        "addr:postcode": "636016",
+        "addr:street": "Fairlands",
+        "amenity": "school",
+        "name": "Holy flower matric hr.sec school",
+        "phone": "+914272448426"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4444456005,
+      "lat": 11.6719193,
+      "lon": 78.1590295,
+      "tags": {
+        "addr:city": "salem",
+        "addr:housenumber": "374",
+        "addr:postcode": "636007",
+        "addr:street": "Cherry Road, Hastampatti",
+        "amenity": "school",
+        "name": "Lef Eden Garden Matric School",
+        "phone": "+91427-2419813"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6934340633,
+      "lat": 11.6716218,
+      "lon": 78.1550612,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "127/1 Varalakshmi Tower, Gandhi Road",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Neomed Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6934685067,
+      "lat": 11.6770178,
+      "lon": 78.1531844,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "24, Saradha College Road",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Shanmuga Hospital and Salem Cancer Institute",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6935249004,
+      "lat": 11.6772791,
+      "lon": 78.1536202,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "51, Lrn Colony Sarada College Road",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Tms Eye Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6936305687,
+      "lat": 11.6714255,
+      "lon": 78.156175,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "8, Z/A, Gandhi Road",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Appusami Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7262945617,
+      "lat": 11.6795,
+      "lon": 78.157266,
+      "tags": {
+        "addr:block": "Salem Corporation",
+        "addr:district": "Salem",
+        "addr:full": "Kumarasamypatty, Cherry Road",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "name": "Government Hospital, Hasthampatti",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7262945639,
+      "lat": 11.67157,
+      "lon": 78.158408,
+      "tags": {
+        "addr:block": "Salem Corporation",
+        "addr:district": "Salem",
+        "addr:full": "67-B, Cherry Road, Salem",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Ruthramoorthy Polyclinic",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7840770073,
+      "lat": 11.6711265,
+      "lon": 78.1554168,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "Hasthampatti, Salem",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Malar Maternity Hospital & Arul Eye Care",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7840770098,
+      "lat": 11.671775,
+      "lon": 78.156181,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "Hasthampatti, Salem",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Ammani Multi Speciality Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7840770102,
+      "lat": 11.67228,
+      "lon": 78.159115,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "Hasthampatti, Salem",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Radhai Speciality Clinics",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7840770121,
+      "lat": 11.676423,
+      "lon": 78.1550511,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "Hasthampatti, Salem",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sureka Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7840770139,
+      "lat": 11.6731205,
+      "lon": 78.15862,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "Hasthampatti, Salem",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Ramana Surgical Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7840770145,
+      "lat": 11.6726603,
+      "lon": 78.1586522,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "Hasthampatti, Salem",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Manipal Fertility Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10169161013,
+      "lat": 11.6753543,
+      "lon": 78.1597183,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hasthampatti",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10169161014,
+      "lat": 11.6755283,
+      "lon": 78.1602427,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hasthampatti",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10918024043,
+      "lat": 11.6734584,
+      "lon": 78.1586451,
+      "tags": {
+        "addr:city": "salem",
+        "addr:housenumber": "103",
+        "addr:postcode": "636007",
+        "addr:street": "Hasthampatty - Cherry Road",
+        "name": "MYSHOPY FOOTWEAR",
+        "opening_hours": "24/7",
+        "phone": "+91 9092027152",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11393418773,
+      "lat": 11.6757735,
+      "lon": 78.1600056,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hasthampatti",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "way",
+      "id": 28562510,
+      "center": {
+        "lat": 11.6764484,
+        "lon": 78.1442761
+      },
+      "nodes": [
+        313768442,
+        11072512680,
+        313768443,
+        13235900318,
+        3621993749,
+        313768444,
+        313768445,
+        11072512685,
+        11072512684,
+        11072512681,
+        3622848268,
+        1974260636,
+        3621018612,
+        2181505304,
+        313768447,
+        2181505308,
+        313768448,
+        3622848120,
+        1974260632,
+        313768449,
+        2181505313,
+        313768451,
+        356615201,
+        313768452,
+        1974260618,
+        3619968184,
+        313768453,
+        2184892882,
+        313768454,
+        2184892877,
+        313768455,
+        2184892873,
+        313768456,
+        313768457,
+        313768458,
+        3619967672,
+        313768459,
+        356613715,
+        313768460,
+        313768461,
+        2184892866,
+        313768462,
+        313768463
+      ],
+      "tags": {
+        "alt_name": "Sarada College Road",
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Puratchi Thalaivi Jayalalithaa Two Tier Flyover",
+        "name:etymology:wikidata": "Q31379617",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "type": "way",
+      "id": 31852810,
+      "center": {
+        "lat": 11.674521,
+        "lon": 78.1580057
+      },
+      "nodes": [
+        356616660,
+        356616666,
+        2184892811,
+        356616669,
+        356616671,
+        356616673,
+        3618754308,
+        356616675,
+        356616677,
+        313764623
+      ],
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    {
+      "type": "way",
+      "id": 186675288,
+      "center": {
+        "lat": 11.669481,
+        "lon": 78.1589232
+      },
+      "nodes": [
+        313764619,
+        10169161013,
+        313764620,
+        2184892800,
+        2184892794,
+        3618754357,
+        313764622,
+        3618754290,
+        313764623,
+        2184892759,
+        2184892734,
+        13333391450,
+        313764625,
+        356616734,
+        313764626,
+        313764628,
+        3618754295,
+        313764630,
+        2184892656,
+        313764631,
+        2184892637,
+        4313830686,
+        313764633,
+        313764634,
+        3618743545,
+        2184892601,
+        313764636,
+        313764638,
+        9791777323,
+        313764639,
+        2184892531,
+        313764641,
+        9065059868,
+        313764642,
+        313764643
+      ],
+      "tags": {
+        "highway": "primary",
+        "name": "Hasthampatty - Cherry Road",
+        "ref": "SHU18"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162435,
+      "center": {
+        "lat": 11.6789695,
+        "lon": 78.1564964
+      },
+      "nodes": [
+        2184892976,
+        2184892969,
+        3619995872,
+        2184892967,
+        2184892965,
+        3619996245,
+        2184892955,
+        2184892950,
+        3619968074,
+        2184892948,
+        2184892958,
+        3619968101,
+        3619968206,
+        2184892952,
+        2184892946
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162436,
+      "center": {
+        "lat": 11.6745697,
+        "lon": 78.1618628
+      },
+      "nodes": [
+        2184892840,
+        2184892826,
+        2184892803,
+        2184892797,
+        2184892790,
+        3618748142,
+        2184892789,
+        2184892787,
+        2184892782,
+        313865733
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162437,
+      "center": {
+        "lat": 11.6732416,
+        "lon": 78.1594727
+      },
+      "nodes": [
+        2184892794,
+        3618754257,
+        2184892792,
+        2184892791,
+        3618754250,
+        2184892790,
+        2184892783,
+        3618754299,
+        2184892776,
+        2184892774,
+        2184892765,
+        2184892750,
+        2184892759
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162439,
+      "center": {
+        "lat": 11.6814439,
+        "lon": 78.1582234
+      },
+      "nodes": [
+        2184892868,
+        2184892885,
+        2184892890,
+        2184892939,
+        2184892946,
+        2184892983,
+        3619996241,
+        3619996228,
+        2184893021,
+        3619968208,
+        2184893034,
+        3619996253,
+        3619996210,
+        3619995884,
+        3619996202,
+        3619995880,
+        3619995882,
+        3619996207,
+        3619996269,
+        3619996246,
+        357280676
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162443,
+      "center": {
+        "lat": 11.6751895,
+        "lon": 78.1625259
+      },
+      "nodes": [
+        2184892850,
+        2184892841,
+        2184892835,
+        2184892824,
+        2184892814,
+        2184892808,
+        2184892804,
+        2184892805,
+        2184892801,
+        2184892825,
+        2184892829,
+        2184892828,
+        2184892833,
+        2184892837
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162444,
+      "center": {
+        "lat": 11.6785906,
+        "lon": 78.1557877
+      },
+      "nodes": [
+        2184893030,
+        3619968007,
+        3619968098,
+        3619967936,
+        2184893039,
+        2184893035,
+        2184893032,
+        3619968022,
+        2184893025,
+        3619968201,
+        2184893018,
+        2184893011,
+        2184892993,
+        2184892981,
+        2184892976,
+        2184892960,
+        2184892937,
+        2184892925,
+        2184892922,
+        2184892911,
+        3619967683,
+        2184892902,
+        2184892892,
+        2184892883,
+        3619967673,
+        3619968017,
+        3619968004,
+        2184892861
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162446,
+      "center": {
+        "lat": 11.6706171,
+        "lon": 78.1565643
+      },
+      "nodes": [
+        2184892723,
+        2184892692
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162458,
+      "center": {
+        "lat": 11.674593,
+        "lon": 78.1583729
+      },
+      "nodes": [
+        2184892811,
+        2184892800
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162459,
+      "center": {
+        "lat": 11.6720074,
+        "lon": 78.1573491
+      },
+      "nodes": [
+        2184892734,
+        2184892743
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162460,
+      "center": {
+        "lat": 11.6745898,
+        "lon": 78.160205
+      },
+      "nodes": [
+        2184892807,
+        2184892803
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162461,
+      "center": {
+        "lat": 11.6750666,
+        "lon": 78.1603397
+      },
+      "nodes": [
+        2184892820,
+        2184892826
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162464,
+      "center": {
+        "lat": 11.6774484,
+        "lon": 78.1568608
+      },
+      "nodes": [
+        2184892904,
+        3619967993,
+        2184892896,
+        3619968136,
+        2184892890
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162466,
+      "center": {
+        "lat": 11.6717816,
+        "lon": 78.1556627
+      },
+      "nodes": [
+        3618754278,
+        2184892754,
+        2184892749,
+        3618754315,
+        2184892722
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162468,
+      "center": {
+        "lat": 11.6783871,
+        "lon": 78.1557984
+      },
+      "nodes": [
+        2184892925,
+        2184892924,
+        2184892917
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162471,
+      "center": {
+        "lat": 11.6767028,
+        "lon": 78.1531479
+      },
+      "nodes": [
+        9704990287,
+        2184892880,
+        2184892889
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162472,
+      "center": {
+        "lat": 11.6743438,
+        "lon": 78.1601341
+      },
+      "nodes": [
+        2184892798,
+        2184892797
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162474,
+      "center": {
+        "lat": 11.6787238,
+        "lon": 78.1543406
+      },
+      "nodes": [
+        2184892957,
+        2184892942,
+        2184892937
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162481,
+      "center": {
+        "lat": 11.6796326,
+        "lon": 78.155852
+      },
+      "nodes": [
+        2184892969,
+        2184893014,
+        2184893009
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162489,
+      "center": {
+        "lat": 11.6790885,
+        "lon": 78.154477
+      },
+      "nodes": [
+        2184892974,
+        2184892962,
+        2184892960
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162495,
+      "center": {
+        "lat": 11.6714389,
+        "lon": 78.1595524
+      },
+      "nodes": [
+        2184892721,
+        3618743581,
+        2184892736,
+        2184892731,
+        3618743809,
+        2184892715
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162496,
+      "center": {
+        "lat": 11.6726005,
+        "lon": 78.160903
+      },
+      "nodes": [
+        2184892765,
+        2184892763,
+        2184892760,
+        2184892757
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162497,
+      "center": {
+        "lat": 11.6729323,
+        "lon": 78.1615716
+      },
+      "nodes": [
+        2184892764,
+        2184892767,
+        2184892770,
+        2184892774
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162501,
+      "center": {
+        "lat": 11.6753351,
+        "lon": 78.1552636
+      },
+      "nodes": [
+        2184892865,
+        2184892832,
+        2184892809,
+        2184892813
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162510,
+      "center": {
+        "lat": 11.674696,
+        "lon": 78.1538535
+      },
+      "nodes": [
+        9704990286,
+        2184892813,
+        2184892793,
+        2184892777,
+        3618748140,
+        9791732711,
+        2184892785
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162511,
+      "center": {
+        "lat": 11.6784753,
+        "lon": 78.1541796
+      },
+      "nodes": [
+        3619967978,
+        3619968166,
+        2184892920,
+        2184892913,
+        2184892918,
+        2184892915,
+        2184892922
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162512,
+      "center": {
+        "lat": 11.6748338,
+        "lon": 78.1597786
+      },
+      "nodes": [
+        313768168,
+        2184892820,
+        2184892807,
+        2184892798,
+        2184892792
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208162521,
+      "center": {
+        "lat": 11.6706168,
+        "lon": 78.1547224
+      },
+      "nodes": [
+        2184892712,
+        2184892706,
+        2184892682,
+        2184892689,
+        2184892712,
+        2184892717,
+        2184892727
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356404344,
+      "center": {
+        "lat": 11.6714709,
+        "lon": 78.1595499
+      },
+      "nodes": [
+        3618743809,
+        3618743548,
+        3618743581
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405158,
+      "center": {
+        "lat": 11.6739037,
+        "lon": 78.159338
+      },
+      "nodes": [
+        3618754238,
+        3618754257
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405164,
+      "center": {
+        "lat": 11.6755553,
+        "lon": 78.1554437
+      },
+      "nodes": [
+        3618754195,
+        3618748167
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405166,
+      "center": {
+        "lat": 11.6722749,
+        "lon": 78.1542204
+      },
+      "nodes": [
+        3618754229,
+        356616713
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405167,
+      "center": {
+        "lat": 11.6738545,
+        "lon": 78.1598287
+      },
+      "nodes": [
+        3618754206,
+        3618754250
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405168,
+      "center": {
+        "lat": 11.6736857,
+        "lon": 78.1613902
+      },
+      "nodes": [
+        3618754224,
+        3618748151
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405175,
+      "center": {
+        "lat": 11.6749228,
+        "lon": 78.1579617
+      },
+      "nodes": [
+        3618754314,
+        356616666
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405176,
+      "center": {
+        "lat": 11.6723921,
+        "lon": 78.1561662
+      },
+      "nodes": [
+        3618754333,
+        2184892749
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405177,
+      "center": {
+        "lat": 11.673462,
+        "lon": 78.1605475
+      },
+      "nodes": [
+        3618748143,
+        3618754299
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405180,
+      "center": {
+        "lat": 11.6740343,
+        "lon": 78.1582895
+      },
+      "nodes": [
+        3618754357,
+        3618754222,
+        3618748170,
+        356616671
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405182,
+      "center": {
+        "lat": 11.6721097,
+        "lon": 78.153775
+      },
+      "nodes": [
+        3618754252,
+        3618754221,
+        3618754270
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405183,
+      "center": {
+        "lat": 11.6736995,
+        "lon": 78.1611134
+      },
+      "nodes": [
+        3618748192,
+        3618748151,
+        3618748142
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405186,
+      "center": {
+        "lat": 11.671892,
+        "lon": 78.1558465
+      },
+      "nodes": [
+        3618748161,
+        3618754315
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405190,
+      "center": {
+        "lat": 11.6727396,
+        "lon": 78.1533137
+      },
+      "nodes": [
+        3618748186,
+        3618748155,
+        3618754363,
+        3618748180
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405192,
+      "center": {
+        "lat": 11.6720648,
+        "lon": 78.1544958
+      },
+      "nodes": [
+        3618754331,
+        356616715
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405194,
+      "center": {
+        "lat": 11.6726181,
+        "lon": 78.1538877
+      },
+      "nodes": [
+        3618748179,
+        3618754260,
+        3618754252,
+        3618748180
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405195,
+      "center": {
+        "lat": 11.6736623,
+        "lon": 78.1582431
+      },
+      "nodes": [
+        3618754290,
+        3618754242,
+        3618754342,
+        3618754308
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405204,
+      "center": {
+        "lat": 11.6738588,
+        "lon": 78.1582422
+      },
+      "nodes": [
+        3618754222,
+        3618754342
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405214,
+      "center": {
+        "lat": 11.6733763,
+        "lon": 78.1533596
+      },
+      "nodes": [
+        3618754245,
+        3618748140
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405238,
+      "center": {
+        "lat": 11.6755632,
+        "lon": 78.1550611
+      },
+      "nodes": [
+        3618748165,
+        9704990285
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405244,
+      "center": {
+        "lat": 11.6720572,
+        "lon": 78.1609351
+      },
+      "nodes": [
+        3618748164,
+        3618754269,
+        3618748154,
+        2184892750
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405256,
+      "center": {
+        "lat": 11.6746109,
+        "lon": 78.1559065
+      },
+      "nodes": [
+        3618748183,
+        2184892809
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405257,
+      "center": {
+        "lat": 11.6724211,
+        "lon": 78.1551009
+      },
+      "nodes": [
+        3618754325,
+        3618754346,
+        3618754278,
+        3618754268
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356405263,
+      "center": {
+        "lat": 11.6714173,
+        "lon": 78.1568968
+      },
+      "nodes": [
+        3618754348,
+        3618748157,
+        3618754211
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588674,
+      "center": {
+        "lat": 11.6779609,
+        "lon": 78.1601375
+      },
+      "nodes": [
+        3619967928,
+        3619967989
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588675,
+      "center": {
+        "lat": 11.6765059,
+        "lon": 78.1545853
+      },
+      "nodes": [
+        3619968193,
+        3619967988,
+        3619967913,
+        3619968004
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588683,
+      "center": {
+        "lat": 11.6785439,
+        "lon": 78.156833
+      },
+      "nodes": [
+        3619968211,
+        3619968074
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588707,
+      "center": {
+        "lat": 11.6789986,
+        "lon": 78.1600338
+      },
+      "nodes": [
+        3619968016,
+        3619968224,
+        3619967688,
+        3619967635,
+        3619967929,
+        3619968081
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588709,
+      "center": {
+        "lat": 11.6763995,
+        "lon": 78.1593673
+      },
+      "nodes": [
+        3619968032,
+        3619967629,
+        3619967639,
+        3619967687
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588726,
+      "center": {
+        "lat": 11.6777234,
+        "lon": 78.1565611
+      },
+      "nodes": [
+        3619967915,
+        3619967993
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588730,
+      "center": {
+        "lat": 11.6772884,
+        "lon": 78.1594231
+      },
+      "nodes": [
+        3619967918,
+        3619967690,
+        3619967629,
+        3619968015,
+        3619967958,
+        3619967989,
+        3619967929
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588734,
+      "center": {
+        "lat": 11.6770504,
+        "lon": 78.1557368
+      },
+      "nodes": [
+        3619968014,
+        3619968020
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588758,
+      "center": {
+        "lat": 11.6767792,
+        "lon": 78.1547613
+      },
+      "nodes": [
+        3619967999,
+        3619967673
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588767,
+      "center": {
+        "lat": 11.6765748,
+        "lon": 78.1552047
+      },
+      "nodes": [
+        3619967899,
+        3619968017
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588773,
+      "center": {
+        "lat": 11.6777909,
+        "lon": 78.1556749
+      },
+      "nodes": [
+        2184892904,
+        3619968203,
+        3619967683
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588776,
+      "center": {
+        "lat": 11.6770078,
+        "lon": 78.1553484
+      },
+      "nodes": [
+        3619967939,
+        3619968073,
+        2184892883
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588780,
+      "center": {
+        "lat": 11.6784495,
+        "lon": 78.1572514
+      },
+      "nodes": [
+        3619968051,
+        3619968206
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588788,
+      "center": {
+        "lat": 11.6771991,
+        "lon": 78.1555795
+      },
+      "nodes": [
+        3619968058,
+        3619967630,
+        3619968020,
+        3619968073
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588794,
+      "center": {
+        "lat": 11.6774663,
+        "lon": 78.1538081
+      },
+      "nodes": [
+        3619968050,
+        3619967657,
+        2184892880
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588847,
+      "center": {
+        "lat": 11.6792497,
+        "lon": 78.1573157
+      },
+      "nodes": [
+        3619967987,
+        3619968101
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588852,
+      "center": {
+        "lat": 11.6774662,
+        "lon": 78.1555764
+      },
+      "nodes": [
+        3619968076,
+        3619968058,
+        2184892902
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356588857,
+      "center": {
+        "lat": 11.677626,
+        "lon": 78.156908
+      },
+      "nodes": [
+        3619968213,
+        3619968136
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356590235,
+      "center": {
+        "lat": 11.6789161,
+        "lon": 78.155601
+      },
+      "nodes": [
+        3619996320,
+        3619995872
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 356590274,
+      "center": {
+        "lat": 11.6795434,
+        "lon": 78.1564728
+      },
+      "nodes": [
+        3619996331,
+        3619996259,
+        3619996306,
+        3619996275,
+        3619996245
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 374689482,
+      "center": {
+        "lat": 11.6715744,
+        "lon": 78.1548676
+      },
+      "nodes": [
+        356616703,
+        356616704,
+        8791342036,
+        356616707,
+        356616709,
+        9791732706,
+        356616711,
+        3618754270,
+        356616713,
+        8813406654,
+        356616715,
+        3618754318,
+        356616717,
+        2184892727,
+        356616722,
+        356616725,
+        2184892722,
+        9791899652,
+        356616726,
+        2184892723,
+        356616727,
+        356616728,
+        3618754211,
+        356616730,
+        356616732,
+        356616734
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "name": "Gandhi Road",
+        "name:etymology:wikidata": "Q1001"
+      }
+    },
+    {
+      "type": "way",
+      "id": 388279982,
+      "center": {
+        "lat": 11.6710267,
+        "lon": 78.1604629
+      },
+      "nodes": [
+        313865849,
+        313865860,
+        9791767035,
+        13333391452,
+        13333391453,
+        313865861,
+        2184892713,
+        313865862,
+        3618743529,
+        2184892715,
+        3618743524,
+        313865863,
+        3618743697,
+        2184892721,
+        313865864,
+        13333391451
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "name": "Johnsonpet Road"
+      }
+    },
+    {
+      "type": "way",
+      "id": 449407171,
+      "center": {
+        "lat": 11.6748981,
+        "lon": 78.1613608
+      },
+      "nodes": [
+        2184892789,
+        2184892816,
+        2184892827,
+        2184892839,
+        2184892850
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 964517821,
+      "center": {
+        "lat": 11.6761242,
+        "lon": 78.1617629
+      },
+      "nodes": [
+        9605955753,
+        313768168,
+        10169161014,
+        313768170,
+        2184892840,
+        313768171,
+        2184892850,
+        313768172,
+        3618754258,
+        8796861900,
+        313768174,
+        313768175,
+        9075720297,
+        313865729
+      ],
+      "tags": {
+        "highway": "secondary",
+        "name": "Salem Junction - Salem New Bypass Link Road",
+        "ref": "MDR"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1056191336,
+      "center": {
+        "lat": 11.6762656,
+        "lon": 78.151374
+      },
+      "nodes": [
+        9704990284,
+        11622179737,
+        9704990283,
+        9704990282,
+        9704990281,
+        9704990280,
+        9704990279,
+        9704990276,
+        9868116270,
+        9704990278,
+        9702288540
+      ],
+      "tags": {
+        "highway": "primary",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1056191337,
+      "center": {
+        "lat": 11.6759273,
+        "lon": 78.1573001
+      },
+      "nodes": [
+        2184892861,
+        9704990299,
+        9704990296,
+        9704990297,
+        9704990298,
+        11392510977,
+        313768466,
+        11392511018,
+        313768467,
+        2184892868,
+        9704990300,
+        313768471
+      ],
+      "tags": {
+        "alt_name": "Salem Junction - Yercaud Road",
+        "highway": "primary",
+        "name": "Sarada College Road",
+        "name:etymology:wikidata": "Q31379617",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1056191338,
+      "center": {
+        "lat": 11.6760779,
+        "lon": 78.1546668
+      },
+      "nodes": [
+        9704990288,
+        2184892861
+      ],
+      "tags": {
+        "alt_name": "Salem Junction - Yercaud Road",
+        "highway": "primary",
+        "name": "Sarada College Road",
+        "name:etymology:wikidata": "Q31379617",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1056191339,
+      "center": {
+        "lat": 11.6762986,
+        "lon": 78.151962
+      },
+      "nodes": [
+        9702288521,
+        9791722368,
+        9704990277,
+        9704990289,
+        9704990290,
+        9704990291,
+        9704990287,
+        9704990292,
+        9704990294,
+        9704990293,
+        9704990288
+      ],
+      "tags": {
+        "highway": "primary",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1056191340,
+      "center": {
+        "lat": 11.6760495,
+        "lon": 78.154046
+      },
+      "nodes": [
+        313768463,
+        9704990294
+      ],
+      "tags": {
+        "highway": "primary",
+        "name": "Puratchi Thalaivi Jayalalithaa Two Tier Flyover",
+        "name:etymology:wikidata": "Q465018",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1056191342,
+      "center": {
+        "lat": 11.6758272,
+        "lon": 78.1570068
+      },
+      "nodes": [
+        9704990306,
+        9704990305,
+        9704990304,
+        356616660,
+        9704990303,
+        9704990302,
+        11392511017,
+        9704990308,
+        9704990301,
+        2184892865,
+        3618748167,
+        9704990285,
+        9704990286,
+        9704990284
+      ],
+      "tags": {
+        "highway": "primary",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1056191343,
+      "center": {
+        "lat": 11.6761682,
+        "lon": 78.1575668
+      },
+      "nodes": [
+        2184892868,
+        356616660
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1056191344,
+      "center": {
+        "lat": 11.6756467,
+        "lon": 78.156866
+      },
+      "nodes": [
+        11392510977,
+        9704990308,
+        9704990309
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "PWD Addi. Bungalow Rd",
+        "oneway": "yes",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1066306508,
+      "center": {
+        "lat": 11.6782415,
+        "lon": 78.1565787
+      },
+      "nodes": [
+        2184892917,
+        9791733575
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1066309101,
+      "center": {
+        "lat": 11.6733536,
+        "lon": 78.1613707
+      },
+      "nodes": [
+        3618754256,
+        9791767037,
+        3618748143
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1066310421,
+      "center": {
+        "lat": 11.6728238,
+        "lon": 78.1530129
+      },
+      "nodes": [
+        9791732706,
+        9791732707,
+        9791732708,
+        9791732709,
+        9791732710,
+        9791732711
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1066310423,
+      "center": {
+        "lat": 11.6746221,
+        "lon": 78.1564035
+      },
+      "nodes": [
+        3618748183,
+        9791732714,
+        9791732715,
+        9791732716,
+        9791777317
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1066324810,
+      "center": {
+        "lat": 11.6706515,
+        "lon": 78.1560199
+      },
+      "nodes": [
+        9791899650,
+        9791899651,
+        9791899652
+      ],
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1076546235,
+      "center": {
+        "lat": 11.6842211,
+        "lon": 78.1617634
+      },
+      "nodes": [
+        11393375263,
+        11393375262,
+        11393375261,
+        11393375260,
+        11393375259,
+        11393375258,
+        11393375257,
+        11393375256,
+        11393375255,
+        11393375254,
+        9872118651,
+        9872118650,
+        9872118649,
+        9872118648,
+        9872118647,
+        10669545334,
+        9872118646,
+        9872118645,
+        9872118644,
+        9872118643,
+        9872118642,
+        9872118641,
+        9872118640,
+        9872118639,
+        10169161016,
+        9872118638,
+        10169161015,
+        9880775578,
+        9872118637,
+        9872118636,
+        9872118654,
+        9872118635,
+        9872118653,
+        9872118634,
+        9872118633,
+        9069628923,
+        9872118632,
+        9872118631,
+        9872118630,
+        9872118629,
+        9872118628,
+        9605955763
+      ],
+      "tags": {
+        "highway": "primary",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1153718539,
+      "center": {
+        "lat": 11.6755452,
+        "lon": 78.159877
+      },
+      "nodes": [
+        10729578064,
+        10729578065,
+        313768471,
+        10729578048,
+        10729578049,
+        10729578050,
+        9605955757,
+        10729578051,
+        10729578052,
+        10729578053,
+        9605955763,
+        10729578061,
+        10729578062,
+        9605955753,
+        10729578063,
+        10729578054,
+        10729578055,
+        10729578056,
+        10729578057,
+        10729578058,
+        313764619,
+        10729578059,
+        10729578060,
+        9704990306,
+        10729578064
+      ],
+      "tags": {
+        "highway": "primary",
+        "maxspeed": "30",
+        "name": "Hasthampatti Roundabout",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1228476363,
+      "center": {
+        "lat": 11.673245,
+        "lon": 78.1567934
+      },
+      "nodes": [
+        11392496027,
+        11392496028,
+        11392496029,
+        11392496030,
+        11392496031,
+        11392496042,
+        11392496032,
+        11392496033,
+        11392496034,
+        11392496035,
+        11392496036,
+        11392496037,
+        11392496038,
+        11392496039,
+        11392496040,
+        11392496041,
+        11392496027
+      ],
+      "tags": {
+        "amenity": "school",
+        "name": "CSI Hobart Edu Institute",
+        "operator": "CSI",
+        "operator:type": "private"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1228478256,
+      "center": {
+        "lat": 11.6749293,
+        "lon": 78.156887
+      },
+      "nodes": [
+        11392510994,
+        11392510995,
+        11392510996,
+        9704990309,
+        11392510978,
+        11392510979,
+        11392510980,
+        11392510981,
+        11392510982,
+        11392510983,
+        11392510991,
+        11392510992,
+        11392510993,
+        11392510984,
+        11392510985,
+        11392510986,
+        11392510987,
+        11392510988,
+        11392510989,
+        11392510990,
+        11392510994
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "PWD Bungalow Roundabout",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1228478258,
+      "center": {
+        "lat": 11.6756478,
+        "lon": 78.1569491
+      },
+      "nodes": [
+        11392510995,
+        11392511016,
+        11392511017,
+        11392511018
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "PWD Addi. Bungalow Rd",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1228560499,
+      "center": {
+        "lat": 11.6843934,
+        "lon": 78.1617059
+      },
+      "nodes": [
+        9605955757,
+        11393418773,
+        3619967687,
+        313765872,
+        313765871,
+        9872118652,
+        313765868,
+        3619968081,
+        9069628924,
+        2931050520,
+        9069628928,
+        313765867,
+        9855129176,
+        2178348359,
+        2185115890,
+        313765866,
+        2185115946,
+        313765864,
+        2931050521,
+        313765862,
+        313765860,
+        313765857,
+        357280683,
+        313765855,
+        2185116115,
+        313765852,
+        313765851,
+        2931050522,
+        313765850,
+        313765848,
+        313765847,
+        3620029660,
+        3620029653,
+        313765846,
+        313765845,
+        1974318367,
+        13503176136,
+        313765843
+      ],
+      "tags": {
+        "highway": "primary",
+        "name": "Salem Junction - Yercaud Road",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1250250427,
+      "center": {
+        "lat": 11.676722,
+        "lon": 78.1483585
+      },
+      "nodes": [
+        11622179736,
+        11622179735,
+        11622179734,
+        11622179732,
+        11622179733,
+        11622179731,
+        11622179730,
+        11622179729,
+        11622179728,
+        12199493724,
+        11622179727,
+        12199493723,
+        11622179726,
+        11622179725,
+        11622179724
+      ],
+      "tags": {
+        "alt_name": "Sarada College Road",
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Puratchi Thalaivi Jayalalithaa Two Tier Flyover",
+        "name:etymology:wikidata": "Q465018",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1318162505,
+      "center": {
+        "lat": 11.6759827,
+        "lon": 78.1538537
+      },
+      "nodes": [
+        11622179737,
+        11622179736
+      ],
+      "tags": {
+        "alt_name": "Sarada College Road",
+        "highway": "primary",
+        "name": "Puratchi Thalaivi Jayalalithaa Two Tier Flyover",
+        "name:etymology:wikidata": "Q465018",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1453854491,
+      "center": {
+        "lat": 11.6713368,
+        "lon": 78.1583269
+      },
+      "nodes": [
+        13333391450,
+        13333391451
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1453854492,
+      "center": {
+        "lat": 11.6712691,
+        "lon": 78.1583209
+      },
+      "nodes": [
+        13333391451,
+        313764625
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "name": "Johnsonpet Rd",
+        "oneway": "yes"
+      }
+    }
+  ]
+}

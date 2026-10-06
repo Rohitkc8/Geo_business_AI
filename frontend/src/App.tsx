@@ -17,12 +17,12 @@ import {
   Building2,
   Navigation,
   Sparkles,
-  Users,
   Activity,
-  TrendingUp,
-  ChevronRight
+  ChevronRight,
+  Layers
 } from 'lucide-react'
 import './App.css'
+
 
 const API = 'http://127.0.0.1:8000/api'
 const CELL = 0.005
@@ -83,6 +83,28 @@ const getCategoryColor = (props: any) => {
     'grocery': '#14b8a6',
   };
   return colors[cat.toLowerCase()] || '#8b5cf6';
+}
+
+// Colour palette for empty-land parcel types
+const LAND_COLORS: Record<string, string> = {
+  vacant:            '#f97316', // orange
+  brownfield:        '#ef4444', // red
+  farmland:          '#22c55e', // green
+  meadow:            '#84cc16', // lime
+  grass:             '#86efac', // light-green
+  greenfield:        '#4ade80', // emerald
+  landfill:          '#78716c', // stone
+  quarry:            '#a8a29e', // warm-gray
+  allotments:        '#fbbf24', // amber
+  orchard:           '#f472b6', // pink
+  park:              '#34d399', // teal-green
+  garden:            '#6ee7b7', // light teal
+  recreation_ground: '#5eead4', // cyan
+  nature_reserve:    '#2dd4bf', // teal
+};
+
+function getLandColor(landType: string): string {
+  return LAND_COLORS[landType] || '#a78bfa';
 }
 
 // --- Dashboard View Component ---
@@ -149,6 +171,9 @@ export default function App() {
   const [selected, setSelected] = useState<number | null>(null)
   const [recommendations, setRecommendations] = useState<Recommendation[]>([])
   const [geoJson, setGeoJson] = useState<any>(null)
+  const [emptyLand, setEmptyLand] = useState<any>(null)
+  const [showEmptyLand, setShowEmptyLand] = useState(false)
+  const [loadingLand, setLoadingLand] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
@@ -168,6 +193,8 @@ export default function App() {
     setSelected(null)
     setRecommendations([])
     setGeoJson(null)
+    setEmptyLand(null)
+    setShowEmptyLand(false)
 
     try {
       const geoResponse = await fetch(`${API}/geocode`, { 
@@ -193,6 +220,19 @@ export default function App() {
         if (!analysisResponse.ok) throw new Error(analysis.detail || 'Model 1 could not analyse this location.')
         setRecommendations(analysis.recommendations || [])
         if (mapResponse.ok) setGeoJson(await mapResponse.json())
+
+        // Fetch empty land in background — don't block the main result
+        setLoadingLand(true)
+        fetch(`${API}/empty-land?lat=${position[0]}&lon=${position[1]}&radius=1500`)
+          .then(r => r.ok ? r.json() : null)
+          .then(data => {
+            if (data && data.features?.length > 0) {
+              setEmptyLand(data)
+              setShowEmptyLand(true) // auto-show when parcels are found
+            }
+          })
+          .catch(() => {})
+          .finally(() => setLoadingLand(false))
       } else {
         const response = await fetch(`${API}/find-best-locations`, { 
           method: 'POST', 
@@ -368,6 +408,46 @@ export default function App() {
                 </div>
               )}
 
+              {/* Empty Land Layer Toggle */}
+              {mode === 'land' && (emptyLand || loadingLand) && (
+                <div className="empty-land-panel">
+                  <div className="empty-land-header">
+                    <div className="empty-land-title">
+                      <Layers size={16} />
+                      <span>Empty Land Parcels</span>
+                      {loadingLand && <span className="land-loading-badge">loading…</span>}
+                      {emptyLand && !loadingLand && (
+                        <span className="land-count-badge">{emptyLand.features?.length ?? 0} found</span>
+                      )}
+                    </div>
+                    {emptyLand && (
+                      <button
+                        type="button"
+                        className={`layer-toggle-btn ${showEmptyLand ? 'active' : ''}`}
+                        onClick={() => setShowEmptyLand(v => !v)}
+                        title={showEmptyLand ? 'Hide empty land layer' : 'Show empty land layer'}
+                      >
+                        {showEmptyLand ? 'Hide' : 'Show'}
+                      </button>
+                    )}
+                  </div>
+
+                  {/* Mini legend */}
+                  {emptyLand && showEmptyLand && (
+                    <div className="land-legend">
+                      {Array.from(
+                        new Set((emptyLand.features as any[]).map((f: any) => f.properties?.land_type).filter(Boolean))
+                      ).map((type: any) => (
+                        <div key={type} className="legend-item">
+                          <span className="legend-dot" style={{ background: getLandColor(type) }} />
+                          <span>{type.replace(/_/g, ' ')}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
+
               {/* Candidates */}
               {mode === 'business' && candidates.length > 0 && (
                 <div className="results-wrapper">
@@ -442,6 +522,42 @@ export default function App() {
                       const cat = feature.properties.category || feature.properties.amenity || feature.properties.shop || 'Amenity';
                       layer.bindPopup(`<strong>${name}</strong><br/><span style="text-transform:capitalize;color:#666;font-size:0.8rem">${cat}</span>`);
                     }
+                  }}
+                />
+              )}
+
+              {/* Empty Land Layer — rendered BELOW amenity dots so dots stay visible */}
+              {mode === 'land' && showEmptyLand && emptyLand && (
+                <GeoJSON
+                  key={`empty-land-${JSON.stringify(center)}-${showEmptyLand}`}
+                  data={emptyLand}
+                  style={(feature) => {
+                    const landType = feature?.properties?.land_type || '';
+                    const color = getLandColor(landType);
+                    return {
+                      color: color,
+                      weight: 2,
+                      fillColor: color,
+                      fillOpacity: 0.35,
+                      opacity: 0.8,
+                      dashArray: '4 3',
+                    };
+                  }}
+                  onEachFeature={(feature, layer) => {
+                    const p = feature.properties || {};
+                    const areaHa = p.approx_area_m2
+                      ? (p.approx_area_m2 / 10000).toFixed(2)
+                      : 'N/A';
+                    layer.bindPopup(
+                      `<div style="font-family:sans-serif;min-width:160px">
+                        <strong style="font-size:0.9rem">${p.name || p.label || 'Empty Land'}</strong><br/>
+                        <span style="color:#64748b;font-size:0.78rem;text-transform:capitalize">${(p.land_type || '').replace(/_/g, ' ')}</span><br/>
+                        <hr style="margin:4px 0;border-color:#e2e8f0"/>
+                        <span style="font-size:0.78rem">🏷️ Est. area: <strong>${areaHa} ha</strong></span>
+                      </div>`
+                    );
+                    (layer as any).on('mouseover', function(this: any) { this.setStyle({ fillOpacity: 0.6 }); });
+                    (layer as any).on('mouseout',  function(this: any) { this.setStyle({ fillOpacity: 0.35 }); });
                   }}
                 />
               )}

@@ -79,6 +79,24 @@ def get_business_types():
         "business_types": ["pharmacy", "grocery", "cafe", "restaurant", "bank", "clinic"]
     }
 
+@router.get("/api/empty-land")
+def get_empty_land(lat: float, lon: float, radius: int = 1000):
+    """
+    Returns a GeoJSON FeatureCollection of empty / available land parcels
+    (vacant, brownfield, farmland, meadow, grass, greenfield, etc.)
+    within the given radius around (lat, lon).
+
+    Each feature has Polygon geometry and properties including:
+      - name, land_type, label, approx_area_m2
+    """
+    logger.info(f"Fetching empty land for lat={lat}, lon={lon}, radius={radius}")
+    try:
+        result = engineer.geo_service.get_empty_land(lat, lon, radius)
+        return result
+    except Exception as e:
+        logger.error(f"Empty land fetch error: {e}")
+        raise HTTPException(status_code=502, detail="Failed to fetch empty land data from geographic services")
+
 @router.get("/api/location-details")
 def get_location_details(lat: float, lon: float, radius: int = 500):
     """Returns basic geographic and demographic details for a location."""

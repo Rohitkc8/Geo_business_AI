@@ -1,0 +1,1415 @@
+{
+  "metadata": {
+    "source": "OpenStreetMap via Overpass API",
+    "query_params": {
+      "center_latitude": 11.6753088,
+      "center_longitude": 78.1570798,
+      "radius_meters": 500
+    },
+    "timestamp_utc": "2026-10-05T17:21:38.433259+00:00",
+    "query_hash": "4fd867f11943a6d8cff16341727dd16e",
+    "license": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "disclaimer": "Do not assume absence from OSM means actual absence in reality. No missing features have been fabricated."
+  },
+  "summary": {
+    "total_features": 120
+  },
+  "population_metrics": {
+    "population": 17721,
+    "population_density": 17721.0,
+    "households": null,
+    "data_source": "WorldPop API",
+    "data_year": 2020,
+    "is_historical_estimate": true,
+    "coverage_status": "good",
+    "area_sq_km": 1.0
+  },
+  "features": [
+    {
+      "id": "node/313764625",
+      "name": "Gandhi Road",
+      "category": "bus_stop",
+      "latitude": 11.6712883,
+      "longitude": 78.1582122,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Gandhi Road",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/4444431841",
+      "name": "Holy flower matric hr.sec school",
+      "category": "education",
+      "latitude": 11.6748637,
+      "longitude": 78.1528099,
+      "tags": {
+        "addr:city": "salem",
+        "addr:postcode": "636016",
+        "addr:street": "Fairlands",
+        "amenity": "school",
+        "name": "Holy flower matric hr.sec school",
+        "phone": "+914272448426"
+      }
+    },
+    {
+      "id": "node/4444456005",
+      "name": "Lef Eden Garden Matric School",
+      "category": "education",
+      "latitude": 11.6719193,
+      "longitude": 78.1590295,
+      "tags": {
+        "addr:city": "salem",
+        "addr:housenumber": "374",
+        "addr:postcode": "636007",
+        "addr:street": "Cherry Road, Hastampatti",
+        "amenity": "school",
+        "name": "Lef Eden Garden Matric School",
+        "phone": "+91427-2419813"
+      }
+    },
+    {
+      "id": "node/6934340633",
+      "name": "Neomed Hospital",
+      "category": "healthcare",
+      "latitude": 11.6716218,
+      "longitude": 78.1550612,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "127/1 Varalakshmi Tower, Gandhi Road",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Neomed Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/6934685067",
+      "name": "Shanmuga Hospital and Salem Cancer Institute",
+      "category": "healthcare",
+      "latitude": 11.6770178,
+      "longitude": 78.1531844,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "24, Saradha College Road",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Shanmuga Hospital and Salem Cancer Institute",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/6935249004",
+      "name": "Tms Eye Hospital",
+      "category": "healthcare",
+      "latitude": 11.6772791,
+      "longitude": 78.1536202,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "51, Lrn Colony Sarada College Road",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Tms Eye Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/6936305687",
+      "name": "Appusami Hospital",
+      "category": "healthcare",
+      "latitude": 11.6714255,
+      "longitude": 78.156175,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "8, Z/A, Gandhi Road",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Appusami Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/7262945617",
+      "name": "Government Hospital, Hasthampatti",
+      "category": "healthcare",
+      "latitude": 11.6795,
+      "longitude": 78.157266,
+      "tags": {
+        "addr:block": "Salem Corporation",
+        "addr:district": "Salem",
+        "addr:full": "Kumarasamypatty, Cherry Road",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "name": "Government Hospital, Hasthampatti",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/7262945639",
+      "name": "Ruthramoorthy Polyclinic",
+      "category": "healthcare",
+      "latitude": 11.67157,
+      "longitude": 78.158408,
+      "tags": {
+        "addr:block": "Salem Corporation",
+        "addr:district": "Salem",
+        "addr:full": "67-B, Cherry Road, Salem",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Ruthramoorthy Polyclinic",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "id": "node/7840770073",
+      "name": "Malar Maternity Hospital & Arul Eye Care",
+      "category": "healthcare",
+      "latitude": 11.6711265,
+      "longitude": 78.1554168,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "Hasthampatti, Salem",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Malar Maternity Hospital & Arul Eye Care",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "id": "node/7840770098",
+      "name": "Ammani Multi Speciality Hospital",
+      "category": "healthcare",
+      "latitude": 11.671775,
+      "longitude": 78.156181,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "Hasthampatti, Salem",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Ammani Multi Speciality Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "id": "node/7840770102",
+      "name": "Radhai Speciality Clinics",
+      "category": "healthcare",
+      "latitude": 11.67228,
+      "longitude": 78.159115,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "Hasthampatti, Salem",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Radhai Speciality Clinics",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "id": "node/7840770121",
+      "name": "Sureka Hospital",
+      "category": "healthcare",
+      "latitude": 11.676423,
+      "longitude": 78.1550511,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "Hasthampatti, Salem",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Sureka Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "id": "node/7840770139",
+      "name": "Ramana Surgical Hospital",
+      "category": "healthcare",
+      "latitude": 11.6731205,
+      "longitude": 78.15862,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "Hasthampatti, Salem",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Ramana Surgical Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "id": "node/7840770145",
+      "name": "Manipal Fertility Hospital",
+      "category": "healthcare",
+      "latitude": 11.6726603,
+      "longitude": 78.1586522,
+      "tags": {
+        "addr:district": "Salem",
+        "addr:full": "Hasthampatti, Salem",
+        "addr:postcode": "636007",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Manipal Fertility Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "id": "node/10169161013",
+      "name": "Hasthampatti",
+      "category": "bus_stop",
+      "latitude": 11.6753543,
+      "longitude": 78.1597183,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hasthampatti",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/10169161014",
+      "name": "Hasthampatti",
+      "category": "bus_stop",
+      "latitude": 11.6755283,
+      "longitude": 78.1602427,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hasthampatti",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "node/10918024043",
+      "name": "MYSHOPY FOOTWEAR",
+      "category": "shop_shoes",
+      "latitude": 11.6734584,
+      "longitude": 78.1586451,
+      "tags": {
+        "addr:city": "salem",
+        "addr:housenumber": "103",
+        "addr:postcode": "636007",
+        "addr:street": "Hasthampatty - Cherry Road",
+        "name": "MYSHOPY FOOTWEAR",
+        "opening_hours": "24/7",
+        "phone": "+91 9092027152",
+        "shop": "shoes"
+      }
+    },
+    {
+      "id": "node/11393418773",
+      "name": "Hasthampatti",
+      "category": "bus_stop",
+      "latitude": 11.6757735,
+      "longitude": 78.1600056,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Hasthampatti",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "id": "way/28562510",
+      "name": "Puratchi Thalaivi Jayalalithaa Two Tier Flyover",
+      "category": "road",
+      "latitude": 11.6764484,
+      "longitude": 78.1442761,
+      "tags": {
+        "alt_name": "Sarada College Road",
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Puratchi Thalaivi Jayalalithaa Two Tier Flyover",
+        "name:etymology:wikidata": "Q31379617",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "id": "way/31852810",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.674521,
+      "longitude": 78.1580057,
+      "tags": {
+        "highway": "tertiary"
+      }
+    },
+    {
+      "id": "way/186675288",
+      "name": "Hasthampatty - Cherry Road",
+      "category": "road",
+      "latitude": 11.669481,
+      "longitude": 78.1589232,
+      "tags": {
+        "highway": "primary",
+        "name": "Hasthampatty - Cherry Road",
+        "ref": "SHU18"
+      }
+    },
+    {
+      "id": "way/208162435",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6789695,
+      "longitude": 78.1564964,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162436",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6745697,
+      "longitude": 78.1618628,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162437",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6732416,
+      "longitude": 78.1594727,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162439",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6814439,
+      "longitude": 78.1582234,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162443",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6751895,
+      "longitude": 78.1625259,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162444",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6785906,
+      "longitude": 78.1557877,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162446",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6706171,
+      "longitude": 78.1565643,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162458",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.674593,
+      "longitude": 78.1583729,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162459",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6720074,
+      "longitude": 78.1573491,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162460",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6745898,
+      "longitude": 78.160205,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162461",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6750666,
+      "longitude": 78.1603397,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162464",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6774484,
+      "longitude": 78.1568608,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162466",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6717816,
+      "longitude": 78.1556627,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162468",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6783871,
+      "longitude": 78.1557984,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162471",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6767028,
+      "longitude": 78.1531479,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162472",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6743438,
+      "longitude": 78.1601341,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162474",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6787238,
+      "longitude": 78.1543406,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162481",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6796326,
+      "longitude": 78.155852,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162489",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6790885,
+      "longitude": 78.154477,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162495",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6714389,
+      "longitude": 78.1595524,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162496",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6726005,
+      "longitude": 78.160903,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162497",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6729323,
+      "longitude": 78.1615716,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162501",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6753351,
+      "longitude": 78.1552636,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162510",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.674696,
+      "longitude": 78.1538535,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162511",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6784753,
+      "longitude": 78.1541796,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162512",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6748338,
+      "longitude": 78.1597786,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/208162521",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6706168,
+      "longitude": 78.1547224,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356404344",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6714709,
+      "longitude": 78.1595499,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405158",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6739037,
+      "longitude": 78.159338,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405164",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6755553,
+      "longitude": 78.1554437,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405166",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6722749,
+      "longitude": 78.1542204,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405167",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6738545,
+      "longitude": 78.1598287,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405168",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6736857,
+      "longitude": 78.1613902,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405175",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6749228,
+      "longitude": 78.1579617,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405176",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6723921,
+      "longitude": 78.1561662,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405177",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.673462,
+      "longitude": 78.1605475,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405180",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6740343,
+      "longitude": 78.1582895,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405182",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6721097,
+      "longitude": 78.153775,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405183",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6736995,
+      "longitude": 78.1611134,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405186",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.671892,
+      "longitude": 78.1558465,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405190",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6727396,
+      "longitude": 78.1533137,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405192",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6720648,
+      "longitude": 78.1544958,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405194",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6726181,
+      "longitude": 78.1538877,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405195",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6736623,
+      "longitude": 78.1582431,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405204",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6738588,
+      "longitude": 78.1582422,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405214",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6733763,
+      "longitude": 78.1533596,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405238",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6755632,
+      "longitude": 78.1550611,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405244",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6720572,
+      "longitude": 78.1609351,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405256",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6746109,
+      "longitude": 78.1559065,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405257",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6724211,
+      "longitude": 78.1551009,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356405263",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6714173,
+      "longitude": 78.1568968,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588674",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6779609,
+      "longitude": 78.1601375,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588675",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6765059,
+      "longitude": 78.1545853,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588683",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6785439,
+      "longitude": 78.156833,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588707",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6789986,
+      "longitude": 78.1600338,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588709",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6763995,
+      "longitude": 78.1593673,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588726",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6777234,
+      "longitude": 78.1565611,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588730",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6772884,
+      "longitude": 78.1594231,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588734",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6770504,
+      "longitude": 78.1557368,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588758",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6767792,
+      "longitude": 78.1547613,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588767",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6765748,
+      "longitude": 78.1552047,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588773",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6777909,
+      "longitude": 78.1556749,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588776",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6770078,
+      "longitude": 78.1553484,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588780",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6784495,
+      "longitude": 78.1572514,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588788",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6771991,
+      "longitude": 78.1555795,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588794",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6774663,
+      "longitude": 78.1538081,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588847",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6792497,
+      "longitude": 78.1573157,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588852",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6774662,
+      "longitude": 78.1555764,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356588857",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.677626,
+      "longitude": 78.156908,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356590235",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6789161,
+      "longitude": 78.155601,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/356590274",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6795434,
+      "longitude": 78.1564728,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/374689482",
+      "name": "Gandhi Road",
+      "category": "road",
+      "latitude": 11.6715744,
+      "longitude": 78.1548676,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Gandhi Road",
+        "name:etymology:wikidata": "Q1001"
+      }
+    },
+    {
+      "id": "way/388279982",
+      "name": "Johnsonpet Road",
+      "category": "road",
+      "latitude": 11.6710267,
+      "longitude": 78.1604629,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Johnsonpet Road"
+      }
+    },
+    {
+      "id": "way/449407171",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6748981,
+      "longitude": 78.1613608,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/964517821",
+      "name": "Salem Junction - Salem New Bypass Link Road",
+      "category": "road",
+      "latitude": 11.6761242,
+      "longitude": 78.1617629,
+      "tags": {
+        "highway": "secondary",
+        "name": "Salem Junction - Salem New Bypass Link Road",
+        "ref": "MDR"
+      }
+    },
+    {
+      "id": "way/1056191336",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6762656,
+      "longitude": 78.151374,
+      "tags": {
+        "highway": "primary",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "id": "way/1056191337",
+      "name": "Sarada College Road",
+      "category": "road",
+      "latitude": 11.6759273,
+      "longitude": 78.1573001,
+      "tags": {
+        "alt_name": "Salem Junction - Yercaud Road",
+        "highway": "primary",
+        "name": "Sarada College Road",
+        "name:etymology:wikidata": "Q31379617",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "id": "way/1056191338",
+      "name": "Sarada College Road",
+      "category": "road",
+      "latitude": 11.6760779,
+      "longitude": 78.1546668,
+      "tags": {
+        "alt_name": "Salem Junction - Yercaud Road",
+        "highway": "primary",
+        "name": "Sarada College Road",
+        "name:etymology:wikidata": "Q31379617",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "id": "way/1056191339",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6762986,
+      "longitude": 78.151962,
+      "tags": {
+        "highway": "primary",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "id": "way/1056191340",
+      "name": "Puratchi Thalaivi Jayalalithaa Two Tier Flyover",
+      "category": "road",
+      "latitude": 11.6760495,
+      "longitude": 78.154046,
+      "tags": {
+        "highway": "primary",
+        "name": "Puratchi Thalaivi Jayalalithaa Two Tier Flyover",
+        "name:etymology:wikidata": "Q465018",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "id": "way/1056191342",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6758272,
+      "longitude": 78.1570068,
+      "tags": {
+        "highway": "primary",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "id": "way/1056191343",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6761682,
+      "longitude": 78.1575668,
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "id": "way/1056191344",
+      "name": "PWD Addi. Bungalow Rd",
+      "category": "road",
+      "latitude": 11.6756467,
+      "longitude": 78.156866,
+      "tags": {
+        "highway": "residential",
+        "name": "PWD Addi. Bungalow Rd",
+        "oneway": "yes",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1066306508",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6782415,
+      "longitude": 78.1565787,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1066309101",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6733536,
+      "longitude": 78.1613707,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1066310421",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6728238,
+      "longitude": 78.1530129,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1066310423",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6746221,
+      "longitude": 78.1564035,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1066324810",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6706515,
+      "longitude": 78.1560199,
+      "tags": {
+        "highway": "residential",
+        "source": "maxar"
+      }
+    },
+    {
+      "id": "way/1076546235",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6842211,
+      "longitude": 78.1617634,
+      "tags": {
+        "highway": "primary",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "id": "way/1153718539",
+      "name": "Hasthampatti Roundabout",
+      "category": "road",
+      "latitude": 11.6755452,
+      "longitude": 78.159877,
+      "tags": {
+        "highway": "primary",
+        "maxspeed": "30",
+        "name": "Hasthampatti Roundabout",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "id": "way/1228476363",
+      "name": "CSI Hobart Edu Institute",
+      "category": "education",
+      "latitude": 11.673245,
+      "longitude": 78.1567934,
+      "tags": {
+        "amenity": "school",
+        "name": "CSI Hobart Edu Institute",
+        "operator": "CSI",
+        "operator:type": "private"
+      }
+    },
+    {
+      "id": "way/1228478256",
+      "name": "PWD Bungalow Roundabout",
+      "category": "road",
+      "latitude": 11.6749293,
+      "longitude": 78.156887,
+      "tags": {
+        "highway": "residential",
+        "name": "PWD Bungalow Roundabout",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1228478258",
+      "name": "PWD Addi. Bungalow Rd",
+      "category": "road",
+      "latitude": 11.6756478,
+      "longitude": 78.1569491,
+      "tags": {
+        "highway": "residential",
+        "name": "PWD Addi. Bungalow Rd",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1228560499",
+      "name": "Salem Junction - Yercaud Road",
+      "category": "road",
+      "latitude": 11.6843934,
+      "longitude": 78.1617059,
+      "tags": {
+        "highway": "primary",
+        "name": "Salem Junction - Yercaud Road",
+        "oneway": "yes",
+        "ref": "SH188"
+      }
+    },
+    {
+      "id": "way/1250250427",
+      "name": "Puratchi Thalaivi Jayalalithaa Two Tier Flyover",
+      "category": "road",
+      "latitude": 11.676722,
+      "longitude": 78.1483585,
+      "tags": {
+        "alt_name": "Sarada College Road",
+        "bridge": "yes",
+        "highway": "primary",
+        "layer": "1",
+        "name": "Puratchi Thalaivi Jayalalithaa Two Tier Flyover",
+        "name:etymology:wikidata": "Q465018",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1318162505",
+      "name": "Puratchi Thalaivi Jayalalithaa Two Tier Flyover",
+      "category": "road",
+      "latitude": 11.6759827,
+      "longitude": 78.1538537,
+      "tags": {
+        "alt_name": "Sarada College Road",
+        "highway": "primary",
+        "name": "Puratchi Thalaivi Jayalalithaa Two Tier Flyover",
+        "name:etymology:wikidata": "Q465018",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1453854491",
+      "name": "Unnamed Feature",
+      "category": "road",
+      "latitude": 11.6713368,
+      "longitude": 78.1583269,
+      "tags": {
+        "highway": "tertiary",
+        "oneway": "yes"
+      }
+    },
+    {
+      "id": "way/1453854492",
+      "name": "Johnsonpet Rd",
+      "category": "road",
+      "latitude": 11.6712691,
+      "longitude": 78.1583209,
+      "tags": {
+        "highway": "tertiary",
+        "name": "Johnsonpet Rd",
+        "oneway": "yes"
+      }
+    }
+  ]
+}
