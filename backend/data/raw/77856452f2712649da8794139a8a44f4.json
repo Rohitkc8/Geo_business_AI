@@ -1,0 +1,2405 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-07T07:36:31Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 330069956,
+      "lat": 11.0056048,
+      "lon": 76.9494051,
+      "tags": {
+        "amenity": "school",
+        "name": "Corporaton School for Deaf"
+      }
+    },
+    {
+      "type": "node",
+      "id": 330069972,
+      "lat": 11.0106805,
+      "lon": 76.9486042,
+      "tags": {
+        "amenity": "school",
+        "name": "Vidya Vriksha Play School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 346037148,
+      "lat": 11.0102989,
+      "lon": 76.9469568,
+      "tags": {
+        "amenity": "school",
+        "name": "RS Puram Corporation Girls High School"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1314032284,
+      "lat": 11.0068841,
+      "lon": 76.9508118,
+      "tags": {
+        "addr:housename": "Arvind Towers",
+        "addr:housenumber": "700",
+        "addr:postcode": "641002",
+        "addr:street": "DB road",
+        "amenity": "restaurant",
+        "cuisine": "ice_cream",
+        "name": "Bon Bon Ice Creams"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1464770544,
+      "lat": 11.0095371,
+      "lon": 76.9475317,
+      "tags": {
+        "addr:floor": "G",
+        "amenity": "cafe",
+        "brand": "Cafe Coffee Day",
+        "brand:wikidata": "Q5017235",
+        "brand:wikipedia": "en:Caf\u00e9 Coffee Day",
+        "check_date": "2024-10-24",
+        "cuisine": "coffee_shop",
+        "level": "0",
+        "name": "Cafe Coffee Day",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "takeaway": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472216491,
+      "lat": 11.0095746,
+      "lon": 76.9501279,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "Peking"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472216492,
+      "lat": 11.0095879,
+      "lon": 76.9503693,
+      "tags": {
+        "check_date": "2024-10-24",
+        "name": "Brocade",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472216493,
+      "lat": 11.0099817,
+      "lon": 76.9501269,
+      "tags": {
+        "name": "DanielHechter",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472216494,
+      "lat": 11.0100389,
+      "lon": 76.9503052,
+      "tags": {
+        "check_date": "2024-10-24",
+        "name": "Crocodile",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230495,
+      "lat": 11.0091583,
+      "lon": 76.9505028,
+      "tags": {
+        "check_date": "2024-10-24",
+        "name": "P. & R.R. Sons - Multi Brand Watch Outlet",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230498,
+      "lat": 11.0083883,
+      "lon": 76.9503748,
+      "tags": {
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230499,
+      "lat": 11.0090551,
+      "lon": 76.951028,
+      "tags": {
+        "name": "CATMOSS",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230500,
+      "lat": 11.0087816,
+      "lon": 76.9510283,
+      "tags": {
+        "brand": "Metro",
+        "brand:wikidata": "Q16938284",
+        "name": "Metro",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230508,
+      "lat": 11.008562,
+      "lon": 76.9505786,
+      "tags": {
+        "amenity": "bank",
+        "brand": "State Bank of India",
+        "brand:wikidata": "Q1340361",
+        "brand:wikipedia": "en:State Bank of India",
+        "name": "State Bank of India",
+        "short_name": "SBI"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230510,
+      "lat": 11.0089248,
+      "lon": 76.9508404,
+      "tags": {
+        "check_date": "2024-10-24",
+        "name": "Bombay Dyeing",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230513,
+      "lat": 11.0080002,
+      "lon": 76.9507267,
+      "tags": {
+        "brand": "Woodland",
+        "brand:wikidata": "Q123068491",
+        "name": "Woodland",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230514,
+      "lat": 11.0090278,
+      "lon": 76.9505426,
+      "tags": {
+        "check_date": "2024-10-24",
+        "name": "Titan World",
+        "shop": "watches"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230522,
+      "lat": 11.0097731,
+      "lon": 76.9503293,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "558, D B Road R S Puram",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Coimbatore South",
+        "amenity": "hospital",
+        "check_date": "2024-10-24",
+        "healthcare": "hospital",
+        "name": "Rasi Hospital",
+        "name:ta": "\u0bb0\u0bbe\u0b9a\u0bbf \u0bae\u0bb0\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0bb5\u0bae\u0ba9\u0bc8",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230524,
+      "lat": 11.0085602,
+      "lon": 76.9510389,
+      "tags": {
+        "name": "Aroma bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230527,
+      "lat": 11.0087727,
+      "lon": 76.9504929,
+      "tags": {
+        "check_date": "2024-10-24",
+        "name": "Ayyar & Co Pure Veg Bakery & Cake Shop",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230529,
+      "lat": 11.0083882,
+      "lon": 76.9506101,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Tamilnad Mercantile Bank Limited",
+        "brand:wikidata": "Q2044991",
+        "check_date": "2024-10-24",
+        "name": "Tamilnad Mercantile Bank Limited"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230531,
+      "lat": 11.0089111,
+      "lon": 76.9502917,
+      "tags": {
+        "name": "SKC-Sri Krishna Collection cloth store",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230537,
+      "lat": 11.0093535,
+      "lon": 76.9507983,
+      "tags": {
+        "brand": "Tanishq",
+        "brand:en": "Tanishq",
+        "brand:wikidata": "Q13117711",
+        "brand:wikipedia": "en:Tanishq",
+        "check_date": "2024-10-24",
+        "name": "Tanishq",
+        "name:en": "Tanishq",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472230540,
+      "lat": 11.0097345,
+      "lon": 76.9506846,
+      "tags": {
+        "check_date": "2024-10-24",
+        "name": "Aroma Bakery",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472231431,
+      "lat": 11.0084988,
+      "lon": 76.9508844,
+      "tags": {
+        "name": "BASICS LIFE",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472231440,
+      "lat": 11.0083777,
+      "lon": 76.9510775,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472237759,
+      "lat": 11.0078372,
+      "lon": 76.9509568,
+      "tags": {
+        "name": "VANDHANA",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472237760,
+      "lat": 11.0075826,
+      "lon": 76.9509759,
+      "tags": {
+        "name": "BRIGHT FOOTWEAR",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472237761,
+      "lat": 11.0081881,
+      "lon": 76.9511418,
+      "tags": {
+        "name": "INDIGO NATION",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472237762,
+      "lat": 11.0070824,
+      "lon": 76.9507503,
+      "tags": {
+        "name": "ZIMSON-watch showroom",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472237763,
+      "lat": 11.007214,
+      "lon": 76.9505732,
+      "tags": {
+        "name": "WALK-A-WAY-footwears",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472237764,
+      "lat": 11.0079406,
+      "lon": 76.9511901,
+      "tags": {
+        "name": "JOHN PLAYERS",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472237765,
+      "lat": 11.007372,
+      "lon": 76.9507503,
+      "tags": {
+        "name": "K.R.S BAKERY",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472237766,
+      "lat": 11.0077385,
+      "lon": 76.9512534,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "SUGAM HOTELS"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472237767,
+      "lat": 11.0085515,
+      "lon": 76.9512706,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "ANANDHAS"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472237768,
+      "lat": 11.0080723,
+      "lon": 76.950938,
+      "tags": {
+        "name": "MILOU",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472237769,
+      "lat": 11.0069823,
+      "lon": 76.9505732,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Standard Chartered",
+        "brand:wikidata": "Q548278",
+        "name": "Standard Chartered"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472237770,
+      "lat": 11.0082829,
+      "lon": 76.950922,
+      "tags": {
+        "name": "LENS AND FRAMES",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472617902,
+      "lat": 11.007139,
+      "lon": 76.9511148,
+      "tags": {
+        "name": "ZAVERI",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472617903,
+      "lat": 11.0073391,
+      "lon": 76.9511041,
+      "tags": {
+        "name": "HIDESIGN",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472617905,
+      "lat": 11.0070126,
+      "lon": 76.9513299,
+      "tags": {
+        "name": "PAZHAMUDIR NILAYAM",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472618252,
+      "lat": 11.0067493,
+      "lon": 76.9513508,
+      "tags": {
+        "name": "LEE & WRANGLER",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472618253,
+      "lat": 11.0068225,
+      "lon": 76.9511475,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "HOTCHIPS"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472618254,
+      "lat": 11.006802,
+      "lon": 76.9506427,
+      "tags": {
+        "name": "ODYSSEY",
+        "shop": "gift"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472619293,
+      "lat": 11.0063886,
+      "lon": 76.9513969,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Indian Overseas Bank",
+        "brand:wikidata": "Q2003611",
+        "brand:wikipedia": "en:Indian Overseas Bank",
+        "name": "Indian Overseas Bank",
+        "name:en": "Indian Overseas Bank",
+        "short_name": "IOB",
+        "website": "https://www.iob.in"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472619294,
+      "lat": 11.0069705,
+      "lon": 76.9516839,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "ANNAPOORNA"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472619295,
+      "lat": 11.0062406,
+      "lon": 76.9512038,
+      "tags": {
+        "name": "RAMRAJ COTTONS",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472619296,
+      "lat": 11.006526,
+      "lon": 76.9516544,
+      "tags": {
+        "brand": "Puma",
+        "brand:wikidata": "Q157064",
+        "name": "Puma",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472619297,
+      "lat": 11.0065592,
+      "lon": 76.9512011,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "A1 CHIPS",
+        "wikimedia_commons": "File:Bollard RS Puram.jpg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472619298,
+      "lat": 11.0057572,
+      "lon": 76.9515252,
+      "tags": {
+        "brand": "Bata",
+        "brand:wikidata": "Q688082",
+        "name": "Bata",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472619299,
+      "lat": 11.0058963,
+      "lon": 76.9509109,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "AARYAS"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472619301,
+      "lat": 11.006149,
+      "lon": 76.9508895,
+      "tags": {
+        "name": "FAST TRACK",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472619302,
+      "lat": 11.0058436,
+      "lon": 76.9513401,
+      "tags": {
+        "name": "@HOME",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472619303,
+      "lat": 11.0061153,
+      "lon": 76.9514179,
+      "tags": {
+        "name": "BENWOODS",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472707365,
+      "lat": 11.0106459,
+      "lon": 76.9509753,
+      "tags": {
+        "name": "THE MEN AND WOMEN",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472707367,
+      "lat": 11.0108671,
+      "lon": 76.9522413,
+      "tags": {
+        "name": "ABILASHA",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472707376,
+      "lat": 11.0105303,
+      "lon": 76.9533949,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "THAT'S Y FOOD"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472707377,
+      "lat": 11.0111093,
+      "lon": 76.9532713,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Kotak Mahindra Bank",
+        "brand:wikidata": "Q2040404",
+        "name": "Kotak Mahindra Bank"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472707378,
+      "lat": 11.0102773,
+      "lon": 76.951383,
+      "tags": {
+        "name": "BORN BABES",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472707380,
+      "lat": 11.0107618,
+      "lon": 76.9514259,
+      "tags": {
+        "name": "JKK CAR SALES",
+        "shop": "car"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1472707387,
+      "lat": 11.0106881,
+      "lon": 76.9544601,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "COCKARACO"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821562,
+      "lat": 11.010177,
+      "lon": 76.9501321,
+      "tags": {
+        "name": "ORRA",
+        "shop": "jewelry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821563,
+      "lat": 11.0102981,
+      "lon": 76.9493971,
+      "tags": {
+        "name": "NALLI SILKS",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821565,
+      "lat": 11.0102928,
+      "lon": 76.9492845,
+      "tags": {
+        "name": "MUSIC GALLERY",
+        "shop": "music"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821566,
+      "lat": 11.0100559,
+      "lon": 76.9492845,
+      "tags": {
+        "brand": "Pepe Jeans",
+        "brand:wikidata": "Q426992",
+        "brand:wikipedia": "en:Pepe Jeans",
+        "name": "Pepe Jeans",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821567,
+      "lat": 11.0103982,
+      "lon": 76.9499229,
+      "tags": {
+        "name": "COLOR PLUS",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821569,
+      "lat": 11.0103192,
+      "lon": 76.9495152,
+      "tags": {
+        "brand": "United Colors of Benetton",
+        "brand:wikidata": "Q817139",
+        "name": "United Colors of Benetton",
+        "shop": "clothes",
+        "short_name": "Benetton"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821572,
+      "lat": 11.0103876,
+      "lon": 76.9500784,
+      "tags": {
+        "name": "JUS BORN",
+        "shop": "toys"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821573,
+      "lat": 11.0102718,
+      "lon": 76.9491557,
+      "tags": {
+        "name": "CITIZEN",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821575,
+      "lat": 11.010077,
+      "lon": 76.9496225,
+      "tags": {
+        "amenity": "restaurant",
+        "name": "HOTEL CHERAN"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821576,
+      "lat": 11.0103613,
+      "lon": 76.9496171,
+      "tags": {
+        "name": "MAPLE",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821578,
+      "lat": 11.00994,
+      "lon": 76.9488714,
+      "tags": {
+        "name": "RICH LOOK",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821579,
+      "lat": 11.0100454,
+      "lon": 76.9494722,
+      "tags": {
+        "name": "K-LONGUE",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821582,
+      "lat": 11.0103771,
+      "lon": 76.9497888,
+      "tags": {
+        "name": "STING",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821584,
+      "lat": 11.010177,
+      "lon": 76.9500248,
+      "tags": {
+        "name": "RAYMOND",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821586,
+      "lat": 11.0099822,
+      "lon": 76.9490967,
+      "tags": {
+        "name": "SHAPES",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821587,
+      "lat": 11.0102349,
+      "lon": 76.9489787,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "AGARWAL SWEET PALACE"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821588,
+      "lat": 11.0104298,
+      "lon": 76.9502018,
+      "tags": {
+        "name": "TITAN EYE+",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473821589,
+      "lat": 11.0102086,
+      "lon": 76.94885,
+      "tags": {
+        "name": "K.R.S BAKERY",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473825626,
+      "lat": 11.0099295,
+      "lon": 76.9469188,
+      "tags": {
+        "name": "UPBEAT",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473825635,
+      "lat": 11.0099822,
+      "lon": 76.9474767,
+      "tags": {
+        "name": "MASKELIN",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473825640,
+      "lat": 11.0102086,
+      "lon": 76.9486139,
+      "tags": {
+        "name": "GILLI WORLD",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473825641,
+      "lat": 11.0095002,
+      "lon": 76.9473929,
+      "tags": {
+        "check_date": "2024-10-24",
+        "clothes": "women",
+        "name": "Shresht",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473825647,
+      "lat": 11.0092786,
+      "lon": 76.9459629,
+      "tags": {
+        "addr:city": "\u0b95\u0bcb\u0baf\u0bae\u0bcd\u0baa\u0bc1\u0ba4\u0bcd\u0ba4\u0bc2\u0bb0\u0bcd",
+        "addr:postcode": "641002",
+        "addr:street": "Thiruvenkatasamy (TV Samy) Road",
+        "brand": "Fabindia",
+        "brand:wikidata": "Q5427779",
+        "check_date": "2024-10-24",
+        "clothes": "women;men",
+        "name": "Fabindia",
+        "organic": "yes",
+        "payment:cash": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "clothes",
+        "website": "https://www.fabindia.com/",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473825650,
+      "lat": 11.0095978,
+      "lon": 76.9469939,
+      "tags": {
+        "name": "GAMMA FASHION",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473825655,
+      "lat": 11.0099506,
+      "lon": 76.9471763,
+      "tags": {
+        "name": "ADIDAS",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473825657,
+      "lat": 11.0101085,
+      "lon": 76.9481204,
+      "tags": {
+        "brand": "Bata",
+        "brand:wikidata": "Q688082",
+        "name": "Bata",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473825659,
+      "lat": 11.0101483,
+      "lon": 76.948387,
+      "tags": {
+        "amenity": "bank",
+        "brand": "Canara Bank",
+        "brand:en": "Canara Bank",
+        "brand:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "brand:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "brand:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "brand:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "brand:wikidata": "Q2003777",
+        "brand:wikipedia": "en:Canara Bank",
+        "brand:wikipedia:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "name": "Canara Bank",
+        "name:en": "Canara Bank",
+        "name:hi": "\u0915\u0947\u0928\u0930\u093e \u092c\u0948\u0902\u0915",
+        "name:kn": "\u0c95\u0cc6\u0ca8\u0cb0\u0cbe \u0cac\u0ccd\u0caf\u0cbe\u0c82\u0c95\u0ccd",
+        "name:pa": "\u0a15\u0a47\u0a28\u0a30\u0a3e \u0a2c\u0a48\u0a02\u0a15",
+        "name:pnb": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "name:ur": "\u06a9\u06cc\u0646\u0631\u0627 \u0628\u06cc\u0646\u06a9",
+        "website": "https://www.canarabank.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473830517,
+      "lat": 11.0109879,
+      "lon": 76.9501053,
+      "tags": {
+        "brand": "Woodland",
+        "brand:wikidata": "Q123068491",
+        "name": "Woodland",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473830522,
+      "lat": 11.010593,
+      "lon": 76.950234,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Arasu Medicals"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473830523,
+      "lat": 11.0134549,
+      "lon": 76.9496753,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "582-A , D B Road, R, S, Puram",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Coimbatore South",
+        "amenity": "hospital",
+        "health_specialty:optometry": "yes",
+        "healthcare": "hospital",
+        "name": "The Eye Foundaton",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473830525,
+      "lat": 11.0108563,
+      "lon": 76.9501643,
+      "tags": {
+        "brand": "Peter England",
+        "brand:wikidata": "Q19573665",
+        "clothes": "men",
+        "name": "Peter England",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473830527,
+      "lat": 11.0131995,
+      "lon": 76.9500141,
+      "tags": {
+        "brand": "Reebok",
+        "brand:wikidata": "Q466183",
+        "brand:wikipedia": "en:Reebok",
+        "name": "Reebok",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473830537,
+      "lat": 11.0114724,
+      "lon": 76.9500248,
+      "tags": {
+        "name": "PLANET FASHION",
+        "shop": "hifi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473830541,
+      "lat": 11.0116514,
+      "lon": 76.9500194,
+      "tags": {
+        "name": "NAIDU HALL",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473830542,
+      "lat": 11.0107141,
+      "lon": 76.9502125,
+      "tags": {
+        "name": "SCULLERS",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473830547,
+      "lat": 11.0129415,
+      "lon": 76.9501213,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Damro"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1473830549,
+      "lat": 11.0121253,
+      "lon": 76.9496546,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "BOOMERANG"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4229311789,
+      "lat": 11.0122971,
+      "lon": 76.9488145,
+      "tags": {
+        "amenity": "fast_food",
+        "name": "Sandwich",
+        "opening_hours": "Tu-Su 16:00-21:30"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4277722890,
+      "lat": 11.0118502,
+      "lon": 76.9473198,
+      "tags": {
+        "addr:street": "East Venkataswamy Road",
+        "name": "Aishu's",
+        "phone": "+91-9843672000",
+        "shop": "cosmetics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4277722989,
+      "lat": 11.0117772,
+      "lon": 76.9470525,
+      "tags": {
+        "addr:street": "East Venkataswamy Road",
+        "name": "Green Basket",
+        "shop": "department_store"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4354539834,
+      "lat": 11.0120938,
+      "lon": 76.9473361,
+      "tags": {
+        "name": "Sri Nithyakalyani Chit Funds Private Ltd",
+        "shop": "money_lender"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4356098790,
+      "lat": 11.0061313,
+      "lon": 76.9500524,
+      "tags": {
+        "addr:street": "Arokiasamy Street",
+        "amenity": "restaurant",
+        "cuisine": "indian",
+        "name": "Siruvani"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4358577289,
+      "lat": 11.0102759,
+      "lon": 76.9515678,
+      "tags": {
+        "addr:street": "East Venkataswamy Road",
+        "name:en": "Lakshmis Home Style",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4379089794,
+      "lat": 11.01004,
+      "lon": 76.9506658,
+      "tags": {
+        "check_date": "2024-10-24",
+        "name": "Nilgiri Furniture World",
+        "shop": "furniture"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4391415889,
+      "lat": 11.0082677,
+      "lon": 76.950625,
+      "tags": {
+        "addr:street": "Diwan Bhadur Road",
+        "check_date": "2024-10-24",
+        "name:en": "Nalli",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4428943992,
+      "lat": 11.0098536,
+      "lon": 76.9472389,
+      "tags": {
+        "name:en": "Just Buy",
+        "shop": "bicycle"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4428948994,
+      "lat": 11.0098828,
+      "lon": 76.947335,
+      "tags": {
+        "brand": "Toni & Guy",
+        "brand:wikidata": "Q324784",
+        "brand:wikipedia": "en:Toni & Guy",
+        "name": "Toni & Guy",
+        "name:en": "Toni & Guy",
+        "shop": "hairdresser"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4428948995,
+      "lat": 11.0082021,
+      "lon": 76.9506435,
+      "tags": {
+        "name:en": "KRS",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4445059989,
+      "lat": 11.0067443,
+      "lon": 76.95235,
+      "tags": {
+        "name": "HMR hotel",
+        "tourism": "hotel"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4463666490,
+      "lat": 11.0096192,
+      "lon": 76.9482085,
+      "tags": {
+        "name:en": "The Chennai Mobiles",
+        "shop": "mobile_phone"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4517337518,
+      "lat": 11.0118654,
+      "lon": 76.9474069,
+      "tags": {
+        "name:en": "Green Trends",
+        "shop": "cosmetics"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4692289495,
+      "lat": 11.0101323,
+      "lon": 76.9511705,
+      "tags": {
+        "name:en": "Shanthi Social Services",
+        "shop": "optician"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4711638799,
+      "lat": 11.007877,
+      "lon": 76.9506689,
+      "tags": {
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name:en": "RS Puram",
+        "public_transport": "platform"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4711668397,
+      "lat": 11.0081712,
+      "lon": 76.9509903,
+      "tags": {
+        "name:en": "Wake n Bake",
+        "shop": "bakery"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4799120032,
+      "lat": 11.008565,
+      "lon": 76.9530353,
+      "tags": {
+        "addr:city": "Coimbatore",
+        "addr:postcode": "641002",
+        "addr:street": "Sir Shanmugam Road",
+        "alt_name": "A2B",
+        "amenity": "restaurant",
+        "brand": "Adyar Ananda Bhavan",
+        "brand:wikidata": "Q15178238",
+        "brand:wikipedia": "en:Adyar Ananda Bhavan",
+        "cuisine": "regional",
+        "diet:vegetarian": "only",
+        "name": "Adyar Ananda Bhavan",
+        "operator": "Adyar Ananda Bhavan",
+        "phone": "+91 422 427 3399",
+        "shop": "confectionery",
+        "smoking": "no",
+        "website": "https://aabsweets.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4808812461,
+      "lat": 11.0058786,
+      "lon": 76.9483205,
+      "tags": {
+        "name:en": "Sportsland",
+        "shop": "sports"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4944444323,
+      "lat": 11.0098981,
+      "lon": 76.9534164,
+      "tags": {
+        "name:en": "Copy Shop",
+        "shop": "copyshop"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4944455821,
+      "lat": 11.0095801,
+      "lon": 76.9534287,
+      "tags": {
+        "name:en": "Anya",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5036993525,
+      "lat": 11.0087419,
+      "lon": 76.9528507,
+      "tags": {
+        "addr:housenumber": "201",
+        "addr:postcode": "641002",
+        "addr:street": "Sambandam Road",
+        "amenity": "cafe",
+        "cuisine": "sandwich;breakfast;tea;indian;coffee_shop",
+        "email": "rspuram@chai-n-gupshup.com",
+        "name:en": "Chai n Gupshup Tea Hangout",
+        "opening_hours": "We-Mo 09:00-21:00",
+        "operator": "Hemant J Shah",
+        "phone": "+914224369848"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6886497229,
+      "lat": 11.0058505,
+      "lon": 76.9509217,
+      "tags": {
+        "addr:district": "COIMBATORE",
+        "addr:full": "Red Rase Tower No.422 DB Road, R.S. Puram",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "amenity": "blood_bank",
+        "contact:phone": "04222477373; 04222470046",
+        "email": "cbe_lionsbloodbank@yahoo.co.in",
+        "name": "Lions Club of Coimbatore Legend Blood Bank Research Centre",
+        "opening_hours": "24/7",
+        "operator:type": "ngo",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6914895660,
+      "lat": 11.0120021,
+      "lon": 76.9494063,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "69, West Venkatasamy Road, R S Puram",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Coimbatore South",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Vikaram ENT Hospital, Coimbatore",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6928304820,
+      "lat": 11.0144375,
+      "lon": 76.9504979,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "New No.52 ,Old No.133 , East Bashyakaralu Road,R.S. Puram,End Of Maruthi Theatre Road",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Vedanayagam Hospital (P) Limited",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6936609173,
+      "lat": 11.0137122,
+      "lon": 76.951316,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "137 East Periasamy Road, R.S. Puram",
+        "addr:postcode": "641018",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Madurai Eye Center",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7111719485,
+      "lat": 11.0084178,
+      "lon": 76.9494413,
+      "tags": {
+        "name:en": "Laundry Hub",
+        "shop": "laundry"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7111734385,
+      "lat": 11.0100388,
+      "lon": 76.9499427,
+      "tags": {
+        "amenity": "restaurant",
+        "name:en": "Annavilaas"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7257183906,
+      "lat": 11.0108047,
+      "lon": 76.9530054,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "R.S.Puram, Coimbatore, Tv Samy Road East",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Coimbatore North",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Ponnaiah Hospital",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7257183957,
+      "lat": 11.0128764,
+      "lon": 76.9492706,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "43, E Periasamy Rd, Near Eye Foundation, R S Puram West, Coimbatore",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "addr:subdistrict": "Coimbatore South",
+        "amenity": "clinic",
+        "healthcare": "clinic",
+        "name": "Gateway Clinic",
+        "source": "OpenGovernmentData"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7844131999,
+      "lat": 11.0131526,
+      "lon": 76.948405,
+      "tags": {
+        "addr:district": "Coimbatore",
+        "addr:full": "R S Puram, Coimbatore",
+        "addr:postcode": "641002",
+        "addr:state": "Tamil Nadu",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "Rao Hospital",
+        "source": "Local Knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9125870245,
+      "lat": 11.0079716,
+      "lon": 76.9506699,
+      "tags": {
+        "check_date": "2024-10-24",
+        "name": "Zimson",
+        "shop": "watches"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9891879713,
+      "lat": 11.0105488,
+      "lon": 76.95384,
+      "tags": {
+        "name": "V Sat Solar Products",
+        "shop": "electrical"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11698121276,
+      "lat": 11.0070327,
+      "lon": 76.9508062,
+      "tags": {
+        "addr:city": "coimbatore",
+        "addr:district": "Coimbatore",
+        "addr:housenumber": "509",
+        "addr:postcode": "641002",
+        "addr:street": "1st Floor, Red Rose Plaza, Diwan Bahadur Rd",
+        "name": "Lookin Digital",
+        "office": "advertising_agency",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "phone": "8807888188",
+        "website": "https://www.lookindigital.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11962599671,
+      "lat": 11.0084669,
+      "lon": 76.951449,
+      "tags": {
+        "addr:city": "Coimbatore",
+        "addr:district": "Coimbatore",
+        "addr:housenumber": "181 - 183",
+        "addr:postcode": "641002",
+        "addr:street": "East Sambandam Road, R.S.Puram",
+        "email": "hi@pooglemedia.com",
+        "mobile": "+91-97900-24440",
+        "name": "Poogle Media",
+        "office": "graphic_design",
+        "opening_hours": "Mo-Sa 10:30-18:30",
+        "phone": "9790024440",
+        "website": "https://www.pooglemedia.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12285349816,
+      "lat": 11.0093053,
+      "lon": 76.9504754,
+      "tags": {
+        "amenity": "bank",
+        "brand": "City Union Bank",
+        "brand:en": "City Union Bank",
+        "brand:hi": "\u0938\u093f\u091f\u0940 \u092f\u0942\u0928\u093f\u092f\u0928 \u092c\u0948\u0902\u0915",
+        "brand:ta": "\u0b9a\u0bbf\u0b9f\u0bcd\u0b9f\u0bbf \u0baf\u0bc2\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb5\u0b99\u0bcd\u0b95\u0bbf",
+        "brand:wikidata": "Q2040264",
+        "check_date": "2024-10-24",
+        "name": "City Union Bank",
+        "name:en": "City Union Bank",
+        "name:hi": "\u0938\u093f\u091f\u0940 \u092f\u0942\u0928\u093f\u092f\u0928 \u092c\u0948\u0902\u0915",
+        "name:ta": "\u0b9a\u0bbf\u0b9f\u0bcd\u0b9f\u0bbf \u0baf\u0bc2\u0ba9\u0bbf\u0baf\u0ba9\u0bcd \u0bb5\u0b99\u0bcd\u0b95\u0bbf",
+        "short_name": "CUB"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12285349817,
+      "lat": 11.0102846,
+      "lon": 76.9502958,
+      "tags": {
+        "amenity": "pharmacy",
+        "check_date": "2024-10-24",
+        "healthcare": "pharmacy",
+        "name": "Arasu Medicals",
+        "name:ta": "\u0b85\u0bb0\u0b9a\u0bc1 \u0bae\u0bc6\u0b9f\u0bbf\u0b95\u0bcd\u0b95\u0bb2\u0bcd\u0bb8\u0bcd"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12285349818,
+      "lat": 11.0098849,
+      "lon": 76.9503906,
+      "tags": {
+        "brand": "Crocs",
+        "brand:wikidata": "Q926699",
+        "check_date": "2024-10-24",
+        "name": "Crocs",
+        "shop": "shoes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12285349829,
+      "lat": 11.009973,
+      "lon": 76.9503695,
+      "tags": {
+        "brand": "U.S. Polo Assn.",
+        "brand:wikidata": "Q7863282",
+        "check_date": "2024-10-24",
+        "name": "U.S. Polo Assn.",
+        "shop": "clothes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13001909486,
+      "lat": 11.0063662,
+      "lon": 76.9503695,
+      "tags": {
+        "amenity": "bank",
+        "name": "Punjab national bank"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980759,
+      "center": {
+        "lat": 11.0111638,
+        "lon": 76.9494587
+      },
+      "nodes": [
+        330041072,
+        802057935,
+        802057914,
+        330042673,
+        802057939,
+        1481349021,
+        1481349018,
+        5668231537
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "East Ponnurangam Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980771,
+      "center": {
+        "lat": 11.0119803,
+        "lon": 76.9479403
+      },
+      "nodes": [
+        802057904,
+        802057891,
+        802057898,
+        12377551439,
+        802057901,
+        12377551442,
+        330042539,
+        5668231535
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "East Venkataswamy Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980773,
+      "center": {
+        "lat": 11.0136765,
+        "lon": 76.9535603
+      },
+      "nodes": [
+        778244551,
+        802057890
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Venkitasamy Road",
+        "name:ta": "\u0bb5\u0bc6\u0b99\u0bcd\u0b95\u0b9f\u0b9a\u0bbe\u0bae\u0bbf \u0b9a\u0bbe\u0bb2\u0bc8",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980774,
+      "center": {
+        "lat": 11.0139933,
+        "lon": 76.9493977
+      },
+      "nodes": [
+        247429162,
+        802057897,
+        802057933,
+        330042629,
+        4925730678,
+        330042342,
+        12377519794,
+        12377519791,
+        12377519786,
+        12377519783,
+        330042358
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Bashyakarlu Road",
+        "name:ta": "\u0baa\u0bbe\u0bb7\u0bcd\u0baf\u0b95\u0bb0\u0bcd\u0bb2\u0bc1 \u0b9a\u0bbe\u0bb2\u0bc8",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980776,
+      "center": {
+        "lat": 11.0121309,
+        "lon": 76.9459643
+      },
+      "nodes": [
+        330042365,
+        330042342,
+        802057917,
+        802057901,
+        802057939,
+        330042461
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Punniakodi Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980779,
+      "center": {
+        "lat": 11.012682,
+        "lon": 76.946524
+      },
+      "nodes": [
+        330042205,
+        330042638,
+        4925730679,
+        802057917,
+        12377519796,
+        1445247698,
+        5668231533
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Periasamy Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980780,
+      "center": {
+        "lat": 11.0123215,
+        "lon": 76.9476006
+      },
+      "nodes": [
+        778243009,
+        330042629,
+        330042638,
+        802057898,
+        330042673,
+        330041878
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Venkatachalam Chetty Street",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980781,
+      "center": {
+        "lat": 11.0126246,
+        "lon": 76.9500748
+      },
+      "nodes": [
+        778230524,
+        802057933,
+        330042205,
+        802057891,
+        802057914,
+        10241624644,
+        802057920
+      ],
+      "tags": {
+        "highway": "tertiary",
+        "lane_markings": "no",
+        "name": "Diwan Bhadur Road",
+        "name:etymology:wikidata": "Q3531066",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980782,
+      "center": {
+        "lat": 11.0089712,
+        "lon": 76.9528612
+      },
+      "nodes": [
+        802057904,
+        802057935,
+        802057877,
+        802057906,
+        802057919,
+        330043740,
+        330042901,
+        330042906,
+        330043677,
+        802057857,
+        330042915
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Sir Shanmugam Road",
+        "name:etymology:wikidata": "Q3532049",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980797,
+      "center": {
+        "lat": 11.0061317,
+        "lon": 76.9521788
+      },
+      "nodes": [
+        330043677,
+        330043585,
+        12241205041,
+        330043705
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Ramachandra Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980798,
+      "center": {
+        "lat": 11.0067884,
+        "lon": 76.9521016
+      },
+      "nodes": [
+        330042901,
+        12241205037,
+        330043733
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Arokiyasamy Road East",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980799,
+      "center": {
+        "lat": 11.0076389,
+        "lon": 76.9519689
+      },
+      "nodes": [
+        330043740,
+        10224712256,
+        330042768
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Kannusamy Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980800,
+      "center": {
+        "lat": 11.0060669,
+        "lon": 76.9484629
+      },
+      "nodes": [
+        330043766,
+        330043771,
+        330043780,
+        330043799,
+        9237598900,
+        330044209,
+        5668231547
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Arokiasamy Street",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980801,
+      "center": {
+        "lat": 11.0073619,
+        "lon": 76.9480579
+      },
+      "nodes": [
+        330044079,
+        330043856,
+        330043886
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Venkatnarayan Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980802,
+      "center": {
+        "lat": 11.0039486,
+        "lon": 76.9502554
+      },
+      "nodes": [
+        330043241,
+        330043265,
+        803272025,
+        330043375,
+        10292791245,
+        11482092399,
+        1436626236,
+        11368038736,
+        330043780,
+        330044079
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980803,
+      "center": {
+        "lat": 11.0066183,
+        "lon": 76.947271
+      },
+      "nodes": [
+        330044082,
+        330044110
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Thilagar Street",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980804,
+      "center": {
+        "lat": 11.0071277,
+        "lon": 76.9480225
+      },
+      "nodes": [
+        330044115,
+        330043856,
+        11386926937,
+        330044082,
+        330043799
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980805,
+      "center": {
+        "lat": 11.0068982,
+        "lon": 76.9463988
+      },
+      "nodes": [
+        330044161,
+        330043886,
+        330044110,
+        330044209
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "VOC Street",
+        "name:etymology:wikidata": "Q492527",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980806,
+      "center": {
+        "lat": 11.0081809,
+        "lon": 76.947916
+      },
+      "nodes": [
+        330042763,
+        330044233,
+        330044115,
+        330044312,
+        330044161,
+        5668231543
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "West Sambandam Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980807,
+      "center": {
+        "lat": 11.0088312,
+        "lon": 76.9469854
+      },
+      "nodes": [
+        330044284,
+        330044586,
+        330044312
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980809,
+      "center": {
+        "lat": 11.009071,
+        "lon": 76.948541
+      },
+      "nodes": [
+        330044318,
+        330044367,
+        330044233
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980811,
+      "center": {
+        "lat": 11.0092263,
+        "lon": 76.949575
+      },
+      "nodes": [
+        330044341,
+        330044367
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980812,
+      "center": {
+        "lat": 11.0086803,
+        "lon": 76.953013
+      },
+      "nodes": [
+        330041225,
+        802057919,
+        330044437
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Kannusamy Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 29980813,
+      "center": {
+        "lat": 11.009581,
+        "lon": 76.9528675
+      },
+      "nodes": [
+        330044447,
+        802057906,
+        330042758
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Sambandam Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 66117845,
+      "center": {
+        "lat": 11.0049509,
+        "lon": 76.9480187
+      },
+      "nodes": [
+        802476957,
+        802476960,
+        802476965,
+        802476963,
+        802476956,
+        802476957
+      ],
+      "tags": {
+        "amenity": "school"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133120066,
+      "center": {
+        "lat": 11.0088699,
+        "lon": 76.9473608
+      },
+      "nodes": [
+        1464770644,
+        330044586
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 133120092,
+      "center": {
+        "lat": 11.0089477,
+        "lon": 76.9477328
+      },
+      "nodes": [
+        1464770512,
+        1464770644,
+        330044115
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 293077290,
+      "center": {
+        "lat": 11.0054092,
+        "lon": 76.9511732
+      },
+      "nodes": [
+        802057920,
+        330044341,
+        330042758,
+        330042763,
+        330044437,
+        330042768,
+        330043733,
+        330043766,
+        330043705,
+        330042784,
+        330043536,
+        1436626194,
+        330043365,
+        1445247445,
+        11386905959,
+        330043256,
+        330043227
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lane_markings": "no",
+        "name": "Diwan Bahadur Road",
+        "name:etymology:wikidata": "Q3531066",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 501931152,
+      "center": {
+        "lat": 11.0131631,
+        "lon": 76.9465085
+      },
+      "nodes": [
+        4925730678,
+        4925730679
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594392946,
+      "center": {
+        "lat": 11.0086492,
+        "lon": 76.9458979
+      },
+      "nodes": [
+        5668231541,
+        11465984874,
+        330044586
+      ],
+      "tags": {
+        "highway": "residential",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 594392948,
+      "center": {
+        "lat": 11.0100374,
+        "lon": 76.9497676
+      },
+      "nodes": [
+        5668231539,
+        330042461,
+        330044284,
+        1464770512,
+        330041878,
+        330044318,
+        802057920,
+        802057877,
+        330041139
+      ],
+      "tags": {
+        "highway": "secondary",
+        "lane_markings": "no",
+        "lit": "yes",
+        "name": "Thiruvenkatasamy (TV Samy) Road",
+        "sidewalk": "both",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157491519,
+      "center": {
+        "lat": 11.0128303,
+        "lon": 76.953618
+      },
+      "nodes": [
+        2966170619,
+        2966170618,
+        802057904
+      ],
+      "tags": {
+        "cycleway:both": "no",
+        "highway": "residential",
+        "lane_markings": "no",
+        "lanes": "2",
+        "name": "East Venkataswamy Road",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157491520,
+      "center": {
+        "lat": 11.0144743,
+        "lon": 76.9521678
+      },
+      "nodes": [
+        778243142,
+        802057897,
+        802057890
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Sir Shanmugam Road",
+        "name:etymology:wikidata": "Q3532049",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157491521,
+      "center": {
+        "lat": 11.0133954,
+        "lon": 76.9511105
+      },
+      "nodes": [
+        802057890,
+        330042205
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Venkitasamy Road",
+        "name:ta": "\u0bb5\u0bc6\u0b99\u0bcd\u0b95\u0b9f\u0b9a\u0bbe\u0bae\u0bbf \u0b9a\u0bbe\u0bb2\u0bc8",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157491522,
+      "center": {
+        "lat": 11.0131116,
+        "lon": 76.9523238
+      },
+      "nodes": [
+        802057890,
+        802057904
+      ],
+      "tags": {
+        "highway": "residential",
+        "name": "Sir Shanmugam Road",
+        "name:etymology:wikidata": "Q3532049",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1338149269,
+      "center": {
+        "lat": 11.0117033,
+        "lon": 76.9471089
+      },
+      "nodes": [
+        12377551439,
+        12377551440
+      ],
+      "tags": {
+        "highway": "residential"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1447877769,
+      "center": {
+        "lat": 11.0129545,
+        "lon": 76.949679
+      },
+      "nodes": [
+        13284501294,
+        13284501295,
+        13284501296,
+        13284501297,
+        13284501294
+      ],
+      "tags": {
+        "amenity": "school",
+        "education": "school",
+        "name": "Bharathiya Vidya Bhavan Matric Higher Secondary"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1558067481,
+      "center": {
+        "lat": 11.013235,
+        "lon": 76.9469657
+      },
+      "nodes": [
+        14172866417,
+        14172866418,
+        14172866419,
+        14172866420,
+        14172866417
+      ],
+      "tags": {
+        "amenity": "school",
+        "education": "school",
+        "name": "SRP Ponnuswamy Chettiar Sundrammal Vidhyalaya Matric School"
+      }
+    }
+  ]
+}

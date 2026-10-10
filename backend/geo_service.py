@@ -15,10 +15,13 @@ PROCESSED_DIR = os.path.join(os.path.dirname(__file__), 'data', 'processed')
 os.makedirs(RAW_DIR, exist_ok=True)
 os.makedirs(PROCESSED_DIR, exist_ok=True)
 
+import ssl
+
 OVERPASS_SERVERS = [
     "https://overpass-api.de/api/interpreter",
+    "https://lz4.overpass-api.de/api/interpreter",
+    "https://z.overpass-api.de/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter",
-    "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
     "https://overpass.private.coffee/api/interpreter"
 ]
 
@@ -34,6 +37,10 @@ class GeoDataService:
         """
         data = urllib.parse.urlencode({'data': query}).encode('utf-8')
         last_err = None
+        
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
 
         for endpoint in OVERPASS_SERVERS:
             try:
@@ -42,13 +49,13 @@ class GeoDataService:
                     data=data,
                     headers={'User-Agent': 'GeoBusinessAI_App/1.0 (contact@geobusiness-ai.com)'}
                 )
-                with urllib.request.urlopen(req, timeout=timeout) as response:
+                with urllib.request.urlopen(req, timeout=timeout, context=ctx) as response:
                     raw_data = response.read().decode('utf-8')
                     return json.loads(raw_data)
             except Exception as e:
                 last_err = e
                 print(f"Overpass mirror {endpoint} failed ({e}), trying next mirror...")
-                time.sleep(0.5)
+                time.sleep(0.3)
 
         print(f"All Overpass mirrors failed: {last_err}. Returning empty response fallback.")
         return {"elements": []}
@@ -57,8 +64,8 @@ class GeoDataService:
         """
         Fetch geographic features from Overpass API or cache.
         """
-        # Create a unique query hash based on inputs (v2 to invalidate old missing-relations cache)
-        query_key = f"{lat}_{lon}_{radius}_v2"
+        # Create a unique query hash based on inputs (v3 to include hotels, barber shops, optimized roads)
+        query_key = f"{lat}_{lon}_{radius}_v3"
         query_hash = hashlib.md5(query_key.encode('utf-8')).hexdigest()
         
         raw_file = os.path.join(self.raw_dir, f"{query_hash}.json")
@@ -73,11 +80,15 @@ class GeoDataService:
         print(f"Fetching from Overpass API: lat={lat}, lon={lon}, radius={radius}")
         
         query = f"""
-        [out:json][timeout:20];
+        [out:json][timeout:25];
         (
-          node["amenity"~"restaurant|cafe|fast_food|pharmacy|bank|school|college|university|hospital|clinic|doctors"](around:{radius},{lat},{lon});
-          way["amenity"~"restaurant|cafe|fast_food|pharmacy|bank|school|college|university|hospital|clinic|doctors"](around:{radius},{lat},{lon});
-          relation["amenity"~"restaurant|cafe|fast_food|pharmacy|bank|school|college|university|hospital|clinic|doctors"](around:{radius},{lat},{lon});
+          node["amenity"~"restaurant|cafe|fast_food|pharmacy|bank|school|college|university|hospital|clinic|doctors|barber"](around:{radius},{lat},{lon});
+          way["amenity"~"restaurant|cafe|fast_food|pharmacy|bank|school|college|university|hospital|clinic|doctors|barber"](around:{radius},{lat},{lon});
+          relation["amenity"~"restaurant|cafe|fast_food|pharmacy|bank|school|college|university|hospital|clinic|doctors|barber"](around:{radius},{lat},{lon});
+          
+          node["tourism"~"hotel|motel|guest_house|hostel"](around:{radius},{lat},{lon});
+          way["tourism"~"hotel|motel|guest_house|hostel"](around:{radius},{lat},{lon});
+          relation["tourism"~"hotel|motel|guest_house|hostel"](around:{radius},{lat},{lon});
           
           node["shop"](around:{radius},{lat},{lon});
           way["shop"](around:{radius},{lat},{lon});
@@ -88,7 +99,7 @@ class GeoDataService:
           relation["office"](around:{radius},{lat},{lon});
           
           node["highway"~"bus_stop|platform"](around:{radius},{lat},{lon});
-          way["highway"](around:{radius},{lat},{lon});
+          way["highway"~"primary|secondary|tertiary|trunk|motorway|residential"](around:{radius},{lat},{lon});
           relation["highway"~"bus_stop|platform"](around:{radius},{lat},{lon});
         );
         out center;
@@ -162,15 +173,29 @@ class GeoDataService:
         return result
 
     def _categorize_feature(self, tags):
+        if tags.get('tourism') in ['hotel', 'motel', 'guest_house', 'hostel'] or tags.get('building') == 'hotel':
+            return 'hotel'
+
+        if (
+            tags.get('shop') in ['hairdresser', 'barber', 'salon', 'beauty', 'hairdresser_barber']
+            or tags.get('amenity') == 'barber'
+            or tags.get('hairdresser') == 'barber'
+        ):
+            return 'barber'
+
         if 'amenity' in tags:
             amenity = tags['amenity']
-            if amenity in ['restaurant', 'cafe', 'fast_food']:
+            if amenity == 'cafe':
+                return 'cafe'
+            elif amenity in ['restaurant', 'fast_food']:
                 return 'restaurant'
             elif amenity == 'pharmacy':
                 return 'pharmacy'
             elif amenity == 'bank':
                 return 'bank'
-            elif amenity in ['school', 'college', 'university']:
+            elif amenity in ['college', 'university']:
+                return 'college'
+            elif amenity == 'school':
                 return 'education'
             elif amenity in ['hospital', 'clinic', 'doctors']:
                 return 'healthcare'

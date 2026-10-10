@@ -45,6 +45,8 @@ class SpatialFeatureEngineer:
             'pharmacy_count': 0,
             'restaurant_count': 0,
             'cafe_count': 0,
+            'hotel_count': 0,
+            'barber_count': 0,
             'bank_count': 0,
             'competitor_count': 0,
             'total_businesses': 0
@@ -58,32 +60,52 @@ class SpatialFeatureEngineer:
             amenity = tags.get('amenity', '')
             shop = tags.get('shop', '')
             highway = tags.get('highway', '')
+            tourism = tags.get('tourism', '')
             
             # Identify specific counts
             if amenity == 'school': counts['school_count'] += 1
-            if amenity in ['college', 'university']: counts['college_count'] += 1
+            if amenity in ['college', 'university'] or cat == 'college': counts['college_count'] += 1
             if amenity == 'hospital': counts['hospital_count'] += 1
             if amenity in ['clinic', 'doctors']: counts['clinic_count'] += 1
             if highway in ['bus_stop', 'platform'] or cat == 'bus_stop': counts['bus_stop_count'] += 1
             if shop in ['supermarket', 'convenience', 'grocery']: counts['grocery_count'] += 1
             if amenity == 'pharmacy': counts['pharmacy_count'] += 1
             if amenity in ['restaurant', 'fast_food']: counts['restaurant_count'] += 1
-            if amenity == 'cafe': counts['cafe_count'] += 1
+            if amenity == 'cafe' or cat == 'cafe': counts['cafe_count'] += 1
+            if tourism in ['hotel', 'motel', 'guest_house', 'hostel'] or cat == 'hotel' or tags.get('building') == 'hotel':
+                counts['hotel_count'] += 1
+            if (
+                shop in ['hairdresser', 'barber', 'salon', 'beauty', 'hairdresser_barber']
+                or cat == 'barber'
+                or amenity == 'barber'
+                or tags.get('hairdresser') == 'barber'
+            ):
+                counts['barber_count'] += 1
             if amenity == 'bank': counts['bank_count'] += 1
             
-            # Any shop, office, or amenity counts as a business
-            if 'shop' in tags or 'office' in tags or amenity in ['restaurant', 'cafe', 'fast_food', 'bank', 'pharmacy']:
+            # Any shop, office, hotel, or amenity counts as a business
+            if 'shop' in tags or 'office' in tags or tourism in ['hotel', 'motel', 'guest_house'] or amenity in ['restaurant', 'cafe', 'fast_food', 'bank', 'pharmacy', 'barber']:
                 counts['total_businesses'] += 1
-                
                 
             if highway in ['primary', 'secondary', 'trunk', 'motorway']:
                 major_roads.append(f)
 
-        # Competition is the count for the selected business category.  Use the
-        # specialised counts rather than the display category so grocery shops
-        # and restaurant fast-food variants are included consistently.
-        category_count_key = f'{competitor_category}_count'
-        counts['competitor_count'] = counts.get(category_count_key, 0)
+        # Competition is the count for the selected business category. Use the
+        # specialised counts rather than the display category so variants are included consistently.
+        category_map = {
+            'barber': counts['barber_count'],
+            'salon': counts['barber_count'],
+            'hairdresser': counts['barber_count'],
+            'hotel': counts['hotel_count'],
+            'cafe': counts['cafe_count'],
+            'restaurant': counts['restaurant_count'],
+            'pharmacy': counts['pharmacy_count'],
+            'grocery': counts['grocery_count'],
+            'clinic': counts['clinic_count'],
+            'bank': counts['bank_count'],
+        }
+        clean_key = str(competitor_category).strip().lower()
+        counts['competitor_count'] = category_map.get(clean_key, counts.get(f'{clean_key}_count', 0))
 
         # 4. Advanced Spatial Metrics (Distance & Density)
         business_density = counts['total_businesses'] / area_sq_km if area_sq_km > 0 else 0
@@ -95,7 +117,6 @@ class SpatialFeatureEngineer:
                 distance_to_major_road = min(distances)
                 
         # Estimate road density as count of highway nodes/ways per sq km
-        # (Disabled OSMnx graph download as it causes severe performance issues during grid search)
         highway_count = sum(1 for f in features if 'highway' in f.get('tags', {}))
         road_density = highway_count / area_sq_km if area_sq_km > 0 else 0
 
@@ -118,6 +139,8 @@ class SpatialFeatureEngineer:
                 "pharmacy_count": counts['pharmacy_count'],
                 "restaurant_count": counts['restaurant_count'],
                 "cafe_count": counts['cafe_count'],
+                "hotel_count": counts['hotel_count'],
+                "barber_count": counts['barber_count'],
                 "bank_count": counts['bank_count']
             },
             "spatial_metrics": {

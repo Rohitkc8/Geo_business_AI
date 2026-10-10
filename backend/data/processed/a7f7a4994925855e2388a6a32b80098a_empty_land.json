@@ -1,0 +1,545 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "center_lat": 11.6777737,
+    "center_lon": 78.1242606,
+    "radius_meters": 3000,
+    "total_parcels": 8,
+    "source": "OpenStreetMap via Overpass API"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1124572,
+              11.6724199
+            ],
+            [
+              78.1124192,
+              11.6724006
+            ],
+            [
+              78.1124752,
+              11.6722948
+            ],
+            [
+              78.1125132,
+              11.6723141
+            ],
+            [
+              78.1124572,
+              11.6724199
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "way/1181000864",
+        "name": "Garden / Open Space",
+        "landuse": "",
+        "leisure": "garden",
+        "land_type": "garden",
+        "label": "Garden / Open Space",
+        "approx_area_m2": 143,
+        "centroid_lat": 11.67237,
+        "centroid_lon": 78.112464,
+        "tags": {
+          "barrier": "fence",
+          "leisure": "garden",
+          "mapillary": "1269888200296304"
+        },
+        "surroundings": {
+          "schools": 0,
+          "hospitals": 1,
+          "restaurants": 2,
+          "pharmacies": 0,
+          "bus_stops": 1,
+          "major_roads": 4,
+          "banks": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1271342,
+              11.681777
+            ],
+            [
+              78.1271686,
+              11.6817816
+            ],
+            [
+              78.1272027,
+              11.6817751
+            ],
+            [
+              78.1272328,
+              11.6817581
+            ],
+            [
+              78.1272558,
+              11.6817325
+            ],
+            [
+              78.127269,
+              11.681701
+            ],
+            [
+              78.1272712,
+              11.6816671
+            ],
+            [
+              78.127262,
+              11.6816342
+            ],
+            [
+              78.1272426,
+              11.6816061
+            ],
+            [
+              78.1272149,
+              11.6815855
+            ],
+            [
+              78.1271819,
+              11.6815749
+            ],
+            [
+              78.1271501,
+              11.6815747
+            ],
+            [
+              78.1271198,
+              11.6815837
+            ],
+            [
+              78.1270935,
+              11.6816011
+            ],
+            [
+              78.1270737,
+              11.6816254
+            ],
+            [
+              78.127062,
+              11.6816542
+            ],
+            [
+              78.1270596,
+              11.6816852
+            ],
+            [
+              78.1270666,
+              11.6817155
+            ],
+            [
+              78.1270824,
+              11.6817424
+            ],
+            [
+              78.1271056,
+              11.6817636
+            ],
+            [
+              78.1271342,
+              11.681777
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "way/1368883079",
+        "name": "Grassland",
+        "landuse": "grass",
+        "leisure": "",
+        "land_type": "grass",
+        "label": "Grassland",
+        "approx_area_m2": 531,
+        "centroid_lat": 11.681682,
+        "centroid_lon": 78.127161,
+        "tags": {
+          "landuse": "grass"
+        },
+        "surroundings": {
+          "schools": 0,
+          "hospitals": 1,
+          "restaurants": 0,
+          "pharmacies": 0,
+          "bus_stops": 0,
+          "major_roads": 10,
+          "banks": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1274666,
+              11.6816919
+            ],
+            [
+              78.1279145,
+              11.6814108
+            ],
+            [
+              78.1279212,
+              11.6813951
+            ],
+            [
+              78.1279105,
+              11.6813832
+            ],
+            [
+              78.1274277,
+              11.6816196
+            ],
+            [
+              78.1274666,
+              11.6816919
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "way/1368883080",
+        "name": "Grassland",
+        "landuse": "grass",
+        "leisure": "",
+        "land_type": "grass",
+        "label": "Grassland",
+        "approx_area_m2": 1849,
+        "centroid_lat": 11.681532,
+        "centroid_lon": 78.127685,
+        "tags": {
+          "landuse": "grass"
+        },
+        "surroundings": {
+          "schools": 0,
+          "hospitals": 1,
+          "restaurants": 0,
+          "pharmacies": 0,
+          "bus_stops": 0,
+          "major_roads": 11,
+          "banks": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1140902,
+              11.670721
+            ],
+            [
+              78.1140003,
+              11.670675
+            ],
+            [
+              78.1139319,
+              11.6708208
+            ],
+            [
+              78.1138581,
+              11.6710795
+            ],
+            [
+              78.1138072,
+              11.6712765
+            ],
+            [
+              78.1137978,
+              11.6713908
+            ],
+            [
+              78.1139641,
+              11.671002
+            ],
+            [
+              78.1140902,
+              11.670721
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "way/1370266069",
+        "name": "Grassland",
+        "landuse": "grass",
+        "leisure": "",
+        "land_type": "grass",
+        "label": "Grassland",
+        "approx_area_m2": 2540,
+        "centroid_lat": 11.670961,
+        "centroid_lon": 78.113942,
+        "tags": {
+          "landuse": "grass"
+        },
+        "surroundings": {
+          "schools": 0,
+          "hospitals": 1,
+          "restaurants": 2,
+          "pharmacies": 0,
+          "bus_stops": 1,
+          "major_roads": 3,
+          "banks": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1149863,
+              11.6665465
+            ],
+            [
+              78.1150279,
+              11.6663988
+            ],
+            [
+              78.1150748,
+              11.6662484
+            ],
+            [
+              78.115115,
+              11.6661591
+            ],
+            [
+              78.1152149,
+              11.6659275
+            ],
+            [
+              78.1153248,
+              11.6656771
+            ],
+            [
+              78.1153382,
+              11.665641
+            ],
+            [
+              78.1153999,
+              11.6655084
+            ],
+            [
+              78.1154254,
+              11.6654558
+            ],
+            [
+              78.115508,
+              11.6653185
+            ],
+            [
+              78.1149863,
+              11.6665465
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "way/1371103249",
+        "name": "Grassland",
+        "landuse": "grass",
+        "leisure": "",
+        "land_type": "grass",
+        "label": "Grassland",
+        "approx_area_m2": 7775,
+        "centroid_lat": 11.665948,
+        "centroid_lon": 78.115218,
+        "tags": {
+          "landuse": "grass"
+        },
+        "surroundings": {
+          "schools": 0,
+          "hospitals": 0,
+          "restaurants": 0,
+          "pharmacies": 0,
+          "bus_stops": 1,
+          "major_roads": 2,
+          "banks": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1151557,
+              11.6664741
+            ],
+            [
+              78.1152227,
+              11.6664899
+            ],
+            [
+              78.1152522,
+              11.6663809
+            ],
+            [
+              78.1151865,
+              11.6663704
+            ],
+            [
+              78.1151557,
+              11.6664741
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "way/1371381911",
+        "name": "Garden / Open Space",
+        "landuse": "",
+        "leisure": "garden",
+        "land_type": "garden",
+        "label": "Garden / Open Space",
+        "approx_area_m2": 140,
+        "centroid_lat": 11.666438,
+        "centroid_lon": 78.115195,
+        "tags": {
+          "leisure": "garden"
+        },
+        "surroundings": {
+          "schools": 0,
+          "hospitals": 0,
+          "restaurants": 1,
+          "pharmacies": 0,
+          "bus_stops": 1,
+          "major_roads": 2,
+          "banks": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.1120488,
+              11.6727174
+            ],
+            [
+              78.1121056,
+              11.6727381
+            ],
+            [
+              78.1120046,
+              11.6729878
+            ],
+            [
+              78.1119433,
+              11.6729604
+            ],
+            [
+              78.1120488,
+              11.6727174
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "way/1371603618",
+        "name": "Grassland",
+        "landuse": "grass",
+        "leisure": "",
+        "land_type": "grass",
+        "label": "Grassland",
+        "approx_area_m2": 533,
+        "centroid_lat": 11.672824,
+        "centroid_lon": 78.11203,
+        "tags": {
+          "landuse": "grass"
+        },
+        "surroundings": {
+          "schools": 0,
+          "hospitals": 0,
+          "restaurants": 2,
+          "pharmacies": 0,
+          "bus_stops": 1,
+          "major_roads": 5,
+          "banks": 0
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.10324,
+              11.6938961
+            ],
+            [
+              78.1691559,
+              11.6938961
+            ],
+            [
+              78.1691559,
+              11.7612007
+            ],
+            [
+              78.10324,
+              11.7612007
+            ],
+            [
+              78.10324,
+              11.6938961
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "relation/16803631",
+        "name": "Magnesite mines",
+        "landuse": "quarry",
+        "leisure": "",
+        "land_type": "quarry",
+        "label": "Quarry",
+        "approx_area_m2": 53839089,
+        "centroid_lat": 11.720818,
+        "centroid_lon": 78.129606,
+        "tags": {
+          "fixme": "how exact are borders?",
+          "landuse": "quarry",
+          "name": "Magnesite mines",
+          "type": "multipolygon"
+        },
+        "surroundings": {
+          "schools": 0,
+          "hospitals": 0,
+          "restaurants": 0,
+          "pharmacies": 0,
+          "bus_stops": 0,
+          "major_roads": 0,
+          "banks": 0
+        }
+      }
+    }
+  ]
+}

@@ -9,5 +9,5 @@ vi.mock('react-leaflet', () => ({
   Rectangle: ({ children, eventHandlers }: { children: ReactNode; eventHandlers?: { click?: () => void } }) => <button data-testid="heat-cell" onClick={eventHandlers?.click}>{children}</button>,
   CircleMarker: ({ children }: { children: ReactNode }) => <div>{children}</div>,
   GeoJSON: () => <div data-testid="geojson" />,
-  useMap: () => ({ flyTo: vi.fn() }),
+  useMap: () => ({ flyTo: vi.fn(), invalidateSize: vi.fn() }),
 }))

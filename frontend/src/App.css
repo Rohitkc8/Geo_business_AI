@@ -1251,9 +1251,15 @@ body { background: radial-gradient(circle at 78% -10%, rgba(37,99,235,.16), tran
 .map-action-bar { border-color: rgba(30,64,175,.35); background: rgba(255,255,255,.9); box-shadow: 0 10px 24px rgba(15,23,42,.22); }
 .map-action-bar button { color: #1e3a8a; }
 .map-action-bar button:hover, .map-action-bar button:focus-visible { background: #dbeafe; color: #1d4ed8; }
+.map-action-bar button.active { background: #ef4444; color: #ffffff; border-color: #dc2626; font-weight: 700; }
 .map-legend { border-color: rgba(30,64,175,.28); background: rgba(255,255,255,.93); box-shadow: 0 12px 30px rgba(15,23,42,.22); }
 .map-legend-toggle, .map-legend-item, .map-legend-group-title { color: #1e293b; }
 .map-legend-toggle { border-bottom-color: rgba(148,163,184,.25); }
 .map-legend-group-title { color: #475569; }
 .toast { border: 1px solid rgba(45,212,191,.35); background: rgba(15,118,110,.92); box-shadow: 0 12px 28px rgba(2,6,23,.25); }
+.active-recommendation-card { border-color: #ef4444 !important; background: linear-gradient(145deg, rgba(239,68,68,0.15), rgba(15,23,42,0.85)) !important; box-shadow: 0 0 14px rgba(239,68,68,0.3) !important; transform: translateX(3px); }
+.competitor-count-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 9999px; background: rgba(239,68,68,0.15); border: 1px solid rgba(239,68,68,0.35); color: #f87171; font-weight: 600; }
+.active-recommendation-card .competitor-count-badge { background: #ef4444; color: #ffffff; border-color: #dc2626; }
+.competitor-highlight-pill { font-size: 0.68rem; padding: 2px 6px; border-radius: 4px; background: rgba(239,68,68,0.2); color: #fca5a5; font-weight: 600; display: inline-block; margin-top: 4px; }
 @media (max-width: 720px) { .sidebar { box-shadow: 0 8px 24px rgba(2,6,23,.22); } .analysis-sidebar { padding: .9rem; } }
+

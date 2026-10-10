@@ -37,7 +37,8 @@ import {
   Maximize2,
   LocateFixed,
   GitCompareArrows,
-  FileText
+  FileText,
+  Crosshair
 } from 'lucide-react'
 import './App.css'
 
@@ -112,11 +113,30 @@ type LandParcel = {
 
 function Viewport({ center }: { center: [number, number] }) {
   const map = useMap()
-  useEffect(() => { map.flyTo(center, 13, { animate: true, duration: 1.5 }) }, [center, map])
+  useEffect(() => {
+    map.invalidateSize?.()
+    map.flyTo(center, 13, { animate: true, duration: 1.5 })
+  }, [center, map])
   return null
 }
 
-function MapControls({ center, candidates, emptyLand }: { center: [number, number]; candidates: Candidate[]; emptyLand: any }) {
+function MapControls({
+  center,
+  candidates,
+  emptyLand,
+  geoJson,
+  activeBusiness,
+  competitorsOnly,
+  onToggleCompetitorsOnly
+}: {
+  center: [number, number];
+  candidates: Candidate[];
+  emptyLand: any;
+  geoJson?: any;
+  activeBusiness?: string | null;
+  competitorsOnly?: boolean;
+  onToggleCompetitorsOnly?: () => void;
+}) {
   const map = useMap()
 
   const resetView = () => map.flyTo(center, 13, { animate: true, duration: 0.8 })
@@ -132,10 +152,46 @@ function MapControls({ center, candidates, emptyLand }: { center: [number, numbe
     }
   }
 
+  const fitCompetitors = () => {
+    if (!geoJson?.features || !activeBusiness) return
+    const compFeatures = geoJson.features.filter((f: any) => isFeatureCompetitor(f, activeBusiness))
+    if (compFeatures.length > 0) {
+      const coords = compFeatures.map((f: any) => {
+        const [lon, lat] = f.geometry?.coordinates || []
+        return [lat, lon] as [number, number]
+      }).filter(([lat, lon]: [number, number]) => typeof lat === 'number' && typeof lon === 'number')
+      if (coords.length > 0) {
+        const bounds = L.latLngBounds(coords)
+        if (typeof map.fitBounds === 'function') map.fitBounds(bounds.pad(0.2), { animate: true, duration: 0.8 })
+      }
+    }
+  }
+
+  const compCount = activeBusiness && geoJson?.features
+    ? geoJson.features.filter((f: any) => isFeatureCompetitor(f, activeBusiness)).length
+    : 0
+
   return (
     <div className="map-action-bar" aria-label="Map actions">
       <button type="button" onClick={resetView} title="Return to searched location"><LocateFixed size={15} /><span>Center</span></button>
       <button type="button" onClick={fitResults} title="Fit all candidates or parcels in view"><Maximize2 size={15} /><span>Fit results</span></button>
+      {compCount > 0 && onToggleCompetitorsOnly && (
+        <button
+          type="button"
+          className={competitorsOnly ? 'active' : ''}
+          onClick={onToggleCompetitorsOnly}
+          title={competitorsOnly ? 'Show all amenities on map' : `Show only ${activeBusiness} competitors`}
+        >
+          <Building2 size={15} />
+          <span>{competitorsOnly ? 'Show All' : `Competitors (${compCount})`}</span>
+        </button>
+      )}
+      {compCount > 0 && (
+        <button type="button" onClick={fitCompetitors} title="Zoom to focus on competitor locations">
+          <Crosshair size={15} />
+          <span>Focus Competitors</span>
+        </button>
+      )}
     </div>
   )
 }
@@ -172,19 +228,76 @@ const SHOP_LEGEND = [
   ['office', 'Office / other'], ['bus_stop', 'Transit'],
 ]
 
-const featureTokens = (props: any) => [props?.amenity, props?.shop, props?.category, props?.office, props?.highway]
-  .filter(Boolean).map((value: string) => value.toLowerCase())
+const featureTokens = (props: any) => [
+  props?.amenity,
+  props?.shop,
+  props?.category,
+  props?.office,
+  props?.highway,
+  props?.tourism,
+  props?.healthcare,
+  props?.building,
+  props?.leisure
+]
+  .filter(Boolean)
+  .map((value: string) => String(value).toLowerCase().trim())
 
-const isFeatureCompetitor = (feature: any, business: string) => {
-  const tokens = featureTokens(feature.properties || {})
-  const b = business.toLowerCase()
-  if (b === 'restaurant') return tokens.some(t => ['restaurant', 'fast_food'].includes(t))
-  if (b === 'cafe') return tokens.includes('cafe')
-  if (b === 'grocery') return tokens.some(t => ['supermarket', 'convenience', 'grocery', 'grocery_store'].includes(t))
-  if (b === 'clinic') return tokens.some(t => ['clinic', 'doctors', 'healthcare'].includes(t))
-  if (b === 'school') return tokens.some(t => ['school', 'college', 'university', 'education'].includes(t))
-  if (b === 'hospital') return tokens.some(t => ['hospital', 'clinic', 'doctors', 'healthcare'].includes(t))
-  return tokens.includes(b) || tokens.includes(`shop_${b}`)
+const isFeatureCompetitor = (feature: any, business?: string | null) => {
+  if (!feature || !business) return false
+  const props = feature.properties || {}
+  const tokens = featureTokens(props)
+  const b = business.toLowerCase().trim()
+  const name = String(props.name || '').toLowerCase()
+
+  if (b === 'restaurant') {
+    return tokens.some(t => ['restaurant', 'fast_food', 'food_court', 'caterer', 'bistro', 'diner'].includes(t)) ||
+           tokens.includes('shop_restaurant') || name.includes('restaurant') || name.includes('dhaba') || name.includes('hotel')
+  }
+  if (b === 'cafe') {
+    return tokens.some(t => ['cafe', 'coffee_shop', 'tea_shop', 'coffee', 'tea'].includes(t)) ||
+           tokens.includes('shop_cafe') || tokens.includes('shop_coffee') || name.includes('cafe') || name.includes('coffee') || name.includes('tea')
+  }
+  if (b === 'grocery' || b === 'grocery_store' || b === 'supermarket') {
+    return tokens.some(t => ['supermarket', 'convenience', 'grocery', 'grocery_store', 'greengrocer', 'general', 'food'].includes(t)) ||
+           tokens.includes('shop_supermarket') || tokens.includes('shop_convenience') || tokens.includes('shop_grocery') || name.includes('supermarket') || name.includes('mart')
+  }
+  if (b === 'clinic' || b === 'doctors') {
+    return tokens.some(t => ['clinic', 'doctors', 'doctor', 'healthcare', 'dentist', 'physiotherapist'].includes(t)) ||
+           tokens.includes('shop_chemist') || tokens.includes('medical') || name.includes('clinic') || name.includes('healthcare')
+  }
+  if (b === 'hospital') {
+    return tokens.some(t => ['hospital', 'clinic', 'healthcare'].includes(t)) || name.includes('hospital')
+  }
+  if (b === 'pharmacy' || b === 'chemist') {
+    return tokens.some(t => ['pharmacy', 'chemist', 'drugstore', 'herbalist'].includes(t)) ||
+           tokens.includes('shop_chemist') || tokens.includes('shop_pharmacy') || tokens.includes('healthcare_pharmacy') ||
+           name.includes('pharmacy') || name.includes('medical') || name.includes('chemist') || name.includes('druggist')
+  }
+  if (b === 'bank' || b === 'atm') {
+    return tokens.some(t => ['bank', 'atm', 'credit_union', 'financial'].includes(t)) || tokens.includes('bank') || name.includes('bank')
+  }
+  if (b === 'school' || b === 'education') {
+    return tokens.some(t => ['school', 'college', 'university', 'kindergarten', 'education'].includes(t)) || name.includes('school') || name.includes('college')
+  }
+  if (b === 'hotel') {
+    return tokens.some(t => ['hotel', 'motel', 'guest_house', 'hostel', 'lodging'].includes(t)) || name.includes('hotel') || name.includes('resort') || name.includes('inn')
+  }
+  if (b === 'barber' || b === 'salon') {
+    return tokens.some(t => ['hairdresser', 'barber', 'salon', 'beauty', 'hairdresser_barber'].includes(t)) ||
+           tokens.includes('shop_hairdresser') || tokens.includes('shop_beauty') || name.includes('salon') || name.includes('barber') || name.includes('beauty')
+  }
+  if (b === 'bakery') {
+    return tokens.some(t => ['bakery', 'pastry', 'confectionery'].includes(t)) || tokens.includes('shop_bakery') || name.includes('bakery') || name.includes('bake')
+  }
+  if (b === 'clothes' || b === 'clothing') {
+    return tokens.some(t => ['clothes', 'clothing', 'fashion', 'boutique', 'tailor'].includes(t)) || tokens.includes('shop_clothes')
+  }
+  if (b === 'electronics') {
+    return tokens.some(t => ['electronics', 'computer', 'mobile_phone', 'phone'].includes(t)) || tokens.includes('shop_electronics')
+  }
+
+  const cleanB = b.replace(/[\s_-]+/g, '_')
+  return tokens.some(t => t === cleanB || t === `shop_${cleanB}` || t.includes(cleanB) || cleanB.includes(t))
 }
 
 function distanceMeters(lat1: number, lon1: number, lat2: number, lon2: number): number {
@@ -197,7 +310,7 @@ function distanceMeters(lat1: number, lon1: number, lat2: number, lon2: number):
   return 2 * radius * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
 }
 
-const getCategoryColor = (props: any, targetBusiness?: string) => {
+const getCategoryColor = (props: any, targetBusiness?: string | null) => {
   if (!props) return '#94a3b8'
   if (targetBusiness && isFeatureCompetitor({ properties: props }, targetBusiness)) return '#ef4444'
   const tokens = featureTokens(props)
@@ -206,6 +319,7 @@ const getCategoryColor = (props: any, targetBusiness?: string) => {
   const shopCategory = tokens.find(token => token.startsWith('shop_'))?.replace('shop_', '')
   return (shopCategory && CATEGORY_COLORS[shopCategory]) || CATEGORY_COLORS.office
 }
+
 
 // Colour palette for empty-land parcel types
 const LAND_COLORS: Record<string, string> = {
@@ -361,7 +475,7 @@ const BUSINESS_BUDGET_LEGEND = [
   { color: '#dc2626', label: 'Highest budget' },
 ]
 
-function MapLegend({ mode, landTypes = [] }: { mode: Mode; landTypes?: string[] }) {
+function MapLegend({ mode, landTypes = [], activeBusiness = null }: { mode: Mode; landTypes?: string[]; activeBusiness?: string | null }) {
   const [open, setOpen] = useState(true)
   const items = mode === 'land' ? LAND_DOT_LEGEND : [...BUSINESS_SCORE_LEGEND, ...BUSINESS_BUDGET_LEGEND]
   const landTypeItems = landTypes.map(type => ({ color: getLandColor(type), label: type.replace(/_/g, ' ') }))
@@ -380,6 +494,16 @@ function MapLegend({ mode, landTypes = [] }: { mode: Mode; landTypes?: string[] 
       </button>
       {open && (
         <ul className="map-legend-list">
+          {activeBusiness && (
+            <>
+              <li className="map-legend-group-title">Competitor Indication</li>
+              <li className="map-legend-item">
+                <span className="map-legend-dot" style={{ background: '#ef4444', border: '2px solid #ffffff', boxShadow: '0 0 0 2px rgba(239, 68, 68, 0.4)' }} />
+                <strong style={{ color: '#ef4444' }}>Direct Competitor ({activeBusiness})</strong>
+              </li>
+              <li className="map-legend-divider" />
+            </>
+          )}
           {mode === 'land' && (
             <li className="map-legend-group-title">Nearby amenities</li>
           )}
@@ -409,7 +533,7 @@ function MapLegend({ mode, landTypes = [] }: { mode: Mode; landTypes?: string[] 
               <li className="map-legend-divider" />
               <li className="map-legend-group-title">Target</li>
               <li className="map-legend-item">
-                <span className="map-legend-dot" style={{ background: '#ef4444', boxShadow: '0 0 0 2px #fff2' }} />
+                <span className="map-legend-dot" style={{ background: '#3b82f6', border: '2px solid #ffffff', boxShadow: '0 0 0 2px rgba(59, 130, 246, 0.4)' }} />
                 <span>Searched location</span>
               </li>
             </>
@@ -526,10 +650,13 @@ export default function App() {
     document.body.className = theme === 'light' ? 'light-theme' : '';
   }, [theme]);
 
+  const DEFAULT_BUSINESS_TYPES = ['pharmacy', 'grocery', 'cafe', 'restaurant', 'bank', 'clinic']
   const [mode, setMode] = useState<Mode>('land')
   const [query, setQuery] = useState('')
   const [business, setBusiness] = useState('pharmacy')
-  const [types, setTypes] = useState<string[]>([])
+  const [selectedLandCategory, setSelectedLandCategory] = useState<string | null>(null)
+  const [competitorsOnly, setCompetitorsOnly] = useState(false)
+  const [types, setTypes] = useState<string[]>(DEFAULT_BUSINESS_TYPES)
   const [center, setCenter] = useState<[number, number]>([11.0168, 76.9558])
   const [candidates, setCandidates] = useState<Candidate[]>([])
   const [selected, setSelected] = useState<number | null>(null)
@@ -564,6 +691,8 @@ export default function App() {
     setError('')
     setCandidates([])
     setRecommendations([])
+    setSelectedLandCategory(null)
+    setCompetitorsOnly(false)
     setGeoJson(null)
     setBudgetEstimate(null)
     setSelected(null)
@@ -622,8 +751,12 @@ export default function App() {
   useEffect(() => {
     fetch(`${API}/business-types`)
       .then(r => r.json())
-      .then(d => setTypes(d.business_types || []))
-      .catch(() => setError('Could not load business categories. Is the API running?'))
+      .then(d => {
+        if (Array.isArray(d.business_types) && d.business_types.length > 0) {
+          setTypes(d.business_types)
+        }
+      })
+      .catch(() => {})
   }, [])
 
   const search = async (event: FormEvent) => {
@@ -635,6 +768,8 @@ export default function App() {
     setSelected(null)
     setCompareSelection([])
     setRecommendations([])
+    setSelectedLandCategory(null)
+    setCompetitorsOnly(false)
     setBudgetEstimate(null)
     setGeoJson(null)
     setEmptyLand(null)
@@ -665,6 +800,9 @@ export default function App() {
         const analysis = await analysisResponse.json()
         if (!analysisResponse.ok) throw new Error(analysis.detail || 'Model 1 could not analyse this location.')
         setRecommendations(analysis.recommendations || [])
+        if (analysis.recommendations?.length > 0) {
+          setSelectedLandCategory(analysis.recommendations[0].business)
+        }
         setBudgetEstimate(analysis.budget_estimate || null)
         if (mapResponse.ok) setGeoJson(await mapResponse.json())
 
@@ -914,20 +1052,47 @@ export default function App() {
               {/* Recommendations */}
               {mode === 'land' && recommendations.length > 0 && (
                 <div className="results-wrapper">
-                  <h3 className="section-title">AI Recommendations</h3>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+                    <h3 className="section-title" style={{ margin: 0 }}>AI Recommendations</h3>
+                    {selectedLandCategory && (
+                      <button
+                        type="button"
+                        style={{ fontSize: '11px', background: 'transparent', border: 'none', color: '#94a3b8', cursor: 'pointer', textDecoration: 'underline' }}
+                        onClick={() => setSelectedLandCategory(null)}
+                      >
+                        Clear highlight
+                      </button>
+                    )}
+                  </div>
                   {recommendations.map((r, i) => {
                     const count = geoJson?.features?.filter((f: any) => isFeatureCompetitor(f, r.business)).length || 0;
+                    const isSelected = selectedLandCategory?.toLowerCase() === r.business.toLowerCase();
                     return (
-                      <div key={r.business + i} className="data-card">
+                      <div
+                        key={r.business + i}
+                        className={`data-card ${isSelected ? 'active-recommendation-card' : ''}`}
+                        onClick={() => {
+                          const next = isSelected ? null : r.business;
+                          setSelectedLandCategory(next);
+                          if (next) notify(`Highlighting ${next} competitors on map`);
+                        }}
+                        style={{ cursor: 'pointer' }}
+                        title="Click to highlight competitors for this category on the map"
+                      >
                         <div className="card-header">
                           <div className="biz-title">
                             <h4>{r.business}</h4>
-                            <span className="competitor-count-badge" style={{ fontSize: '11px', color: '#ef4444', marginLeft: '8px' }}>
-                              {count} {count === 1 ? 'competitor' : 'competitors'} nearby
+                            <span className="competitor-count-badge" style={{ fontSize: '11px', marginLeft: '8px' }}>
+                              {count} {count === 1 ? 'competitor' : 'competitors'}
                             </span>
                           </div>
                           <span className="score-badge">{r.score_percent}%</span>
                         </div>
+                        {isSelected && (
+                          <div className="competitor-highlight-pill">
+                            🎯 Active: {count} competitors highlighted in red on map
+                          </div>
+                        )}
                         <div className="factors">
                           {r.positive_factors.slice(0, 2).map((x, i) => (
                             <div key={i} className="factor pos"><ChevronRight size={14} /> {x}</div>
@@ -1217,49 +1382,38 @@ export default function App() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
               <Viewport center={center} />
-              <MapControls center={center} candidates={candidates} emptyLand={emptyLand} />
+              <MapControls
+                center={center}
+                candidates={candidates}
+                emptyLand={emptyLand}
+                geoJson={geoJson}
+                activeBusiness={mode === 'business' ? business : selectedLandCategory}
+                competitorsOnly={competitorsOnly}
+                onToggleCompetitorsOnly={() => setCompetitorsOnly(v => !v)}
+              />
 
-              {mode === 'land' && (
-                <CircleMarker center={center} radius={8} pathOptions={{ color: '#ef4444', fillColor: '#ef4444', fillOpacity: 0.8, weight: 2 }}>
-                  <Popup>Target Location</Popup>
-                </CircleMarker>
-              )}
-
-              {(mode === 'land' || mode === 'business') && geoJson && (
-                <GeoJSON
-                  key={`${JSON.stringify(geoJson)}-${showLabels}`}
-                  data={mode === 'business' ? {
-                    ...geoJson,
-                    features: (geoJson.features || []).filter((f: any) => isFeatureCompetitor(f, business))
-                  } : geoJson}
-                  pointToLayer={(feature, latlng) => {
-                    const color = getCategoryColor(feature.properties, mode === 'business' ? business : undefined);
-                    const isCompetitor = mode === 'business' && isFeatureCompetitor(feature, business);
-                    return L.circleMarker(latlng, {
-                      radius: isCompetitor ? 7 : 5,
-                      color: '#ffffff',
-                      weight: 1.5,
-                      fillColor: color,
-                      fillOpacity: 0.9
-                    });
+              {/* 1. Candidate Cells (bottom layer) */}
+              {mode === 'business' && candidates.map((c, i) => (
+                <Rectangle
+                  key={`${c.lat}-${c.lon}`}
+                  bounds={[[c.lat - CELL / 2, c.lon - CELL / 2], [c.lat + CELL / 2, c.lon + CELL / 2]]}
+                  pathOptions={{
+                    color: selected === i ? '#2563eb' : budgetHeat(c.budget_estimate?.price_per_cent_inr || 0, minBudget, maxBudget),
+                    weight: selected === i ? 3 : 2,
+                    fillColor: heat(c.model_score, min, max),
+                    fillOpacity: selected === i ? 0.7 : 0.4
                   }}
-                  onEachFeature={(feature, layer) => {
-                    if (feature.properties) {
-                      const name = feature.properties.name || 'Unknown Location';
-                      const p = feature.properties;
-                      const displayCat = p.amenity || p.shop || p.category || 'Amenity';
-                      const isCompetitor = mode === 'business' && isFeatureCompetitor(feature, business);
-                      const tag = isCompetitor ? '<br/><span style="color:#ef4444;font-weight:bold">Competitor</span>' : '';
-                      layer.bindPopup(`<strong>${name}</strong><br/><span style="text-transform:capitalize;color:#666;font-size:0.8rem">${displayCat}</span>${tag}`);
-                      if (showLabels && name !== 'Unknown Location') {
-                        layer.bindTooltip(name, { permanent: true, direction: 'right', className: 'poi-label-tooltip', offset: [10, 0] });
-                      }
-                    }
-                  }}
-                />
-              )}
+                  eventHandlers={{ click: () => setSelected(i) }}
+                >
+                  <Popup>
+                    <strong>Rank #{i + 1}</strong><br/>
+                    Score: {c.model_score.toFixed(2)}<br/>
+                    {c.budget_estimate ? `Land price / sq ft: ${c.budget_estimate.formatted_price}` : 'Land price / sq ft: unavailable'}
+                  </Popup>
+                </Rectangle>
+              ))}
 
-              {/* Empty Land Layer — rendered BELOW amenity dots so dots stay visible */}
+              {/* 2. Empty Land Layer */}
               {mode === 'land' && showEmptyLand && emptyLand && (
                 <GeoJSON
                   key={`empty-land-${JSON.stringify(center)}-${showEmptyLand}`}
@@ -1302,31 +1456,70 @@ export default function App() {
                 />
               )}
 
-              {mode === 'business' && candidates.map((c, i) => (
-                <Rectangle
-                  key={`${c.lat}-${c.lon}`}
-                  bounds={[[c.lat - CELL / 2, c.lon - CELL / 2], [c.lat + CELL / 2, c.lon + CELL / 2]]}
-                  pathOptions={{
-                    color: selected === i ? '#2563eb' : budgetHeat(c.budget_estimate?.price_per_cent_inr || 0, minBudget, maxBudget),
-                    weight: selected === i ? 3 : 2,
-                    fillColor: heat(c.model_score, min, max),
-                    fillOpacity: selected === i ? 0.7 : 0.4
+              {/* 3. Searched center target marker */}
+              {mode === 'land' && (
+                <CircleMarker center={center} radius={9} pathOptions={{ color: '#ffffff', fillColor: '#3b82f6', fillOpacity: 0.9, weight: 2.5 }}>
+                  <Popup><strong>Target Location</strong><br/>{query || `${center[0].toFixed(4)}, ${center[1].toFixed(4)}`}</Popup>
+                </CircleMarker>
+              )}
+
+              {/* 4. POIs & Competitor Layer (rendered on top with distinct highlight) */}
+              {(mode === 'land' || mode === 'business') && geoJson && (
+                <GeoJSON
+                  key={`poi-geojson-${mode}-${mode === 'business' ? business : selectedLandCategory}-${competitorsOnly}-${showLabels}-${geoJson.features?.length}`}
+                  data={competitorsOnly && (mode === 'business' ? business : selectedLandCategory) ? {
+                    ...geoJson,
+                    features: (geoJson.features || []).filter((f: any) => isFeatureCompetitor(f, mode === 'business' ? business : selectedLandCategory))
+                  } : geoJson}
+                  pointToLayer={(feature, latlng) => {
+                    const activeBiz = mode === 'business' ? business : selectedLandCategory;
+                    const isCompetitor = Boolean(activeBiz && isFeatureCompetitor(feature, activeBiz));
+                    const color = getCategoryColor(feature.properties, activeBiz);
+                    return L.circleMarker(latlng, {
+                      radius: isCompetitor ? 8 : (mode === 'business' ? 4 : 5),
+                      color: isCompetitor ? '#ffffff' : '#ffffff',
+                      weight: isCompetitor ? 2.5 : 1,
+                      fillColor: color,
+                      fillOpacity: isCompetitor ? 1 : (mode === 'business' ? 0.5 : 0.85),
+                      pane: isCompetitor ? 'markerPane' : 'overlayPane'
+                    });
                   }}
-                  eventHandlers={{ click: () => setSelected(i) }}
-                >
-                  <Popup>
-                    <strong>Rank #{i + 1}</strong><br/>
-                    Score: {c.model_score.toFixed(2)}<br/>
-                    {c.budget_estimate ? `Land price / sq ft: ${c.budget_estimate.formatted_price}` : 'Land price / sq ft: unavailable'}
-                  </Popup>
-                </Rectangle>
-              ))}
+                  onEachFeature={(feature, layer) => {
+                    if (feature.properties) {
+                      const name = feature.properties.name || 'Unnamed Place';
+                      const p = feature.properties;
+                      const displayCat = p.amenity || p.shop || p.category || p.office || p.tourism || 'Amenity';
+                      const activeBiz = mode === 'business' ? business : selectedLandCategory;
+                      const isCompetitor = Boolean(activeBiz && isFeatureCompetitor(feature, activeBiz));
+                      const competitorBadge = isCompetitor
+                        ? `<div style="margin-top:6px;padding:3px 8px;border-radius:6px;background:#ef4444;color:#ffffff;font-size:0.75rem;font-weight:700;display:inline-block">🚨 Direct Competitor (${activeBiz})</div>`
+                        : '';
+                      layer.bindPopup(`
+                        <div style="font-family:sans-serif;min-width:140px;padding:2px">
+                          <strong style="font-size:0.95rem;color:#1e293b">${name}</strong><br/>
+                          <span style="text-transform:capitalize;color:#64748b;font-size:0.8rem">${displayCat.replace(/_/g, ' ')}</span>
+                          ${competitorBadge}
+                        </div>
+                      `);
+                      if (showLabels && name !== 'Unnamed Place') {
+                        layer.bindTooltip(`${isCompetitor ? '🚨 ' : ''}${name}`, {
+                          permanent: true,
+                          direction: 'right',
+                          className: isCompetitor ? 'poi-label-tooltip poi-label-competitor' : 'poi-label-tooltip',
+                          offset: [10, 0]
+                        });
+                      }
+                    }
+                  }}
+                />
+              )}
             </MapContainer>
 
             {/* ── Floating Map Legend ── */}
             {(geoJson || (mode === 'business' && candidates.length > 0) || (mode === 'land' && showEmptyLand && emptyLand)) && (
               <MapLegend
                 mode={mode}
+                activeBusiness={mode === 'business' ? business : selectedLandCategory}
                 landTypes={mode === 'land' && emptyLand
                   ? Array.from(new Set((emptyLand.features as any[]).map((f: any) => f.properties?.land_type).filter(Boolean))) as string[]
                   : []}
