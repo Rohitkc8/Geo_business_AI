@@ -14,6 +14,7 @@ from datetime import datetime, timezone
 
 from feature_engineer import SpatialFeatureEngineer
 from explainability import explain_land_to_business, explain_business_to_land
+from opportunity_scoring import land_recommendations, score_business
 from generate_dataset import generate_grid
 
 # Configure logging before loading optional models so failures are reported safely.
@@ -340,8 +341,11 @@ def analyze_location(request: AnalyzeLocationRequest):
     """
     logger.info(f"Analyzing location: {request.lat}, {request.lon}")
     try:
-        df_input, _ = _get_input_features(request.lat, request.lon, request.radius)
-        results = explain_land_to_business(df_input)
+        df_input, feature_vector = _get_input_features(request.lat, request.lon, request.radius)
+        # The previous RF model was trained on four rows and predicted whether
+        # a business already existed, so it was not a reliable opportunity
+        # model and frequently ranked Restaurant first for every location.
+        results = land_recommendations(df_input, feature_vector)
         
         budget_estimate = _estimate_budget(df_input)
 
@@ -352,7 +356,11 @@ def analyze_location(request: AnalyzeLocationRequest):
             "lon": request.lon,
             "radius": request.radius,
             "recommendations": results,
-            "budget_estimate": budget_estimate
+            "budget_estimate": budget_estimate,
+            "prediction_metadata": {
+                "model": "transparent_category_aware_opportunity_score",
+                "training_warning": "Prototype score based on local map and population signals; validate with footfall, rent, and sales data before investing.",
+            }
         }
     except HTTPException:
         raise
@@ -387,7 +395,12 @@ def find_best_locations(request: FindBestLocationsRequest):
         def process_point(pt):
             lat, lon = pt
             df_input, fv = _get_input_features(lat, lon, 500, request.business_type)
-            explanation = explain_business_to_land(df_input)
+            score, positive_factors, negative_factors = score_business(request.business_type, df_input, fv)
+            explanation = {
+                "predicted_demand_score": score,
+                "positive_factors": positive_factors,
+                "negative_factors": negative_factors,
+            }
             
             return {
                 "lat": lat,
@@ -425,7 +438,11 @@ def find_best_locations(request: FindBestLocationsRequest):
         
         return {
             "business_type": request.business_type,
-            "model": "business_location_model (Model 2)",
+            "model": "transparent_category_aware_opportunity_score",
+            "prediction_metadata": {
+                "model": "transparent_category_aware_opportunity_score",
+                "training_warning": "Prototype score based on local map and population signals; validate with footfall, rent, and sales data before investing.",
+            },
             "cell_size_degrees": request.step_size,
             "candidates": candidates
         }
