@@ -1006,7 +1006,9 @@ export default function App() {
                     value={business}
                     onChange={e => setBusiness(e.target.value)}
                   >
-                    {types.length ? types.map(t => <option key={t} value={t}>{t}</option>) : <option>Loading...</option>}
+                    {Array.from(new Set([...DEFAULT_BUSINESS_TYPES, ...types])).map(t => (
+                      <option key={t} value={t}>{t}</option>
+                    ))}
                   </select>
                 </div>
               )}
