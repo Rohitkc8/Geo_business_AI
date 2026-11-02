@@ -671,6 +671,7 @@ export default function App() {
   const [loadingLandBudget, setLoadingLandBudget] = useState(false)
   const [budgetEstimate, setBudgetEstimate] = useState<any>(null)
   const [predictionMetadata, setPredictionMetadata] = useState<any>(null)
+  const [competitorCounts, setCompetitorCounts] = useState<Record<string, number>>({})
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [toast, setToast] = useState('')
@@ -697,6 +698,7 @@ export default function App() {
     setGeoJson(null)
     setBudgetEstimate(null)
     setPredictionMetadata(null)
+    setCompetitorCounts({})
     setSelected(null)
     setCompareSelection([])
   }
@@ -775,6 +777,7 @@ export default function App() {
     setCompetitorsOnly(false)
     setBudgetEstimate(null)
     setPredictionMetadata(null)
+    setCompetitorCounts({})
     setGeoJson(null)
     setEmptyLand(null)
     setShowEmptyLand(false)
@@ -805,6 +808,7 @@ export default function App() {
         if (!analysisResponse.ok) throw new Error(analysis.detail || 'Model 1 could not analyse this location.')
         setRecommendations(analysis.recommendations || [])
         setPredictionMetadata(analysis.prediction_metadata || null)
+        setCompetitorCounts(analysis.competitor_counts || {})
         if (analysis.recommendations?.length > 0) {
           setSelectedLandCategory(analysis.recommendations[0].business)
         }
@@ -1087,7 +1091,9 @@ export default function App() {
                     )}
                   </div>
                   {recommendations.map((r, i) => {
-                    const count = geoJson?.features?.filter((f: any) => isFeatureCompetitor(f, r.business)).length || 0;
+                    const key = r.business.toLowerCase() === 'grocery' ? 'grocery_count' : `${r.business.toLowerCase()}_count`;
+                    const mappedCount = geoJson?.features?.filter((f: any) => isFeatureCompetitor(f, r.business)).length || 0;
+                    const count = mappedCount || Number(competitorCounts[key] || 0);
                     const isSelected = selectedLandCategory?.toLowerCase() === r.business.toLowerCase();
                     return (
                       <div

@@ -387,6 +387,7 @@ def analyze_location(request: AnalyzeLocationRequest):
             "radius": request.radius,
             "recommendations": results,
             "budget_estimate": budget_estimate,
+            "competitor_counts": feature_vector.get('amenity_counts', {}),
             "prediction_metadata": {
                 "model": "transparent_category_aware_opportunity_score",
                 "training_warning": "Prototype score based on local map and population signals; validate with footfall, rent, and sales data before investing.",
