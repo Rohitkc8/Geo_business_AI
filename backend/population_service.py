@@ -46,7 +46,12 @@ class PopulationService:
         if os.path.exists(cache_file):
             print(f"Loading population from cache: {cache_file}")
             with open(cache_file, 'r', encoding='utf-8') as f:
-                return json.load(f)
+                cached = json.load(f)
+            # A transient DNS/API failure must not become permanent. Older
+            # versions cached coverage_status=error and then never retried.
+            if cached.get('coverage_status') != 'error':
+                return cached
+            print("Ignoring cached WorldPop error; retrying the provider")
 
         print(f"Fetching population data from WorldPop...")
         geojson = {
@@ -102,8 +107,9 @@ class PopulationService:
             print(f"Error fetching population data: {e}")
             result['coverage_status'] = "error"
             
-        # Cache the result to avoid spamming the API
-        with open(cache_file, 'w', encoding='utf-8') as f:
-            json.dump(result, f, indent=2)
+        # Cache successful/limited responses, but never cache transient errors.
+        if result.get('coverage_status') != 'error':
+            with open(cache_file, 'w', encoding='utf-8') as f:
+                json.dump(result, f, indent=2)
             
         return result
