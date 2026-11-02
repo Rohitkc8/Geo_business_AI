@@ -670,6 +670,7 @@ export default function App() {
   const [selectedLandBudget, setSelectedLandBudget] = useState<BudgetEstimate | null>(null)
   const [loadingLandBudget, setLoadingLandBudget] = useState(false)
   const [budgetEstimate, setBudgetEstimate] = useState<any>(null)
+  const [predictionMetadata, setPredictionMetadata] = useState<any>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [toast, setToast] = useState('')
@@ -695,6 +696,7 @@ export default function App() {
     setCompetitorsOnly(false)
     setGeoJson(null)
     setBudgetEstimate(null)
+    setPredictionMetadata(null)
     setSelected(null)
     setCompareSelection([])
   }
@@ -772,6 +774,7 @@ export default function App() {
     setSelectedLandCategory(null)
     setCompetitorsOnly(false)
     setBudgetEstimate(null)
+    setPredictionMetadata(null)
     setGeoJson(null)
     setEmptyLand(null)
     setShowEmptyLand(false)
@@ -801,6 +804,7 @@ export default function App() {
         const analysis = await analysisResponse.json()
         if (!analysisResponse.ok) throw new Error(analysis.detail || 'Model 1 could not analyse this location.')
         setRecommendations(analysis.recommendations || [])
+        setPredictionMetadata(analysis.prediction_metadata || null)
         if (analysis.recommendations?.length > 0) {
           setSelectedLandCategory(analysis.recommendations[0].business)
         }
@@ -833,6 +837,7 @@ export default function App() {
         const data = await response.json()
         if (!response.ok) throw new Error(data.detail || 'Model 2 could not evaluate this area.')
         setCandidates(data.candidates || [])
+        setPredictionMetadata(data.prediction_metadata || null)
 
         // Fetch map data in background so it doesn't block the candidates showing up
         fetch(`${API}/map-data?lat=${position[0]}&lon=${position[1]}&radius=2500`)
@@ -1031,6 +1036,17 @@ export default function App() {
             </form>
 
             {error && <div className="error-box"><Activity size={16}/> {error}</div>}
+
+            {predictionMetadata && (
+              <div className="data-source-note">
+                <strong>Data used for this estimate</strong>
+                <span>{predictionMetadata.data_sources?.sources?.join(' · ') || 'Local map signals'}</span>
+                <small>
+                  Population: {predictionMetadata.data_sources?.population_coverage || 'unknown'}
+                  {predictionMetadata.data_sources?.google_places_enabled ? ' · Google Places enabled' : ' · Google Places not enabled'}
+                </small>
+              </div>
+            )}
 
             <div className="results-container scrollable">
               {/* Budget Estimate */}

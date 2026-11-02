@@ -6,6 +6,9 @@ import urllib.parse
 import json
 import re
 import os
+from dotenv import load_dotenv
+
+load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 
 app = FastAPI(title="GeoBusiness AI API")
 

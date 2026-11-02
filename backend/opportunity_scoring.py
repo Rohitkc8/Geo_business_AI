@@ -42,13 +42,22 @@ def _features(df_input: Any, feature_vector: Dict[str, Any] | None) -> Dict[str,
     density = float(row.get("population_density", population) or population)
     road_density = float(row.get("road_density", spatial.get("road_density_km_per_sqkm", 0)) or 0)
     road_distance = float(row.get("distance_to_major_road", spatial.get("distance_to_major_road_meters", -1)) or -1)
-    return {
+    result = {
         "population": population,
         "population_density": density,
         "road_density": road_density,
         "road_access": 1.0 if road_distance < 0 else 1.0 - _clamp(road_distance / 1000.0),
         **{key: float(value or 0) for key, value in counts.items()},
     }
+    google = (feature_vector or {}).get("external_signals", {}).get("google_places") or {}
+    for category, signal in (google.get("categories") or {}).items():
+        # Use the larger observed count to avoid undercounting when OSM and
+        # Google classify the same local market differently. Google records
+        # remain aggregate signals and are never sent to the map UI.
+        result[f"{category}_count"] = max(result.get(f"{category}_count", 0), float(signal.get("count", 0) or 0))
+        if signal.get("average_rating") is not None:
+            result[f"{category}_rating"] = float(signal["average_rating"])
+    return result
 
 
 def score_business(business_type: str, df_input: Any, feature_vector: Dict[str, Any] | None = None) -> Tuple[float, list[str], list[str]]:
@@ -63,15 +72,17 @@ def score_business(business_type: str, df_input: Any, feature_vector: Dict[str, 
 
     demand = _range_score(f["population_density"], 500, 15000)
     access = (0.65 * f["road_access"] + 0.35 * _range_score(f["road_density"], 0, 180))
-    support = sum(weight * _range_score(f.get(name, 0), 0, 10) for name, weight in cfg["support"])
-    demand_component = cfg["demand"][1] * demand
-    support_component = support
-    access_component = cfg["access"] * access
+    support_weight = sum(weight for _, weight in cfg["support"]) or 1.0
+    support = sum(weight * _range_score(f.get(name, 0), 0, 10) for name, weight in cfg["support"]) / support_weight
     competitor_count = f.get(f"{business}_count", f.get("competitor_count", 0))
     ideal = float(cfg["ideal_competition"])
     # A small existing market validates demand; saturation is penalized.
     competition_score = _clamp(1.0 - max(0.0, competitor_count - ideal) / max(ideal * 2, 1))
-    raw = 100 * (0.20 + demand_component + support_component + access_component + cfg["competition"] * competition_score)
+    rating = f.get(f"{business}_rating")
+    quality = _clamp(rating / 5.0) if rating is not None else 0.5
+    # Fixed weights make scores comparable across categories and prevent the
+    # previous implementation from saturating almost everything at 100.
+    raw = 100 * (0.20 * demand + 0.20 * access + 0.20 * support + 0.25 * competition_score + 0.15 * quality)
     score = round(_clamp(raw, 0, 100), 1)
 
     positive = []

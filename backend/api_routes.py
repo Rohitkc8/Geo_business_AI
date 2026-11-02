@@ -86,6 +86,20 @@ def _get_input_features(lat, lon, radius, competitor_category='restaurant'):
             'amenity_counts': {'school_count': 1, 'college_count': 1, 'hospital_count': 1, 'bus_stop_count': 2}
         }
         
+    # Optional Google Places enrichment. A missing key or provider failure must
+    # never break the OSM/WorldPop workflow.
+    google_error = None
+    google_signals = None
+    if os.getenv('GOOGLE_MAPS_API_KEY', '').strip():
+        try:
+            from providers.google_places import get_google_place_signals
+            google_signals = get_google_place_signals(lat, lon, min(radius, 50000))
+        except Exception as error:
+            google_error = str(error)
+            logger.warning('Google Places enrichment unavailable: %s', error)
+    fv.setdefault('external_signals', {})['google_places'] = google_signals
+    fv['external_signals']['google_places_error'] = google_error
+
     pop_metrics = fv.get('population_metrics', {})
     spatial = fv.get('spatial_metrics', {})
     counts = fv.get('amenity_counts', {})
@@ -103,6 +117,22 @@ def _get_input_features(lat, lon, radius, competitor_category='restaurant'):
     }
     import pandas as pd
     return pd.DataFrame([input_data]), fv
+
+
+def _data_sources(feature_vector):
+    sources = ['OpenStreetMap/Overpass']
+    population = feature_vector.get('population_metrics', {})
+    if population.get('coverage_status') == 'good':
+        sources.append('WorldPop')
+    google = feature_vector.get('external_signals', {}).get('google_places')
+    if google and google.get('enabled'):
+        sources.append('Google Places')
+    return {
+        'sources': sources,
+        'google_places_enabled': bool(google and google.get('enabled')),
+        'google_places_error': feature_vector.get('external_signals', {}).get('google_places_error'),
+        'population_coverage': population.get('coverage_status', 'unknown'),
+    }
 
 
 SQFT_PER_CENT = 435.6
@@ -360,6 +390,7 @@ def analyze_location(request: AnalyzeLocationRequest):
             "prediction_metadata": {
                 "model": "transparent_category_aware_opportunity_score",
                 "training_warning": "Prototype score based on local map and population signals; validate with footfall, rent, and sales data before investing.",
+                "data_sources": _data_sources(feature_vector),
             }
         }
     except HTTPException:
@@ -442,6 +473,7 @@ def find_best_locations(request: FindBestLocationsRequest):
             "prediction_metadata": {
                 "model": "transparent_category_aware_opportunity_score",
                 "training_warning": "Prototype score based on local map and population signals; validate with footfall, rent, and sales data before investing.",
+                "data_sources": _data_sources(fv),
             },
             "cell_size_degrees": request.step_size,
             "candidates": candidates
