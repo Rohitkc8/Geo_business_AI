@@ -145,16 +145,22 @@ def _estimate_budget(df_input):
     schools = float(df_input.iloc[0]['school_count'])
     hospitals = float(df_input.iloc[0]['hospital_count'])
 
+    budget_model_fallback = budget_model is None
     if budget_model is not None:
-        features = pd.DataFrame({
-            'population_density': [pop_density],
-            'distance_to_major_road': [road_dist],
-            'school_count': [schools],
-            'hospital_count': [hospitals]
-        })
-        estimated_price = budget_model.predict(features)[0]
-        source = 'Pretrained Model'
-    else:
+        try:
+            features = pd.DataFrame({
+                'population_density': [pop_density],
+                'distance_to_major_road': [road_dist],
+                'school_count': [schools],
+                'hospital_count': [hospitals]
+            })
+            estimated_price = budget_model.predict(features)[0]
+            source = 'Pretrained Model'
+        except Exception as error:
+            logger.warning('Budget model prediction unavailable; using transparent fallback: %s', error)
+            budget_model_fallback = True
+
+    if budget_model_fallback:
         density_factor = pop_density * 150
         road_factor = 200000 if 0 <= road_dist < 100 else (100000 if 0 <= road_dist < 500 else 0)
         estimated_price = 500000 + density_factor + road_factor
@@ -482,5 +488,5 @@ def find_best_locations(request: FindBestLocationsRequest):
     except HTTPException:
         raise
     except Exception as e:
-        logger.error(f"Find best locations error: {e}")
-        raise HTTPException(status_code=500, detail="Model 2 inference failed")
+        logger.exception("Find best locations error")
+        raise HTTPException(status_code=500, detail=f"Model 2 inference failed: {e}")
