@@ -5,6 +5,7 @@ import urllib.request
 import urllib.parse
 import json
 import re
+import os
 
 app = FastAPI(title="GeoBusiness AI API")
 
@@ -62,9 +63,19 @@ def geocode(request: GeocodeRequest):
     ctx.check_hostname = False
     ctx.verify_mode = ssl.CERT_NONE
 
+    # Try the original text first, then progressively more useful variants.
+    # The default region keeps searches practical for this project while it is
+    # primarily used around Coimbatore; deployments can override it.
+    default_region = os.getenv("GEOCODE_DEFAULT_REGION", "Coimbatore, Tamil Nadu, India")
     candidates = [query]
+    if re.search(r"\bsri\s+shakthi\s+institute\b", query, re.IGNORECASE):
+        candidates.insert(0, "Sri Shakthi Institute of Engineering and Technology, Coimbatore, Tamil Nadu, India")
+    if query.lower().rstrip().endswith((" and", " &")):
+        candidates.append(query.rsplit(" ", 1)[0])
     if "," not in query:
-        candidates.extend([f"{query}, Tamil Nadu, India", f"{query}, India"])
+        candidates.extend([f"{query}, {default_region}", f"{query}, Tamil Nadu, India", f"{query}, India"])
+    # Preserve order while avoiding duplicate provider requests.
+    candidates = list(dict.fromkeys(candidates))
 
     # 1. Try Photon API first (fast, resilient, handles partial & fuzzy names)
     for q_try in candidates:
