@@ -4,6 +4,7 @@ from pydantic import BaseModel
 import urllib.request
 import urllib.parse
 import json
+import re
 
 app = FastAPI(title="GeoBusiness AI API")
 
@@ -46,6 +47,16 @@ def geocode(request: GeocodeRequest):
     # Check cache
     if query_key in geocode_cache:
         return geocode_cache[query_key]
+
+    # Coordinates provide an offline path when local DNS/firewall settings
+    # block Photon and Nominatim.
+    coordinate_match = re.fullmatch(r"\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*", query)
+    if coordinate_match:
+        latitude, longitude = map(float, coordinate_match.groups())
+        if -90 <= latitude <= 90 and -180 <= longitude <= 180:
+            response_data = GeocodeResponse(latitude=latitude, longitude=longitude, display_name=query)
+            geocode_cache[query_key] = response_data
+            return response_data
 
     ctx = ssl.create_default_context()
     ctx.check_hostname = False
@@ -110,4 +121,3 @@ def geocode(request: GeocodeRequest):
 # Include ML Predict Routers
 from api_routes import router as ml_router
 app.include_router(ml_router)
-

@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 
 from feature_engineer import SpatialFeatureEngineer
 from explainability import explain_land_to_business, explain_business_to_land
-from opportunity_scoring import land_recommendations, score_business
+from opportunity_scoring import BUSINESS_TYPES, land_recommendations, score_business
 from generate_dataset import generate_grid
 
 # Configure logging before loading optional models so failures are reported safely.
@@ -240,7 +240,7 @@ def get_business_types():
     logger.info("Fetching business types")
     return {
         # These values map directly to categories collected from OpenStreetMap.
-        "business_types": ["pharmacy", "grocery", "cafe", "restaurant", "bank", "clinic"]
+        "business_types": list(BUSINESS_TYPES)
     }
 
 @router.get("/api/empty-land")

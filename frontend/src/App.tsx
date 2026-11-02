@@ -753,7 +753,8 @@ export default function App() {
       .then(r => r.json())
       .then(d => {
         if (Array.isArray(d.business_types) && d.business_types.length > 0) {
-          setTypes(d.business_types)
+          // Keep the UI usable if an older backend returns only one category.
+          setTypes(Array.from(new Set([...DEFAULT_BUSINESS_TYPES, ...d.business_types])))
         }
       })
       .catch(() => {})
@@ -818,7 +819,10 @@ export default function App() {
               }
             }
           })
-          .catch(() => {})
+          .catch(() => {
+            setEmptyLand({ type: 'FeatureCollection', features: [], metadata: { available: false } })
+            notify('Empty-land data is unavailable. Check your internet/DNS connection.')
+          })
           .finally(() => setLoadingLand(false))
       } else {
         const response = await fetch(`${API}/find-best-locations`, {
